@@ -1,0 +1,49 @@
+# rewrite the genetic tradition to avoid conflict
+tr_cloning_genomic_growth_mod = {
+
+	possible = {
+		has_tradition = tr_cloning_evolutionary_extrapolation
+	}
+
+	# Effects in the inline script for tooltip generation
+	inline_script = {
+		script = traditions/tr_cloning_genomic_growth
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}
+
+tr_cloning_artificial_population_mod = {
+
+	possible = {
+		has_tradition = tr_cloning_somatic_synthesization
+	}
+
+	# Effects in the inline script for tooltip generation
+	inline_script = {
+		script = traditions/tr_cloning_artificial_population
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}
+
+tr_cloning_biochemical_composure_clones_mod = {
+
+	possible = {
+		has_tradition = tr_cloning_evolutionary_extrapolation
+		has_tradition = tr_cloning_somatic_synthesization
+	}
+	
+	# Effects in the inline script for tooltip generation
+	inline_script = {
+		script = traditions/tr_cloning_biochemical_composure_clones
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}

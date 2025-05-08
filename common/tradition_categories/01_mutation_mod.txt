@@ -1,0 +1,27 @@
+tradition_mutation = {
+	tree_template = "tree_12_11"
+	adoption_bonus = "tr_mutation_adopt"
+	finish_bonus = "tr_mutation_finish"
+
+	potential = {
+		has_biogenesis_dlc = yes
+		is_machine_empire = no
+		NOR = {
+			has_synthetic_ascension = yes
+			is_natural_design_empire = yes
+			is_individual_machine = yes
+		}
+	}
+
+	traditions = { # TODO Art Implementation AUG-47271
+		"tr_mutation_environmental_integration_mod"
+		"tr_mutation_planned_polymorphism"
+		"tr_mutation_somatic_subversiveness_mod"
+		"tr_mutation_nucleotide_isolation_mod"
+		"tr_mutation_unnatural_selection"
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}

@@ -1,0 +1,49 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_tr_purity_optimized_neurology_mod"
+        textureFile = "gfx/interface/icons/traditions/tradition_purity_optimized_neurology.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tr_purity_heightened_attributes_mod"
+        textureFile = "gfx/interface/icons/traditions/tradition_purity_heightened_attributes.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tr_purity_imperfection_remediation_mod"
+        textureFile = "gfx/interface/icons/traditions/tradition_purity_imperfection_remediation.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tr_cloning_genomic_growth_mod"
+        textureFile = "gfx/interface/icons/traditions/tradition_cloning_genomic_growth.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tr_cloning_artificial_population_mod"
+        textureFile = "gfx/interface/icons/traditions/tradition_cloning_artificial_population.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tr_cloning_biochemical_composure_clones_mod"
+        textureFile = "gfx/interface/icons/traditions/tradition_cloning_biochemical_composure.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tr_mutation_environmental_integration_mod"
+        textureFile = "gfx/interface/icons/traditions/tradition_mutation_environmental_integration.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tr_mutation_somatic_subversiveness_mod"
+        textureFile = "gfx/interface/icons/traditions/tradition_mutation_somatic_subversiveness.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tr_mutation_nucleotide_isolation_mod"
+        textureFile = "gfx/interface/icons/traditions/tradition_mutation_nucleotide_isolation.dds"
+    }
+
+}
+
