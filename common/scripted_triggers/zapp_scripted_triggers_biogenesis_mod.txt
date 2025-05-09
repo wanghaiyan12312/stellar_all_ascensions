@@ -1,0 +1,44 @@
+##################################
+# Scripted Triggers - BioGenesis #
+##################################
+
+has_genetic_traditon_tree_adoped_mod ={
+	OR ={
+		has_tradition = tr_cloning_adopt
+		has_tradition = tr_mutation_adopt
+		has_tradition = tr_purity_adopt
+	}
+}
+
+has_genetic_stage_1_tradition = {
+	OR = {
+		OR = {
+			has_tradition = tr_purity_stage_1_swap
+			has_tradition = tr_cloning_stage_1_swap
+			has_tradition = tr_mutation_stage_1_swap
+		}
+		has_genetic_traditon_tree_adoped_mod = yes
+	}
+}
+
+has_genetic_stage_2_tradition = {
+	OR = {
+		OR ={
+			has_tradition = tr_purity_stage_2_swap
+			has_tradition = tr_cloning_stage_2_swap
+			has_tradition = tr_mutation_stage_2_swap
+		}
+		has_genetic_traditon_tree_adoped_mod = yes
+	}
+}
+
+has_genetic_stage_3_tradition = {
+	OR ={
+		OR = {
+			has_tradition = tr_purity_stage_3_swap
+			has_tradition = tr_cloning_stage_3_swap
+			has_tradition = tr_mutation_stage_3_swap
+		}
+		has_genetic_traditon_tree_adoped_mod = yes
+	}
+}

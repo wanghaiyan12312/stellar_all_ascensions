@@ -1,4 +1,59 @@
 # rewrite the genetic tradition to avoid conflict
+tr_cloning_adopt = {
+	possible = {
+		custom_tooltip = {
+			fail_text = REQUIRES_FINISHED_EVOLUTION
+			has_country_flag = cloning_tradition_unlocked
+		}
+	}
+	unlocks_agenda = agenda_cloning_replication
+	custom_tooltip_with_modifiers = tr_cloning_adopt_tt
+	modifier = {
+
+	}
+
+	on_enabled = {
+		hidden_effect = {
+			set_country_flag = cloning_unlock_level_1
+			set_country_flag = cloning_unlock_level_2
+			set_country_flag = cloning_unlock_level_3
+			set_country_flag = genetic_ascension_stage_1_cloning
+			set_country_flag = genetic_ascension_stage_2_cloning
+			set_country_flag = genetic_ascension_stage_3_cloning
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_technology = tech_cloning
+				}
+			}
+			give_technology = {
+				tech = tech_cloning
+				message = no
+			}
+		}
+	}
+
+	tradition_swap = {
+		name = tr_cloning_adopt_clone_army
+		inherit_name = yes
+		inherit_icon = yes
+		trigger = {
+			has_country_flag = clone_army_full_potential
+		}
+		modifier = {
+		}
+		custom_tooltip = tr_cloning_adopt_clone_army_tt
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+
+
+
+# rewrite the genetic tradition to avoid conflict
 tr_cloning_genomic_growth_mod = {
 
 	possible = {
