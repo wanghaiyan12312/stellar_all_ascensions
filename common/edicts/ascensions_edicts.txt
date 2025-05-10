@@ -47,3 +47,41 @@ aap_fix_leader_trait = {
 
 	ai_weight = { weight = 0 }
 }
+
+astral_shielding = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+
+	resources = {
+		category = edicts
+		cost = {
+			astral_threads = 10
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			astral_threads = 10
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		has_country_flag = action_planar_mastery_activated
+	}
+
+	allow = {
+		NOT = {
+			resource_stockpile_compare = {
+				resource = astral_threads
+				value < 10
+			}
+		}
+	}
+
+	modifier = {
+		ship_shield_mult = 0.25
+		ship_shield_hardening_add = 0.40
+	}
+	ai_weight = {
+		weight = @EdictMedPrio
+	}
+}
