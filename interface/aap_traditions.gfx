@@ -45,5 +45,11 @@ spriteTypes = {
         textureFile = "gfx/interface/icons/traditions/tradition_mutation_nucleotide_isolation.dds"
     }
 
+    spriteType = {
+		name = "GFX_ap_synthetic_moduler_evolution"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_synthetic_age.dds"
+		alwaystransparent = yes
+	}
+
 }
 

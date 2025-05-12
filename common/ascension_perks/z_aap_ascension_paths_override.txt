@@ -364,6 +364,51 @@ ap_synthetic_evolution = {
 	}
 }
 
+# Synthetic Ascension (regular empires peace)
+ap_synthetic_moduler_evolution = {
+	potential = {
+		OR = {
+			has_utopia = yes
+			has_machine_age_dlc = yes
+		}
+		is_gestalt = no
+		is_mechanical_empire = no
+		is_natural_design_empire = no
+		NOT = { has_valid_civic = civic_augmentation_bazaars }
+		is_individual_machine = no
+		owner_species = {
+			NOT = { has_trait = trait_unplugged_decyberized }
+		}
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "synthetic_empire_synthetic_ascension"
+			NOT = { has_trait = trait_mechanical }
+		}
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_synthetic_age"
+			NOT = { has_ascension_perk = ap_synthetic_age }
+		}
+		custom_tooltip = {
+			fail_text = "requires_free_tradition_tree"
+			num_tradition_categories < @max_tradition_trees
+		}
+		
+	}
+
+	on_enabled ={
+		custom_tooltip = "ap_synthetic_moduler_evolution_tooltip"
+	}
+
+	ai_weight = {
+ 		weight = 0
+	}
+
+}
 # Psionic Ascension (regular empires)
 ap_mind_over_matter = {
 	on_enabled = {

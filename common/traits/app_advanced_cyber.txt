@@ -1,0 +1,318 @@
+# add advanced cyber trait
+trait_cybernetic_suppressed = {
+
+	icon = "gfx/interface/icons/traits/trait_robot_suppressed.dds"
+	cost = 3
+	category = cyborg
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive pop_output leader blocks_leaders cybernetic }
+
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+		#can_do_advanced_robo_modding = yes
+	}
+
+	species_possible_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_cybernetic_traits = yes
+	}
+
+	initial = no
+	randomized = no
+
+	opposites = { trait_cybernetic_inquisitative_axioms trait_cyborg_learning_algorithms trait_cyborg_logic_engines trait_cyborg_enhanced_memory
+	}
+
+	modifier = {
+		pop_bonus_workforce_mult = 0.1
+		species_leader_exp_gain = -1
+	}
+
+	slave_cost = {
+		energy = 750
+	}
+
+	custom_tooltip_with_modifiers = trait_cybernetic_suppressed_tt
+
+}
+
+trait_cybernetic_shielded_components = {
+	cost = 3
+	category = cyborg
+
+	icon = "gfx/interface/icons/traits/trait_robot_shielded_components.dds"
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive habitability pop_output leader cybernetic }
+
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+		#can_do_advanced_robo_modding = yes
+	}
+
+	species_possible_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_cybernetic_traits = yes
+	}
+
+	initial = no
+	randomized = no
+
+	modifier = {
+		pop_environment_tolerance = 0.30
+		pop_bonus_workforce_mult = 0.05
+		leader_lifespan_add = 50
+	}
+
+	slave_cost = {
+		energy = 750
+	}
+
+}
+
+trait_cybernetic_monoform = {
+	cost = 4
+	category = cyborg
+
+	icon = "gfx/interface/icons/traits/trait_robot_shielded_components.dds"
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive pop_growth housing cybernetic }
+
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+		#can_do_advanced_robo_modding = yes
+	}
+
+	species_possible_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_cybernetic_traits = yes
+	}
+
+	initial = no
+	randomized = no
+
+	modifier = {
+		pop_housing_usage_mult = -0.8
+		logistic_growth_mult = 0.2
+	}
+
+	slave_cost = {
+		energy = 750
+	}
+}
+
+trait_cybernetic_inquisitative_axioms = {
+	cost = 4
+	category = cyborg
+
+	icon = "gfx/interface/icons/traits/trait_robot_ceaseless_symmetric_annihilation_engine.dds"
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive pop_output research leader cybernetic }
+
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+		#can_do_advanced_robo_modding = yes
+	}
+
+	species_possible_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_cybernetic_traits = yes
+	}
+
+	initial = no
+	randomized = no
+
+	modifier = {
+		researcher_jobs_bonus_workforce_mult = 0.2
+		leaders_upkeep_mult = -0.1
+		negative_traits_leader = -1
+	}
+
+	opposites = { trait_cybernetic_suppressed }
+
+	slave_cost = {
+		energy = 750
+	}
+}
+
+trait_cybernetic_ceaseless_symmetric_annihilation_engine = {
+	cost = 2
+	category = cyborg
+
+	icon = "gfx/interface/icons/traits/trait_robot_ceaseless_symmetric_annihilation_engine.dds"
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive pop_output upkeep cybernetic }
+
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+		#can_do_advanced_robo_modding = yes
+	}
+	species_possible_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_cybernetic_traits = yes
+	}
+
+	initial = no
+	randomized = no
+
+	modifier = {
+		pop_bonus_workforce_mult = 0.40
+	}
+
+	slave_cost = {
+		energy = 750
+	}
+
+	resources = {
+		category = planet_pops
+		upkeep = {
+			sr_dark_matter = 0.02
+		}
+	}
+
+	custom_tooltip_with_modifiers = trait_cybernetic_ceaseless_symmetric_annihilation_engine_tt
+}
+
+trait_cybernetic_ferro_viscosity_augmentation = {
+	cost = 2
+	category = cyborg
+
+	icon = "gfx/interface/icons/traits/trait_robot_ferro_viscosity_augmentation.dds"
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive leader amenities upkeep cybernetic }
+
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+		#can_do_advanced_robo_modding = yes
+	}
+	species_possible_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_cybernetic_traits = yes
+	}
+
+	initial = no
+	randomized = no
+
+	modifier = {
+		leader_lifespan_mult = 0.5
+		pop_amenities_usage_mult = -0.50
+	}
+
+	slave_cost = {
+		energy = 750
+	}
+
+	resources = {
+		category = planet_pops
+		upkeep = {
+			sr_living_metal = 0.01
+		}
+	}
+
+	custom_tooltip_with_modifiers = trait_cybernetic_ferro_viscosity_augmentation_tt
+
+}
+
+
+trait_cybernetic_matrix_trading = {
+	cost = 1
+	category = cyborg
+
+	icon = "gfx/interface/icons/traits/trait_robot_matrix_trading.dds"
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive pop_output trade upkeep cybernetic }
+	opposites = { trait_cyborg_scarcity_algorithms }
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+		#can_do_advanced_robo_modding = yes
+	}
+	species_possible_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_cybernetic_traits = yes
+	}
+
+	initial = no
+	randomized = no
+
+	modifier = {
+		trader_jobs_bonus_workforce_mult = 0.5
+	}
+
+	slave_cost = {
+		energy = 750
+	}
+
+	resources = {
+		category = planet_pops
+		upkeep = {
+			energy = 1
+			rare_crystals = 0.01
+		}
+	}
+
+	custom_tooltip_with_modifiers = trait_cybernetic_matrix_trading_tt
+
+}
+
+trait_cybernetic_mote_powered_tools = {
+	cost = 1
+	category = cyborg
+
+	icon = "gfx/interface/icons/traits/trait_robot_mote_powered_tools.dds"
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive alloys consumer_goods pop_output upkeep cybernetic }
+
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+		#can_do_advanced_robo_modding = yes
+	}
+	species_possible_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_cybernetic_traits = yes
+	}
+
+	initial = no
+	randomized = no
+
+	modifier = {
+		foundry_jobs_bonus_workforce_mult = 0.2
+		artisan_jobs_bonus_workforce_mult = 0.2
+	}
+
+	slave_cost = {
+		energy = 750
+	}
+
+	resources = {
+		category = planet_pops
+		upkeep = {
+			minerals = 1
+			volatile_motes = 0.01
+		}
+	}
+
+	custom_tooltip_with_modifiers = trait_cybernetic_mote_powered_tools_tt
+}
