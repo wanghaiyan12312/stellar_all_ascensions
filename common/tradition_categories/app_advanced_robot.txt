@@ -1,0 +1,26 @@
+tradition_modularity_age = {
+	tree_template = "tree_11_12"
+	adoption_bonus = "tr_modularity_age_adopt"
+	finish_bonus = "tr_modularity_age_finish"
+	traditions = {
+		"tr_modularity_age"
+		"tr_modularity_age"
+		"tr_modularity_age"
+		"tr_modularity_age"
+		"tr_modularity_age"
+	}
+
+	potential = {
+		has_machine_age_dlc = yes
+		is_machine_empire = no
+		NOR = {
+			has_synthetic_ascension = yes
+			is_natural_design_empire = yes
+			is_individual_machine = yes
+		}
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}

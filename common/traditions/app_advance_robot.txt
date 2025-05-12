@@ -1,0 +1,85 @@
+
+tr_modularity_age_adopt = {
+	unlocks_agenda = agenda_conquer_nature
+	modifier = {
+		planet_metallurgists_sr_living_metal_produces_add = 0.1
+	}
+}
+
+tr_modularity_age_finish = {
+	custom_tooltip_with_modifiers = tr_modularity_age_finish
+	modifier = {
+		planet_metallurgists_sr_living_metal_produces_add = 0.1
+	}
+	unlocks_agenda = agenda_modularity_reshape_form
+
+tr_modularity_age_high_speed_replacements = {
+	custom_tooltip = tr_modularity_age_high_speed_replacements
+
+	modifier = {
+		pop_bonus_workforce_mult = 0.10
+		auto_mod_monthly_add = 400
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+
+}
+
+tr_modularity_age_high_maintenance_protocols = {
+	possible = {
+		has_tradition = tr_modularity_age_high_speed_replacements
+	}
+
+	modifier = {
+		pop_amenities_usage_robotic_mult = -0.1
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+	
+}
+
+tr_modularity_age_high_living_metal_joints = {
+	modifier = {
+		planet_pop_assemblers_sr_living_metal_upkeep_add = 0.15
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}
+
+tr_modularity_age_efficient_power_systems = {
+	possible = {
+		has_tradition = tr_modularity_age_high_living_metal_joints
+	}
+
+	modifier = {
+		planet_pops_robotics_upkeep_mult = -0.25
+		planet_pop_assemblers_upkeep_mult = -0.25
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}
+
+tr_modularity_age_advanced_tools = {
+	possible = {
+		has_tradition = tr_modularity_3
+	}
+	modifier = {
+		ROBOT_species_trait_points_add = 6
+		ROBOT_species_trait_picks_add = 4
+		modify_species_cost_mult = -0.5
+	}
+
+	custom_tooltip_with_modifiers = tr_modularity_age_advanced_tools_desc
+	ai_weight = {
+		factor = 0
+	}
+
+}
