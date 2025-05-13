@@ -10,7 +10,7 @@ trait_cybernetic_suppressed = {
 
 	species_potential_add = {
 		can_add_cybernetic_traits = yes
-		#can_do_advanced_robo_modding = yes
+		can_do_advanced_robo_modding = yes
 	}
 
 	species_possible_add = {
@@ -50,7 +50,7 @@ trait_cybernetic_shielded_components = {
 
 	species_potential_add = {
 		can_add_cybernetic_traits = yes
-		#can_do_advanced_robo_modding = yes
+		can_do_advanced_robo_modding = yes
 	}
 
 	species_possible_add = {
@@ -86,7 +86,7 @@ trait_cybernetic_monoform = {
 
 	species_potential_add = {
 		can_add_cybernetic_traits = yes
-		#can_do_advanced_robo_modding = yes
+		can_do_advanced_robo_modding = yes
 	}
 
 	species_possible_add = {
@@ -120,7 +120,7 @@ trait_cybernetic_inquisitative_axioms = {
 
 	species_potential_add = {
 		can_add_cybernetic_traits = yes
-		#can_do_advanced_robo_modding = yes
+		can_do_advanced_robo_modding = yes
 	}
 
 	species_possible_add = {
@@ -157,7 +157,7 @@ trait_cybernetic_ceaseless_symmetric_annihilation_engine = {
 
 	species_potential_add = {
 		can_add_cybernetic_traits = yes
-		#can_do_advanced_robo_modding = yes
+		can_do_advanced_robo_modding = yes
 	}
 	species_possible_add = {
 		can_add_cybernetic_traits = yes
@@ -198,7 +198,7 @@ trait_cybernetic_ferro_viscosity_augmentation = {
 
 	species_potential_add = {
 		can_add_cybernetic_traits = yes
-		#can_do_advanced_robo_modding = yes
+		can_do_advanced_robo_modding = yes
 	}
 	species_possible_add = {
 		can_add_cybernetic_traits = yes
@@ -242,7 +242,7 @@ trait_cybernetic_matrix_trading = {
 	opposites = { trait_cyborg_scarcity_algorithms }
 	species_potential_add = {
 		can_add_cybernetic_traits = yes
-		#can_do_advanced_robo_modding = yes
+		can_do_advanced_robo_modding = yes
 	}
 	species_possible_add = {
 		can_add_cybernetic_traits = yes
@@ -285,7 +285,7 @@ trait_cybernetic_mote_powered_tools = {
 
 	species_potential_add = {
 		can_add_cybernetic_traits = yes
-		#can_do_advanced_robo_modding = yes
+		can_do_advanced_robo_modding = yes
 	}
 	species_possible_add = {
 		can_add_cybernetic_traits = yes

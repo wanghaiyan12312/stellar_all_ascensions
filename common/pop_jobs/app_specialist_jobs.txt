@@ -169,6 +169,16 @@ roboticist = {
 		potential = {
 			exists = owner
 			owner = {
+				has_tradition = tr_modularity_age_high_living_metal_joints
+			}
+		}
+		planet_pop_assembly_add = 1 #If this changes, update tr_modularity_2_modifier_desc
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
 				has_active_tradition = tr_synthetics_prefabricated_components
 			}
 		}

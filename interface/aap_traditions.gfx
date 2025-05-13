@@ -51,5 +51,62 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 
+    spriteType = {
+		name = "GFX_tradition_hex_bg_tradition_modularity_age"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_modularity.dds"
+	}
+
+    spriteType = {
+		name = "GFX_tradition_category_bg_tradition_modularity_age"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_modularity.dds"
+	}
+
+    corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_tradition_modularity_age"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_modularity.dds"
+		borderSize = { x=140 y=140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+
+    spriteType = {
+		name = "GFX_tradition_category_icon_tradition_modularity_age"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_icon_modularity.dds"
+	}
+
+    spriteType = {
+		name = "GFX_tr_modularity_age_high_speed_replacements"
+		textureFile = "gfx/interface/icons/traditions/tradition_modularity_1.dds"
+	}
+
+    spriteType = {
+		name = "GFX_tr_modularity_age_high_living_metal_joints"
+		textureFile = "gfx/interface/icons/traditions/tradition_modularity_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_modularity_age_high_maintenance_protocols"
+		textureFile = "gfx/interface/icons/traditions/tradition_modularity_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_modularity_age_efficient_power_systems"
+		textureFile = "gfx/interface/icons/traditions/tradition_modularity_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_modularity_age_advanced_tools"
+		textureFile = "gfx/interface/icons/traditions/tradition_modularity_5.dds"
+	}
+
+    spriteType = {
+		name = "GFX_leader_trait_chosen_mod_ascensions"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/chosen.dds"
+	}
+
+    spriteType = {
+		name = "GFX_council_agenda_icon_agenda_modularity_age_reshape_form"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_modularity_reshape_form.dds"
+	}
+
 }
 

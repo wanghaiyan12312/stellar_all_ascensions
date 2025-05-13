@@ -1,13 +1,13 @@
 tradition_modularity_age = {
-	tree_template = "tree_11_12"
+	tree_template = "tree_12_12"
 	adoption_bonus = "tr_modularity_age_adopt"
 	finish_bonus = "tr_modularity_age_finish"
 	traditions = {
-		"tr_modularity_age"
-		"tr_modularity_age"
-		"tr_modularity_age"
-		"tr_modularity_age"
-		"tr_modularity_age"
+		"tr_modularity_age_high_speed_replacements"
+		"tr_modularity_age_high_living_metal_joints"
+		"tr_modularity_age_high_maintenance_protocols"
+		"tr_modularity_age_efficient_power_systems"
+		"tr_modularity_age_advanced_tools"
 	}
 
 	potential = {

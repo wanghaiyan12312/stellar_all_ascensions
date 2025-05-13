@@ -319,6 +319,11 @@ ap_synthetic_evolution = {
 			NOT = { has_ascension_perk = ap_mind_over_matter }
 		}
 		custom_tooltip = {
+			fail_text = "synthetic_empire_synthetic_ascension"
+			NOT = { has_ascension_perk = ap_synthetic_moduler_evolution }
+		}
+		
+		custom_tooltip = {
 			fail_text = "requires_free_tradition_tree"
 			num_tradition_categories < @max_tradition_trees
 		}

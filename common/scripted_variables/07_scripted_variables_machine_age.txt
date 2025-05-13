@@ -17,4 +17,4 @@
 
 @paperclip_scaling_factor = 1.2
 
-@max_tradition_trees = 48	# In case modders increase the limit
+@max_tradition_trees = 17	# In case modders increase the limit

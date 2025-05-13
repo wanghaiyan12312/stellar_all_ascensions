@@ -1,20 +1,28 @@
 
 tr_modularity_age_adopt = {
-	unlocks_agenda = agenda_conquer_nature
+
+	unlocks_agenda = agenda_modularity_age_reshape_form
+
+	possible = {
+		has_ascension_perk = ap_synthetic_moduler_evolution
+		has_technology = tech_synthetic_workers
+	}
+
 	modifier = {
 		planet_metallurgists_sr_living_metal_produces_add = 0.1
 	}
+	
 }
 
 tr_modularity_age_finish = {
-	custom_tooltip_with_modifiers = tr_modularity_age_finish
+
 	modifier = {
-		planet_metallurgists_sr_living_metal_produces_add = 0.1
+		ascension_perks_add = 1
 	}
-	unlocks_agenda = agenda_modularity_reshape_form
+
+}
 
 tr_modularity_age_high_speed_replacements = {
-	custom_tooltip = tr_modularity_age_high_speed_replacements
 
 	modifier = {
 		pop_bonus_workforce_mult = 0.10
@@ -27,10 +35,24 @@ tr_modularity_age_high_speed_replacements = {
 
 }
 
-tr_modularity_age_high_maintenance_protocols = {
+tr_modularity_age_high_living_metal_joints = {
+
 	possible = {
-		has_tradition = tr_modularity_age_high_speed_replacements
+		has_tradition = tr_modularity_age_high_maintenance_protocols
 	}
+
+	modifier = {
+		planet_pop_assemblers_sr_living_metal_upkeep_add = 0.15
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+
+	custom_tooltip_with_modifiers = tr_modularity_age_high_living_metal_joints_desc
+}
+
+tr_modularity_age_high_maintenance_protocols = {
 
 	modifier = {
 		pop_amenities_usage_robotic_mult = -0.1
@@ -42,19 +64,11 @@ tr_modularity_age_high_maintenance_protocols = {
 	
 }
 
-tr_modularity_age_high_living_metal_joints = {
-	modifier = {
-		planet_pop_assemblers_sr_living_metal_upkeep_add = 0.15
-	}
 
-	ai_weight = {
-		factor = 0
-	}
-}
 
 tr_modularity_age_efficient_power_systems = {
 	possible = {
-		has_tradition = tr_modularity_age_high_living_metal_joints
+		has_tradition = tr_modularity_age_high_maintenance_protocols
 	}
 
 	modifier = {
@@ -69,7 +83,7 @@ tr_modularity_age_efficient_power_systems = {
 
 tr_modularity_age_advanced_tools = {
 	possible = {
-		has_tradition = tr_modularity_3
+		has_tradition = tr_modularity_age_high_maintenance_protocols
 	}
 	modifier = {
 		ROBOT_species_trait_points_add = 6
@@ -78,6 +92,7 @@ tr_modularity_age_advanced_tools = {
 	}
 
 	custom_tooltip_with_modifiers = tr_modularity_age_advanced_tools_desc
+
 	ai_weight = {
 		factor = 0
 	}

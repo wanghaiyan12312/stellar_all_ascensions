@@ -42,3 +42,15 @@ has_genetic_stage_3_tradition = {
 		has_genetic_traditon_tree_adoped_mod = yes
 	}
 }
+
+#this = species, from = country
+can_do_advanced_robo_modding = {
+	hidden_trigger = { exists = from }
+	from = {
+		OR = {
+			has_tradition = tr_modularity_5
+			has_tradition = tr_modularity_age_advanced_tools
+			has_country_flag = synth_physical
+		}
+	}
+}

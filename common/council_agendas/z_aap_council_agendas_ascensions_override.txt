@@ -257,67 +257,6 @@ agenda_flesh_is_weak = {
 	}
 }
 
-agenda_organo_machine_interfacing = {
-	agenda_cost = @ascension_agenda_cost
-	agenda_cooldown = @ascension_agenda_cooldown
-	allow = {
-		has_ascension_perk = ap_organo_machine_interfacing
-	}
-	potential = {
-		OR = {
-			has_utopia = yes
-			has_machine_age_dlc = yes
-		}
-		is_hive_empire = yes
-		NOR = {
-			has_genetic_ascension = yes
-			has_psionic_ascension = yes
-			has_synthetic_ascension = yes
-			is_natural_design_empire = yes
-			is_individual_machine = yes
-			has_purity_ascension = yes
-			has_cloning_ascension = yes
-			has_mutation_ascension = yes
-		}
-		NAND = {
-			has_technology = tech_powered_exoskeletons
-			has_technology = tech_integrated_cybernetics
-			has_technology = tech_neuro_quantum_links
-		}
-	}
-	effect = {
-		inverted_switch = {
-			trigger = has_technology
-			tech_powered_exoskeletons = {
-				add_tech_progress = {
-					tech = tech_powered_exoskeletons
-					progress = @agenda_award_tech_progress
-				}
-			}
-			tech_integrated_cybernetics = {
-				add_tech_progress = {
-					tech = tech_integrated_cybernetics
-					progress = @agenda_award_tech_progress
-				}
-			}
-			tech_neuro_quantum_links = {
-				add_tech_progress = {
-					tech = tech_neuro_quantum_links
-					progress = @agenda_award_tech_progress
-				}
-			}
-			default = {
-				add_monthly_resource_mult = {
-					resource = engineering_research
-					value = @tier3researchreward
-					min = @tier3researchmin
-					max = @tier3researchmax
-				}
-			}
-		}
-	}
-}
-
 agenda_cybernetic_advantage_assimilator = {
 	agenda_cost = @base_tradition_agenda_cost
 	allow = {
@@ -476,4 +415,20 @@ agenda_mutation_divergence = {
 		}
 	}
 	finish_modifier = agenda_mutation_divergence_finish
+}
+
+agenda_modularity_age_reshape_form = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_modularity_age_adopt
+	}
+	potential = {
+		has_machine_age_dlc = yes
+	}
+	modifier = {
+		planet_pops_robotics_upkeep_mult = -0.05
+		planet_jobs_sr_living_metal_produces_mult = 0.05
+		auto_mod_monthly_add = 100
+	}
+	finish_modifier = agenda_modularity_reshape_form_finish
 }
