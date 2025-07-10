@@ -1,0 +1,461 @@
+add_awakened_fallen_empire_resources_mod = {
+	# Changing country type resets resources, so give them full stores
+	add_resource = { minerals = 50000 }
+	add_resource = { energy = 50000 }
+	add_resource = { food = 50000 }
+	add_resource = { alloys = 20000 }
+	add_resource = { consumer_goods = 20000 }
+	add_resource = { alloys = 20000 }
+	add_resource = { exotic_gases = 10000 }
+	add_resource = { volatile_motes = 10000 }
+	add_resource = { rare_crystals = 10000 }
+	add_resource = { sr_dark_matter = 10000 }
+	add_resource = { sr_living_metal = 10000 }
+	add_resource = { nanites = 10000 }
+	add_resource = { sr_zro = 10000 }
+}
+create_fallen_empire_reinforcements_mod = {
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_xenophile}
+		}
+		capital_scope = {
+			create_fallen_empire_reinforcements_xenophile_mod = yes
+		}				
+	}
+	if = {
+		limit = { 
+			owner = { has_ethic = ethic_fanatic_materialist }
+		}
+		capital_scope = {
+			create_fallen_empire_reinforcements_materialist_mod = yes
+		}		
+	}
+	if = {
+		limit = { 
+			owner = { has_ethic = ethic_fanatic_spiritualist }
+		}
+		capital_scope = {
+			create_fallen_empire_reinforcements_spiritualist_mod = yes
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_xenophobe}
+		}
+		capital_scope = {
+			create_fallen_empire_reinforcements_xenophobe_mod = yes
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				owner = { has_country_flag = fallen_empire_hive_war }
+				owner = { has_country_flag = fallen_empire_hive_growth }
+				owner = { has_country_flag = fallen_empire_hive_control }
+			}					
+		}
+		capital_scope = {
+			create_fallen_empire_reinforcements_hive_mod = yes
+		}
+	}
+}
+
+### inline script pls
+create_fallen_empire_reinforcements_xenophile_mod = {
+	create_fleet = {
+		effect = {
+			set_owner = prev.owner
+			while = {
+				count = @fallen_empire_titan
+				create_ship = {
+					name = random
+					design = "NAME_Keeper"
+					graphical_culture = owner
+				}
+			}
+			while = {
+				count = @fallen_empire_battlecruise
+				create_ship = {
+					name = random
+					design = "NAME_Custodian"
+					graphical_culture = owner
+				}
+			}
+			while = {
+				count = @fallen_empire_escort
+				create_ship = {
+					name = random
+					design = "NAME_Overseer"
+					graphical_culture = owner
+				}
+			}
+			random_list = {
+				25 = {
+					set_location = {
+						target = prev
+						distance = 30
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 45
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 60
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 75
+						angle = random
+					}
+				}
+			}
+		}
+	}
+}
+create_fallen_empire_reinforcements_materialist_mod = {
+	create_fleet = {
+		effect = {
+			set_owner = prev.owner
+			while = {
+				count = @fallen_empire_titan
+				create_ship = {
+					name = random
+					design = "NAME_Savant"
+					graphical_culture = owner
+				}
+			}
+			while = {
+				count = @fallen_empire_battlecruise
+				create_ship = {
+					name = random
+					design = "NAME_Scholar"
+					graphical_culture = owner
+				}
+			}
+			while = {
+				count = @fallen_empire_escort
+				create_ship = {
+					name = random
+					design = "NAME_Sage"
+					graphical_culture = owner
+				}
+			}
+			random_list = {
+				25 = {
+					set_location = {
+						target = prev
+						distance = 30
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 45
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 60
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 75
+						angle = random
+					}
+				}
+			}
+		}
+	}
+}
+create_fallen_empire_reinforcements_spiritualist_mod = {
+	create_fleet = {
+		effect = {
+			set_owner = prev.owner
+			while = {
+				count = @fallen_empire_titan
+				create_ship = {
+					name = random
+					design = "NAME_Eternal"
+					graphical_culture = owner
+				}
+			}
+			while = {
+				count = @fallen_empire_battlecruise
+				create_ship = {
+					name = random
+					design = "NAME_Avatar"
+					graphical_culture = owner
+				}
+			}
+			while = {
+				count = @fallen_empire_escort
+				create_ship = {
+					name = random
+					design = "NAME_Zealot"
+					graphical_culture = owner
+				}		
+			}
+			random_list = {
+				25 = {
+					set_location = {
+						target = prev
+						distance = 30
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 45
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 60
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 75
+						angle = random
+					}
+				}
+			}
+		}
+	}
+}
+create_fallen_empire_reinforcements_xenophobe_mod = {
+	create_fleet = {
+		effect = {
+			set_owner = prev.owner
+			while = {
+				count = @fallen_empire_titan
+				create_ship = {
+					name = random
+					design = "NAME_Imperium"
+					graphical_culture = owner
+				}
+			}
+			while = {
+				count = @fallen_empire_battlecruise
+				create_ship = {
+					name = random
+					design = "NAME_Supremacy"
+					graphical_culture = owner
+				}
+			}
+			while = {
+				count = @fallen_empire_escort
+				create_ship = {
+					name = random
+					design = "NAME_Glory"
+					graphical_culture = owner
+				}	
+			}
+			random_list = {
+				25 = {
+					set_location = {
+						target = prev
+						distance = 30
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 45
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 60
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 75
+						angle = random
+					}
+				}
+			}
+		}
+	}
+}
+
+create_fallen_empire_reinforcements_hive_mod = {
+	create_fleet = {
+		effect = {
+			set_owner = prev.owner
+			while = {
+				count = @hive_fallen_empire_stinger 
+				create_ship = {
+					name = random
+					design = "NAME_HIVE_FE_Large_Stinger"
+					graphical_culture = owner
+				}
+			}
+			while = {
+				count = @hive_fallen_empire_mauler 
+				create_ship = {
+					name = random
+					design = "NAME_HIVE_FE_Large_Mauler_Picket"
+					graphical_culture = owner
+				}
+			}
+			while = {
+				count = @hive_fallen_empire_harbinger
+				create_ship = {
+					name = random
+					design = "NAME_HIVE_FE_Large_Harbinger_Point"
+					graphical_culture = owner
+				}
+			}
+			random_list = {
+				25 = {
+					set_location = {
+						target = prev
+						distance = 30
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 45
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 60
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 75
+						angle = random
+					}
+				}
+			}
+		}
+	}
+}
+### 
+
+
+create_fe_home_citadel = {
+	spawn_megastructure = {
+		type = "mega_shipyard_ruined"
+		owner = event_target:fallen_empire_hive_$FRAGMENT$
+		planet = star
+
+		init_effect = {
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 20
+					angle = 20
+				}
+			}
+		}
+	}
+	create_starbase = {
+		size = "starbase_citadel"
+
+		module = "shipyard"
+		module = "shipyard"
+		module = "shipyard"
+		module = "hangar_bay"
+		module = "gun_battery"
+		module = "gun_battery"
+
+		building = "target_uplink_computer"
+		building = "defense_grid"
+		building = "colossus_yards"
+		building = "titan_yards"
+
+		effect = {
+			while = {
+				count = 10
+				create_fallen_empire_platform = yes
+			}
+		}
+	}
+}
+
+create_hive_fe_citadel = {
+	spawn_megastructure = {
+		type = "mega_shipyard_ruined"
+		owner = event_target:fallen_empire_hive_$FRAGMENT$
+		planet = star
+
+		init_effect = {
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 20
+					angle = 20
+				}
+			}
+		}
+	}
+	create_starbase = {
+		size = "starbase_citadel"
+		owner = event_target:fallen_empire_hive_$FRAGMENT$
+
+		module = "shipyard"
+		module = "anchorage"
+		module = "anchorage"
+		module = "hangar_bay"
+		module = "gun_battery"
+		module = "gun_battery"
+
+		building = "growth_chamber"
+		building = "command_center"
+		building = "target_uplink_computer"
+		building = "dark_matter_listening_post"
+
+		effect = {
+			while = {
+				count = 4
+				create_fallen_empire_platform = yes
+			}
+		}
+	}
+}

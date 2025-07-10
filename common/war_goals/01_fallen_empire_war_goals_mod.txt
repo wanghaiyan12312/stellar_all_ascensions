@@ -1,0 +1,43 @@
+wg_ae_entertainment_cosmogenesis = {
+	casus_belli = cb_ae_entertainment_cosmogenesis
+	hide_if_no_cb = yes
+	total_war = no
+
+	galactic_empire_joins_defender = {
+		from = { is_galactic_emperor = yes }
+		imperial_authority >= 100
+	}
+
+	forbidden_peace_offers = {
+		surrender = ""
+	}
+
+	cede_claims = no
+
+	potential = {
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+	}
+	
+	possible = {
+		always = yes
+	}
+	on_accept = {
+		custom_tooltip = wg_ae_entertainment_cosmogenesis_effect
+		random_war = {
+			limit = {
+				using_war_goal = { type = wg_ae_entertainment_cosmogenesis owner = root }
+				any_defender = {
+					is_same_value = from
+				}
+			}
+			save_event_target_as = entertainment_war
+		}
+		generate_ae_entertainment_reward = yes
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+
+}

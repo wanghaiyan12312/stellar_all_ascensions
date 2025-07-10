@@ -1,5 +1,5 @@
 tradition_modularity_age = {
-	tree_template = "tree_12_12"
+	tree_template = "tree_11_12"
 	adoption_bonus = "tr_modularity_age_adopt"
 	finish_bonus = "tr_modularity_age_finish"
 	traditions = {

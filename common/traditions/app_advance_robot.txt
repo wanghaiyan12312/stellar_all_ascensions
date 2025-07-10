@@ -38,7 +38,7 @@ tr_modularity_age_high_speed_replacements = {
 tr_modularity_age_high_living_metal_joints = {
 
 	possible = {
-		has_tradition = tr_modularity_age_high_maintenance_protocols
+		has_tradition = tr_modularity_age_high_speed_replacements
 	}
 
 	modifier = {

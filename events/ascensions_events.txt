@@ -19,74 +19,101 @@ country_event = {
 	trigger = { has_biogenesis_dlc = yes }
 
 	option = {
-		trigger = { NOT = { has_tradition = tr_purity_adopt } }
+		name = EXIT
+		default_hide_option = yes
+	}
+
+	option = {
+		trigger = { 
+			NOT = { has_tradition = tr_purity_adopt }
+			num_tradition_categories < @max_tradition_trees 
+		}
 		name = bio.20.a
 		set_country_flag = purity_tradition_unlocked
 		add_tradition = tr_purity_adopt # Purity Tree
 	}
 
 	option = {
-		trigger = { NOT = { has_tradition = tr_cloning_adopt } }
+		trigger = { 
+			NOT = { has_tradition = tr_cloning_adopt } 
+			num_tradition_categories < @max_tradition_trees
+		}
 		name = bio.20.b
 		set_country_flag = cloning_tradition_unlocked
 		add_tradition = tr_cloning_adopt # Cloning Tree 
 	}
 
 	option = {
-		trigger = { NOT = { has_tradition = tr_mutation_adopt } }
+		trigger = { 
+			NOT = { has_tradition = tr_mutation_adopt } 
+			num_tradition_categories < @max_tradition_trees
+		}
 		name = bio.20.c
 		set_country_flag = mutation_tradition_unlocked
 		add_tradition = tr_mutation_adopt # Mutation Tree
 	}
 	
 }
-#Fix leaders - add psionic, cyborg and erudite to leaders if you have them
-country_event = { 
+country_event = {
 	id = ascensions.2
 	title = ascensions.2.title
+	desc =  ascensions.2.desc
+	picture = GFX_evt_ancient_databank
 	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		every_owned_leader = {
-			limit = {
-				species = { has_trait = trait_cybernetic }
-				NOR = {
-					has_trait = leader_trait_cyborg
-					has_trait = leader_trait_curator
-				}
-			}
-			add_trait = leader_trait_cyborg
+
+	trigger = {
+		OR = {
+			has_biogenesis_dlc = yes
+			has_machine_age_dlc = yes
 		}
-		every_owned_leader = {
-			limit = {
-				species = { has_trait = trait_erudite }
-				NOR = {
-					has_trait = leader_trait_erudite
-					has_trait = leader_trait_curator
-				}
-			}
-			add_trait = leader_trait_erudite
+		is_gestalt = no
+	}
+
+	option = {
+		name = ascensions.2.no.change
+		default_hide_option = yes
+	}
+
+	option = {
+		name = ascensions.2.default.government
+		aap_remove_government_flags = yes
+		advanced_authority_refresh = yes
+	}
+
+	option = {
+		trigger = { has_tradition = tr_cybernetics_finish }
+		name = ascensions.2.cyber
+		aap_remove_government_flags = yes
+		hidden_effect = {
+			country_event = { id = cyber.1505 }
 		}
-		every_owned_leader = {
-			limit = {
-				OR = {
-					species = { has_trait = trait_psionic }
-					# catcher because the psionic ascension does not go thorugh and modify leader species.
-					AND = {
-						species = { 
-							is_same_species = root 
-							NOT = { has_trait = trait_mechanical }
-						}
-						root = {
-							has_tradition = tr_psionics_psionic_assimilation
-						}
-					}
-				}
-				NOT = {
-					has_trait =	leader_trait_psionic
-				}
-			}
-			add_trait = leader_trait_psionic
+	}
+
+
+	option = {
+		trigger = { has_tradition = tr_cloning_finish }
+		name = ascensions.2.cloning
+		aap_remove_government_flags = yes
+		hidden_effect = {
+			country_event = { id = bio.175 }
 		}
+	}
+
+	option = {
+		trigger = { has_tradition = tr_mutation_finish }
+		name = ascensions.2.mutation
+		aap_remove_government_flags = yes
+		hidden_effect = {
+			country_event = { id = bio.180 }
+		}
+	}
+
+	option = {
+		trigger =  { has_tradition = tr_purity_finish }
+		name = ascensions.2.purity
+		aap_remove_government_flags = yes
+		hidden_effect = {
+			country_event = { id = bio.170 } 
+		}	
 	}
 }

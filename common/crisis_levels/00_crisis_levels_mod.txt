@@ -1,0 +1,37 @@
+crisis_cosmogenesis_level_5 = {
+	# REQUIREMENTS
+	allow = {
+		custom_tooltip = {
+			success_text =	cosmogenesis_level_5_req_clear_tooltip
+			fail_text =	cosmogenesis_level_5_req_tooltip
+			has_technology = tech_cosmogenesis_crisis_4
+		}
+		custom_tooltip = {
+			success_text =	cosmogenesis_level_5_req_clear_tooltip_2
+			fail_text =	cosmogenesis_level_5_req_tooltip_2
+			check_variable = {
+				which = applied_infinity_thesis
+				value >= 2
+			}
+		}
+		is_subject = no
+	}
+	required_crisis_currency = 45000
+
+	# REWARDS
+	perks = {
+		menp_cosmo_features_5
+		menp_cosmo_buildings_5
+		menp_cosmo_techs_5
+		menp_cosmo_synth_queen_5
+	}
+
+	on_unlock = {
+		add_cosmogenesis_level_5_perks = yes
+		hidden_effect = {
+			owner = {
+				country_event = { id = crisis.7120 }
+			}
+		}
+	}
+}

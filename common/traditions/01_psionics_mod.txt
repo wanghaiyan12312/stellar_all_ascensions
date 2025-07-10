@@ -1,0 +1,35 @@
+tr_psionics_finish = {
+	on_enabled = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = has_shroud_patron
+					NOT = {
+						has_country_flag = covenant_end_of_the_cycle
+					}
+				}
+				country_event = { id = utopia.2658 days = 360 }
+				set_country_flag = confirmation_incoming
+			}
+			if = {
+				limit = {
+					any_planet_within_border = {
+						has_planet_flag = fotd_seperatist_planet@root
+						owner = {
+							has_country_flag = fotd_seperatist_country@root
+						}
+					}
+				}
+				country_event = { id = origin.6110 days = 5 random = 2 }
+			}
+			
+			luminary_speech_effect = yes
+		}
+		add_research_option = tech_psionic_barrier
+	}
+	modifier = {
+		edicts_upkeep_mult = -0.1
+		shroud_delve_cooldown = -0.2
+		ascension_perks_add = 1
+	}
+}

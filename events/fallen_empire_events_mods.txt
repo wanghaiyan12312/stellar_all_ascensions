@@ -1,0 +1,125 @@
+##################################
+#
+# Fallen Empire Events
+# Written by Martin Anward et al.
+#
+##################################
+
+namespace = fallen_empires_mod
+
+# Fallen Empire gets some fleet back
+situation_event = {
+	id = fallen_empires_mod.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			is_country_type = awakened_fallen_empire
+			NOT = { has_country_flag = fallen_empires_not_need_enforce_mod }
+			is_at_war = no
+			fleet_power < 1200000000
+			fleet_size < 15000 
+		}
+	}
+
+	immediate = {
+		owner = {
+			export_trigger_value_to_variable = {
+				trigger = is_difficulty
+				variable = difficulty_value_fallen_empire_mod
+			}
+			switch = {
+				trigger = is_difficulty
+				0 = {	# Civilian
+					set_timed_country_flag = { flag = fallen_empires_not_need_enforce_mod days = -1 }
+				}
+				1 = {	# Cadet
+					set_timed_country_flag = { 
+						flag = fallen_empires_not_need_enforce_mod 
+						days = @fallen_empire_enforce_power_cadet_gap 
+					}
+				}
+				2 = {	# Ensign
+					set_timed_country_flag = { 
+						flag = fallen_empires_not_need_enforce_mod 
+						days = @fallen_empire_enforce_power_ensign_gap 
+					}
+				}
+				3 = {	# Captain
+					set_timed_country_flag = { 
+						flag = fallen_empires_not_need_enforce_mod 
+						days = @fallen_empire_enforce_power_captain_gap 
+					}
+				}
+				4 = {	# Commodore
+					set_timed_country_flag = { 
+						flag = fallen_empires_not_need_enforce_mod 
+						days = @fallen_empire_enforce_power_commodore_gap  
+					}
+				}
+				5 = {	# Admiral
+					set_timed_country_flag = { 
+						flag = fallen_empires_not_need_enforce_mod 
+						days = @fallen_empire_enforce_power_admiral_gap   
+					}
+				}
+				6 = {	# Grand Admiral
+					set_timed_country_flag = { 
+						flag = fallen_empires_not_need_enforce_mod 
+						days = @fallen_empire_enforce_power_grand_admiral_gap  
+					}
+				}
+			}
+			export_trigger_value_to_variable = {
+				trigger = fleet_power
+				variable = fallen_empire_fleet_power_mod
+			}
+			set_variable = { 
+			 	which = fallen_empire_enforce_power 
+			 	value = @fallen_empire_base_enforce_power 
+			}
+			multiply_variable = {
+			 	which = fallen_empire_enforce_power
+			 	value = difficulty_value_fallen_empire_mod
+			}
+			if = {
+			 	limit = {
+					check_variable = {
+						which = fallen_empire_fleet_power_mod
+						value < fallen_empire_enforce_power
+					}
+			 	}
+				## to do may have priority to enforce titan ?
+				## this will great improve difficulty
+				while = {
+					count = difficulty_value_fallen_empire_mod
+					create_fallen_empire_reinforcements_mod = yes	 
+				}
+			}			 			
+			add_awakened_fallen_empire_resources_mod = yes
+			clear_variable = difficulty_value_fallen_empire_mod
+			clear_variable = fallen_empire_fleet_power_mod
+		}
+	}
+}
+
+country_event = {
+	id = fallen_empires_mod.2
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_country_type = fallen_empire
+	}
+
+	immediate = {
+		add_modifier = { 
+			modifier = ship_damage_mult
+			multiplier = value:get_crisis_strength			
+		}
+	}
+}
+
+

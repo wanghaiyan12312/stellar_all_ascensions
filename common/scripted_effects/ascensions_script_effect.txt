@@ -1,0 +1,191 @@
+## fix compatible between cyber and psionic
+####
+create_cyber_species_effect = {
+	species = {
+		modify_species = {
+			effect = {
+				create_species = {
+					is_mod = yes
+					name = this
+					plural = this
+					class = this
+					portrait = this
+					traits = this
+					can_be_modified = this
+					homeworld = this
+					namelist = this
+					gender = this
+					traits = {
+						ideal_planet_class = this
+					}
+				}
+				last_created_species = {
+					change_species_characteristics = {
+						add_trait = trait_cybernetic
+					}
+
+					save_global_event_target_as = cyberspecies@prev
+				}
+			}
+		}
+	}
+}
+
+create_cyber_creed_species_effect = {
+	species = {
+		modify_species = {
+			effect = {
+				create_species = {
+					is_mod = yes
+					name = this
+					plural = this
+					class = this
+					portrait = this
+					traits = this
+					can_be_modified = this
+					homeworld = this
+					namelist = this
+					gender = this
+					traits = {
+						ideal_planet_class = this
+					}
+				}
+				last_created_species = {
+					change_species_characteristics = {
+						remove_trait = trait_cyborg_creed_of_construction
+						remove_trait = trait_cyborg_creed_of_war
+						remove_trait = trait_cyborg_creed_of_research
+						remove_trait = trait_cyborg_creed_of_labor
+						remove_trait = trait_cyborg_ritualistic_implants
+						add_trait = trait_cybernetic
+					}
+
+					save_global_event_target_as = cybercreedspecies@root.owner
+				}
+			}
+		}
+	}
+}
+
+# Requires: event_target:changing_species and event_target:cyberspecies@species
+cyberize_leaders_effect = {
+	every_owned_leader = {
+		limit = {
+			exists = event_target:cyberspecies@species
+			exists = event_target:changing_species
+			is_exact_same_species = event_target:changing_species
+			NOR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_limited_cyborg
+			}
+			OR = {
+				is_spiritualist = no
+				owner = { has_country_flag = cyber_force_objectors }
+			}
+		}
+		change_species = event_target:cyberspecies@species
+		add_trait = {
+			trait = leader_trait_cyborg
+			show_message = no
+		}
+	}
+	every_pool_leader = {
+		limit = {
+			exists = event_target:cyberspecies@species
+			exists = event_target:changing_species
+			is_exact_same_species = event_target:changing_species
+			NOR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_limited_cyborg
+			}
+			OR = {
+				is_spiritualist = no
+				owner = { has_country_flag = cyber_force_objectors }
+			}
+		}
+		change_species = event_target:cyberspecies@species
+		add_trait = {
+			trait = leader_trait_cyborg
+			show_message = no
+		}
+	}
+	update_node_portraits_if_gestalt_effect = yes
+}
+
+# Requires: event_target:changing_species and event_target:cyberspecies@species
+cyberize_leaders_limited_effect = {
+	every_owned_leader = {
+		limit = {
+			exists = event_target:cyberspecies@species
+			exists = event_target:changing_species
+			is_exact_same_species = event_target:changing_species
+			NOR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_limited_cyborg
+			}
+			is_spiritualist = yes
+		}
+		change_species = event_target:cyberspecies@species
+		add_trait = {
+			trait = leader_trait_limited_cyborg
+			show_message = no
+		}
+	}
+	every_pool_leader = {
+		limit = {
+			exists = event_target:cyberspecies@species
+			exists = event_target:changing_species
+			is_exact_same_species = event_target:changing_species
+			NOR = {
+				has_trait = leader_trait_cyborg
+				has_trait = leader_trait_limited_cyborg
+			}
+			is_spiritualist = yes
+		}
+		change_species = event_target:cyberspecies@species
+		add_trait = {
+			trait = leader_trait_limited_cyborg
+			show_message = no
+		}
+	}
+}
+####
+# remove the advance government
+aap_remove_government_flags = {
+	remove_country_flag = cyber_individualist
+	remove_country_flag = cyber_collectivist
+	remove_country_flag = bio_cloning
+	remove_country_flag = bio_mutation
+	remove_country_flag = bio_purity
+}
+
+# remove all repeatable phy tech allow flag 
+auto_tech_remove_all_phy_flag = {
+	remove_country_flag = energy_fire_rate_allow
+	remove_country_flag = energy_damage_allow
+	remove_country_flag = energy_output_allow
+	remove_country_flag = shield_output_allow
+}
+
+# remove all repeatable soc tech allow flag 
+auto_tech_remove_all_soc_flag = {
+	remove_country_flag = strike_craft_fire_rate_allow
+	remove_country_flag = strike_craft_fire_damage_allow
+	remove_country_flag = army_health_allow
+	remove_country_flag = army_damage_allow
+	remove_country_flag = food_output_allow
+	remove_country_flag = core_system_cap_allow
+	remove_country_flag = leader_life_span_allow
+}
+
+# remove all repeatable eng tech allow flag 
+auto_tech_remove_all_eng_flag = {
+	remove_country_flag = kinetic_fire_rate_allow
+	remove_country_flag = kinetic_damage_allow
+	remove_country_flag = explosive_fire_rate_allow
+	remove_country_flag = explosive_damage_allow
+	remove_country_flag = military_station_health_allow
+	remove_country_flag = military_station_damage_allow
+	remove_country_flag = mineral_output_allow
+	remove_country_flag = armor_output_allow
+}

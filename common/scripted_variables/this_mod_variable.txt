@@ -1,0 +1,16 @@
+@fallen_empire_base_enforce_power = 200000000 #300m base MAX 1500000000
+@fallen_empire_enforce_power_grand_admiral_gap = 90 
+@fallen_empire_enforce_power_admiral_gap = 180 
+@fallen_empire_enforce_power_commodore_gap = 180 
+@fallen_empire_enforce_power_captain_gap = 360 
+@fallen_empire_enforce_power_ensign_gap = 360 
+@fallen_empire_enforce_power_cadet_gap = 360 
+
+@hive_fallen_empire_stinger = 3
+@hive_fallen_empire_mauler = 3
+@hive_fallen_empire_harbinger = 3
+
+@fallen_empire_titan = 1
+@fallen_empire_battlecruise = 4
+@fallen_empire_escort = 4
+

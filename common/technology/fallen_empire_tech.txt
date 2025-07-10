@@ -1,0 +1,328 @@
+tech_fallen_empire_military_theory = {
+    area = society
+    cost = 0
+    tier = 0
+    start_tech = yes
+    category = { military_theory }
+    weight = 0
+    is_rare = yes
+    icon = tech_interstellar_fleet_traditions
+    potential = {
+        OR = {
+            is_country_type = awakened_fallen_empire
+            is_country_type = fallen_empire
+        }
+    }
+    modifier = {
+        species_leader_exp_gain = 10.0
+        command_limit_add = 250
+        country_naval_cap_add = 99999
+        army_starting_experience_add = 1000000
+		ship_starting_experience_add = 1000000
+    }
+    weight_modifier = {
+         factor = 0
+    }
+    ai_weight = {
+        factor = 200
+    }
+}
+
+tech_fallen_empire_crisie_handle = {
+    area = physics
+    cost = 0
+    tier = 0
+    start_tech = yes
+    category = { computing }
+    weight = 0
+    is_rare = yes
+    icon = tech_akx_worm_2
+    potential = {
+        OR = {
+            is_country_type = awakened_fallen_empire
+            is_country_type = fallen_empire
+        }
+    }
+    modifier = {
+		all_technology_research_speed = 10.00
+        damage_vs_country_type_synth_queen_mult = 5
+		damage_vs_country_type_awakened_synth_queen_mult = 5
+		damage_vs_country_type_synth_queen_convoys_mult = 5
+		damage_vs_country_type_synth_queen_outposts_mult = 5
+		damage_vs_country_type_swarm_mult = 5
+		damage_vs_country_type_extradimensional_mult = 5
+		damage_vs_country_type_extradimensional_2_mult = 5
+		damage_vs_country_type_extradimensional_3_mult = 5
+		damage_vs_country_type_gray_goo_mult = 5
+    }
+    weight_modifier = {
+         factor = 0
+    }
+    ai_weight = {
+        factor = 200
+    }
+}
+
+tech_fallen_empire_voidcraft = {
+    area = engineering
+    cost = 0
+    tier = 0
+    start_tech = yes
+    category = { voidcraft }
+    weight = 0
+    is_rare = yes
+    icon = tech_mega_engineering
+    potential = {
+        OR = {
+            is_country_type = awakened_fallen_empire
+            is_country_type = fallen_empire
+        }
+    }
+    modifier = {
+		shipclass_military_build_speed_mult = 10
+		shipclass_military_special_build_speed_mult = 10
+		shipclass_military_station_build_speed_mult = 10
+		starbases_upkeep_mult = -1.00
+		starbase_upgrade_speed_mult = 5
+        planet_building_build_speed_mult = 5
+		planet_army_build_speed_mult = 5
+		ships_upkeep_mult = -1.00
+        starbase_building_build_speed_mult = 5
+        starbase_module_build_speed_mult = 5
+        megastructure_build_speed_mult = 15.00
+    }
+    weight_modifier = {
+         factor = 0
+    }
+    ai_weight = {
+        factor = 200
+    }
+}
+
+tech_fallen_empire_job_efficient = {
+    area = 	society
+    cost = 0
+    tier = 0
+    start_tech = yes
+    category = { statecraft }
+    weight = 0
+    is_rare = yes
+    icon = tech_manifest_destiny
+    potential = {
+        OR = {
+            is_country_type = awakened_fallen_empire
+            is_country_type = fallen_empire
+        }
+    }
+    modifier = {
+        country_produces_mult = 5
+        pop_happiness = 1
+        planet_jobs_upkeep_mult = -5
+        country_border_friction_mult = -1
+        planet_stability_add = 100
+        planet_housing_add = 1000
+        planet_crime_add = -1000
+        country_resource_max_add = 500000000
+    }
+    weight_modifier = {
+         factor = 0
+    }
+    ai_weight = {
+        factor = 200
+    }
+}
+
+tech_repeatable_command_limit = {
+	area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { military_theory }
+	levels = 5
+	prerequisites = { "tech_doctrine_fleet_size_5" }
+	weight = @repeatableTechWeight
+
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+
+	ai_weight = {
+		factor = 1.0
+	}
+
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+
+	modifier = {
+		command_limit_add = 50
+	}
+}
+
+
+tech_cosmogenesis_thesis = {
+    area = physics
+    cost = 75000
+    cost_per_level = @fallentechcost
+    tier = 4
+    category = { computing }
+    levels = 2
+    is_dangerous = yes
+    weight = @repeatableTechWeight
+
+    potential = {
+        has_machine_age_dlc = yes
+        has_ascension_perk = ap_cosmogenesis
+    }
+
+    weight_modifier = {
+        modifier = {
+            factor = 0
+            NOT = { has_crisis_level = crisis_cosmogenesis_level_4 }
+        }
+    }
+
+    weight_modifier = {
+        modifier = {
+            factor = 5
+            has_technology = tech_cosmogenesis_crisis_3
+        }
+    }
+
+    prereqfor_desc = {
+        custom = {
+            title = cosmogenesis_thesis_tech_title
+            desc = cosmogenesis_thesis_tech_desc
+        }
+    }
+}
+
+tech_synth_queen_knowledge = {
+    area = physics
+    tier = 5
+    cost = @tier5cost1
+    category = { computing }
+    is_rare = yes
+    weight = @tier5weight1
+
+    potential = {
+		OR ={
+			AND = {
+				has_machine_age_dlc = yes
+        		has_country_flag = synth_queen_knowledge
+			}
+			AND = {
+				has_ascension_perk = ap_cosmogenesis
+				has_crisis_level = crisis_cosmogenesis_level_5
+			}
+		}
+        
+    }
+
+    modifier = {
+        all_technology_research_speed = 0.2
+    }
+}
+
+tech_synth_queen_titan = {
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+    cost = @tier5cost1
+    is_rare = yes
+	icon = tech_synth_queen_knowledge
+    weight = @tier5weight1
+	prerequisites = { 
+		"tech_titans"
+		"tech_colossus"
+		"tech_juggernaut"
+	}
+
+    potential = {
+		has_crisis_level = crisis_cosmogenesis_level_5
+		has_ascension_perk = ap_cosmogenesis
+		has_country_flag = colossus_project
+		country_uses_bio_ships = no
+    }
+	
+}
+
+tech_strike_craft_skrand = {
+	cost = @tier4cost3
+	area = engineering
+	is_rare = yes
+	tier = 5
+	ai_update_type = military
+	category = { voidcraft }
+	prerequisites = { "tech_strike_craft_3" }
+	weight = @tier5weight1
+
+	technology_swap = {
+		name = tech_bio_strike_craft_skrand
+		inherit_icon = no
+		inherit_effects = yes
+		trigger = {
+			country_uses_bio_ships = yes
+		}
+		area = society
+		category = { biology }
+		weight = {
+			factor = 1
+		}
+	}
+
+	## unlock unique strike craft component from Skrand storyline
+	potential = {
+		has_paragon_dlc = yes
+	}
+
+	weight_modifier = {
+	}
+
+	ai_weight = {
+		base = 100
+	}
+}
+
+# Swarm Scourge Missiles
+tech_scourge_missile_1 = {
+	area = society
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes
+	category = { biology }
+    prerequisites = { "tech_torpedoes_3" }
+	ai_update_type = military
+	weight = @tier5weight1
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+tech_nanite_repair_system_synth_queen = {
+    area = engineering
+    cost = @tier5cost3
+    tier = 5
+    category = { materials }
+    ai_update_type = all
+    is_rare = yes
+    weight = @tier5weight1
+	prerequisites = { 
+		"tech_synth_queen_knowledge"
+	}
+
+    potential = {
+        has_machine_age_dlc = yes
+    }
+}

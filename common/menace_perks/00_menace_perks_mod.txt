@@ -1,0 +1,7 @@
+menp_cosmo_synth_queen_5 = {
+	portrait = "GFX_crisis_icon_stareater"
+
+	on_unlock = {
+		custom_tooltip = menp_cosmo_synth_queen_5_tt
+	}
+}

@@ -1,0 +1,67 @@
+# Monthly Technological Progress of pre-FTL civilizations.
+@early_progress_rate	= 1		# 160 years to tech up.
+@mid_progress_rate		= 2		# 80 years to tech up.
+@late_progress_rate		= 4		# 40 years to tech up.
+@low_awareness			= 0.5
+@partial_awareness		= 1.0
+@high_awareness			= 1.5
+@full_awareness			= 2
+
+
+##################################
+# Fallen Empires
+##################################
+
+fallen_empires_situation = {
+	picture = GFX_evt_fallen_empire
+	complete_icon_frame = GFX_situation_outcome_frame_blue
+	complete_icon = GFX_situation_outcome_meh
+	on_progress_complete = {
+	}
+	on_fail = {
+		log_error = "fallen_empires_situation situation failed, this is not meant to happen"
+		destroy_situation = this
+	}
+	on_monthly = {
+		random_events = {
+			## 50 = fallen_empires.1 # Fallen Empire gets some fleet back (previously: MTTH 1 month)
+			50 = fallen_empires.3 # Fallen Empire sends a warning (previously: MTTH 1 month)
+			15 = fallen_empires.10 # Fallen Empire establishes communications (previously: MTTH 3 month)
+			50 = fallen_empires.11 # Fallen Empire gets a construction ship if it's lost all construction ships (previously: MTTH 1 month)
+		}
+		events = {
+			fallen_empires_mod.1
+		}
+	}
+	stages = {
+		high_level = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 100
+		}
+	}
+	monthly_progress = {
+		base = 0
+	}
+	approach = { # The player will never see this Situation. Just adding one in in case one is required
+		name = approach_revolt_do_nothing
+		icon = GFX_situation_approach_this_is_fine
+		icon_background = GFX_situation_approach_bg_yellow
+		default = yes
+		on_select = {
+			custom_tooltip = deficit_approach_do_nothing_tooltip
+		}
+	}
+
+	abort_trigger = {
+		OR = {
+			NOT = { exists = root.owner }
+			root.owner = {
+				NOR = {
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+			}
+		}
+	}
+}

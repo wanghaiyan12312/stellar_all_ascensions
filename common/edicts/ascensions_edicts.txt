@@ -26,7 +26,34 @@ aap_more_genetic_ascension = {
     ai_weight = { weight = 0 }
 }
 
-aap_fix_leader_trait = {
+aap_change_government = {
+    icon = "GFX_edict_type_policy"
+    length = 1
+    resources = {
+        category = edicts
+        cost = { influence = 1 }
+    }
+
+    potential = {
+        OR = {
+            has_biogenesis_dlc = yes
+            has_machine_age_dlc = yes
+            is_gestalt = no
+        }
+        OR = {
+            has_tradition = tr_cybernetics_finish
+            has_tradition = tr_cloning_finish
+            has_tradition = tr_mutation_finish
+            has_tradition = tr_purity_finish
+        }
+    }
+
+    effect = { country_event = { id = ascensions.2 } }
+
+    ai_weight = { weight = 0 }
+}
+
+app_auto_tech = {
     icon = "GFX_edict_type_policy"
     length = 1
 	resources = {
@@ -35,17 +62,12 @@ aap_fix_leader_trait = {
 	}
 
     potential = {
-		is_machine_empire = no
-        num_ascension_perks > 2
-        OR = {
-            has_ascension_perk = ap_the_flesh_is_weak
-            has_ascension_perk = ap_mind_over_matter
-            has_ascension_perk = ap_engineered_evolution
-        }
+        always = yes
     }
-    effect = { country_event = { id = ascensions.2 } }
 
-	ai_weight = { weight = 0 }
+    effect = { country_event = { id = auto_tech.1 } }
+
+    ai_weight = { weight = 0 }
 }
 
 astral_shielding = {

@@ -54,3 +54,12 @@ can_do_advanced_robo_modding = {
 		}
 	}
 }
+
+can_think = {
+	NOR = {
+		has_trait = trait_nerve_stapled
+		has_trait = trait_zombie
+		has_trait = trait_robot_suppressed
+		has_trait = trait_cybernetic_suppressed
+	}
+}

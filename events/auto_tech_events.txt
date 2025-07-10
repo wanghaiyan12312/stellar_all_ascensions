@@ -1,0 +1,238 @@
+namespace = auto_tech
+
+country_event = {
+	id = auto_tech.1
+	title = auto_tech.1.title
+	desc = {
+		text = auto_tech.1.desc
+	}
+
+	picture = GFX_evt_ancient_databank
+	show_sound = event_alien_nature
+	is_triggered_only = yes
+
+	option = {
+		name = auto_tech.1.phy
+		hidden_effect = {
+			country_event = { id = auto_tech.2 }
+		}
+	}
+	option = {
+		name = auto_tech.1.soc
+		hidden_effect = {
+			country_event = { id = auto_tech.3 }
+		}
+
+	}
+	option = {
+		name = auto_tech.1.eng
+		hidden_effect = {
+			country_event = { id = auto_tech.4 }
+		}
+	}
+	option = {
+		name = auto_tech.1.back
+		default_hide_option = yes
+		hidden_effect = {
+			auto_tech_remove_all_phy_flag = yes
+			auto_tech_remove_all_soc_flag = yes
+			auto_tech_remove_all_eng_flag = yes
+		}
+	}
+}
+
+## phy
+country_event = {
+	id = auto_tech.2
+	title = auto_tech.2.title
+	desc = {
+		text = auto_tech.2.desc
+	}
+
+	picture = GFX_evt_ancient_databank
+	show_sound = event_alien_nature
+	is_triggered_only = yes
+
+	option = {
+		name = auto_tech.2.energy_fire_rate
+		hidden_effect = {
+			auto_tech_remove_all_phy_flag = yes
+			set_country_flag = energy_fire_rate_allow
+		}
+
+	}
+	option = {
+		name = auto_tech.2.energy_damage
+		hidden_effect = {
+			auto_tech_remove_all_phy_flag = yes
+			set_country_flag = energy_damage_allow
+		}
+	}
+	option = {
+		name = auto_tech.2.energy_output
+		hidden_effect = {
+			auto_tech_remove_all_phy_flag = yes
+			set_country_flag = energy_output_allow
+		}
+	}
+	option = {
+		name = auto_tech.2.shield_output
+		hidden_effect = {
+			auto_tech_remove_all_phy_flag = yes
+			set_country_flag = shield_output_allow
+		}
+	}
+	option = {
+		name = auto_tech.2.back
+		auto_tech_remove_all_phy_flag = yes
+		default_hide_option = yes
+	}
+
+}
+
+## soc
+country_event = {
+	id = auto_tech.3
+	title = auto_tech.3.title
+	desc = {
+		text = auto_tech.3.desc
+	}
+
+	picture = GFX_evt_ancient_databank
+	show_sound = event_alien_nature
+	is_triggered_only = yes
+
+	option = {
+		name = auto_tech.3.strike_craft_fire_rate
+		hidden_effect = {
+			auto_tech_remove_all_soc_flag = yes
+			set_country_flag = strike_craft_fire_rate_allow
+		}
+
+	}
+	option = {
+		name = auto_tech.3.strike_craft_fire_damage
+		hidden_effect = {
+			auto_tech_remove_all_soc_flag = yes
+			set_country_flag = strike_craft_fire_damage_allow
+		}
+	}
+	option = {
+		name = auto_tech.3.army_health
+		hidden_effect = {
+			auto_tech_remove_all_soc_flag = yes
+			set_country_flag = army_health_allow
+		}
+	}
+	option = {
+		name = auto_tech.3.army_damage
+		hidden_effect = {
+			auto_tech_remove_all_soc_flag = yes
+			set_country_flag = army_damage_allow
+		}
+	}
+	option = {
+		name = auto_tech.3.food_output
+		hidden_effect = {
+			auto_tech_remove_all_soc_flag = yes
+			set_country_flag = food_output_allow
+		}
+	}
+	option = {
+		name = auto_tech.3.core_system_cap
+		hidden_effect = {
+			auto_tech_remove_all_soc_flag = yes
+			set_country_flag = core_system_cap_allow
+		}
+	}
+	option = {
+		name = auto_tech.3.leader_life_span
+		hidden_effect = {
+			auto_tech_remove_all_soc_flag = yes
+			set_country_flag = leader_life_span_allow
+		}
+	}
+	option = {
+		name = auto_tech.3.back
+		auto_tech_remove_all_soc_flag = yes
+		default_hide_option = yes
+	}
+
+}
+
+## eng
+country_event = {
+	id = auto_tech.4
+	title = auto_tech.4.title
+	desc = {
+		text = auto_tech.4.desc
+	}
+
+	picture = GFX_evt_ancient_databank
+	show_sound = event_alien_nature
+	is_triggered_only = yes
+
+	option = {
+		name = auto_tech.4.kinetic_fire_rate
+		hidden_effect = {
+			auto_tech_remove_all_eng_flag = yes
+			set_country_flag = kinetic_fire_rate_allow
+		}
+
+	}
+	option = {
+		name = auto_tech.4.kinetic_damage
+		hidden_effect = {
+			auto_tech_remove_all_eng_flag = yes
+			set_country_flag = kinetic_damage_allow
+		}
+	}
+	option = {
+		name = auto_tech.4.explosive_fire_rate
+		hidden_effect = {
+			auto_tech_remove_all_eng_flag = yes
+			set_country_flag = explosive_fire_rate_allow
+		}
+	}
+	option = {
+		name = auto_tech.4.explosive_damage
+		hidden_effect = {
+			auto_tech_remove_all_eng_flag = yes
+			set_country_flag = explosive_damage_allow
+		}
+	}
+	option = {
+		name = auto_tech.4.military_station_health
+		hidden_effect = {
+			auto_tech_remove_all_eng_flag = yes
+			set_country_flag = military_station_health_allow
+		}
+	}
+	option = {
+		name = auto_tech.4.military_station_damage
+		hidden_effect = {
+			auto_tech_remove_all_eng_flag = yes
+			set_country_flag = military_station_damage_allow
+		}
+	}
+	option = {
+		name = auto_tech.4.mineral_output
+		hidden_effect = {
+			auto_tech_remove_all_eng_flag = yes
+			set_country_flag = mineral_output_allow
+		}
+	}
+	option = {
+		name = auto_tech.4.armor_output
+		hidden_effect = {
+			auto_tech_remove_all_eng_flag = yes
+			set_country_flag = armor_output_allow
+		}
+	}
+	option = {
+		name = auto_tech.4.back
+		auto_tech_remove_all_eng_flag = yes
+		default_hide_option = yes
+	}
+
+}

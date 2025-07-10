@@ -1,0 +1,11 @@
+get_crisis_strength = {
+    base = 1
+    complex_trigger_modifier = {
+        trigger = check_galaxy_setup_value
+        trigger_scope = owner
+        parameters = {
+            setting = crisis_strength_scale
+        }
+        mode = mult
+    }
+}

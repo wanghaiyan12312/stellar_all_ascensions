@@ -1,0 +1,33 @@
+check_phy_auto_tech_flag = {
+	NOR = {
+		has_country_flag = energy_fire_rate_allow
+		has_country_flag = energy_damage_allow
+		has_country_flag = energy_output_allow
+		has_country_flag = shield_output_allow
+	}
+}
+
+check_soc_auto_tech_flag = {
+	NOR = {
+		has_country_flag = strike_craft_fire_rate_allow
+		has_country_flag = strike_craft_fire_damage_allow
+		has_country_flag = army_health_allow
+		has_country_flag = army_damage_allow
+		has_country_flag = food_output_allow
+		has_country_flag = core_system_cap_allow
+		has_country_flag = leader_life_span_allow
+	}
+}
+
+check_eng_auto_tech_flag = {
+	NOR = {
+		has_country_flag = kinetic_fire_rate_allow
+		has_country_flag = kinetic_damage_allow
+		has_country_flag = explosive_fire_rate_allow
+		has_country_flag = explosive_damage_allow
+		has_country_flag = military_station_health_allow
+		has_country_flag = military_station_damage_allow
+		has_country_flag = mineral_output_allow
+		has_country_flag = armor_output_allow
+	}
+}
