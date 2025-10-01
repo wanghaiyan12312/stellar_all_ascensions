@@ -18,8 +18,7 @@ situation_event = {
 			is_country_type = awakened_fallen_empire
 			NOT = { has_country_flag = fallen_empires_not_need_enforce_mod }
 			is_at_war = no
-			fleet_power < 1200000000
-			fleet_size < 15000 
+			fleet_power < 1500000000
 		}
 	}
 
@@ -71,10 +70,12 @@ situation_event = {
 					}
 				}
 			}
+			## 900m above negative
 			export_trigger_value_to_variable = {
 				trigger = fleet_power
 				variable = fallen_empire_fleet_power_mod
 			}
+			round_variable = fallen_empire_fleet_power_mod
 			set_variable = { 
 			 	which = fallen_empire_enforce_power 
 			 	value = @fallen_empire_base_enforce_power 
@@ -83,12 +84,17 @@ situation_event = {
 			 	which = fallen_empire_enforce_power
 			 	value = difficulty_value_fallen_empire_mod
 			}
+			divide_variable = {
+				which = fallen_empire_fleet_power_mod
+			 	value = 1000
+			}
+			round_variable = fallen_empire_fleet_power_mod
 			if = {
 			 	limit = {
 					check_variable = {
 						which = fallen_empire_fleet_power_mod
 						value < fallen_empire_enforce_power
-					}
+					}					
 			 	}
 				## to do may have priority to enforce titan ?
 				## this will great improve difficulty
@@ -99,6 +105,7 @@ situation_event = {
 			}			 			
 			add_awakened_fallen_empire_resources_mod = yes
 			clear_variable = difficulty_value_fallen_empire_mod
+			clear_variable = fallen_empire_enforce_power 
 			clear_variable = fallen_empire_fleet_power_mod
 		}
 	}

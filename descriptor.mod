@@ -1,8 +1,9 @@
-version="1"
+version="2.0"
 tags={
 	"Gameplay"
 	"Technologies"
 }
 name="More Ascsension Path and Dark Engine Trait for Cyber Species."
-supported_version="v4.0.*"
-remote_file_id="2958892660"
+picture="thumbnail.png"
+supported_version="v4.1.*"
+remote_file_id="3524132713"

@@ -5,7 +5,7 @@ country_event = {
 	title = ascensions.1.title
 	desc = {
 		exclusive_trigger = { num_tradition_categories < @max_tradition_trees }
-		text = ascensions.1.desc
+		text = ascensions.1.title
 	}
 	desc = {
 		exclusive_trigger = { num_tradition_categories >= @max_tradition_trees }
@@ -116,4 +116,44 @@ country_event = {
 			country_event = { id = bio.170 } 
 		}	
 	}
+
+	option = {
+		trigger =  { 
+			has_shroud_dlc = yes
+			NOR = {
+				has_origin = origin_endbringers
+			    has_covenant_with_end_of_the_cycle = yes
+			}
+			AND = {
+				has_country_flag = shroud_songs_rolled
+				has_country_flag = shroud_songs_started
+			}
+		}
+		name =  ascensions.2.transcendentpsionic
+		aap_remove_government_flags = yes
+		hidden_effect = {
+			country_event = { id = shroud.7120 } 
+		}	
+	}
+
+	option = {
+		trigger =  { 
+			has_shroud_dlc = yes
+			NOR = {
+				has_origin = origin_endbringers
+			    has_covenant_with_end_of_the_cycle = yes
+			}
+			AND = {
+				has_country_flag = shroud_songs_rolled
+				has_country_flag = shroud_songs_started
+			}
+		}
+		name =  ascensions.2.corporealpsionic
+		aap_remove_government_flags = yes
+		hidden_effect = {
+			country_event = { id = shroud.7121 } 
+		}	
+	}
+
+
 }

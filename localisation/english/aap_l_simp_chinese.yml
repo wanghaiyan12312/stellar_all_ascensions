@@ -24,7 +24,7 @@
 
  ap_synthetic_moduler_evolution:0 "模组合成时代"
  ap_synthetic_moduler_evolution_desc:0 "是时候提升我们机器人的性能了"
- ap_synthetic_moduler_evolution_tooltip:0 "$access_tradition_tree$['tradition_category:tradition_synthetics']\n$UNLOCKS_AGENDA$ $council_agenda_agenda_synthetic_evolution_name$，可解锁合成人科技研究选项。\n—$REQUIRES_TRADITION_SLOT$"
+ ap_synthetic_moduler_evolution_tooltip:0 "$access_tradition_tree$['tradition_category:tradition_modularity_age']\n$UNLOCKS_AGENDA$ $council_agenda_agenda_synthetic_moduler_evolution_name$，可解锁合成人科技研究选项。\n—$REQUIRES_TRADITION_SLOT$"
 
  tr_cloning_genomic_growth_mod: "染色体增长"
  tr_cloning_genomic_growth_mod_delayed: "我们的人口将通过先进的染色体克隆技术进行增长。"
@@ -81,9 +81,6 @@
  council_agenda_agenda_modularity_age_reshape_form_desc:0 "利用$sr_living_metal$重塑人口，进而提高维护效率并增强机器人的适应能力。"
  mod_planet_jobs_sr_living_metal_produces_mult:0 "£job£岗位产出的£sr_living_metal£$sr_living_metal$"
 
- leader_trait_chosen_mod_ascensions: "天选之人"
- leader_trait_chosen_mod_ascensions_desc: "这位领袖是天选之人，一个能操控不可思议的灵能力量的不朽者。"
-
  edict_aap_more_genetic_ascension: "选取更多基因飞升树"
  edict_aap_more_genetic_ascension_desc: "此法案给予玩家获取跟多基因飞升树的可能"
  ascensions.1.title:0 "选择你要增加的基因飞升树"
@@ -98,6 +95,8 @@
  ascensions.2.cloning: "克隆高级政体"
  ascensions.2.mutation: "突变高级政体"
  ascensions.2.purity: "纯净高级政体"
+ ascensions.2.corporealpsionic: "物质灵能高级政体"
+ ascensions.2.transcendentpsionic: "超凡的灵能高级政体"
 
  COSMO_CRISIS_BATTLECRUISER_4P1X2L4M: "炮击点防框架"
  COSMO_CRISIS_BATTLECRUISER_4P1X4G4M: "雷击点防框架"
@@ -123,6 +122,16 @@
  menp_cosmo_synth_queen_5: "合成女王"
  menp_cosmo_synth_queen_5_tt: "解锁§Y$synth_queen_knowledge$§!科技，带我们迈向目标。\n同时如果你拥有§Y$COLOSSUS_PROJECT$§!飞升并且拥有§Y$tech_juggernaut$§!科技,可以解锁§Y$tech_synth_queen_titan$§!科技建造合成女王的泰坦旗舰。\n"
  menp_cosmo_synth_queen_5_desc: "根据伟大先知扎克的传说记载，我们利用我们宇宙创生的科技去回溯了合成女王巅峰的科技时代这给予了我们伟大的知识以及建造女王泰坦旗舰的能力。"
+ shipeventmod.1.name: "天佑女王"
+ shipeventmod.1.desc: "巨大的女王泰坦的建造已经完成\n\n这艘行动自如的庞然巨舰将彻底改变进攻作战的范式。配他有足以摧枯拉朽的火力，以及一个可以毁灭行星的武器。让那些堕落帝国跪在他们新领主的脚下吧 .\n\n如今只有蠢货才会对抗[Owner.GetName]。"
+ shipeventmod.1.a: "前进，征服！"
+ #Queen's Titan BUILT EVENT - OTHER EMPIRES TEXT
+ shipeventmod.2.name: "女王的杀手锏"
+ shipeventmod.2.desc: "经确认，§H[From.Owner.GetName]§!已经完成了女王泰坦的建造。这艘行动自如的庞然巨舰将彻底改变进攻作战的范式。配他有足以摧枯拉朽的火力以及一个可以毁灭行星的武器，使其在任何作战场景下都是更严峻的威胁。\n\n这真的是太空战里的尖端军备。"
+ shipeventmod.2.a: "有点改变战争规则的意思了。"
+
+ queen_titan_build_trigger: "£trigger_no£ 女王泰坦只能在完全建造的巨型船坞里面建造。"
+
 
  edict_app_auto_tech: "激活自动科研研究选项"
  edict_app_auto_tech_desc: "你可以在所有的循环科研选择中选择一个你想要研究的科研选项并且隐藏其他的。"
@@ -168,3 +177,68 @@
  living_standard_psi_and_cyborg_assimilation_tooltip_delayed: "\n\n§Rmod方便同化灵能和义体特质$"
 
  MEGASTRUCTURE_TOOLTIP_REQUIREMENTS_MEGA_SHJPYARD_MOD: "本mod对巨型船坞没有数量限制。"
+
+ #LAGER FALLEN DEFFENCE STATION 
+ LAGER_FALLEN_STATION_POINT_REACTOR: "$ZERO_POINT_REACTOR$"
+ LAGER_FALLEN_STATION_DARK_MATTER_REACTOR: "$DARK_MATTER_REACTOR$"
+ LAGER_FALLEN_STATION_ZERO_POINT_REACTOR_DESC: "$ZERO_POINT_REACTOR_DESC$"
+ LAGER_FALLEN_STATION_DARK_MATTER_REACTOR_DESC: "$DARK_MATTER_REACTOR_DESC$"
+
+ military_station_small_fallen_empire_mod:0 "失落帝国轻防御平台"
+ military_station_small_fallen_empire_mod_cap:0 "$military_station_small_fallen_empire_mod$"
+ military_station_small_fallen_empire_mod_plural:0 "$military_station_small_fallen_empire_mod$"
+ military_station_large_fallen_empire_mod:0 "失落帝国重防御平台"
+ military_station_large_fallen_empire_mod_cap:0 "$military_station_large_fallen_empire_mod$"
+ military_station_large_fallen_empire_mod_plural:0 "$military_station_large_fallen_empire_mod$"
+
+ fallen_empire_station_large_mod:"防卫者核心"
+ fallen_empire_station_small_mod:"防卫者核心"
+
+ small_ship_synth_queen_mod: "$small_ship_synth_queen$"
+ small_ship_synth_queen_mod_cap: "$small_ship_synth_queen$"
+ small_ship_synth_queen_mod_plural: "$small_ship_synth_queen$s"
+ synth_queen_warship_small_mod: "炮击框架"
+
+ large_ship_synth_queen_mod: "$large_ship_synth_queen$"
+ large_ship_synth_queen_mod_cap: "$large_ship_synth_queen$"
+ large_ship_synth_queen_mod_plural: "$large_ship_synth_queen$"
+ synth_queen_warship_large_artillery_mod: "炮击框架"
+ synth_queen_warship_large_carrier_mod: "航母框架"
+
+ defense_platform_synth_queen_mod: "$defense_platform_synth_queen$"
+ defense_platform_synth_queen_mod_cap: "$defense_platform_synth_queen$"
+ defense_platform_synth_queen_mod_plural: "$defense_platform_synth_queen$"
+ synth_queen_defense_platform_section_mod: "女王之塔核心"
+
+ defense_platform_medium_synth_queen_mod: "女王之识"
+ defense_platform_medium_synth_queen_mod_cap: "女王之识"
+ defense_platform_medium_synth_queen_mod_plural: "女王之识"
+ synth_queen_medium_defense_platform_key: "女王之识核心"
+
+ defense_platform_large_synth_queen_mod: "女王之志"
+ defense_platform_large_synth_queen_mod_cap: "女王之志"
+ defense_platform_large_synth_queen_mod_plural: "女王之志"
+ synth_queen_large_defense_platform_key: "女王之志核心"
+
+ edict_app_get_greater_patron_roll:"寻找虚境当中强大的力量。"
+ edict_app_get_greater_patron_roll_desc:"寻找虚境当中强大的力量。"
+
+ leadershroud.legendary.hired: "这个传奇领袖已经被别的帝国雇佣"
+ leadershroud.hiredlegndaryleader: "尝试雇佣一个传奇领袖"
+ leadershroud.Upgradelegndaryleader: "尝试为传奇领袖寻找一个强大的虚境实体"
+ leadershroud.GetShroudEntitylegndaryleader: "尝试为强大的虚境实体塑造一个容器"
+ leadershroud.300.council_scientist: "尝试用强大的虚境实体塑造一个内阁科学家"
+ leadershroud.300.govern_scientist: "尝试用强大的虚境实体塑造一个产业科学家"
+ leadershroud.300.council_official: "尝试用强大的虚境实体塑造一个内阁行政官"
+ leadershroud.300.govern_official: "尝试用强大的虚境实体塑造一个产业行政官"
+ leadershroud.300.councilor_commander: "尝试用强大的虚境实体塑造一个内阁指挥官"
+ leadershroud.300.admiral_commander: "尝试用强大的虚境实体塑造一个舰队指挥官"
+
+ edict_app_get_legendary_shroud_leader: "在虚境重寻找强大的领袖"
+ edict_app_get_legendary_shroud_leader_desc:"在虚境重寻找强大的领袖"
+
+ council_agenda_agenda_synthetic_evolution_name: "$ap_synthetic_moduler_evolution$"
+ council_agenda_agenda_synthetic_evolution_desc: "$ap_synthetic_moduler_evolution_desc$"
+
+ council_agenda_agenda_synthetic_moduler_evolution_name: "$ap_synthetic_moduler_evolution$"
+ council_agenda_agenda_synthetic_moduler_evolution_desc: "$ap_synthetic_moduler_evolution_desc$"

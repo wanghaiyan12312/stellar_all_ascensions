@@ -239,6 +239,7 @@ tech_synth_queen_titan = {
 		"tech_titans"
 		"tech_colossus"
 		"tech_juggernaut"
+        "tech_synth_queen_knowledge"
 	}
 
     potential = {

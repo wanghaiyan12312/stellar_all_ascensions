@@ -8,7 +8,10 @@ living_standard_psi_and_cyborg_assimilation = {
 		has_utopia = yes
 		exists = from
 		from = {
-			has_tradition = tr_psionics_psionic_assimilation
+			OR = {
+				has_tradition = tr_psionics_shroud_great_awakening
+				has_tradition = tr_psionics_psionic_assimilation
+			}
 			has_tradition = tr_cybernetics_transubstantiation_synthesis
 		}
 		NOR = {
@@ -81,7 +84,8 @@ living_standard_cyborg_ego_assimilation = {
 					}
 				}
 			}
-			NOT = {
+			NOR = {
+				has_tradition = tr_psionics_shroud_great_awakening
 				has_tradition = tr_psionics_psionic_assimilation
 			}
 		}
@@ -148,7 +152,8 @@ living_standard_cyborg_ego_assimilation_psionic = {
 					}
 				}
 			}
-			NOT = {
+			NOR = {
+				has_tradition = tr_psionics_shroud_great_awakening
 				has_tradition = tr_psionics_psionic_assimilation
 			}
 		}
@@ -192,7 +197,8 @@ living_standard_cyborg_assimilation = {
 				is_hive_empire = no
 				has_tradition = tr_cybernetics_transubstantiation_synthesis
 			}
-			NOT = {
+			NOR = {
+				has_tradition = tr_psionics_shroud_great_awakening
 				has_tradition = tr_psionics_psionic_assimilation
 			}
 		}
@@ -238,7 +244,8 @@ living_standard_cyborg_assimilation_psionic = {
 				is_hive_empire = no
 				has_tradition = tr_cybernetics_transubstantiation_synthesis
 			}
-			NOT = {
+			NOR = {
+				has_tradition = tr_psionics_shroud_great_awakening
 				has_tradition = tr_psionics_psionic_assimilation
 			}
 		}
@@ -270,7 +277,10 @@ living_standard_psi_assimilation = {
 		NOT = { has_trait = trait_cybernetic }
 		exists = from
 		from = {
-			has_tradition = tr_psionics_psionic_assimilation
+			OR = {
+				has_tradition = tr_psionics_shroud_great_awakening
+				has_tradition = tr_psionics_psionic_assimilation
+			}
 			NOT = {
 				has_tradition = tr_cybernetics_transubstantiation_synthesis
 			}
@@ -303,7 +313,10 @@ living_standard_psi_assimilation_cyborg = {
 		has_trait = trait_cybernetic
 		exists = from
 		from = {
-			has_tradition = tr_psionics_psionic_assimilation
+			OR = {
+				has_tradition = tr_psionics_shroud_great_awakening
+				has_tradition = tr_psionics_psionic_assimilation
+			}
 			NOT = {
 				has_tradition = tr_cybernetics_transubstantiation_synthesis
 			}

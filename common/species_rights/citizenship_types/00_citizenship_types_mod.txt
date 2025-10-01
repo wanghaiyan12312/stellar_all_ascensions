@@ -54,17 +54,10 @@ citizenship_assimilation = {
 					}
 				}
 				AND = {
-					OR = {
-						AND = {
-							# non-devouring hive mind
-							is_hive_empire = yes
-							NOT = { has_civic = civic_hive_devouring_swarm }
-						}
-						# Regular empire
-						AND = {
-							NOT = { has_ethic = ethic_gestalt_consciousness }
-							is_individual_machine = no
-						}
+					AND = {
+						# non-devouring hive mind
+						is_hive_empire = yes
+						NOT = { has_civic = civic_hive_devouring_swarm }
 					}
 					OR = {
 						can_perform_genetic_assimilation = yes
@@ -73,10 +66,28 @@ citizenship_assimilation = {
 					ROOT = { is_robotic_species = no }
 				}
 				AND = {
+					# Regular empire
+					AND = {
+						NOT = { has_ethic = ethic_gestalt_consciousness }
+						is_individual_machine = no
+					}
+					has_active_tradition = tr_cybernetics_transubstantiation_synthesis # cybernetic assimilation
+					ROOT = { is_robotic_species = no }
+				}
+				AND = {
 					has_country_flag = synth_assimilation # synth assimilation
 					is_machine_empire = no
 				}
-				has_active_tradition = tr_psionics_psionic_assimilation # psionic assimilation
+				AND = {
+					OR = {
+						has_active_tradition = tr_psionics_psionic_assimilation # psionic assimilation
+						has_active_tradition = tr_psionics_shroud_great_awakening # psionic assimilation (shroud)
+					}
+					OR = {
+						is_machine_empire = no
+						ROOT = { is_robotic_species = yes }
+					}
+				}
 				AND = {
 					is_individual_machine = yes
 					ROOT = { is_robotic_species = yes }
@@ -228,7 +239,12 @@ citizenship_assimilation = {
 		}
 		else_if = {
 			limit = {
-				from = { has_active_tradition = tr_psionics_psionic_assimilation }
+				from = { 
+					OR = {
+						has_tradition = tr_psionics_shroud_great_awakening
+						has_tradition = tr_psionics_psionic_assimilation
+					}
+				}
 				NOT = { has_trait = trait_psionic }
 			}
 			custom_tooltip = { # species must be organic to transcend
@@ -255,7 +271,10 @@ citizenship_assimilation = {
 						has_active_tradition = tr_cybernetics_transubstantiation_synthesis
 					}
 					from = {
-						has_active_tradition = tr_psionics_psionic_assimilation 
+						OR = {
+							has_tradition = tr_psionics_shroud_great_awakening
+							has_tradition = tr_psionics_psionic_assimilation
+						}
 					}
 				}
 			}

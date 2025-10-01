@@ -113,5 +113,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/diplomacy/entertainment_war.dds"
 	}
 
+    spriteType = {
+		name = "GFX_council_agenda_icon_agenda_synthetic_moduler_evolution"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_synthetic_evolution.dds"
+	}
+
 }
 

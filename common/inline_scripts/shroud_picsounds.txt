@@ -1,0 +1,34 @@
+show_sound = {
+	trigger = { owner = { is_robot_empire = yes } }
+	sound = event_psionic_robot
+}
+show_sound = {
+	trigger = { owner = { is_robot_empire = no } }
+	sound = event_psionic
+}
+
+picture = {
+	trigger = {
+		owner = {
+			is_hive_empire = yes
+		}
+	}
+	picture = GFX_evt_shroud_psionic_hive_mind
+}
+picture = {
+	trigger = {
+		owner = {
+			founder_species_is_machine = yes
+		}
+	}
+	picture = GFX_evt_machine_sapience
+}
+picture = {
+	trigger = {
+		owner = {
+			is_hive_empire = no
+			founder_species_is_machine = no
+		}
+	}
+	picture = GFX_evt_psionics
+}

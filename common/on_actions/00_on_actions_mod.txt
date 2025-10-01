@@ -8,8 +8,11 @@ on_leader_spawned = {
 on_leader_assigned = {
 	events = {
 		utopia.3502 # fix exists leader miss ascension trait
+		leadershroud.4
 	}
 }
+
+
 
 on_game_start_country = {
 	events = {
@@ -20,5 +23,11 @@ on_game_start_country = {
 on_monthly_pulse = {
 	events = {
 		assimilation.2000
+	}
+}
+
+on_ship_built = {
+	events = {
+		shipeventmod.1
 	}
 }

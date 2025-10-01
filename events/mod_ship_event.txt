@@ -1,0 +1,64 @@
+### JUGGERNAUT CONSTRUCTED - BUILDER EVENT
+namespace = shipeventmod
+ship_event = {
+	id = shipeventmod.1
+	title = "shipeventmod.1.name"
+	desc = "shipeventmod.1.desc"
+	picture = GFX_evt_synth_queen_enlightenment
+	show_sound = event_default
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_ship_size = synth_queen_titan_mod
+		owner = {
+			NOT = { has_country_flag = synth_queen_titan_mod_constructed }
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_country_flag = synth_queen_titan_mod_constructed
+		}
+		every_playable_country = {
+			limit = {
+				has_communications = root.owner
+				NOT = { is_same_value = root.owner }
+				has_intel_level = {
+					who = root.owner
+					category = military
+					level >= 2
+				}
+			}
+			country_event = { id = shipeventmod.2 }
+		}
+	}
+
+	after = {
+	}
+
+	option = {
+		name = shipeventmod.1.a
+	}
+}
+
+### QUEEN TITAN CONSTRUCTED - OTHER EMPIRES EVENT
+country_event = {
+	id = shipeventmod.2
+	title = "shipeventmod.2.name"
+	desc = "shipeventmod.2.desc"
+	picture = GFX_evt_synth_queen_enlightenment
+	show_sound = event_default
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	after = {
+	}
+
+	option = {
+		name = shipeventmod.2.a
+	}
+}

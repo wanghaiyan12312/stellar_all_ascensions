@@ -1,0 +1,156 @@
+## make starbase designable
+
+# Fallen Empire Defense Platform
+military_station_small_fallen_empire_mod = {
+	graphical_culture = yes
+	enable_3dview_in_ship_browser = yes
+	entity = "fallen_empire_02_military_station_small_fallen_empire_entity"
+	max_speed = 6
+	rotation_speed = 10
+	acceleration = 10
+	modifier = {
+		ship_evasion_mult = -1
+		ship_hull_regen_add_perc = 0.1
+		ship_armor_regen_add_perc = 0.1
+		ships_upkeep_mult = -0.25
+	}
+	ship_modifier = {
+		ship_weapon_range_mult = 0.4
+	}
+	max_hitpoints = @station_medium_hp
+
+	combat_size_multiplier = 4
+	size_multiplier = 2
+	fleet_slot_size = 2
+	section_slots = {
+		"mid" = { locator = "part1" }
+	}
+	num_target_locators = 0
+	is_space_station = yes
+	build_block_radius = @build_block_radius_military
+
+	uses_name_prefix = no
+	takes_name_from_ship_design = yes
+
+	resources = {
+		category = ships
+		cost = {
+			alloys = 1000
+		}
+	}
+
+	base_buildtime = 360
+
+	use_shipnames_from = military_station_small
+
+	class = shipclass_military_station
+	construction_type = starbase_defenses
+	is_designable = yes
+	enable_default_design = yes
+	components_add_to_cost = yes
+	icon = ship_size_military_station
+	required_component_set = "power_core"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	potential_construction = {
+		is_scope_type = starbase
+	}
+
+	potential_construction = {
+		OR = {
+			has_starbase_size >= starbase_outpost
+			has_starbase_size >= orbital_ring_tier_1
+			has_starbase_size >= starbase_deep_space_citadel_1
+		}
+	}
+
+	potential_country = {
+		has_technology = tech_cosmogenesis_escort
+		country_uses_bio_ships = no
+	}
+
+	ai_ship_data = {
+		min = 0
+		max = 0
+	}
+
+	available_to_everyone = yes
+}
+
+
+# Fallen Empire Large Station
+military_station_large_fallen_empire_mod = {
+	graphical_culture = yes
+	enable_3dview_in_ship_browser = yes
+	entity = "fallen_empire_01_military_station_large_fallen_empire_entity"
+	max_speed = 6
+	rotation_speed = 10
+	acceleration = 10
+	modifier = {
+		ship_evasion_mult = -1
+		ships_upkeep_mult = -0.25
+	}
+	ship_modifier = {
+		ship_weapon_range_mult = 0.20
+	}
+	max_hitpoints = @station_large_hp
+	combat_size_multiplier = 20
+	size_multiplier = 8
+	fleet_slot_size = 4
+	section_slots = {
+		"mid" = { locator = "part1" }
+	}
+	num_target_locators = 0
+	is_space_station = yes
+	build_block_radius = @build_block_radius_medium_military
+
+	uses_name_prefix = no
+	takes_name_from_ship_design = yes
+
+	potential_construction = {
+		is_scope_type = starbase
+	}
+
+	potential_construction = {
+		OR = {
+			has_starbase_size >= starbase_outpost
+			has_starbase_size >= orbital_ring_tier_1
+			has_starbase_size >= starbase_deep_space_citadel_1
+		}
+	}
+
+	potential_country = {
+		has_technology = tech_cosmogenesis_battlecruiser
+		country_uses_bio_ships = no
+	}
+
+	resources = {
+		category = ships
+		cost = {
+			alloys = 5000
+		}
+	}
+
+	base_buildtime = 720
+
+	use_shipnames_from = military_station_small
+
+	class = shipclass_military_station
+	construction_type = starbase_defenses
+	is_designable = yes
+	enable_default_design = yes
+	components_add_to_cost = yes
+	icon = ship_size_military_station
+
+	required_component_set = "power_core"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	ai_ship_data = {
+		min = 0
+		max = 0
+	}
+
+	available_to_everyone = yes
+}

@@ -25,7 +25,7 @@
  ap_synthetic_moduler_evolution:0 "Synthetic Ascension"
  ap_synthetic_moduler_evolution_desc:0 "It is time to abandon the flawed organic vessels "
 
- ap_synthetic_moduler_evolution_tooltip:0 "$access_tradition_tree$ ['tradition_category:tradition_synthetics']\n$UNLOCKS_AGENDA$ $council_agenda_agenda_synthetic_evolution_name$, which grants Robotic technologies as Research Options.\n- $REQUIRES_TRADITION_SLOT$"
+ ap_synthetic_moduler_evolution_tooltip:0 "$access_tradition_tree$ ['tradition_category:tradition_modularity_age']\n$UNLOCKS_AGENDA$ $council_agenda_agenda_synthetic_moduler_evolution_name$, which grants Robotic technologies as Research Options.\n- $REQUIRES_TRADITION_SLOT$"
 
  tradition_modularity_age: "Robot Modularity"
  tradition_modularity_age_desc:0 "Replace that which is lesser, augment it, upgrade it, perfect it."
@@ -88,9 +88,6 @@
  council_agenda_agenda_modularity_age_reshape_form_desc:0 "Utilizing $sr_living_metal$ to reshape our Robot allows for increased efficiency in the upkeep and adaptability of our Robot."
  mod_planet_jobs_sr_living_metal_produces_mult:0 "£sr_living_metal£ $sr_living_metal$ from £job£ Jobs"
 
- leader_trait_chosen_mod_ascensions:0 "Chosen One"
- leader_trait_chosen_mod_ascensions_desc:0 "This leader is the Chosen One, an immortal being that wields incredible psionic power."
-
  edict_aap_more_genetic_ascension: "More Genetic Ascension Tree"
  edict_aap_more_genetic_ascension_desc: "The edict give the possiblity to get more genetic ascension tree"
  ascensions.1.title:0 "Choose The Ascension Tree You Want"
@@ -106,6 +103,9 @@
  ascensions.2.cloning: "Cloning Government"
  ascensions.2.mutation: "Mutation Government"
  ascensions.2.purity: "Purity Government"
+ ascensions.2.psionic: "Psionic Government"
+ ascensions.2.corporealpsionic: "Corporeal Psionic Government"
+ ascensions.2.transcendentpsionic: "Transcendent Psionic Government"
 
  COSMO_CRISIS_BATTLECRUISER_4P1X2L4M: "Artillery Point Frame"
  COSMO_CRISIS_BATTLECRUISER_4P1X4G4M: "Torpedo Frame"
@@ -120,6 +120,17 @@
  synth_queen_titan_mod_desc: "$tech_synth_queen_titan_des$"
  synth_queen_titan_mod_cap: "$synth_queen_titan_mod$"
  synth_queen_titan_mod_plural: "$synth_queen_titan_mod$"
+
+ shipeventmod.1.name: "Void Queen"
+ shipeventmod.1.desc: "The construction of the impressive Queen's Titan has been completed.\n\nThis mobile behemoth changes the paradigm of offensive warfare entirely. It is equipped with devastating firepower, and a planet kill weapon. Let those Fallen Empire Knee to there New Lord .\n\nOnly fools will oppose [Owner.GetName] now."
+ shipeventmod.1.a: "Go forth and conquer!"
+
+ # Queen's Titan BUILT EVENT - OTHER EMPIRES TEXT
+ shipeventmod.2.name: "Ultima Ratio Regum"
+ shipeventmod.2.desc:0 "It has been verified that §H[From.Owner.GetName]§! has finished the construction of a massive Queen's Titan ship.  It is equipped with devastating firepower, and a planet kill weapon, making it a superior threat in any combat scenario.\n\nIt is truly the apex armament of space war."
+ shipeventmod.2.a:0 "Bit of a game changer, that one."
+
+ queen_titan_build_trigger: "£trigger_no£ Queen's Titan only can build in Fully Constructed Mega shipyard"
 
  SHIP_SYNTH_QUEEN_TITAN_SECTION_MOD: "Queen's Carrier Titan"
  SHIP_SYNTH_QUEEN_TITAN_SECTION_MOD2: "Queen's artillery Titan"
@@ -177,3 +188,65 @@
  living_standard_psi_and_cyborg_assimilation_tooltip_delayed: "\n\n§R for convenience assimalation of psionic and cybernetic both§!"
 
  MEGASTRUCTURE_TOOLTIP_REQUIREMENTS_MEGA_SHJPYARD_MOD: "you can build mega shipyard as possible you want no limitation in this mod"
+
+ #LAGER FALLEN DEFFENCE STATION 
+ LAGER_FALLEN_STATION_POINT_REACTOR: "$ZERO_POINT_REACTOR$"
+ LAGER_FALLEN_STATION_DARK_MATTER_REACTOR: "$DARK_MATTER_REACTOR$"
+ LAGER_FALLEN_STATION_ZERO_POINT_REACTOR_DESC: "$ZERO_POINT_REACTOR_DESC$"
+ LAGER_FALLEN_STATION_DARK_MATTER_REACTOR_DESC: "$DARK_MATTER_REACTOR_DESC$"
+
+ military_station_small_fallen_empire_mod:0 "Fallen empire Small Defence Platform"
+ military_station_small_fallen_empire_mod_cap:0 "$military_station_small_fallen_empire_mod$"
+ military_station_small_fallen_empire_mod_plural:0 "$military_station_small_fallen_empire_mod$"
+ military_station_large_fallen_empire_mod:0 "Fallen empire Large Defence Platform"
+ military_station_large_fallen_empire_mod_cap:0 "$military_station_large_fallen_empire_mod$"
+ military_station_large_fallen_empire_mod_plural:0 "$military_station_large_fallen_empire_mod$"
+
+ fallen_empire_station_large_mod:"Defence Core"
+ fallen_empire_station_small_mod:"Defence Core"
+
+ small_ship_synth_queen_mod: "Queen's Heralds"
+ small_ship_synth_queen_mod_cap: "$small_ship_synth_queen$"
+ small_ship_synth_queen_mod_plural: "$small_ship_synth_queen$s"
+ synth_queen_warship_small_mod: "Artillery Frame"
+
+ large_ship_synth_queen_mod: "Queen's Defenders"
+ large_ship_synth_queen_mod_cap: "$large_ship_synth_queen$"
+ large_ship_synth_queen_mod_plural: "$large_ship_synth_queen$"
+ synth_queen_warship_large_artillery_mod: "Artillery Frame"
+ synth_queen_warship_large_carrier_mod: "Carrier Frame"
+
+ defense_platform_synth_queen_mod: "Queen's Towers"
+ defense_platform_synth_queen_mod_cap: "$defense_platform_synth_queen$"
+ defense_platform_synth_queen_mod_plural: "$defense_platform_synth_queen$"
+ synth_queen_defense_platform_section_mod: "Queen Defence Core"
+
+ defense_platform_medium_synth_queen_mod: "Queen's Knowledge"
+ defense_platform_medium_synth_queen_mod_cap: "Queen's Knowledge"
+ defense_platform_medium_synth_queen_mod_plural: "Queen's Knowledge"
+ synth_queen_medium_defense_platform_key: "Queen's Knowledge Core"
+
+ defense_platform_large_synth_queen_mod: "Queen's Determination"
+ defense_platform_large_synth_queen_mod_cap: "Queen's Determination"
+ defense_platform_large_synth_queen_mod_plural: "Queen's Determination"
+ synth_queen_large_defense_platform_key: "Queen's Determination Core"
+
+ edict_app_get_greater_patron_roll:"Get Shroud Greater Patron Roll"
+ edict_app_get_greater_patron_roll_desc:"Get Shroud Greater Patron Roll"
+
+ leadershroud.legendary.hired: "legendary has already been hired"
+ leadershroud.hiredlegndaryleader: "Try to hired some famous legendary leader"
+ leadershroud.Upgradelegndaryleader: "Try to get powerful Shroud entity for famous legendary leader"
+ leadershroud.GetShroudEntitylegndaryleader: "Try to get powerful Shroud entity content"
+ leadershroud.300.council_scientist: "Try to get powerful Shroud entity content for council scientist"
+ leadershroud.300.govern_scientist: "Try to get powerful Shroud entity content for govern scientist"
+ leadershroud.300.council_official: "Try to get powerful Shroud entity content for council official"
+ leadershroud.300.govern_official: "Try to get powerful Shroud entity content for govern official"
+ leadershroud.300.councilor_commander: "Try to get powerful Shroud entity content for councilor commander"
+ leadershroud.300.admiral_commander: "Try to get powerful Shroud entity content for admiral commander"
+
+ edict_app_get_legendary_shroud_leader: "Get poweful leader from Shroud"
+ edict_app_get_legendary_shroud_leader_desc:"Get poweful leader from Shroud"
+
+ council_agenda_agenda_synthetic_moduler_evolution_name: "$ap_synthetic_moduler_evolution$"
+ council_agenda_agenda_synthetic_moduler_evolution_desc: "$ap_synthetic_moduler_evolution_desc$"

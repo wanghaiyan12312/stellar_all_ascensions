@@ -1,5 +1,6 @@
 synth_queen_titan_mod = {
-	graphical_culture = { "synth_queen_01" }
+	graphical_culture = yes
+	enable_3dview_in_ship_browser = yes
 	entity = "synth_queen_01_mothership_entity"
 	max_speed = @speed_default
 	acceleration = 0.2
@@ -28,7 +29,6 @@ synth_queen_titan_mod = {
 	components_add_to_cost = yes
 	is_designable = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	enable_3dview_in_ship_browser = yes
 
 	prerequisites = { "tech_synth_queen_titan" }
 
@@ -58,18 +58,26 @@ synth_queen_titan_mod = {
 	}
 
 	potential_construction = {
-		AND = {
-			is_scope_type = megastructure
-			OR = {
-				is_megastructure_type = mega_shipyard_3
-				is_megastructure_type = mega_shipyard_restored
+		OR = {
+			AND = {
+				is_scope_type = starbase
+				NOT = {
+					has_starbase_size = juggernaut
+				}
+			}
+			AND = {
+				is_scope_type = megastructure
+				OR = {
+					is_megastructure_type = mega_shipyard_3
+					is_megastructure_type = mega_shipyard_restored
+				}
 			}
 		}
 	}
 
 	possible_construction = {
 		custom_tooltip = {
-			fail_text = starbase_colossal_yards_trigger
+			fail_text = queen_titan_build_trigger
 			AND = {
 				is_scope_type = megastructure
 				OR = {
@@ -89,66 +97,378 @@ synth_queen_titan_mod = {
 	available_to_everyone = yes
 }
 
+# Large Ship
+large_ship_synth_queen_mod = {
+	graphical_culture = yes
+	enable_3dview_in_ship_browser = yes
+	entity = "synth_queen_01_big_ship_entity"
+	max_speed = @speed_slow
+	acceleration = 0.2
+	rotation_speed = 0.15
+	collision_radius = 8
+	modifier = {
+		ship_evasion_add = 10
+	}
+	max_hitpoints = 25000
+	size_multiplier = 8
+	fleet_slot_size = 4
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 0
+	is_space_station = no
+	icon = ship_size_military_8
 
-# colossus = {
-# 	formation_priority = @colossus_formation_priority
-# 	max_speed = @speed_very_slow
-# 	acceleration = 0.2
-# 	rotation_speed = 0.15
-# 	collision_radius = @colossus_collision_radius
-# 	max_hitpoints = @colossus_hp
-# 	modifier = {
-# 		ship_evasion_add = @colossus_evasion
-# 	}
-# 	size_multiplier = 32
-# 	fleet_slot_size = 32
-# 	section_slots = { "ship" = { locator = "frame_ship" } }
-# 	num_target_locators = 4
-# 	is_space_station = no
-# 	icon = ship_size_military_32
-# 	base_buildtime = @colossus_build_time
-# 	can_have_federation_design = no
-# 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-# 	is_designable = no
-# 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-# 	selectable = { host_has_dlc = "Apocalypse" }
+	class = shipclass_military
+	components_add_to_cost = yes
 
-# 	prerequisites = { "tech_colossus" }
+	combat_disengage_chance = 1.0
+	default_behavior = artillery
+	ship_roles = { artillery  }
 
-# 	class = shipclass_military_special
-# 	construction_type = starbase_shipyard
-# 	required_component_set = "power_core"
-# 	required_component_set = "ftl_components"
-# 	required_component_set = "thruster_components"
-# 	required_component_set = "combat_computers"
+	resources = {
+		category = ships
+		cost = {
+			alloys = 3000
+		}
+		upkeep = {
+			energy = @battleship_upkeep_energy
+			alloys = @battleship_upkeep_alloys
+		}
+	}
 
-# 	potential_construction = {
-# 		always = no
-# 	}
+	base_buildtime = 800
+
+	use_shipnames_from = battleship
+
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	enable_default_design = yes
+	components_add_to_cost = yes
+	is_designable = yes
+
+	potential_country = {
+		has_technology = tech_cosmogenesis_battlecruiser
+		country_uses_bio_ships = no
+	}
+
+	ai_ship_data = {
+		min = 0
+		max = 0
+	}
+
+	available_to_everyone = yes
+}
+
+# Small Ship
+small_ship_synth_queen_mod = {
+	graphical_culture = yes
+	enable_3dview_in_ship_browser = yes
+	entity = "synth_queen_01_small_ship_entity"
+	max_speed = @speed_very_fast
+	acceleration = 0.3
+	rotation_speed = 0.2
+	collision_radius = 6
+	modifier = {
+		ship_base_speed_mult = 0.5
+		ship_evasion_add = 80
+		ship_disengage_chance_mult = 2
+		ship_disengage_opportunities_add = 2
+	}
+	max_hitpoints = 800
+	size_multiplier = 2
+	fleet_slot_size = 2
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 0
+	icon = ship_size_military_2
+	class = shipclass_military
+
+	base_buildtime = 200
+	is_space_station = no
+	combat_disengage_chance = 1.5
+	can_have_federation_design = no
+	components_add_to_cost = yes
+	default_behavior = artillery
+	ship_roles = { artillery }
+
+	potential_country = {
+		has_technology = tech_cosmogenesis_escort
+		country_uses_bio_ships = no
+	}
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	enable_default_design = yes
+	components_add_to_cost = yes
+	is_designable = yes
+
+	use_shipnames_from = destroyer
+
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		cost = {
+			alloys = 500
+		}
+		upkeep = {
+			energy = @destroyer_upkeep_energy
+			alloys = @destroyer_upkeep_alloys
+		}
+	}
+
+	ai_ship_data = {
+		min = 0
+		max = 0
+	}
+
+	available_to_everyone = yes
+
+}
+
+# Defense Platform
+defense_platform_synth_queen_mod = {
+	graphical_culture = yes
+	enable_3dview_in_ship_browser = yes
+	entity = "synth_queen_01_military_station_small_entity"
+	max_speed = 6
+	rotation_speed = 0.02
+	acceleration = 10
+	modifier = {
+		ship_evasion_mult = -1
+		ship_hull_regen_add_perc = 0.1
+		ship_armor_regen_add_perc = 0.1
+		ships_upkeep_mult = -0.25
+	}
+	ship_modifier = {
+		ship_weapon_range_mult = 0.4
+	}
+	max_hitpoints = @station_medium_hp
+	collision_radius = 8
+
+	combat_size_multiplier = 4
+	size_multiplier = 2
+	fleet_slot_size = 1
+	section_slots = {
+		"mid" = { locator = "part1" }
+	}
+	num_target_locators = 9
+	is_space_station = yes
+
+	build_block_radius = @build_block_radius_military
+
+	uses_name_prefix = no
+	takes_name_from_ship_design = yes
+
+	potential_construction = {
+		is_scope_type = starbase
+	}
+
+	possible_construction = {
+		OR = {
+			has_starbase_size >= starbase_outpost
+			has_starbase_size >= orbital_ring_tier_1
+			has_starbase_size >= starbase_deep_space_citadel_1
+		}
+	}
+
+	potential_country = {
+		has_technology = tech_cosmogenesis_escort
+		country_uses_bio_ships = no
+	}
+	
+	resources = {
+		category = ships
+		cost = {
+			alloys = 1000
+		}
+	}
+
+	base_buildtime = 180
+
+	use_shipnames_from = military_station_small
+
+	class = shipclass_military_station
+	construction_type = starbase_defenses
+	required_component_set = "power_core"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	is_designable = yes
+	enable_default_design = yes
+	components_add_to_cost = yes
+	icon = ship_size_military_station
+
+	ai_ship_data = {
+		min = 0
+		max = 0
+	}
+
+	available_to_everyone = yes
+}
+
+defense_platform_medium_synth_queen_mod = {
+	graphical_culture = yes
+	enable_3dview_in_ship_browser = yes
+	entity = "synth_queen_01_small_starbase_entity"
+	max_speed = 6
+	rotation_speed = 0.02
+	acceleration = 10
+	modifier = {
+		ship_evasion_mult = -1
+		ship_armor_add = 100000
+		ship_shield_add = 40000
+		ship_sensor_range_add = 1
+	}
+	ship_modifier = {
+		ship_weapon_range_mult = 0.20
+		ship_fire_rate_mult = 0.6
+	}
+
+	max_hitpoints = 50000
+	base_buildtime = 720
+	combat_size_multiplier = 20
+	size_multiplier = 8
+	fleet_slot_size = 4
+	section_slots = { "core" = { locator = "root" } }
+	is_designable = yes
+	num_target_locators = 0
+	is_space_station = yes
+	can_have_federation_design = no
+	is_civilian = no
+	components_add_to_cost = yes
+	can_disable = yes
+
+	build_block_radius = @build_block_radius_medium_military
+
+	uses_name_prefix = no
+	takes_name_from_ship_design = yes
+
+	potential_construction = {
+		is_scope_type = starbase
+	}
+
+	possible_construction = {
+		OR = {
+			has_starbase_size >= starbase_outpost
+			has_starbase_size >= orbital_ring_tier_1
+			has_starbase_size >= starbase_deep_space_citadel_1
+		}
+	}
+
+	potential_country = {
+		has_technology = tech_cosmogenesis_battlecruiser
+		country_uses_bio_ships = no
+	}
+
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	class = shipclass_military_station
+	construction_type = starbase_defenses
+	required_component_set = "power_core"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	icon = ship_size_military_station
+
+	resources = {
+		category = ships
+		cost = {
+			alloys = 5000
+		}
+	}
+
+	ai_ship_data = {
+		min = 0
+		max = 0
+	}
+
+	available_to_everyone = yes
+
+}
+
+defense_platform_large_synth_queen_mod = {
+	graphical_culture = yes
+	entity = "synth_queen_01_big_starbase_entity"
+	max_speed = 6
+	rotation_speed = 0.02
+	acceleration = 10
+	modifier = {
+		ship_evasion_mult = -1
+		ship_armor_add = 150000
+		ship_shield_add = 80000
+		ship_target_weight_mult = 10.0
+	}
+	ship_modifier = {
+		ship_weapon_range_mult = 0.5
+		ship_fire_rate_mult = 0.35
+	}
 
 
-# 	resources = {
-# 		category = ships
-# 		cost = {
-# 			alloys = 10000
-# 		}
-# 		upkeep = {
-# 			energy = @colossus_upkeep_energy
-# 			alloys = @colossus_upkeep_alloys
-# 		}
-# 		logistics = {
-# 			trade = @colossus_logistic_upkeep_trade
-# 		}
-# 	}
+	max_hitpoints = 100000
+	base_buildtime = 1800
+	combat_size_multiplier = 20
+	size_multiplier = 16
+	fleet_slot_size = 8
+	section_slots = { "core" = { locator = "root" } }
+	is_designable = yes
+	num_target_locators = 0
+	is_space_station = yes
+	can_have_federation_design = no
+	is_civilian = no
+	components_add_to_cost = yes
+	can_disable = yes
 
-# 	min_upgrade_cost = {
-# 		alloys = 10
-# 	}
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+    
+	build_block_radius = @build_block_radius_lager_military
 
-# 	ai_ship_data = {
-# 		min = 1
-# 		max = 1
-# 	}
+	uses_name_prefix = no
+	takes_name_from_ship_design = yes
 
-# 	available_to_everyone = yes
-# }
+	potential_construction = {
+		is_scope_type = starbase
+	}
+
+	possible_construction = {
+		OR = {
+			has_starbase_size >= starbase_citadel
+			has_starbase_size >= orbital_ring_tier_3
+			has_starbase_size >= starbase_deep_space_citadel_1
+		}
+	}
+
+	potential_country = {
+		has_technology = tech_cosmogenesis_FE_titan
+		country_uses_bio_ships = no
+	}
+
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	class = shipclass_military_station
+	construction_type = starbase_defenses
+	required_component_set = "power_core"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	#required_component_set = "dsc_aura_components"
+	icon = ship_size_military_station
+
+	resources = {
+		category = ships
+		cost = {
+			alloys = 15000
+		}
+	}
+
+	ai_ship_data = {
+		min = 0
+		max = 0
+	}
+
+	available_to_everyone = yes
+}
+

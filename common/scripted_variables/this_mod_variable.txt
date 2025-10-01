@@ -1,4 +1,4 @@
-@fallen_empire_base_enforce_power = 200000000 #300m base MAX 1500000000
+@fallen_empire_base_enforce_power = 200000 #300m base MAX 1500000000 for overflow /1000
 @fallen_empire_enforce_power_grand_admiral_gap = 90 
 @fallen_empire_enforce_power_admiral_gap = 180 
 @fallen_empire_enforce_power_commodore_gap = 180 
@@ -14,3 +14,5 @@
 @fallen_empire_battlecruise = 4
 @fallen_empire_escort = 4
 
+@build_block_radius_lager_military = 1200
+@build_block_radius_medium_military = 600

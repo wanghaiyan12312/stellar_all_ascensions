@@ -17,6 +17,7 @@ tr_modularity_age_adopt = {
 tr_modularity_age_finish = {
 
 	modifier = {
+		empire_size_penalty_mult = -0.1
 		ascension_perks_add = 1
 	}
 

@@ -19,12 +19,20 @@ building_empyrean_shrine = {
 	potential = {
 		exists = owner
 		owner = {
-			is_spiritualist = yes
+			
+	
 			OR = {
-				is_fallen_empire = yes
 				AND = {
-					has_tradition = tr_psionics_psi_corps
-					has_technology = tech_fe_administration_2
+					is_spiritualist = yes
+					is_fallen_empire = yes
+				}
+				AND = {
+					OR = {
+						has_tradition = tr_psionics_shroud_psi_corps
+						has_tradition = tr_psionics_psi_corps
+					}
+					has_crisis_level = crisis_cosmogenesis_level_4
+					has_ascension_perk = ap_cosmogenesis
 				}
 			}
 		}	
@@ -57,7 +65,11 @@ building_empyrean_shrine = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_tradition = tr_psionics_psi_corps	}
+			OR = {
+				owner = { has_tradition = tr_psionics_shroud_psi_corps }
+				owner = { has_tradition = tr_psionics_psi_corps	}
+			}
+			
 		}
 		job_telepath_add = @fe_jobs
 	}
@@ -75,7 +87,10 @@ building_empyrean_shrine = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { NOT = { has_tradition = tr_psionics_psi_corps } }
+			OR = {
+				owner = { has_tradition = tr_psionics_shroud_psi_corps }
+				owner = { has_tradition = tr_psionics_psi_corps	}
+			}
 		}
 		planet_bureaucrats_produces_mult = 0.25
 	}
@@ -91,136 +106,6 @@ building_empyrean_shrine = {
 			energy = 10
 		}
 	}
-}
-
-# bug fix for 4.0.21
-building_fe_market_1 = {
-	base_buildtime = @b2_time
-	can_build = yes
-	can_demolish = yes
-
-	category = trade
-
-	building_sets = {
-		fallen_empire
-		trade
-	}
-
-	potential = {
-		exists = owner
-		owner = {
-			OR = {
-				is_fallen_empire = yes
-				has_technology = tech_fe_market_1
-				has_country_flag = fe_market_1_can_build
-			}
-		}
-		NOR = {
-			has_modifier = slave_colony
-			has_modifier = penal_colony
-		}
-	}
-
-	allow = {
-		custom_tooltip = {
-			fail_text = ancrel.10004.failtext
-			exists = owner
-			owner = {
-				OR = {
-					check_variable = { which = fe_market_1_build_count value >= 1 }
-					is_fallen_empire = yes
-					has_technology = tech_fe_market_1
-				}
-			}
-		}
-	}
-
-	destroy_trigger = {
-		OR = {
-			has_modifier = slave_colony
-			has_modifier = penal_colony
-		}
-	}
-
-	resources = {
-		category = planet_buildings
-		cost = {
-			alloys = @b3_minerals
-			rare_crystals = @fe_sr_cost
-		}
-		upkeep = {
-			rare_crystals = 2
-			alloys = @b2_alloy_upkeep
-			energy = 15
-		}
-		cost = {
-			trigger = {
-				owner = { is_wilderness_empire = yes }
-			}
-			biomass = @b3_biomass
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_wilderness_empire = yes
-				has_tradition = tr_purity_finish
-			}
-		}
-		planet_building_build_speed_mult = 0.03
-		planet_decision_enact_speed_mult = 0.03
-	}
-
-	inline_script = {
-		script = "jobs/trader_add"
-		AMOUNT = @fe_jobs
-	}
-
-	upgrades = {
-		building_fe_market_2
-	}
-
-	on_queued = {
-		if = { # kill on the same planet
-			limit = {
-				is_variable_set = local_spent_biomass
-				any_owned_pop_group = {
-					has_trait = trait_wilderness
-					pop_group_size > local_spent_biomass
-				}
-			}
-			random_owned_pop_group = {
-				limit = {
-					has_trait = trait_wilderness
-					pop_group_size > local_spent_biomass
-				}
-				kill_pop_group = {
-					pop_group = this
-					amount = local_spent_biomass
-				}
-			}
-		}
-		else_if = {
-			limit = { is_variable_set = local_spent_biomass }
-			owner = {
-				global_biomass_spender = yes
-			}
-		}
-		owner = {
-			subtract_variable = { which = fe_market_1_build_count value = 1 }
-		}
-	}
-
-	on_unqueued = {
-		unqueue_biomass_effect = yes
-		owner = {
-			change_variable = { which = fe_market_1_build_count value = 1 }
-		}
-	}
-
-	show_in_tech = tech_fe_market_1
 }
 
 ## enforce dimensional_replicator
@@ -276,10 +161,10 @@ building_dimensional_replicator = {
 	resources = {
 		category = planet_buildings
 		produces = {
-			sr_zro = 1
-			sr_dark_matter = 1
-			sr_living_metal = 1
-			nanites = 1
+			sr_zro = 5
+			sr_dark_matter = 5
+			sr_living_metal = 5
+			nanites = 5
 		}
 		cost = {
 			alloys = @b3_minerals
@@ -404,10 +289,10 @@ building_dimensional_fabricator = {
 	resources = {
 		category = planet_buildings
 		produces = {
-			sr_zro = 2
-			sr_dark_matter = 2
-			sr_living_metal = 2
-			nanites = 2
+			sr_zro = 10
+			sr_dark_matter = 10
+			sr_living_metal = 10
+			nanites = 10
 		}
 		cost = {
 			alloys = @b3_minerals

@@ -31,7 +31,7 @@ aap_change_government = {
     length = 1
     resources = {
         category = edicts
-        cost = { influence = 1 }
+        cost = { influence = 200 } ## add a cost for government change
     }
 
     potential = {
@@ -106,4 +106,60 @@ astral_shielding = {
 	ai_weight = {
 		weight = @EdictMedPrio
 	}
+}
+
+app_get_greater_patron_roll = {
+    icon = "GFX_edict_type_policy"
+    length = 1
+    resources = {
+        category = edicts
+        cost = { influence = 1 }
+    }
+
+    potential = {
+        has_shroud_dlc = yes 
+        NOT = { has_country_flag = greater_patron_chosen }
+        has_patron_relation = {
+			patron = the_eater_of_worlds
+			contact = completed
+		}
+		has_patron_relation = {
+			patron = the_cradle_of_souls
+			contact = completed
+		}
+		has_patron_relation = {
+			patron = the_instrument_of_desire
+			contact = completed
+		}
+		has_patron_relation = {
+			patron = the_composer_of_strands
+			contact = completed
+		}
+    }
+
+    effect = { 
+        country_event = { id = shroud.11001 } 
+        set_country_flag = greater_patron_chosen
+    }
+
+    ai_weight = { weight = 0 }
+}
+
+app_get_legendary_shroud_leader = {
+    icon = "GFX_edict_type_policy"
+    length = 1
+    potential = {
+        has_country_flag = greater_patron_chosen
+        has_paragon_dlc = yes
+        has_shroud_dlc = yes 
+    }
+    resources = {
+        category = edicts
+        cost = { influence = 1 }
+    }
+    effect = { 
+        country_event = { id = leadershroud.1 } 
+    }
+
+    ai_weight = { weight = 0 }
 }

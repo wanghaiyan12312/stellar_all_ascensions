@@ -14,6 +14,10 @@
 
 [h1]7. one mega shipyard don't satisfied 100k+ alloy production capacity? [/h1]
 
+thanks for Draconas, his All Ascension Paths give me a lot of inspiration to this mod. my code is basically refactoring his project. [All Ascension Path](https://steamcommunity.com/sharedfiles/filedetails/?id=2909582424)
+thanks for hollytan Auther, his '自动科研助手' give me a lot of inspiration to this mod. this part of code is basically refactoring his project. [自动科研助手](https://steamcommunity.com/sharedfiles/filedetails/?id=3253950177)
+thanks for Azona, his 28 Ascension Perk Slots and 11 Traditions Slots mod need modification parameter to adapt my mod. [28 Ascension Perk Slots and 11 Traditions Slots](https://steamcommunity.com/sharedfiles/filedetails/?id=2271408535&searchtext=slot)
+
 
 [h1]More detail you can look readme on my github.[/h1]
-[url=]
+[url=https://github.com/wanghaiyan12312/stellar_all_ascensions]
