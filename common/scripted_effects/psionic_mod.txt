@@ -1,0 +1,138 @@
+eater_aura_max_intensity_effect = {
+	if = {
+		limit = { 
+			root.aura_owner = {
+				has_policy_flag = eater_aura_max_intensity_alloy
+			}
+		}
+		root.aura_owner = { 
+			set_variable = {
+				which = tooth_eater_1
+				value = 100
+			}
+			multiply_variable = {
+				which = tooth_eater_1 # must be directly referring to a variable
+				value = value:eater_teeth_count_scaling
+			}
+			add_resource = { alloys = tooth_eater_1 } 
+		}
+		create_message = {
+			type = MESSAGE_PSIONIC_AURA_the_eater_of_worlds
+			localization = MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_eater_of_worlds_mod_DESC
+			days = 30
+			variable = {
+				type = name
+				localization = SYSTEM
+				scope = this
+			}
+			variable = {
+				type = variable
+				localization = VALUE
+				varname = tooth_eater_1
+				scope = this.aura_owner
+			}
+		}
+		clear_variable = tooth_eater_1
+	}
+	else = {
+		eater_aura_max_intensity_effect_original = yes		
+	}
+}
+
+composer_aura_max_intensity_effect = {
+	set_variable = {
+		which = spawned_shroudstone
+		value = 0
+	}
+	every_system_colony = {
+		limit = {
+			has_owner = yes
+			is_owned_by = root.aura_owner
+			has_ground_combat = no
+			is_occupied_flag = no
+			NOT = {
+				is_planet_class = pc_cosmogenesis_world
+			}
+			NOT = { 
+				has_modifier = composer_aura_max_prohibit 
+			}
+		}
+		while = {
+			count = 2
+			add_deposit = d_shroudstone
+		}
+		prev = {
+			change_variable = {
+				which = spawned_shroudstone
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = event_target:selected_colony }
+			}
+			save_event_target_as = selected_colony
+		}
+	}
+	if = {
+		limit = { exists = event_target:selected_colony }
+		create_message = {
+			type = MESSAGE_PSIONIC_AURA_the_composer_of_strands
+			localization = MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_composer_of_strands_DESC
+			days = 30
+			target = event_target:selected_colony
+			variable = {
+				type = name
+				localization = SYSTEM
+				scope = this
+			}
+			variable = {
+				type = variable
+				localization = VALUE
+				varname = this.spawned_shroudstone
+				scope = this
+			}
+		}
+	}
+	clear_variable = spawned_shroudstone
+}
+
+eater_aura_max_intensity_effect_original = {
+	create_fleet = {
+		name = "tooth_eater_plural"
+		settings = {
+			can_upgrade = no
+			uses_naval_capacity = no
+			spawn_debris = no
+		}
+		effect = {
+			set_owner = root.aura_owner
+			while = {
+				count = value:eater_teeth_count_scaling
+				create_ship = {
+					design = "NAME_Tooth_Eater"
+					prefix = no
+					upgradable = no
+				}
+			}
+			set_location = {
+				target = prev
+				distance = 120
+				angle = random
+			}
+			set_fleet_flag = tooth_eater_fleet
+			save_event_target_as = eater_fleet
+		}
+	}
+	create_message = {
+		type = MESSAGE_PSIONIC_AURA_the_eater_of_worlds
+		localization = MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_eater_of_worlds_DESC
+		days = 30
+		target = event_target:eater_fleet
+		variable = {
+			type = name
+			localization = SYSTEM
+			scope = this
+		}
+	}
+}

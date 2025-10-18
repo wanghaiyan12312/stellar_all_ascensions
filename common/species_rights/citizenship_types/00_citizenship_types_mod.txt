@@ -10,6 +10,7 @@ citizenship_assimilation = {
 			has_utopia = yes
 			has_machine_age_dlc = yes
 			has_biogenesis_dlc = yes
+			has_shroud_dlc = yes
 		}
 		exists = from
 		from = {
@@ -127,6 +128,10 @@ citizenship_assimilation = {
 			}
 		}
 		custom_tooltip = {
+			fail_text = "assimilate_shroud_forged_tt"
+			NOT = { has_trait = trait_shroud_forged }
+		}
+		custom_tooltip = {
 			fail_text = "disconnected_machine_pops_collapse_citizenship"
 			OR = {
 				from = {
@@ -204,11 +209,7 @@ citizenship_assimilation = {
 			limit = {
 				from = {
 					is_hive_empire = no
-					
-					NOR = {
-						has_trait = trait_cybernetic
-						has_trait = trait_limited_cybernetic
-					}
+					has_active_tradition = tr_cybernetics_transubstantiation_synthesis
 				}
 			}
 			custom_tooltip = { # cyborg empire
@@ -233,27 +234,37 @@ citizenship_assimilation = {
 					NOR = {
 						has_trait = trait_mechanical
 						has_trait = trait_machine_unit
+						has_trait = trait_cybernetic
+						has_trait = trait_limited_cybernetic
 					}
 				}
 			}
 		}
 		else_if = {
 			limit = {
-				from = { 
-					OR = {
-						has_tradition = tr_psionics_shroud_great_awakening
-						has_tradition = tr_psionics_psionic_assimilation
-					}
-				}
-				NOT = { has_trait = trait_psionic }
+				from = { has_active_tradition = tr_psionics_psionic_assimilation }
 			}
 			custom_tooltip = { # species must be organic to transcend
 				fail_text = TRANSCENDING_SPECIES_MUST_BE_ORGANIC
 				is_robotic_species = no
 			}
+			custom_tooltip = { # species already has psionic trait
+				fail_text = TRANSCENDING_SPECIES_IS_ALREADY_PSIONIC
+				is_psionic_species = no
+			}
 			custom_tooltip = { # transcending species cannot be gestalt consciousness
 				fail_text = TRANSCENDING_SPECIES_CANT_BE_HIVE
 				NOT = { has_trait = trait_hive_mind }
+			}
+		}
+		else_if = {
+			limit = {
+				from = { has_active_tradition = tr_psionics_shroud_great_awakening }
+			}
+			# non organic and gestalt species are allowed in Shroud
+			custom_tooltip = { # species already has psionic trait
+				fail_text = TRANSCENDING_SPECIES_IS_ALREADY_PSIONIC
+				is_psionic_species = no
 			}
 		}
 		else_if = {
@@ -324,4 +335,3 @@ citizenship_assimilation = {
 		}
 	}
 }
-

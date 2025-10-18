@@ -242,3 +242,32 @@
 
  council_agenda_agenda_synthetic_moduler_evolution_name: "$ap_synthetic_moduler_evolution$"
  council_agenda_agenda_synthetic_moduler_evolution_desc: "$ap_synthetic_moduler_evolution_desc$"
+
+ MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_eater_of_worlds_mod_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n—$SYSTEM$获得$VALUE$合金!\n—$aura_intensity_lost_level_tt$"
+
+ composer_aura_max_prohibit: "禁止虚境化植"
+ composer_aura_max_prohibit_desc: "这个星球禁止虚境化植添加"
+ decision_composer_aura_max_prohibit: "禁止虚境化植" 
+ decision_composer_aura_max_prohibit_desc: "这个星球禁止虚境化植添加，这将会极大的惹怒超主。"
+ decision_composer_aura_max_prohibit_effects_short: "减少星球的£pop£ §H人口增长§!。\n\n生效时增加§R人口维护费§!。"
+
+ decision_end_composer_aura_max_prohibit: "允许虚境化植"
+ decision_end_composer_aura_max_prohibit_desc: "允许虚境化植正常添加"
+ decision_end_composer_aura_max_prohibit_effects_short: "£pop£ §H人口§!现在可在星球上正常增长。\n\n减少§G人口维护费§!。"
+
+ policy_aura_shroud_mod: "灵能光环Mod修改"
+ policy_aura_shroud_mod_desc: "你可以根据游戏情况来调整灵能光环的效果\n"
+
+ eater_aura_max_intensity_alloy: "饥饿光环提供合金"
+ eater_aura_max_intensity_alloy_name: "护卫舰替换合金"
+ eater_aura_max_intensity_alloy_desc: "鉴于蠢驴的后期性能问题这个政策能够把船替换为合金减少电脑性能的压力 \n\n§E 饥饿光环的最高强度将会给予合金而不是护卫舰。§!"
+
+ composer_aura_max_prohibit_enable: "可以禁止虚境化植"
+ composer_aura_max_prohibit_enable_name: "星球解锁禁止虚境化植决议"
+ composer_aura_max_prohibit_enable_desc: "再需要建造理想球的星球上你不想再花上几年时间去清障碍吧。 \n\n§E 织缕光环不会再有禁止虚境化植决议的星球上添加虚境化植。§!"
+
+ aura_shroud_no_change: "不做改变"
+ aura_shroud_no_change_name: "不做改变"
+ aura_shroud_no_change_desc: "不做改变"
+
+ ship_damage_mult: "优越造船"

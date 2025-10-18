@@ -53,6 +53,14 @@ country_event = {
 	show_sound = event_alien_nature
 	is_triggered_only = yes
 
+	#Back to menu
+	option = {
+		name = enclave.410.a
+		hidden_effect = {
+			country_event = { id = auto_tech.1 }
+		}
+	}
+
 	option = {
 		name = auto_tech.2.energy_fire_rate
 		hidden_effect = {
@@ -101,6 +109,14 @@ country_event = {
 	picture = GFX_evt_ancient_databank
 	show_sound = event_alien_nature
 	is_triggered_only = yes
+
+	#Back to menu
+	option = {
+		name = enclave.410.a
+		hidden_effect = {
+			country_event = { id = auto_tech.1 }
+		}
+	}
 
 	option = {
 		name = auto_tech.3.strike_craft_fire_rate
@@ -171,6 +187,14 @@ country_event = {
 	picture = GFX_evt_ancient_databank
 	show_sound = event_alien_nature
 	is_triggered_only = yes
+
+	#Back to menu
+	option = {
+		name = enclave.410.a
+		hidden_effect = {
+			country_event = { id = auto_tech.1 }
+		}
+	}
 
 	option = {
 		name = auto_tech.4.kinetic_fire_rate

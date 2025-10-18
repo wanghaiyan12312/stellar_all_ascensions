@@ -1,0 +1,15 @@
+ship_damage_mult = {
+	ship_shield_mult = 1
+    ship_armor_mult = 1
+    ship_hull_mult = 1
+    ship_weapon_damage = 1
+	ship_disengage_chance_mult = -0.25
+}
+
+composer_aura_max_prohibit = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_politics.dds"
+	icon_frame = 2
+	logistic_growth_mult = -0.75
+	pop_amenities_usage_organic_mult = 0.25 # Some Cost on deny Parton
+	planet_pops_organics_upkeep_mult = 0.25
+}

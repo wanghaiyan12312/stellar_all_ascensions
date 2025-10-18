@@ -28,15 +28,15 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 	}
 	required_component="SENSOR_4"
@@ -52,7 +52,7 @@ ship_design = {
 # Massive Ship
 ship_design = {
 	name = "NAME_Alpha"
-	ship_size = massive_ship_fallen_empire
+	ship_size = cosmo_crisis_titan
 	section = {
 		template = "COSMO_CRISIS_TITAN_1T8L4M8P"
 		slot = "mid"
@@ -67,83 +67,83 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_GAMMA_LASER"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_02"
-			template = "LARGE_GAMMA_LASER"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_03"
-			template = "LARGE_GAMMA_LASER"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_04"
-			template = "LARGE_GAMMA_LASER"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_05"
-			template = "LARGE_GAMMA_LASER"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_06"
-			template = "LARGE_GAMMA_LASER"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_07"
-			template = "LARGE_GAMMA_LASER"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_08"
-			template = "LARGE_GAMMA_LASER"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "MEDIUM_GUN_03"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "MEDIUM_GUN_04"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_05"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_06"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_07"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_08"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}		
 		component = {
 			slot = "LARGE_UTILITY_1"
@@ -187,43 +187,43 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_11"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_12"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_13"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_14"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_15"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_16"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_17"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_18"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_19"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_20"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -239,7 +239,7 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_4"
-			template = "FIRE_CONTROL_1"
+			template = "ARMOR_HARDENER_2"
 		}
 	}
 	required_component="SENSOR_4"
@@ -256,7 +256,7 @@ ship_design = {
 # Large Ship
 ship_design = {
 	name = "NAME_Beta"
-	ship_size = large_ship_fallen_empire
+	ship_size = cosmo_crisis_battlecruiser
 	section = {
 		template = "COSMO_CRISIS_BATTLECRUISER_4P1X2L4M"
 		slot = "mid"
@@ -271,43 +271,43 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_GAMMA_LASER"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_02"
-			template = "LARGE_GAMMA_LASER"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "MEDIUM_GUN_03"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "MEDIUM_GUN_04"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "LARGE_UTILITY_1"
@@ -327,19 +327,19 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -351,7 +351,7 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "FIRE_CONTROL_1"
+			template = "ARMOR_HARDENER_2"
 		}
 	}
 	required_component="SENSOR_4"
@@ -383,15 +383,15 @@ ship_design = {
 		}
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "SMALL_PLASMA_1"
+			template = "SMALL_PLASMA_4"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "SMALL_PLASMA_2"
+			template = "SMALL_PLASMA_4"
 		}
 		component = {
 			slot = "SMALL_GUN_03"
-			template = "SMALL_PLASMA_3"
+			template = "SMALL_PLASMA_4"
 		}
 		component = {
 			slot = "SMALL_GUN_04"
@@ -399,19 +399,19 @@ ship_design = {
 		}
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_1"
@@ -427,15 +427,15 @@ ship_design = {
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_4"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_5"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_6"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -443,7 +443,7 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "SHIELD_HARDENER_2"
+			template = "ARMOR_HARDENER_2"
 		}
 	}
 	required_component="SENSOR_4"
@@ -495,11 +495,11 @@ ship_design = {
 		}
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "LARGE_UTILITY_1"
@@ -515,15 +515,15 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -531,7 +531,7 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "SHIELD_HARDENER_2"
+			template = "ARMOR_HARDENER_2"
 		}
 	}
 	required_component="SENSOR_4"
@@ -553,39 +553,39 @@ ship_design = {
 
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_05"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_06"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_07"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_08"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_09"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 
 		component = {
@@ -616,19 +616,19 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_UTILITY_1"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_2"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_3"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
@@ -667,39 +667,39 @@ ship_design = {
 
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_05"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_06"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_07"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_08"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_09"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 
 		component = {
@@ -754,35 +754,35 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_UTILITY_1"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_2"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_3"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_9"
@@ -841,39 +841,39 @@ ship_design = {
 
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_05"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_06"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_07"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_08"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_09"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 
 		component = {
@@ -945,51 +945,51 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_UTILITY_1"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_2"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_3"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_9"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_10"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_11"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_12"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_13"
@@ -1136,27 +1136,27 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_1"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_2"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_3"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 	}
 	required_component="SENSOR_4"
@@ -1172,7 +1172,7 @@ ship_design = {
 # Massive Ship
 ship_design = {
 	name = "NAME_Savant"
-	ship_size = massive_ship_fallen_empire
+	ship_size = cosmo_crisis_titan
 	section = {
 		template = "COSMO_CRISIS_TITAN_1T8L4M8P"
 		slot = "mid"
@@ -1187,163 +1187,163 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_PLASMA_3"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_02"
-			template = "LARGE_PLASMA_3"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_03"
-			template = "LARGE_PLASMA_3"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_04"
-			template = "LARGE_PLASMA_3"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_05"
-			template = "LARGE_PLASMA_3"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_06"
-			template = "LARGE_PLASMA_3"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_07"
-			template = "LARGE_PLASMA_3"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_08"
-			template = "LARGE_PLASMA_3"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ED_WEAPON"
 		}
 		component = {
 			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ED_WEAPON"
 		}
 		component = {
 			slot = "MEDIUM_GUN_03"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ED_WEAPON"
 		}
 		component = {
 			slot = "MEDIUM_GUN_04"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ED_WEAPON"
 		}
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_05"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_06"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_07"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_08"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "LARGE_UTILITY_1"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_2"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_3"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_9"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_10"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_11"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_12"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_13"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_14"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_15"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_16"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_17"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_18"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_19"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_20"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -1376,7 +1376,7 @@ ship_design = {
 # Large Ship
 ship_design = {
 	name = "NAME_Scholar"
-	ship_size = large_ship_fallen_empire
+	ship_size = cosmo_crisis_battlecruiser
 	section = {
 		template = "COSMO_CRISIS_BATTLECRUISER_4P1X2L4M"
 		slot = "mid"
@@ -1391,75 +1391,75 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_PLASMA_3"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_02"
-			template = "LARGE_PLASMA_3"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ED_WEAPON"
 		}
 		component = {
 			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ED_WEAPON"
 		}
 		component = {
 			slot = "MEDIUM_GUN_03"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ED_WEAPON"
 		}
 		component = {
 			slot = "MEDIUM_GUN_04"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ED_WEAPON"
 		}
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "LARGE_UTILITY_1"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_2"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_3"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -1495,67 +1495,67 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_PLASMA_3"
+			template = "LARGE_ED_WEAPON"
 		}
 		component = {
 			slot = "LARGE_GUN_02"
-			template = "LARGE_PLASMA_3"
+			template = "LARGE_ED_WEAPON"
 		}
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "SMALL_DISRUPTOR_3"
+			template = "SMALL_ED_WEAPON"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "SMALL_DISRUPTOR_3"
+			template = "SMALL_ED_WEAPON"
 		}
 		component = {
 			slot = "SMALL_GUN_03"
-			template = "SMALL_DISRUPTOR_3"
+			template = "SMALL_ED_WEAPON"
 		}
 		component = {
 			slot = "SMALL_GUN_04"
-			template = "SMALL_DISRUPTOR_3"
+			template = "SMALL_ED_WEAPON"
 		}
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_1"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_2"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_3"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_4"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_5"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_6"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -1587,39 +1587,39 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_PLASMA_3"
+			template = "LARGE_ED_WEAPON"
 		}
 		component = {
 			slot = "LARGE_GUN_02"
-			template = "LARGE_PLASMA_3"
+			template = "LARGE_ED_WEAPON"
 		}
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ED_WEAPON"
 		}
 		component = {
 			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ED_WEAPON"
 		}
 		component = {
 			slot = "MEDIUM_GUN_03"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ED_WEAPON"
 		}
 		component = {
 			slot = "MEDIUM_GUN_04"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ED_WEAPON"
 		}
 		component = {
 			slot = "MEDIUM_GUN_05"
-			template = "MEDIUM_DISRUPTOR_3"
+			template = "MEDIUM_ED_WEAPON"
 		}
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "LARGE_UTILITY_1"
@@ -1635,15 +1635,15 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -1672,52 +1672,52 @@ ship_design = {
 
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_05"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_06"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_07"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_08"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_09"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_PLASMA_3"
+			template = "LARGE_ED_WEAPON"
 		}
 		component = {
 			slot = "LARGE_GUN_02"
-			template = "LARGE_PLASMA_3"
+			template = "LARGE_ED_WEAPON"
 		}
 		component = {
 			slot = "LARGE_GUN_03"
-			template = "LARGE_PLASMA_3"
+			template = "LARGE_ED_WEAPON"
 		}
 
 		component = {
@@ -1735,19 +1735,19 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_UTILITY_1"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_2"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_3"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
@@ -1786,64 +1786,64 @@ ship_design = {
 
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_05"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_06"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_07"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_08"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_09"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_PLASMA_3"
+			template = "LARGE_ED_WEAPON"
 		}
 		component = {
 			slot = "LARGE_GUN_02"
-			template = "LARGE_PLASMA_3"
+			template = "LARGE_ED_WEAPON"
 		}
 		component = {
 			slot = "LARGE_GUN_03"
-			template = "LARGE_PLASMA_3"
+			template = "LARGE_ED_WEAPON"
 		}
 		component = {
 			slot = "LARGE_GUN_04"
-			template = "LARGE_PLASMA_3"
+			template = "LARGE_ED_WEAPON"
 		}
 		component = {
 			slot = "LARGE_GUN_05"
-			template = "LARGE_PLASMA_3"
+			template = "LARGE_ED_WEAPON"
 		}
 		component = {
 			slot = "LARGE_GUN_06"
-			template = "LARGE_PLASMA_3"
+			template = "LARGE_ED_WEAPON"
 		}
 
 		component = {
@@ -1873,35 +1873,35 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_UTILITY_1"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_2"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_3"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_9"
@@ -1960,64 +1960,64 @@ ship_design = {
 
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_05"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_06"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_07"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_08"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_09"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_PLASMA_3"
+			template = "LARGE_ED_WEAPON"
 		}
 		component = {
 			slot = "LARGE_GUN_02"
-			template = "LARGE_PLASMA_3"
+			template = "LARGE_ED_WEAPON"
 		}
 		component = {
 			slot = "LARGE_GUN_03"
-			template = "LARGE_PLASMA_3"
+			template = "LARGE_ED_WEAPON"
 		}
 		component = {
 			slot = "LARGE_GUN_04"
-			template = "LARGE_PLASMA_3"
+			template = "LARGE_ED_WEAPON"
 		}
 		component = {
 			slot = "LARGE_GUN_05"
-			template = "LARGE_PLASMA_3"
+			template = "LARGE_ED_WEAPON"
 		}
 		component = {
 			slot = "LARGE_GUN_06"
-			template = "LARGE_PLASMA_3"
+			template = "LARGE_ED_WEAPON"
 		}
 
 		component = {
@@ -2064,51 +2064,51 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_UTILITY_1"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_2"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_3"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_9"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_10"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_11"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_12"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_13"
@@ -2271,15 +2271,15 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 	}
 	required_component="SENSOR_4"
@@ -2295,7 +2295,7 @@ ship_design = {
 # Massive Ship
 ship_design = {
 	name = "NAME_Eternal"
-	ship_size = massive_ship_fallen_empire
+	ship_size = cosmo_crisis_titan
 	section = {
 		template = "COSMO_CRISIS_TITAN_1T8L4M8P"
 		slot = "mid"
@@ -2310,83 +2310,83 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_PLASMA_3"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_02"
-			template = "LARGE_PLASMA_3"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_03"
-			template = "LARGE_PLASMA_3"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_04"
-			template = "LARGE_PLASMA_3"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_05"
-			template = "LARGE_PLASMA_3"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_06"
-			template = "LARGE_PLASMA_3"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_07"
-			template = "LARGE_PLASMA_3"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_08"
-			template = "LARGE_PLASMA_3"
+			template = "KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_PLASMA_3"
+			template = "MEDIUM_PSIONIC_DISRUPTOR"
 		}
 		component = {
 			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_PLASMA_3"
+			template = "MEDIUM_PSIONIC_DISRUPTOR"
 		}
 		component = {
 			slot = "MEDIUM_GUN_03"
-			template = "MEDIUM_PLASMA_3"
+			template = "MEDIUM_PSIONIC_DISRUPTOR"
 		}
 		component = {
 			slot = "MEDIUM_GUN_04"
-			template = "MEDIUM_PLASMA_3"
+			template = "MEDIUM_PSIONIC_DISRUPTOR"
 		}
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_05"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_06"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_07"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_08"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "LARGE_UTILITY_1"
@@ -2499,7 +2499,7 @@ ship_design = {
 # Large Ship
 ship_design = {
 	name = "NAME_Avatar"
-	ship_size = large_ship_fallen_empire
+	ship_size = cosmo_crisis_battlecruiser
 	section = {
 		template = "COSMO_CRISIS_BATTLECRUISER_4P1X4G4M"
 		slot = "mid"
@@ -2514,51 +2514,51 @@ ship_design = {
 		}
 		component = {
 			slot = "TORPEDO_01"
-			template = "ENERGY_TORPEDO_2"
+			template = "PSIONIC_TORPEDO"
 		}
 		component = {
 			slot = "TORPEDO_02"
-			template = "ENERGY_TORPEDO_2"
+			template = "PSIONIC_TORPEDO"
 		}
 		component = {
 			slot = "TORPEDO_03"
-			template = "TORPEDO_3"
+			template = "PSIONIC_TORPEDO"
 		}
 		component = {
 			slot = "TORPEDO_04"
-			template = "TORPEDO_3"
+			template = "PSIONIC_TORPEDO"
 		}
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_PLASMA_3"
+			template = "MEDIUM_PSIONIC_DISRUPTOR"
 		}
 		component = {
 			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_PLASMA_3"
+			template = "MEDIUM_PSIONIC_DISRUPTOR"
 		}
 		component = {
 			slot = "MEDIUM_GUN_03"
-			template = "MEDIUM_PLASMA_3"
+			template = "MEDIUM_PSIONIC_DISRUPTOR"
 		}
 		component = {
 			slot = "MEDIUM_GUN_04"
-			template = "MEDIUM_PLASMA_3"
+			template = "MEDIUM_PSIONIC_DISRUPTOR"
 		}
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "LARGE_UTILITY_1"
@@ -2626,47 +2626,47 @@ ship_design = {
 
 		component = {
 			slot = "TORPEDO_01"
-			template = "TORPEDO_3"
+			template = "PSIONIC_TORPEDO"
 		}
 		component = {
 			slot = "TORPEDO_02"
-			template = "TORPEDO_3"
+			template = "PSIONIC_TORPEDO"
 		}
 		component = {
 			slot = "TORPEDO_03"
-			template = "TORPEDO_3"
+			template = "PSIONIC_TORPEDO"
 		}
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "SMALL_PLASMA_3"
+			template = "SMALL_PSIONIC_DISRUPTOR"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "SMALL_PLASMA_3"
+			template = "SMALL_PSIONIC_DISRUPTOR"
 		}
 		component = {
 			slot = "SMALL_GUN_03"
-			template = "SMALL_PLASMA_3"
+			template = "SMALL_PSIONIC_DISRUPTOR"
 		}
 		component = {
 			slot = "SMALL_GUN_04"
-			template = "SMALL_PLASMA_3"
+			template = "SMALL_PSIONIC_DISRUPTOR"
 		}
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_1"
@@ -2682,15 +2682,15 @@ ship_design = {
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_4"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_PSI_SHIELD"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_5"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_PSI_SHIELD"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_6"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_PSI_SHIELD"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -2750,11 +2750,11 @@ ship_design = {
 		}
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "LARGE_UTILITY_1"
@@ -2770,15 +2770,15 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -2807,39 +2807,39 @@ ship_design = {
 
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_05"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_06"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_07"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_08"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_09"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 
 		component = {
@@ -2870,19 +2870,19 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_UTILITY_1"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_2"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_3"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
@@ -2921,39 +2921,39 @@ ship_design = {
 
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_05"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_06"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_07"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_08"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_09"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 
 		component = {
@@ -3008,35 +3008,35 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_UTILITY_1"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_2"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_3"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_9"
@@ -3095,39 +3095,39 @@ ship_design = {
 
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_05"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_06"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_07"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_08"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_09"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 
 		component = {
@@ -3199,51 +3199,51 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_UTILITY_1"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_2"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_3"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_9"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_10"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_11"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_12"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_13"
@@ -3406,15 +3406,15 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 	}
 	required_component="SENSOR_4"
@@ -3430,7 +3430,7 @@ ship_design = {
 # Massive Ship
 ship_design = {
 	name = "NAME_Imperium"
-	ship_size = massive_ship_fallen_empire
+	ship_size = cosmo_crisis_titan
 	section = {
 		template = "COSMO_CRISIS_TITAN_1T8L4M8P"
 		slot = "mid"
@@ -3477,51 +3477,51 @@ ship_design = {
 		}
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_MASS_DRIVER_5"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_MASS_DRIVER_5"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "MEDIUM_GUN_03"
-			template = "MEDIUM_MASS_DRIVER_5"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "MEDIUM_GUN_04"
-			template = "MEDIUM_MASS_DRIVER_5"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "PD_03"
-			template = "POINT_DEFENCE_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "PD_04"
-			template = "POINT_DEFENCE_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "PD_05"
-			template = "POINT_DEFENCE_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "PD_06"
-			template = "POINT_DEFENCE_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "PD_07"
-			template = "POINT_DEFENCE_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "PD_08"
-			template = "POINT_DEFENCE_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "LARGE_UTILITY_1"
@@ -3557,31 +3557,31 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_9"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_10"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_11"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_12"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_13"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_14"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_15"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_16"
@@ -3617,7 +3617,7 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_4"
-			template = "SHIELD_HARDENER_2"
+			template = "ARMOR_HARDENER_2"
 		}
 	}
 	required_component="SENSOR_4"
@@ -3634,7 +3634,7 @@ ship_design = {
 # Large Ship
 ship_design = {
 	name = "NAME_Supremacy"
-	ship_size = large_ship_fallen_empire
+	ship_size = cosmo_crisis_battlecruiser
 	section = {
 		template = "COSMO_CRISIS_BATTLECRUISER_4P1X2L4M"
 		slot = "mid"
@@ -3658,35 +3658,35 @@ ship_design = {
 		}
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_MASS_DRIVER_5"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_MASS_DRIVER_5"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "MEDIUM_GUN_03"
-			template = "MEDIUM_MASS_DRIVER_5"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "MEDIUM_GUN_04"
-			template = "MEDIUM_MASS_DRIVER_5"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "PD_03"
-			template = "POINT_DEFENCE_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "PD_04"
-			template = "POINT_DEFENCE_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "LARGE_UTILITY_1"
@@ -3706,27 +3706,27 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_2"
+			template = "SHIELD_HARDENER_2"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_2"
+			template = "SHIELD_HARDENER_2"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
@@ -3762,35 +3762,35 @@ ship_design = {
 		}
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "SMALL_AUTOCANNON_3"
+			template = "SMALL_AUTOCANNON_4"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "SMALL_AUTOCANNON_3"
+			template = "SMALL_AUTOCANNON_4"
 		}
 		component = {
 			slot = "SMALL_GUN_03"
-			template = "SMALL_AUTOCANNON_3"
+			template = "SMALL_AUTOCANNON_4"
 		}
 		component = {
 			slot = "SMALL_GUN_04"
-			template = "SMALL_AUTOCANNON_3"
+			template = "SMALL_AUTOCANNON_4"
 		}
 		component = {
 			slot = "PD_01"
-			template = "FLAK_BATTERY_2"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "PD_02"
-			template = "FLAK_BATTERY_2"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "PD_03"
-			template = "FLAK_BATTERY_2"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "PD_04"
-			template = "FLAK_BATTERY_2"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_1"
@@ -3806,19 +3806,19 @@ ship_design = {
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_4"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_5"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_6"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_2"
+			template = "SHIELD_HARDENER_2"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
@@ -3873,11 +3873,11 @@ ship_design = {
 		}
 		component = {
 			slot = "PD_01"
-			template = "FLAK_BATTERY_2"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "PD_02"
-			template = "FLAK_BATTERY_2"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "LARGE_UTILITY_1"
@@ -3893,15 +3893,15 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -3930,39 +3930,39 @@ ship_design = {
 
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_03"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_04"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_05"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_06"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_07"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_08"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_09"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 
 		component = {
@@ -3993,19 +3993,19 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_UTILITY_1"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_2"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_3"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
@@ -4044,39 +4044,39 @@ ship_design = {
 
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_03"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_04"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_05"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_06"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_07"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_08"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_09"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 
 		component = {
@@ -4131,35 +4131,35 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_UTILITY_1"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_2"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_3"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_9"
@@ -4218,39 +4218,39 @@ ship_design = {
 
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_03"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_04"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_05"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_06"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_07"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_08"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 		component = {
 			slot = "SMALL_GUN_09"
-			template = "FLAK_BATTERY_3"
+			template = "FLAK_BATTERY_4"
 		}
 
 		component = {
@@ -4322,51 +4322,51 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_UTILITY_1"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_2"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_3"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_9"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_10"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_11"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_12"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_13"
@@ -4529,15 +4529,15 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 	}
 	required_component="SENSOR_4"
@@ -4553,7 +4553,7 @@ ship_design = {
 # Massive Ship
 ship_design = {
 	name = "NAME_Keeper"
-	ship_size = massive_ship_fallen_empire
+	ship_size = cosmo_crisis_titan
 	section = {
 		template = "COSMO_CRISIS_TITAN_1T8L4M8P"
 		slot = "mid"
@@ -4600,52 +4600,52 @@ ship_design = {
 		}
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_GAMMA_LASER"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_GAMMA_LASER"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "MEDIUM_GUN_03"
-			template = "MEDIUM_GAMMA_LASER"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "MEDIUM_GUN_04"
-			template = "MEDIUM_GAMMA_LASER"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_05"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_06"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_07"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_08"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 
 		component = {
@@ -4690,43 +4690,43 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_11"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_12"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_13"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_14"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_15"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_16"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_17"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_18"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_19"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_20"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -4738,11 +4738,11 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "SHIELD_HARDENER_2"
+			template = "ARMOR_HARDENER_2"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "SHIELD_HARDENER_2"
+			template = "ARMOR_HARDENER_2"
 		}
 	}
 	required_component="SENSOR_4"
@@ -4759,7 +4759,7 @@ ship_design = {
 # Large Ship
 ship_design = {
 	name = "NAME_Custodian"
-	ship_size = large_ship_fallen_empire
+	ship_size = cosmo_crisis_battlecruiser
 	section = {
 		template = "COSMO_CRISIS_BATTLECRUISER_4P1X2L4M"
 		slot = "mid"
@@ -4767,52 +4767,52 @@ ship_design = {
 
 		component = {
 			slot = "EXTRA_LARGE_01"
-			template = "MASS_ACCELERATOR_2"
+			template = "ENERGY_LANCE_2"
 		}
 		component = {
 			slot = "EXTRA_LARGE_02"
-			template = "MASS_ACCELERATOR_2"
+			template = "ENERGY_LANCE_2"
 		}
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_GAMMA_LASER"
+			template = "LARGE_AUTOCANNON_4"
 		}
 		component = {
 			slot = "LARGE_GUN_02"
-			template = "LARGE_GAMMA_LASER"
+			template = "LARGE_AUTOCANNON_4"
 		}
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_MASS_DRIVER_5"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_MASS_DRIVER_5"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "MEDIUM_GUN_03"
-			template = "MEDIUM_MASS_DRIVER_5"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 		component = {
 			slot = "MEDIUM_GUN_04"
-			template = "MEDIUM_MASS_DRIVER_5"
+			template = "MEDIUM_ARCHAEO_KINETIC"
 		}
 
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 
 		component = {
@@ -4833,19 +4833,19 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -4857,7 +4857,7 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "SHIELD_HARDENER_2"
+			template = "ARMOR_HARDENER_2"
 		}
 	}
 	required_component="SENSOR_4"
@@ -4889,35 +4889,35 @@ ship_design = {
 		}
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "SMALL_MASS_DRIVER_5"
+			template = "ARCHAEO_MISSILE"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "SMALL_MASS_DRIVER_5"
+			template = "ARCHAEO_MISSILE"
 		}
 		component = {
 			slot = "SMALL_GUN_03"
-			template = "SMALL_GAMMA_LASER"
+			template = "ARCHAEO_MISSILE"
 		}
 		component = {
 			slot = "SMALL_GUN_04"
-			template = "SMALL_GAMMA_LASER"
+			template = "ARCHAEO_MISSILE"
 		}
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_1"
@@ -4933,15 +4933,15 @@ ship_design = {
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_4"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_5"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_6"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -4949,7 +4949,7 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "SHIELD_HARDENER_2"
+			template = "ARMOR_HARDENER_2"
 		}
 	}
 	required_component="SENSOR_4"
@@ -5001,11 +5001,11 @@ ship_design = {
 		}
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "LARGE_UTILITY_1"
@@ -5021,15 +5021,15 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -5121,19 +5121,19 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_UTILITY_1"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_2"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_3"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
@@ -5259,35 +5259,35 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_UTILITY_1"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_2"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_3"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_9"
@@ -5450,51 +5450,51 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_UTILITY_1"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_2"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_3"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_9"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_10"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_11"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_12"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_13"
@@ -5633,7 +5633,7 @@ ship_design = {
 
 ship_design = {
 	name = "NAME_Surplus_Beta"
-	ship_size = large_ship_fallen_empire
+	ship_size = cosmo_crisis_battlecruiser
 	is_event_design = yes
 	is_special_buildable = yes
 
@@ -5699,19 +5699,19 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -5735,7 +5735,7 @@ ship_design = {
 
 ship_design = {
 	name = "NAME_Surplus_Scholar"
-	ship_size = large_ship_fallen_empire
+	ship_size = cosmo_crisis_battlecruiser
 	is_event_design = yes
 	is_special_buildable = yes
 
@@ -5801,19 +5801,19 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -5837,7 +5837,7 @@ ship_design = {
 
 ship_design = {
 	name = "NAME_Surplus_Custodian"
-	ship_size = large_ship_fallen_empire
+	ship_size = cosmo_crisis_battlecruiser
 	is_event_design = yes
 	is_special_buildable = yes
 
@@ -5904,19 +5904,19 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -5974,19 +5974,19 @@ ship_design = {
 		}
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_1"
@@ -6002,15 +6002,15 @@ ship_design = {
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_4"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_5"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_6"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -6064,19 +6064,19 @@ ship_design = {
 		}
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_1"
@@ -6092,15 +6092,15 @@ ship_design = {
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_4"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_5"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_6"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -6154,19 +6154,19 @@ ship_design = {
 		}
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_1"
@@ -6182,15 +6182,15 @@ ship_design = {
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_4"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_5"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_6"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -6210,7 +6210,7 @@ ship_design = {
 
 ship_design = {
 	name = "NAME_Surplus_Avatar"
-	ship_size = large_ship_fallen_empire
+	ship_size = cosmo_crisis_battlecruiser
 	is_event_design = yes
 	is_special_buildable = yes
 
@@ -6284,19 +6284,19 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DRAGON_BIO_ARMOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -6358,19 +6358,19 @@ ship_design = {
 		}
 		component = {
 			slot = "PD_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_02"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_03"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "PD_04"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_1"
@@ -6386,15 +6386,15 @@ ship_design = {
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_4"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_5"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_6"
-			template = "MEDIUM_DRAGON_BIO_ARMOR"
+			template = "MEDIUM_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -6422,7 +6422,7 @@ ship_design = {
 
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "POINT_DEFENCE_3"
+			template = "ARCHAEO_POINTDEFENCE"
 		}
 		component = {
 			slot = "SMALL_GUN_02"

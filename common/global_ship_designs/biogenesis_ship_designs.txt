@@ -766,11 +766,11 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_1"
+			template = "ARMOR_HARDENER_2"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_1"
+			template = "ARMOR_HARDENER_2"
 		}
 	}
 	required_component = "BIO_PSI_JUMP_DRIVE_1"
@@ -847,11 +847,11 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_1"
+			template = "ARMOR_HARDENER_2"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_1"
+			template = "ARMOR_HARDENER_2"
 		}
 	}
 	required_component = "BIO_PSI_JUMP_DRIVE_1"
@@ -928,11 +928,11 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_1"
+			template = "ARMOR_HARDENER_2"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_1"
+			template = "ARMOR_HARDENER_2"
 		}
 	}
 	required_component = "BIO_PSI_JUMP_DRIVE_1"
@@ -1019,11 +1019,11 @@ ship_design = {
         }
         component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_1"
+			template = "ARMOR_HARDENER_2"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_1"
+			template = "ARMOR_HARDENER_2"
 		}
     }
     required_component = "BIO_PSI_JUMP_DRIVE_1"
@@ -1109,11 +1109,11 @@ ship_design = {
         }
         component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_1"
+			template = "ARMOR_HARDENER_2"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_1"
+			template = "ARMOR_HARDENER_2"
 		}
     }
     required_component = "BIO_PSI_JUMP_DRIVE_1"
@@ -1207,15 +1207,15 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_1"
+			template = "ARMOR_HARDENER_2"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_1"
+			template = "ARMOR_HARDENER_2"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "FIRE_CONTROL_1"
+			template = "ARMOR_HARDENER_2"
 		}
 	}
 	required_component = "BIO_PSI_JUMP_DRIVE_1"
@@ -1238,43 +1238,43 @@ ship_design = {
 		# Energy Torpedos
 		component = {
 			slot = "TORPEDO_01"
-			template = "BIO_ENERGY_TORPEDO_2"
+			template = "LARGE_SCOURGE_MISSILE_1"
 		}
 		component = {
 			slot = "TORPEDO_02"
-			template = "BIO_ENERGY_TORPEDO_2"
+			template = "LARGE_SCOURGE_MISSILE_1"
 		}
 		component = {
 			slot = "TORPEDO_03"
-			template = "BIO_ENERGY_TORPEDO_2"
+			template = "LARGE_SCOURGE_MISSILE_1"
 		}
 		component = {
 			slot = "TORPEDO_04"
-			template = "BIO_ENERGY_TORPEDO_2"
+			template = "LARGE_SCOURGE_MISSILE_1"
 		}
 		component = {
 			slot = "TORPEDO_05"
-			template = "BIO_ENERGY_TORPEDO_2"
+			template = "LARGE_SCOURGE_MISSILE_1"
 		}
 		component = {
 			slot = "TORPEDO_06"
-			template = "BIO_ENERGY_TORPEDO_2"
+			template = "LARGE_SCOURGE_MISSILE_1"
 		}
 		component = {
 			slot = "TORPEDO_07"
-			template = "BIO_ENERGY_TORPEDO_2"
+			template = "LARGE_SCOURGE_MISSILE_1"
 		}
 		component = {
 			slot = "TORPEDO_08"
-			template = "BIO_ENERGY_TORPEDO_2"
+			template = "LARGE_SCOURGE_MISSILE_1"
 		}
 		component = {
 			slot = "TORPEDO_09"
-			template = "BIO_ENERGY_TORPEDO_2"
+			template = "LARGE_SCOURGE_MISSILE_1"
 		}
 		component = {
 			slot = "TORPEDO_10"
-			template = "BIO_ENERGY_TORPEDO_2"
+			template = "LARGE_SCOURGE_MISSILE_1"
 		}
 
 		component = {
@@ -1331,15 +1331,15 @@ ship_design = {
 		# Aux
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_1"
+			template = "ARMOR_HARDENER_2"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_1"
+			template = "ARMOR_HARDENER_2"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "FIRE_CONTROL_1"
+			template = "ARMOR_HARDENER_2"
 		}
 	}
 	required_component = "BIO_PSI_JUMP_DRIVE_1"
@@ -1388,19 +1388,19 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_GAMMA_BIO_LASER"
+			template = "BIO_KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_02"
-			template = "LARGE_GAMMA_BIO_LASER"
+			template = "BIO_KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_03"
-			template = "LARGE_GAMMA_BIO_LASER"
+			template = "BIO_KINETIC_ARTILLERY_2"
 		}
 		component = {
 			slot = "LARGE_GUN_04"
-			template = "LARGE_GAMMA_BIO_LASER"
+			template = "BIO_KINETIC_ARTILLERY_2"
 		}
 
 		# Utilities
@@ -1463,7 +1463,7 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "FIRE_CONTROL_1"
+			template = "ARMOR_HARDENER_2"
 		}
 	}
 	required_component = "BIO_PSI_JUMP_DRIVE_1"

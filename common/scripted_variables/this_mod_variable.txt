@@ -5,6 +5,11 @@
 @fallen_empire_enforce_power_captain_gap = 360 
 @fallen_empire_enforce_power_ensign_gap = 360 
 @fallen_empire_enforce_power_cadet_gap = 360 
+@fall_empire_used_naval_capacity_max_grand_admiral = 15000
+@fall_empire_used_naval_capacity_max_admiral_gap = 10000
+@fall_empire_used_naval_capacity_max_commodore_gap = 8000
+@fall_empire_used_naval_capacity_max_ensign_gap = 5000
+@fall_empire_used_naval_capacity_max_cadet_gap = 2000
 
 @hive_fallen_empire_stinger = 3
 @hive_fallen_empire_mauler = 3

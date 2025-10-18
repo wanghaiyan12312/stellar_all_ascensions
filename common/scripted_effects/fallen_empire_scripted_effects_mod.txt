@@ -1,8 +1,8 @@
 add_awakened_fallen_empire_resources_mod = {
 	# Changing country type resets resources, so give them full stores
-	add_resource = { minerals = 50000 }
-	add_resource = { energy = 50000 }
-	add_resource = { food = 50000 }
+	add_resource = { minerals = 100000 }
+	add_resource = { energy = 100000 }
+	add_resource = { food = 100000 }
 	add_resource = { alloys = 20000 }
 	add_resource = { consumer_goods = 20000 }
 	add_resource = { alloys = 20000 }
@@ -13,6 +13,7 @@ add_awakened_fallen_empire_resources_mod = {
 	add_resource = { sr_living_metal = 10000 }
 	add_resource = { nanites = 10000 }
 	add_resource = { sr_zro = 10000 }
+	add_resource = { minor_artifacts = 500000000 }
 }
 create_fallen_empire_reinforcements_mod = {
 	if = {
@@ -61,7 +62,6 @@ create_fallen_empire_reinforcements_mod = {
 	}
 }
 
-### inline script pls
 create_fallen_empire_reinforcements_xenophile_mod = {
 	create_fleet = {
 		effect = {
@@ -331,7 +331,7 @@ create_fallen_empire_reinforcements_hive_mod = {
 				count = @hive_fallen_empire_harbinger
 				create_ship = {
 					name = random
-					design = "NAME_HIVE_FE_Large_Harbinger_Point"
+					design = "NAME_HIVE_FE_Large_Harbinger"
 					graphical_culture = owner
 				}
 			}
@@ -374,9 +374,7 @@ create_fallen_empire_reinforcements_hive_mod = {
 create_fe_home_citadel = {
 	spawn_megastructure = {
 		type = "mega_shipyard_ruined"
-		owner = event_target:fallen_empire_hive_$FRAGMENT$
 		planet = star
-
 		init_effect = {
 			create_ambient_object = {
 				type = "large_debris_object"

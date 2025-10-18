@@ -4,7 +4,6 @@ living_standard_psi_and_cyborg_assimilation = {
 	}
 
 	potential = {
-		is_hive_empire = no
 		has_utopia = yes
 		exists = from
 		from = {

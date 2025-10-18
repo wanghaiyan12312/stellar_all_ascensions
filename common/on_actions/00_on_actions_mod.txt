@@ -1,13 +1,12 @@
 on_leader_spawned = {
 	events = {
-		utopia.3500 # fix edurate leaderTrait
-		utopia.3501 # fix exists leader miss ascension trait
+		ascensions.4 # fix exists leader miss ascension trait
 	}
 }
 
 on_leader_assigned = {
 	events = {
-		utopia.3502 # fix exists leader miss ascension trait
+		ascensions.5 # fix exists leader miss ascension trait
 		leadershroud.4
 	}
 }
@@ -22,12 +21,18 @@ on_game_start_country = {
 
 on_monthly_pulse = {
 	events = {
-		assimilation.2000
+		ascensions.2000
 	}
 }
 
 on_ship_built = {
 	events = {
 		shipeventmod.1
+	}
+}
+
+on_leader_death_notify = {
+	events = {
+		leadershroud.6
 	}
 }

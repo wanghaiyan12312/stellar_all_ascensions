@@ -152,7 +152,7 @@ large_ship_synth_queen_mod = {
 	is_designable = yes
 
 	potential_country = {
-		has_technology = tech_cosmogenesis_battlecruiser
+		has_technology = tech_cosmogenesis_FE_titan
 		country_uses_bio_ships = no
 	}
 
@@ -196,7 +196,7 @@ small_ship_synth_queen_mod = {
 	ship_roles = { artillery }
 
 	potential_country = {
-		has_technology = tech_cosmogenesis_escort
+		has_technology = tech_cosmogenesis_battlecruiser
 		country_uses_bio_ships = no
 	}
 

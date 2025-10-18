@@ -19,8 +19,7 @@ building_empyrean_shrine = {
 	potential = {
 		exists = owner
 		owner = {
-			
-	
+			has_technology = tech_fe_administration_2
 			OR = {
 				AND = {
 					is_spiritualist = yes
@@ -49,6 +48,7 @@ building_empyrean_shrine = {
 			owner = {
 				OR = {
 					has_technology = tech_fe_administration_2
+					is_fallen_empire = yes
 				}
 			}
 		}

@@ -27,25 +27,7 @@ country_event = {
 				}
 				set_global_flag = sharpbeak_hire_happend
 			}
-			
-			## add a transfer promise only one
-			#if = {
-			#	limit = { 
-			#		NOR = {
-			#			has_global_flag = gray_goo_crisis_set
-			#			has_global_flag = dragon_season
-			#			has_global_flag = gray_goo_empire_set
-			#		}
-			#	}
-			#	set_global_flag = gray_hire_happend
-			#}
-			## allow to exist two formless
-			#if = {
-			#	limit ={
-			#		has_global_flag = crystal_sphere_sent
-			#	}
-			#	set_global_flag = formless_hire_happend
-			#}
+		
 			every_country = {
 				if ={
 					limit = {
@@ -134,7 +116,7 @@ ship_event = {
 	}
 }
 
-country_event = {
+leader_event = {
 	id = leadershroud.4
 	hide_window = yes
 	is_triggered_only = yes
@@ -144,7 +126,10 @@ country_event = {
 		event_target:beholder_leader = {
 			exists = owner
 		}
-		has_country_flag = beholder_shroud_update
+		owner = {
+			has_country_flag = beholder_shroud_update
+		}
+		
 	}
 
 	immediate = {
@@ -214,6 +199,100 @@ ship_event = {
 		}
 	}
 }
+
+country_event = {
+	id = leadershroud.6
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		from = { 
+			has_leader_flag = leader_shroud_legendary_mod
+			leader_class = commander 
+			NOT = {
+				has_leader_flag = leader_death_events_blocked
+			}
+		}
+	}
+
+	immediate = {		
+		if = {
+			limit = {
+				exists = event_target:legendary_lost_leader
+				from = {
+					has_leader_flag = exakeides
+				}
+			}
+			clone_leader = {
+				target = event_target:legendary_lost_leader
+				tier = leader_tier_legendary
+				effect = {
+					set_leader_flag = leader_shroud_legendary_mod
+				}
+			}
+			last_created_leader = {
+				set_leader_flag = exakeides
+				save_global_event_target_as = legendary_lost_leader
+				set_leader_flag = immune_to_negative_traits
+				set_owner = root
+			}
+
+		}else_if = {
+			limit = {
+				exists = event_target:beholder_leader
+				from = {
+					has_leader_flag = beholder
+				}
+			}
+			clone_leader = {
+				target = event_target:beholder_leader
+				tier = leader_tier_legendary
+				effect = {
+					set_leader_flag = leader_shroud_legendary_mod
+				}
+			}
+			last_created_leader = {
+				save_global_event_target_as = beholder_leader
+				set_leader_flag = beholder
+				set_leader_flag = immune_to_negative_traits
+				set_owner = root
+			}
+
+		}else_if = {
+			limit = {
+				exists = event_target:admiral_sharpbeak
+				from = {
+					has_leader_flag = skrand
+				}
+			}
+			clone_leader = {
+				target = event_target:admiral_sharpbeak
+				tier = leader_tier_legendary
+				effect = {
+					set_leader_flag = leader_shroud_legendary_mod
+				}
+			}
+			last_created_leader = {
+				save_global_event_target_as = admiral_sharpbeak
+				set_leader_flag = skrand
+				set_leader_flag = immune_to_negative_traits
+				set_owner = root
+			}
+
+		}else = {
+			clone_leader = {
+				target = from
+				effect = {
+					set_leader_flag = leader_shroud_legendary_mod
+				}			
+			}
+		}
+		from = {
+			kill_leader = { show_notification = no }
+		}
+	}
+}
+
 
 country_event = {
 	id = leadershroud.100
@@ -420,7 +499,6 @@ country_event = {
 						save_global_event_target_as = beholder_leader
 						set_leader_flag = beholder
 						set_leader_flag = immune_to_negative_traits
-						set_leader_flag = leader_death_events_blocked
 						set_owner = root
 						exile_leader_as = beholder_leader
 					}
@@ -436,7 +514,6 @@ country_event = {
 				save_global_event_target_as = beholder_leader
 				set_leader_flag = beholder
 				set_leader_flag = immune_to_negative_traits
-				set_leader_flag = leader_death_events_blocked
 			}
 			# Spawn ship
 			create_fleet = {
@@ -767,6 +844,7 @@ country_event = {
 				}
 				set_leader_flag = immune_to_negative_traits
 				save_global_event_target_as = formless_leader_mod_shrould
+				set_leader_flag = formless_leader_mod
 				set_owner = root
 			}
 			hire_event_leader_message = {
@@ -775,9 +853,6 @@ country_event = {
 			event_target:formless_leader_mod_shrould = {
 				set_owner = root
 			}
-			set_country_flag = allied_with_formless
-			set_country_flag = picked_formless_reward_path
-			set_country_flag = returned_to_form_achievement
 			set_global_flag = formless_hire_happend
 		}
 	}
@@ -976,7 +1051,11 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = beholder_shroud_update
-			country_event = { id = leadershroud.4 }
+			event_target:beholder_leader ={
+				leader_event = {
+					id = leadershroud.4 
+				}
+			}
 		}
 	}
 	option = {

@@ -2,7 +2,7 @@
 update_legendary_council_scientist = {
 	remove_all_traits = yes
 	set_skill = 10
-	set_leader_flag = leader_death_events_blocked
+	set_leader_flag = leader_shroud_legendary_mod
 	add_trait = {
 		trait = subclass_scientist_councilor
 		show_message = no
@@ -194,16 +194,6 @@ update_legendary_council_scientist = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_legendary_military_knowledge_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_foe_hammer_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
 		trait = leader_trait_legendary_great_teacher_3
 		show_message = no
 		consume_selection = yes
@@ -263,12 +253,17 @@ update_legendary_council_scientist = {
 		show_message = no
 		consume_selection = yes
 	}
+	add_trait = { 
+		trait = leader_trait_shroud_warped 
+		show_message = no
+		consume_selection = yes
+	}
 
 }
 update_legendary_govern_scientist = {
 	remove_all_traits = yes
 	set_skill = 10
-	set_leader_flag = leader_death_events_blocked
+	set_leader_flag = leader_shroud_legendary_mod
 	add_trait = {
 		trait = subclass_scientist_governor
 		show_message = no
@@ -389,11 +384,17 @@ update_legendary_govern_scientist = {
 		show_message = no
 		consume_selection = yes
 	}
+	add_trait = { 
+		trait = leader_trait_shroud_warped 
+		show_message = no
+		consume_selection = yes
+	}
+
 }
 update_legendary_council_official = {
 	remove_all_traits = yes
 	set_skill = 10
-	set_leader_flag = leader_death_events_blocked
+	set_leader_flag = leader_shroud_legendary_mod
 	add_trait = {
 		trait = subclass_official_economy_councilor
 		show_message = no
@@ -530,16 +531,6 @@ update_legendary_council_official = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_legendary_military_knowledge_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_foe_hammer_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
 		trait = leader_trait_legendary_great_teacher_3
 		show_message = no
 		consume_selection = yes
@@ -579,12 +570,17 @@ update_legendary_council_official = {
 		show_message = no
 		consume_selection = yes
 	}
+	add_trait = { 
+		trait = leader_trait_shroud_warped 
+		show_message = no
+		consume_selection = yes
+	}
 
 }
 update_legendary_govern_official = {
 	remove_all_traits = yes
 	set_skill = 10
-	set_leader_flag = leader_death_events_blocked
+	set_leader_flag = leader_shroud_legendary_mod
 	add_trait = {
 		trait = subclass_official_governor
 		show_message = no
@@ -790,12 +786,17 @@ update_legendary_govern_official = {
 		show_message = no
 		consume_selection = yes
 	}
+	add_trait = { 
+		trait = leader_trait_shroud_warped 
+		show_message = no
+		consume_selection = yes
+	}
 
 }
 update_legendary_councilor_commander = {
 	remove_all_traits = yes
 	set_skill = 10
-	set_leader_flag = leader_death_events_blocked
+	set_leader_flag = leader_shroud_legendary_mod
 	add_trait = {
 		trait = subclass_commander_councilor
 		show_message = no
@@ -823,11 +824,6 @@ update_legendary_councilor_commander = {
 	}
 	add_trait = {
 		trait = leader_trait_master_bureaucrat
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_aturion_organizer
 		show_message = no
 		consume_selection = yes
 	}
@@ -972,16 +968,6 @@ update_legendary_councilor_commander = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_legendary_military_knowledge_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_foe_hammer_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
 		trait = leader_trait_legendary_great_teacher_3
 		show_message = no
 		consume_selection = yes
@@ -1016,11 +1002,17 @@ update_legendary_councilor_commander = {
 		show_message = no
 		consume_selection = yes
 	}
+	add_trait = { 
+		trait = leader_trait_shroud_warped 
+		show_message = no
+		consume_selection = yes
+	}
+
 }
 update_legendary_admiral_commander = {
 	remove_all_traits = yes
 	set_skill = 10
-	set_leader_flag = leader_death_events_blocked
+	set_leader_flag = leader_shroud_legendary_mod
 	add_trait = {
 		trait = subclass_commander_admiral
 		show_message = no
@@ -1243,6 +1235,11 @@ update_legendary_admiral_commander = {
 	}
 	add_trait = {
 		trait = leader_trait_shroudshaper
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = { 
+		trait = leader_trait_shroud_warped 
 		show_message = no
 		consume_selection = yes
 	}

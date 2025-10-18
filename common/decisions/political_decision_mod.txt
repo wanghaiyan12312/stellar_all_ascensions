@@ -1,0 +1,51 @@
+# Discourage Growth
+decision_composer_aura_max_prohibit = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_politics
+
+	resources = {
+		category = decisions
+		cost = {
+			unity = 250
+		}
+	}
+
+	potential = {
+		owner = {
+			has_policy_flag = composer_aura_max_prohibit_enable
+		}
+		NOT = {
+			has_modifier = composer_aura_max_prohibit
+		}
+	}
+	effect = {
+		add_modifier = { modifier = "composer_aura_max_prohibit" days = -1 }
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_end_composer_aura_max_prohibit = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_politics
+
+	resources = {
+		category = decisions
+	}
+
+	potential = {
+		has_modifier = composer_aura_max_prohibit
+	}
+
+	effect = {
+		remove_modifier = "composer_aura_max_prohibit"
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

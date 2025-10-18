@@ -1,0 +1,50 @@
+aura_shroud_mod = {
+
+	potential = {
+		has_technology = tech_psionic_aura
+	}
+
+	option = {
+		name = "eater_aura_max_intensity_alloy"
+
+		policy_flags = {
+			eater_aura_max_intensity_alloy
+		}
+
+		AI_weight = {
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	option = {
+		name = "composer_aura_max_prohibit_enable"
+
+		policy_flags = {
+			composer_aura_max_prohibit_enable
+		}
+
+		AI_weight = {
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	option = {
+		name = "aura_shroud_no_change"
+
+		policy_flags = {
+			aura_shroud_no_change
+		}
+
+
+		AI_weight = {
+			modifier = {
+				factor = 20
+			}
+		}
+	}
+
+}

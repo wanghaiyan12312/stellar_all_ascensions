@@ -18,12 +18,16 @@ situation_event = {
 			is_country_type = awakened_fallen_empire
 			NOT = { has_country_flag = fallen_empires_not_need_enforce_mod }
 			is_at_war = no
-			fleet_power < 1500000000
+			used_naval_capacity_integer < 15000
 		}
 	}
 
 	immediate = {
 		owner = {
+			set_variable = {
+				which = fall_empire_used_naval_capacity_max_mod
+				value = 15000
+			}
 			export_trigger_value_to_variable = {
 				trigger = is_difficulty
 				variable = difficulty_value_fallen_empire_mod
@@ -38,11 +42,19 @@ situation_event = {
 						flag = fallen_empires_not_need_enforce_mod 
 						days = @fallen_empire_enforce_power_cadet_gap 
 					}
+					set_variable = {
+						which = fall_empire_used_naval_capacity_max_mod
+						value = @fall_empire_used_naval_capacity_max_cadet_gap
+					}
 				}
 				2 = {	# Ensign
 					set_timed_country_flag = { 
 						flag = fallen_empires_not_need_enforce_mod 
 						days = @fallen_empire_enforce_power_ensign_gap 
+					}
+					set_variable = {
+						which = fall_empire_used_naval_capacity_max_mod
+						value = @fall_empire_used_naval_capacity_max_ensign_gap
 					}
 				}
 				3 = {	# Captain
@@ -50,11 +62,19 @@ situation_event = {
 						flag = fallen_empires_not_need_enforce_mod 
 						days = @fallen_empire_enforce_power_captain_gap 
 					}
+					set_variable = {
+						which = fall_empire_used_naval_capacity_max_mod
+						value = 15000
+					}
 				}
 				4 = {	# Commodore
 					set_timed_country_flag = { 
 						flag = fallen_empires_not_need_enforce_mod 
 						days = @fallen_empire_enforce_power_commodore_gap  
+					}
+					set_variable = {
+						which = fall_empire_used_naval_capacity_max_mod
+						value = @fall_empire_used_naval_capacity_max_commodore_gap 
 					}
 				}
 				5 = {	# Admiral
@@ -62,39 +82,25 @@ situation_event = {
 						flag = fallen_empires_not_need_enforce_mod 
 						days = @fallen_empire_enforce_power_admiral_gap   
 					}
+					set_variable = {
+						which = fall_empire_used_naval_capacity_max_mod
+						value = @fall_empire_used_naval_capacity_max_admiral_gap
+					}
 				}
 				6 = {	# Grand Admiral
 					set_timed_country_flag = { 
 						flag = fallen_empires_not_need_enforce_mod 
 						days = @fallen_empire_enforce_power_grand_admiral_gap  
 					}
+					set_variable = {
+						which = fall_empire_used_naval_capacity_max_mod
+						value = @fall_empire_used_naval_capacity_max_grand_admiral
+					}
 				}
 			}
-			## 900m above negative
-			export_trigger_value_to_variable = {
-				trigger = fleet_power
-				variable = fallen_empire_fleet_power_mod
-			}
-			round_variable = fallen_empire_fleet_power_mod
-			set_variable = { 
-			 	which = fallen_empire_enforce_power 
-			 	value = @fallen_empire_base_enforce_power 
-			}
-			multiply_variable = {
-			 	which = fallen_empire_enforce_power
-			 	value = difficulty_value_fallen_empire_mod
-			}
-			divide_variable = {
-				which = fallen_empire_fleet_power_mod
-			 	value = 1000
-			}
-			round_variable = fallen_empire_fleet_power_mod
 			if = {
 			 	limit = {
-					check_variable = {
-						which = fallen_empire_fleet_power_mod
-						value < fallen_empire_enforce_power
-					}					
+					used_naval_capacity_integer < fall_empire_used_naval_capacity_max_mod			
 			 	}
 				## to do may have priority to enforce titan ?
 				## this will great improve difficulty
@@ -105,8 +111,7 @@ situation_event = {
 			}			 			
 			add_awakened_fallen_empire_resources_mod = yes
 			clear_variable = difficulty_value_fallen_empire_mod
-			clear_variable = fallen_empire_enforce_power 
-			clear_variable = fallen_empire_fleet_power_mod
+			clear_variable = fall_empire_used_naval_capacity_max_mod
 		}
 	}
 }
@@ -122,6 +127,7 @@ country_event = {
 	}
 
 	immediate = {
+		add_awakened_fallen_empire_resources_mod = yes
 		add_modifier = { 
 			modifier = ship_damage_mult
 			multiplier = value:get_crisis_strength			

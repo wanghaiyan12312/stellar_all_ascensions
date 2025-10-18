@@ -157,3 +157,267 @@ country_event = {
 
 
 }
+
+
+country_event = {
+	id = ascensions.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_owned_leader = {
+			leader_event = { id = ascensions.5 }
+		}
+	}
+}
+
+leader_event = {
+	id = ascensions.5
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		exists = owner
+	}
+	immediate = {
+		if = {
+			limit = {
+				# legendary_leader not touch
+				NOT = { has_leader_flag = legendary_leader }
+			}
+			if = {
+				limit = {
+					Not = {has_trait = leader_trait_erudite}
+					leader.species = {
+						has_trait = trait_erudite
+					}
+				}
+				add_trait = {
+					trait = leader_trait_erudite
+					show_message = no
+				}
+			}
+			if = {
+				limit = {
+					Not = {has_trait = leader_trait_psionic}
+					leader.species = {
+						has_trait = trait_psionic
+					}
+				}
+				add_trait = {
+					trait = leader_trait_psionic
+					show_message = no
+				}
+			}
+			if = {
+				limit = {
+					Not = {has_trait = leader_trait_cyborg}
+					leader.species = {
+						has_trait = trait_cybernetic
+					}
+				}
+				add_trait = {
+					trait = leader_trait_cyborg
+					show_message = no
+				}
+			}			
+		}
+	}
+}
+
+event = {
+	id = ascensions.2000
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_playable_country = {
+			num_unique_species > 1
+			any_owned_species = {
+				has_citizenship_type = {
+					type = citizenship_assimilation
+					country = prev
+				}
+			}
+		}
+	}
+
+	immediate = {
+		every_playable_country = {
+			limit = {
+				num_unique_species > 1
+				any_owned_species = {
+					has_citizenship_type = {
+						type = citizenship_assimilation
+						country = prev
+					}
+				}
+			}
+			# Cyborg Assimilation - Driven Assimilator or Regular Empire
+			if = {
+				limit = {
+					is_hive_empire = no
+					num_unique_species > 1
+					any_owned_species = {
+						has_living_standard = {
+							type = living_standard_psi_and_cyborg_assimilation
+							country = prev
+						}				
+					}
+				}
+				every_owned_planet = {
+					limit = {
+						NOT = {
+							is_planet_class = pc_cosmogenesis_world
+						}
+					}
+					planet_event = {
+						id = ascensions.2001
+					}
+				}
+			} 
+		}
+	}
+}
+
+
+planet_event = {
+	id = ascensions.2001
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_owned_species = {
+			has_living_standard = {
+				type = living_standard_psi_and_cyborg_assimilation
+				country = prev
+			}	
+		}
+	}
+
+	immediate = {
+		set_assimilation_counter_variable = yes		# Sets number of pops to assimilate to 4d25 + Auto-Modded Modifier
+		set_update_modifiers_batch = begin			# Freeze modifier calculation for performance
+
+		while = {
+			count = assimilation_counter
+
+			# Find a pop group with the right assimilation type
+			random_owned_pop_group = {
+				limit = {
+					NOT = {
+						has_pop_group_flag = already_assimilated
+					}
+					has_living_standard = {
+						type = living_standard_psi_and_cyborg_assimilation
+						country = root.owner
+					}
+				}
+				# Save the pop group as an event target
+				save_event_target_as = old_pop_group
+				# Save their species as an event target
+				species = {
+					save_event_target_as = old_species
+				}
+				# If a modified species hasn't been created, create one
+				# and save them as an event target
+				if = {
+					limit = {
+						NOT = {
+							any_galaxy_species = {
+								has_species_flag = assimilation_species_mod_of_species@event_target:old_species
+								has_species_flag = assimilation_species_mod_of_empire@root.owner
+							}
+						}
+					}
+					create_species = {
+						is_mod = yes
+						name = this
+						plural = this
+						class = this
+						portrait = this
+						traits = this
+						can_be_modified = this
+						homeworld = this
+						namelist = this
+						traits = {
+							trait = trait_cybernetic
+							trait = trait_psionic
+						}
+						gender = this
+						effect = {
+							modify_species = {
+								species = this
+								remove_trait = trait_hive_mind
+								remove_trait = trait_self_modified
+								remove_trait = trait_latent_psionic
+								change_scoped_species = no
+
+								effect = {
+									set_species_flag = assimilation_species_mod_of_species@event_target:old_species
+									set_species_flag = assimilation_species_mod_of_empire@root.owner
+									save_event_target_as = target_species
+								}
+							}
+						}
+						
+					}
+				}
+				# If a modified species does exist, save them as the event target
+				else = {
+					random_galaxy_species = {
+						limit = {
+							has_species_flag = assimilation_species_mod_of_species@event_target:old_species
+							has_species_flag = assimilation_species_mod_of_empire@root.owner
+						}
+						save_event_target_as = target_species
+					}
+				}
+				# Scope back to the planet
+				# Create the empty pop group
+				# and move pops into it
+				planet = {
+					create_pop_group = {
+						pop_group = event_target:old_pop_group
+						species = event_target:target_species
+						size = 0
+						effect = {
+							transfer_pop_amount = {
+								source = event_target:old_pop_group
+								target = this
+								amount = 5
+							}
+							set_timed_pop_group_flag = {
+								flag = already_assimilated
+								days = 15
+							}
+							apply_post_assimilation_effects = yes
+						}
+					}
+				}
+			}
+		}
+
+		owner = { #Only doing it once since assimilating more than 100 pops a month is hard
+			if = {
+				limit = { has_ascension_perk = ap_become_the_crisis }
+				complete_crisis_objective = crisobj_purge_pops
+			}
+			assimilate_armies = {
+				SOURCE = event_target:old_species
+				TARGET = event_target:target_species
+			}
+			assimilate_colony_ships = {
+				SOURCE = event_target:old_species
+				TARGET = event_target:target_species
+			}
+			assimilate_leaders = {
+				SOURCE = event_target:old_species
+				TARGET = event_target:target_species
+			}
+		}
+
+		set_update_modifiers_batch = end			# Unfreeze modifier calculation for performance
+		clear_assimilation_variables = yes			# Clears variables
+	}
+}

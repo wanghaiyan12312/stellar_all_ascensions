@@ -489,7 +489,7 @@ ship_section_template = {
 
 ship_section_template = {
 	key = "COSMO_CRISIS_HARBINGER_SECTION_POINT"
-	ship_size = cosmo_crisis_harbinger
+	ship_size = large_fallen_harbinger
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"

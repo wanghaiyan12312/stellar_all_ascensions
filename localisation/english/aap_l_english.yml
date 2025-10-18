@@ -250,3 +250,32 @@
 
  council_agenda_agenda_synthetic_moduler_evolution_name: "$ap_synthetic_moduler_evolution$"
  council_agenda_agenda_synthetic_moduler_evolution_desc: "$ap_synthetic_moduler_evolution_desc$"
+
+ MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_eater_of_worlds_mod_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n—$SYSTEM$Gain $VALUE$ Alloys!\n—$aura_intensity_lost_level_tt$"
+
+
+ composer_aura_max_prohibit: "Prohibit Composer Shroud Stone"
+ composer_aura_max_prohibit_desc: "This Plane Prohibit Composer Shrouad Stone Been Added"
+ decision_composer_aura_max_prohibit: "Prohibit Composer Shroud Stone" decision_composer_aura_max_prohibit_desc: "This will prohibit composer shroud stone add on this planet, it will make patron displease."
+ decision_composer_aura_max_prohibit_effects_short: "Reduces £pop£ §HPop Growth§! on the planet.\n\nIncreases §RPop Upkeep§! while active."
+
+ decision_end_composer_aura_max_prohibit: "Allow Composer Shroud Stone"
+ decision_end_composer_aura_max_prohibit_desc: "This will allow composer shroud stone continue add on this planet"
+ decision_end_composer_aura_max_prohibit_effects_short: "£pop£ §HPops§! can grow normally on the planet.\n\nReduces §GPop Upkeep§!."
+
+ policy_aura_shroud_mod: "Shroud Aura Mod Type"
+ policy_aura_shroud_mod_desc: "You can change default Shroud Aura to some more convenience type\n"
+
+ eater_aura_max_intensity_alloy: "Eater Aura Alloy Instead"
+ eater_aura_max_intensity_alloy_name: "No Ship Instead Alloy"
+ eater_aura_max_intensity_alloy_desc: "given our computer performance situation, we pray for our patron give us alloy instead. \n\n§E eater aura max intensity give alloy and no ships§!"
+
+ composer_aura_max_prohibit_enable: "Shroud Stone Enable Prohibit"
+ composer_aura_max_prohibit_enable_name: "Planet Decision Prohibit Shroud Stone Enable"
+ composer_aura_max_prohibit_enable_desc: "given our goals to build a arcology for a planet, we can forbid shroud stone add that will make patron not happy. \n\n§E composer aura max can exclude a planet that have Allow Composer Shroud Stone decison.§!"
+
+ aura_shroud_no_change: "No Change"
+ aura_shroud_no_change_name: "No Change"
+ aura_shroud_no_change_desc: "No Change"
+
+ ship_damage_mult: "Ascendancy Shipwrights"
