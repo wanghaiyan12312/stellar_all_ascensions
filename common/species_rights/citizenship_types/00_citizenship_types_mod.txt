@@ -143,6 +143,39 @@ citizenship_assimilation = {
 		if = {
 			limit = {
 				from = {
+					is_gestalt = no
+        			is_mechanical_empire = no
+					is_individual_machine = no
+					is_natural_design_empire = no
+				}
+				AND = {
+					from = {
+						has_active_tradition = tr_cybernetics_transubstantiation_synthesis
+					}
+					from = {
+						OR = {
+							has_tradition = tr_psionics_shroud_great_awakening
+							has_tradition = tr_psionics_psionic_assimilation
+						}
+					}
+				}
+			}
+			custom_tooltip = { # species already has psionic and CYBORG trait
+				fail_text = TRANSCENDING_SPECIES_IS_ALREADY_PSIONIC_CYBORG
+
+				NAND = { 
+					has_trait = trait_psionic
+					OR = {
+						has_trait = trait_cybernetic
+						has_trait = trait_limited_cybernetic
+					} 
+				}
+			}
+
+		}
+		if = {
+			limit = {
+				from = {
 					is_machine_empire = yes
 				}
 			}
@@ -242,7 +275,9 @@ citizenship_assimilation = {
 		}
 		else_if = {
 			limit = {
-				from = { has_active_tradition = tr_psionics_psionic_assimilation }
+				from = {
+					has_active_tradition = tr_psionics_psionic_assimilation
+				}
 			}
 			custom_tooltip = { # species must be organic to transcend
 				fail_text = TRANSCENDING_SPECIES_MUST_BE_ORGANIC
@@ -275,43 +310,6 @@ citizenship_assimilation = {
 				fail_text = CAN_ONLY_ASSIMILATE_HIVES
 				has_trait = trait_hive_mind
 			}
-		}else_if = {
-			limit = {
-				OR = {
-					from = {
-						has_active_tradition = tr_cybernetics_transubstantiation_synthesis
-					}
-					from = {
-						OR = {
-							has_tradition = tr_psionics_shroud_great_awakening
-							has_tradition = tr_psionics_psionic_assimilation
-						}
-					}
-				}
-			}
-			custom_tooltip = { # species already has psionic and CYBORG trait
-				fail_text = TRANSCENDING_SPECIES_IS_ALREADY_PSIONIC_CYBORG
-
-				NAND = { 
-					has_trait = trait_psionic
-					NOR = {
-						has_trait = trait_cybernetic
-						has_trait = trait_limited_cybernetic
-					} 
-				}
-			}
-			custom_tooltip = { # species already has psionic trait
-				fail_text = TRANSCENDING_SPECIES_IS_ALREADY_PSIONIC
-				NOT = { has_trait = trait_psionic }
-			}
-			custom_tooltip = { 
-				fail_text = CYBORG_SPECIES_MUST_BE_ORGANIC
-				NOR = {
-					has_trait = trait_cybernetic
-					has_trait = trait_limited_cybernetic
-				}
-			}
-
 		}
 	}
 
@@ -326,6 +324,11 @@ citizenship_assimilation = {
 					has_valid_civic = civic_machine_terminator
 				}
 			}
+		}
+		modifier = {
+			factor = 0
+			has_species_flag = original_main_species
+			from = { has_origin = origin_shroud_forged }
 		}
 		modifier = {
 			factor = 0.3

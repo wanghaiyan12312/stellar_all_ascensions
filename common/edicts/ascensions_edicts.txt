@@ -35,16 +35,34 @@ aap_change_government = {
     }
 
     potential = {
-        OR = {
+        AND = {
             has_biogenesis_dlc = yes
             has_machine_age_dlc = yes
             is_gestalt = no
+            has_shroud_dlc = yes 
+            is_gestalt = no
+            is_mechanical_empire = no
+		    is_individual_machine = no
+		    is_natural_design_empire = no
         }
         OR = {
             has_tradition = tr_cybernetics_finish
             has_tradition = tr_cloning_finish
             has_tradition = tr_mutation_finish
             has_tradition = tr_purity_finish
+            OR = {
+				AND = {
+					OR = {
+						has_origin = origin_endbringers
+			    		has_covenant_with_end_of_the_cycle = yes
+					}
+					has_tradition = tr_psionics_shroud_finish
+				}
+				AND = {
+					has_country_flag = shroud_songs_rolled
+					has_country_flag = shroud_songs_started
+				}
+			}
         }
     }
 
@@ -101,7 +119,7 @@ astral_shielding = {
 
 	modifier = {
 		ship_shield_mult = 0.25
-		ship_shield_hardening_add = 0.40
+		ship_shield_hardening_add = 0.4
 	}
 	ai_weight = {
 		weight = @EdictMedPrio
@@ -118,7 +136,11 @@ app_get_greater_patron_roll = {
 
     potential = {
         has_shroud_dlc = yes 
-        NOT = { has_country_flag = greater_patron_chosen }
+        is_gestalt = no
+        is_mechanical_empire = no
+		is_individual_machine = no
+		is_natural_design_empire = no
+        NOT = { has_country_flag = greater_patron_chosen_mod }
         has_patron_relation = {
 			patron = the_eater_of_worlds
 			contact = completed
@@ -138,8 +160,8 @@ app_get_greater_patron_roll = {
     }
 
     effect = { 
-        country_event = { id = shroud.11001 } 
-        set_country_flag = greater_patron_chosen
+        country_event = { id = end_cycle.5 } 
+        set_country_flag = greater_patron_chosen_mod
     }
 
     ai_weight = { weight = 0 }
@@ -149,9 +171,20 @@ app_get_legendary_shroud_leader = {
     icon = "GFX_edict_type_policy"
     length = 1
     potential = {
-        has_country_flag = greater_patron_chosen
+        has_country_flag = greater_patron_chosen_mod
         has_paragon_dlc = yes
         has_shroud_dlc = yes 
+        is_gestalt = no
+        is_mechanical_empire = no
+		is_individual_machine = no
+		is_natural_design_empire = no
+        has_tradition = tr_cloning_finish
+        has_tradition = tr_mutation_finish
+        has_tradition = tr_purity_finish
+        has_tradition = tr_cybernetics_finish
+        has_tradition = tr_psionics_shroud_finish
+        has_tradition = tr_modularity_age_finish
+
     }
     resources = {
         category = edicts
@@ -159,6 +192,54 @@ app_get_legendary_shroud_leader = {
     }
     effect = { 
         country_event = { id = leadershroud.1 } 
+    }
+
+    ai_weight = { weight = 0 }
+}
+
+app_get_minor_patron_edict = {
+    icon = "GFX_edict_type_policy"
+    length = 1
+    potential = {
+        has_shroud_dlc = yes 
+        is_gestalt = no
+        OR = {
+            AND = {
+                has_patron_relation = { patron = the_golden_dream }
+                NOT = { has_country_flag = shroud_3220_happened }  # shroud.3220
+            }
+            AND = {
+                has_patron_relation = { patron = the_animator_of_clay }
+                NOT = { has_country_flag = shroud_3200_happened }  # shroud.3200
+            }
+            AND = {
+                has_patron_relation = { patron = the_outsider }
+                NOT = { has_country_flag = shroud_3210_happened }  # shroud.3210
+            }
+            AND = {
+                has_patron_relation = { patron = the_pale_mountain }
+                NOT = { has_country_flag = shroud_3240_happened }  # shroud.3240
+            }
+            AND = {
+                has_patron_relation = { patron = the_endless_tide }
+                NOT = { has_country_flag = shroud_3230_happened }  # shroud.3230
+            }
+            AND = {
+                has_patron_relation = { patron = the_vacant_throne }
+                NOT = { has_country_flag = shroud_3260_happened }  # shroud.3260
+            }
+            AND = {
+                has_patron_relation = { patron = the_black_river }
+                NOT = { has_country_flag = shroud_3270_happened }  # shroud.3270
+            }     
+        }
+    }
+    resources = {
+        category = edicts
+        cost = { influence = 1 }
+    }
+    effect = { 
+        country_event = { id = ascensions.3 } 
     }
 
     ai_weight = { weight = 0 }

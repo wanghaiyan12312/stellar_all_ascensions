@@ -63,3 +63,22 @@ can_think = {
 		has_trait = trait_cybernetic_suppressed
 	}
 }
+
+is_galvanic_empire = {
+    OR = {
+        has_valid_civic = civic_galvanic_symbiosis
+        has_valid_civic = civic_hive_galvanic_symbiosis
+        has_valid_civic = civic_corporate_galvanic_symbiosis
+        has_valid_civic = civic_machine_galvanic_symbiosis
+		has_crisis_level = crisis_cosmogenesis_level_5
+    }
+}
+
+is_mod_fe_can_federation = {
+	OR = {
+		is_hive_empire = no
+		has_country_flag = fallen_empire_hive_war
+	}
+	is_country_type = awakened_fallen_empire
+	is_machine_empire = no
+}

@@ -167,7 +167,7 @@ ship_section_template = {
 
 ### Techno-Crisis Titan
 
-# 2T8L4M4H
+# 2T8L4M8P
 ship_section_template = {
 	key = "COSMO_CRISIS_TITAN_1T8L4M8P"
 	ship_size = cosmo_crisis_titan
@@ -292,6 +292,210 @@ ship_section_template = {
 
 	large_utility_slots = 20
 	aux_utility_slots = 4
+}
+
+# 2T4X8L
+ship_section_template = {
+	key = "COSMO_CRISIS_TITAN_2T4X8L"
+	ship_size = cosmo_crisis_titan
+	fits_on_slot = mid
+	entity = "cosmo_crisis_titan_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery }
+
+	#only one because it uses a titan laser
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_fixed"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_fixed"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	large_utility_slots = 20
+	aux_utility_slots = 4
+}
+
+# 3T6X9L
+
+ship_section_template = {
+	key = "COSMO_CRISIS_TITAN_3T6X9L"
+	ship_size = cosmo_crisis_titan
+	fits_on_slot = mid
+	entity = "cosmo_crisis_titan_section_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery }
+
+	prerequisites = {
+		tech_synth_queen_titan_template
+	}
+
+	#only one because it uses a titan laser
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "extra_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "extra_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "extra_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "extra_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "extra_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "extra_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "invisible_large_turret"
+		locatorname = "root"
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100000 # higly price require
+			sr_dark_matter = 1000
+			sr_living_metal = 1000
+		}
+	}
+
+	large_utility_slots = 36
+	aux_utility_slots = 12
 }
 
 # Fallen Empire Defense Station Section
@@ -809,8 +1013,8 @@ ship_section_template = {
 		locatorname = "pd_gun_06"
 	}
 
-	large_utility_slots = 20
-	aux_utility_slots = 10
+	large_utility_slots = 40
+	aux_utility_slots = 20
 }
 
 ship_section_template = {
@@ -821,151 +1025,129 @@ ship_section_template = {
 	entity = "synth_queen_01_mothership_section_entity"
 	icon = "GFX_ship_part_core_mid"
 
+	prerequisites = {
+		tech_synth_queen_titan_template
+	}
+
 	component_slot = {
 		name = "PLANET_KILLER_GUN_01"
 		template = "invisible_planet_killer_fixed"
 		locatorname = "planet_killer_gun_01"
 	}
 	component_slot = {
-		name = "TITANIC_01"
-		template = "invisible_titanic_fixed"
-		locatorname = "titan_gun_01"
-	}
-	component_slot = {
-		name = "TITANIC_02"
-		template = "invisible_titanic_fixed"
-		locatorname = "titan_gun_02"
-	}
-	component_slot = {
-		name = "TITANIC_03"
-		template = "invisible_titanic_fixed"
-		locatorname = "titan_gun_03"
-	}
-	component_slot = {
-		name = "TITANIC_04"
-		template = "invisible_titanic_fixed"
-		locatorname = "titan_gun_04"
-	}
-	component_slot = {
-		name = "TITANIC_05"
-		template = "invisible_titanic_fixed"
-		locatorname = "titan_gun_05"
-	}
-	component_slot = {
-		name = "TITANIC_06"
-		template = "invisible_titanic_fixed"
-		locatorname = "titan_gun_06"
-	}
-	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
-		locatorname = "large_gun_01"
+		locatorname = "hangar_01"
 	}
 	component_slot = {
 		name = "LARGE_GUN_02"
 		template = "large_turret"
-		locatorname = "large_gun_02"
+		locatorname = "hangar_02"
 	}
 	component_slot = {
 		name = "LARGE_GUN_03"
 		template = "large_turret"
-		locatorname = "large_gun_03"
+		locatorname = "hangar_03"
 	}
 	component_slot = {
 		name = "LARGE_GUN_04"
 		template = "large_turret"
-		locatorname = "large_gun_04"
+		locatorname = "hangar_04"
 	}
 	component_slot = {
 		name = "LARGE_GUN_05"
 		template = "large_turret"
-		locatorname = "large_gun_05"
+		locatorname = "hangar_05"
 	}
 	component_slot = {
 		name = "LARGE_GUN_06"
 		template = "large_turret"
-		locatorname = "large_gun_06"
+		locatorname = "hangar_06"
 	}
 	component_slot = {
 		name = "LARGE_GUN_07"
 		template = "large_turret"
-		locatorname = "large_gun_07"
+		locatorname = "hangar_07"
 	}
 	component_slot = {
 		name = "LARGE_GUN_08"
 		template = "large_turret"
+		locatorname = "hangar_08"
+	}
+	component_slot = {
+		name = "TITANIC_01"
+		template = "invisible_titanic_turret"
+		locatorname = "titan_gun_01"
+	}
+	component_slot = {
+		name = "TITANIC_02"
+		template = "invisible_titanic_turret"
+		locatorname = "titan_gun_02"
+	}
+	component_slot = {
+		name = "TITANIC_03"
+		template = "invisible_titanic_turret"
+		locatorname = "titan_gun_03"
+	}
+	component_slot = {
+		name = "TITANIC_04"
+		template = "invisible_titanic_turret"
+		locatorname = "titan_gun_04"
+	}
+	component_slot = {
+		name = "TITANIC_05"
+		template = "invisible_titanic_turret"
+		locatorname = "titan_gun_05"
+	}
+	component_slot = {
+		name = "TITANIC_06"
+		template = "invisible_titanic_turret"
+		locatorname = "titan_gun_06"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "extra_large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "extra_large_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "extra_large_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "extra_large_turret"
+		locatorname = "large_gun_04"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_05"
+		template = "extra_large_turret"
+		locatorname = "large_gun_05"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_06"
+		template = "extra_large_turret"
+		locatorname = "large_gun_06"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_07"
+		template = "extra_large_turret"
+		locatorname = "large_gun_07"
+	}
+	component_slot = {
+		name = "EXTRA_LARGE_08"
+		template = "extra_large_turret"
 		locatorname = "large_gun_08"
 	}
 	component_slot = {
-		name = "LARGE_GUN_09"
-		template = "large_turret"
+		name = "EXTRA_LARGE_09"
+		template = "extra_large_turret"
 		locatorname = "large_gun_09"
-	}
-	component_slot = {
-		name = "LARGE_GUN_10"
-		template = "large_turret"
-		locatorname = "large_gun_10"
-	}
-	component_slot = {
-		name = "LARGE_GUN_11"
-		template = "large_turret"
-		locatorname = "large_gun_11"
-	}
-	component_slot = {
-		name = "LARGE_GUN_12"
-		template = "large_turret"
-		locatorname = "large_gun_12"
-	}
-	component_slot = {
-		name = "LARGE_GUN_13"
-		template = "large_turret"
-		locatorname = "large_gun_13"
-	}
-	component_slot = {
-		name = "LARGE_GUN_14"
-		template = "large_turret"
-		locatorname = "large_gun_14"
-	}
-	component_slot = {
-		name = "LARGE_GUN_15"
-		template = "large_turret"
-		locatorname = "large_gun_15"
-	}
-	component_slot = {
-		name = "LARGE_GUN_16"
-		template = "large_turret"
-		locatorname = "large_gun_16"
-	}
-
-	component_slot = {
-		name = "SMALL_GUN_01"
-		template = "small_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "SMALL_GUN_02"
-		template = "small_turret"
-		locatorname = "small_gun_02"
-	}
-	component_slot = {
-		name = "SMALL_GUN_03"
-		template = "small_turret"
-		locatorname = "small_gun_03"
-	}
-	component_slot = {
-		name = "SMALL_GUN_04"
-		template = "small_turret"
-		locatorname = "small_gun_04"
-	}
-	component_slot = {
-		name = "SMALL_GUN_05"
-		template = "small_turret"
-		locatorname = "small_gun_05"
-	}
-	component_slot = {
-		name = "SMALL_GUN_06"
-		template = "small_turret"
-		locatorname = "small_gun_06"
 	}
 	component_slot = {
 		name = "PD_01"
@@ -997,7 +1179,46 @@ ship_section_template = {
 		template = "point_defence_turret"
 		locatorname = "pd_gun_06"
 	}
+		component_slot = {
+		name = "PD_07"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_08"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "PD_09"
+		template = "point_defence_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "PD_10"
+		template = "point_defence_turret"
+		locatorname = "small_gun_04"
+	}
+	component_slot = {
+		name = "PD_11"
+		template = "point_defence_turret"
+		locatorname = "small_gun_05"
+	}
+	component_slot = {
+		name = "PD_12"
+		template = "point_defence_turret"
+		locatorname = "small_gun_06"
+	}
 
-	large_utility_slots = 20
-	aux_utility_slots = 10
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 100000 # higly price require
+			sr_dark_matter = 1000
+			sr_living_metal = 1000
+		}
+	}
+
+	large_utility_slots = 40
+	aux_utility_slots = 20
 }

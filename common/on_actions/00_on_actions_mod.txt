@@ -24,6 +24,12 @@ on_monthly_pulse = {
 		ascensions.2000
 	}
 }
+on_monthly_pulse_country = {
+	events = {
+		leadershroud.7
+		end_cycle.6
+	}
+}
 
 on_ship_built = {
 	events = {
@@ -34,5 +40,11 @@ on_ship_built = {
 on_leader_death_notify = {
 	events = {
 		leadershroud.6
+	}
+}
+
+on_war_beginning = {
+	events = {
+		fallen_empires_mod.5
 	}
 }

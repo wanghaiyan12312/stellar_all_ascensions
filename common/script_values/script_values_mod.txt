@@ -9,3 +9,61 @@ get_crisis_strength = {
         mode = mult
     }
 }
+
+get_fallen_empire_titan_enforce_num = {
+    base = @fallen_empire_titan
+    complex_trigger_modifier = {
+		trigger = is_difficulty
+		trigger_scope = this
+		mode = mult
+	}
+}
+
+get_fallen_empire_battlecruise_num = {
+    base = @fallen_empire_battlecruise
+    complex_trigger_modifier = {
+		trigger = is_difficulty
+		trigger_scope = this
+		mode = mult
+	}
+}
+
+get_fallen_empire_escort_num = {
+    base = @fallen_empire_escort
+    complex_trigger_modifier = {
+		trigger = is_difficulty
+		trigger_scope = this
+		mode = mult
+	}
+}
+
+get_fallen_empire_stinger_num = {
+    base = @hive_fallen_empire_stinger
+    complex_trigger_modifier = {
+		trigger = is_difficulty
+		trigger_scope = this
+		mode = mult
+	}
+}
+
+
+get_fallen_empire_harbinger_num = {
+    base = @hive_fallen_empire_harbinger
+    complex_trigger_modifier = {
+		trigger = is_difficulty
+		trigger_scope = this
+		mode = mult
+	}
+}
+
+
+get_fallen_empire_mauler_num = {
+    base = @hive_fallen_empire_mauler
+    complex_trigger_modifier = {
+		trigger = is_difficulty
+		trigger_scope = this
+		mode = mult
+	}
+}
+
+

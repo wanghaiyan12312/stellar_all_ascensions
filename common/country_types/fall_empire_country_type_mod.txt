@@ -168,8 +168,8 @@ awakened_fallen_empire = {
 				action_demand_signatory
 				action_release_subject
 				action_invite_to_federation
-				action_leave_federation
-				action_kick_from_federation
+				#action_leave_federation
+				#action_kick_from_federation
 				action_open_borders
 				action_close_borders
 			}

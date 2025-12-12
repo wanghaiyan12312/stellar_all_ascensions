@@ -82,6 +82,8 @@ mega_shipyard_0 = {
 				}			
 			} 
 		}
+		## add a limit planet alloy for 5k a month？ 
+
 		hidden_trigger = {
 			from = {
 				if = {

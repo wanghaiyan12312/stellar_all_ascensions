@@ -35,7 +35,14 @@ situation_event = {
 			switch = {
 				trigger = is_difficulty
 				0 = {	# Civilian
-					set_timed_country_flag = { flag = fallen_empires_not_need_enforce_mod days = -1 }
+					set_timed_country_flag = { 
+						flag = fallen_empires_not_need_enforce_mod days = -1 
+					}
+					## no enforce
+					set_variable = {
+						which = fall_empire_used_naval_capacity_max_mod
+						value = 0
+					}
 				}
 				1 = {	# Cadet
 					set_timed_country_flag = { 
@@ -44,7 +51,7 @@ situation_event = {
 					}
 					set_variable = {
 						which = fall_empire_used_naval_capacity_max_mod
-						value = @fall_empire_used_naval_capacity_max_cadet_gap
+						value = @fall_empire_used_naval_capacity_max_cadet
 					}
 				}
 				2 = {	# Ensign
@@ -54,7 +61,7 @@ situation_event = {
 					}
 					set_variable = {
 						which = fall_empire_used_naval_capacity_max_mod
-						value = @fall_empire_used_naval_capacity_max_ensign_gap
+						value = @fall_empire_used_naval_capacity_max_ensign
 					}
 				}
 				3 = {	# Captain
@@ -64,7 +71,7 @@ situation_event = {
 					}
 					set_variable = {
 						which = fall_empire_used_naval_capacity_max_mod
-						value = 15000
+						value = @fall_empire_used_naval_capacity_max_captain
 					}
 				}
 				4 = {	# Commodore
@@ -74,7 +81,7 @@ situation_event = {
 					}
 					set_variable = {
 						which = fall_empire_used_naval_capacity_max_mod
-						value = @fall_empire_used_naval_capacity_max_commodore_gap 
+						value = @fall_empire_used_naval_capacity_max_commodore
 					}
 				}
 				5 = {	# Admiral
@@ -84,7 +91,7 @@ situation_event = {
 					}
 					set_variable = {
 						which = fall_empire_used_naval_capacity_max_mod
-						value = @fall_empire_used_naval_capacity_max_admiral_gap
+						value = @fall_empire_used_naval_capacity_max_admiral
 					}
 				}
 				6 = {	# Grand Admiral
@@ -103,11 +110,8 @@ situation_event = {
 					used_naval_capacity_integer < fall_empire_used_naval_capacity_max_mod			
 			 	}
 				## to do may have priority to enforce titan ?
-				## this will great improve difficulty
-				while = {
-					count = difficulty_value_fallen_empire_mod
-					create_fallen_empire_reinforcements_mod = yes	 
-				}
+				## this will great improve difficulty				
+				create_fallen_empire_reinforcements_mod = yes	 
 			}			 			
 			add_awakened_fallen_empire_resources_mod = yes
 			clear_variable = difficulty_value_fallen_empire_mod
@@ -132,7 +136,285 @@ country_event = {
 			modifier = ship_damage_mult
 			multiplier = value:get_crisis_strength			
 		}
+		if = {
+			limit = {
+				count_country = {
+					count > 1
+					limit = {
+						is_fallen_empire = yes
+						is_machine_empire = no
+					}
+				}
+				is_hive_empire = yes
+				has_country_flag = fallen_empire_hive_war
+			}
+			# others fe hive not suitable for Federation
+			change_variable = {
+				which = hive_fe_influence
+				value = 2000
+			}
+		}
 	}
 }
 
+## fallen_empires mod awake
+country_event = {
+	id = fallen_empires_mod.3
+	title = OK
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
 
+	trigger = {
+		NOT = {
+			is_country_type = awakened_fallen_empire
+		}
+		is_country_type = fallen_empire
+	}
+
+	immediate = {
+		set_country_code_flags = { colonizer = yes }
+		set_global_flag = sleepers_awake_happened
+
+		if = {
+			limit = {
+				is_hive_empire = no
+			}
+			country_event = { id = fallen_empires_awakening.3 }
+		}
+		else_if = {
+			limit = { # Making an extra if check here to not break mods too badly
+				is_hive_empire = yes
+			}
+			awaken_strongest_fe_fragment = yes
+		}
+
+		# Notify players
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			country_event = { id = fallen_empires_awakening.2 }
+		}
+		observer_event = { id = observer.73 }
+ 		set_global_flag = no_war_in_heaven
+		while = {
+			count = 6
+			create_fallen_empire_reinforcements_mod = yes
+		}
+	}
+}
+
+## Guardians of the Galaxy
+country_event = {
+	id = fallen_empires_mod.4
+	title = OK
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			is_country_type = awakened_fallen_empire
+		}
+		is_country_type = fallen_empire
+	}
+
+	immediate = {
+		set_global_flag = guardians_of_the_galaxy_happened
+		if = {
+			limit = {
+				is_hive_empire = no
+			}
+			country_event = { id = fallen_empires_awakening.3 }
+		}
+		else = {
+			event_target:fallen_empire_hive_war = {
+				country_event = { id = fallen_empires_awakening.10 }
+			}
+		}
+
+		every_country = {
+			limit = {
+				is_country_type = default
+				NOT = {
+					has_patron_relation = { patron = end_of_the_cycle contact = any } 
+				}
+			}
+			random_list = {
+				33 = { add_opinion_modifier = { who = root modifier = opinion_crisis_fighter } }
+				33 = { add_opinion_modifier = { who = root modifier = opinion_crisis_fighter_small } }
+				33 = { }
+			}
+		}
+
+		# Notify
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			country_event = { id = fallen_empires_awakening.5 }
+		}
+		observer_event = { id = observer.74 }
+		while = {
+			count = 6
+			create_fallen_empire_reinforcements_mod = yes
+		}
+	}
+}
+
+## cosmogenesis_level_4 or higher attach fallen_empires than fe awake
+country_event = {
+	id = fallen_empires_mod.5
+	title = OK
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+
+
+	trigger = {
+		from = {
+			# Fire only for the attacker
+			any_attacker = { is_same_value = root }
+			any_defender = {
+				OR = {
+					is_country_type = fallen_empire
+				}
+				is_machine_empire = no
+			}
+		}
+		any_country = {
+			is_at_war_with = root
+			is_country_type = fallen_empire
+			is_machine_empire = no
+			root = {
+				OR = {
+					has_crisis_level = crisis_cosmogenesis_level_5
+					has_crisis_level = crisis_cosmogenesis_level_4
+				}
+			}
+		}
+	}
+
+	immediate = {
+		every_country = {
+			limit = {
+				is_at_war_with = root
+				is_country_type = fallen_empire
+				is_machine_empire = no
+			}
+			country_event = {
+				id = fallen_empires_mod.3
+				days = 10
+			}
+		}
+		country_event = {
+			id = fallen_empires_mod.6
+			days = 180
+		}
+	}
+
+	after = {
+	}
+	
+}
+
+
+country_event = {
+	id = fallen_empires_mod.6
+	title = OK
+	desc = OK
+	hide_window = yes
+	is_triggered_only = yes
+
+
+	trigger = {
+		count_country = {
+			count > 1
+			limit = {
+				is_mod_fe_can_federation = yes
+			}
+		}
+	}
+	immediate = {
+		## end all the war awakened fallen empire join 
+		every_country = {
+			limit = {
+				is_at_war = yes
+				is_country_type = awakened_fallen_empire
+			}
+			save_event_target_as = Heaven_war_fe
+			if = {
+				limit = {
+					any_war = {
+						any_war_participant = {
+							is_country_type = awakened_fallen_empire
+						}
+					}
+				}
+				every_war = {
+					limit = {
+						any_war_participant = {
+							is_country_type = awakened_fallen_empire
+						}
+					}
+					remove_war_participant = event_target:Heaven_war_fe
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				is_country_type = awakened_fallen_empire
+				has_federation = yes
+			}
+			leave_alliance = { override_requirements = yes }
+		}
+		random_country = {
+			limit = {
+				is_mod_fe_can_federation = yes
+			}
+			save_event_target_as = FE_leader
+		} 
+		every_country = {
+			limit = {
+				is_mod_fe_can_federation = yes
+				NOT = { is_same_empire = event_target:FE_leader }
+			}
+			save_event_target_as = FE_leader_member
+			## end rivalry
+			event_target:FE_leader_member = {
+				end_rivalry = event_target:FE_leader
+			}
+			event_target:FE_leader = {
+				end_rivalry = event_target:FE_leader_member
+			}
+			every_country = {
+				limit = {
+					is_mod_fe_can_federation = yes
+					NOT = { is_same_empire = event_target:FE_leader }
+				}
+				save_event_target_as = FE_leader_member_2
+				event_target:FE_leader_member_2 = {
+					end_rivalry = event_target:FE_leader_member
+				}
+				event_target:FE_leader_member = {
+					end_rivalry = event_target:FE_leader_member_2
+				}
+			}
+			event_target:FE_leader_member = {
+				join_alliance = {
+					who = event_target:FE_leader
+					override_requirements = yes
+				}
+			}
+		}
+		event_target:FE_leader = {
+			federation = {
+				set_federation_type = fallen_empire_federation
+				set_federation_flag = special_federation
+				remove_federation_flag = enable_federation_cooldowns
+			}
+		}
+				
+	}
+}

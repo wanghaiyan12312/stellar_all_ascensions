@@ -12,7 +12,7 @@ wg_ae_entertainment_cosmogenesis = {
 		surrender = ""
 	}
 
-	cede_claims = no
+	cede_claims = yes
 
 	potential = {
 		has_ascension_perk = ap_cosmogenesis

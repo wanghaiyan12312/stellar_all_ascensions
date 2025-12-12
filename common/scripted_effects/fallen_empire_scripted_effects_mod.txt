@@ -1,11 +1,11 @@
 add_awakened_fallen_empire_resources_mod = {
 	# Changing country type resets resources, so give them full stores
-	add_resource = { minerals = 100000 }
-	add_resource = { energy = 100000 }
-	add_resource = { food = 100000 }
-	add_resource = { alloys = 20000 }
-	add_resource = { consumer_goods = 20000 }
-	add_resource = { alloys = 20000 }
+	add_resource = { minerals = 1000000 }
+	add_resource = { energy = 1000000 }
+	add_resource = { food = 1000000 }
+	add_resource = { alloys = 200000 }
+	add_resource = { consumer_goods = 200000 }
+	add_resource = { alloys = 200000 }
 	add_resource = { exotic_gases = 10000 }
 	add_resource = { volatile_motes = 10000 }
 	add_resource = { rare_crystals = 10000 }
@@ -15,37 +15,58 @@ add_awakened_fallen_empire_resources_mod = {
 	add_resource = { sr_zro = 10000 }
 	add_resource = { minor_artifacts = 500000000 }
 }
+
 create_fallen_empire_reinforcements_mod = {
 	if = {
 		limit = {
 			owner = { has_ethic = ethic_fanatic_xenophile}
 		}
-		capital_scope = {
-			create_fallen_empire_reinforcements_xenophile_mod = yes
-		}				
+		create_fallen_empire_fleet_mod = {
+			BIGSHIP_NUM = value:get_fallen_empire_titan_enforce_num
+			MEDIUMSHIP_NUM = value:get_fallen_empire_battlecruise_num
+			SMALLSHIP_NUM = value:get_fallen_empire_escort_num
+			DESIGN_BIGSHIP = "NAME_Keeper"
+			DESIGN_MEDIUMSHIP = "NAME_Custodian"
+			DESIGN_SMALLSHIP = "NAME_Overseer"
+		}		
 	}
 	if = {
 		limit = { 
 			owner = { has_ethic = ethic_fanatic_materialist }
 		}
-		capital_scope = {
-			create_fallen_empire_reinforcements_materialist_mod = yes
+		create_fallen_empire_fleet_mod = {
+			BIGSHIP_NUM = value:get_fallen_empire_titan_enforce_num
+			MEDIUMSHIP_NUM = value:get_fallen_empire_battlecruise_num
+			SMALLSHIP_NUM = value:get_fallen_empire_escort_num
+			DESIGN_BIGSHIP = "NAME_Savant"
+			DESIGN_MEDIUMSHIP = "NAME_Custodian"
+			DESIGN_SMALLSHIP = "NAME_Sage"
 		}		
 	}
 	if = {
 		limit = { 
 			owner = { has_ethic = ethic_fanatic_spiritualist }
 		}
-		capital_scope = {
-			create_fallen_empire_reinforcements_spiritualist_mod = yes
+		create_fallen_empire_fleet_mod = {
+			BIGSHIP_NUM = value:get_fallen_empire_titan_enforce_num
+			MEDIUMSHIP_NUM = value:get_fallen_empire_battlecruise_num
+			SMALLSHIP_NUM = value:get_fallen_empire_escort_num
+			DESIGN_BIGSHIP = "NAME_Eternal"
+			DESIGN_MEDIUMSHIP = "NAME_Avatar"
+			DESIGN_SMALLSHIP = "NAME_Zealot"
 		}
 	}
 	if = {
 		limit = {
 			owner = { has_ethic = ethic_fanatic_xenophobe}
 		}
-		capital_scope = {
-			create_fallen_empire_reinforcements_xenophobe_mod = yes
+		create_fallen_empire_fleet_mod = {
+			BIGSHIP_NUM = value:get_fallen_empire_titan_enforce_num
+			MEDIUMSHIP_NUM = value:get_fallen_empire_battlecruise_num
+			SMALLSHIP_NUM = value:get_fallen_empire_escort_num
+			DESIGN_BIGSHIP = "NAME_Imperium"
+			DESIGN_MEDIUMSHIP = "NAME_Supremacy"
+			DESIGN_SMALLSHIP = "NAME_Glory"
 		}
 	}
 	if = {
@@ -56,319 +77,81 @@ create_fallen_empire_reinforcements_mod = {
 				owner = { has_country_flag = fallen_empire_hive_control }
 			}					
 		}
-		capital_scope = {
-			create_fallen_empire_reinforcements_hive_mod = yes
+		create_fallen_empire_fleet_mod = {
+			BIGSHIP_NUM = value:get_fallen_empire_stinger_num
+			MEDIUMSHIP_NUM = value:get_fallen_empire_harbinger_num
+			SMALLSHIP_NUM = value:get_fallen_empire_mauler_num
+			DESIGN_BIGSHIP = "NAME_HIVE_FE_Large_Stinger"
+			DESIGN_MEDIUMSHIP = "NAME_HIVE_FE_Large_Harbinger"
+			DESIGN_SMALLSHIP = "NAME_HIVE_FE_Large_Mauler_Picket"
 		}
 	}
+
 }
 
-create_fallen_empire_reinforcements_xenophile_mod = {
-	create_fleet = {
-		effect = {
-			set_owner = prev.owner
-			while = {
-				count = @fallen_empire_titan
-				create_ship = {
-					name = random
-					design = "NAME_Keeper"
-					graphical_culture = owner
-				}
-			}
-			while = {
-				count = @fallen_empire_battlecruise
-				create_ship = {
-					name = random
-					design = "NAME_Custodian"
-					graphical_culture = owner
-				}
-			}
-			while = {
-				count = @fallen_empire_escort
-				create_ship = {
-					name = random
-					design = "NAME_Overseer"
-					graphical_culture = owner
-				}
-			}
-			random_list = {
-				25 = {
-					set_location = {
-						target = prev
-						distance = 30
-						angle = random
+create_fallen_empire_fleet_mod = {
+	capital_scope = {
+		create_fleet = {
+			effect = {
+				set_owner = prev.owner
+				while = {
+					count = $BIGSHIP_NUM$ 
+					create_ship = {
+						name = random
+						design = $DESIGN_BIGSHIP$
+						graphical_culture = owner
 					}
 				}
-				25 = {
-					set_location = {
-						target = prev
-						distance = 45
-						angle = random
+				while = {
+					count = $MEDIUMSHIP_NUM$ 
+					create_ship = {
+						name = random
+						design = $DESIGN_MEDIUMSHIP$
+						graphical_culture = owner
 					}
 				}
-				25 = {
-					set_location = {
-						target = prev
-						distance = 60
-						angle = random
+				while = {
+					count = $SMALLSHIP_NUM$ 
+					create_ship = {
+						name = random
+						design = $DESIGN_SMALLSHIP$
+						graphical_culture = owner
 					}
 				}
-				25 = {
-					set_location = {
-						target = prev
-						distance = 75
-						angle = random
+				random_list = {
+					25 = {
+						set_location = {
+							target = prev
+							distance = 30
+							angle = random
+						}
 					}
-				}
-			}
-		}
-	}
-}
-create_fallen_empire_reinforcements_materialist_mod = {
-	create_fleet = {
-		effect = {
-			set_owner = prev.owner
-			while = {
-				count = @fallen_empire_titan
-				create_ship = {
-					name = random
-					design = "NAME_Savant"
-					graphical_culture = owner
-				}
-			}
-			while = {
-				count = @fallen_empire_battlecruise
-				create_ship = {
-					name = random
-					design = "NAME_Scholar"
-					graphical_culture = owner
-				}
-			}
-			while = {
-				count = @fallen_empire_escort
-				create_ship = {
-					name = random
-					design = "NAME_Sage"
-					graphical_culture = owner
-				}
-			}
-			random_list = {
-				25 = {
-					set_location = {
-						target = prev
-						distance = 30
-						angle = random
+					25 = {
+						set_location = {
+							target = prev
+							distance = 45
+							angle = random
+						}
 					}
-				}
-				25 = {
-					set_location = {
-						target = prev
-						distance = 45
-						angle = random
+					25 = {
+						set_location = {
+							target = prev
+							distance = 60
+							angle = random
+						}
 					}
-				}
-				25 = {
-					set_location = {
-						target = prev
-						distance = 60
-						angle = random
-					}
-				}
-				25 = {
-					set_location = {
-						target = prev
-						distance = 75
-						angle = random
+					25 = {
+						set_location = {
+							target = prev
+							distance = 75
+							angle = random
+						}
 					}
 				}
 			}
 		}
 	}
 }
-create_fallen_empire_reinforcements_spiritualist_mod = {
-	create_fleet = {
-		effect = {
-			set_owner = prev.owner
-			while = {
-				count = @fallen_empire_titan
-				create_ship = {
-					name = random
-					design = "NAME_Eternal"
-					graphical_culture = owner
-				}
-			}
-			while = {
-				count = @fallen_empire_battlecruise
-				create_ship = {
-					name = random
-					design = "NAME_Avatar"
-					graphical_culture = owner
-				}
-			}
-			while = {
-				count = @fallen_empire_escort
-				create_ship = {
-					name = random
-					design = "NAME_Zealot"
-					graphical_culture = owner
-				}		
-			}
-			random_list = {
-				25 = {
-					set_location = {
-						target = prev
-						distance = 30
-						angle = random
-					}
-				}
-				25 = {
-					set_location = {
-						target = prev
-						distance = 45
-						angle = random
-					}
-				}
-				25 = {
-					set_location = {
-						target = prev
-						distance = 60
-						angle = random
-					}
-				}
-				25 = {
-					set_location = {
-						target = prev
-						distance = 75
-						angle = random
-					}
-				}
-			}
-		}
-	}
-}
-create_fallen_empire_reinforcements_xenophobe_mod = {
-	create_fleet = {
-		effect = {
-			set_owner = prev.owner
-			while = {
-				count = @fallen_empire_titan
-				create_ship = {
-					name = random
-					design = "NAME_Imperium"
-					graphical_culture = owner
-				}
-			}
-			while = {
-				count = @fallen_empire_battlecruise
-				create_ship = {
-					name = random
-					design = "NAME_Supremacy"
-					graphical_culture = owner
-				}
-			}
-			while = {
-				count = @fallen_empire_escort
-				create_ship = {
-					name = random
-					design = "NAME_Glory"
-					graphical_culture = owner
-				}	
-			}
-			random_list = {
-				25 = {
-					set_location = {
-						target = prev
-						distance = 30
-						angle = random
-					}
-				}
-				25 = {
-					set_location = {
-						target = prev
-						distance = 45
-						angle = random
-					}
-				}
-				25 = {
-					set_location = {
-						target = prev
-						distance = 60
-						angle = random
-					}
-				}
-				25 = {
-					set_location = {
-						target = prev
-						distance = 75
-						angle = random
-					}
-				}
-			}
-		}
-	}
-}
-
-create_fallen_empire_reinforcements_hive_mod = {
-	create_fleet = {
-		effect = {
-			set_owner = prev.owner
-			while = {
-				count = @hive_fallen_empire_stinger 
-				create_ship = {
-					name = random
-					design = "NAME_HIVE_FE_Large_Stinger"
-					graphical_culture = owner
-				}
-			}
-			while = {
-				count = @hive_fallen_empire_mauler 
-				create_ship = {
-					name = random
-					design = "NAME_HIVE_FE_Large_Mauler_Picket"
-					graphical_culture = owner
-				}
-			}
-			while = {
-				count = @hive_fallen_empire_harbinger
-				create_ship = {
-					name = random
-					design = "NAME_HIVE_FE_Large_Harbinger"
-					graphical_culture = owner
-				}
-			}
-			random_list = {
-				25 = {
-					set_location = {
-						target = prev
-						distance = 30
-						angle = random
-					}
-				}
-				25 = {
-					set_location = {
-						target = prev
-						distance = 45
-						angle = random
-					}
-				}
-				25 = {
-					set_location = {
-						target = prev
-						distance = 60
-						angle = random
-					}
-				}
-				25 = {
-					set_location = {
-						target = prev
-						distance = 75
-						angle = random
-					}
-				}
-			}
-		}
-	}
-}
-### 
 
 
 create_fe_home_citadel = {

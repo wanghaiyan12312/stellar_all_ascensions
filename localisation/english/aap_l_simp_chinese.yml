@@ -98,14 +98,39 @@
  ascensions.2.corporealpsionic: "物质灵能高级政体"
  ascensions.2.transcendentpsionic: "超凡的灵能高级政体"
 
+ edict_app_get_minor_patron_edict: "获得小超主的法案"
+ edict_app_get_minor_patron_edict_desc: "用泽洛和影响力获得小超主的法案"
+ ascensions.3.title: "$edict_app_get_minor_patron_edict$"
+ ascensions.3.desc: "$edict_app_get_minor_patron_edict_desc$"
+ ascensions.3.the_golden_dream:"$edict_will_of_distraction$"
+ ascensions.3.the_golden_dream_desc:"$edict_will_of_distraction_desc$"
+ ascensions.3.the_animator_of_clay:"$edict_animatus$"
+ ascensions.3.the_animator_of_clay_desc:"$edict_animatus_desc$"
+ ascensions.3.the_outsider:"$edict_will_of_temperance$"
+ ascensions.3.the_outsider_desc:"$edict_will_of_temperance_desc$"
+ ascensions.3.the_pale_mountain:"$edict_will_of_rebirth$"
+ ascensions.3.the_pale_mountain_desc:"$edict_will_of_rebirth_desc$"
+ ascensions.3.the_endless_tide:"$edict_will_of_endless$" 
+ ascensions.3.the_endless_tide_desc:"$edict_will_of_endless_desc$"
+ ascensions.3.the_vacant_throne:"$edict_will_of_order$" 
+ ascensions.3.the_vacant_throne_desc:"$edict_will_of_order_desc$" 
+ ascensions.3.the_black_river:"$edict_will_of_motion$" 
+ ascensions.3.the_black_river_desc:"$edict_will_of_motion_desc$" 
+
  COSMO_CRISIS_BATTLECRUISER_4P1X2L4M: "炮击点防框架"
  COSMO_CRISIS_BATTLECRUISER_4P1X4G4M: "雷击点防框架"
  COSMO_CRISIS_TITAN_1T8L4M8P: "炮击点防框架"
+ COSMO_CRISIS_TITAN_2T4X8L: "巨型炮击框架"
+ COSMO_CRISIS_TITAN_3T6X9L: "女王炮击框架"
  COSMO_CRISIS_HARBINGER_SECTION_POINT: "蜂巢堕落帝国远古孵后"
  NAME_HIVE_FE_Large_Harbinger_Point: "孵化者"
 
  tech_synth_queen_titan: "女王泰坦"
  tech_synth_queen_titan_desc: "根据伟大先知扎克的传说记载，我们利用我们宇宙创生的科技去回溯了这场远古的战争。并再现了合成女王的旗舰这是一个历史时刻证明我们超越了所有的堕落帝国。"
+
+
+ tech_synth_queen_titan_template: "女王炮击泰坦"
+ tech_synth_queen_titan_template_desc: "再建造好女王泰坦以后, 我们的工程研究人员提出把我们悖论泰坦的空间优势和女王泰坦的火力优势结合这会使我们的所有泰坦没有武器开火角度的限制。"
 
  synth_queen_titan_mod: "$tech_synth_queen_titan$"
  synth_queen_titan_mod_desc: "$tech_synth_queen_titan_des$"
@@ -233,6 +258,8 @@
  leadershroud.300.govern_official: "尝试用强大的虚境实体塑造一个产业行政官"
  leadershroud.300.councilor_commander: "尝试用强大的虚境实体塑造一个内阁指挥官"
  leadershroud.300.admiral_commander: "尝试用强大的虚境实体塑造一个舰队指挥官"
+ leadershroud.300.governor_commander: "尝试用强大的虚境实体塑造一个产业指挥官"
+ leadershroud.300.general_commander: "尝试用强大的虚境实体塑造一个陆军指挥官"
 
  edict_app_get_legendary_shroud_leader: "在虚境重寻找强大的领袖"
  edict_app_get_legendary_shroud_leader_desc:"在虚境重寻找强大的领袖"
@@ -266,8 +293,55 @@
  composer_aura_max_prohibit_enable_name: "星球解锁禁止虚境化植决议"
  composer_aura_max_prohibit_enable_desc: "再需要建造理想球的星球上你不想再花上几年时间去清障碍吧。 \n\n§E 织缕光环不会再有禁止虚境化植决议的星球上添加虚境化植。§!"
 
+ end_aura_not_win_condition: "终末光环扩展全星系时不会获得胜利"
+ end_aura_not_win_condition_name: "扩展全星系时不会获得胜利"
+ end_aura_not_win_condition_desc: "当你有时间享受游戏时请尽情享受。"
+
  aura_shroud_no_change: "不做改变"
  aura_shroud_no_change_name: "不做改变"
  aura_shroud_no_change_desc: "不做改变"
 
  ship_damage_mult: "优越造船"
+
+ civic_psionic_sovereign_mod: "天选帝君"
+ civic_psionic_sovereign_mod_desc_prefix: "该社会指名"
+ civic_psionic_sovereign_mod_desc_suffix_organic: "——一位拥有无上灵能力量的个体作为他们永远的统治者。"
+ civic_psionic_sovereign_mod_desc: "$civic_psionic_sovereign_desc_prefix$$leader_trait_chosen_default$$civic_psionic_sovereign_desc_suffix_organic$"
+
+ councilor_psionic_sovereign_mod: "神灵的媒介"
+ councilor_psionic_sovereign_mod_female: "$councilor_psionic_sovereign$"
+ councilor_psionic_sovereign_mod_desc: "最初由灵能军团进行导引，现在由$TITLE$负责给天选者庞大的灵能潜势提供媒介。"
+
+ decision_mastery_of_ring_word: "$sm_orbital_ring_habitation$"
+ decision_mastery_of_ring_word_desc: "$sm_orbital_ring_habitation_desc$"
+
+ decision_mastery_of_ring_word: "$sm_orbital_ring_habitation$"
+ decision_mastery_of_ring_word_desc: "$sm_orbital_ring_habitation_desc$"
+
+ mastery_of_ring_word: "$sm_orbital_ring_habitation$"
+ mastery_of_ring_word_desc: "$sm_orbital_ring_habitation_desc$"
+
+ song_of_end: "圆神终结"
+ song_of_end_desc: "一股带有毁灭与终结的灵能回响。\n\n"
+
+ end_cycle.5.title: "$edict_app_get_greater_patron_roll$"
+ end_cycle.5.desc: "$edict_app_get_greater_patron_roll_desc$"
+
+ LENS_FLARE_BEAM_MOD: "$LENS_FLARE_BEAM$"
+ LENS_FLARE_BEAM_MOD_DESC: "$LENS_FLARE_BEAM_DESC$"
+
+ SOLARFLARE_EMITTER_MOD: "$SOLARFLARE_EMITTER$"
+ SOLARFLARE_EMITTER_MOD_DESC: "$SOLARFLARE_EMITTER_MOD_DESC$"
+
+ ACCORD_ERADICATION_TT:0 "以['concept_total_war']§H宣战理由§!向所有帝国宣战。\n§Y$situation_end_of_the_cycle$§!§H局势§!进展：§G-240§!"
+
+ shipeventmod.3.name:"[outraged_FE.GetName]"
+ shipeventmod.3.desc:"女王泰坦是我们上古敌人的旗舰，你的行为让我们祖先的荣耀蒙羞。\n\n\n你们不明白你们犯下了多大的罪恶。\n\n\n不过马上就会了。"
+
+ end_cycle.7.name:"[outraged_FE.GetName]"
+ end_cycle.7.desc:"你们所散发的邪恶的灵能光环正在蔓延整个星系，危及所有文明。我们作为长者之裔有必要消灭这种威胁全银河的威胁。"
+
+ end_cycle.5.a.tt:"$shroud.4135.a.tt$\n\n\n§Y 所有的堕落帝国都会觉醒。 §!"
+ fallen_empire_federation: "堕落帝国联邦"
+ fallen_empire_federation_desc: "一个联盟专注于足以毁灭这古老巨人的可怕敌人。"
+ triggered_opinion_fallen_empire_federation: "堕落帝国联邦"

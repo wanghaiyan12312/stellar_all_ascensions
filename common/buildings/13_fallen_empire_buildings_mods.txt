@@ -442,9 +442,9 @@ building_fe_silo_1 = {
 	}
 
 	country_modifier = {
-		country_resource_max_add = 250000
-		country_resource_max_minor_artifacts_add = 2500
-		country_resource_max_astral_threads_add = 2500
+		country_resource_max_add = 1000000
+		country_resource_max_minor_artifacts_add = 25000
+		country_resource_max_astral_threads_add = 25000
 	}
 
 	upgrades = {
@@ -569,9 +569,9 @@ building_fe_silo_2 = {
 	}
 
 	country_modifier = {
-		country_resource_max_add = 500000
-		country_resource_max_minor_artifacts_add = 5000
-		country_resource_max_astral_threads_add = 5000
+		country_resource_max_add = 5000000
+		country_resource_max_minor_artifacts_add = 50000
+		country_resource_max_astral_threads_add = 50000
 	}
 
 	on_queued = {

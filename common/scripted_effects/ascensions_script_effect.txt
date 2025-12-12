@@ -207,3 +207,42 @@ auto_tech_remove_all_eng_flag = {
 	remove_country_flag = mineral_output_allow
 	remove_country_flag = armor_output_allow
 }
+
+
+can_harvest_dna = {
+	# Genetic ascension requires Utopia or BioGenesis
+	OR = {
+		has_utopia = yes
+		has_biogenesis_dlc = yes
+	}
+	# Only regular empires and hive-minds can genetically ascend.
+	is_machine_empire = no
+	# If you've taken other ascension path, we shouldn't let you harvest DNA anymore.
+#	NOR = {
+#		has_cybernetic_ascension = yes
+#		has_psionic_ascension = yes
+#		has_synthetic_ascension = yes
+#		has_country_flag = genetic_ascension_stage_3_purity
+#		has_country_flag = genetic_ascension_stage_3_cloning
+#	}
+}
+
+can_harvest_parts = {
+	has_machine_age_dlc = yes
+	OR = {
+		has_technology = tech_neuro_quantum_links
+		has_technology = tech_synthetic_workers
+		has_technology = tech_binary_motivators
+	}
+	# Only machine empires and cyborgs can use mechanical leviathan parts.
+	OR = {
+		has_active_tradition = tr_cybernetics_integrated_anatomy
+		has_active_tradition = tr_cybernetics_assimilator_integrated_anatomy
+		is_synthetic_empire = yes
+	}
+	# If you've taken another ascension path, we shouldn't let you harvest parts anymore.
+#	NOR = {
+#		has_genetic_ascension = yes
+#		has_psionic_ascension = yes
+#	}
+}

@@ -6,15 +6,7 @@ eater_aura_max_intensity_effect = {
 			}
 		}
 		root.aura_owner = { 
-			set_variable = {
-				which = tooth_eater_1
-				value = 100
-			}
-			multiply_variable = {
-				which = tooth_eater_1 # must be directly referring to a variable
-				value = value:eater_teeth_count_scaling
-			}
-			add_resource = { alloys = tooth_eater_1 } 
+			add_resource = { alloys = 10000 } 
 		}
 		create_message = {
 			type = MESSAGE_PSIONIC_AURA_the_eater_of_worlds
@@ -124,6 +116,32 @@ eater_aura_max_intensity_effect_original = {
 			save_event_target_as = eater_fleet
 		}
 	}
+	root.aura_owner = {
+		ordered_owned_fleet = {
+			limit = {
+				has_fleet_flag = tooth_eater_fleet
+				exists = event_target:eater_fleet
+				NOT = { is_same_value = event_target:eater_fleet }
+			}
+			position = 0
+			order_by = value:distance_to_target|TARGET|event_target:eater_fleet|
+			inverse = yes
+			save_event_target_as = teeth_to_merge
+		}
+	}
+	event_target:eater_fleet = {
+		if = {
+			limit = { exists = event_target:teeth_to_merge }
+			queue_actions = {
+				merge_fleet = event_target:teeth_to_merge
+			}
+		}
+		else = {
+			queue_actions = {
+				move_to = root.aura_owner.capital_scope.solar_system
+			}
+		}
+	}
 	create_message = {
 		type = MESSAGE_PSIONIC_AURA_the_eater_of_worlds
 		localization = MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_eater_of_worlds_DESC
@@ -136,3 +154,28 @@ eater_aura_max_intensity_effect_original = {
 		}
 	}
 }
+
+check_end_aura_win_condition = {
+	export_trigger_value_to_variable = {
+		trigger = count_systems_with_aura
+		variable = nb_conquered_systems
+	}
+	if = {
+		limit = {
+			count_end_cycle_systems <= nb_conquered_systems
+			root.aura_owner = {
+				NOT = {
+					has_policy_flag = end_aura_not_win_condition
+				}
+			}
+		}
+		if = {
+			limit = { has_origin = origin_endbringers }
+			country_event = { id = shroud.8600 }
+		}
+		else = {
+			country_event = { id = shroud.4970 }
+		}
+	}
+}
+

@@ -15,6 +15,8 @@ synth_queen_titan_mod = {
 		ship_fire_rate_mult = 3
 		ship_disengage_chance_mult = 0.1
 		ship_shield_regen_add_perc = 0.1
+		ship_hull_regen_add_perc = 0.1
+		ship_armor_regen_add_perc = 0.1
 	}
 	max_hitpoints = 2000000
 	size_multiplier = 100 # for 500 command line 
@@ -46,11 +48,14 @@ synth_queen_titan_mod = {
 	resources = {
 		category = ships
 		cost = {
-			alloys = 200000 # higly price require
+			alloys = 500000 # higly price require
+			sr_dark_matter = 5000
+			sr_living_metal = 5000
+			nanites = 500
 		}
 		upkeep = {
-			energy = @colossus_upkeep_energy
-			alloys = @colossus_upkeep_alloys
+			energy = 1000
+			alloys = 100
 		}
 		logistics = {
 			trade = @colossus_logistic_upkeep_trade
@@ -108,6 +113,8 @@ large_ship_synth_queen_mod = {
 	collision_radius = 8
 	modifier = {
 		ship_evasion_add = 10
+		ship_hull_regen_add_perc = 0.1
+		ship_armor_regen_add_perc = 0.1
 	}
 	max_hitpoints = 25000
 	size_multiplier = 8
@@ -127,11 +134,11 @@ large_ship_synth_queen_mod = {
 	resources = {
 		category = ships
 		cost = {
-			alloys = 3000
+			alloys = 10000
 		}
 		upkeep = {
-			energy = @battleship_upkeep_energy
-			alloys = @battleship_upkeep_alloys
+			energy = @titan_upkeep_energy
+			alloys = @titan_upkeep_alloys
 		}
 	}
 
@@ -178,6 +185,8 @@ small_ship_synth_queen_mod = {
 		ship_evasion_add = 80
 		ship_disengage_chance_mult = 2
 		ship_disengage_opportunities_add = 2
+		ship_hull_regen_add_perc = 0.1
+		ship_armor_regen_add_perc = 0.1
 	}
 	max_hitpoints = 800
 	size_multiplier = 2
@@ -217,11 +226,11 @@ small_ship_synth_queen_mod = {
 	resources = {
 		category = ships
 		cost = {
-			alloys = 500
+			alloys = 2000
 		}
 		upkeep = {
-			energy = @destroyer_upkeep_energy
-			alloys = @destroyer_upkeep_alloys
+			energy = @battleship_upkeep_energy
+			alloys = @battleship_upkeep_alloys
 		}
 	}
 
@@ -244,8 +253,6 @@ defense_platform_synth_queen_mod = {
 	acceleration = 10
 	modifier = {
 		ship_evasion_mult = -1
-		ship_hull_regen_add_perc = 0.1
-		ship_armor_regen_add_perc = 0.1
 		ships_upkeep_mult = -0.25
 	}
 	ship_modifier = {

@@ -1,4 +1,26 @@
 NGameplay = {
+
+	EMPIRE_SIZE_TRADITION_COST_PENALTY		= 0.002	# Per empire size above base #0.006
+
+	## tradition cost = ( base_cost + ( cost_tradition * num_traditions )^traditions_exponential ) * ( 1 + cost_planet*num_planets + cost_system*num_systems )
+	TRADITION_COST_TRADITION				= 6			# change this value if you want to increase all costs #8
+	TRADITION_COST_TRADITION_EXP			= 1.600 	# change this value if you want to increase costs at the end #1.700
+	TRADITION_COST_MULT_TRADITION_GROUP		= 0.025		# each adopted group adds +X% to total cost	#0.05
+
+	# Planetary Ascension Tier cap formula:
+	#     Max( ( Unlocked Ascension Perks Slots - 2 ), PLANET_ASCENSION_MIN ) +
+	#     ( ( Unlocked Ascension Perks Slots == ASCENSION_PERKS_SLOTS ? ) PLANET_ASCENSION_COMPLETION_BONUS : 0 )
+	PLANET_ASCENSION_STARTING_POINT		= 13		# Number of ascension perks unlocked slots required for Planetary Ascension
+	PLANET_ASCENSION_MIN				= 0		# Minimum Planetary Ascension tier
+	PLANET_ASCENSION_COMPLETION_BONUS	= 4		# Flat bonus on Planetary Ascension Tier cap when all the slots are unlocked
+	PLANET_ASCENSION_HARD_CAP			= 10	# Based of current formula, maximum planetary ascension possible
+
+	# Planetary Ascension cost formula: ( Empire Sprawl * PLANET_ASCENSION_SPRAWL_SCALE) * ( 1 + ( Empire Wide Sum of Ascension Tiers * PLANET_ASCENSION_SUM_SCALE )
+	PLANET_ASCENSION_SPRAWL_SCALE		= 10.0	# Scaling factor for Planetary Ascension cost based on the empire Sprawl
+	PLANET_ASCENSION_SUM_SCALE			= 1.2	# Scaling factor for Planetary Ascension cost based on the empire-wide sum of Ascension Tiers base 0.6 
+
+	PLANET_ASCENSION_MODIFIER_SCALE		= 0.5
+	PLANET_ASCENSION_SPRAWL_MODIFIER   = -0.1	# Reduction of planet sprawl per level of ascension
 	ASCENSION_PERKS_SLOTS = 18
 	TRADITION_CATEGORIES_MAX = 17 #This sets the max number of selectable traditions categories, it MUST be edited to add more selectable tradition slots
 }
@@ -6,5 +28,10 @@ NGameplay = {
 NAI = {
 	#This needs to be increased by 7 for each tradition slot you have. If you dont do this the AI wont take an 8th tradition, instead spending its unity on edicts.
 	# 7 times "Number of Tradition Slots" = "What this number should be"
-	NUM_TRADITIONS_FOR_EDICTS = 336	# How many traditions does the AI want before spending Unity on edicts (there are 49 in total in the base game counting adoption & completion effects)
+	NUM_TRADITIONS_FOR_EDICTS = 119	# How many traditions does the AI want before spending Unity on edicts (there are 49 in total in the base game counting adoption & completion effects)
+}
+
+NEconomy = {
+	TRADITION_COST_RESOURCES			= { "unity" } # Resource for tradition cost
+	TRADITION_COST_AMOUNTS				= { 265 }	# Tradition base cos 300
 }

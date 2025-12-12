@@ -39,6 +39,12 @@ country_event = {
 			auto_tech_remove_all_eng_flag = yes
 		}
 	}
+
+	option = {
+		name = GOODBYE
+		default_hide_option = yes
+	}
+	
 }
 
 ## phy

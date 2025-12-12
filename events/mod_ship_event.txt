@@ -35,6 +35,21 @@ ship_event = {
 	}
 
 	after = {
+		hidden_effect = {
+			root.owner = {
+				random_country = {
+					limit = {
+						is_country_type = fallen_empire
+						is_machine_empire = no
+					}
+					save_event_target_as = outraged_FE
+				}
+				country_event = {
+					id = shipeventmod.3
+					days = 30
+				}
+			}
+		}
 	}
 
 	option = {
@@ -55,10 +70,104 @@ country_event = {
 	immediate = {
 	}
 
-	after = {
-	}
+	
 
 	option = {
 		name = shipeventmod.2.a
+	}
+}
+
+### 	QUEEN TITAN BUILT FALLEN EMPIRE ANGRY AND AWAKE 
+country_event = {
+	id = shipeventmod.3
+	title = shipeventmod.3.name
+	desc = shipeventmod.3.desc
+	show_sound = event_ship_bridge
+
+	location = event_target:outraged_FE.capital_scope
+
+	is_triggered_only = yes
+
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:outraged_FE
+		planet_background = event_target:outraged_FE
+		graphical_culture = event_target:outraged_FE
+		city_level = event_target:outraged_FE
+		room = event_target:outraged_FE.ruler
+	}
+
+	trigger = {
+		NOT = {
+			has_global_flag = fallen_empire_mod_awake
+		}
+		any_country = {
+			is_country_type = fallen_empire
+			is_machine_empire = no
+		}
+	}
+
+
+	immediate = {
+		set_global_flag = fallen_empire_mod_awake
+	}
+
+	after = {
+		every_country = {
+			limit = {
+				is_country_type = fallen_empire
+				is_machine_empire = no
+			}
+			if = {
+				limit = { has_ethic = ethic_fanatic_xenophile }
+				country_event = {
+					id = fallen_empires_mod.3
+					days = 30
+				}
+			}
+			if = {
+				limit = { has_ethic = ethic_fanatic_materialist }
+				country_event = {
+					id = fallen_empires_mod.3
+					days = 60
+				}
+			}
+			if = {
+				limit = { has_ethic = ethic_fanatic_spiritualist }
+				country_event = {
+					id = fallen_empires_mod.3
+					days = 90
+				}
+			}
+			if = {
+				limit = { has_ethic = ethic_fanatic_xenophobe }
+				country_event = {
+					id = fallen_empires_mod.3
+					days = 120
+				}
+			}
+			if = {
+				limit = { 
+					OR = {
+						owner = { has_country_flag = fallen_empire_hive_war }
+						owner = { has_country_flag = fallen_empire_hive_growth }
+						owner = { has_country_flag = fallen_empire_hive_control }
+					}	
+				}
+				country_event = {
+					id = fallen_empires_mod.4
+					days = 150
+				}
+			}			
+		}
+		country_event = {
+			id = fallen_empires_mod.6
+			days = 180
+		}
+	}
+
+	option = {
+		name = fallen_empires_awakening.2.b
 	}
 }

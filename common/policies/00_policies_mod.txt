@@ -2,10 +2,19 @@ aura_shroud_mod = {
 
 	potential = {
 		has_technology = tech_psionic_aura
+		OR = {
+			has_patron_relation = { patron = the_eater_of_worlds contact = any }
+			has_patron_relation = { patron = the_composer_of_strands contact = any }
+			has_patron_relation = { patron = end_of_the_cycle contact = any } 
+		}
 	}
 
 	option = {
 		name = "eater_aura_max_intensity_alloy"
+
+		potential = {
+			has_patron_relation = { patron = the_eater_of_worlds contact = any }
+		}
 
 		policy_flags = {
 			eater_aura_max_intensity_alloy
@@ -21,9 +30,32 @@ aura_shroud_mod = {
 	option = {
 		name = "composer_aura_max_prohibit_enable"
 
+		potential = {
+			has_patron_relation = { patron = the_composer_of_strands contact = any }
+		}
+
 		policy_flags = {
 			composer_aura_max_prohibit_enable
 		}
+
+		AI_weight = {
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	option = {
+		name = "end_aura_not_win_condition"
+
+		policy_flags = {
+			end_aura_not_win_condition
+		}
+
+		potential = { 
+			has_patron_relation = { patron = end_of_the_cycle contact = any } 
+		}
+
 
 		AI_weight = {
 			modifier = {

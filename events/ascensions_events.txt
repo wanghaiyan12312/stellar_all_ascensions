@@ -119,14 +119,18 @@ country_event = {
 
 	option = {
 		trigger =  { 
-			has_shroud_dlc = yes
-			NOR = {
-				has_origin = origin_endbringers
-			    has_covenant_with_end_of_the_cycle = yes
-			}
-			AND = {
-				has_country_flag = shroud_songs_rolled
-				has_country_flag = shroud_songs_started
+			OR = {
+				AND = {
+					OR = {
+						has_origin = origin_endbringers
+			    		has_covenant_with_end_of_the_cycle = yes
+					}
+					has_tradition = tr_psionics_shroud_finish
+				}
+				AND = {
+					has_country_flag = shroud_songs_rolled
+					has_country_flag = shroud_songs_started
+				}
 			}
 		}
 		name =  ascensions.2.transcendentpsionic
@@ -139,14 +143,20 @@ country_event = {
 	option = {
 		trigger =  { 
 			has_shroud_dlc = yes
-			NOR = {
-				has_origin = origin_endbringers
-			    has_covenant_with_end_of_the_cycle = yes
+			OR = {
+				AND = {
+					OR = {
+						has_origin = origin_endbringers
+			    		has_covenant_with_end_of_the_cycle = yes
+					}
+					has_tradition = tr_psionics_shroud_finish
+				}
+				AND = {
+					has_country_flag = shroud_songs_rolled
+					has_country_flag = shroud_songs_started
+				}
 			}
-			AND = {
-				has_country_flag = shroud_songs_rolled
-				has_country_flag = shroud_songs_started
-			}
+			
 		}
 		name =  ascensions.2.corporealpsionic
 		aap_remove_government_flags = yes
@@ -156,6 +166,199 @@ country_event = {
 	}
 
 
+}
+
+country_event = {
+	id = ascensions.3
+	title = ascensions.3.title
+	desc =  ascensions.3.desc
+	picture = GFX_evt_ancient_databank
+	is_triggered_only = yes
+	trigger = {
+		is_gestalt = no
+		has_shroud_dlc = yes 
+	}
+
+	option = {
+		name = EXIT
+		default_hide_option = yes
+	}
+
+
+	option = {
+		name = ascensions.3.the_golden_dream
+		trigger = {
+			has_patron_relation = { patron = the_golden_dream }
+            NOT = { has_country_flag = shroud_3220_happened }  # shroud.3220
+		}
+		allow = {
+			resource_stockpile_compare = {
+				resource = sr_zro
+				value >= 500
+			}
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 100
+			}
+		}
+		add_resource = {
+			sr_zro = -500
+		}
+		add_resource = {
+			influence = -100
+		}
+		set_country_flag = shroud_3220_happened
+	}
+
+	option = {
+		name = ascensions.3.the_animator_of_clay
+		trigger = {
+			has_patron_relation = { patron = the_animator_of_clay }
+            NOT = { has_country_flag = shroud_3200_happened }  # shroud.3200
+		}
+		allow = {
+			resource_stockpile_compare = {
+				resource = sr_zro
+				value >= 500
+			}
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 100
+			}
+		}
+		add_resource = {
+			sr_zro = -500
+		}
+		add_resource = {
+			influence = -100
+		}
+		set_country_flag = shroud_3200_happened
+	}
+
+	option = {
+		name = ascensions.3.the_outsider
+		trigger = {
+			has_patron_relation = { patron = the_outsider }
+            NOT = { has_country_flag = shroud_3210_happened }  # shroud.3210
+		}
+		allow = {
+			resource_stockpile_compare = {
+				resource = sr_zro
+				value >= 500
+			}
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 100
+			}
+		}
+		add_resource = {
+			sr_zro = -500
+		}
+		add_resource = {
+			influence = -100
+		}
+		set_country_flag = shroud_3210_happened
+	}
+	
+	option = {
+		name = ascensions.3.the_pale_mountain
+		trigger = {
+            has_patron_relation = { patron = the_pale_mountain }
+            NOT = { has_country_flag = shroud_3240_happened }  # shroud.3240
+		}
+		allow = {
+			resource_stockpile_compare = {
+				resource = sr_zro
+				value >= 500
+			}
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 100
+			}
+		}
+		add_resource = {
+			sr_zro = -500
+		}
+		add_resource = {
+			influence = -100
+		}
+		set_country_flag = shroud_3240_happened
+	}
+
+	option = {
+		name = ascensions.3.the_endless_tide
+		trigger = {
+            has_patron_relation = { patron = the_endless_tide }
+            NOT = { has_country_flag = shroud_3230_happened }  # shroud.3230
+		}
+		allow = {
+			resource_stockpile_compare = {
+				resource = sr_zro
+				value >= 500
+			}
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 100
+			}
+		}
+		add_resource = {
+			sr_zro = -500
+		}
+		add_resource = {
+			influence = -100
+		}
+		set_country_flag = shroud_3230_happened 
+	}
+
+	option = {
+		name = ascensions.3.the_vacant_throne
+		trigger = {
+            has_patron_relation = { patron = the_vacant_throne }
+            NOT = { has_country_flag = shroud_3260_happened }  # shroud.3260
+		}
+		allow = {
+			resource_stockpile_compare = {
+				resource = sr_zro
+				value >= 500
+			}
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 100
+			}
+		}
+		add_resource = {
+			sr_zro = -500
+		}
+		add_resource = {
+			influence = -100
+		}
+		set_country_flag = shroud_3260_happened 
+	}
+
+	option = {
+		name = ascensions.3.the_black_river
+		trigger = {
+            has_patron_relation = { patron = the_black_river }
+            NOT = { has_country_flag = shroud_3270_happened }  # shroud.3270
+		}
+		allow = {
+			resource_stockpile_compare = {
+				resource = sr_zro
+				value >= 500
+			}
+			resource_stockpile_compare = {
+				resource = influence
+				value >= 100
+			}
+		}
+		add_resource = {
+			sr_zro = -500
+		}
+		add_resource = {
+			influence = -100
+		}
+		set_country_flag = shroud_3270_happened
+	}
 }
 
 
@@ -182,8 +385,9 @@ leader_event = {
 	immediate = {
 		if = {
 			limit = {
+				NOT = { leader_class = envoy }
 				# legendary_leader not touch
-				NOT = { has_leader_flag = legendary_leader }
+				NOT = { has_leader_flag = leader_shroud_legendary_mod }
 			}
 			if = {
 				limit = {
@@ -221,6 +425,13 @@ leader_event = {
 					show_message = no
 				}
 			}			
+		}
+		if = {
+			limit = { 
+				has_leader_flag = leader_shroud_legendary_mod
+				has_trait = leader_trait_psionic 
+			}
+			remove_trait = leader_trait_psionic
 		}
 	}
 }

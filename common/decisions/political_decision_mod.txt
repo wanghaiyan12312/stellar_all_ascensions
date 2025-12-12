@@ -49,3 +49,74 @@ decision_end_composer_aura_max_prohibit = {
 		weight = 0
 	}
 }
+
+decision_mastery_of_ring_word = {
+	icon = decision_mastery_of_nature
+
+	owned_planets_only = yes
+
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			influence = 100
+			energy = 2000
+			alloys = 2000
+		}
+	}
+
+	potential = {
+		is_artificial = yes
+		is_ringworld = yes
+		owner = {
+			has_technology = tech_orbital_ring_tier_1
+		}
+		NOT = { has_planet_flag = mastery_of_ring_word_5 }
+	}
+
+	effect = {
+		if = {
+			limit = { has_planet_flag = mastery_of_ring_word_1}
+			remove_planet_flag = mastery_of_ring_word_1
+			set_planet_flag = mastery_of_ring_word_2
+			add_modifier = {
+				modifier = mastery_of_ring_word
+				mult = 2
+			}
+		} else_if = {
+			limit = { has_planet_flag = mastery_of_ring_word_2}
+			remove_planet_flag = mastery_of_ring_word_2
+			set_planet_flag = mastery_of_ring_word_3
+			add_modifier = {
+				modifier = mastery_of_ring_word
+				mult = 3
+			}
+		} else_if = {
+			limit = { has_planet_flag = mastery_of_ring_word_3}
+			remove_planet_flag = mastery_of_ring_word_3
+			set_planet_flag = mastery_of_ring_word_4
+			add_modifier = {
+				modifier = mastery_of_ring_word
+				mult = 4
+			}
+		} else_if = {
+			limit = { has_planet_flag = mastery_of_ring_word_4}
+			remove_planet_flag = mastery_of_ring_word_4
+			set_planet_flag = mastery_of_ring_word_5
+			add_modifier = {
+				modifier = mastery_of_ring_word
+				mult = 5
+			}
+		} else = {
+			set_planet_flag = mastery_of_ring_word_1
+			add_modifier = {
+				modifier = mastery_of_ring_word
+				mult = 1
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

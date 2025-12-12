@@ -1,0 +1,14 @@
+triggered_opinion_fallen_empire_federation = {
+	trigger = {
+		is_fallen_empire = yes
+		has_federation = yes
+		is_in_federation_with = from
+		FROM = {
+			is_fallen_empire = yes
+		}
+	}
+
+	opinion = {
+		base = 1000
+	}
+}

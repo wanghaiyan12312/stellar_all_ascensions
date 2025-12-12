@@ -54,3 +54,156 @@ utility_component_template = {
 		weight = 0
 	}
 }
+
+
+# ## Lens-Flare Beam
+weapon_component_template = {
+	key = "LENS_FLARE_BEAM_MOD"
+	size = extra_large
+	type = instant
+
+	icon = "GFX_ship_part_energy_lens_beam"
+	icon_frame = 1
+
+	prerequisites = { 
+		"tech_energy_lance_1"
+	}
+
+	show_tech_unlock_if = {
+		has_crisis_level = crisis_cosmogenesis_level_4
+		country_uses_bio_ships = no
+	}
+
+	firing_arc = 25.0
+	use_ship_main_target = no
+	potential = {
+		from = {
+			has_crisis_level = crisis_cosmogenesis_level_4
+			country_uses_bio_ships = no
+		}
+	}
+
+	resources = {
+		category = ship_components
+		cost = {
+			sr_dark_matter = @xl_t6_rare 			
+		}
+		upkeep = {
+			alloys = @xl_t6_upkeep_alloys
+			energy = @xl_t6_upkeep_alloys 
+		}
+	}
+
+	component_set = "LENS_FLARE_BEAM"
+	projectile_gfx = "lens_flare_beam"
+	tags = { weapon_type_energy weapon_role_artillery x_slot }
+	ai_tags = { weapon_role_artillery artillery }
+	ai_tag_weight = 0
+	upgrades_to = "SOLARFLARE_EMITTER_MOD"
+
+	on_hit = {
+		custom_tooltip = "lfb_on_hit_stun_tt"
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = this
+					NOT = { has_ship_flag = conduit_paralyzed }
+				}
+				set_timed_ship_flag = { flag = conduit_paralyzed days = 35 }
+				add_modifier = {
+					modifier = lf_weapon_stun_effect
+					days = 7 # If this changes, adjust the tt
+				}
+			}
+		}
+	}
+
+	target_weights = {
+		titan = 3
+		battleship = 2
+		stinger_stage_1 = 1.5
+		stinger_stage_2 = 2
+		stinger_stage_3 = 2
+	}
+
+	ai_weight = {
+		weight = 0.0
+	}
+}
+
+
+# Solarflare Emitter
+weapon_component_template = {
+	key = "SOLARFLARE_EMITTER_MOD"
+	size = extra_large
+	type = instant
+
+	icon = "GFX_ship_part_energy_lens_beam"
+	icon_frame = 1
+
+	firing_arc = 10.0
+	use_ship_main_target = no
+
+	prerequisites = { 
+		"tech_energy_lance_2"
+	}
+
+	show_tech_unlock_if = {
+		has_crisis_level = crisis_cosmogenesis_level_5
+		country_uses_bio_ships = no
+	}
+
+	resources = {
+		category = ship_components
+		cost = {
+			sr_dark_matter = @xl_t7_cost 
+		}
+		upkeep = {
+			alloys = @xl_t7_upkeep_alloys
+			energy = @xl_t7_upkeep_energy 
+		}
+	}
+
+	tags = { weapon_type_energy weapon_role_artillery x_slot }
+
+	potential = {
+		from = {
+			has_crisis_level = crisis_cosmogenesis_level_5
+			country_uses_bio_ships = no
+		}
+	}
+
+	component_set = "SOLARFLARE_EMITTER"
+	projectile_gfx = "starfire_cannon"
+
+	target_type = target_enemies
+	target_focus = spread
+	on_hit = {
+		custom_tooltip = "sfe_on_hit_stun_tt"
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = this
+					NOT = { has_ship_flag = starfire_emp }
+				}
+				set_timed_ship_flag = { flag = starfire_emp days = 15 }
+				add_modifier = {
+					modifier = sfe_weapon_stun_effect
+					days = 5 # If this changes, adjust the tt
+				}
+			}
+		}
+	}
+
+	target_weights = {
+		titan = 3
+		battleship = 2
+		stinger_stage_1 = 1.5
+		stinger_stage_2 = 2
+		stinger_stage_3 = 2
+	}
+
+	ai_weight = {
+		weight = 0.0
+	}
+}

@@ -107,14 +107,38 @@
  ascensions.2.corporealpsionic: "Corporeal Psionic Government"
  ascensions.2.transcendentpsionic: "Transcendent Psionic Government"
 
+ edict_app_get_minor_patron_edict: "Get Minor Patron Edict"
+ edict_app_get_minor_patron_edict_desc: "pay zro and influence to get minor patron edict"
+ ascensions.3.title: "$edict_app_get_minor_patron_edict$"
+ ascensions.3.desc: "$edict_app_get_minor_patron_edict_desc$"
+ ascensions.3.the_golden_dream:"$edict_will_of_distraction$"
+ ascensions.3.the_golden_dream_desc:"$edict_will_of_distraction_desc$"
+ ascensions.3.the_animator_of_clay:"$edict_animatus$"
+ ascensions.3.the_animator_of_clay_desc:"$edict_animatus_desc$"
+ ascensions.3.the_outsider:"$edict_will_of_temperance$"
+ ascensions.3.the_outsider_desc:"$edict_will_of_temperance_desc$"
+ ascensions.3.the_pale_mountain:"$edict_will_of_rebirth$"
+ ascensions.3.the_pale_mountain_desc:"$edict_will_of_rebirth_desc$"
+ ascensions.3.the_endless_tide:"$edict_will_of_endless$" 
+ ascensions.3.the_endless_tide_desc:"$edict_will_of_endless_desc$"
+ ascensions.3.the_vacant_throne:"$edict_will_of_order$" 
+ ascensions.3.the_vacant_throne_desc:"$edict_will_of_order_desc$" 
+ ascensions.3.the_black_river:"$edict_will_of_motion$" 
+ ascensions.3.the_black_river_desc:"$edict_will_of_motion_desc$" 
+
  COSMO_CRISIS_BATTLECRUISER_4P1X2L4M: "Artillery Point Frame"
  COSMO_CRISIS_BATTLECRUISER_4P1X4G4M: "Torpedo Frame"
  COSMO_CRISIS_TITAN_1T8L4M8P: "Artillery Point Frame"
+ COSMO_CRISIS_TITAN_2T4X8L: "Big Artillery Frame"
+ COSMO_CRISIS_TITAN_3T6X9L: "Queen's HMS Victory Frame"
  COSMO_CRISIS_HARBINGER_SECTION_POINT: "Fallen Hive Empire Ancient Harbinger "
  NAME_HIVE_FE_Large_Harbinger_Point: "Incubator"
 
  tech_synth_queen_titan: "Queen's Titan"
- tech_synth_queen_titan_desc: "Acorrding to legendary of Zarqlan, we use cosmo technology to recall the time record of the synth queen acient battlefield that we can recurrence synth queen flagship. this is the moment we full beyone the Fallen Empire"
+ tech_synth_queen_titan_desc: "Acorrding to legendary of Zarqlan, we use cosmo technology to recall the time record of the synvath queen acient battlefield that we can recurrence synth queen flagship. this is the moment we full beyone the Fallen Empire"
+
+ tech_synth_queen_titan_template: "Queen's Titan Artillery Section Template"
+ tech_synth_queen_titan_template_desc: "After The construction of Queen's Titan, we can bind The Paradox Titan's spacecraft advantage and Queen's Titan Artillery advantage to create a no weapon firing arc limit Titan ship."
 
  synth_queen_titan_mod: "$tech_synth_queen_titan$"
  synth_queen_titan_mod_desc: "$tech_synth_queen_titan_des$"
@@ -244,6 +268,8 @@
  leadershroud.300.govern_official: "Try to get powerful Shroud entity content for govern official"
  leadershroud.300.councilor_commander: "Try to get powerful Shroud entity content for councilor commander"
  leadershroud.300.admiral_commander: "Try to get powerful Shroud entity content for admiral commander"
+ leadershroud.300.governor_commander: "Try to get powerful Shroud entity content for governor commander"
+ leadershroud.300.general_commander: "Try to get powerful Shroud entity content for general commander"
 
  edict_app_get_legendary_shroud_leader: "Get poweful leader from Shroud"
  edict_app_get_legendary_shroud_leader_desc:"Get poweful leader from Shroud"
@@ -270,6 +296,11 @@
  eater_aura_max_intensity_alloy_name: "No Ship Instead Alloy"
  eater_aura_max_intensity_alloy_desc: "given our computer performance situation, we pray for our patron give us alloy instead. \n\n§E eater aura max intensity give alloy and no ships§!"
 
+ end_aura_not_win_condition: "End Aura Not Win When Full Spread Galaxy"
+ end_aura_not_win_condition_name: "Not Win When Full Spread Galaxy"
+ end_aura_not_win_condition_desc: "When you have time to enjoy your victory, So be it"
+
+
  composer_aura_max_prohibit_enable: "Shroud Stone Enable Prohibit"
  composer_aura_max_prohibit_enable_name: "Planet Decision Prohibit Shroud Stone Enable"
  composer_aura_max_prohibit_enable_desc: "given our goals to build a arcology for a planet, we can forbid shroud stone add that will make patron not happy. \n\n§E composer aura max can exclude a planet that have Allow Composer Shroud Stone decison.§!"
@@ -279,3 +310,46 @@
  aura_shroud_no_change_desc: "No Change"
 
  ship_damage_mult: "Ascendancy Shipwrights"
+
+ civic_psionic_sovereign_mod:0 "Divine Sovereign"
+ civic_psionic_sovereign_mod_desc_prefix: "This society has appointed the"
+ civic_psionic_sovereign_mod_desc_suffix_organic: "- an individual endowed with unparalleled psionic might - as their eternal ruler."
+ civic_psionic_sovereign_mod_desc: "$civic_psionic_sovereign_desc_prefix$ $leader_trait_chosen_default$ $civic_psionic_sovereign_desc_suffix_organic$"
+
+ councilor_psionic_sovereign_mod:0 "Divine Conduit"
+ councilor_psionic_sovereign_mod_female:0 "$councilor_psionic_sovereign$"
+ councilor_psionic_sovereign_mod_desc:0 "First channeled by the Psi Corps, the $TITLE$ provides a conduit for the Chosen One's vast psionic potential."
+
+ decision_mastery_of_ring_word: "$sm_orbital_ring_habitation$"
+ decision_mastery_of_ring_word_desc: "$sm_orbital_ring_habitation_desc$"
+
+ decision_mastery_of_ring_word: "$sm_orbital_ring_habitation$"
+ decision_mastery_of_ring_word_desc: "$sm_orbital_ring_habitation_desc$"
+
+ mastery_of_ring_word: "$sm_orbital_ring_habitation$"
+ mastery_of_ring_word_desc: "$sm_orbital_ring_habitation_desc$"
+
+ song_of_end: "Song Of End"
+ song_of_end_desc: "A psionic resonance of end the cycle.\n\n"
+
+ end_cycle.5.title: "$edict_app_get_greater_patron_roll$"
+ end_cycle.5.desc: "$edict_app_get_greater_patron_roll_desc$"
+
+ LENS_FLARE_BEAM_MOD: "$LENS_FLARE_BEAM$"
+ LENS_FLARE_BEAM_MOD_DESC: "$LENS_FLARE_BEAM_DESC$"
+
+ SOLARFLARE_EMITTER_MOD: "$SOLARFLARE_EMITTER$"
+ SOLARFLARE_EMITTER_MOD_DESC: "$SOLARFLARE_EMITTER_MOD_DESC$"
+
+ ACCORD_ERADICATION_TT:0 "Declares war with a ['concept_total_war'] §HCasus Belli§! against all non-Fallen Empires.\n§Y$situation_end_of_the_cycle$§! §HSituation§! Progress: §G-240§!"
+
+ shipeventmod.3.name:"[outraged_FE.GetName]"
+ shipeventmod.3.desc:"Queen's Titan is our enemy flagship. it is shame for our ancester glory.\n\n\nYou do not know the true extent of your sin.\n\n\nNot yet."
+
+ end_cycle.7.name:"[outraged_FE.GetName]"
+ end_cycle.7.desc:"Your malevolent psionic aura is spreading through the galaxy, endangering us all. As the Elder Race It is our duty to unite for defending against it and to combat the empire emitting it."
+
+ end_cycle.5.a.tt:"$shroud.4135.a.tt$\n\n\n§Y All Fallen Empire will Awake. §!"
+ fallen_empire_federation: "Fallen Empire Federation"
+ fallen_empire_federation_desc: "A Federation to destroy any Fallen Empire enemy that is able to threat this terrible giant."
+ triggered_opinion_fallen_empire_federation: "fallen_empire_federation"

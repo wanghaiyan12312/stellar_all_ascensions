@@ -1,0 +1,462 @@
+namespace = end_cycle
+# End of the Cycle - Destruction Accord
+country_event = {
+	id = end_cycle.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = annihilation_activated
+		add_resource = { energy = @[ -annihilation_cost ] }
+		add_resource = { minerals = @[ -annihilation_cost ] }
+		add_resource = { food = @[ -annihilation_cost ] }
+		add_resource = { alloys = @[ -annihilation_cost ] }
+		every_situation = {
+			limit = {
+				OR = {
+					is_situation_type = end_of_the_cycle_endbringers 
+					is_situation_type = end_of_the_cycle 
+				} 
+			}
+			add_situation_progress = -60
+			update_eotc_accords = yes
+		}
+	}
+}
+
+
+# End of the Cycle - Extermination Accord
+country_event = {
+	id = end_cycle.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = extermination_activated
+		while = {
+			count = @extermination_pop_group_loss
+			random_owned_pop_group = {
+				limit = {
+					pop_group_size >= 100
+				}
+				kill_single_pop = yes
+			}
+		}
+		every_situation = {
+			limit = { 
+				OR = {
+					is_situation_type = end_of_the_cycle_endbringers 
+					is_situation_type = end_of_the_cycle 
+				} 
+			}
+			add_situation_progress = -120
+			update_eotc_accords = yes
+		}
+	}
+}
+
+
+# End of the Cycle - Destruction Accord
+country_event = {
+	id = end_cycle.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = destruction_activated
+		random_owned_planet = {
+			limit = {
+				pop_amount >= @destruction_planet_pop_min
+				is_capital = no
+			}
+			save_event_target_as = destroyed_colony
+			prev = {
+				set_variable = {
+					which = destroyed_colony_pop
+					value = event_target:destroyed_colony.trigger:pop_amount
+				}
+			}
+			destroy_colony = yes
+			change_pc = pc_shrouded
+			clear_deposits = yes
+			clear_planet_modifiers = yes
+		}
+		every_situation = {
+			limit = { 
+				is_situation_type = end_of_the_cycle_endbringers 
+				is_situation_type = end_of_the_cycle 
+			}
+			add_situation_progress = -180
+			update_eotc_accords = yes
+		}
+		if = {
+			limit = { exists = event_target:destroyed_colony }
+			create_message = {
+				type = ACCORD_DESTRUCTION_MESSAGE_TYPE
+				localization = ACCORD_DESTRUCTION_MESSAGE_DESC
+				days = 30
+				target = event_target:destroyed_colony
+				variable = {
+					type = name
+					localization = SYSTEM
+					scope = event_target:destroyed_colony.solar_system
+				}
+				variable = {
+					type = name
+					localization = COLONY
+					scope = event_target:destroyed_colony
+				}
+				variable = {
+					type = variable
+					localization = POPS
+					varname = this.destroyed_colony_pop
+					scope = this
+				}
+			}
+		}
+		clear_variable = destroyed_colony_pop
+	}
+}
+
+# End of the Cycle - Eradication Accord
+country_event = {
+	id = end_cycle.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = eradication_activated
+		# Kick the Crisis out of Alliances.
+		if = {
+			limit = { has_federation = yes }
+			leave_alliance = { override_requirements = yes }
+		}
+		awaken_guardians_of_the_galaxy = yes
+
+		# Will add the GalCom leaders as war_leader, otherwise the strongest opponent
+		if = {
+			limit = {
+				has_galactic_emperor = yes
+			}
+			galactic_emperor = { save_event_target_as = war_leader }
+		}
+		else_if = {
+			limit = {
+				has_galactic_emperor = no
+				has_galactic_custodian = yes
+			}
+			galactic_custodian = { save_event_target_as = war_leader }
+		}
+
+		# An FE will take the lead
+		else_if = {
+			limit = {
+				any_country = {
+					is_fallen_empire = yes
+				}
+			}
+			random_country = {
+				limit = {
+					is_fallen_empire = yes
+				}
+				save_event_target_as = war_leader
+			}
+		}
+
+		# Will otherwise select the strongest
+		else_if = {
+			limit = {
+				any_playable_country = {
+					is_country_type = default
+					is_subject = no
+					relative_power = {
+						who = prev
+						value >= superior
+						category = fleet
+					}
+				}
+			}
+			random_playable_country = {
+				limit = {
+					is_subject = no
+					is_country_type = default
+					relative_power = {
+						who = prev
+						value >= superior
+						category = fleet
+					}
+				}
+				save_event_target_as = war_leader
+			}
+		}
+		else_if = {
+			limit = {
+				any_playable_country = {
+					is_subject = no
+					is_country_type = default
+					relative_power = {
+						who = prev
+						value >= equivalent
+						category = all
+					}
+				}
+			}
+			random_playable_country = {
+				limit = {
+					is_subject = no
+					is_country_type = default
+					relative_power = {
+						who = prev
+						value >= equivalent
+						category = all
+					}
+				}
+				save_event_target_as = war_leader
+			}
+		}
+		else = {
+			random_playable_country = {
+				limit = {
+					is_country_type = default
+					is_subject = no
+				}
+				save_event_target_as = war_leader
+			}
+		}
+
+		# WAR!
+		event_target:war_leader = {
+			declare_war = {
+				target = root
+				attacker_war_goal = "wg_ae_total_war"
+				effect = { save_event_target_as = hyperthermia_war }
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = default
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+				NOR = {
+					is_same_value = event_target:war_leader
+					has_subject = root
+				}
+			}
+			join_war = event_target:war_leader
+		}
+
+		# Subjects
+		every_subject = {
+			if = {
+				limit = { has_federation = yes }
+				leave_alliance = { override_requirements = yes }
+			}
+		}
+		every_situation = {
+			limit = {
+				OR = {
+					is_situation_type = end_of_the_cycle_endbringers 
+					is_situation_type = end_of_the_cycle 
+				} 
+			}
+			add_situation_progress = -240
+			update_eotc_accords = yes
+		}
+	}
+}
+
+
+country_event = {
+	id = end_cycle.5
+	title = end_cycle.5.title
+	diplomatic_title = shroud.3.diplo_title
+	desc = end_cycle.5.desc
+
+	is_triggered_only = yes
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = shroud1
+		room = shroud_room
+	}
+
+	show_sound = {
+		trigger = { is_robot_empire = yes }
+		sound = event_psionic_robot
+	}
+	show_sound = {
+		trigger = { is_robot_empire = no }
+		sound = event_psionic
+	}
+
+	option = {
+		trigger = { 
+			NOR = {
+				has_global_flag = no_end_of_cycle
+				has_global_flag = end_of_the_cycle_rolled
+			}
+			NOT = {
+				any_country = {
+					has_origin = origin_endbringers # If there are endbringers they should be the only country that can roll the EotC
+					NOT = { is_same_value = ROOT }
+				}
+			}
+		}
+		name = shroud.4135.a
+		custom_tooltip = end_cycle.5.a.tt 
+		set_global_flag = end_of_the_cycle_rolled
+		country_event = { id = shroud.4135 }
+		random_country = {
+			limit = {
+				is_country_type = fallen_empire
+				is_machine_empire = no
+			}
+			save_event_target_as = outraged_FE
+		}
+		random_country = {
+			limit = {
+				is_country_type = fallen_empire
+				is_machine_empire = no
+				has_ethic = ethic_fanatic_spiritualist
+			}
+			save_event_target_as = outraged_FE
+		}
+		country_event = {
+			id = end_cycle.7
+			days = 5
+		}
+
+	}
+
+	option = {
+		name = shroud.4040.title
+		custom_tooltip = shroud.4040.desc
+		country_event = { id = shroud.4040 }
+	}
+
+	option = {
+		name = GOODBYE
+		default_hide_option = yes
+	}
+
+}
+
+
+# close the default choose
+country_event = {
+	id = end_cycle.6
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_shroud_dlc = yes 
+        is_gestalt = no
+        is_mechanical_empire = no
+		is_individual_machine = no
+		is_natural_design_empire = no
+		NOT = {
+			has_country_flag = greater_patron_chosen 
+		}
+	}
+	immediate = {
+		set_country_flag = greater_patron_chosen
+	}
+}
+
+
+country_event = {
+	id = end_cycle.7
+	is_triggered_only = yes
+
+	title = end_cycle.7.name
+	desc = end_cycle.7.desc
+	show_sound = event_ship_bridge
+
+	location = event_target:outraged_FE.capital_scope
+
+	is_triggered_only = yes
+
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:outraged_FE
+		planet_background = event_target:outraged_FE
+		graphical_culture = event_target:outraged_FE
+		city_level = event_target:outraged_FE
+		room = event_target:outraged_FE.ruler
+	}
+
+	trigger = {
+		NOT = {
+			has_global_flag = fallen_empire_mod_awake
+		}
+		any_country = {
+			is_country_type = fallen_empire
+			is_machine_empire = no
+		}
+	}
+
+	immediate = {
+		set_global_flag = fallen_empire_mod_awake
+	}
+
+	after = {
+		every_country = {
+			limit = {
+				is_country_type = fallen_empire
+				is_machine_empire = no
+			}
+			if = {
+				limit = { has_ethic = ethic_fanatic_xenophile }
+				country_event = {
+					id = fallen_empires_mod.4
+					days = 30
+				}
+			}
+			if = {
+				limit = { has_ethic = ethic_fanatic_materialist }
+				country_event = {
+					id = fallen_empires_mod.4
+					days = 60
+				}
+			}
+			if = {
+				limit = { has_ethic = ethic_fanatic_spiritualist }
+				country_event = {
+					id = fallen_empires_mod.4
+					days = 90
+				}
+			}
+			if = {
+				limit = { has_ethic = ethic_fanatic_xenophobe }
+				country_event = {
+					id = fallen_empires_mod.4
+					days = 120
+				}
+			}
+			if = {
+				limit = { 
+					OR = {
+						owner = { has_country_flag = fallen_empire_hive_war }
+						owner = { has_country_flag = fallen_empire_hive_growth }
+						owner = { has_country_flag = fallen_empire_hive_control }
+					}	
+				}
+				country_event = {
+					id = fallen_empires_mod.4
+					days = 150
+				}
+			}			
+		}
+		country_event = {
+			id = fallen_empires_mod.6
+			days = 180
+		}
+	}
+
+	option = {
+		name = fallen_empires_awakening.2.b
+	}
+
+}

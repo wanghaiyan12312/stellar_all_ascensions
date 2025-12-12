@@ -13,3 +13,10 @@ composer_aura_max_prohibit = {
 	pop_amenities_usage_organic_mult = 0.25 # Some Cost on deny Parton
 	planet_pops_organics_upkeep_mult = 0.25
 }
+
+mastery_of_ring_word = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_mastery_of_nature.dds"
+	icon_frame = 1
+	planet_max_districts_add = 1
+	custom_tooltip = sm_orbital_ring_habitation_desc
+}

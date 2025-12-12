@@ -383,19 +383,19 @@ ship_design = {
 		}
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "SMALL_PLASMA_4"
+			template = "SMALL_PLASMA_3"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "SMALL_PLASMA_4"
+			template = "SMALL_PLASMA_3"
 		}
 		component = {
 			slot = "SMALL_GUN_03"
-			template = "SMALL_PLASMA_4"
+			template = "SMALL_PLASMA_3"
 		}
 		component = {
 			slot = "SMALL_GUN_04"
-			template = "SMALL_PLASMA_4"
+			template = "SMALL_SMALL_PLASMA_3PLASMA_4"
 		}
 		component = {
 			slot = "PD_01"
@@ -3557,11 +3557,11 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_9"
-			template = "LARGE_DRAGON_ARMOR"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_10"
-			template = "LARGE_DRAGON_ARMOR"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_11"
@@ -3585,23 +3585,23 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_16"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_17"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_18"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_19"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "LARGE_UTILITY_20"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
+			template = "LARGE_DRAGON_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
@@ -4741,7 +4741,7 @@ ship_design = {
 			template = "ARMOR_HARDENER_2"
 		}
 		component = {
-			slot = "AUX_UTILITY_3"
+			slot = "AUX_UTILITY_4"
 			template = "ARMOR_HARDENER_2"
 		}
 	}

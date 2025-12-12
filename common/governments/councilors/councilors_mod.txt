@@ -1,0 +1,12 @@
+councilor_psionic_sovereign_mod = {
+	leader_class = { commander official scientist }
+	is_leader_possible = {
+		has_psionic_leader_trait = yes
+	}
+	civic = civic_psionic_sovereign_mod
+	custom_tooltip = "councilor_psionic_sovereign_custom_modifier_desc"
+	conditional_tooltip = "councilor_psionic_sovereign_conditional_tooltip"
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}

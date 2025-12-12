@@ -1,0 +1,77 @@
+archaeo_rampart = {
+	section = "ANCHORAGE_STARBASE_SECTION"
+	icon = GFX_starbase_archaeo_rampart
+	construction_days = 180
+
+	potential = {
+		is_normal_starbase = yes
+		owner = { has_technology = tech_archaeo_rampart }
+	}
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 50
+			minor_artifacts = @minor_artifacts_cost_xl
+		}
+
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			owner = {
+				NOT = { has_ascension_perk = ap_archaeoengineers }
+			}
+		}
+		shipclass_starbase_hull_mult = 0.15
+		shipclass_starbase_armor_mult = 0.15
+		starbase_defense_platform_capacity_add = 2
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			owner = {
+				has_ascension_perk = ap_archaeoengineers
+			}
+		}
+		shipclass_starbase_hull_mult = 0.15
+		shipclass_starbase_armor_mult = 0.20
+		shipclass_starbase_armor_hardening_add = 0.10
+		starbase_defense_platform_capacity_add = 2
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			owner = {
+				has_technology = tech_psionic_shield
+			}
+		}
+		ship_shield_add = 12960 ##2160*6
+		
+	}
+	
+	triggered_station_modifier = {
+		potential = {
+			owner = {
+				has_technology = tech_dragon_armor
+			}	
+		}
+		ship_armor_add = 13200 ##2220*6
+	}
+
+	custom_tooltip = sm_archaeo_rampart_desc_modifier
+
+	defense_platform_modifier = {
+		shipclass_military_station_damage_mult = 0.05
+		shipclass_military_station_hull_mult = 0.05
+	}
+
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+	}
+
+	show_in_tech = "tech_archaeo_rampart"
+}
