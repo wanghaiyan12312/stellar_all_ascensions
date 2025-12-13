@@ -111,7 +111,7 @@ building_empyrean_shrine = {
 ## enforce dimensional_replicator
 
 building_dimensional_replicator = {
-	base_buildtime = @b2_time
+	base_buildtime = @b3_time
 	can_build = yes
 	can_demolish = yes
 	icon = building_dimensional_replicator
@@ -167,11 +167,11 @@ building_dimensional_replicator = {
 			nanites = 5
 		}
 		cost = {
-			alloys = @b3_minerals
+			alloys = @fe_alloy_cost_1
 		}
 		upkeep = {
 			alloys = @b3_alloy_upkeep
-			energy = 30
+			energy = @fe_energy_upkeep_3
 		}
 		cost = {
 			trigger = {
@@ -239,7 +239,7 @@ building_dimensional_replicator = {
 }
 
 building_dimensional_fabricator = {
-	base_buildtime = @b2_time
+	base_buildtime = @b3_time
 	can_build = no
 	icon = building_dimensional_fabricator
 
@@ -295,11 +295,11 @@ building_dimensional_fabricator = {
 			nanites = 10
 		}
 		cost = {
-			alloys = @b3_minerals
+			alloys = @fe_alloy_cost_2
 		}
 		upkeep = {
-			alloys = @b3_alloy_upkeep
-			energy = 30
+			alloys = @b4_alloy_upkeep
+			energy = @fe_energy_upkeep_5
 		}
 		cost = {
 			trigger = {
@@ -362,10 +362,11 @@ building_dimensional_fabricator = {
 	show_in_tech = tech_fe_fabricator_2
 }
 
+
 ## 500 titan need a lot alloy so add 5times silo stock and add astral stock
 
 building_fe_silo_1 = {
-	base_buildtime = @b2_time
+	base_buildtime = @b3_time
 	can_build = yes
 	can_demolish = yes
 
@@ -415,11 +416,12 @@ building_fe_silo_1 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			alloys = @b3_minerals
+			alloys = @fe_alloy_cost_0
+			sr_dark_matter = @fe_rr_cost_0
 		}
 		upkeep = {
 			alloys = @b2_alloy_upkeep
-			energy = 15
+			energy = @fe_energy_upkeep_1
 		}
 		cost = {
 			trigger = {
@@ -493,7 +495,7 @@ building_fe_silo_1 = {
 }
 
 building_fe_silo_2 = {
-	base_buildtime = @b2_time
+	base_buildtime = @b3_time
 	can_build = no
 
 	category = resource
@@ -554,11 +556,12 @@ building_fe_silo_2 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			alloys = @b3_minerals
+			alloys = @fe_alloy_cost_1
+			sr_dark_matter = @fe_rr_cost_1
 		}
 		upkeep = {
-			alloys = @b2_alloy_upkeep
-			energy = 15
+			alloys = @b3_alloy_upkeep
+			energy = @fe_energy_upkeep_2
 		}
 		cost = {
 			trigger = {

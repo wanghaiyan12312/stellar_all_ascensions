@@ -1,3 +1,108 @@
+# 王海燕的工具mod集
+## 多飞升相关
+ - 非机械帝国可以采用基因三大飞升，义体飞升，灵能飞升（原版合成飞升不能和其他飞升兼容）。
+ - 增加模组合成飞升采用后可以为义体人（需要先采纳义体飞升）以及机器人添加高级机器人特征。
+ - 可以最多选取17个传统以及18个飞升槽。
+ - 到达宇宙创生5可以添加利维坦的特质（包括义体能添加的利维坦特质）。
+ - 采纳传统花费减少，飞升的效果提高100%并且提高少量飞升花费（只要你影响力够多，可以减少行星帝国规模到0）。
+## 虚境相关
+ - 可以通过法令选择大超主终末轮回（只能有一家选择签约终末轮回，如果有终末使者起源国家则没有签约终末轮回选项）或者虚空低语（禁用原版自动获取大超主的方式）。
+ - 可以通过法令获取已经契约的小超主法案。
+ - 到达宇宙创生5并且采用基因三大飞升，义体飞升，灵能飞升，模组合成飞升可以采取法案在虚境花費高额的影响力和高额的电获得传奇领袖并且为他们增加作弊般多的特质（游戏简单模式），已经被雇佣的事件传奇领袖无法获得但是可以获得本物种的传奇领袖。
+ - 签约终末轮回到达宇宙创生5可以使用原版终末使者才能使用的消减局势的选项。
+ - 终末轮回消减局势的选项可以使用多次。
+ - 虚空低语的光环到达宇宙创生5获得最高150科研人员产出加成（这样玩家就不会无脑选终末轮回）。
+ - 与终末轮回契约也可以选择灵飞高级政体并且获得终末轮回的灵能咏唱（加25舰船伤害25盾减25撤退几率）。
+- 天选帝君mod不会自动触发需要法令触发且优先触发可以参加选举的传奇领袖（事件领袖大部分不会参加统治者的选举）
+## 合成女王相关
+ - 到达宇宙创生3研究神秘战巡舰可以建造女王捍卫者，到达宇宙创生4研究悖论泰坦可以建造女王捍卫者，到达宇宙创生5研究主宰和泰坦科技并且采纳巨像飞升槽可以建造女王泰坦（国家最多建造4艘）。
+  - 增加政策解饿光环提供1000合金而不是提供舰船，以及不会再选定的星球上增加生命之织缕关环植被障碍的决议（理想城星球需要这个选项），以及终末光环充满星系以后不自动胜利的政策选项。
+
+## 科技相关
+ - 增加自动科研法令可以选择单一循环科技在对应领域卡池。
+ - 到达宇宙创生4可以为对应舰船安装透镜麻痹者x槽武器，宇宙创生5可以为对应舰船太阳耀斑发射器x槽武器（需要花費高额的暗物質）。
+ - 循环科技中增加护盾承受值的科技现在会增加0.1%的盾回复百分比（解决高循环盾回复较慢的问题）.
+ - 虫灾导弹，斯卡拉维德舰载机可以再研究完毁灭者鱼雷以及三级舰载机以后研究，再召唤完异次元舰队以后会获得高维武器选线，完成灵能传统以后可以活得灵能屏障科技研究选项.宇宙创生5可以获得塞塔娜修复系统研究选项。
+ - 星界护盾增到40%的护盾硬化.
+ - 神秘战巡舰增加点防御部件（2H1X2L4M，2H1X4G4M），泰坦点防御部件（2T8L4M8P），泰坦炮击部件（2T4X8L）。
+ - 建造完女王泰坦以后为悖论泰坦解锁新的部件3T6X9L 36盾甲槽 12配件槽且所有x和t槽无视武器角度的泰坦部件（游戏简单模式）。
+ - 泰坦上限调整为500。
+ - 取消巨型船坞的建造上限，并且可以在任意星球上建造。
+
+## 堕落帝国相关
+ - 堕落帝国获得天灾倍率加成，觉醒后非战争时期会获得增援难度越高增援间隔会越断增援数量会越多。
+ - 宇宙创生4或者宇宙创生5对非觉醒帝国宣战会导致堕落帝国觉醒并且会和已经觉醒的帝国组成联邦（觉醒堕落帝国会离开所有的战争包括天堂之战堕落帝国搁置暂时的矛盾来解决你这个麻烦），并且立刻刷新6个周期的增援。
+ - 建造完成女王泰坦或者与终末轮回契约堕落帝国会集体觉醒并组成联邦。
+ - 到达宇宙创生5解锁娱乐战争宣战理由（只占领宣称所占星系可以作为堕落老登的娱乐宣战理由）。
+ - 如果除了机械堕落帝国堕落帝国的数量大于2，蜂巢只有战争节点会觉醒（增加玩家难度嗜杀蜂群和星海帝国会破坏堕落帝国联邦）。
+ - 所有的堕落帝国的船配件都有所升级（圣卫配泽洛雷灵能裂解，知识保管者配高维武器，军事孤立者配纳米机关炮，秘密观察者配置远古巨炮），并且增加硬化组件。
+
+## mod详细配置
+
+### 天选帝君政权转换规则
+
+
+
+### 传奇领袖规则：
+事件
+凝望者
+艾莎琳
+斯克兰德·夏普比克
+凯德斯
+小灰
+乍狄伽 
+普通传奇领袖 1M能量币 5000泽洛 500影响力 没有数量限制 
+内阁领袖：
+ - 指挥官：
+ - 科学官：统计学家、义体人、博学多识、策展人、敏锐导师、官场老手、无尽升级、虚境借道者、基因完美、致力教育家、大研究者、卓越造船家、敲击维护者、星辰大海、灵光一闪、求知若渴、癫狂、档案管理、社会专精、专长：材料科学、专长：推进力学、专长：宇航技术、专长：工业、专长：力场操控、专长：粒子物理、专长：计算技术、专长：灵能理论、专长：新世界理论、专长：治国术、专长：生物学、专长：军事理论、专长：远古学、魅力非凡、回馈循环、深通后勤、伯乐之眼、人民公仆、政治家、智慧导师、威风堂堂、自给经济派、工业泰坦、基因艺术家、警钟长鸣、狡猾、受启发的研究员、碰触虚境的科学官、夺宝奇兵、开路者、海盗、风暴骑士、聆听心声、虚境塑造者、虚境扭曲
+ - 行政官：国务顾问、义体人、博学多识、敏锐导师、官场老手、无尽升级、虚境借道者、基因完美、守护者、守护者的教导、开拓精神、文宣专精、投资者、、、、、、
+产业领袖：
+ - 指挥官：
+ - 科学官：
+ - 行政官：
+
+舰队指挥官：
+陆军指挥官：
+
+### 堕落帝国增援规则：
+   ***不在战争中***
+   | 难度     | 平民 | 学员 | 尉官 | 校官 | 准将 | 上将 | 大将 |
+   | ----------- | ----------- | -----------| ----------- | ----------- | ----------- | ----------- | ----------- |
+   | 泰坦 | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+   | 神秘战巡舰 | 0 | 4 | 8 | 12 | 16 | 20 | 24 |
+   | 神秘护航舰 | 0 | 4 | 8 | 12 | 16 | 20 | 24 |
+   | 远古刺峰 | 0 | 3 | 6 | 9 | 12 | 15 | 18 |
+   | 远古孵后 | 0 | 3 | 6 | 9 | 12 | 15 | 18 | 
+   | 远古鳄蚁  | 0 | 3 | 6 | 9 | 12 | 15 | 18 |
+   | 增援间隔 | 无增援 | 360 天 | 360 天 | 360 天 | 180 天 | 180 天 | 90 天 |
+   | 最大海军容量 |  0 | 2000 | 4000 | 6000 | 8000 | 10000 | 15000 |
+
+
+### 堕落帝国配船：
+
+注意：
+ - 尽量不要选和飞升相关的起源（因为已经没有选这类起源的必要了），作者推荐巧夺天工起源。
+ - 和所有修改飞升和武器配件的mod冲突。 
+ - 加载顺序在ui mod之后。
+ - 如果想要图片的肖像请订阅[美味女仆](https://steamcommunity.com/sharedfiles/filedetails/?id=2976527288) 
+ - 本mod部分参考[All Ascension Path](https://steamcommunity.com/sharedfiles/filedetails/?id=2909582424)
+ - 本mod部分参考[28 Ascension Perk Slots and 11 Traditions Slots](https://steamcommunity.com/sharedfiles/filedetails/?id=2271408535&searchtext=slot)
+ - 本mod部分参考[自动科研助手](https://steamcommunity.com/sharedfiles/filedetails/?id=3253950177)
+
+传奇领袖规则：
+内阁领袖：
+ - 指挥官：
+ - 科学官：Statistician、Cyborg、Erudite、Curator、Perceptive Mentor、Master Bureaucrat、Endless Upgrades、The Passenger、Genetic Perfection、Driven Educator、Great Researcher、Brilliant Shipwright、Percussive Maintainer、Home in the Sky、Spark of Genius、Inquisitive、Maniacal、Archivist、Society Focus、Expertise: Materials、Expertise: Propulsion、Expertise: Voidcraft、Expertise: Industry_3、Expertise: Field Manipulation、Expertise: Particles_3、Expertise: Computing、Expertise: Psionics、Expertise: New Worlds、Expertise: Statecraft、Expertise: Biology、Expertise: Archaeostudies、Charismatic、Feedback Loop、Logistic Understanding、Eye for Talent、Champion of the People、Politician、Wise Mentor、Commanding Presence、Autark、Titan of Industry、Genome Artist、Ever Vigilant、Cunning、Inspired Researcher、Shroud-Touched Scientist、Treasure Hoarder、Trailblazer、Buccaneer、Storm Rider、Shrouded Whispers、Shroudshaper、Shroud-Warped
+ - 行政官：Advisor、Cyborg、Erudite、Curator、Perceptive Mentor、Master Bureaucrat、Endless Upgrades、The Passenger、Caretaker、Frontier Spirit、Unified Focus、Investor、、、、、
+产业领袖：
+ - 指挥官：
+ - 科学官：
+ - 行政官：
+
+舰队指挥官：
+陆军指挥官：
+
+
 # More Ascsension Path and Dark Engine Trait for Cyber Species.
 **abstract:** this mod is design for stellar to allow cyber and psionic and biological ascsension compatible with each other. and have some other feature to improve the playability by all I want in a game that can't be determined by what paradox told me to do. 
 

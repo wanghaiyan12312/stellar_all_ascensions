@@ -37,7 +37,7 @@ utility_component_template = {
 		category = ship_components
 		cost = {
 			alloys = @titan_reactor_cost_6
-			sr_dark_matter = 8
+			sr_dark_matter = 16
 		}
 	}
 

@@ -11,13 +11,13 @@
 @fall_empire_used_naval_capacity_max_ensign = 4000
 @fall_empire_used_naval_capacity_max_cadet = 2000
 
-@hive_fallen_empire_stinger = 3
-@hive_fallen_empire_mauler = 3
-@hive_fallen_empire_harbinger = 3
+@hive_fallen_empire_stinger = 1
+@hive_fallen_empire_mauler = 1
+@hive_fallen_empire_harbinger = 2
 
 @fallen_empire_titan = 1
-@fallen_empire_battlecruise = 4
-@fallen_empire_escort = 4
+@fallen_empire_battlecruise = 1
+@fallen_empire_escort = 1
 
 @build_block_radius_lager_military = 1200
 @build_block_radius_medium_military = 600

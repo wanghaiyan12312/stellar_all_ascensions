@@ -74,11 +74,6 @@ update_legendary_council_scientist = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_brilliant_shipwright
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
 		trait = leader_trait_spark_of_genius_2
 		show_message = no
 		consume_selection = yes
@@ -204,11 +199,6 @@ update_legendary_council_scientist = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_legendary_commanding_presence_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
 		trait = leader_trait_legendary_autarky_3
 		show_message = no
 		consume_selection = yes
@@ -268,7 +258,7 @@ update_legendary_council_scientist = {
 		show_message = no
 		consume_selection = yes
 	}
-		add_trait = {
+	add_trait = {
 		trait = leader_trait_disciple_of_the_whisperers
 		show_message = no
 		consume_selection = yes
