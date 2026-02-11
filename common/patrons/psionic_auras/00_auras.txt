@@ -687,16 +687,7 @@ whisperers_aura = {
 			modifier = {
 				planet_researchers_upkeep_mult = -0.1
 				station_researchers_produces_mult = 0.2
-			}
-		}
-		owner_planet_modifier = {
-			potential = {
-				owner = {
-					has_crisis_level = crisis_cosmogenesis_level_5
-				}
-			}
-			modifier = {
-				planet_researchers_produces_mult = 0.5
+				planet_researchers_produces_mult = 1.0
 			}
 		}
 		neutral_fleet_modifier = {
@@ -739,16 +730,7 @@ whisperers_aura = {
 			modifier = {
 				planet_researchers_upkeep_mult = -0.15
 				station_researchers_produces_mult = 0.4
-			}
-		}
-		owner_planet_modifier = {
-			potential = {
-				owner = {
-					has_crisis_level = crisis_cosmogenesis_level_5
-				}
-			}
-			modifier = {
-				planet_researchers_produces_mult = 1.0
+				planet_researchers_produces_mult = 1.5
 			}
 		}
 		neutral_fleet_modifier = {
@@ -799,16 +781,7 @@ whisperers_aura = {
 			modifier = {
 				planet_researchers_upkeep_mult = -0.2
 				station_researchers_produces_mult = 0.6
-			}
-		}
-		owner_planet_modifier = {
-			potential = {
-				owner = {
-					has_crisis_level = crisis_cosmogenesis_level_5
-				}
-			}
-			modifier = {
-				planet_researchers_produces_mult = 1.5
+				planet_researchers_produces_mult = 2.0
 			}
 		}
 		neutral_fleet_modifier = {

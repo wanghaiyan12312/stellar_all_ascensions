@@ -306,34 +306,47 @@ country_event = {
 		}
 		name = shroud.4135.a
 		custom_tooltip = end_cycle.5.a.tt 
-		set_global_flag = end_of_the_cycle_rolled
-		country_event = { id = shroud.4135 }
-		random_country = {
-			limit = {
-				is_country_type = fallen_empire
-				is_machine_empire = no
+		hidden_effect = {
+			set_global_flag = end_of_the_cycle_rolled
+			country_event = { id = shroud.4135 }
+			set_country_flag = greater_patron_chosen_mod
+			random_country = {
+				limit = {
+					is_country_type = fallen_empire
+					is_machine_empire = no
+				}
+				save_event_target_as = outraged_FE
 			}
-			save_event_target_as = outraged_FE
-		}
-		random_country = {
-			limit = {
-				is_country_type = fallen_empire
-				is_machine_empire = no
-				has_ethic = ethic_fanatic_spiritualist
+			random_country = {
+				limit = {
+					is_country_type = fallen_empire
+					is_machine_empire = no
+					has_ethic = ethic_fanatic_spiritualist
+				}
+				save_event_target_as = outraged_FE
+			}	
+			country_event = {
+				id = end_cycle.7
+				days = 3600
 			}
-			save_event_target_as = outraged_FE
 		}
-		country_event = {
-			id = end_cycle.7
-			days = 5
-		}
-
 	}
 
 	option = {
+		allow = {
+			custom_tooltip = {
+				fail_text = end_cycle.5.whisper.condition
+				AND = {
+					has_ascension_perk = ap_cosmogenesis
+					has_crisis_level = crisis_cosmogenesis_level_5
+				}	
+			}
+        	
+		}
 		name = shroud.4040.title
 		custom_tooltip = shroud.4040.desc
 		country_event = { id = shroud.4040 }
+		set_country_flag = greater_patron_chosen_mod
 	}
 
 	option = {
@@ -402,56 +415,58 @@ country_event = {
 	}
 
 	after = {
-		every_country = {
-			limit = {
-				is_country_type = fallen_empire
-				is_machine_empire = no
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_country_type = fallen_empire
+					is_machine_empire = no
+				}
+				if = {
+					limit = { has_ethic = ethic_fanatic_xenophile }
+					country_event = {
+						id = fallen_empires_mod.4
+						days = 30
+					}
+				}
+				if = {
+					limit = { has_ethic = ethic_fanatic_materialist }
+					country_event = {
+						id = fallen_empires_mod.4
+						days = 60
+					}
+				}
+				if = {
+					limit = { has_ethic = ethic_fanatic_spiritualist }
+					country_event = {
+						id = fallen_empires_mod.4
+						days = 90
+					}
+				}
+				if = {
+					limit = { has_ethic = ethic_fanatic_xenophobe }
+					country_event = {
+						id = fallen_empires_mod.4
+						days = 120
+					}
+				}
+				if = {
+					limit = { 
+						OR = {
+							owner = { has_country_flag = fallen_empire_hive_war }
+							owner = { has_country_flag = fallen_empire_hive_growth }
+							owner = { has_country_flag = fallen_empire_hive_control }
+						}	
+					}
+					country_event = {
+						id = fallen_empires_mod.4
+						days = 150
+					}
+				}			
 			}
-			if = {
-				limit = { has_ethic = ethic_fanatic_xenophile }
-				country_event = {
-					id = fallen_empires_mod.4
-					days = 30
-				}
+			country_event = {
+				id = fallen_empires_mod.6
+				days = 180
 			}
-			if = {
-				limit = { has_ethic = ethic_fanatic_materialist }
-				country_event = {
-					id = fallen_empires_mod.4
-					days = 60
-				}
-			}
-			if = {
-				limit = { has_ethic = ethic_fanatic_spiritualist }
-				country_event = {
-					id = fallen_empires_mod.4
-					days = 90
-				}
-			}
-			if = {
-				limit = { has_ethic = ethic_fanatic_xenophobe }
-				country_event = {
-					id = fallen_empires_mod.4
-					days = 120
-				}
-			}
-			if = {
-				limit = { 
-					OR = {
-						owner = { has_country_flag = fallen_empire_hive_war }
-						owner = { has_country_flag = fallen_empire_hive_growth }
-						owner = { has_country_flag = fallen_empire_hive_control }
-					}	
-				}
-				country_event = {
-					id = fallen_empires_mod.4
-					days = 150
-				}
-			}			
-		}
-		country_event = {
-			id = fallen_empires_mod.6
-			days = 180
 		}
 	}
 
@@ -459,4 +474,49 @@ country_event = {
 		name = fallen_empires_awakening.2.b
 	}
 
+}
+
+
+# Whisperers in the Void - Hindsight Accord
+country_event = {
+	id = end_cycle.8
+	title = shroud.4890.title
+	desc = shroud.4890.desc
+	picture = GFX_evt_shroud_whisperers_in_the_void
+	show_sound = event_whisperers_in_the_void
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_owned_planet = {
+			limit = { 
+				can_be_chosen_for_hindsight = yes 
+			}
+			save_event_target_as = hindsight_planet_candidate_1
+		}
+	}
+
+	option = {
+		trigger = { exists = event_target:hindsight_planet_candidate_1 }
+		name = shroud.4890.a
+		event_target:hindsight_planet_candidate_1 = {
+			save_event_target_as = selected_hindsight_planet
+		}
+	}
+
+	after = {
+		event_target:selected_hindsight_planet = {
+			change_pc = pc_relic
+			hidden_effect = {
+				relic_world_deposits = yes
+			}
+			clear_blockers = yes
+			remove_modifier = hindsight_nomination
+		}
+		hidden_effect = {
+			every_system_with_aura = {
+				add_aura_intensity = @accord_aura_intensity_loss
+			}
+		}
+	}
 }

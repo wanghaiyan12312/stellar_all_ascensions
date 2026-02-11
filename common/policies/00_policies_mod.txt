@@ -46,25 +46,6 @@ aura_shroud_mod = {
 	}
 
 	option = {
-		name = "end_aura_not_win_condition"
-
-		policy_flags = {
-			end_aura_not_win_condition
-		}
-
-		potential = { 
-			has_patron_relation = { patron = end_of_the_cycle contact = any } 
-		}
-
-
-		AI_weight = {
-			modifier = {
-				factor = 0
-			}
-		}
-	}
-
-	option = {
 		name = "aura_shroud_no_change"
 
 		policy_flags = {

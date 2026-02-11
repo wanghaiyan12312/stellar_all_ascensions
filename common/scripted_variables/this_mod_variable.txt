@@ -19,5 +19,8 @@
 @fallen_empire_battlecruise = 1
 @fallen_empire_escort = 1
 
+@fallen_empire_titan_hard_I = 2
+@fallen_empire_titan_hard_II = 1
+
 @build_block_radius_lager_military = 1200
 @build_block_radius_medium_military = 600

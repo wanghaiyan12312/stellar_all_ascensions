@@ -274,6 +274,10 @@ tech_synth_queen_titan = {
 		has_country_flag = colossus_project
 		country_uses_bio_ships = no
     }
+
+    modifier = {
+		command_limit_add = 50
+	}
 	
 }
 
@@ -290,7 +294,7 @@ tech_synth_queen_titan_template = {
 	}
     
     modifier = {
-        damage_vs_country_type_fallen_empire_mult = 0.05
+        weapon_archaeotech_weapon_damage_mult = 0.5
     }
 
     potential = {
@@ -330,9 +334,6 @@ tech_strike_craft_skrand = {
 	## unlock unique strike craft component from Skrand storyline
 	potential = {
 		has_paragon_dlc = yes
-	}
-
-	weight_modifier = {
 	}
 
 	ai_weight = {

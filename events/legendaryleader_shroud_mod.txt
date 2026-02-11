@@ -95,7 +95,6 @@ country_event = {
 		remove_relic = r_wormhole_key_fragment_3
 		remove_relic = r_wormhole_key_fragment_2
 		remove_relic = r_wormhole_key_fragment_1
-		add_relic = r_wormhole_key
 	}
 }
 
@@ -437,7 +436,7 @@ country_event = {
 			##end Exakeides chain
 			country_event = {
 				id = leadershroud.2
-				days = 90
+				days = 360
 			}
 			set_global_flag = Exakeides_hire_happend
 			## avoid other trigger 
@@ -973,6 +972,10 @@ country_event = {
 			}
 			set_country_flag = azaryn_shroud_update
 		}
+		if = {
+			limit = { NOT = {allowed_crisis_type = prethoryn}}
+			add_relic = r_prethoryn_queen
+		}
 	}
 	option = {
 		name = NAME_Exakeides
@@ -1053,7 +1056,7 @@ country_event = {
 					}
 				}
 			}
-			
+			add_relic = r_wormhole_key
 			set_country_flag = Exakeides_shroud_update
 		}
 	}
@@ -1104,6 +1107,12 @@ country_event = {
 				}
 			}
 		}
+		if = {
+			limit = { 
+				NOT = {has_origin = origin_mindwardens}
+			}
+			add_relic = r_the_lost_patron
+		}
 	}
 	option = {
 		name = NAME_Skrand_Sharpbeak
@@ -1143,6 +1152,10 @@ country_event = {
 			}
 
 			set_country_flag = sharpbeak_shroud_update
+		}
+		if = {
+			limit = { NOT = {allowed_crisis_type = contingency}}
+			add_relic = r_contingency_core
 		}
 	}
 	option = {
@@ -1191,6 +1204,10 @@ country_event = {
 			}
 			set_country_flag = gray_shroud_update
 		}
+		if = {
+			limit = { NOT = {allowed_crisis_type = synth_queen}}
+			add_relic = r_cetanas_heart
+		}
 	}
 	
 	option = {
@@ -1237,8 +1254,11 @@ country_event = {
 					consume_selection = yes
 				}
 			}
-
 			set_country_flag = formless_shroud_update
+		}
+		if = {
+			limit = { NOT = {allowed_crisis_type = unbidden}}
+			add_relic = r_unbidden_warlock
 		}
 	}
 	option = {
@@ -1458,15 +1478,7 @@ country_event = {
 		custom_tooltip = reject_god_emperor
 	}
 	option = {
-		name = "utopia.3400.b"
-		trigger = {
-			owner = {
-				OR = {
-					has_ethic = ethic_egalitarian
-					has_ethic = ethic_fanatic_egalitarian
-				}
-			}
-		}
+		name = "utopia.3400.b.authoritarian"
 		if = {
 			limit = { exists = event_target:chosen_one_official}
 			event_target:chosen_one_official ={
@@ -1477,18 +1489,22 @@ country_event = {
 			script = god_empire_mod
 			ETHIC = authoritarian
 		}
-
 	}
 	option = {
-		name = "utopia.3400.b"
-		trigger = {
-			owner = {
-				OR = {
-					has_ethic = ethic_pacifist
-					has_ethic = ethic_fanatic_pacifist
-				}
+		name = "utopia.3400.b.egalitarian"
+		if = {
+			limit = { exists = event_target:chosen_one_official}
+			event_target:chosen_one_official ={
+				save_event_target_as = chosen_one
 			}
 		}
+		inline_script = {
+			script = god_empire_mod
+			ETHIC = egalitarian 
+		}
+	}
+	option = {
+		name = "utopia.3400.b.militarist"
 		if = {
 			limit = { exists = event_target:chosen_one_commander}
 			event_target:chosen_one_commander ={
@@ -1501,15 +1517,20 @@ country_event = {
 		}
 	}
 	option = {
-		name = "utopia.3400.b"
-		trigger = {
-			owner = {
-				OR = {
-					has_ethic = ethic_xenophile
-					has_ethic = ethic_fanatic_xenophile
-				}
+		name = "utopia.3400.b.pacifist"
+		if = {
+			limit = { exists = event_target:chosen_one_commander}
+			event_target:chosen_one_commander ={
+				save_event_target_as = chosen_one
 			}
 		}
+		inline_script = {
+			script = god_empire_mod
+			ETHIC = pacifist
+		}
+	}
+	option = {
+		name = "utopia.3400.b.xenophobe"
 		if = {
 			limit = { exists = event_target:chosen_one_scientist}
 			event_target:chosen_one_scientist ={
@@ -1522,13 +1543,16 @@ country_event = {
 		}
 	}
 	option = {
-		name = "utopia.3400.b"
-		change_government = {
-			authority = auth_imperial
-			cooldown = no
-			remove_invalid_civics = yes
+		name = "utopia.3400.b.xenophile"
+		if = {
+			limit = { exists = event_target:chosen_one_scientist}
+			event_target:chosen_one_scientist ={
+				save_event_target_as = chosen_one
+			}
 		}
-		force_add_civic = civic_psionic_sovereign_mod
-		set_government_cooldown = no
+		inline_script = {
+			script = god_empire_mod
+			ETHIC = xenophile
+		}
 	}
 }

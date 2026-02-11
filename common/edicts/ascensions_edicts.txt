@@ -123,7 +123,6 @@ app_get_greater_patron_roll = {
 
     effect = { 
         country_event = { id = end_cycle.5 } 
-        set_country_flag = greater_patron_chosen_mod
     }
 
     ai_weight = { weight = 0 }

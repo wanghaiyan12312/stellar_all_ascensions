@@ -30,7 +30,7 @@ crisis_cosmogenesis_level_5 = {
 		add_cosmogenesis_level_5_perks = yes
 		hidden_effect = {
 			owner = {
-				country_event = { id = crisis.7120 }
+				country_event = { id = fallen_empires_mod.9 }
 			}
 		}
 	}

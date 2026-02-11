@@ -366,7 +366,7 @@ tech_supreme_alloy = {
 
 	modifier = {
 		envoys_add = @insight_envoy_gain
-		planet_metallurgists_alloys_produces_add = 0.5
+		planet_metallurgists_alloys_produces_add = 0.25
 	}
 	weight_modifier = {
 		factor = 0.5
@@ -395,6 +395,7 @@ tech_ordered_retreat = {
 		envoys_add = @insight_envoy_gain
 		fleet_mia_time_mult = -0.15
 	}
+
 	weight_modifier = {
 		factor = 0.5
 		modifier = {
@@ -420,8 +421,9 @@ tech_temple_of_transportation = {
 
 	modifier = {
 		envoys_add = @insight_envoy_gain
-		megastructures_hyper_relay_unity_produces_add = 3
+		megastructures_hyper_relay_unity_produces_add = 1
 	}
+
 	weight_modifier = {
 		factor = 0.5
 		modifier = {

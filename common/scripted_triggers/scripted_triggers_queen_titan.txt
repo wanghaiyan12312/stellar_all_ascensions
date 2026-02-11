@@ -53,6 +53,7 @@ ship_uses_juggernaut_reactors = {
 		is_ship_size = cosmo_crisis_titan
 		# Special Ships
 		is_ship_size = synth_queen_titan
+		is_ship_size = cosmo_crisis_titan_mod
 	}
 }
 
@@ -82,6 +83,7 @@ ship_uses_battleship_thrusters = {
 		is_ship_size = offspring_stinger_stage_3
 		# mod
 		is_ship_size = large_ship_synth_queen_mod
+		is_ship_size = cosmo_crisis_titan_mod
 	}
 }
 
@@ -143,6 +145,7 @@ ship_uses_titan_components = {
 		is_ship_size = large_fallen_stinger
 		is_ship_size = cosmo_crisis_stinger
 		is_ship_size = synth_queen_titan_mod
+		is_ship_size = cosmo_crisis_titan_mod
 	}
 }
 
@@ -228,6 +231,7 @@ ship_uses_artillery_role = {
 		is_ship_size = synth_queen_titan_mod
 		is_ship_size = small_ship_synth_queen_mod
 		is_ship_size = large_ship_synth_queen_mod
+		is_ship_size = cosmo_crisis_titan_mod
 	}
 }
 
@@ -329,4 +333,16 @@ ship_uses_defence_titan_reactor_components = {
 		is_ship_size = military_station_large_fallen_empire_mod
 	}
 
+}
+
+can_be_chosen_for_hindsight = {
+	solar_system = {
+		has_psionic_aura = yes
+		aura_owner = { is_same_value = root }
+	}
+	is_artificial = no
+	has_modifier = hindsight_nomination 
+	NOT = {
+		is_planet_class = pc_relic
+	}
 }

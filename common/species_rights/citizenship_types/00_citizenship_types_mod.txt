@@ -173,7 +173,7 @@ citizenship_assimilation = {
 			}
 
 		}
-		if = {
+		else_if = {
 			limit = {
 				from = {
 					is_machine_empire = yes

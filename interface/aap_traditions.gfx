@@ -99,11 +99,6 @@ spriteTypes = {
 	}
 
     spriteType = {
-		name = "GFX_leader_trait_chosen_mod_ascensions"
-		texturefile = "gfx/interface/icons/traits/leader_trait_icons/chosen.dds"
-	}
-
-    spriteType = {
 		name = "GFX_council_agenda_icon_agenda_modularity_age_reshape_form"
 		texturefile = "gfx/interface/icons/agenda_icons/agenda_modularity_reshape_form.dds"
 	}

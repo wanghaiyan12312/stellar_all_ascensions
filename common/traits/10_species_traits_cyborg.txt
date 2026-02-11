@@ -63,12 +63,6 @@ trait_auto_mod_cyborg = {
 		}
 		upkeep = {
 			trigger = {
-				is_sapient = yes
-			}
-			energy = @cyborg_energy_upkeep
-		}
-		upkeep = {
-			trigger = {
 				exists = owner
 				owner = { has_modifier = optimized_parts }
 				is_sapient = yes
@@ -235,19 +229,8 @@ trait_cyborg_efficient_processors = {
 	}
 	randomized = no
 	category = cyborg
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	modifier = {
 		pop_bonus_workforce_mult = 0.05
-	}
-
-	resources = {
-		category = planet_pops
-		upkeep = {
-			trigger = {
-				is_sapient = yes
-			}
-			energy = @cyborg_energy_upkeep
-		}
 	}
 
 	slave_cost = {
@@ -282,19 +265,8 @@ trait_cyborg_logic_engines = {
 	}
 	randomized = no
 	category = cyborg
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	modifier = {
 		researcher_jobs_bonus_workforce_mult = 0.10
-	}
-
-	resources = {
-		category = planet_pops
-		upkeep = {
-			trigger = {
-				is_sapient = yes
-			}
-			energy = @cyborg_energy_upkeep
-		}
 	}
 
 	slave_cost = {
@@ -340,19 +312,8 @@ trait_cyborg_loyalty_circuits = {
 	}
 	randomized = no
 	category = cyborg
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	modifier = {
 		pop_happiness = 0.1
-	}
-
-	resources = {
-		category = planet_pops
-		upkeep = {
-			trigger = {
-				is_sapient = yes
-			}
-			energy = @cyborg_energy_upkeep
-		}
 	}
 
 	slave_cost = {
@@ -384,22 +345,10 @@ trait_cyborg_double_jointed = {
 	}
 	randomized = no
 	category = cyborg
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	modifier = {
 		pop_housing_usage_mult = -0.1
 		pop_resettlement_cost_mult = -0.35
 	}
-
-	resources = {
-		category = planet_pops
-		upkeep = {
-			trigger = {
-				is_sapient = yes
-			}
-			energy = @cyborg_energy_upkeep
-		}
-	}
-
 	slave_cost = {
 		energy = 1500
 	}
@@ -460,20 +409,9 @@ trait_cyborg_enhanced_memory = {
 	}
 	randomized = no
 	category = cyborg
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	modifier = {
 		negative_leader_traits_species = -1
 		leaders_upkeep_mult = -0.25
-	}
-
-	resources = {
-		category = planet_pops
-		upkeep = {
-			trigger = {
-				is_sapient = yes
-			}
-			energy = @cyborg_energy_upkeep
-		}
 	}
 
 	ai_weight = {
@@ -511,18 +449,8 @@ trait_cyborg_durable = {
 	}
 	randomized = no
 	category = cyborg
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	modifier = {
 		pop_amenities_usage_add = -0.5
-	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			trigger = {
-				is_sapient = yes
-			}
-			energy = @cyborg_energy_upkeep
-		}
 	}
 	slave_cost = {
 		energy = 750
@@ -594,20 +522,10 @@ trait_cyborg_learning_algorithms = {
 	}
 	randomized = no
 	category = cyborg
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	modifier = {
 		species_leader_exp_gain = 0.10
 		negative_leader_traits_species = -1
 		leaders_upkeep_mult = -0.1
-	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			trigger = {
-				is_sapient = yes
-			}
-			energy = @cyborg_energy_upkeep
-		}
 	}
 	slave_cost = {
 		energy = 1500
@@ -723,18 +641,8 @@ trait_cyborg_streamlined_protocols = {
 	}
 	randomized = no
 	category = cyborg
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	modifier = {
 		species_empire_size_mult = -0.10
-	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			trigger = {
-				is_sapient = yes
-			}
-			energy = @cyborg_energy_upkeep
-		}
 	}
 	slave_cost = {
 		energy = 750
@@ -806,18 +714,8 @@ trait_cyborg_trading_algorithms = {
 	}
 	randomized = no
 	category = cyborg
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	modifier = {
 		trader_jobs_bonus_workforce_mult = 0.25
-	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			trigger = {
-				is_sapient = yes
-			}
-			energy = @cyborg_energy_upkeep
-		}
 	}
 	slave_cost = {
 		energy = 500
@@ -851,20 +749,10 @@ trait_cyborg_stainless_steel_smile = {
 	allowed_civics = {
 		civic_augmentation_bazaars
 	}
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	randomized = no
 	category = cyborg
 	modifier = {
 		influential_jobs_bonus_workforce_mult = 0.20
-	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			trigger = {
-				is_sapient = yes
-			}
-			energy = @cyborg_energy_upkeep
-		}
 	}
 	slave_cost = {
 		energy = 750
@@ -1053,21 +941,12 @@ trait_cyborg_integrated_weaponry = {
 			can_remove_unplugged_traits = yes
 		}
 	}
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	randomized = no
 	category = cyborg
 	modifier = {
 		army_damage_mult = 1.0
-		enforcer_jobs_bonus_workforce_mult = 0.20
-	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			trigger = {
-				is_sapient = yes
-			}
-			energy = @cyborg_energy_upkeep
-		}
+		enforcer_jobs_bonus_workforce_mult = 0.15
+		soldier_jobs_bonus_workforce_mult = 0.15
 	}
 	slave_cost = {
 		energy = 1000
@@ -1099,6 +978,7 @@ trait_cyborg_delicate_frames = {
 	modifier = {
 		army_damage_mult = -0.5
 		worker_and_simple_drone_cat_bonus_workforce_mult = -0.05
+		soldier_jobs_bonus_workforce_mult = -0.15
 	}
 
 	slave_cost = {
@@ -1191,7 +1071,6 @@ trait_cyborg_climate_adjustment_dry = {
 	species_possible_remove = {
 		can_remove_cybernetic_traits = yes
 	}
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	randomized = no
 	category = cyborg
 	modifier = {
@@ -1205,15 +1084,6 @@ trait_cyborg_climate_adjustment_dry = {
 		pc_arctic_habitability = -0.1
 		pc_ocean_habitability = -0.1
 		pc_alpine_habitability = -0.1
-	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			trigger = {
-				is_sapient = yes
-			}
-			energy = @cyborg_energy_upkeep
-		}
 	}
 	slave_cost = {
 		energy = 500
@@ -1240,7 +1110,6 @@ trait_cyborg_climate_adjustment_wet = {
 	species_possible_remove = {
 		can_remove_cybernetic_traits = yes
 	}
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	randomized = no
 	category = cyborg
 	modifier = {
@@ -1254,15 +1123,6 @@ trait_cyborg_climate_adjustment_wet = {
 		pc_arctic_habitability = -0.1
 		pc_tundra_habitability = -0.1
 		pc_alpine_habitability = -0.1
-	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			trigger = {
-				is_sapient = yes
-			}
-			energy = @cyborg_energy_upkeep
-		}
 	}
 	slave_cost = {
 		energy = 500
@@ -1289,7 +1149,6 @@ trait_cyborg_climate_adjustment_cold = {
 	species_possible_remove = {
 		can_remove_cybernetic_traits = yes
 	}
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	randomized = no
 	category = cyborg
 	modifier = {
@@ -1303,15 +1162,6 @@ trait_cyborg_climate_adjustment_cold = {
 		pc_ocean_habitability = -0.1
 		pc_continental_habitability = -0.1
 		pc_tropical_habitability = -0.1
-	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			trigger = {
-				is_sapient = yes
-			}
-			energy = @cyborg_energy_upkeep
-		}
 	}
 	slave_cost = {
 		energy = 500
@@ -1348,20 +1198,10 @@ trait_cyborg_ancient_dreadnought = {
 	}
 	tags = { organic positive army pop_output alloys leviathan cybernetic }
 
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 
 	modifier = {
 		army_damage_mult = 5
 		foundry_jobs_bonus_workforce_mult = 0.15
-	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			trigger = {
-				is_sapient = yes
-			}
-			energy = @cyborg_energy_upkeep
-		}
 	}
 	slave_cost = {
 		energy = 1500
@@ -1398,19 +1238,9 @@ trait_cyborg_enigmatic_fortress = {
 	}
 	tags = { organic positive amenities leviathan cybernetic }
 
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 
 	modifier = {
 		pop_amenities_usage_mult = -0.5
-	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			trigger = {
-				is_sapient = yes
-			}
-			energy = @cyborg_energy_upkeep
-		}
 	}
 	slave_cost = {
 		energy = 1500
@@ -1448,19 +1278,9 @@ trait_cyborg_infinity_sphere = {
 	}
 	tags = { organic positive upkeep research cybernetic }
 
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 
 	modifier = {
 		planet_researchers_upkeep_mult = -0.5
-	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			trigger = {
-				is_sapient = yes
-			}
-			energy = @cyborg_energy_upkeep
-		}
 	}
 	slave_cost = {
 		energy = 1500
@@ -1497,19 +1317,8 @@ trait_cyborg_scavenger_bot = {
 	}
 	tags = { organic positive pop_growth leviathan cybernetic }
 
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
-
 	modifier = {
 		logistic_growth_mult = 1
-	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			trigger = {
-				is_sapient = yes
-			}
-			energy = @cyborg_energy_upkeep
-		}
 	}
 	slave_cost = {
 		energy = 1500

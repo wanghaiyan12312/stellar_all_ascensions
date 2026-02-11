@@ -443,8 +443,70 @@ tech_repeatable_improved_shield_output = {
 	}
 
 	modifier = {
-		ship_shield_regen_add_perc = 0.001
 		ship_shield_mult = 0.05
+	}
+}
+
+tech_repeatable_improved_shield_output2 = {
+	area = physics
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	icon = tech_repeatable_improved_shield_output
+	tier = @repeatableTechTier
+	category = { field_manipulation }
+	ai_update_type = all
+	levels = -1
+	prerequisites = { "tech_shields_4" }
+	weight = @repeatableTechWeight
+
+	potential = {
+		country_uses_bio_ships = no
+		OR = {
+			has_country_flag = shield_output2_allow
+			check_phy_auto_tech_flag = yes
+		}
+	}
+
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+
+	modifier = {
+		shipsize_titan_shield_add = 1000 ##@titan_hp = 20000 1/20
+		shipsize_titan_shield_regen_add_static = 1000
+		shipsize_battleship_shield_add = 240 ##@battleship_hp = 4800 1/20
+		shipsize_battleship_shield_regen_add_static = 240
+		shipsize_cruiser_shield_add = 120 ##@cruiser_hp = 2400  1/20
+		shipsize_cruiser_shield_regen_add_static = 120
+
+		shipsize_cosmo_crisis_destroyer_shield_add = 125 ##@fe_destroyer_hp = 2000   1/16
+		shipsize_cosmo_crisis_destroyer_shield_regen_add_static = 125
+		shipsize_cosmo_crisis_battlecruiser_shield_add = 625 ##@fe_battleship_hp = 10000   1/16
+		shipsize_cosmo_crisis_battlecruiser_shield_regen_add_static = 625
+		shipsize_cosmo_crisis_titan_shield_add = 2500 ##@fe_titan_hp = 40000   1/16
+		shipsize_cosmo_crisis_titan_shield_regen_add_static = 2500
+
+		shipsize_small_ship_synth_queen_mod_shield_add = 125 ##@fe_destroyer_hp = 2000 
+		shipsize_small_ship_synth_queen_mod_shield_regen_add_static = 125
+		shipsize_large_ship_synth_queen_mod_shield_add = 1500 ## 25000   1/16
+		shipsize_large_ship_synth_queen_mod_shield_regen_add_static = 1500
+
+		shipsize_cosmo_crisis_titan_mod_shield_add = 5000 ## 100000   1/20
+		shipsize_cosmo_crisis_titan_mod_shield_regen_add_static = 5000
+		shipsize_synth_queen_titan_mod_shield_add = 10000 ## 1000000   1/100
+		shipsize_synth_queen_titan_mod_shield_regen_add_static = 10000
+
 	}
 }
 
@@ -560,6 +622,39 @@ tech_repeatable_improved_military_station_health = {
 
 	modifier = {
 		shipclass_military_station_hull_mult = 0.1
+
+		shipsize_shipsize_military_station_small_shield_add = 300 ## @station_small_hp = 3000 1/10
+		shipsize_shipsize_ion_cannon_shield_add = 1000 ## 10000 1/10
+		shipsize_orbital_ring_tier_3_shield_add = 50000 ## @starhold_hp = 20000 1/10
+		shipsize_military_station_small_fallen_empire_mod_shield_add = 1500 ## @station_medium_hp = 15000 1/10
+		shipsize_military_station_large_fallen_empire_mod_shield_add = 2500 ## @station_large_hp = 25000 1/10
+		shipsize_defense_platform_synth_queen_mod_shield_add = 1500 ## @station_medium_hp = 15000 1/10
+		shipsize_defense_platform_medium_synth_queen_mod_shield_add = 5000 ## 50000 1/10
+		shipsize_defense_platform_large_synth_queen_mod_shield_add = 10000 ## 100000 1/10
+		shipsize_starbase_deep_space_citadel_3_shield_add = 8000 ## @citadel_hp = 80000
+		shipsize_starbase_citadel_shield_add = 50000 ## 500000
+
+		shipsize_shipsize_military_station_small_shield_regen_add_static = 30 ## @station_small_hp = 3000 1/100
+		shipsize_shipsize_ion_cannon_shield_regen_add_static = 100 ## 10000  1/100
+		shipsize_orbital_ring_tier_3_shield_regen_add_static = 5000 ## @starhold_hp = 20000  1/100
+		shipsize_military_station_small_fallen_empire_mod_shield_regen_add_static = 150 ## @station_medium_hp = 15000  1/100
+		shipsize_military_station_large_fallen_empire_mod_shield_regen_add_static = 250 ## @station_large_hp = 25000  1/100
+		shipsize_defense_platform_synth_queen_mod_shield_regen_add_static = 150 ## @station_medium_hp = 15000  1/100
+		shipsize_defense_platform_medium_synth_queen_mod_shield_regen_add_static = 500 ## 50000  1/100
+		shipsize_defense_platform_large_synth_queen_mod_shield_regen_add_static = 1000 ## 100000  1/100
+		shipsize_starbase_deep_space_citadel_3_shield_regen_add_static = 800 ## @citadel_hp = 80000
+		shipsize_starbase_citadel_shield_regen_add_static = 5000 ## 500000   1/100
+
+		shipsize_shipsize_military_station_small_armor_add = 300 ## @station_small_hp = 3000 1/10
+		shipsize_shipsize_ion_cannon_armor_add = 1000 ## 10000  1/10
+		shipsize_orbital_ring_tier_3_armor_add = 50000 ## @starhold_hp = 20000  1/10
+		shipsize_military_station_small_fallen_empire_mod_armor_add = 1500 ## @station_medium_hp = 15000  1/10
+		shipsize_military_station_large_fallen_empire_mod_armor_add = 2500 ## @station_large_hp = 25000  1/10
+		shipsize_defense_platform_synth_queen_mod_armor_add = 1500 ## @station_medium_hp = 15000  1/10
+		shipsize_defense_platform_medium_synth_queen_mod_armor_add = 5000 ## 50000  1/10
+		shipsize_defense_platform_large_synth_queen_mod_armor_add = 10000 ## 100000  1/10
+		shipsize_starbase_deep_space_citadel_3_armor_add = 8000 ## @citadel_hp = 80000
+		shipsize_starbase_citadel_armor_add = 50000 ## 500000  1/10
 	}
 }
 
@@ -771,6 +866,7 @@ tech_repeatable_improved_armor_output = {
 	weight = @repeatableTechWeight
 
 	potential = {
+		country_uses_bio_ships = no
 		OR = {
 			has_country_flag = armor_output_allow
 			check_eng_auto_tech_flag = yes 
@@ -794,5 +890,57 @@ tech_repeatable_improved_armor_output = {
 
 	modifier = {
 		ship_armor_mult = 0.05
+	}
+}
+
+tech_repeatable_improved_armor_output2 = {
+	area = engineering
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	icon = tech_repeatable_improved_armor_output
+	tier = @repeatableTechTier
+	category = { materials }
+	ai_update_type = all
+	levels = -1
+	prerequisites = { "tech_ship_armor_3" }
+	weight = @repeatableTechWeight
+
+	potential = {
+		country_uses_bio_ships = no
+		OR = {
+			has_country_flag = armor_output2_allow
+			check_eng_auto_tech_flag = yes 
+		}
+	}
+
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+
+	ai_weight = {
+		factor = 1.0
+	}
+
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+
+	modifier = {
+		shipsize_titan_armor_add = 1000 ##@titan_hp = 20000 1/20
+		shipsize_battleship_armor_add = 240 ##@battleship_hp = 4800 1/20
+		shipsize_cruiser_armor_add = 120 ##@cruiser_hp = 2400  1/20
+
+		shipsize_cosmo_crisis_destroyer_armor_add = 125 ##@fe_destroyer_hp = 2000   1/16
+		shipsize_cosmo_crisis_battlecruiser_armor_add = 625 ##@fe_battleship_hp = 10000   1/16
+		shipsize_cosmo_crisis_titan_armor_add = 2500 ##@fe_titan_hp = 40000   1/16
+
+		shipsize_small_ship_synth_queen_mod_armor_add = 125 ##@fe_destroyer_hp = 2000 
+		shipsize_large_ship_synth_queen_mod_armor_add = 1500 ## 25000   1/16
+
+		shipsize_cosmo_crisis_titan_mod_armor_add = 5000 ## 100000   1/16
+		shipsize_synth_queen_titan_mod_armor_add = 10000 ## 1000000   1/16
 	}
 }

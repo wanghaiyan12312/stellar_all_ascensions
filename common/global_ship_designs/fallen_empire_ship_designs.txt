@@ -227,19 +227,19 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_4"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component="SENSOR_4"
@@ -343,15 +343,15 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component="SENSOR_4"
@@ -439,11 +439,11 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component="SENSOR_4"
@@ -527,11 +527,11 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component="SENSOR_4"
@@ -1347,19 +1347,19 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_4"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component="SENSOR_4"
@@ -1463,15 +1463,15 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component="SENSOR_4"
@@ -1559,11 +1559,11 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component="SENSOR_4"
@@ -1767,7 +1767,7 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component = "STARBASE_DARK_MATTER_REACTOR"
@@ -1937,11 +1937,11 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component = "STARBASE_DARK_MATTER_REACTOR"
@@ -2160,15 +2160,15 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component = "STARBASE_DARK_MATTER_REACTOR"
@@ -2470,19 +2470,19 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_4"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 	}
 	required_component="SENSOR_4"
@@ -2594,15 +2594,15 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 	}
 	required_component="SENSOR_4"
@@ -2694,11 +2694,11 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 	}
 	required_component="SENSOR_4"
@@ -2902,7 +2902,7 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 	}
 	required_component = "STARBASE_DARK_MATTER_REACTOR"
@@ -3072,11 +3072,11 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 	}
 	required_component = "STARBASE_DARK_MATTER_REACTOR"
@@ -3295,15 +3295,15 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 	}
 	required_component = "STARBASE_DARK_MATTER_REACTOR"
@@ -3605,19 +3605,19 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_4"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component="SENSOR_4"
@@ -3722,15 +3722,15 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component="SENSOR_4"
@@ -3818,11 +3818,11 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component="SENSOR_4"
@@ -4025,7 +4025,7 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 	}
 	required_component = "STARBASE_DARK_MATTER_REACTOR"
@@ -4195,11 +4195,11 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 	}
 	required_component = "STARBASE_DARK_MATTER_REACTOR"
@@ -4418,15 +4418,15 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 	}
 	required_component = "STARBASE_DARK_MATTER_REACTOR"
@@ -4730,19 +4730,19 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_4"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component="SENSOR_4"
@@ -4849,15 +4849,15 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component="SENSOR_4"
@@ -4945,11 +4945,11 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component="SENSOR_4"
@@ -5153,7 +5153,7 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 	}
 	required_component = "STARBASE_DARK_MATTER_REACTOR"
@@ -5323,11 +5323,11 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 	}
 	required_component = "STARBASE_DARK_MATTER_REACTOR"
@@ -5546,15 +5546,15 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "SHIELD_HARDENER_2"
+			template = "SHIELD_BOOSTER"
 		}
 	}
 	required_component = "STARBASE_DARK_MATTER_REACTOR"

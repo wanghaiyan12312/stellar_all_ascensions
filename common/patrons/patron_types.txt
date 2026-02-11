@@ -889,7 +889,7 @@ whisperers_in_the_void = {
 
 		possible = {
 			custom_tooltip = {
-				text = requires_valid_hindsight_target
+				text = requires_valid_hindsight_target_mod
 				count_system_with_aura = {
 					count > 0
 					limit = {
@@ -905,7 +905,7 @@ whisperers_in_the_void = {
 		effect = {
 			custom_tooltip = ACCORD_HINDSIGHT_TT
 			hidden_effect = {
-				country_event = { id = shroud.4890 }
+				country_event = { id = end_cycle.8 }
 			}
 		}
 	}

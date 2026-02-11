@@ -29,6 +29,7 @@ trait_cybernetic_suppressed = {
 	modifier = {
 		pop_bonus_workforce_mult = 0.1
 		species_leader_exp_gain = -1
+		civilian_and_maintenance_drone_cat_bonus_workforce_mult = -0.85
 	}
 
 	slave_cost = {
@@ -100,8 +101,8 @@ trait_cybernetic_monoform = {
 	randomized = no
 
 	modifier = {
-		pop_housing_usage_mult = -0.8
-		logistic_growth_mult = 0.2
+		pop_housing_usage_mult = -0.50
+		planet_pop_assembly_mult = 0.2
 	}
 
 	slave_cost = {
@@ -170,7 +171,7 @@ trait_cybernetic_ceaseless_symmetric_annihilation_engine = {
 	randomized = no
 
 	modifier = {
-		pop_bonus_workforce_mult = 0.40
+		pop_bonus_workforce_mult = 0.20
 	}
 
 	slave_cost = {
@@ -180,7 +181,11 @@ trait_cybernetic_ceaseless_symmetric_annihilation_engine = {
 	resources = {
 		category = planet_pops
 		upkeep = {
-			sr_dark_matter = 0.02
+			trigger = {
+				is_being_purged = no
+				is_sapient = yes
+			}
+			sr_dark_matter = 0.03
 		}
 	}
 
@@ -212,7 +217,6 @@ trait_cybernetic_ferro_viscosity_augmentation = {
 
 	modifier = {
 		leader_lifespan_mult = 0.5
-		pop_amenities_usage_mult = -0.50
 	}
 
 	slave_cost = {
@@ -222,7 +226,11 @@ trait_cybernetic_ferro_viscosity_augmentation = {
 	resources = {
 		category = planet_pops
 		upkeep = {
-			sr_living_metal = 0.01
+			trigger = {
+				is_being_purged = no
+				is_sapient = yes
+			}
+			sr_living_metal = 0.03
 		}
 	}
 
@@ -255,7 +263,7 @@ trait_cybernetic_matrix_trading = {
 	randomized = no
 
 	modifier = {
-		trader_jobs_bonus_workforce_mult = 0.5
+		trader_jobs_bonus_workforce_mult = 0.2
 	}
 
 	slave_cost = {
@@ -265,8 +273,12 @@ trait_cybernetic_matrix_trading = {
 	resources = {
 		category = planet_pops
 		upkeep = {
+			trigger = {
+				is_being_purged = no
+				is_sapient = yes
+			}
 			energy = 1
-			rare_crystals = 0.01
+			rare_crystals = 0.02
 		}
 	}
 
@@ -309,8 +321,12 @@ trait_cybernetic_mote_powered_tools = {
 	resources = {
 		category = planet_pops
 		upkeep = {
+			trigger = {
+				is_being_purged = no
+				is_sapient = yes
+			}
 			minerals = 1
-			volatile_motes = 0.01
+			volatile_motes = 0.02
 		}
 	}
 

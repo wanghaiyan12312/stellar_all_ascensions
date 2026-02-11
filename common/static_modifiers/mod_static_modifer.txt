@@ -9,9 +9,6 @@ ship_damage_mult = {
 composer_aura_max_prohibit = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_politics.dds"
 	icon_frame = 2
-	logistic_growth_mult = -0.75
-	pop_amenities_usage_organic_mult = 0.25 # Some Cost on deny Parton
-	planet_pops_organics_upkeep_mult = 0.25
 }
 
 mastery_of_ring_word = {
@@ -19,4 +16,15 @@ mastery_of_ring_word = {
 	icon_frame = 1
 	planet_max_districts_add = 1
 	custom_tooltip = sm_orbital_ring_habitation_desc
+}
+
+hindsight_nomination = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = 2
+}
+
+
+crisis_cosmogenesis_level_5_auto_bonus = {
+	bonus_automated_workforce_mult = 5.00
+	custom_tooltip = crisis_cosmogenesis_level_5_auto_bonus_desc
 }

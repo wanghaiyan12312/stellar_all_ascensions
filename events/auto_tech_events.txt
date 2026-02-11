@@ -97,6 +97,13 @@ country_event = {
 		}
 	}
 	option = {
+		name = auto_tech.2.shield_output2
+		hidden_effect = {
+			auto_tech_remove_all_phy_flag = yes
+			set_country_flag = shield_output2_allow
+		}
+	}
+	option = {
 		name = auto_tech.2.back
 		auto_tech_remove_all_phy_flag = yes
 		default_hide_option = yes
@@ -257,6 +264,13 @@ country_event = {
 		hidden_effect = {
 			auto_tech_remove_all_eng_flag = yes
 			set_country_flag = armor_output_allow
+		}
+	}
+	option = {
+		name = auto_tech.4.armor_output2
+		hidden_effect = {
+			auto_tech_remove_all_eng_flag = yes
+			set_country_flag = armor_output2_allow
 		}
 	}
 	option = {

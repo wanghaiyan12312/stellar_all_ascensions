@@ -155,27 +155,3 @@ eater_aura_max_intensity_effect_original = {
 	}
 }
 
-check_end_aura_win_condition = {
-	export_trigger_value_to_variable = {
-		trigger = count_systems_with_aura
-		variable = nb_conquered_systems
-	}
-	if = {
-		limit = {
-			count_end_cycle_systems <= nb_conquered_systems
-			root.aura_owner = {
-				NOT = {
-					has_policy_flag = end_aura_not_win_condition
-				}
-			}
-		}
-		if = {
-			limit = { has_origin = origin_endbringers }
-			country_event = { id = shroud.8600 }
-		}
-		else = {
-			country_event = { id = shroud.4970 }
-		}
-	}
-}
-

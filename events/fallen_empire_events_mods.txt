@@ -199,7 +199,7 @@ country_event = {
 		observer_event = { id = observer.73 }
  		set_global_flag = no_war_in_heaven
 		while = {
-			count = 6
+			count = 2
 			create_fallen_empire_reinforcements_mod = yes
 		}
 	}
@@ -257,7 +257,7 @@ country_event = {
 		}
 		observer_event = { id = observer.74 }
 		while = {
-			count = 6
+			count = 2
 			create_fallen_empire_reinforcements_mod = yes
 		}
 	}
@@ -416,5 +416,83 @@ country_event = {
 			}
 		}
 				
+	}
+}
+
+
+country_event = {
+	id = fallen_empires_mod.7
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+        is_ai = no
+		has_crisis_level = crisis_cosmogenesis_level_5
+		is_fallen_empire = no
+		NOT = {
+			has_country_flag = has_crisis_cosmogenesis_level_5_auto_bonus 
+		}
+	}
+	immediate = {
+		add_modifier = {
+            modifier = crisis_cosmogenesis_level_5_auto_bonus
+        }
+		set_country_flag = has_crisis_cosmogenesis_level_5_auto_bonus
+	}
+}
+
+country_event = {
+	id = fallen_empires_mod.8
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		OR = {
+			NOT = { has_global_flag = sleepers_awake_happened }
+			NOT = { has_global_flag = guardians_of_the_galaxy_happened }
+		}
+	}
+	immediate = {
+		set_global_flag = sleepers_awake_happened
+		set_global_flag = guardians_of_the_galaxy_happened
+	}
+}
+
+country_event = { # Reaching Level 5
+	id = fallen_empires_mod.9
+	title = "crisis.7120.name"
+	desc = crisis.7120.desc
+	picture = GFX_evt_cosmogenesis_crisis
+	show_sound = event_death_cult
+	event_chain = cosmogenesis_chain
+
+	is_triggered_only = yes
+
+	immediate = {
+		add_event_chain_counter = {
+			event_chain = "cosmogenesis_chain"
+			counter = "cosmogenesis_level_reached"
+			amount = 1
+		}
+	}
+
+	option = {
+		name = crisis.7120.a
+		custom_tooltip = new_cosmogenesis_tech_tt
+	}
+
+	after = {
+		# TOTAL WAR TIME
+		every_country = {
+			limit = {
+				is_country_type = fallen_empire
+				NOT = {
+					is_at_war_with = root
+				}
+			}
+			declare_war = {
+				target = root
+				name = cosmogenesis_materialist_war
+				attacker_war_goal = wg_fe_humiliation
+			}
+		}
 	}
 }

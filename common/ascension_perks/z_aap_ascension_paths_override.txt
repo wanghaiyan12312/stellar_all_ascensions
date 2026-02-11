@@ -580,3 +580,50 @@ ap_mind_over_matter = {
 		}
 	}
 }
+
+
+ap_cosmogenesis = {
+	potential = {
+		has_machine_age_dlc = yes
+		NOR = {
+			is_player_crisis = yes
+			has_ascension_perk = ap_defender_of_the_galaxy
+			has_origin = origin_slavers # No crisis for MSI
+			#has_origin = origin_endbringers # No additional crisis for Endbringers
+		}
+		is_wilderness_empire = no
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_3"
+			num_ascension_perks > 2
+		}
+		custom_tooltip = {
+			fail_text = "requires_independence"
+			is_subject = no
+		}
+		custom_tooltip = {
+			fail_text = "must_not_be_custodian"
+			is_galactic_custodian = no
+		}
+		custom_tooltip = {
+			fail_text = "must_not_be_emperor"
+			is_galactic_emperor = no
+		}
+	}
+
+	on_enabled = {
+		hidden_effect = {
+			set_variable = {
+				which = cosmogenesis_world_advanced_logic_produced
+				value = 0
+			}
+		}
+		activate_crisis_progression = cosmogenesis_path
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}

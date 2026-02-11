@@ -4,6 +4,7 @@ check_phy_auto_tech_flag = {
 		has_country_flag = energy_damage_allow
 		has_country_flag = energy_output_allow
 		has_country_flag = shield_output_allow
+		has_country_flag = shield_output2_allow
 	}
 }
 
@@ -29,5 +30,6 @@ check_eng_auto_tech_flag = {
 		has_country_flag = military_station_damage_allow
 		has_country_flag = mineral_output_allow
 		has_country_flag = armor_output_allow
+		has_country_flag = armor_output2_allow
 	}
 }

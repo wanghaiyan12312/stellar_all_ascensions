@@ -766,11 +766,11 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component = "BIO_PSI_JUMP_DRIVE_1"
@@ -847,11 +847,11 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component = "BIO_PSI_JUMP_DRIVE_1"
@@ -928,11 +928,11 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component = "BIO_PSI_JUMP_DRIVE_1"
@@ -1019,11 +1019,11 @@ ship_design = {
         }
         component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
     }
     required_component = "BIO_PSI_JUMP_DRIVE_1"
@@ -1109,11 +1109,11 @@ ship_design = {
         }
         component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
     }
     required_component = "BIO_PSI_JUMP_DRIVE_1"
@@ -1207,15 +1207,15 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component = "BIO_PSI_JUMP_DRIVE_1"
@@ -1331,15 +1331,15 @@ ship_design = {
 		# Aux
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component = "BIO_PSI_JUMP_DRIVE_1"
@@ -1455,15 +1455,15 @@ ship_design = {
 		# Aux
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 	}
 	required_component = "BIO_PSI_JUMP_DRIVE_1"
@@ -3691,11 +3691,11 @@ ship_design = {
 		}
 		component = {
 			slot = "AUX_UTILITY_8"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_9"
-			template = "ARMOR_HARDENER_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
 		component = {
 			slot = "AUX_UTILITY_10"

@@ -10,13 +10,40 @@ get_crisis_strength = {
     }
 }
 
-get_fallen_empire_titan_enforce_num = {
-    base = @fallen_empire_titan
+get_fallen_empire_titan_hard_I_enforce_num = {
+    base = 0
     complex_trigger_modifier = {
 		trigger = is_difficulty
 		trigger_scope = this
-		mode = mult
+		mode = add
 	}
+	subtract = 5
+	mult = @fallen_empire_titan_hard_I
+	min = 0
+}
+
+get_fallen_empire_titan_hard_II_enforce_num = {
+    base = 0
+    complex_trigger_modifier = {
+		trigger = is_difficulty
+		trigger_scope = this
+		mode = add
+	}
+	subtract = 5
+	mult = @fallen_empire_titan_hard_II
+	min = 0
+}
+
+get_fallen_empire_titan_enforce_num = {
+    base = 0
+    complex_trigger_modifier = {
+		trigger = is_difficulty
+		trigger_scope = this
+		mode = add
+	}
+	subtract = 3
+	mult = @fallen_empire_titan
+	min = 0
 }
 
 get_fallen_empire_battlecruise_num = {

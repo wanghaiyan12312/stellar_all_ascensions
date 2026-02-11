@@ -183,6 +183,7 @@ auto_tech_remove_all_phy_flag = {
 	remove_country_flag = energy_damage_allow
 	remove_country_flag = energy_output_allow
 	remove_country_flag = shield_output_allow
+	remove_country_flag = shield_output2_allow
 }
 
 # remove all repeatable soc tech allow flag 
@@ -206,6 +207,7 @@ auto_tech_remove_all_eng_flag = {
 	remove_country_flag = military_station_damage_allow
 	remove_country_flag = mineral_output_allow
 	remove_country_flag = armor_output_allow
+	remove_country_flag = armor_output2_allow
 }
 
 

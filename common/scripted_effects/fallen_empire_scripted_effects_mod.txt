@@ -22,9 +22,13 @@ create_fallen_empire_reinforcements_mod = {
 			owner = { has_ethic = ethic_fanatic_xenophile}
 		}
 		create_fallen_empire_fleet_mod = {
+			SHIP_HARD_II_NUM = value:get_fallen_empire_titan_hard_II_enforce_num
+			SHIP_HARD_I_NUM = value:get_fallen_empire_titan_hard_I_enforce_num
 			BIGSHIP_NUM = value:get_fallen_empire_titan_enforce_num
 			MEDIUMSHIP_NUM = value:get_fallen_empire_battlecruise_num
 			SMALLSHIP_NUM = value:get_fallen_empire_escort_num
+			DESIGN_SHIP_HARD_I = "NAME_SHIELD_ARMOR_hard_I"
+			DESIGN_SHIP_HARD_II = "NAME_SHIELD_ARMOR_hard_II"			
 			DESIGN_BIGSHIP = "NAME_Keeper"
 			DESIGN_MEDIUMSHIP = "NAME_Custodian"
 			DESIGN_SMALLSHIP = "NAME_Overseer"
@@ -35,9 +39,13 @@ create_fallen_empire_reinforcements_mod = {
 			owner = { has_ethic = ethic_fanatic_materialist }
 		}
 		create_fallen_empire_fleet_mod = {
+			SHIP_HARD_II_NUM = value:get_fallen_empire_titan_hard_II_enforce_num
+			SHIP_HARD_I_NUM = value:get_fallen_empire_titan_hard_I_enforce_num
 			BIGSHIP_NUM = value:get_fallen_empire_titan_enforce_num
 			MEDIUMSHIP_NUM = value:get_fallen_empire_battlecruise_num
 			SMALLSHIP_NUM = value:get_fallen_empire_escort_num
+			DESIGN_SHIP_HARD_I = "NAME_ARMOR_ARMOR_hard_I"
+			DESIGN_SHIP_HARD_II = "NAME_ARMOR_ARMOR_hard_II"
 			DESIGN_BIGSHIP = "NAME_Savant"
 			DESIGN_MEDIUMSHIP = "NAME_Custodian"
 			DESIGN_SMALLSHIP = "NAME_Sage"
@@ -48,9 +56,13 @@ create_fallen_empire_reinforcements_mod = {
 			owner = { has_ethic = ethic_fanatic_spiritualist }
 		}
 		create_fallen_empire_fleet_mod = {
+			SHIP_HARD_II_NUM = value:get_fallen_empire_titan_hard_II_enforce_num
+			SHIP_HARD_I_NUM = value:get_fallen_empire_titan_hard_I_enforce_num
 			BIGSHIP_NUM = value:get_fallen_empire_titan_enforce_num
 			MEDIUMSHIP_NUM = value:get_fallen_empire_battlecruise_num
 			SMALLSHIP_NUM = value:get_fallen_empire_escort_num
+			DESIGN_SHIP_HARD_I = "NAME_SHIELD_SHIELD_hard_I"
+			DESIGN_SHIP_HARD_II = "NAME_SHIELD_SHIELD_hard_II"
 			DESIGN_BIGSHIP = "NAME_Eternal"
 			DESIGN_MEDIUMSHIP = "NAME_Avatar"
 			DESIGN_SMALLSHIP = "NAME_Zealot"
@@ -61,9 +73,13 @@ create_fallen_empire_reinforcements_mod = {
 			owner = { has_ethic = ethic_fanatic_xenophobe}
 		}
 		create_fallen_empire_fleet_mod = {
+			SHIP_HARD_II_NUM = value:get_fallen_empire_titan_hard_II_enforce_num
+			SHIP_HARD_I_NUM = value:get_fallen_empire_titan_hard_I_enforce_num	
 			BIGSHIP_NUM = value:get_fallen_empire_titan_enforce_num
 			MEDIUMSHIP_NUM = value:get_fallen_empire_battlecruise_num
 			SMALLSHIP_NUM = value:get_fallen_empire_escort_num
+			DESIGN_SHIP_HARD_I = "NAME_SHIELD_ARMOR_hard_I"
+			DESIGN_SHIP_HARD_II = "NAME_SHIELD_ARMOR_hard_II"				
 			DESIGN_BIGSHIP = "NAME_Imperium"
 			DESIGN_MEDIUMSHIP = "NAME_Supremacy"
 			DESIGN_SMALLSHIP = "NAME_Glory"
@@ -78,9 +94,13 @@ create_fallen_empire_reinforcements_mod = {
 			}					
 		}
 		create_fallen_empire_fleet_mod = {
+			SHIP_HARD_II_NUM = value:get_fallen_empire_titan_hard_II_enforce_num
+			SHIP_HARD_I_NUM = value:get_fallen_empire_titan_hard_I_enforce_num			
 			BIGSHIP_NUM = value:get_fallen_empire_stinger_num
 			MEDIUMSHIP_NUM = value:get_fallen_empire_harbinger_num
 			SMALLSHIP_NUM = value:get_fallen_empire_mauler_num
+			DESIGN_SHIP_HARD_I = "NAME_HIVE_FE_Large_Stinger_HARD_I"
+			DESIGN_SHIP_HARD_II = "NAME_HIVE_FE_Large_Stinger_HARD_II"	
 			DESIGN_BIGSHIP = "NAME_HIVE_FE_Large_Stinger"
 			DESIGN_MEDIUMSHIP = "NAME_HIVE_FE_Large_Harbinger"
 			DESIGN_SMALLSHIP = "NAME_HIVE_FE_Large_Mauler_Picket"
@@ -94,6 +114,22 @@ create_fallen_empire_fleet_mod = {
 		create_fleet = {
 			effect = {
 				set_owner = prev.owner
+				while = {
+					count = $SHIP_HARD_I_NUM$ 
+					create_ship = {
+						name = random
+						design = $DESIGN_SHIP_HARD_I$
+						graphical_culture = owner
+					}
+				}
+				while = {
+					count = $SHIP_HARD_II_NUM$ 
+					create_ship = {
+						name = random
+						design = $DESIGN_SHIP_HARD_II$
+						graphical_culture = owner
+					}
+				}
 				while = {
 					count = $BIGSHIP_NUM$ 
 					create_ship = {

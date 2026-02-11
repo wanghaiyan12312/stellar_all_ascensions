@@ -20,7 +20,6 @@
 #	}
 ###
 
-
 # Regular Traits that require Genetic Ascension
 
 trait_adaptive_lithoid = {
@@ -150,15 +149,6 @@ trait_nerve_stapled = {
 		energy = 1500
 	}
 
-	triggered_pop_group_modifier = {
-		potential = {
-			OR = {
-				is_pop_category = ruler
-				is_specialist_category = yes
-			}
-		}
-		pop_demotion_time_mult = -10.0
-	}
 	assembly_score = {
 		modifier = {
 			add = 1
@@ -201,8 +191,8 @@ trait_fertile = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive pop_growth housing happiness genetic_ascension }
 	modifier = {
-		logistic_growth_mult = 0.3
-		pop_housing_usage_mult = -0.1
+		logistic_growth_mult = 0.2
+		pop_housing_usage_mult = -0.05
 		pop_happiness = 0.10
 	}
 	slave_cost = {
@@ -273,7 +263,7 @@ trait_erudite = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive pop_output research leader genetic_ascension }
 	modifier = {
-		researcher_jobs_bonus_workforce_mult = 0.3
+		researcher_jobs_bonus_workforce_mult = 0.2
 		negative_leader_traits_species = -1
 		leaders_upkeep_mult = -0.1
 	}
@@ -329,8 +319,8 @@ trait_vat_grown = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive pop_growth housing amenities genetic_ascension drawbacks }
 	modifier = {
-		bonus_pop_growth_mult = 0.33
-		pop_housing_usage_mult = -0.1
+		bonus_pop_growth_mult = 0.25
+		pop_housing_usage_mult = -0.05
 		pop_amenities_usage_mult = -0.1
 	}
 	infertile = yes
@@ -583,4 +573,3 @@ trait_tiyanki = {
 		energy = 1500
 	}
 }
-

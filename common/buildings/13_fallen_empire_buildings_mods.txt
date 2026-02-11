@@ -171,7 +171,7 @@ building_dimensional_replicator = {
 		}
 		upkeep = {
 			alloys = @b3_alloy_upkeep
-			energy = @fe_energy_upkeep_3
+			energy = 1
 		}
 		cost = {
 			trigger = {
@@ -299,7 +299,7 @@ building_dimensional_fabricator = {
 		}
 		upkeep = {
 			alloys = @b4_alloy_upkeep
-			energy = @fe_energy_upkeep_5
+			energy = 1
 		}
 		cost = {
 			trigger = {
@@ -421,7 +421,7 @@ building_fe_silo_1 = {
 		}
 		upkeep = {
 			alloys = @b2_alloy_upkeep
-			energy = @fe_energy_upkeep_1
+			energy = 1
 		}
 		cost = {
 			trigger = {
@@ -561,7 +561,7 @@ building_fe_silo_2 = {
 		}
 		upkeep = {
 			alloys = @b3_alloy_upkeep
-			energy = @fe_energy_upkeep_2
+			energy = 1
 		}
 		cost = {
 			trigger = {

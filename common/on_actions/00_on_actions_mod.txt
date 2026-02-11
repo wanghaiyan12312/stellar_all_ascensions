@@ -28,6 +28,8 @@ on_monthly_pulse_country = {
 	events = {
 		leadershroud.7
 		end_cycle.6
+		fallen_empires_mod.7
+		fallen_empires_mod.8
 	}
 }
 
