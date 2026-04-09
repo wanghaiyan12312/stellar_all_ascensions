@@ -43,7 +43,6 @@ ap_engineered_evolution = {
 			limit = {
 				NOR = {
 					has_origin = origin_clone_army
-					has_origin = origin_overtuned
 				}
 			}
 			custom_tooltip = {
@@ -51,15 +50,19 @@ ap_engineered_evolution = {
 				num_ascension_perks > 1
 			}
 		}
-
-		if = {
-			limit = {
-				has_origin = origin_overtuned
-			}
-			custom_tooltip = {
-				fail_text = "requires_ascension_perks_1"
-				num_ascension_perks > 0
-			}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_the_flesh_is_weak"
+			NAND = {
+				has_ascension_perk = ap_the_flesh_is_weak
+				is_gestalt = yes
+			}	
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_mind_over_matter"
+			NAND = {
+				has_psionic_ascension = yes
+				is_gestalt = yes
+			}	
 		}
 		custom_tooltip = {
 			fail_text = "requires_not_ap_organo_machine_interfacing"
@@ -95,10 +98,8 @@ ap_engineered_evolution = {
 		NOR = {
 			has_ascension_perk = ap_engineered_evolution
 			is_machine_empire = yes
-			has_origin = origin_shroudwalker_apprentice
 			has_origin = origin_cybernetic_creed
 			has_origin = origin_synthetic_fertility
-			has_origin = origin_endbringers
 		}
 		is_mechanical_empire = no
 		is_individual_machine = no
@@ -171,7 +172,6 @@ ap_the_flesh_is_weak = {
 			has_origin = origin_shroudwalker_apprentice
 			has_origin = origin_cybernetic_creed
 			has_origin = origin_synthetic_fertility
-			has_origin = origin_evolutionary_predators
 			has_origin = origin_endbringers
 			AND = {
 				has_origin = origin_unplugged
@@ -206,49 +206,6 @@ ap_the_flesh_is_weak = {
 	}
 }
 
-# Cyborg Ascension (Hive Minds)
-ap_organo_machine_interfacing = {
-	on_enabled = {
-		custom_tooltip = "organo_machine_interfacing_tooltip"
-	}
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_ascension_perks_2"
-			num_ascension_perks > 1
-		}
-		custom_tooltip = {
-			fail_text = "requires_free_tradition_tree"
-			num_tradition_categories < @max_tradition_trees
-		}
-	}
-
-	potential = {
-		OR = {
-			has_utopia = yes
-			has_machine_age_dlc = yes
-		}
-		NOR = {
-			has_ascension_perk = ap_organo_machine_interfacing
-			has_origin = origin_evolutionary_predators
-			has_origin = origin_wilderness
-			has_origin = origin_endbringers
-		}
-		is_hive_empire = yes
-		is_natural_design_empire = no
-		is_chosen_empire = no
-		is_entropy_drinkers_empire = no
-	}
-
-	ai_weight = {
-		factor = @ascension_path_base_weight
-		modifier = {
-			factor = @ascension_path_mindwardens_present
-			any_country = {
-				has_origin = origin_mindwardens
-			}
-		}
-	}
-}
 # Synthetic Ascension (regular empires)
 ap_synthetic_evolution = {
 	on_enabled = {
@@ -450,6 +407,20 @@ ap_mind_over_matter = {
 			}
 		}
 		custom_tooltip = {
+			fail_text = "requires_not_ap_engineered_evolution"
+			NAND = {
+				has_ascension_perk = ap_engineered_evolution
+				is_gestalt = yes
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_the_flesh_is_weak"
+			NAND = {
+				has_ascension_perk = ap_the_flesh_is_weak
+				is_gestalt = yes
+			}	
+		}
+		custom_tooltip = {
 			fail_text = "requires_not_ap_synthetic_evolution"
 			NOT = { has_ascension_perk = ap_synthetic_evolution }
 		}
@@ -510,7 +481,6 @@ ap_mind_over_matter = {
 			has_origin = origin_shroudwalker_apprentice
 			has_origin = origin_cybernetic_creed
 			has_origin = origin_synthetic_fertility
-			has_origin = origin_evolutionary_predators
 			has_origin = origin_wilderness
 			has_valid_civic = civic_augmentation_bazaars
 			has_origin = origin_mindwardens

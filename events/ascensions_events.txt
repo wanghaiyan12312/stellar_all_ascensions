@@ -91,7 +91,12 @@ country_event = {
 
 
 	option = {
-		trigger = { has_tradition = tr_cloning_finish }
+		trigger = {
+			AND = {
+				NOT = { has_origin = origin_evolutionary_predators }
+				has_tradition = tr_cloning_finish
+			}
+		}
 		name = ascensions.2.cloning
 		aap_remove_government_flags = yes
 		hidden_effect = {
@@ -100,7 +105,12 @@ country_event = {
 	}
 
 	option = {
-		trigger = { has_tradition = tr_mutation_finish }
+		trigger = {
+			AND = {
+				NOT = { has_origin = origin_clone_army }
+				has_tradition = tr_mutation_finish
+			}
+		}
 		name = ascensions.2.mutation
 		aap_remove_government_flags = yes
 		hidden_effect = {
@@ -109,7 +119,13 @@ country_event = {
 	}
 
 	option = {
-		trigger =  { has_tradition = tr_purity_finish }
+		trigger = {
+			AND = {
+				NOT = { has_origin = origin_evolutionary_predators }
+				NOT = { has_origin = origin_clone_army }
+				has_tradition = tr_purity_finish
+			}
+		}
 		name = ascensions.2.purity
 		aap_remove_government_flags = yes
 		hidden_effect = {
@@ -407,6 +423,7 @@ leader_event = {
 					leader.species = {
 						has_trait = trait_psionic
 					}
+					has_any_chosen_one_leader_trait = no
 				}
 				add_trait = {
 					trait = leader_trait_psionic
@@ -630,5 +647,1645 @@ planet_event = {
 
 		set_update_modifiers_batch = end			# Unfreeze modifier calculation for performance
 		clear_assimilation_variables = yes			# Clears variables
+	}
+}
+
+situation_event = {
+	id = ascensions.3001
+	title = bio.1005.name
+	desc = bio.1005.desc
+	picture = GFX_evt_evolutionary_predators
+	show_sound = event_dangerous_animals
+	situation = this
+
+	is_triggered_only = yes
+
+	immediate = {
+		owner = {
+			set_evopred_flags = yes
+			while = {
+				count = 3
+				generate_evolutionary_predator_choices = yes
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = pop_growth_evopred } }
+		name = bio.1005.pop_growth
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				add_random_trait_evopred = { TAG = pop_growth }
+				country_event = {
+					id = timeline.90
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = pop_output_evopred } }
+		name = bio.1005.pop_output
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				add_random_trait_evopred = { TAG = pop_output }
+				country_event = {
+					id = timeline.90
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = leader_evopred } }
+		name = bio.1005.leader
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				add_random_trait_evopred = { TAG = leader }
+				country_event = {
+					id = timeline.90
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = habitability_evopred } }
+		name = bio.1005.habitability
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				add_random_trait_evopred = { TAG = habitability }
+				country_event = {
+					id = timeline.90
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = upkeep_evopred } }
+		name = bio.1005.upkeep
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				add_random_trait_evopred = { TAG = upkeep }
+				country_event = {
+					id = timeline.90
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = humanoid_evopred } }
+		name = bio.1005.humanoid
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				add_random_trait_evopred = { TAG = humanoid SPECIES = yes }
+				country_event = {
+					id = timeline.90
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = mammalian_evopred } }
+		name = bio.1005.mammalian
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				add_random_trait_evopred = { TAG = mammalian SPECIES = yes }
+				country_event = {
+					id = timeline.90
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = reptilian_evopred } }
+		name = bio.1005.reptilian
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				add_random_trait_evopred = { TAG = reptilian SPECIES = yes }
+				country_event = {
+					id = timeline.90
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = avian_evopred } }
+		name = bio.1005.avian
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				add_random_trait_evopred = { TAG = avian SPECIES = yes }
+				country_event = {
+					id = timeline.90
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = arthropoid_evopred } }
+		name = bio.1005.arthropoid
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				add_random_trait_evopred = { TAG = arthropoid SPECIES = yes }
+				country_event = {
+					id = timeline.90
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = molluscoid_evopred } }
+		name = bio.1005.molluscoid
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				add_random_trait_evopred = { TAG = molluscoid SPECIES = yes }
+				country_event = {
+					id = timeline.90
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = fungoid_evopred } }
+		name = bio.1005.fungoid
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				add_random_trait_evopred = { TAG = fungoid SPECIES = yes }
+				country_event = {
+					id = timeline.90
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = plantoid_evopred } }
+		name = bio.1005.plantoid
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				add_random_trait_evopred = { TAG = plantoid SPECIES = yes }
+				country_event = {
+					id = timeline.90
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = lithoid_evopred } }
+		name = bio.1005.lithoid
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				add_random_trait_evopred = { TAG = lithoid SPECIES = yes }
+				country_event = {
+					id = timeline.90
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = necroid_evopred } }
+		name = bio.1005.necroid
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				add_random_trait_evopred = { TAG = necroid SPECIES = yes }
+				country_event = {
+					id = timeline.90
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = aquatic_evopred } }
+		name = bio.1005.aquatic
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				add_random_trait_evopred = { TAG = aquatic SPECIES = yes }
+				country_event = {
+					id = timeline.90
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = toxoid_evopred } }
+		name = bio.1005.toxoid
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				add_random_trait_evopred = { TAG = toxoid SPECIES = yes }
+				country_event = {
+					id = timeline.90
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = infernal_evopred } }
+		name = bio.1005.infernal
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				add_random_trait_evopred = { TAG = infernal SPECIES = yes }
+				country_event = { 
+					id = timeline.90
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = plasmic_evopred } }
+		name = bio.1005.plasmic
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				modify_species = {
+					species = species
+					add_trait = trait_plasmic
+					effect = { save_event_target_as = target_species }
+				}
+				set_country_flag = gained_plasmic_trait
+				create_message = {
+					type = PLASMIC_TRAIT_ADDED
+					localization = MESSAGE_PLASMIC_TRAIT_ADDED
+					days = 30
+					variable = {
+						type = name
+						localization = SPECIES
+						scope = species
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = psionic_evopred } }
+		name = bio.1005.psionic
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				add_random_trait_evopred = { TAG = psionic SPECIES = yes }
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = cybernetic_mod_evo_pred } }
+		name = bio.1005.cybernetic
+		custom_tooltip = bio.1005.tt
+		
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				add_random_trait_cybernetic_evopred = yes
+			}
+		}
+
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = overtuned_mod_evo_pred } }
+		name = bio.1005.overtuned
+		custom_tooltip = bio.1005.tt
+		
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				random_list = {
+					0 = {
+						modifier = {
+							add = 10
+							NOT = { has_country_flag = gained_auto_mod_overtuned_trait_mod }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_auto_mod_overtuned
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_auto_mod_overtuned_trait_mod
+						create_message = {
+							type = OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = TRAIT
+								scope = prev
+							}
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							add = 10
+							NOT = { has_country_flag = gained_spliced_adaptability_trait_mod }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_spliced_adaptability
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_spliced_adaptability_trait_mod
+						create_message = {
+							type = OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = TRAIT
+								scope = prev
+							}
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							add = 10
+							NOT = { has_country_flag = gained_juiced_power_trait_mod }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_juiced_power
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_juiced_power_trait_mod
+						create_message = {
+							type = OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = TRAIT
+								scope = prev
+							}
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							add = 10
+							NOT = { has_country_flag = gained_farm_hands_trait_mod }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_farm_hands
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_farm_hands_trait_mod
+						create_message = {
+							type = OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = TRAIT
+								scope = prev
+							}
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							add = 10
+							NOT = { has_country_flag = gained_crack_miner_trait_mod }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_crack_miner
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_crack_miner_trait_mod
+						create_message = {
+							type = OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = TRAIT
+								scope = prev
+							}
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							add = 10
+							NOT = { has_country_flag = gained_technical_skill_trait_mod }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_technical_skill
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_technical_skill_trait_mod
+						create_message = {
+							type = OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = TRAIT
+								scope = prev
+							}
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							add = 10
+							NOT = { has_country_flag = gained_commercial_genius_trait_mod }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_commercial_genius
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_commercial_genius_trait_mod
+						create_message = {
+							type = OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = TRAIT
+								scope = prev
+							}
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							add = 10
+							NOT = { has_country_flag = gained_crafted_smiles_trait_mod }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_crafted_smiles
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_crafted_smiles_trait_mod
+						create_message = {
+							type = OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = TRAIT
+								scope = prev
+							}
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							add = 10
+							NOT = { has_country_flag = gained_low_maintenance_trait_mod }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_low_maintenance
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_low_maintenance_trait_mod
+						create_message = {
+							type = OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = TRAIT
+								scope = prev
+							}
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							add = 10
+							NOT = { has_country_flag = gained_artificial_intelligence_trait_mod }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_artificial_intelligence
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_artificial_intelligence_trait_mod
+						create_message = {
+							type = OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = TRAIT
+								scope = prev
+							}
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							add = 10
+							NOT = { has_country_flag = gained_gene_mentorship_trait_mod }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_gene_mentorship
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_gene_mentorship_trait_mod
+						create_message = {
+							type = OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = TRAIT
+								scope = prev
+							}
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							add = 10
+							NOT = { has_country_flag = gained_expressed_tradition_trait_mod }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_expressed_tradition
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_expressed_tradition_trait_mod
+						create_message = {
+							type = OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = TRAIT
+								scope = prev
+							}
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							add = 10
+							NOT = { has_country_flag = gained_elevated_synapses_trait_mod }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_elevated_synapses
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_elevated_synapses_trait_mod
+						create_message = {
+							type = OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = TRAIT
+								scope = prev
+							}
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							add = 10
+							NOT = { has_country_flag = gained_preplanned_growth_trait_mod }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_preplanned_growth
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_preplanned_growth_trait_mod
+						create_message = {
+							type = OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = TRAIT
+								scope = prev
+							}
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							add = 10
+							NOT = { has_country_flag = gained_excessive_endurance_trait_mod }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_excessive_endurance
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_excessive_endurance_trait_mod
+						create_message = {
+							type = OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = TRAIT
+								scope = prev
+							}
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+				}
+			}
+		}			
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = leviathan_evo_pred } }
+		name = bio.1005.leviathan
+		custom_tooltip = bio.1005.tt
+
+		icon = {
+			icon = GFX_tradition_category_icon_tradition_mutation
+			text = has_tr_mutation_nucleotide_isolation_evo_pred_tt
+		}
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				random_list = {
+					0 = {
+						modifier = {
+							add = 10
+							OR = {
+								has_country_flag = harvested_dragon_dna
+								AND = {
+									has_ascension_perk = ap_cosmogenesis
+									has_crisis_level = crisis_cosmogenesis_level_5 
+								}
+							}
+							NOT = { has_country_flag = gained_dragon_trait }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_drake_scaled
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_dragon_trait
+						create_message = {
+							type = LEVIATHAN_TRAIT_ADDED
+							localization = MESSAGE_DRAGON_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							add = 10
+							OR = {
+								has_country_flag = harvested_voidspawn_dna
+								AND = {
+									has_ascension_perk = ap_cosmogenesis
+									has_crisis_level = crisis_cosmogenesis_level_5 
+								}
+							}
+							NOT = { has_country_flag = gained_voidspawn_trait }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_voidling
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_voidspawn_trait
+						create_message = {
+							type = LEVIATHAN_TRAIT_ADDED
+							localization = MESSAGE_VOIDSPAWN_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							add = 10
+							OR = {
+								has_country_flag = harvested_tiyanki_dna
+								AND = {
+									has_ascension_perk = ap_cosmogenesis
+									has_crisis_level = crisis_cosmogenesis_level_5 
+								}
+							}							
+							NOT = { has_country_flag = gained_tiyanki_trait }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_tiyanki
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_tiyanki_trait
+						create_message = {
+							type = LEVIATHAN_TRAIT_ADDED
+							localization = MESSAGE_TIYANKI_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = { owner = { has_country_flag = leviathan_cybernetic_mod_evo_pred } }
+		name = bio.1005.cybernetic.leviathan
+		custom_tooltip = bio.1005.tt
+
+		icon = {
+			icon = GFX_tradition_category_icon_tradition_mutation
+			text = has_tr_mutation_nucleotide_isolation_evo_pred_tt
+		}
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				random_list = {
+					0 = {
+						modifier = {
+							add = 10
+							OR = {
+								has_country_flag = harvested_fortress_parts
+								AND = {
+									has_ascension_perk = ap_cosmogenesis
+									has_crisis_level = crisis_cosmogenesis_level_5 
+								}
+							}
+							NOT = { has_country_flag = gained_fortress_trait_mod }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_cyborg_enigmatic_fortress
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_fortress_trait_mod
+						create_message = {
+							type = LEVIATHAN_TRAIT_ADDED
+							localization = MESSAGE_FORTRESS_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							add = 10
+							OR = {
+								has_country_flag = harvested_sphere_parts
+								AND = {
+									has_ascension_perk = ap_cosmogenesis
+									has_crisis_level = crisis_cosmogenesis_level_5 
+								}
+							}
+							NOT = { has_country_flag = gained_sphere_trait_mod }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_cyborg_infinity_sphere
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_sphere_trait_mod
+						create_message = {
+							type = LEVIATHAN_TRAIT_ADDED
+							localization = MESSAGE_SPHERE_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							add = 10
+							OR = {
+								has_country_flag = harvested_dreadnought_parts
+								AND = {
+									has_ascension_perk = ap_cosmogenesis
+									has_crisis_level = crisis_cosmogenesis_level_5 
+								}
+							}
+							NOT = { has_country_flag = gained_dreadnought_trait_mod }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_cyborg_ancient_dreadnought
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_dreadnought_trait_mod
+						create_message = {
+							type = LEVIATHAN_TRAIT_ADDED
+							localization = MESSAGE_DREADNOUGHT_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+					0 = {
+						modifier = {
+							add = 10
+							OR = {
+								has_country_flag = harvested_scavenger_parts
+								AND = {
+									has_ascension_perk = ap_cosmogenesis
+									has_crisis_level = crisis_cosmogenesis_level_5 
+								}
+							}
+							NOT = { has_country_flag = gained_scavenger_trait_mod }
+						}
+						modify_species = {
+							species = species
+							add_trait = trait_cyborg_scavenger_bot
+							effect = { save_event_target_as = target_species }
+						}
+						set_country_flag = gained_scavenger_trait_mod
+						create_message = {
+							type = LEVIATHAN_TRAIT_ADDED
+							localization = MESSAGE_SCAVENGER_TRAIT_ADDED
+							days = 30
+							variable = {
+								type = name
+								localization = SPECIES
+								scope = species
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			owner = {
+				species = {
+					any_trait_available_for_species = {
+						trait_has_all_tags = { organic positive }
+						NOT = { trait_has_any_tag = { special species cybernetic presapient drawbacks leviathan } }
+						OR = {
+							NOT = { trait_has_any_tag = { genetic_ascension } }
+							root.owner = { has_tradition = tr_genetics_resequencing }
+						}
+						OR = {
+							NOT = { trait_has_any_tag = { individual } }
+							root.owner = { is_gestalt = no }
+						}
+					}
+				}
+			}
+		}
+		name = bio.1005.random
+		custom_tooltip = bio.1005.tt
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				modify_species = {
+					species = species
+					add_random_species_trait = {
+						trait_has_all_tags = { organic positive }
+						NOT = { trait_has_any_tag = { special species cybernetic presapient drawbacks leviathan } }
+						OR = {
+							NOT = { trait_has_any_tag = { genetic_ascension } }
+							root = {
+								owner_can_do_advanced_gene_modding = yes
+							}
+						}
+						OR = {
+							NOT = { trait_has_any_tag = { individual } }
+							root.owner = { is_gestalt = no }
+						}
+					}
+					effect = { save_event_target_as = target_species }
+					on_random_trait_added = { # Trait is the current scope, species is From, prev is owner
+						prev = {
+							create_message = {
+								type = RANDOM_TRAIT_ADDED
+								localization = MESSAGE_RANDOM_TRAIT_ADDED
+								days = 30
+								variable = {
+									type = name
+									localization = TRAIT
+									scope = prev
+								}
+								variable = {
+									type = name
+									localization = SPECIES
+									scope = species
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			owner = {
+				has_active_tradition = tr_mutation_unnatural_selection_evo_pred
+				species = {
+					any_trait_available_for_species = {
+						trait_has_all_tags = { organic positive species }
+						NOT = { trait_has_any_tag = { special cybernetic presapient drawbacks leviathan } }
+						OR = {
+							NOT = { trait_has_any_tag = { genetic_ascension } }
+							root.owner = { has_tradition = tr_genetics_resequencing }
+						}
+						OR = {
+							NOT = { trait_has_any_tag = { individual } }
+							root.owner = { is_gestalt = no }
+						}
+					}
+				}
+			}
+		}
+		name = bio.1005.unnatural_selection
+		custom_tooltip = bio.1005.tt
+		icon = {
+			icon = GFX_tradition_category_icon_tradition_mutation
+			text = has_tr_mutation_unnatural_selection_evo_pred_tt
+		}
+
+		owner = {
+			if = {
+				limit = {
+					has_active_tradition = tr_mutation_adopt_evo_pred
+				}
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier3researchreward
+					min = @tier3researchmin
+					max = @tier3researchmax
+				}
+			}
+		}
+
+		hidden_effect = {
+			owner = {
+				modify_species = {
+					species = species
+					add_random_species_trait = {
+						trait_has_all_tags = { organic positive species }
+						NOT = { trait_has_any_tag = { special cybernetic presapient drawbacks } }
+						OR = {
+							NOT = { trait_has_any_tag = { genetic_ascension } }
+							root = {
+								owner_can_do_advanced_gene_modding = yes
+							}
+						}
+						OR = {
+							NOT = { trait_has_any_tag = { individual } }
+							root.owner = { is_gestalt = no }
+						}
+					}
+					effect = { save_event_target_as = target_species }
+					on_random_trait_added = { # Trait is the current scope, species is From, prev is owner
+						prev = {
+							create_message = {
+								type = RANDOM_TRAIT_ADDED
+								localization = MESSAGE_RANDOM_TRAIT_ADDED
+								days = 30
+								variable = {
+									type = name
+									localization = TRAIT
+									scope = prev
+								}
+								variable = {
+									type = name
+									localization = SPECIES
+									scope = species
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = bio.1005.no_reward
+		hidden_effect = {
+			set_situation_flag = no_choice_evopred
+		}
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier4researchreward
+				min = @tier4researchmin
+				max = @tier4researchmax
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { has_situation_flag = no_choice_evopred }
+				}
+				owner = {
+					change_dominant_species = { species = event_target:target_species change_all = yes }
+					unify_evopred_species = yes
+					every_controlled_ship = {
+						limit = {
+							is_ship_class = shipclass_colonizer
+							species = {
+								is_same_species = prev.species
+							}
+						}
+						change_species = event_target:target_species
+					}
+					every_pool_leader = {
+						limit = {
+							is_same_species = prev.species
+						}
+						change_species = event_target:target_species
+					}
+					update_node_portraits_if_gestalt_effect = yes
+				}
+			}
+			owner = {
+				remove_country_flag = toxoid_evopred
+				remove_country_flag = infernal_evopred
+				remove_country_flag = aquatic_evopred
+				remove_country_flag = necroid_evopred
+				remove_country_flag = lithoid_evopred
+				remove_country_flag = plantoid_evopred
+				remove_country_flag = fungoid_evopred
+				remove_country_flag = molluscoid_evopred
+				remove_country_flag = arthropoid_evopred
+				remove_country_flag = avian_evopred
+				remove_country_flag = reptilian_evopred
+				remove_country_flag = mammalian_evopred
+				remove_country_flag = humanoid_evopred
+				remove_country_flag = upkeep_evopred
+				remove_country_flag = habitability_evopred
+				remove_country_flag = leader_evopred
+				remove_country_flag = pop_output_evopred
+				remove_country_flag = pop_growth_evopred
+				remove_country_flag = plasmic_evopred
+				remove_country_flag = psionic_evopred
+				remove_country_flag = leviathan_evo_pred
+				## mod
+				remove_country_flag = cybernetic_mod_evo_pred
+				remove_country_flag = leviathan_cybernetic_mod_evo_pred
+				remove_country_flag = overtuned_mod_evo_pred
+				## mod cosmogenesis enhance
+				if = {
+					limit = {
+						has_ascension_perk = ap_cosmogenesis
+						has_crisis_level = crisis_cosmogenesis_level_5
+						check_variable_arithmetic = { which = num_evopred_situations_ran value > 5 }
+					}
+					set_variable = {
+						which = num_evopred_situations_ran
+						value = 5
+					}
+				}else_if ={
+					limit = {
+						has_ascension_perk = ap_cosmogenesis
+						has_crisis_level = crisis_cosmogenesis_level_4
+						check_variable_arithmetic = { which = num_evopred_situations_ran value > 6 }
+					}
+					set_variable = {
+						which = num_evopred_situations_ran
+						value = 6
+					}
+				}else_if ={
+					limit = {
+						has_ascension_perk = ap_cosmogenesis
+						has_crisis_level = crisis_cosmogenesis_level_3
+						check_variable_arithmetic = { which = num_evopred_situations_ran value > 8 }
+					}
+					set_variable = {
+						which = num_evopred_situations_ran
+						value = 8
+					}
+				}else_if ={
+					limit = {
+						has_ascension_perk = ap_cosmogenesis
+						check_variable_arithmetic = { which = num_evopred_situations_ran value > 10 }
+					}
+					set_variable = {
+						which = num_evopred_situations_ran
+						value = 10
+					}
+				}else = {
+					change_variable = {
+						which = num_evopred_situations_ran
+						value = 1
+					}
+				}
+				start_situation = {
+					type = evolutionary_predators_situation
+					target = this
+				}
+				if = {
+					limit = {
+						is_mutation_authority = yes
+					}
+					species = { set_species_traits_evopred_count_variable = yes }
+				}
+				every_owned_leader = {
+					limit = {
+						is_exact_same_species = owner.species
+					}
+					update_leader_after_modification = yes
+				}
+				every_pool_leader = {
+					limit = {
+						is_exact_same_species = owner.species
+					}
+					update_leader_after_modification = yes
+				}
+			}
+			destroy_situation = this
+		}
 	}
 }

@@ -113,5 +113,131 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/agenda_icons/agenda_synthetic_evolution.dds"
 	}
 
+    spriteType = {
+		name = "GFX_tech_icon_repeatable_weapon_type_energy_fire_rate"
+		texturefile = "gfx/interface/icons/technologies/tech_repeatable_weapon_type_energy_fire_rate.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_icon_repeatable_weapon_type_energy_damage"
+		texturefile = "gfx/interface/icons/technologies/tech_repeatable_weapon_type_energy_damage.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_icon_repeatable_improved_tile_energy_output"
+		texturefile = "gfx/interface/icons/technologies/tech_repeatable_improved_tile_energy_output.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_icon_repeatable_improved_shield_output"
+		texturefile = "gfx/interface/icons/technologies/tech_repeatable_improved_shield_output.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_icon_physics_research"
+		texturefile = "gfx/interface/icons/resources/physics_research.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_icon_repeatable_weapon_type_strike_craft_fire_rate"
+		texturefile = "gfx/interface/icons/technologies/tech_repeatable_weapon_type_strike_craft_fire_rate.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_icon_repeatable_weapon_type_strike_craft_fire_damage"
+		texturefile = "gfx/interface/icons/technologies/tech_repeatable_weapon_type_strike_craft_fire_damage.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_icon_repeatable_improved_army_health"
+		texturefile = "gfx/interface/icons/technologies/tech_repeatable_improved_army_health.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_icon_repeatable_improved_army_damage"
+		texturefile = "gfx/interface/icons/technologies/tech_repeatable_improved_army_damage.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_icon_repeatable_improved_tile_food_output"
+		texturefile = "gfx/interface/icons/technologies/tech_repeatable_improved_tile_food_output.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_icon_repeatable_improved_core_system_cap"
+		texturefile = "gfx/interface/icons/technologies/tech_repeatable_improved_core_system_cap.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_icon_repeatable_improved_leader_life_span"
+		texturefile = "gfx/interface/icons/technologies/tech_repeatable_improved_leader_life_span.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_icon_repeatable_psionic_shield"
+		texturefile = "gfx/interface/icons/technologies/tech_psionic_shield.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tech_icon_society_research"
+		texturefile = "gfx/interface/icons/resources/society_research.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_icon_repeatable_weapon_type_kinetic_fire_rate"
+		texturefile = "gfx/interface/icons/technologies/tech_repeatable_weapon_type_kinetic_fire_rate.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_icon_repeatable_weapon_type_kinetic_damage"
+		texturefile = "gfx/interface/icons/technologies/tech_repeatable_weapon_type_kinetic_damage.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_icon_repeatable_weapon_type_explosive_fire_rate"
+		texturefile = "gfx/interface/icons/technologies/tech_repeatable_weapon_type_explosive_fire_rate.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_icon_repeatable_weapon_type_explosive_damage"
+		texturefile = "gfx/interface/icons/technologies/tech_repeatable_weapon_type_explosive_damage.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_icon_repeatable_improved_military_station_health"
+		texturefile = "gfx/interface/icons/technologies/tech_repeatable_improved_military_station_health.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_icon_repeatable_improved_military_station_damage"
+		texturefile = "gfx/interface/icons/technologies/tech_repeatable_improved_military_station_damage.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_icon_repeatable_improved_tile_mineral_output"
+		texturefile = "gfx/interface/icons/technologies/tech_repeatable_improved_tile_mineral_output.dds"
+	}
+	
+
+	spriteType = {
+		name = "GFX_tech_icon_repeatable_improved_armor_output"
+		texturefile = "gfx/interface/icons/technologies/tech_repeatable_improved_armor_output.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tech_icon_repeatable_improved_armor_output"
+		texturefile = "gfx/interface/icons/technologies/tech_repeatable_improved_armor_output.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_tech_icon_dragon_armor"
+		texturefile = "gfx/interface/icons/technologies/tech_dragon_armor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_icon_engineering_research"
+		texturefile = "gfx/interface/icons/resources/engineering_research.dds"
+	}
+	
 }
 

@@ -1,0 +1,195 @@
+# Extradimensional Large Ship
+large_ship_ed_mod = {
+	formation_priority = @battleship_formation_priority
+	entity = "extra_dimensional_01_large_ship_ed_entity"
+	max_speed = @speed_slow
+	acceleration = 0.2
+	rotation_speed = 0.15
+	collision_radius = @battleship_collision_radius
+	modifier = {
+		ship_evasion_add = 15
+	}
+	max_hitpoints = @battleship_hp
+	size_multiplier = 40
+	map_counter_icon = ship_counter_32
+	icon = ship_size_military_8
+	fleet_slot_size = 8
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 0
+	is_space_station = no
+
+	base_buildtime = @battleship_build_time
+	can_have_federation_design = no
+	enable_default_design = yes
+	enable_3dview_in_ship_browser = yes
+
+	class = shipclass_military
+	is_designable = yes
+	
+	use_shipnames_from = battleship
+	default_behavior = artillery
+
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	available_to_everyone = yes
+
+	potential_country = {
+		has_crisis_level = crisis_cosmogenesis_level_4
+		country_uses_bio_ships = no
+	}
+
+	ship_roles = { gunship artillery }
+
+	components_add_to_cost = no
+	resources = {
+		category = ships
+		cost = {
+			advanced_logic = 10
+			astral_threads = 1200
+		}
+		upkeep = {
+			astral_threads = @battleship_upkeep_energy
+		}
+		logistics = {
+			trade = @battleship_logistic_upkeep_trade 
+		}
+	}
+	ai_ship_data = {
+		min = 0
+		max = 0
+	}
+}
+
+# Extradimensional Medium Ship
+medium_ship_ed_mod  = {
+	formation_priority = @cruiser_formation_priority
+	entity = "extra_dimensional_01_medium_ship_ed_entity"
+	max_speed = @speed_default
+	acceleration = 0.25
+	rotation_speed = 0.175
+	collision_radius = @cruiser_collision_radius
+	modifier = {
+		ship_evasion_add = 25
+	}
+	max_hitpoints = @cruiser_hp
+	size_multiplier = 20
+	map_counter_icon = ship_counter_16
+	icon = ship_size_military_4
+	fleet_slot_size = 4
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 0
+	is_space_station = no
+	base_buildtime = @cruiser_build_time
+	can_have_federation_design = no
+	enable_default_design = yes
+	enable_3dview_in_ship_browser = yes
+
+	default_behavior = line
+	use_shipnames_from = cruiser
+
+	class = shipclass_military
+	is_designable = yes
+
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	components_add_to_cost = no
+	ship_roles = { gunship artillery }
+
+	resources = {
+		category = ships
+		cost = {
+			advanced_logic = 5
+			astral_threads = 600
+		}
+		upkeep = {
+			astral_threads = @cruiser_upkeep_energy
+		}
+		logistics = {
+			trade = @cruiser_logistic_upkeep_trade
+		}
+	}
+
+	available_to_everyone = yes
+
+	potential_country = {
+		has_crisis_level = crisis_cosmogenesis_level_3
+		country_uses_bio_ships = no
+	}
+
+	ai_ship_data = {
+		min = 0
+		max = 0
+	}
+}
+
+# Extradimensional Small Ship
+small_ship_ed_mod  = {
+	formation_priority = @destroyer_formation_priority
+	entity = "extra_dimensional_01_small_ship_ed_entity"
+	max_speed = @speed_fast
+	acceleration = 0.3
+	rotation_speed = 0.2
+	collision_radius = @destroyer_collision_radius
+	modifier = {
+		ship_evasion_add = 20
+	}
+	size_multiplier = 10
+	map_counter_icon = ship_counter_8
+	fleet_slot_size = 2
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 0
+	icon = ship_size_military_2
+	is_space_station = no
+	base_buildtime = @destroyer_build_time
+	can_have_federation_design = no
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+
+	default_behavior = picket
+	use_shipnames_from = destroyer
+
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	available_to_everyone = yes
+
+	potential_country = {
+		has_crisis_level = crisis_cosmogenesis_level_2
+		country_uses_bio_ships = no
+	}
+
+	ship_roles = { gunship brawler }
+
+	components_add_to_cost = no
+	resources = {
+		category = ships
+		cost = {
+			advanced_logic = 1
+			astral_threads = 300
+		}
+		upkeep = {
+			astral_threads = @corvette_upkeep_energy
+		}
+		logistics = {
+			trade = @corvette_logistic_upkeep_trade
+		}
+	}
+	ai_ship_data = {
+		min = 0
+		max = 0
+	}
+}

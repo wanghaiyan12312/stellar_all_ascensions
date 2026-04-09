@@ -190,6 +190,331 @@ create_fallen_empire_fleet_mod = {
 }
 
 
+make_fallen_empire = {
+	set_country_type = fallen_empire
+	set_country_flag = cosmogenesis_fe_empire
+
+	if = {
+		limit = {
+			is_gestalt = no
+		}
+		change_government = {
+			civics = {
+				civic = civic_lethargic_leadership
+				civic = civic_empire_in_decline
+			}
+			remove_invalid_civics = yes
+		}
+	}
+	else_if = {
+		limit = {
+			is_machine_empire = yes
+		}
+		change_government = {
+			civics = {
+				civic = civic_machine_remnants
+				civic = civic_custodian_directives
+			}
+			remove_invalid_civics = yes
+		}
+	}
+	else_if = {
+		limit = {
+			is_hive_empire = yes
+		}
+		change_government = {
+			civics = {
+				civic = civic_antediluvian_mind
+				civic = civic_sluggish_drones
+			}
+			remove_invalid_civics = yes
+		}
+	}
+
+	ruler = {
+		add_skill = 9
+	}
+	if = {
+		limit = {
+			country_uses_bio_ships = no
+		}
+		if = {
+			limit = {
+				is_gestalt = yes
+			}
+			add_global_ship_design = "NAME_Omega"
+			add_global_ship_design = "NAME_Alpha"
+			add_global_ship_design = "NAME_Beta"
+			add_global_ship_design = "NAME_Gamma"
+			add_global_ship_design = "NAME_Theta"
+			add_global_ship_design = "NAME_Tau"
+			add_global_ship_design = "NAME_Sigma"
+			add_global_ship_design = "NAME_FE_MACHINE_Citadel_1"
+			add_global_ship_design = "NAME_FE_MACHINE_Citadel_2"
+			add_global_ship_design = "NAME_FE_MACHINE_Citadel_3"
+			add_global_ship_design = "NAME_FE_Starbase"
+			set_graphical_culture = fallen_machine_empire_01
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_ethic = ethic_fanatic_xenophobe
+					has_ethic = ethic_fanatic_militarist
+				}
+			}
+			add_global_ship_design = "NAME_Reaper"
+			add_global_ship_design = "NAME_Imperium"
+			add_global_ship_design = "NAME_Supremacy"
+			add_global_ship_design = "NAME_Glory"
+			add_global_ship_design = "NAME_Devastator"
+			add_global_ship_design = "NAME_Servitor"
+			add_global_ship_design = "NAME_Destiny"
+			add_global_ship_design = "NAME_FE_Starbase"
+			add_global_ship_design = "NAME_FE_XENOPHOBE_Citadel_0"
+			add_global_ship_design = "NAME_FE_XENOPHOBE_Citadel_1"
+			add_global_ship_design = "NAME_FE_XENOPHOBE_Citadel_2"
+			add_global_ship_design = "NAME_FE_XENOPHOBE_Citadel_3"
+			set_graphical_culture = fallen_empire_04
+		}
+		else_if = {
+			limit = {
+				OR = {
+					is_fanatic_xenophile = yes
+					is_fanatic_pacifist = yes
+				}
+			}
+			add_global_ship_design = "NAME_Adjuster"
+			add_global_ship_design = "NAME_Keeper"
+			add_global_ship_design = "NAME_Custodian"
+			add_global_ship_design = "NAME_Overseer"
+			add_global_ship_design = "NAME_Watcher"
+			add_global_ship_design = "NAME_Seeder"
+			add_global_ship_design = "NAME_Builder"
+			add_global_ship_design = "NAME_FE_Starbase"
+			add_global_ship_design = "NAME_FE_XENOPHILE_Citadel_0"
+			add_global_ship_design = "NAME_FE_XENOPHILE_Citadel_1"
+			add_global_ship_design = "NAME_FE_XENOPHILE_Citadel_2"
+			add_global_ship_design = "NAME_FE_XENOPHILE_Citadel_3"
+			set_graphical_culture = fallen_empire_03
+		}
+		else_if = {
+			limit = {
+				has_ethic = ethic_fanatic_spiritualist
+			}
+			add_global_ship_design = "NAME_Cleanser"
+			add_global_ship_design = "NAME_Eternal"
+			add_global_ship_design = "NAME_Avatar"
+			add_global_ship_design = "NAME_Zealot"
+			add_global_ship_design = "NAME_Penitent"
+			add_global_ship_design = "NAME_Faith"
+			add_global_ship_design = "NAME_Pilgrim"
+			add_global_ship_design = "NAME_FE_Starbase"
+			add_global_ship_design = "NAME_Pilgrim"
+			add_global_ship_design = "NAME_FE_SPIRITUALIST_Citadel_0"
+			add_global_ship_design = "NAME_FE_SPIRITUALIST_Citadel_1"
+			add_global_ship_design = "NAME_FE_SPIRITUALIST_Citadel_2"
+			add_global_ship_design = "NAME_FE_SPIRITUALIST_Citadel_3"
+			set_graphical_culture = fallen_empire_01
+		}
+		else = {
+			add_global_ship_design = "NAME_Enforcer"
+			add_global_ship_design = "NAME_Savant"
+			add_global_ship_design = "NAME_Scholar"
+			add_global_ship_design = "NAME_Sage"
+			add_global_ship_design = "NAME_Cloaker"
+			add_global_ship_design = "NAME_Librarian"
+			add_global_ship_design = "NAME_Seeker"
+			add_global_ship_design = "NAME_FE_Starbase"
+			add_global_ship_design = "NAME_FE_MATERIALIST_Citadel_0"
+			add_global_ship_design = "NAME_FE_MATERIALIST_Citadel_1"
+			add_global_ship_design = "NAME_FE_MATERIALIST_Citadel_2"
+			add_global_ship_design = "NAME_FE_MATERIALIST_Citadel_3"
+			set_graphical_culture = fallen_empire_02
+		}
+	}
+	else = {
+		add_global_ship_design = "NAME_HIVE_FE_Small_Weaver_War"
+		add_global_ship_design = "NAME_HIVE_FE_Small_Weaver_Growth"
+		add_global_ship_design = "NAME_HIVE_FE_Small_Weaver_Control"
+		add_global_ship_design = "NAME_HIVE_FE_Large_Mauler_Swarm"
+		add_global_ship_design = "NAME_HIVE_FE_Large_Mauler_Picket"
+		add_global_ship_design = "NAME_HIVE_FE_Large_Weaver_Control"
+		add_global_ship_design = "NAME_HIVE_FE_Large_Harbinger"
+		add_global_ship_design = "NAME_HIVE_FE_Construction"
+		add_global_ship_design = "NAME_HIVE_FE_Colony"
+		add_global_ship_design = "NAME_HIVE_FE_Colossus"
+		add_global_ship_design = "NAME_HIVE_FE_Platform"
+		add_global_ship_design = "NAME_HIVE_FE_Starbase"
+		add_global_ship_design = "NAME_HIVE_Citadel_0"
+		add_global_ship_design = "NAME_HIVE_Citadel_1"
+		add_global_ship_design = "NAME_HIVE_Citadel_2"
+		add_global_ship_design = "NAME_HIVE_Citadel_3"
+		set_graphical_culture = "biogenesis_01_fallen_empire"
+	}
+
+	create_fallen_empire_cosmogenesis_navy = yes
+
+	add_modifier = {
+		modifier = fe_ship_cost_modifier
+		days = -1
+	}
+	every_system = {
+		limit = {
+			exists = owner
+			owner = {
+				is_same_value = root
+			}
+			OR = {
+				NOT = { exists = sector }
+				sector = { has_sector_type = normal_sector }
+			}
+		}
+		every_fleet_in_system = {
+			limit = {
+				is_mobile = no
+			}
+			destroy_fleet = this
+		}
+	}
+
+	random_owned_planet = {
+		limit = {
+			is_capital = yes
+		}
+
+		create_fallen_empire_planet = yes
+
+		while = {
+			count = 50
+			random_list = {
+				1 = {
+					modifier = {
+						add = 8
+						is_planet_class = pc_habitat
+					}
+					modifier = {
+						add = 4
+						is_planet_class = pc_hive
+					}
+					modifier = {
+						add = 4
+						is_planet_class = pc_machine
+					}
+				}
+				9 = {
+					create_pop_group = {
+						species = root.species
+					}
+				}
+			}
+		}
+	}
+
+	every_planet_within_border = {
+		limit = {
+			exists = owner
+			is_planet_class = pc_cosmogenesis_world
+		}
+		destroy_colony = yes
+
+		solar_system = {
+			spawn_megastructure = {
+				type = cosmogenesis_world_ruined
+				coords_from = PREV
+			}
+			random_system_planet = {
+				limit = {
+					has_planet_flag = has_cosmogenesis_world
+				}
+				remove_planet_flag = has_cosmogenesis_world
+				remove_planet_flag = has_megastructure
+			}
+		}
+
+		remove_planet = yes
+	}
+
+	every_planet_within_border = {
+		limit = {
+			exists = sector
+			sector = { has_sector_type = core_sector }
+
+			is_colonizable = yes
+		}
+
+		create_colony = {
+			owner = root
+			species = root.species
+		}
+
+		create_fallen_empire_planet = yes
+	}
+
+	every_system = {
+		limit = {
+			exists = owner
+			owner =  {
+				is_same_value = root
+			}
+			exists = starbase
+		}
+		starbase = {
+			set_starbase_size = starbase_citadel_II
+			set_starbase_module = { slot = 1 module = shipyard }
+			set_starbase_module = { slot = 2 module = shipyard }
+			set_starbase_module = { slot = 3 module = archaeo_rampart }
+			set_starbase_module = { slot = 4 module = archaeo_rampart }
+			set_starbase_module = { slot = 5 module = archaeo_rampart }
+			set_starbase_module = { slot = 6 module = archaeo_rampart }
+			set_starbase_module = { slot = 7 module = archaeo_rampart }
+			set_starbase_module = { slot = 8 module = archaeo_rampart }
+			set_starbase_module = { slot = 9 module = archaeo_rampart }
+			set_starbase_module = { slot = 10 module = archaeo_rampart }
+			set_starbase_module = { slot = 11 module = archaeo_rampart }
+			set_starbase_module = { slot = 12 module = archaeo_rampart }
+
+
+			while = {
+				count = 20
+				create_fallen_empire_platform = yes
+			}
+		}
+	}
+}
+
+create_fe_citadel = {
+	create_starbase = {
+		size = "starbase_citadel_II"
+
+		module = "shipyard"
+		module = "shipyard"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+
+		building = "archaeo_overcharger"
+		building = "communications_jammer"
+		building = "target_uplink_computer"
+		building = "defense_grid"
+		building = "colossus_yards"
+		building = "titan_yards"
+
+		effect = {
+			while = {
+				count = 20
+				create_fallen_empire_platform = yes
+			}
+		}
+	}
+}
+
 create_fe_home_citadel = {
 	spawn_megastructure = {
 		type = "mega_shipyard_ruined"
@@ -209,15 +534,23 @@ create_fe_home_citadel = {
 		}
 	}
 	create_starbase = {
-		size = "starbase_citadel"
+		size = "starbase_citadel_II"
 
 		module = "shipyard"
 		module = "shipyard"
-		module = "shipyard"
-		module = "hangar_bay"
-		module = "gun_battery"
-		module = "gun_battery"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
 
+		building = "archaeo_overcharger"
+		building = "communications_jammer"
 		building = "target_uplink_computer"
 		building = "defense_grid"
 		building = "colossus_yards"
@@ -225,7 +558,7 @@ create_fe_home_citadel = {
 
 		effect = {
 			while = {
-				count = 10
+				count = 20
 				create_fallen_empire_platform = yes
 			}
 		}
@@ -253,26 +586,63 @@ create_hive_fe_citadel = {
 		}
 	}
 	create_starbase = {
-		size = "starbase_citadel"
+		size = "starbase_citadel_II"
 		owner = event_target:fallen_empire_hive_$FRAGMENT$
 
 		module = "shipyard"
-		module = "anchorage"
-		module = "anchorage"
-		module = "hangar_bay"
-		module = "gun_battery"
-		module = "gun_battery"
+		module = "shipyard"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
+		module = "archaeo_rampart"
 
+		building = "archaeo_overcharger"
 		building = "growth_chamber"
 		building = "command_center"
 		building = "target_uplink_computer"
 		building = "dark_matter_listening_post"
+		building = "communications_jammer"
 
 		effect = {
 			while = {
-				count = 4
+				count = 8
 				create_fallen_empire_platform = yes
 			}
 		}
 	}
+}
+
+add_cosmogenesis_level_4_perks = {
+
+	add_research_option = tech_cosmogenesis_crisis_4
+	add_research_option = tech_energy_lance_2
+	add_research_option = tech_dragon_armor
+	## mod
+	add_research_option = tech_crystal_armor_2
+	if = {
+		limit = {
+			country_uses_bio_ships = no
+		}
+		add_research_option = tech_cosmogenesis_FE_titan
+	}
+	else = {
+		add_research_option = tech_cosmogenesis_stinger
+	}
+	add_research_option = tech_cosmogenesis_thesis
+}
+
+add_cosmogenesis_level_5_perks = {
+
+	add_research_option = tech_cosmogenesis_crisis_5
+	add_research_option = tech_nanite_repair_system
+	add_research_option = tech_nanite_flak_batteries
+	add_research_option = tech_nanite_autocannon
+	## mod
+ 	add_research_option = tech_starbase_6
 }

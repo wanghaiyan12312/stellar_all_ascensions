@@ -2,6 +2,16 @@
 # Scripted Triggers - BioGenesis #
 ##################################
 
+aap_is_advanced_government_mod = {
+	has_country_flag = cyber_individualist
+	has_country_flag = cyber_collectivist
+	has_country_flag = bio_cloning
+	has_country_flag = bio_mutation
+	has_country_flag = bio_purity
+	has_country_flag = transcendent_government
+	has_country_flag = corporeal_government
+}
+
 has_genetic_traditon_tree_adoped_mod ={
 	OR ={
 		has_tradition = tr_cloning_adopt
@@ -81,4 +91,63 @@ is_mod_fe_can_federation = {
 	}
 	is_country_type = awakened_fallen_empire
 	is_machine_empire = no
+}
+
+can_harvest_dna = {
+	# Genetic ascension requires Utopia or BioGenesis
+	OR = {
+		has_utopia = yes
+		has_biogenesis_dlc = yes
+	}
+	# Only regular empires and hive-minds can genetically ascend.
+	is_machine_empire = no
+}
+
+can_harvest_parts = {
+	has_machine_age_dlc = yes
+	OR = {
+		has_technology = tech_neuro_quantum_links
+		has_technology = tech_synthetic_workers
+		has_technology = tech_binary_motivators
+	}
+	# Only machine empires and cyborgs can use mechanical leviathan parts.
+	OR = {
+		has_active_tradition = tr_cybernetics_integrated_anatomy
+		has_active_tradition = tr_cybernetics_assimilator_integrated_anatomy
+		is_synthetic_empire = yes
+	}
+}
+
+#this = species, from = country
+can_add_overtuned_traits = {
+	hidden_trigger = { exists = from }
+	from = {
+		OR = {
+			has_origin = origin_overtuned 
+			has_crisis_level = crisis_cosmogenesis_level_5
+		} 
+	}
+}
+
+#this = species, from = country
+can_remove_overtuned_traits = {
+	hidden_trigger = { exists = from }
+	from = {
+		OR = {
+			has_origin = origin_overtuned
+			has_crisis_level = crisis_cosmogenesis_level_5
+			if = {
+				limit = {
+					OR = {
+						has_biogenesis_dlc = no
+						has_tradition = tr_genetics_adopt
+					}
+				}
+				has_tradition = tr_genetics_resequencing
+			}
+			else = {
+				has_tradition = tr_purity_genotype_regeneration
+			}
+		}
+	}
 }

@@ -6,42 +6,6 @@ roboticist = {
 			condition_string = SPECIALIST_JOB_TRIGGER
 			building_icon = building_robot_assembly_plant
 		}
-		swap_type = {
-			trigger = {
-				roboticist_is_bath_attendant_individual_machine = yes
-			}
-			name = bath_attendant_individual_machine
-			desc = bath_attendant_individual_machine
-			icon = bath_attendant_individual_machine
-			building_icon = building_toxic_bath
-			condition_string = SPECIALIST_JOB_TRIGGER
-			weight = 20
-		}
-		swap_type = {
-			trigger = {
-				roboticist_is_identity_designer = yes
-			}
-			name = identity_designer
-			desc = job_identity_designer_desc
-			icon = identity_designer
-			building_icon = building_identity_complex
-			condition_string = SPECIALIST_JOB_TRIGGER
-			weight = 30
-		}
-		swap_type = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_country_flag = identity_designer_converter
-				}
-			}
-			name = identity_designer
-			desc = job_identity_designer_converter_desc
-			icon = identity_designer
-			building_icon = building_identity_complex
-			condition_string = SPECIALIST_JOB_TRIGGER
-			weight = 35
-		}
 	}
 	tags = { pop_assembly }
 
@@ -68,49 +32,18 @@ roboticist = {
 			}
 			alloys = 1
 		}
-		produces = {
-			trigger = {
-				exists = planet
-				planet = {
-					roboticist_is_identity_designer = yes
-				}
-			}
-			engineering_research = 2
-		}
 		upkeep = {
 			trigger = {
-				exists = planet
-				planet = {
-					roboticist_is_identity_designer = yes
+				owner = {
+					has_active_tradition = tr_cybernetics_metabolic_reprocessing
 				}
 			}
-			alloys = 2
-		}
-		upkeep = {
-			trigger = {
-				exists = planet
-				planet = {
-					roboticist_is_bath_attendant_individual_machine = yes
-				}
-			}
-			alloys = 0.5
+			alloys = 0.35
 		}
 	}
 
 	triggered_planet_modifier = {
-		potential = {
-		}
 		planet_pop_assembly_add = 2
-	}
-
-
-	triggered_planet_modifier = {
-		potential = {
-			roboticist_is_bath_attendant_individual_machine = yes
-		}
-		planet_pop_assembly_mult = 0.015
-		pop_amenities_usage_mult = 0.015
-		mult = planet.value:toxic_attendant_growth
 	}
 
 	triggered_planet_modifier = {
@@ -120,6 +53,9 @@ roboticist = {
 				exists = ruler
 				ruler = {
 					has_trait = leader_trait_legendary_great_inventor
+				}
+				NOT = {
+					has_valid_civic = civic_dystopian_society
 				}
 			}
 		}
@@ -135,6 +71,9 @@ roboticist = {
 				ruler = {
 					has_trait = leader_trait_legendary_great_inventor_2
 				}
+				NOT = {
+					has_valid_civic = civic_dystopian_society
+				}
 			}
 		}
 		planet_amenities_add = 200
@@ -148,6 +87,9 @@ roboticist = {
 				exists = ruler
 				ruler = {
 					has_trait = leader_trait_legendary_great_inventor_3
+				}
+				NOT = {
+					has_valid_civic = civic_dystopian_society
 				}
 			}
 		}
@@ -169,7 +111,84 @@ roboticist = {
 		potential = {
 			exists = owner
 			owner = {
-				has_tradition = tr_modularity_age_high_living_metal_joints
+				has_active_tradition = tr_synthetics_prefabricated_components
+				NOT = {
+					has_valid_civic = civic_dystopian_society
+				}
+			}
+		}
+		planet_amenities_add = 200
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+	triggered_planet_pop_group_modifier_for_all = {
+		potential = {
+			owner = {
+				has_active_tradition = tr_cybernetics_metabolic_reprocessing
+			}
+		}
+		bonus_pop_growth = 0.5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_active_tradition = tr_cybernetics_metabolic_reprocessing
+			}
+		}
+		fake_pop_growth_mod = 0.5
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			check_modifier_value = {
+				modifier = job_roboticist_branch_office_value_mult
+				value > 0
+			}
+		}
+		# Actual value determined in the script value below
+		branch_office_value_mult = 1
+		mult = value:roboticist_branch_office_value_mult
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = computation_core_production
+			}
+		}
+		foundry_jobs_bonus_workforce_mult = 0.025
+		artisan_jobs_bonus_workforce_mult = 0.025
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = computation_core_stability
+			}
+		}
+		bureaucrat_jobs_bonus_workforce_mult = 0.025
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = computation_core_research
+			}
+		}
+		physicist_jobs_bonus_workforce_mult = 0.025
+		biologist_jobs_bonus_workforce_mult = 0.025
+		engineer_jobs_bonus_workforce_mult = 0.025
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_tradition = tr_modularity_2
 			}
 		}
 		planet_pop_assembly_add = 1 #If this changes, update tr_modularity_2_modifier_desc
@@ -179,44 +198,13 @@ roboticist = {
 		potential = {
 			exists = owner
 			owner = {
-				has_active_tradition = tr_synthetics_prefabricated_components
+				has_tradition = tr_modularity_age_high_living_metal_joints
 			}
 		}
-		planet_amenities_add = 200
-		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+		planet_pop_assembly_add = 1 #If this changes, update tr_modularity_2_modifier_desc
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			check_modifier_value = {
-				modifier = job_roboticist_branch_office_value_mult
-				value > 0
-			}
 
-		}
-		# Actual value determined in the script value below
-		branch_office_value_mult = 1
-		mult = value:roboticist_branch_office_value_mult
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			roboticist_is_identity_designer = yes
-		}
-		planet_amenities_add = 500
-		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
-	}
-
-	triggered_country_modifier = {
-		potential = {
-			roboticist_is_identity_designer = yes
-			exists = owner
-			owner = {
-				NOT = { has_country_flag = identity_designer_converter }
-			}
-		}
-		planet_pop_assembly_add = 1
-	}
 	weight = {
 		weight = 500
 		modifier = {

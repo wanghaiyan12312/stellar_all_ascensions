@@ -183,7 +183,6 @@ auto_tech_remove_all_phy_flag = {
 	remove_country_flag = energy_damage_allow
 	remove_country_flag = energy_output_allow
 	remove_country_flag = shield_output_allow
-	remove_country_flag = shield_output2_allow
 }
 
 # remove all repeatable soc tech allow flag 
@@ -195,6 +194,7 @@ auto_tech_remove_all_soc_flag = {
 	remove_country_flag = food_output_allow
 	remove_country_flag = core_system_cap_allow
 	remove_country_flag = leader_life_span_allow
+	remove_country_flag = shield_psionic_allow
 }
 
 # remove all repeatable eng tech allow flag 
@@ -207,44 +207,582 @@ auto_tech_remove_all_eng_flag = {
 	remove_country_flag = military_station_damage_allow
 	remove_country_flag = mineral_output_allow
 	remove_country_flag = armor_output_allow
-	remove_country_flag = armor_output2_allow
+	remove_country_flag = dragon_armor_allow
+}
+
+#expects a TAG in the country scope. If SPECIES is present at all it will attempt to add a species trait instead.
+add_random_trait_evopred = {
+	[[SPECIES]
+		modify_species = {
+			species = species
+			add_random_species_trait = {
+				trait_has_all_tags = { $TAG$ organic positive }
+				NOT = { trait_has_any_tag = { special cybernetic presapient drawbacks leviathan } }
+				OR = {
+					NOT = { trait_has_any_tag = { genetic_ascension } }
+					root = {
+						owner_can_do_advanced_gene_modding = yes
+					}
+				}
+				OR = {
+					NOT = { trait_has_any_tag = { individual } }
+					root.owner = { is_gestalt = no }
+				}
+			}
+			effect = { save_event_target_as = target_species }
+			on_random_trait_added = { # Trait is the current scope, species is From, prev is owner
+				prev = {
+					create_message = {
+						type = RANDOM_TRAIT_ADDED
+						localization = MESSAGE_RANDOM_TRAIT_ADDED
+						days = 30
+						variable = {
+							type = name
+							localization = TRAIT
+							scope = prev
+						}
+						variable = {
+							type = name
+							localization = SPECIES
+							scope = species
+						}
+					}
+				}
+			}
+		}
+		remove_country_flag = consumed_$TAG$_dna
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = smorgasblorg_$TAG$
+				}
+			}
+			set_country_flag = smorgasblorg_$TAG$
+			change_variable = {
+				which = smorgasblorg_phenotypes
+				value = 1
+			}
+		}
+	]
+	[[!SPECIES]
+		modify_species = {
+			species = species
+			add_random_species_trait = {
+				trait_has_all_tags = { $TAG$ organic positive }
+				NOT = { trait_has_any_tag = { special species cybernetic presapient drawbacks leviathan } }
+				OR = {
+					NOT = { trait_has_any_tag = { genetic_ascension } }
+					root = {
+						owner_can_do_advanced_gene_modding = yes
+					}
+				}
+				OR = {
+					NOT = { trait_has_any_tag = { individual } }
+					root.owner = { is_gestalt = no }
+				}
+			}
+			effect = { save_event_target_as = target_species }
+			on_random_trait_added = { # Trait is the current scope, species is From, prev is owner
+				prev = {
+					create_message = {
+						type = RANDOM_TRAIT_ADDED
+						localization = MESSAGE_RANDOM_TRAIT_ADDED
+						days = 30
+						variable = {
+							type = name
+							localization = TRAIT
+							scope = prev
+						}
+						variable = {
+							type = name
+							localization = SPECIES
+							scope = species
+						}
+					}
+				}
+			}
+		}
+	]
+}
+
+add_random_trait_cybernetic_evopred = {
+	modify_species = {
+		species = species
+		add_random_species_trait = {
+			trait_has_all_tags = { $TAG$ cybernetic organic positive }
+			NOT = { trait_has_any_tag = { special presapient drawbacks leviathan } }
+			OR = {
+				NOT = { trait_has_any_tag = { genetic_ascension } }
+				root = {
+					owner_can_do_advanced_gene_modding = yes
+				}
+			}
+			OR = {
+				NOT = { trait_has_any_tag = { individual } }
+				root.owner = { is_gestalt = no }
+			}
+		}
+		effect = { save_event_target_as = target_species }
+		on_random_trait_added = { # Trait is the current scope, species is From, prev is owner
+			prev = {
+				create_message = {
+					type = CYBERNETIC_TRAIT_ADDED
+					localization = MESSAGE_CYBERNETIC_TRAIT_ADDED
+					days = 30
+					variable = {
+						type = name
+						localization = TRAIT
+						scope = prev
+					}
+					variable = {
+						type = name
+						localization = SPECIES
+						scope = species
+					}
+				}
+			}
+		}
+	}
 }
 
 
-can_harvest_dna = {
-	# Genetic ascension requires Utopia or BioGenesis
-	OR = {
-		has_utopia = yes
-		has_biogenesis_dlc = yes
+generate_evolutionary_predator_choices = {
+	random_list = {
+		20 = {
+			modifier = {
+				factor = 0
+				has_country_flag = pop_growth_evopred
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_available_random_trait_by_tag_evopred = {
+						TAG = pop_growth
+					}
+				}
+			}
+			set_country_flag = pop_growth_evopred
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				has_country_flag = pop_output_evopred
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_available_random_trait_by_tag_evopred = {
+						TAG = pop_output
+					}
+				}
+			}
+			set_country_flag = pop_output_evopred
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				has_country_flag = leader_evopred
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_available_random_trait_by_tag_evopred = {
+						TAG = leader
+					}
+				}
+			}
+			set_country_flag = leader_evopred
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				has_country_flag = habitability_evopred
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_available_random_trait_by_tag_evopred = {
+						TAG = habitability
+					}
+				}
+			}
+			set_country_flag = habitability_evopred
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				has_country_flag = upkeep_evopred
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_available_random_trait_by_tag_evopred = {
+						TAG = upkeep
+					}
+				}
+			}
+			set_country_flag = upkeep_evopred
+		}
+		0 = {
+			modifier = {
+				add = 30
+				has_country_flag = consumed_humanoid_dna
+				NOT = { has_country_flag = humanoid_evopred }
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_available_random_trait_by_tag_evopred = {
+						TAG = humanoid
+						SPECIES = yes
+					}
+				}
+			}
+			set_country_flag = humanoid_evopred
+		}
+		0 = {
+			modifier = {
+				add = 30
+				has_country_flag = consumed_mammalian_dna
+				NOT = { has_country_flag = mammalian_evopred }
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_available_random_trait_by_tag_evopred = {
+						TAG = mammalian
+						SPECIES = yes
+					}
+				}
+			}
+			set_country_flag = mammalian_evopred
+		}
+		0 = {
+			modifier = {
+				add = 30
+				has_country_flag = consumed_reptilian_dna
+				NOT = { has_country_flag = reptilian_evopred }
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_available_random_trait_by_tag_evopred = {
+						TAG = reptilian
+						SPECIES = yes
+					}
+				}
+			}
+			set_country_flag = reptilian_evopred
+		}
+		0 = {
+			modifier = {
+				add = 30
+				has_country_flag = consumed_avian_dna
+				NOT = { has_country_flag = avian_evopred }
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_available_random_trait_by_tag_evopred = {
+						TAG = avian
+						SPECIES = yes
+					}
+				}
+			}
+			set_country_flag = avian_evopred
+		}
+		0 = {
+			modifier = {
+				add = 30
+				has_country_flag = consumed_arthropoid_dna
+				NOT = { has_country_flag = arthropoid_evopred }
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_available_random_trait_by_tag_evopred = {
+						TAG = arthropoid
+						SPECIES = yes
+					}
+				}
+			}
+			set_country_flag = arthropoid_evopred
+		}
+		0 = {
+			modifier = {
+				add = 30
+				has_country_flag = consumed_molluscoid_dna
+				NOT = { has_country_flag = molluscoid_evopred }
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_available_random_trait_by_tag_evopred = {
+						TAG = molluscoid
+						SPECIES = yes
+					}
+				}
+			}
+			set_country_flag = molluscoid_evopred
+		}
+		0 = {
+			modifier = {
+				add = 30
+				has_country_flag = consumed_fungoid_dna
+				NOT = { has_country_flag = fungoid_evopred }
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_available_random_trait_by_tag_evopred = {
+						TAG = fungoid
+						SPECIES = yes
+					}
+				}
+			}
+			set_country_flag = fungoid_evopred
+		}
+		0 = {
+			modifier = {
+				add = 30
+				has_country_flag = consumed_plantoid_dna
+				NOT = { has_country_flag = plantoid_evopred }
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_available_random_trait_by_tag_evopred = {
+						TAG = plantoid
+						SPECIES = yes
+					}
+				}
+			}
+			set_country_flag = plantoid_evopred
+		}
+		0 = {
+			modifier = {
+				add = 30
+				has_country_flag = consumed_lithoid_dna
+				NOT = { has_country_flag = lithoid_evopred }
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_available_random_trait_by_tag_evopred = {
+						TAG = lithoid
+						SPECIES = yes
+					}
+				}
+			}
+			set_country_flag = lithoid_evopred
+		}
+		0 = {
+			modifier = {
+				add = 30
+				has_country_flag = consumed_necroid_dna
+				NOT = { has_country_flag = necroid_evopred }
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_available_random_trait_by_tag_evopred = {
+						TAG = necroid
+						SPECIES = yes
+					}
+				}
+			}
+			set_country_flag = necroid_evopred
+		}
+		0 = {
+			modifier = {
+				add = 30
+				has_country_flag = consumed_aquatic_dna
+				NOT = { has_country_flag = aquatic_evopred }
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_available_random_trait_by_tag_evopred = {
+						TAG = aquatic
+						SPECIES = yes
+					}
+				}
+			}
+			set_country_flag = aquatic_evopred
+		}
+		0 = {
+			modifier = {
+				add = 30
+				has_country_flag = consumed_toxoid_dna
+				NOT = { has_country_flag = toxoid_evopred }
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_available_random_trait_by_tag_evopred = {
+						TAG = toxoid
+						SPECIES = yes
+					}
+				}
+			}
+			set_country_flag = toxoid_evopred
+		}
+		0 = {
+			modifier = {
+				add = 30
+				has_country_flag = consumed_infernal_dna
+				NOT = { has_country_flag = infernal_evopred }
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_available_random_trait_by_tag_evopred = {
+						TAG = infernal
+						SPECIES = yes
+					}
+				}
+			}
+			set_country_flag = infernal_evopred
+		}
+		0 = {
+			modifier = {
+				add = 30
+				has_country_flag = consumed_psionic_dna
+				NOT = { has_country_flag = psionic_evopred }
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_available_random_trait_by_tag_evopred = {
+						TAG = psionic
+						SPECIES = yes
+					}
+				}
+			}
+			set_country_flag = psionic_evopred
+		}
+		0 = {
+			modifier = {
+				add = 60
+				has_country_flag = consumed_plasmic_dna
+				NOR = {
+					has_country_flag = plasmic_evopred
+					has_country_flag = gained_plasmic_trait
+				}
+			}
+			set_country_flag = plasmic_evopred
+		}
+		0 = {
+			modifier = {
+				add = 60
+				can_add_overtuned_traits = yes
+				NAND = {
+					has_country_flag = gained_auto_mod_overtuned_trait_mod
+					has_country_flag = gained_spliced_adaptability_trait_mod
+					has_country_flag = gained_juiced_power_trait_mod
+					has_country_flag = gained_farm_hands_trait_mod
+					has_country_flag = gained_crack_miner_trait_mod
+					has_country_flag = gained_technical_skill_trait_mod
+					has_country_flag = gained_commercial_genius_trait_mod
+					has_country_flag = gained_crafted_smiles_trait_mod
+					has_country_flag = gained_low_maintenance_trait_mod
+					has_country_flag = gained_artificial_intelligence_trait_mod
+					has_country_flag = gained_gene_mentorship_trait_mod
+					has_country_flag = gained_expressed_tradition_trait_mod
+					has_country_flag = gained_elevated_synapses_trait_mod
+					has_country_flag = gained_preplanned_growth_trait_mod
+					has_country_flag = gained_excessive_endurance_trait_mod
+				}
+				NOT = {
+					has_country_flag = overtuned_mod_evo_pred
+				}
+			}
+			set_country_flag = overtuned_mod_evo_pred
+		}
+		0 = {
+			modifier = {
+				add = 60
+				can_add_cybernetic_traits = yes
+				NOT = { has_country_flag = cybernetic_mod_evo_pred }
+			}
+			modifier = {
+				factor = 0
+				any_trait_available_for_species = {
+					trait_has_all_tags = { cybernetic organic positive }
+					NOT = { trait_has_any_tag = { special presapient drawbacks } }
+					OR = {
+						NOT = { trait_has_any_tag = { modularity } }
+						root = {
+							can_do_advanced_robo_modding = yes
+						}
+					}
+					OR = {
+						NOT = { trait_has_any_tag = { individual } }
+						root.owner = { is_gestalt = no }
+					}
+				}
+			}
+			set_country_flag = cybernetic_mod_evo_pred
+		}
+		0 = {
+			modifier = {
+				add = 60
+				has_mutation_nucleotide_isolation_tradition = yes
+				OR = {
+					AND = {
+						has_country_flag = harvested_dragon_dna
+						NOT = { has_country_flag = gained_dragon_trait }
+					}
+					AND = {
+						has_country_flag = harvested_voidspawn_dna
+						NOT = { has_country_flag = gained_voidspawn_trait }
+					}
+					AND = {
+						has_country_flag = harvested_tiyanki_dna
+						NOT = { has_country_flag = gained_tiyanki_trait }
+					}
+					AND = {
+						has_ascension_perk = ap_cosmogenesis
+						has_crisis_level = crisis_cosmogenesis_level_5 
+					}
+				}
+				NOT = {
+					has_country_flag = leviathan_evo_pred
+				}
+			}
+			set_country_flag = leviathan_evo_pred
+		}
+		0 = {
+			modifier = {
+				add = 60
+				can_harvest_parts = yes
+				OR = {
+					AND = {
+						has_country_flag = harvested_fortress_parts
+						NOT = { has_country_flag = gained_fortress_trait_mod }
+					}
+					AND = {
+						has_country_flag = harvested_dreadnought_parts
+						NOT = { has_country_flag = gained_dreadnought_trait_mod }
+					}
+					AND = {
+						has_country_flag = harvested_sphere_parts
+						NOT = { has_country_flag = gained_sphere_trait_mod }
+					}
+					AND = {
+						has_country_flag = harvested_scavenger_parts
+						NOT = { has_country_flag = gained_scavenger_trait_mod }
+					}
+					AND = {
+						has_ascension_perk = ap_cosmogenesis
+						has_crisis_level = crisis_cosmogenesis_level_5 
+					}
+				}
+				NOT = {
+					has_country_flag = leviathan_cybernetic_mod_evo_pred
+				}
+			}
+			set_country_flag = leviathan_cybernetic_mod_evo_pred
+		}
 	}
-	# Only regular empires and hive-minds can genetically ascend.
-	is_machine_empire = no
-	# If you've taken other ascension path, we shouldn't let you harvest DNA anymore.
-#	NOR = {
-#		has_cybernetic_ascension = yes
-#		has_psionic_ascension = yes
-#		has_synthetic_ascension = yes
-#		has_country_flag = genetic_ascension_stage_3_purity
-#		has_country_flag = genetic_ascension_stage_3_cloning
-#	}
-}
-
-can_harvest_parts = {
-	has_machine_age_dlc = yes
-	OR = {
-		has_technology = tech_neuro_quantum_links
-		has_technology = tech_synthetic_workers
-		has_technology = tech_binary_motivators
-	}
-	# Only machine empires and cyborgs can use mechanical leviathan parts.
-	OR = {
-		has_active_tradition = tr_cybernetics_integrated_anatomy
-		has_active_tradition = tr_cybernetics_assimilator_integrated_anatomy
-		is_synthetic_empire = yes
-	}
-	# If you've taken another ascension path, we shouldn't let you harvest parts anymore.
-#	NOR = {
-#		has_genetic_ascension = yes
-#		has_psionic_ascension = yes
-#	}
 }

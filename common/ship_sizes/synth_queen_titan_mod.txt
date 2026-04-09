@@ -25,13 +25,19 @@ synth_queen_titan_mod = {
 	num_target_locators = 0
 	is_space_station = no
 	icon = ship_size_military_32
-	base_buildtime = 6000
+	base_buildtime = 7200
 	can_have_federation_design = no
 	components_add_to_cost = yes
 	is_designable = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 
-	prerequisites = { "tech_synth_queen_titan" }
+	potential_country = {
+		has_technology = tech_synth_queen_titan
+		country_uses_bio_ships = no
+		has_crisis_level = crisis_cosmogenesis_level_5
+		is_country_type = default
+		is_ai = no
+	}
 
 	class = shipclass_military
 	construction_type = starbase_shipyard
@@ -115,7 +121,7 @@ large_ship_synth_queen_mod = {
 		ship_hull_regen_add_perc = 0.1
 		ship_armor_regen_add_perc = 0.1
 	}
-	max_hitpoints = 25000
+	max_hitpoints = @fe_battleship_hp
 	size_multiplier = 40
 	fleet_slot_size = 4
 	section_slots = { "mid" = { locator = "part1" } }
@@ -141,7 +147,7 @@ large_ship_synth_queen_mod = {
 		}
 	}
 
-	base_buildtime = 800
+	base_buildtime = 1200
 
 	use_shipnames_from = battleship
 
@@ -269,7 +275,6 @@ defense_platform_synth_queen_mod = {
 	num_target_locators = 9
 	is_space_station = yes
 
-	build_block_radius = @build_block_radius_military
 
 	uses_name_prefix = no
 	takes_name_from_ship_design = yes
@@ -352,7 +357,6 @@ defense_platform_medium_synth_queen_mod = {
 	components_add_to_cost = yes
 	can_disable = yes
 
-	build_block_radius = @build_block_radius_medium_military
 
 	uses_name_prefix = no
 	takes_name_from_ship_design = yes
@@ -432,7 +436,6 @@ defense_platform_large_synth_queen_mod = {
 
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
     
-	build_block_radius = @build_block_radius_lager_military
 
 	uses_name_prefix = no
 	takes_name_from_ship_design = yes

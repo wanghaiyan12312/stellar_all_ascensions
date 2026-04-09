@@ -82,6 +82,30 @@ mega_shipyard_0 = {
 				}			
 			} 
 		}
+		custom_tooltip = {
+			fail_text = "requires_system_alloy_consumer_goods_1000_capital"
+			OR = {
+				any_system_planet = {
+					OR = {
+						planet_resource_compare = {
+							resource = alloys
+							value > 5000
+							type = produces
+						}
+						planet_resource_compare = {
+							resource = consumer_goods
+							value > 5000
+							type = produces
+						}
+						planet_resource_compare = {
+							resource = trade
+							value > 8000
+							type = produces
+						}
+					}
+				}
+			}
+		}
 		## add a limit planet alloy for 5k a month？ 
 
 		hidden_trigger = {

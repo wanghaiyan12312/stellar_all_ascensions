@@ -55,6 +55,100 @@ utility_component_template = {
 	}
 }
 
+utility_component_template = {
+	key = "LAGER_SYNTH_QUEEN_TITAN_ZERO_POINT_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_5"
+	icon_frame = 1
+	power = 30000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @juggernaut_reactor_cost_5
+		}
+		upkeep = {
+			energy = 15.99
+			alloys = 1.599
+		}
+	}
+
+	prerequisites = { "tech_zero_point_power" }
+	component_set = "power_core"
+	potential = {
+		ship_uses_synth_queen_titan_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "JUGGERNAUT_DARK_MATTER_REACTOR"
+
+	friendly_aura = {
+		name = "juggernaut_logistics"
+		system_wide = yes
+
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = juggernaut_logistics
+			priority = 1
+		}
+
+		modifier = {
+			ships_logistics_mult = -0.75
+		}
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "LAGER_SYNTH_QUEEN_TITAN_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = 50000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_reactor_cost_6
+			sr_dark_matter = 16
+		}
+		upkeep = {
+			energy = 5.93
+			alloys = 0.593
+		}
+	}
+
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	potential = {
+		ship_uses_synth_queen_titan_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+		modifier = {
+			factor = 0.0
+			is_ai = yes
+		}
+	}
+}
+
 
 # ## Lens-Flare Beam
 weapon_component_template = {
@@ -156,7 +250,8 @@ weapon_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			sr_dark_matter = @xl_t7_cost 
+			alloys = @xl_t7_cost 
+			sr_dark_matter = @titanic_t7_rare
 		}
 		upkeep = {
 			alloys = @xl_t7_upkeep_alloys

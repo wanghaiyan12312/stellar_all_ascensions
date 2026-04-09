@@ -948,7 +948,7 @@ country_event = {
 			}
 			resource_stockpile_compare = {
 				resource = influence
-				value >= 500
+				value >= 450
 			}
 		}
 		add_resource = {
@@ -958,7 +958,7 @@ country_event = {
 			sr_zro = -10000
 		}
 		add_resource = {
-			influence = -500
+			influence = -450
 		}
 		hidden_effect = {
 			event_target:azaryn_leader = {
@@ -997,7 +997,7 @@ country_event = {
 			}
 			resource_stockpile_compare = {
 				resource = influence
-				value >= 500
+				value >= 450
 			}
 		}
 		add_resource = {
@@ -1007,7 +1007,7 @@ country_event = {
 			sr_zro = -10000
 		}
 		add_resource = {
-			influence = -500
+			influence = -450
 		}
 		hidden_effect = {
 			if = {
@@ -1084,7 +1084,7 @@ country_event = {
 			}
 			resource_stockpile_compare = {
 				resource = influence
-				value >= 500
+				value >= 450
 			}
 		}
 		add_resource = {
@@ -1097,7 +1097,7 @@ country_event = {
 			sr_zro = -10000
 		}
 		add_resource = {
-			influence = -500
+			influence = -450
 		}
 		hidden_effect = {
 			set_country_flag = beholder_shroud_update
@@ -1109,9 +1109,11 @@ country_event = {
 		}
 		if = {
 			limit = { 
-				NOT = {has_origin = origin_mindwardens}
+				has_global_flag = crystal_sphere_sent
+				NOT = { has_country_flag = has_acquired_crystal_sphere  }
+				NOT = { has_relic = r_eternal_throne }
 			}
-			add_relic = r_the_lost_patron
+			add_relic = r_eternal_throne
 		}
 	}
 	option = {
@@ -1134,7 +1136,7 @@ country_event = {
 			}
 			resource_stockpile_compare = {
 				resource = influence
-				value >= 500
+				value >= 450
 			}
 		}
 		add_resource = {
@@ -1144,7 +1146,7 @@ country_event = {
 			sr_zro = -10000
 		}
 		add_resource = {
-			influence = -500
+			influence = -450
 		}
 		hidden_effect = {
 			event_target:admiral_sharpbeak = {
@@ -1176,7 +1178,7 @@ country_event = {
 			}
 			resource_stockpile_compare = {
 				resource = influence
-				value >= 500
+				value >= 450
 			}
 		}
 		add_resource = {
@@ -1186,7 +1188,7 @@ country_event = {
 			sr_zro = -10000
 		}
 		add_resource = {
-			influence = -500
+			influence = -450
 		}
 		hidden_effect = {
 			if = {
@@ -1230,7 +1232,7 @@ country_event = {
 			}
 			resource_stockpile_compare = {
 				resource = influence
-				value >= 500
+				value >= 450
 			}
 		}
 		add_resource = {
@@ -1240,7 +1242,7 @@ country_event = {
 			sr_zro = -10000
 		}
 		add_resource = {
-			influence = -500
+			influence = -450
 		}
 		hidden_effect = {
 			event_target:formless_leader_mod_shrould = {

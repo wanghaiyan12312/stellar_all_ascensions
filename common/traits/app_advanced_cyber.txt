@@ -6,7 +6,7 @@ trait_cybernetic_suppressed = {
 	category = cyborg
 
 	allowed_archetypes = { BIOLOGICAL LITHOID }
-	tags = { organic positive pop_output leader blocks_leaders cybernetic }
+	tags = { organic positive pop_output leader blocks_leaders cybernetic modularity }
 
 	species_potential_add = {
 		can_add_cybernetic_traits = yes
@@ -47,7 +47,7 @@ trait_cybernetic_shielded_components = {
 	icon = "gfx/interface/icons/traits/trait_robot_shielded_components.dds"
 
 	allowed_archetypes = { BIOLOGICAL LITHOID }
-	tags = { organic positive habitability pop_output leader cybernetic }
+	tags = { organic positive habitability pop_output leader cybernetic modularity }
 
 	species_potential_add = {
 		can_add_cybernetic_traits = yes
@@ -83,7 +83,7 @@ trait_cybernetic_monoform = {
 	icon = "gfx/interface/icons/traits/trait_robot_shielded_components.dds"
 
 	allowed_archetypes = { BIOLOGICAL LITHOID }
-	tags = { organic positive pop_growth housing cybernetic }
+	tags = { organic positive pop_growth housing cybernetic modularity }
 
 	species_potential_add = {
 		can_add_cybernetic_traits = yes
@@ -117,7 +117,7 @@ trait_cybernetic_inquisitative_axioms = {
 	icon = "gfx/interface/icons/traits/trait_robot_ceaseless_symmetric_annihilation_engine.dds"
 
 	allowed_archetypes = { BIOLOGICAL LITHOID }
-	tags = { organic positive pop_output research leader cybernetic }
+	tags = { organic positive pop_output research leader modularity }
 
 	species_potential_add = {
 		can_add_cybernetic_traits = yes
@@ -154,7 +154,7 @@ trait_cybernetic_ceaseless_symmetric_annihilation_engine = {
 	icon = "gfx/interface/icons/traits/trait_robot_ceaseless_symmetric_annihilation_engine.dds"
 
 	allowed_archetypes = { BIOLOGICAL LITHOID }
-	tags = { organic positive pop_output upkeep cybernetic }
+	tags = { organic positive pop_output upkeep cybernetic modularity }
 
 	species_potential_add = {
 		can_add_cybernetic_traits = yes
@@ -199,7 +199,7 @@ trait_cybernetic_ferro_viscosity_augmentation = {
 	icon = "gfx/interface/icons/traits/trait_robot_ferro_viscosity_augmentation.dds"
 
 	allowed_archetypes = { BIOLOGICAL LITHOID }
-	tags = { organic positive leader amenities upkeep cybernetic }
+	tags = { organic positive leader amenities upkeep cybernetic modularity }
 
 	species_potential_add = {
 		can_add_cybernetic_traits = yes
@@ -246,7 +246,7 @@ trait_cybernetic_matrix_trading = {
 	icon = "gfx/interface/icons/traits/trait_robot_matrix_trading.dds"
 
 	allowed_archetypes = { BIOLOGICAL LITHOID }
-	tags = { organic positive pop_output trade upkeep cybernetic }
+	tags = { organic positive pop_output trade upkeep cybernetic modularity }
 	opposites = { trait_cyborg_scarcity_algorithms }
 	species_potential_add = {
 		can_add_cybernetic_traits = yes
@@ -293,7 +293,7 @@ trait_cybernetic_mote_powered_tools = {
 	icon = "gfx/interface/icons/traits/trait_robot_mote_powered_tools.dds"
 
 	allowed_archetypes = { BIOLOGICAL LITHOID }
-	tags = { organic positive alloys consumer_goods pop_output upkeep cybernetic }
+	tags = { organic positive alloys consumer_goods pop_output upkeep cybernetic modularity }
 
 	species_potential_add = {
 		can_add_cybernetic_traits = yes

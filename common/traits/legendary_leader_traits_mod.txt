@@ -9,28 +9,9 @@ leader_trait_chosen_mod = {
 		COUNCIL = triggered
 		TIER = none
 	}
-	# Any Class - Ruler - Regular
-	triggered_councilor_modifier = {
-		potential = {
-			exists = owner
-			leader_class = commander
-			has_trait = subclass_commander_councilor
-			owner = { is_gestalt = no }
-		}
-		ship_armor_regen_add_perc = -0.1
-	}
-	# Commander - Fleet Modifier
-	triggered_fleet_modifier = {
-		potential = {
-			is_ruler = no
-			leader_class = commander
-			has_trait = subclass_commander_admiral
-			from.controller = {
-				has_tradition = tr_psionics_shroud_clairvoyance
-				has_country_flag = psionic_traditions_unlocked
-			}
-		}
-		ship_armor_regen_add_perc = -0.1
+	opposites = {
+		leader_trait_synthetic
+		leader_trait_chosen
 	}
 	leader_class = { commander scientist official }
 	initial = no

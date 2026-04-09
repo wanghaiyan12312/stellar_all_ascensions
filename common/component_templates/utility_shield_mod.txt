@@ -1,0 +1,1024 @@
+####################
+# Psionic Shields
+####################
+
+## PSI_SHIELD_2
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_3"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 2
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_3"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 2
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_3"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 2
+	}
+}
+
+## PSI_SHIELD_3
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_4"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 3
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_4"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 3
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_4"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 3
+	}
+}
+
+## PSI_SHIELD_4
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_5"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 4
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_5"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 4
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_5"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 4
+	}
+}
+
+## PSI_SHIELD_5
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_6"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 5
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_6"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 5
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_6"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 5
+	}
+}
+
+## PSI_SHIELD_6
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_7"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 6
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_7"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 6
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_7"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 6
+	}
+}
+
+## PSI_SHIELD_7
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_8"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 7
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_8"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 7
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_8"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 7
+	}
+}
+
+## PSI_SHIELD_8
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_9"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 8
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_9"
+	component_set = "PSI_SHIELD"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 8
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_9"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 8
+	}
+}
+
+## PSI_SHIELD_9
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_10"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 9
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_10"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 9
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_10"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 9
+	}
+}
+
+## PSI_SHIELD_10
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_11"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 10
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_11"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 10
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_11"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 10
+	}
+}
+
+## PSI_SHIELD_11
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_12"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 11
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_12"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 11
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_12"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 11
+	}
+}
+
+## PSI_SHIELD_12
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_13"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 12
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_13"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 12
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_13"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 12
+	}
+}
+
+## PSI_SHIELD_13
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_14"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 13
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_14"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 13
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_14"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 13
+	}
+}
+
+## PSI_SHIELD_14
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_15"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 14
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_15"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 14
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_15"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 14
+	}
+}
+
+## PSI_SHIELD_15
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_16"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 15
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_16"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 15
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_16"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 15
+	}
+}
+
+## PSI_SHIELD_16
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_17"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 16
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_17"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 16
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_17"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 16
+	}
+}
+
+## PSI_SHIELD_17
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_18"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 17
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_18"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 17
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_18"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 17
+	}
+}
+
+## PSI_SHIELD_18
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_19"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 18
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_19"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 18
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_19"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 18
+	}
+}
+
+## PSI_SHIELD_19
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_20"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 19
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_20"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 19
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_20"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 19
+	}
+}
+
+## PSI_SHIELD_20
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_21"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 20
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_21"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 20
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_21"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 20
+	}
+}
+
+## PSI_SHIELD_21
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_22"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 21
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_22"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 21
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_22"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 21
+	}
+}
+
+## PSI_SHIELD_22
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_23"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 22
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_23"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 22
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_23"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 22
+	}
+}
+
+## PSI_SHIELD_23
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_24"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 23
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_24"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 23
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_24"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 23
+	}
+}
+
+## PSI_SHIELD_24
+utility_component_template = {
+	size = small
+	power = @power_S7
+	upgrades_to = "SMALL_PSI_SHIELD_25"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "SMALL"
+		SIZE_SHORT= "s"
+    	TIER = 24
+	}
+}
+
+utility_component_template = {
+	size = medium
+	power = @power_M7
+	upgrades_to = "MEDIUM_PSI_SHIELD_25"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "MEDIUM"
+		SIZE_SHORT= "m"
+    	TIER = 24
+	}
+}
+
+utility_component_template = {
+	size = large
+	power = @power_L7
+	upgrades_to = "LARGE_PSI_SHIELD_25"
+	inline_script = {
+		script = utility_mod/utility_shield_mod_1
+		SIZE = "LARGE"
+		SIZE_SHORT= "l"
+    	TIER = 24
+	}
+}
+
+## PSI_SHIELD_25
+utility_component_template = {
+	key = "SMALL_PSI_SHIELD_25"
+	size = small
+	icon = "GFX_ship_part_psi_shield_25"
+	icon_frame = 1
+	power = @power_S7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t25_cost_mod
+			sr_zro = @shield_s_t25_cost_zro_mod
+		}
+		upkeep = {
+			energy = @shield_s_t25_upkeep_alloys_mod
+			alloys = @shield_s_t25_upkeep_energy_mod
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_s25_mod
+		ship_shield_regen_add_static = @regen_s25_mod #Regeneration per day
+	}
+	ship_modifier = {
+		ship_shield_hardening_add = @shield_hardening_T25_mod
+	}
+	prerequisites = { "tech_psionic_shield_25" }
+	component_set = "PSI_SHIELD_25"
+
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+			is_fallen_empire = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+		is_fallen_empire = no
+	}
+
+	ai_weight = {
+		weight = @T5_weight
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+		modifier = {
+			factor = 0.0
+			is_ai = yes
+		}
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_PSI_SHIELD_25"
+	size = medium
+	icon = "GFX_ship_part_psi_shield_25"
+	icon_frame = 1
+	power = @power_M7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t25_cost_mod
+			sr_zro = @shield_m_t25_cost_zro_mod
+		}
+		upkeep = {
+			energy = @shield_m_t25_upkeep_alloys_mod
+			alloys = @shield_m_t25_upkeep_energy_mod
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_m25_mod
+		ship_shield_regen_add_static = @regen_m25_mod  #Regeneration per day
+	}
+	ship_modifier = {
+		ship_shield_hardening_add = @shield_hardening_T25_mod
+	}
+	prerequisites = { "tech_psionic_shield_25" }
+	component_set = "PSI_SHIELD_25"
+
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+			is_fallen_empire = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+		is_fallen_empire = no
+	}
+
+	ai_weight = {
+		weight = @T5_weight
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+		modifier = {
+			factor = 0.0
+			is_ai = yes
+		}
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_PSI_SHIELD_25"
+	size = large
+	icon = "GFX_ship_part_psi_shield_25"
+	icon_frame = 1
+	power = @power_L7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t25_cost_mod
+			sr_zro = @shield_l_t25_cost_zro_mod
+		}
+		upkeep = {
+			energy = @shield_l_t25_upkeep_energy_mod
+			alloys = @shield_l_t25_upkeep_energy_mod
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_l25_mod
+		ship_shield_regen_add_static = @regen_l25_mod #Regeneration per day
+	}
+	ship_modifier = {
+		ship_shield_hardening_add = @shield_hardening_T25_mod
+	}
+	prerequisites = { "tech_psionic_shield_25" }
+	component_set = "PSI_SHIELD_25"
+
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+			is_fallen_empire = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+		is_fallen_empire = no
+	}
+
+	ai_weight = {
+		weight = @T5_weight
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+		modifier = {
+			factor = 0.0
+			is_ai = yes
+		}
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 0
+		}
+	}
+}

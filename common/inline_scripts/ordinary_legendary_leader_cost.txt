@@ -9,7 +9,7 @@ allow = {
 	}
 	resource_stockpile_compare = {
 		resource = influence
-		value >= 500
+		value >= 450
 	}
 }
 add_resource = {
@@ -19,5 +19,5 @@ add_resource = {
 	sr_zro = -10000
 }
 add_resource = {
-	influence = -500
+	influence = -450
 }

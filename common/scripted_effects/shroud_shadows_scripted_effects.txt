@@ -1,3 +1,7 @@
+## mod update_eotc_accords
+##  #owner = { has_origin = origin_endbringers }
+
+# Shadows of the Shroud scripted effects #
 # Shadows of the Shroud scripted effects #
 
 breach_shroud = {
@@ -16,6 +20,9 @@ add_latent_psionic_trait = {
 		modify_species = {
 			species = this
 			add_trait = trait_robot_latent_psionic
+			effect = {
+				save_event_target_as = latent_psionic_species
+			}
 		}
 	}
 	else_if = {
@@ -28,6 +35,9 @@ add_latent_psionic_trait = {
 		modify_species = {
 			species = this
 			add_trait = trait_latent_psionic
+			effect = {
+				save_event_target_as = latent_psionic_species
+			}
 		}
 	}
 }
@@ -42,6 +52,9 @@ add_psionic_trait = {
 			species = this
 			remove_trait = trait_robot_latent_psionic
 			add_trait = trait_robot_psionic
+			effect = {
+				save_event_target_as = psionic_species
+			}
 		}
 	}
 	else_if = {
@@ -55,6 +68,9 @@ add_psionic_trait = {
 			species = this
 			remove_trait = trait_latent_psionic
 			add_trait = trait_psionic
+			effect = {
+				save_event_target_as = psionic_species
+			}
 		}
 	}
 }
@@ -63,12 +79,17 @@ turn_main_species_to_psionic = {
 	country_event = { id = timeline.81 }
 	every_owned_species = {
 		limit = {
-			is_same_species = prev
+			OR = {
+				is_same_species = prev
+				AND = {
+					prev = { has_origin = origin_shroud_forged }
+					has_species_flag = original_main_species
+				}
+			}
 			is_latent_psionic_species = yes
 		}
 		save_event_target_as = changing_species
 		add_psionic_trait = yes
-		last_created_species = { save_event_target_as = psionic_species }
 
 		prev = {
 			if = {
@@ -583,7 +604,7 @@ roll_secret_faction_internal = {
 			}
 			modifier = {
 				factor = 10
-				has_ethic = ethic_fanatic_pacifist
+				is_fanatic_pacifist = yes
 			}
 			set_country_flag = $FACTION$_pacifist_picked
 			set_country_flag = $FACTION$_pacifist_selected
@@ -609,7 +630,7 @@ roll_secret_faction_internal = {
 			}
 			modifier = {
 				factor = 10
-				has_ethic = ethic_fanatic_materialist
+				is_fanatic_materialist = yes
 			}
 			set_country_flag = $FACTION$_materialist_picked
 			set_country_flag = $FACTION$_materialist_selected
@@ -623,7 +644,7 @@ roll_secret_faction_internal = {
 				}
 				modifier = {
 					factor = 10
-					has_ethic = ethic_fanatic_spiritualist
+					is_fanatic_spiritualist = yes
 				}
 				set_country_flag = $FACTION$_spiritualist_picked
 				set_country_flag = $FACTION$_spiritualist_selected
@@ -637,7 +658,7 @@ roll_secret_faction_internal = {
 			}
 			modifier = {
 				factor = 10
-				has_ethic = ethic_fanatic_egalitarian
+				is_fanatic_egalitarian = yes
 			}
 			set_country_flag = $FACTION$_egalitarian_picked
 			set_country_flag = $FACTION$_egalitarian_selected
@@ -650,7 +671,7 @@ roll_secret_faction_internal = {
 			}
 			modifier = {
 				factor = 10
-				has_ethic = ethic_fanatic_authoritarian
+				is_fanatic_authoritarian = yes
 			}
 			set_country_flag = $FACTION$_authoritarian_picked
 			set_country_flag = $FACTION$_authoritarian_selected
@@ -664,7 +685,7 @@ roll_secret_faction_internal = {
 				}
 				modifier = {
 					factor = 10
-					has_ethic = ethic_fanatic_xenophile
+					is_fanatic_xenophile = yes
 				}
 				set_country_flag = $FACTION$_xenophile_picked
 				set_country_flag = $FACTION$_xenophile_selected
@@ -2732,7 +2753,7 @@ reckoning_spawn = {
 				owner = { NOT = { is_same_value = root } }
 			}
 			if = {
-				limit = { check_aura_suppressors = yes }
+				limit = { is_psionic_aura_suppressed = yes }
 				owner = { set_country_flag = eotc_destruction_mitigated }
 			}
 			else = {
@@ -3849,6 +3870,7 @@ create_exiled_country = {
 			namelist = HUM2
 			portrait = psionic_10
 			traits = {
+				trait = trait_organic
 				trait = trait_psionic
 				trait = trait_haunting_visions
 				trait = trait_cranial_hypertrophy
@@ -3974,50 +3996,55 @@ refresh_endbringers_madness_modifier = {
 mind_over_matter_immediate = {
 	every_owned_species = {
 		limit = {
-			is_same_species = root
+			OR = {
+				is_same_species = root
+				AND = {
+					root = { has_origin = origin_shroud_forged }
+					has_species_flag = original_main_species
+				}
+			}
 			has_psionic_species_trait = no
 		}
 		save_event_target_as = changing_species
 		add_latent_psionic_trait = yes
-		last_created_species = { save_event_target_as = psionic_species }
 
 		root = {
 			if = {
 				limit = {
 					species = { is_exact_same_species = event_target:changing_species }
 				}
-				change_dominant_species = { species = event_target:psionic_species }
+				change_dominant_species = { species = event_target:latent_psionic_species }
 			}
 
 			every_owned_pop_group = {
 				limit = { is_exact_same_species = event_target:changing_species }
-				change_species = event_target:psionic_species
+				change_species = event_target:latent_psionic_species
 			}
 			every_owned_leader = {
 				limit = { is_exact_same_species = event_target:changing_species }
-				change_species = event_target:psionic_species
+				change_species = event_target:latent_psionic_species
 			}
 			every_pool_leader = {
 				limit = { is_exact_same_species = event_target:changing_species }
-				change_species = event_target:psionic_species
+				change_species = event_target:latent_psionic_species
 			}
 			every_envoy = {
 				limit = { is_exact_same_species = event_target:changing_species }
-				change_species = event_target:psionic_species
+				change_species = event_target:latent_psionic_species
 			}
 			every_owned_army = {
 				limit = {
 					exists = species
 					is_exact_same_species = event_target:changing_species
 				}
-				change_species = event_target:psionic_species
+				change_species = event_target:latent_psionic_species
 			}
 			every_controlled_ship = {
 				limit = {
 					is_ship_class = shipclass_colonizer
 					is_exact_same_species = event_target:changing_species
 				}
-				change_species = event_target:psionic_species
+				change_species = event_target:latent_psionic_species
 			}
 		}
 	}

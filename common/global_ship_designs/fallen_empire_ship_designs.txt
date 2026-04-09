@@ -395,7 +395,7 @@ ship_design = {
 		}
 		component = {
 			slot = "SMALL_GUN_04"
-			template = "SMALL_SMALL_PLASMA_3PLASMA_4"
+			template = "SMALL_PLASMA_3PLASMA_4"
 		}
 		component = {
 			slot = "PD_01"
@@ -639,14 +639,6 @@ ship_design = {
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
 		component = {
-			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
 			slot = "AUX_UTILITY_1"
 			template = "SHIELD_BOOSTER"
 		}
@@ -798,22 +790,6 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_12"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_13"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_14"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_15"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_16"
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
 		component = {
@@ -1013,30 +989,6 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_UTILITY_18"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_19"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_20"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_21"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_22"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_23"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_24"
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
 		component = {
@@ -1664,7 +1616,7 @@ ship_design = {
 }
 
 ship_design = {
-	name = "NAME_FE_MATERIALIST_Citadel_1"
+	name = "NAME_FE_MATERIALIST_Citadel_0"
 	ship_size = starbase_deep_space_citadel_1
 	section = {
 		template = "DEEP_SPACE_CITADEL_STAGE_1"
@@ -1758,14 +1710,6 @@ ship_design = {
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
 		component = {
-			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
 			slot = "AUX_UTILITY_1"
 			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
@@ -1778,7 +1722,7 @@ ship_design = {
 }
 
 ship_design = {
-	name = "NAME_FE_MATERIALIST_Citadel_2"
+	name = "NAME_FE_MATERIALIST_Citadel_1"
 	ship_size = starbase_deep_space_citadel_2
 	section = {
 		template = "DEEP_SPACE_CITADEL_STAGE_2"
@@ -1920,22 +1864,6 @@ ship_design = {
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
 		component = {
-			slot = "LARGE_UTILITY_13"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_14"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_15"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_16"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
 			slot = "AUX_UTILITY_1"
 			template = "ASTEROIDAL_CARAPACE_ARMOR"
 		}
@@ -1952,7 +1880,7 @@ ship_design = {
 }
 
 ship_design = {
-	name = "NAME_FE_MATERIALIST_Citadel_3"
+	name = "NAME_FE_MATERIALIST_Citadel_2"
 	ship_size = starbase_deep_space_citadel_3
 	section = {
 		template = "DEEP_SPACE_CITADEL_STAGE_3"
@@ -2135,6 +2063,228 @@ ship_design = {
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
 		component = {
+			slot = "AUX_UTILITY_1"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
+		}
+		component = {
+			slot = "AUX_UTILITY_3"
+			template = "ASTEROIDAL_CARAPACE_ARMOR"
+		}
+	}
+	required_component = "STARBASE_DARK_MATTER_REACTOR"
+	required_component = "SENSOR_4"
+	required_component = "STARBASE_COMBAT_COMPUTER_3"
+	required_component = "STARBASE_AURA_FTL_INHIBITOR"
+	required_component = "DSC_AURA_COMMUNICATIONS_JAMMER"
+	required_component = "SHIP_AURA_STRIKE_CRAFT"
+}
+
+ship_design = {
+	name = "NAME_FE_MATERIALIST_Citadel_3"
+	ship_size = starbase_deep_space_citadel_4
+	section = {
+		template = "DEEP_SPACE_CITADEL_STAGE_4"
+		slot = "core"
+
+		component = {
+			slot = "SMALL_GUN_01"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_03"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_04"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_05"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_06"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_07"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_08"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_09"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_10"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_11"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_12"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_13"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_14"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_15"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+
+		component = {
+			slot = "STRIKE_CRAFT_01"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_02"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_03"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_04"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_05"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_06"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_07"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_08"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_09"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_10"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_11"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_12"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_13"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_14"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_15"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_9"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_10"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_11"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_12"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_13"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_14"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_15"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_16"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_17"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_18"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
 			slot = "LARGE_UTILITY_19"
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
@@ -2159,16 +2309,108 @@ ship_design = {
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
 		component = {
+			slot = "LARGE_UTILITY_25"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_26"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_27"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_28"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_29"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_30"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_31"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_32"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_33"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_34"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_35"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_36"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_37"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_38"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_39"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_40"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
 			slot = "AUX_UTILITY_1"
-			template = "ASTEROIDAL_CARAPACE_ARMOR"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_2"
-			template = "ASTEROIDAL_CARAPACE_ARMOR"
+			template = "SHIELD_BOOSTER"
 		}
 		component = {
 			slot = "AUX_UTILITY_3"
-			template = "ASTEROIDAL_CARAPACE_ARMOR"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_4"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_5"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_6"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_7"
+			template = "REACTOR_BOOSTER_3"
+		}
+		component = {
+			slot = "AUX_UTILITY_8"
+			template = "REACTOR_BOOSTER_3"
+		}
+		component = {
+			slot = "AUX_UTILITY_9"
+			template = "REACTOR_BOOSTER_3"
+		}
+		component = {
+			slot = "AUX_UTILITY_10"
+			template = "REACTOR_BOOSTER_3"
 		}
 	}
 	required_component = "STARBASE_DARK_MATTER_REACTOR"
@@ -2799,7 +3041,7 @@ ship_design = {
 }
 
 ship_design = {
-	name = "NAME_FE_SPIRITUALIST_Citadel_1"
+	name = "NAME_FE_SPIRITUALIST_Citadel_0"
 	ship_size = starbase_deep_space_citadel_1
 	section = {
 		template = "DEEP_SPACE_CITADEL_STAGE_1"
@@ -2893,14 +3135,6 @@ ship_design = {
 			template = "LARGE_PSI_SHIELD"
 		}
 		component = {
-			slot = "LARGE_UTILITY_7"
-			template = "LARGE_PSI_SHIELD"
-		}
-		component = {
-			slot = "LARGE_UTILITY_8"
-			template = "LARGE_PSI_SHIELD"
-		}
-		component = {
 			slot = "AUX_UTILITY_1"
 			template = "SHIELD_BOOSTER"
 		}
@@ -2913,7 +3147,7 @@ ship_design = {
 }
 
 ship_design = {
-	name = "NAME_FE_SPIRITUALIST_Citadel_2"
+	name = "NAME_FE_SPIRITUALIST_Citadel_1"
 	ship_size = starbase_deep_space_citadel_2
 	section = {
 		template = "DEEP_SPACE_CITADEL_STAGE_2"
@@ -3055,22 +3289,6 @@ ship_design = {
 			template = "LARGE_PSI_SHIELD"
 		}
 		component = {
-			slot = "LARGE_UTILITY_13"
-			template = "LARGE_PSI_SHIELD"
-		}
-		component = {
-			slot = "LARGE_UTILITY_14"
-			template = "LARGE_PSI_SHIELD"
-		}
-		component = {
-			slot = "LARGE_UTILITY_15"
-			template = "LARGE_PSI_SHIELD"
-		}
-		component = {
-			slot = "LARGE_UTILITY_16"
-			template = "LARGE_PSI_SHIELD"
-		}
-		component = {
 			slot = "AUX_UTILITY_1"
 			template = "SHIELD_BOOSTER"
 		}
@@ -3087,7 +3305,7 @@ ship_design = {
 }
 
 ship_design = {
-	name = "NAME_FE_SPIRITUALIST_Citadel_3"
+	name = "NAME_FE_SPIRITUALIST_Citadel_2"
 	ship_size = starbase_deep_space_citadel_3
 	section = {
 		template = "DEEP_SPACE_CITADEL_STAGE_3"
@@ -3270,6 +3488,228 @@ ship_design = {
 			template = "LARGE_PSI_SHIELD"
 		}
 		component = {
+			slot = "AUX_UTILITY_1"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_3"
+			template = "SHIELD_BOOSTER"
+		}
+	}
+	required_component = "STARBASE_DARK_MATTER_REACTOR"
+	required_component = "SENSOR_4"
+	required_component = "STARBASE_COMBAT_COMPUTER_3"
+	required_component = "STARBASE_AURA_FTL_INHIBITOR"
+	required_component = "DSC_AURA_COMMUNICATIONS_JAMMER"
+	required_component = "SHIP_AURA_STRIKE_CRAFT"
+}
+
+ship_design = {
+	name = "NAME_FE_SPIRITUALIST_Citadel_3"
+	ship_size = starbase_deep_space_citadel_4
+	section = {
+		template = "DEEP_SPACE_CITADEL_STAGE_4"
+		slot = "core"
+
+		component = {
+			slot = "SMALL_GUN_01"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_03"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_04"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_05"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_06"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_07"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_08"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_09"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_10"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_11"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_12"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_13"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_14"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+		component = {
+			slot = "SMALL_GUN_15"
+			template = "ARCHAEO_POINTDEFENCE"
+		}
+
+		component = {
+			slot = "STRIKE_CRAFT_01"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_02"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_03"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_04"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_05"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_06"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_07"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_08"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_09"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_10"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_11"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_12"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_13"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_14"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_15"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_9"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_10"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_11"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_12"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_13"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_14"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_15"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_16"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_17"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_18"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
 			slot = "LARGE_UTILITY_19"
 			template = "LARGE_PSI_SHIELD"
 		}
@@ -3294,6 +3734,70 @@ ship_design = {
 			template = "LARGE_PSI_SHIELD"
 		}
 		component = {
+			slot = "LARGE_UTILITY_25"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_26"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_27"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_28"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_29"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_30"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_31"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_32"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_33"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_34"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_35"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_36"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_37"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_38"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_39"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
+			slot = "LARGE_UTILITY_40"
+			template = "LARGE_PSI_SHIELD"
+		}
+		component = {
 			slot = "AUX_UTILITY_1"
 			template = "SHIELD_BOOSTER"
 		}
@@ -3305,6 +3809,34 @@ ship_design = {
 			slot = "AUX_UTILITY_3"
 			template = "SHIELD_BOOSTER"
 		}
+		component = {
+			slot = "AUX_UTILITY_4"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_5"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_6"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_7"
+			template = "REACTOR_BOOSTER_3"
+		}
+		component = {
+			slot = "AUX_UTILITY_8"
+			template = "REACTOR_BOOSTER_3"
+		}
+		component = {
+			slot = "AUX_UTILITY_9"
+			template = "REACTOR_BOOSTER_3"
+		}
+		component = {
+			slot = "AUX_UTILITY_10"
+			template = "REACTOR_BOOSTER_3"
+		}
 	}
 	required_component = "STARBASE_DARK_MATTER_REACTOR"
 	required_component = "SENSOR_4"
@@ -3313,6 +3845,7 @@ ship_design = {
 	required_component = "DSC_AURA_COMMUNICATIONS_JAMMER"
 	required_component = "SHIP_AURA_STRIKE_CRAFT"
 }
+
 
 # Construction Ship
 ship_design = {
@@ -3922,7 +4455,7 @@ ship_design = {
 }
 
 ship_design = {
-	name = "NAME_FE_XENOPHOBE_Citadel_1"
+	name = "NAME_FE_XENOPHOBE_Citadel_0"
 	ship_size = starbase_deep_space_citadel_1
 	section = {
 		template = "DEEP_SPACE_CITADEL_STAGE_1"
@@ -4016,14 +4549,6 @@ ship_design = {
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
 		component = {
-			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
 			slot = "AUX_UTILITY_1"
 			template = "SHIELD_BOOSTER"
 		}
@@ -4036,7 +4561,7 @@ ship_design = {
 }
 
 ship_design = {
-	name = "NAME_FE_XENOPHOBE_Citadel_2"
+	name = "NAME_FE_XENOPHOBE_Citadel_1"
 	ship_size = starbase_deep_space_citadel_2
 	section = {
 		template = "DEEP_SPACE_CITADEL_STAGE_2"
@@ -4178,22 +4703,6 @@ ship_design = {
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
 		component = {
-			slot = "LARGE_UTILITY_13"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_14"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_15"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_16"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
 			slot = "AUX_UTILITY_1"
 			template = "SHIELD_BOOSTER"
 		}
@@ -4210,7 +4719,7 @@ ship_design = {
 }
 
 ship_design = {
-	name = "NAME_FE_XENOPHOBE_Citadel_3"
+	name = "NAME_FE_XENOPHOBE_Citadel_2"
 	ship_size = starbase_deep_space_citadel_3
 	section = {
 		template = "DEEP_SPACE_CITADEL_STAGE_3"
@@ -4393,6 +4902,228 @@ ship_design = {
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
 		component = {
+			slot = "AUX_UTILITY_1"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_3"
+			template = "SHIELD_BOOSTER"
+		}
+	}
+	required_component = "STARBASE_DARK_MATTER_REACTOR"
+	required_component = "SENSOR_4"
+	required_component = "STARBASE_COMBAT_COMPUTER_3"
+	required_component = "STARBASE_AURA_FTL_INHIBITOR"
+	required_component = "DSC_AURA_COMMUNICATIONS_JAMMER"
+	required_component = "SHIP_AURA_STRIKE_CRAFT"
+}
+
+ship_design = {
+	name = "NAME_FE_XENOPHOBE_Citadel_3"
+	ship_size = starbase_deep_space_citadel_4
+	section = {
+		template = "DEEP_SPACE_CITADEL_STAGE_4"
+		slot = "core"
+
+		component = {
+			slot = "SMALL_GUN_01"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_03"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_04"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_05"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_06"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_07"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_08"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_09"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_10"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_11"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_12"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_13"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_14"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_15"
+			template = "FLAK_BATTERY_4"
+		}
+
+		component = {
+			slot = "STRIKE_CRAFT_01"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_02"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_03"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_04"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_05"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_06"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_07"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_08"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_09"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_10"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_11"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_12"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_13"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_14"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_15"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_9"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_10"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_11"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_12"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_13"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_14"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_15"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_16"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_17"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_18"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
 			slot = "LARGE_UTILITY_19"
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
@@ -4417,6 +5148,70 @@ ship_design = {
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
 		component = {
+			slot = "LARGE_UTILITY_25"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_26"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_27"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_28"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_29"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_30"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_31"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_32"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_33"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_34"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_35"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_36"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_37"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_38"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_39"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_40"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
 			slot = "AUX_UTILITY_1"
 			template = "SHIELD_BOOSTER"
 		}
@@ -4427,6 +5222,34 @@ ship_design = {
 		component = {
 			slot = "AUX_UTILITY_3"
 			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_4"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_5"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_6"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_7"
+			template = "REACTOR_BOOSTER_3"
+		}
+		component = {
+			slot = "AUX_UTILITY_8"
+			template = "REACTOR_BOOSTER_3"
+		}
+		component = {
+			slot = "AUX_UTILITY_9"
+			template = "REACTOR_BOOSTER_3"
+		}
+		component = {
+			slot = "AUX_UTILITY_10"
+			template = "REACTOR_BOOSTER_3"
 		}
 	}
 	required_component = "STARBASE_DARK_MATTER_REACTOR"
@@ -5050,7 +5873,7 @@ ship_design = {
 }
 
 ship_design = {
-	name = "NAME_FE_XENOPHILE_Citadel_1"
+	name = "NAME_FE_XENOPHILE_Citadel_0"
 	ship_size = starbase_deep_space_citadel_1
 	section = {
 		template = "DEEP_SPACE_CITADEL_STAGE_1"
@@ -5144,14 +5967,6 @@ ship_design = {
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
 		component = {
-			slot = "LARGE_UTILITY_7"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_8"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
 			slot = "AUX_UTILITY_1"
 			template = "SHIELD_BOOSTER"
 		}
@@ -5164,7 +5979,7 @@ ship_design = {
 }
 
 ship_design = {
-	name = "NAME_FE_XENOPHILE_Citadel_2"
+	name = "NAME_FE_XENOPHILE_Citadel_1"
 	ship_size = starbase_deep_space_citadel_2
 	section = {
 		template = "DEEP_SPACE_CITADEL_STAGE_2"
@@ -5306,22 +6121,6 @@ ship_design = {
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
 		component = {
-			slot = "LARGE_UTILITY_13"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_14"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_15"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
-			slot = "LARGE_UTILITY_16"
-			template = "LARGE_DARK_MATTER_DEFLECTOR"
-		}
-		component = {
 			slot = "AUX_UTILITY_1"
 			template = "SHIELD_BOOSTER"
 		}
@@ -5338,7 +6137,7 @@ ship_design = {
 }
 
 ship_design = {
-	name = "NAME_FE_XENOPHILE_Citadel_3"
+	name = "NAME_FE_XENOPHILE_Citadel_2"
 	ship_size = starbase_deep_space_citadel_3
 	section = {
 		template = "DEEP_SPACE_CITADEL_STAGE_3"
@@ -5521,6 +6320,228 @@ ship_design = {
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
 		component = {
+			slot = "AUX_UTILITY_1"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_3"
+			template = "SHIELD_BOOSTER"
+		}
+	}
+	required_component = "STARBASE_DARK_MATTER_REACTOR"
+	required_component = "SENSOR_4"
+	required_component = "STARBASE_COMBAT_COMPUTER_3"
+	required_component = "STARBASE_AURA_FTL_INHIBITOR"
+	required_component = "DSC_AURA_COMMUNICATIONS_JAMMER"
+	required_component = "SHIP_AURA_STRIKE_CRAFT"
+}
+
+ship_design = {
+	name = "NAME_FE_XENOPHILE_Citadel_3"
+	ship_size = starbase_deep_space_citadel_4
+	section = {
+		template = "DEEP_SPACE_CITADEL_STAGE_4"
+		slot = "core"
+
+		component = {
+			slot = "SMALL_GUN_01"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_03"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_04"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_05"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_06"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_07"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_08"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_09"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_10"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_11"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_12"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_13"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_14"
+			template = "FLAK_BATTERY_4"
+		}
+		component = {
+			slot = "SMALL_GUN_15"
+			template = "FLAK_BATTERY_4"
+		}
+
+		component = {
+			slot = "STRIKE_CRAFT_01"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_02"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_03"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_04"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_05"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_06"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_07"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_08"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_09"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_10"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_11"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_12"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_13"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_14"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_15"
+			template = "STRIKE_CRAFT_HANGAR_3"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_9"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_10"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_11"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_12"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_13"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_14"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_15"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_16"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_17"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_18"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
 			slot = "LARGE_UTILITY_19"
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
@@ -5545,6 +6566,70 @@ ship_design = {
 			template = "LARGE_DARK_MATTER_DEFLECTOR"
 		}
 		component = {
+			slot = "LARGE_UTILITY_25"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_26"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_27"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_28"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_29"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_30"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_31"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_32"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_33"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_34"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_35"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_36"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_37"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_38"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_39"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_40"
+			template = "LARGE_DARK_MATTER_DEFLECTOR"
+		}
+		component = {
 			slot = "AUX_UTILITY_1"
 			template = "SHIELD_BOOSTER"
 		}
@@ -5556,6 +6641,34 @@ ship_design = {
 			slot = "AUX_UTILITY_3"
 			template = "SHIELD_BOOSTER"
 		}
+		component = {
+			slot = "AUX_UTILITY_4"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_5"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_6"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_7"
+			template = "REACTOR_BOOSTER_3"
+		}
+		component = {
+			slot = "AUX_UTILITY_8"
+			template = "REACTOR_BOOSTER_3"
+		}
+		component = {
+			slot = "AUX_UTILITY_9"
+			template = "REACTOR_BOOSTER_3"
+		}
+		component = {
+			slot = "AUX_UTILITY_10"
+			template = "REACTOR_BOOSTER_3"
+		}
 	}
 	required_component = "STARBASE_DARK_MATTER_REACTOR"
 	required_component = "SENSOR_4"
@@ -5564,6 +6677,7 @@ ship_design = {
 	required_component = "DSC_AURA_COMMUNICATIONS_JAMMER"
 	required_component = "SHIP_AURA_STRIKE_CRAFT"
 }
+
 
 # Construction Ship
 ship_design = {

@@ -4,7 +4,6 @@ check_phy_auto_tech_flag = {
 		has_country_flag = energy_damage_allow
 		has_country_flag = energy_output_allow
 		has_country_flag = shield_output_allow
-		has_country_flag = shield_output2_allow
 	}
 }
 
@@ -17,6 +16,7 @@ check_soc_auto_tech_flag = {
 		has_country_flag = food_output_allow
 		has_country_flag = core_system_cap_allow
 		has_country_flag = leader_life_span_allow
+		has_country_flag = shield_psionic_allow
 	}
 }
 
@@ -31,5 +31,6 @@ check_eng_auto_tech_flag = {
 		has_country_flag = mineral_output_allow
 		has_country_flag = armor_output_allow
 		has_country_flag = armor_output2_allow
+		has_country_flag = dragon_armor_allow
 	}
 }

@@ -1,63 +1,3 @@
-ship_uses_cruiser_reactors = {
-	OR = {
-		# Regular Ships
-		is_ship_size = cruiser
-		# Offspring Ships
-		is_ship_size = offspring_cruiser
-		# Galactic Nemesis Ships
-		is_ship_size = crisis_cruiser
-		# Cosmogenesis Ships
-		is_ship_size = cosmo_crisis_destroyer
-		# Biological Ships
-		is_ship_size = harbinger_stage_1
-		is_ship_size = harbinger_stage_2
-		is_ship_size = harbinger_stage_3
-		is_ship_size = small_fallen_weaver
-		is_ship_size = large_fallen_weaver
-		is_ship_size = cosmo_crisis_weaver
-		# Biological Offspring Ships
-		is_ship_size = offspring_harbinger_stage_1
-		is_ship_size = offspring_harbinger_stage_2
-		is_ship_size = offspring_harbinger_stage_3
-		# mod
-		is_ship_size = small_ship_synth_queen_mod
-	}
-}
-
-ship_uses_titan_reactors = {
-	OR = {
-		# Regular Ships
-		is_ship_size = titan
-		# First Contact Ships
-		is_ship_size = payback_warship
-		# Cosmogenesis Ships
-		is_ship_size = cosmo_crisis_battlecruiser
-		# Biological Ships
-		is_ship_size = bio_titan
-		is_ship_size = large_fallen_stinger
-		is_ship_size = cosmo_crisis_stinger
-		# mod
-		is_ship_size = large_ship_synth_queen_mod
-	}
-}
-
-
-ship_uses_juggernaut_reactors = {
-	OR = {
-		is_ship_size = synth_queen_titan_mod
-		# Regular Ships
-		is_ship_size = juggernaut
-		# Galactic Nemesis Ships
-		is_ship_size = star_eater
-		# Cosmogenesis Ships
-		is_ship_size = cosmo_crisis_titan
-		# Special Ships
-		is_ship_size = synth_queen_titan
-		is_ship_size = cosmo_crisis_titan_mod
-	}
-}
-
-
 ship_uses_colossus_components = {
 	OR = {
 		is_ship_size = colossus
@@ -81,12 +21,14 @@ ship_uses_battleship_thrusters = {
 		is_ship_size = offspring_stinger_stage_1
 		is_ship_size = offspring_stinger_stage_2
 		is_ship_size = offspring_stinger_stage_3
+
 		# mod
+		is_ship_size = large_ship_ed_mod
+        is_ship_size = ember_battleship_mod
 		is_ship_size = large_ship_synth_queen_mod
 		is_ship_size = cosmo_crisis_titan_mod
 	}
 }
-
 
 ship_uses_colossus_thrusters = {
 	OR = {
@@ -102,7 +44,6 @@ ship_uses_colossus_thrusters = {
 }
 
 
-
 ship_uses_juggernaut_components = {
 	OR = {
 		is_ship_size = juggernaut
@@ -110,32 +51,6 @@ ship_uses_juggernaut_components = {
 	}
 }
 
-ship_uses_cruiser_components = {
-	OR = {
-		# Regular Ships
-		is_ship_size = cruiser
-		# Offspring Ships
-		is_ship_size = offspring_cruiser
-		# Galactic Nemesis Ships
-		is_ship_size = crisis_cruiser
-		# Nanotech Ships
-		is_ship_size = nanite_interdictor
-		# Cosmogenesis Ships
-		is_ship_size = cosmo_crisis_destroyer
-		# Biological Ships
-		is_ship_size = harbinger_stage_1
-		is_ship_size = harbinger_stage_2
-		is_ship_size = harbinger_stage_3
-		is_ship_size = large_fallen_harbinger
-		is_ship_size = cosmo_crisis_harbinger
-		# Biological Offspring Ships
-		is_ship_size = offspring_harbinger_stage_1
-		is_ship_size = offspring_harbinger_stage_2
-		is_ship_size = offspring_harbinger_stage_3
-		# mod
-		is_ship_size = small_ship_synth_queen_mod
-	}
-}
 
 ship_uses_titan_components = {
 	OR = {
@@ -149,125 +64,6 @@ ship_uses_titan_components = {
 	}
 }
 
-ship_uses_line_role = {
-	OR = {
-		# Regular Ships
-		is_ship_size = destroyer
-		is_ship_size = cruiser
-		is_ship_size = battleship
-		# Offspring Ships
-		is_ship_size = offspring_destroyer
-		is_ship_size = offspring_cruiser
-		is_ship_size = offspring_battleship
-		# Galactic Nemesis Ships
-		is_ship_size = crisis_destroyer
-		is_ship_size = crisis_cruiser
-		# Cosmogenesis Ships
-		is_ship_size = cosmo_crisis_destroyer
-		is_ship_size = cosmo_crisis_battlecruiser
-		# Biological Ships
-		is_ship_size = stinger_stage_1
-		is_ship_size = stinger_stage_2
-		is_ship_size = stinger_stage_3
-		is_ship_size = large_fallen_stinger
-		is_ship_size = cosmo_crisis_stinger
-		# Biological Offspring Ships
-		is_ship_size = offspring_stinger_stage_1
-		is_ship_size = offspring_stinger_stage_2
-		is_ship_size = offspring_stinger_stage_3
-		# Here Be Dragons
-		is_ship_size = space_dragon_origin_baby
-		# mod
-		is_ship_size = small_ship_synth_queen_mod
-		is_ship_size = large_ship_synth_queen_mod
-	}
-}
-
-ship_uses_artillery_role = {
-	OR = {
-		# Regular Ships
-		is_ship_size = corvette
-		is_ship_size = frigate
-		is_ship_size = destroyer
-		is_ship_size = cruiser
-		is_ship_size = battleship
-		is_ship_size = titan
-		is_ship_size = juggernaut
-		# Offspring Ships
-		is_ship_size = offspring_corvette
-		is_ship_size = offspring_destroyer
-		is_ship_size = offspring_cruiser
-		is_ship_size = offspring_battleship
-		# Galactic Nemesis Ships
-		is_ship_size = crisis_destroyer
-		is_ship_size = crisis_cruiser
-		is_ship_size = star_eater
-		# Nanotech Ships
-		is_ship_size = nanite_interdictor
-		# Cosmogenesis Ships
-		is_ship_size = cosmo_crisis_destroyer
-		is_ship_size = cosmo_crisis_battlecruiser
-		is_ship_size = cosmo_crisis_titan
-		# Biological Ships
-		is_ship_size = harbinger_stage_1
-		is_ship_size = harbinger_stage_2
-		is_ship_size = harbinger_stage_3
-		is_ship_size = large_fallen_harbinger
-		is_ship_size = cosmo_crisis_harbinger
-		is_ship_size = stinger_stage_1
-		is_ship_size = stinger_stage_2
-		is_ship_size = stinger_stage_3
-		is_ship_size = large_fallen_stinger
-		is_ship_size = cosmo_crisis_stinger
-		is_ship_size = bio_titan
-		# Biological Offspring Ships
-		is_ship_size = offspring_harbinger_stage_1
-		is_ship_size = offspring_harbinger_stage_2
-		is_ship_size = offspring_harbinger_stage_3
-		is_ship_size = offspring_stinger_stage_1
-		is_ship_size = offspring_stinger_stage_2
-		is_ship_size = offspring_stinger_stage_3
-		# MOD
-		is_ship_size = synth_queen_titan_mod
-		is_ship_size = small_ship_synth_queen_mod
-		is_ship_size = large_ship_synth_queen_mod
-		is_ship_size = cosmo_crisis_titan_mod
-	}
-}
-
-ship_uses_carrier_role = {
-	OR = {
-		# Regular Ships
-		is_ship_size = cruiser
-		is_ship_size = battleship
-		is_ship_size = juggernaut
-		# Offspring Ships
-		is_ship_size = offspring_cruiser
-		is_ship_size = offspring_battleship
-		# Galactic Nemesis Ships
-		is_ship_size = star_eater
-		# Nanotech Ships
-		is_ship_size = nanite_swarmer
-		is_ship_size = nanite_interdictor
-		# Cosmogenesis Ships
-		is_ship_size = cosmo_crisis_battlecruiser
-		is_ship_size = cosmo_crisis_titan
-		# Biological Ships
-		is_ship_size = harbinger_stage_1
-		is_ship_size = harbinger_stage_2
-		is_ship_size = harbinger_stage_3
-		is_ship_size = large_fallen_harbinger
-		is_ship_size = cosmo_crisis_harbinger
-		is_ship_size = voidspawn_boss
-		# Biological Offspring Ships
-		is_ship_size = offspring_harbinger_stage_1
-		is_ship_size = offspring_harbinger_stage_2
-		is_ship_size = offspring_harbinger_stage_3
-		# MOD
-		is_ship_size = synth_queen_titan_mod
-		is_ship_size = large_ship_synth_queen_mod
-	}
-}
 
 ship_uses_platform_computers = {
 	OR = {
@@ -291,7 +87,6 @@ ship_uses_ion_cannon_components = {
 		#mod
 		is_ship_size = defense_platform_synth_queen_mod
 		is_ship_size = military_station_small_fallen_empire_mod
-		# is_ship_size = military_station_large_fallen_empire_mod
 	}
 }
 
@@ -302,6 +97,7 @@ ship_uses_dsc_components = {
 		is_ship_size = starbase_deep_space_citadel_3
 		#mod
 		is_ship_size = defense_platform_large_synth_queen_mod
+		is_ship_size =  starbase_deep_space_citadel_4
 	}
 }
 
@@ -323,6 +119,9 @@ ship_uses_starbase_components = {
 		is_ship_size = starbase_deep_space_citadel_3
 		#mod
 		is_ship_size = defense_platform_large_synth_queen_mod
+		is_ship_size = starbase_citadel_II
+		is_ship_size =  starbase_deep_space_citadel_4
+		is_ship_size =  orbital_ring_tier_4
 	}
 }
 
@@ -335,6 +134,13 @@ ship_uses_defence_titan_reactor_components = {
 
 }
 
+ship_uses_synth_queen_titan_reactors = {
+	OR = {
+		is_ship_size = synth_queen_titan_mod
+		is_ship_size = cosmo_crisis_titan_mod
+	}
+}
+
 can_be_chosen_for_hindsight = {
 	solar_system = {
 		has_psionic_aura = yes
@@ -344,5 +150,40 @@ can_be_chosen_for_hindsight = {
 	has_modifier = hindsight_nomination 
 	NOT = {
 		is_planet_class = pc_relic
+	}
+	NOT = {
+		is_planet_class = pc_city
+	}
+}
+
+is_space_citadel = {
+	OR = {
+		has_starbase_size = starbase_deep_space_citadel_1
+		has_starbase_size = starbase_deep_space_citadel_2
+		has_starbase_size = starbase_deep_space_citadel_3
+
+		#mod
+		has_starbase_size =  starbase_deep_space_citadel_4
+	}
+}
+
+is_space_citadel_ship_size = {
+	OR = {
+		is_ship_size = starbase_deep_space_citadel_1
+		is_ship_size = starbase_deep_space_citadel_2
+		is_ship_size = starbase_deep_space_citadel_3
+
+		#mod
+		is_ship_size =  starbase_deep_space_citadel_4
+	}
+}
+
+is_mod_big_shield_ship_size = {
+	OR = {
+		is_ship_size = synth_queen_titan_mod
+		is_ship_size = cosmo_crisis_titan_mod
+		is_ship_size = starbase_deep_space_citadel_4
+		is_ship_size = orbital_ring_tier_4
+		is_ship_size = starbase_citadel_II
 	}
 }

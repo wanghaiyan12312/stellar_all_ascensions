@@ -380,3 +380,20 @@ tech_nanite_repair_system_synth_queen = {
         has_machine_age_dlc = yes
     }
 }
+
+
+tech_starbase_6 = {
+	cost = @tier5cost3
+	area = engineering
+    icon = tech_starbase_5
+	category = { voidcraft }
+	tier = 5
+    is_rare = yes
+    is_reverse_engineerable = no
+
+	weight = 0
+
+	ai_weight = {
+		factor = 0
+	}
+}

@@ -144,14 +144,25 @@ country_event = {
 						is_fallen_empire = yes
 						is_machine_empire = no
 					}
-				}
-				is_hive_empire = yes
+				}				
 				has_country_flag = fallen_empire_hive_war
 			}
 			# others fe hive not suitable for Federation
 			change_variable = {
 				which = hive_fe_influence
 				value = 2000
+			}
+			create_fallen_empire_reinforcements_mod = yes
+		}else_if ={
+			limit = { 
+				is_hive_empire = yes
+			}
+			create_fallen_empire_reinforcements_mod = yes
+
+		}else ={
+			while = {
+				count = 3
+				create_fallen_empire_reinforcements_mod = yes
 			}
 		}
 	}
@@ -480,19 +491,5 @@ country_event = { # Reaching Level 5
 	}
 
 	after = {
-		# TOTAL WAR TIME
-		every_country = {
-			limit = {
-				is_country_type = fallen_empire
-				NOT = {
-					is_at_war_with = root
-				}
-			}
-			declare_war = {
-				target = root
-				name = cosmogenesis_materialist_war
-				attacker_war_goal = wg_fe_humiliation
-			}
-		}
 	}
 }

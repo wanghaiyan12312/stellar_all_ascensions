@@ -1,15 +1,7 @@
 # Leader scope
-update_legendary_council_scientist = {
-	remove_all_traits = yes
-	set_skill = 10
-	set_leader_flag = leader_shroud_legendary_mod
+add_mod_common_leader_trait = {
 	add_trait = {
-		trait = leader_trait_chosen_mod
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = subclass_scientist_councilor
+		trait = leader_trait_chosen
 		show_message = no
 		consume_selection = yes
 	}
@@ -24,7 +16,59 @@ update_legendary_council_scientist = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_curator
+		trait = leader_trait_shroudshaper
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = { 
+		trait = leader_trait_shroud_warped 
+		show_message = no
+		consume_selection = yes
+	}
+}
+
+add_mod_common_govern_leader_trait = {
+	add_trait = {
+		trait = leader_trait_robotist
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_shroud_preacher
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_scrapper_2
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_entrepreneur_2
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_venerated_2
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_environmental_engineer
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_architectural_interest
+		show_message = no
+		consume_selection = yes
+	}
+}
+
+add_mod_common_council_leader_trait = {
+	## destiny
+	add_trait = {
+		trait = leader_trait_master_bureaucrat
 		show_message = no
 		consume_selection = yes
 	}
@@ -33,11 +77,7 @@ update_legendary_council_scientist = {
 		show_message = no
 		consume_selection = yes
 	}
-	add_trait = {
-		trait = leader_trait_master_bureaucrat
-		show_message = no
-		consume_selection = yes
-	}
+	## destiny（Under One Rule）
 	add_trait = {
 		trait = leader_trait_the_cybernetic_luminary
 		show_message = no
@@ -50,6 +90,108 @@ update_legendary_council_scientist = {
 	}
 	add_trait = {
 		trait = leader_trait_the_genetic_luminary
+		show_message = no
+		consume_selection = yes
+	}
+	## veteran（Under One Rule）
+	add_trait = {
+		trait = leader_trait_legendary_great_teacher_3
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_legendary_commanding_presence_3
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_legendary_autarky_3
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_legendary_industry_titan_3
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_legendary_genetic_purist_3
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_legendary_evervigilant_3
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_legendary_pious_ascet_3
+		show_message = no
+		consume_selection = yes
+	}
+	## veteran
+	add_trait = {
+		trait = leader_trait_treasure_hoarder_3
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_trailblazer_3
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_buccaneer_3
+		show_message = no
+		consume_selection = yes
+	}
+	## common
+	add_trait = {
+		trait = trait_ruler_charismatic_2
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = trait_ruler_feedback_loop_2
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = trait_ruler_logistic_understanding_2
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = trait_ruler_eye_for_talent_2
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = trait_ruler_champion_of_the_people_2
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_politician
+		show_message = no
+		consume_selection = yes
+	}
+}
+
+update_legendary_council_scientist = {
+	remove_all_traits = yes
+	set_skill = 10
+	set_leader_flag = leader_shroud_legendary_mod
+	add_trait = {
+		trait = subclass_scientist_councilor
+		show_message = no
+		consume_selection = yes
+	}
+    add_mod_common_leader_trait = yes
+	add_mod_common_council_leader_trait = yes
+	## destiny
+	add_trait = {
+		trait = leader_trait_curator
 		show_message = no
 		consume_selection = yes
 	}
@@ -69,37 +211,13 @@ update_legendary_council_scientist = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_percussive_maintainer
+		trait = leader_trait_disciple_of_the_whisperers
 		show_message = no
 		consume_selection = yes
 	}
-	add_trait = {
-		trait = trait_ruler_home_in_the_sky
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_spark_of_genius_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_inquisitive_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_maniacal_3
-		show_message = no
-		consume_selection = yes
-	}
+	## veteran
 	add_trait = {
 		trait = leader_trait_science_communicator_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_society_focus_3
 		show_message = no
 		consume_selection = yes
 	}
@@ -164,62 +282,23 @@ update_legendary_council_scientist = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = trait_ruler_charismatic_2
+		trait = leader_trait_expertise_military_theory_3
 		show_message = no
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = trait_ruler_feedback_loop_2
+		trait = leader_trait_inquisitive_3
 		show_message = no
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = trait_ruler_logistic_understanding_2
+		trait = leader_trait_maniacal_3
 		show_message = no
 		consume_selection = yes
 	}
+	## common
 	add_trait = {
-		trait = trait_ruler_eye_for_talent_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = trait_ruler_champion_of_the_people
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_politician
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_great_teacher_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_commanding_presence_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_autarky_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_industry_titan_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_genetic_purist_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_evervigilant_3
+		trait = leader_trait_scientist_mind_wipe_01
 		show_message = no
 		consume_selection = yes
 	}
@@ -234,47 +313,17 @@ update_legendary_council_scientist = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_scientist_mind_wipe_01
+		trait = leader_trait_percussive_maintainer
 		show_message = no
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_treasure_hoarder_3
+		trait = trait_ruler_home_in_the_sky
 		show_message = no
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_trailblazer_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_buccaneer_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_storm_rider_scientist
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_expertise_military_theory_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_disciple_of_the_whisperers
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_shroudshaper
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = { 
-		trait = leader_trait_shroud_warped 
+		trait = leader_trait_spark_of_genius_2
 		show_message = no
 		consume_selection = yes
 	}
@@ -284,26 +333,15 @@ update_legendary_govern_scientist = {
 	remove_all_traits = yes
 	set_skill = 10
 	set_leader_flag = leader_shroud_legendary_mod
-	add_trait = {
-		trait = leader_trait_chosen_mod
-		show_message = no
-		consume_selection = yes
-	}
+	add_mod_common_leader_trait = yes
 	add_trait = {
 		trait = subclass_scientist_governor
 		show_message = no
 		consume_selection = yes
 	}
-	add_trait = {
-		trait = leader_trait_cyborg
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_erudite
-		show_message = no
-		consume_selection = yes
-	}
+	add_mod_common_leader_trait = yes
+	add_mod_common_govern_leader_trait = yes
+	## destiny
 	add_trait = {
 		trait = leader_trait_surveyor
 		show_message = no
@@ -315,22 +353,23 @@ update_legendary_govern_scientist = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_shroud_preacher
+		trait = leader_trait_disciple_of_the_composer_2
 		show_message = no
 		consume_selection = yes
 	}
+	## veteran
 	add_trait = {
-		trait = leader_trait_robotist
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_society_focus_3
+		trait = leader_trait_naturalist_3
 		show_message = no
 		consume_selection = yes
 	}
 	add_trait = {
 		trait = leader_trait_physics_focus_3
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_society_focus_3
 		show_message = no
 		consume_selection = yes
 	}
@@ -349,18 +388,9 @@ update_legendary_govern_scientist = {
 		show_message = no
 		consume_selection = yes
 	}
+	## common
 	add_trait = {
-		trait = leader_trait_scrapper_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_entrepreneur_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_architectural_interest
+		trait = leader_trait_storm_rider_scientist
 		show_message = no
 		consume_selection = yes
 	}
@@ -379,78 +409,21 @@ update_legendary_govern_scientist = {
 		show_message = no
 		consume_selection = yes
 	}
-	add_trait = {
-		trait = leader_trait_storm_rider_scientist
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_venerated_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_environmental_engineer
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_mediator
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_ancestors_knowledge
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_shroudshaper
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_disciple_of_the_composer_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = { 
-		trait = leader_trait_shroud_warped 
-		show_message = no
-		consume_selection = yes
-	}
 }
 update_legendary_council_official = {
 	remove_all_traits = yes
 	set_skill = 10
 	set_leader_flag = leader_shroud_legendary_mod
 	add_trait = {
-		trait = leader_trait_chosen_mod
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
 		trait = subclass_official_economy_councilor
 		show_message = no
 		consume_selection = yes
 	}
+	add_mod_common_leader_trait = yes
+	add_mod_common_council_leader_trait = yes
+	## destiny
 	add_trait = {
-		trait = leader_trait_cyborg
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_erudite
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_educator
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_master_bureaucrat
+		trait = leader_trait_supreme_organizer
 		show_message = no
 		consume_selection = yes
 	}
@@ -460,30 +433,11 @@ update_legendary_council_official = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_govenor_caretaker_node
+		trait = leader_trait_disciple_of_the_cradle
 		show_message = no
 		consume_selection = yes
 	}
-	add_trait = {
-		trait = leader_trait_the_cybernetic_luminary
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_the_psionic_luminary
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_the_genetic_luminary
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_frontier_spirit_2
-		show_message = no
-		consume_selection = yes
-	}
+	## veteran
 	add_trait = {
 		trait = leader_trait_cultural_focus_3
 		show_message = no
@@ -514,98 +468,9 @@ update_legendary_council_official = {
 		show_message = no
 		consume_selection = yes
 	}
+	## common
 	add_trait = {
-		trait = trait_ruler_fertility_preacher
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_shipwright
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_retired_fleet_officer
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = trait_ruler_charismatic_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = trait_ruler_feedback_loop_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = trait_ruler_logistic_understanding_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = trait_ruler_eye_for_talent_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = trait_ruler_champion_of_the_people_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_politician
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_great_teacher_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_commanding_presence_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_autarky_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_industry_titan_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_genetic_purist_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_evervigilant_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_treasure_hoarder_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_trailblazer_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_buccaneer_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_storm_rider_official
+		trait = leader_trait_frontier_spirit_2
 		show_message = no
 		consume_selection = yes
 	}
@@ -614,42 +479,19 @@ update_legendary_council_official = {
 		show_message = no
 		consume_selection = yes
 	}
-	add_trait = {
-		trait = leader_trait_shroudshaper
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = { 
-		trait = leader_trait_shroud_warped 
-		show_message = no
-		consume_selection = yes
-	}
-
 }
 update_legendary_govern_official = {
 	remove_all_traits = yes
 	set_skill = 10
 	set_leader_flag = leader_shroud_legendary_mod
 	add_trait = {
-		trait = leader_trait_chosen_mod
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
 		trait = subclass_official_governor
 		show_message = no
 		consume_selection = yes
 	}
-	add_trait = {
-		trait = leader_trait_cyborg
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_erudite
-		show_message = no
-		consume_selection = yes
-	}
+	add_mod_common_leader_trait = yes
+	add_mod_common_govern_leader_trait = yes
+	## destiny
 	add_trait = {
 		trait = leader_trait_efficient
 		show_message = no
@@ -661,17 +503,17 @@ update_legendary_govern_official = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_mediator
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_shroud_preacher
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
 		trait = leader_trait_galvanizer
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_disciple_of_the_instrument
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_disciple_of_the_cradle
 		show_message = no
 		consume_selection = yes
 	}
@@ -681,45 +523,11 @@ update_legendary_govern_official = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_intellectual
+		trait = leader_trait_legendary_ancestors_knowledge
 		show_message = no
 		consume_selection = yes
 	}
-	add_trait = {
-		trait = leader_trait_bureaucrat
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_scrapper_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_entrepreneur_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_righteous_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_environmental_engineer
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_architectural_interest
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_trade_focus_2
-		show_message = no
-		consume_selection = yes
-	}
+	## veteran
 	add_trait = {
 		trait = leader_trait_settler_3
 		show_message = no
@@ -760,6 +568,27 @@ update_legendary_govern_official = {
 		show_message = no
 		consume_selection = yes
 	}
+	## common
+	add_trait = {
+		trait = leader_trait_righteous_2
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_trade_focus_2
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_intellectual
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_bureaucrat
+		show_message = no
+		consume_selection = yes
+	}
 	add_trait = {
 		trait = leader_trait_prospectorium_extractor
 		show_message = no
@@ -796,37 +625,12 @@ update_legendary_govern_official = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_nuumismatic_priest
+		trait = leader_trait_govenor_caretaker
 		show_message = no
 		consume_selection = yes
 	}
 	add_trait = {
 		trait = leader_trait_storm_rider_official
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_venerated_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_disciple_of_the_instrument
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_disciple_of_the_cradle
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_shroudshaper
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = { 
-		trait = leader_trait_shroud_warped 
 		show_message = no
 		consume_selection = yes
 	}
@@ -836,85 +640,13 @@ update_legendary_councilor_commander = {
 	set_skill = 10
 	set_leader_flag = leader_shroud_legendary_mod
 	add_trait = {
-		trait = leader_trait_chosen_mod
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
 		trait = subclass_commander_councilor
 		show_message = no
 		consume_selection = yes
 	}
-	add_trait = {
-		trait = leader_trait_cyborg
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_erudite
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_treasure_hoarder_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_trailblazer_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_buccaneer_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_storm_rider_commander
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_home_guard_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = trait_ruler_recruiter_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_guardian_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_educator
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_master_bureaucrat
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_the_cybernetic_luminary
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_the_psionic_luminary
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_the_genetic_luminary
-		show_message = no
-		consume_selection = yes
-	}
+	add_mod_common_leader_trait = yes
+	add_mod_common_council_leader_trait = yes
+	## destiny
 	add_trait = {
 		trait = leader_trait_military_overseer
 		show_message = no
@@ -936,17 +668,23 @@ update_legendary_councilor_commander = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_admiral_warform
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_admiral_warform_node
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
 		trait = leader_trait_ruler_great_khan
+		show_message = no
+		consume_selection = yes
+	}
+	## veteran
+	add_trait = {
+		trait = leader_trait_home_guard_2
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = trait_ruler_recruiter_2
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_guardian_2
 		show_message = no
 		consume_selection = yes
 	}
@@ -956,32 +694,7 @@ update_legendary_councilor_commander = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = trait_ruler_charismatic_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = trait_ruler_feedback_loop_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = trait_ruler_logistic_understanding_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = trait_ruler_eye_for_talent_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
 		trait = leader_trait_fleet_organizer_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_skirmisher
 		show_message = no
 		consume_selection = yes
 	}
@@ -1020,93 +733,143 @@ update_legendary_councilor_commander = {
 		show_message = no
 		consume_selection = yes
 	}
+	## common
 	add_trait = {
-		trait = trait_ruler_champion_of_the_people
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_politician
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_great_teacher_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_commanding_presence_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_autarky_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_industry_titan_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_genetic_purist_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_evervigilant_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_shroudshaper
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = { 
-		trait = leader_trait_shroud_warped 
+		trait = leader_trait_skirmisher
 		show_message = no
 		consume_selection = yes
 	}
 }
+
+update_legendary_governor_commander = {
+	remove_all_traits = yes
+	set_skill = 10
+	set_leader_flag = leader_shroud_legendary_mod
+	add_trait = {
+		trait = subclass_commander_governor
+		show_message = no
+		consume_selection = yes
+	}
+	add_mod_common_leader_trait = yes
+	add_mod_common_govern_leader_trait = yes
+	## destiny
+	add_trait = {
+		trait = leader_trait_surveyor
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_taskmaster
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_honored_warmaster
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_academia_recruiter
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_arbiter
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_mediator
+		show_message = no
+		consume_selection = yes
+	}
+	## veteran
+	add_trait = {
+		trait = leader_trait_mining_focus_3
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_generator_focus_3
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_farming_focus_3
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_space_miner_3
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_reinforcer_2
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_warden_2
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_conscripter_2
+		show_message = no
+		consume_selection = yes
+	}
+	## common
+	add_trait = {
+		trait = leader_trait_capitalist_2
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_private_mines_2
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_homesteader_2
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_agrarian_upbringing
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_righteous_2
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_enlister
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_storm_rider_commander
+		show_message = no
+		consume_selection = yes
+	}
+}
+
 update_legendary_admiral_commander = {
 	remove_all_traits = yes
 	set_skill = 10
 	set_leader_flag = leader_shroud_legendary_mod
 	add_trait = {
-		trait = leader_trait_chosen_mod
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
 		trait = subclass_commander_admiral
 		show_message = no
 		consume_selection = yes
 	}
-	add_trait = {
-		trait = leader_trait_erudite
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_cyborg
-		show_message = no
-		consume_selection = yes
-	}
+	add_mod_common_leader_trait = yes
+	## destiny
 	add_trait = {
 		trait = leader_trait_master_gunner
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_trickster
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_destiny_engineer
 		show_message = no
 		consume_selection = yes
 	}
@@ -1121,25 +884,31 @@ update_legendary_admiral_commander = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_trophy_hunter
+		trait = leader_trait_pirate_queen
 		show_message = no
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_void_hunter_2
+		trait = leader_trait_fortress_cracker
 		show_message = no
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_cautious
+		trait = leader_trait_legendary_ancestors_knowledge
 		show_message = no
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_engineer
+		trait = leader_trait_disciple_of_the_eater
 		show_message = no
 		consume_selection = yes
 	}
+	add_trait = {
+		trait = leader_trait_disciple_of_the_end
+		show_message = no
+		consume_selection = yes
+	}
+	## veteran
 	add_trait = {
 		trait = leader_trait_wrecker_2
 		show_message = no
@@ -1191,12 +960,33 @@ update_legendary_admiral_commander = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_gunship_specialization_2
+		trait = leader_trait_scout_2
 		show_message = no
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_scout_2
+		trait = leader_trait_gunship_specialization_2
+		show_message = no
+		consume_selection = yes
+	}
+	## common
+	add_trait = {
+		trait = leader_trait_void_hunter_2
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_trophy_hunter
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_cautious
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_trickster
 		show_message = no
 		consume_selection = yes
 	}
@@ -1276,16 +1066,6 @@ update_legendary_admiral_commander = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_shroudshaper
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_pirate_queen
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
 		trait = leader_trait_unplugged_cybernetic_positives_3
 		show_message = no
 		consume_selection = yes
@@ -1315,202 +1095,6 @@ update_legendary_admiral_commander = {
 		show_message = no
 		consume_selection = yes
 	}
-	add_trait = {
-		trait = leader_trait_fortress_cracker
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_ancestors_knowledge
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_disciple_of_the_eater
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_disciple_of_the_end
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_shroudshaper
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = { 
-		trait = leader_trait_shroud_warped 
-		show_message = no
-		consume_selection = yes
-	}
-}
-
-update_legendary_governor_commander = {
-	remove_all_traits = yes
-	set_skill = 10
-	set_leader_flag = leader_shroud_legendary_mod
-	add_trait = {
-		trait = leader_trait_chosen_mod
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = subclass_commander_governor
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_erudite
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_cyborg
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_mining_focus_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_generator_focus_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_farming_focus_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_space_miner_3
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_reinforcer_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_warden_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_martinet_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_conscripter_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_martinet_2
-		show_message = no
-		consume_selection = yes
-	}
-    add_trait = {
-		trait = leader_trait_robotist
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_surveyor
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_taskmaster
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_honored_warmaster
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_academia_recruiter
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_capitalist_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_private_mines_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_homesteader_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_venerated_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_agrarian_upbringing
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_righteous_2
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_enlister
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_environmental_engineer
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_arbiter
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_mediator
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_storm_rider_commander
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_ancestors_knowledge
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_shroudshaper
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = { 
-		trait = leader_trait_shroud_warped 
-		show_message = no
-		consume_selection = yes
-	}
 }
 
 update_legendary_general_commander = {
@@ -1518,22 +1102,19 @@ update_legendary_general_commander = {
 	set_skill = 10
 	set_leader_flag = leader_shroud_legendary_mod
 	add_trait = {
-		trait = leader_trait_chosen_mod
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
 		trait = subclass_commander_general
 		show_message = no
 		consume_selection = yes
 	}
+	add_mod_common_leader_trait = yes
+	## destiny
 	add_trait = {
-		trait = leader_trait_cyborg
+		trait = leader_trait_legendary_ancestors_knowledge
 		show_message = no
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_erudite
+		trait = leader_trait_disciple_of_the_eater
 		show_message = no
 		consume_selection = yes
 	}
@@ -1547,11 +1128,7 @@ update_legendary_general_commander = {
 		show_message = no
 		consume_selection = yes
 	}
-	add_trait = {
-		trait = leader_trait_chainbreaker
-		show_message = no
-		consume_selection = yes
-	}
+	## veteran
 	add_trait = {
 		trait = leader_trait_hardy_2
 		show_message = no
@@ -1563,12 +1140,18 @@ update_legendary_general_commander = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_restrained
+		trait = leader_trait_dreaded_2
 		show_message = no
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_dreaded_2
+		trait = leader_trait_interrogator_2
+		show_message = no
+		consume_selection = yes
+	}
+	## common
+	add_trait = {
+		trait = leader_trait_restrained
 		show_message = no
 		consume_selection = yes
 	}
@@ -1578,7 +1161,12 @@ update_legendary_general_commander = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_interrogator_2
+		trait = leader_trait_ancient_knowledge
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_dragonslayer
 		show_message = no
 		consume_selection = yes
 	}
@@ -1599,31 +1187,6 @@ update_legendary_general_commander = {
 	}
 	add_trait = {
 		trait = gestalt_trait_general_mind_wipe_02
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_storm_rider_commander
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_ancestors_knowledge
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_disciple_of_the_eater
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_shroudshaper
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = { 
-		trait = leader_trait_shroud_warped 
 		show_message = no
 		consume_selection = yes
 	}

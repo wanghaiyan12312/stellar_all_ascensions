@@ -1,0 +1,156 @@
+ember_cruiser_mod = {
+	formation_priority = @cruiser_formation_priority
+	entity = "ember_cruiser_entity"
+	max_speed = @speed_default
+	acceleration = 0.25
+	rotation_speed = 0.175
+	collision_radius = @cruiser_collision_radius
+	max_hitpoints = @cruiser_hp
+	modifier = {
+		ship_evasion_add = @cruiser_evasion
+	}
+	size_multiplier = 20
+	map_counter_icon = ship_counter_16
+	icon = ship_size_military_4
+	fleet_slot_size = 3
+	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	num_target_locators = 4
+	is_space_station = no
+	base_buildtime = @cruiser_build_time
+	can_have_federation_design = no
+	enable_default_design = yes
+	enable_3dview_in_ship_browser = yes
+
+	default_behavior = line
+	role_background = "GFX_role_selection_cruiser"
+	combat_disengage_chance = 1.50
+	components_add_to_cost = no
+	ship_roles = { gunship artillery carrier }
+	triggered_ship_roles = {
+		{
+			name = explosive
+			trigger = { has_technology = tech_torpedoes_1 }
+		}
+		{
+			name = explosive_stealth
+			trigger = { has_technology = tech_cloaking_3 }
+		}
+		{
+			name = energy_torpedoes
+			trigger = { has_technology = tech_energy_torpedoes_1 }
+		}
+		{
+			name = energy_torpedoes_stealth
+			trigger = {
+				has_technology = tech_cloaking_3
+				has_technology = tech_energy_torpedoes_1
+			}
+		}
+		{
+			name = artillery_stealth
+			trigger = {
+				has_technology = tech_cloaking_3
+			}
+		}
+	}
+
+	potential_country = {
+		has_crisis_level = crisis_cosmogenesis_level_3
+		country_uses_bio_ships = no
+	}
+
+	use_shipnames_from = cruiser
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+        cost = {
+            advanced_logic = 225
+        }
+		upkeep = {
+			energy = @cruiser_upkeep_energy
+			sr_dark_matter = 0.1
+		}
+		logistics = {
+			trade = @cruiser_logistic_upkeep_trade
+		}
+	}
+
+	available_to_everyone = yes
+
+	ai_ship_data = {
+        min = 0
+		max = 0
+	}
+}
+
+ember_battleship_mod = {
+	formation_priority = @battleship_formation_priority
+	entity = "ember_battleship_entity"
+	max_speed = @speed_slow
+	acceleration = 0.2
+	rotation_speed = 0.15
+	collision_radius = @battleship_collision_radius
+	max_hitpoints = @battleship_hp
+	modifier = {
+		ship_evasion_add = @battleship_evasion
+	}
+	size_multiplier = 40
+	map_counter_icon = ship_counter_32
+	icon = ship_size_military_8
+	fleet_slot_size = 4
+	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	num_target_locators = 4
+	is_space_station = no
+	base_buildtime = @battleship_build_time
+	can_have_federation_design = no
+	enable_default_design = yes
+	enable_3dview_in_ship_browser = yes
+
+	default_behavior = artillery
+	role_background = "GFX_role_selection_battleship"
+	combat_disengage_chance = 1.25
+	components_add_to_cost = no
+	ship_roles = { artillery carrier gunship }
+
+	potential_country = {
+		has_crisis_level = crisis_cosmogenesis_level_4
+		country_uses_bio_ships = no
+	}
+
+	use_shipnames_from = battleship
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+        cost = {
+            advanced_logic = 550
+        }
+		upkeep = {
+			energy = @battleship_upkeep_energy
+			sr_dark_matter = 0.5
+		}
+		logistics = {
+			trade = @battleship_logistic_upkeep_trade 
+		}
+	}
+
+	available_to_everyone = yes
+
+	ai_ship_data = {
+        min = 0
+		max = 0
+	}
+}

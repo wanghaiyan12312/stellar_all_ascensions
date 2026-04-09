@@ -1,0 +1,43 @@
+key = "$SIZE$_DRAGON_ARMOR_$TIER$"
+power = 0
+icon = "GFX_ship_part_dragon_armor_$TIER$"
+icon_frame = 1
+
+modifier = {
+	ship_armor_add = $DRAGON_ARMOR_ADD$
+}
+ship_modifier = {
+	ship_armor_hardening_add = $DRAGON_ARMOR_HARDENING$
+}
+
+potential = {
+	from = {
+		country_uses_bio_ships = no
+        is_fallen_empire = no
+	}
+}
+
+show_tech_unlock_if = {
+	country_uses_bio_ships = no
+    is_fallen_empire = no
+}
+
+component_set = "DRAGON_ARMOR_$TIER$"
+resources = {
+	category = ship_components
+	cost = {
+		alloys = $DRAGON_ARMOR_COST$
+        sr_living_metal = $DRAGON_ARMOR_COST_sr_living_metal$
+		nanites = $DRAGON_ARMOR_COST_nanites$
+	}
+}
+
+prerequisites = { "tech_dragon_armor_$TIER$" }
+
+ai_weight = {
+	weight = @T6_weight
+	inline_script = {
+		script = ship_components/weights/roles_stealth
+		MULT = 2
+	}
+}

@@ -12,20 +12,71 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
+		trigger = {
+			OR = {
+				has_technology = tech_power_plant_3
+            	has_technology = tech_lasers_4
+            	has_technology = tech_lasers_2
+            	has_technology = tech_shields_4
+			} 
+		}
 		name = auto_tech.1.phy
+		icon = {
+			icon = GFX_tech_icon_physics_research
+			text = policy_physics_research_policy_desc
+		}
 		hidden_effect = {
 			country_event = { id = auto_tech.2 }
 		}
 	}
 	option = {
+		trigger = {
+			OR = {
+				has_technology = tech_gene_crops
+            	has_technology = tech_combat_training
+            	has_technology = tech_galactic_bureaucracy
+           		has_technology = tech_vitality_boosters
+            	has_technology = tech_strike_craft_3
+            	AND = {
+                	has_ascension_perk = ap_cosmogenesis
+		        	has_crisis_level = crisis_cosmogenesis_level_5
+                	has_technology = tech_psionic_shield
+            	}
+			}
+		}
 		name = auto_tech.1.soc
+		icon = {
+			icon = GFX_tech_icon_society_research
+			text = policy_society_research_policy_desc
+		}
 		hidden_effect = {
 			country_event = { id = auto_tech.3 }
 		}
 
 	}
 	option = {
+		trigger = {
+			OR = {
+				has_technology = tech_mineral_purification_2
+            	has_technology = tech_defense_platform_hull_1
+            	OR = {
+			    	has_technology = tech_missiles_3
+			    	has_technology = tech_swarmer_missiles_2
+		    	}
+				has_technology = tech_mass_drivers_3
+            	has_technology = tech_ship_armor_3
+            	AND = {
+                	has_ascension_perk = ap_cosmogenesis
+		        	has_crisis_level = crisis_cosmogenesis_level_5
+                	has_technology = tech_dragon_armor
+            	}
+			}			
+		}
 		name = auto_tech.1.eng
+		icon = {
+			icon = GFX_tech_icon_engineering_research
+			text = policy_engineering_research_policy_desc
+		}
 		hidden_effect = {
 			country_event = { id = auto_tech.4 }
 		}
@@ -68,7 +119,14 @@ country_event = {
 	}
 
 	option = {
+		trigger = {
+			has_technology = tech_lasers_2
+		}
 		name = auto_tech.2.energy_fire_rate
+		icon = {
+			icon = GFX_tech_icon_repeatable_weapon_type_energy_fire_rate
+			text = auto_tech.2.energy_fire_rate.name
+		}
 		hidden_effect = {
 			auto_tech_remove_all_phy_flag = yes
 			set_country_flag = energy_fire_rate_allow
@@ -76,31 +134,45 @@ country_event = {
 
 	}
 	option = {
+		trigger = {
+			has_technology = tech_lasers_4
+		}	
 		name = auto_tech.2.energy_damage
+		icon = {
+			icon = GFX_tech_icon_repeatable_weapon_type_energy_damage
+			text = auto_tech.2.energy_damage.name
+		}
 		hidden_effect = {
 			auto_tech_remove_all_phy_flag = yes
 			set_country_flag = energy_damage_allow
 		}
 	}
 	option = {
+		trigger = {
+			has_technology = tech_power_plant_3
+		}
 		name = auto_tech.2.energy_output
+		icon = {
+			icon = GFX_tech_icon_repeatable_improved_tile_energy_output
+			text = auto_tech.2.energy_output.name
+		}
 		hidden_effect = {
 			auto_tech_remove_all_phy_flag = yes
 			set_country_flag = energy_output_allow
 		}
 	}
 	option = {
+		trigger = {
+			has_technology = tech_shields_4
+		}
 		name = auto_tech.2.shield_output
+		icon = {
+			icon = GFX_tech_icon_repeatable_improved_shield_output
+			text = auto_tech.2.shield_output.name
+		}
 		hidden_effect = {
 			auto_tech_remove_all_phy_flag = yes
 			set_country_flag = shield_output_allow
-		}
-	}
-	option = {
-		name = auto_tech.2.shield_output2
-		hidden_effect = {
-			auto_tech_remove_all_phy_flag = yes
-			set_country_flag = shield_output2_allow
 		}
 	}
 	option = {
@@ -132,7 +204,14 @@ country_event = {
 	}
 
 	option = {
+		trigger = { 
+			has_technology = tech_strike_craft_3
+		}
 		name = auto_tech.3.strike_craft_fire_rate
+		icon = {
+			icon = GFX_tech_icon_repeatable_weapon_type_strike_craft_fire_rate
+			text = auto_tech.3.strike_craft_fire_rate.name
+		}
 		hidden_effect = {
 			auto_tech_remove_all_soc_flag = yes
 			set_country_flag = strike_craft_fire_rate_allow
@@ -140,45 +219,103 @@ country_event = {
 
 	}
 	option = {
+		trigger = { 
+			has_technology = tech_strike_craft_3
+		}
 		name = auto_tech.3.strike_craft_fire_damage
+		icon = {
+			icon = GFX_tech_icon_repeatable_weapon_type_strike_craft_fire_damage
+			text = auto_tech.3.strike_craft_fire_damage.name
+		}
 		hidden_effect = {
 			auto_tech_remove_all_soc_flag = yes
 			set_country_flag = strike_craft_fire_damage_allow
 		}
 	}
 	option = {
+		trigger = { 
+			has_technology = tech_combat_training
+		}
 		name = auto_tech.3.army_health
+		icon = {
+			icon = GFX_tech_icon_repeatable_improved_army_health
+			text = auto_tech.3.army_health.name
+		}
 		hidden_effect = {
 			auto_tech_remove_all_soc_flag = yes
 			set_country_flag = army_health_allow
 		}
 	}
 	option = {
+		trigger = { 
+			has_technology = tech_combat_training
+		}
 		name = auto_tech.3.army_damage
+		icon = {
+			icon = GFX_tech_icon_repeatable_improved_army_damage
+			text = auto_tech.3.army_damage.name
+		}
 		hidden_effect = {
 			auto_tech_remove_all_soc_flag = yes
 			set_country_flag = army_damage_allow
 		}
 	}
 	option = {
+		trigger = { 
+			has_technology = tech_gene_crops
+		}
 		name = auto_tech.3.food_output
+		icon = {
+			icon = GFX_tech_icon_repeatable_improved_tile_food_output
+			text = auto_tech.3.food_output.name
+		}
 		hidden_effect = {
 			auto_tech_remove_all_soc_flag = yes
 			set_country_flag = food_output_allow
 		}
 	}
 	option = {
+		trigger = { 
+			has_technology = tech_galactic_bureaucracy
+		}
 		name = auto_tech.3.core_system_cap
+		icon = {
+			icon = GFX_tech_icon_repeatable_improved_core_system_cap
+			text = auto_tech.3.core_system_cap.name
+		}
 		hidden_effect = {
 			auto_tech_remove_all_soc_flag = yes
 			set_country_flag = core_system_cap_allow
 		}
 	}
 	option = {
+		trigger = { 
+			has_technology = tech_vitality_boosters
+		}
 		name = auto_tech.3.leader_life_span
+		icon = {
+			icon = GFX_tech_icon_repeatable_improved_leader_life_span
+			text = auto_tech.3.leader_life_span.name
+		}
 		hidden_effect = {
 			auto_tech_remove_all_soc_flag = yes
 			set_country_flag = leader_life_span_allow
+		}
+	}
+	option = {
+		trigger = {
+			has_ascension_perk = ap_cosmogenesis
+			has_crisis_level = crisis_cosmogenesis_level_5 
+			has_technology = tech_psionic_shield
+		}
+		name = auto_tech.3.shield_psionic
+		icon = {
+			icon = GFX_tech_icon_repeatable_psionic_shield
+			text = auto_tech.3.psionic_shield.name
+		}
+		hidden_effect = {
+			auto_tech_remove_all_soc_flag = yes
+			set_country_flag = shield_psionic_allow
 		}
 	}
 	option = {
@@ -210,7 +347,14 @@ country_event = {
 	}
 
 	option = {
+		trigger = {
+			has_technology = tech_mass_drivers_3
+		}
 		name = auto_tech.4.kinetic_fire_rate
+		icon = {
+			icon = GFX_tech_icon_repeatable_weapon_type_kinetic_fire_rate
+			text = auto_tech.4.kinetic_fire_rate.name
+		}
 		hidden_effect = {
 			auto_tech_remove_all_eng_flag = yes
 			set_country_flag = kinetic_fire_rate_allow
@@ -218,59 +362,123 @@ country_event = {
 
 	}
 	option = {
+		trigger = {
+			has_technology = tech_mass_drivers_3
+		}
 		name = auto_tech.4.kinetic_damage
+		icon = {
+			icon = GFX_tech_icon_repeatable_weapon_type_kinetic_damage
+			text = auto_tech.4.kinetic_damage.name
+		}
 		hidden_effect = {
 			auto_tech_remove_all_eng_flag = yes
 			set_country_flag = kinetic_damage_allow
 		}
 	}
 	option = {
+		trigger = {
+			OR = {
+			    has_technology = tech_missiles_3
+			    has_technology = tech_swarmer_missiles_2
+		    }
+		}
 		name = auto_tech.4.explosive_fire_rate
+		icon = {
+			icon = GFX_tech_icon_repeatable_weapon_type_explosive_fire_rate
+			text = auto_tech.4.explosive_fire_rate.name
+		}
 		hidden_effect = {
 			auto_tech_remove_all_eng_flag = yes
 			set_country_flag = explosive_fire_rate_allow
 		}
 	}
 	option = {
+		trigger = {
+			OR = {
+			    has_technology = tech_missiles_3
+			    has_technology = tech_swarmer_missiles_2
+		    }
+		}
 		name = auto_tech.4.explosive_damage
+		icon = {
+			icon = GFX_tech_icon_repeatable_weapon_type_explosive_damage
+			text = auto_tech.4.explosive_damage.name
+		}
 		hidden_effect = {
 			auto_tech_remove_all_eng_flag = yes
 			set_country_flag = explosive_damage_allow
 		}
 	}
 	option = {
+		trigger = {
+			has_technology = tech_defense_platform_hull_1
+		}
 		name = auto_tech.4.military_station_health
+		icon = {
+			icon = GFX_tech_icon_repeatable_improved_military_station_health
+			text = auto_tech.4.military_station_health.name
+		}
 		hidden_effect = {
 			auto_tech_remove_all_eng_flag = yes
 			set_country_flag = military_station_health_allow
 		}
 	}
 	option = {
+		trigger = {
+			has_technology = tech_defense_platform_hull_1
+		}
 		name = auto_tech.4.military_station_damage
+		icon = {
+			icon = GFX_tech_icon_repeatable_improved_military_station_damage
+			text = auto_tech.4.military_station_damage.name
+		}
 		hidden_effect = {
 			auto_tech_remove_all_eng_flag = yes
 			set_country_flag = military_station_damage_allow
 		}
 	}
 	option = {
+		trigger = {
+			has_technology = tech_mineral_purification_2
+		}
 		name = auto_tech.4.mineral_output
+		icon = {
+			icon = GFX_tech_icon_repeatable_improved_tile_mineral_output
+			text = auto_tech.4.mineral_output.name
+		}
 		hidden_effect = {
 			auto_tech_remove_all_eng_flag = yes
 			set_country_flag = mineral_output_allow
 		}
 	}
 	option = {
+		trigger = {
+			has_technology = tech_ship_armor_3
+		}
 		name = auto_tech.4.armor_output
+		icon = {
+			icon = GFX_tech_icon_repeatable_improved_armor_output
+			text = auto_tech.4.armor_output.name
+		}
 		hidden_effect = {
 			auto_tech_remove_all_eng_flag = yes
 			set_country_flag = armor_output_allow
 		}
 	}
 	option = {
-		name = auto_tech.4.armor_output2
+		trigger = {
+			has_ascension_perk = ap_cosmogenesis
+			has_crisis_level = crisis_cosmogenesis_level_5
+			has_technology = tech_dragon_armor
+		}
+		name = auto_tech.4.dragon_armor
+		icon = {
+			icon = GFX_tech_icon_dragon_armor
+			text = auto_tech.4.dragon_armor.name
+		}
 		hidden_effect = {
 			auto_tech_remove_all_eng_flag = yes
-			set_country_flag = armor_output2_allow
+			set_country_flag = dragon_armor_allow
 		}
 	}
 	option = {

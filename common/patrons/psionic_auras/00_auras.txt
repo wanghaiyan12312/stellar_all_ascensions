@@ -1,3 +1,14 @@
+## mod
+##      whisperers_aura
+##      owner_planet_modifier = {
+##			modifier = {
+##				planet_researchers_upkeep_mult = -0.2
+##				station_researchers_produces_mult = 0.6
+##				planet_researchers_produces_mult = 2.0
+##			}
+##		}
+
+
 # Psionic Auras
 # -----------------------
 #	patron = <patron_type>				# Key of the Psionic Patron of this Aura type (optional)
@@ -88,7 +99,7 @@ eater_aura = {
 		}
 		owner_planet_modifier = {
 			modifier = {
-				job_soldier_stability_add = 0.15
+				job_soldier_stability_add = 0.05
 			}
 		}
 		neutral_fleet_modifier = {
@@ -98,7 +109,7 @@ eater_aura = {
 		}
 		neutral_planet_modifier = {
 			modifier = {
-				job_soldier_stability_add = 0.15
+				job_soldier_stability_add = 0.05
 			}
 		}
 		rival_fleet_modifier = {
@@ -131,7 +142,7 @@ eater_aura = {
 		}
 		owner_planet_modifier = {
 			modifier = {
-				job_soldier_stability_add = 0.25
+				job_soldier_stability_add = 0.08
 			}
 		}
 		neutral_fleet_modifier = {
@@ -141,7 +152,7 @@ eater_aura = {
 		}
 		neutral_planet_modifier = {
 			modifier = {
-				job_soldier_stability_add = 0.25
+				job_soldier_stability_add = 0.08
 			}
 		}
 		rival_fleet_modifier = {
@@ -174,7 +185,7 @@ eater_aura = {
 		}
 		owner_planet_modifier = {
 			modifier = {
-				job_soldier_stability_add = 0.5
+				job_soldier_stability_add = 0.15
 			}
 		}
 		neutral_fleet_modifier = {
@@ -184,7 +195,7 @@ eater_aura = {
 		}
 		neutral_planet_modifier = {
 			modifier = {
-				job_soldier_stability_add = 0.5
+				job_soldier_stability_add = 0.15
 			}
 		}
 		rival_fleet_modifier = {
@@ -238,7 +249,7 @@ souls_aura = {
 		}
 		owner_planet_modifier = {
 			modifier = {
-				planet_stability_add = 3
+				planet_stability_add = 1
 				planet_jobs_unity_produces_mult = 0.05
 			}
 		}
@@ -288,7 +299,7 @@ souls_aura = {
 		}
 		owner_planet_modifier = {
 			modifier = {
-				planet_stability_add = 5
+				planet_stability_add = 3
 				planet_jobs_unity_produces_mult = 0.1
 			}
 		}
@@ -338,7 +349,7 @@ souls_aura = {
 		}
 		owner_planet_modifier = {
 			modifier = {
-				planet_stability_add = 7
+				planet_stability_add = 4
 				planet_jobs_unity_produces_mult = 0.15
 			}
 		}
@@ -687,7 +698,7 @@ whisperers_aura = {
 			modifier = {
 				planet_researchers_upkeep_mult = -0.1
 				station_researchers_produces_mult = 0.2
-				planet_researchers_produces_mult = 1.0
+				planet_researchers_produces_mult = 2.0
 			}
 		}
 		neutral_fleet_modifier = {
@@ -730,7 +741,6 @@ whisperers_aura = {
 			modifier = {
 				planet_researchers_upkeep_mult = -0.15
 				station_researchers_produces_mult = 0.4
-				planet_researchers_produces_mult = 1.5
 			}
 		}
 		neutral_fleet_modifier = {
@@ -781,7 +791,6 @@ whisperers_aura = {
 			modifier = {
 				planet_researchers_upkeep_mult = -0.2
 				station_researchers_produces_mult = 0.6
-				planet_researchers_produces_mult = 2.0
 			}
 		}
 		neutral_fleet_modifier = {
@@ -875,7 +884,7 @@ exiled_aura = {
 		random_neighbor_system = {
 			limit = {
 				has_psionic_aura = no
-				check_aura_suppressors = no
+				is_psionic_aura_suppressed = no
 				OR = {
 					AND = {
 						exists = space_owner

@@ -146,7 +146,7 @@ the_eater_of_worlds = {
 		}
 		# Fanatic Pacifists
 		triggered_modifier = {
-			potential = { has_ethic = ethic_fanatic_pacifist }
+			potential = { is_fanatic_pacifist = yes }
 			modifier = {
 				pop_happiness = -0.2
 			}
@@ -216,29 +216,43 @@ the_eater_of_worlds = {
 		}
 
 		possible = {
-			custom_tooltip = {
-				text = requires_valid_devour_target
-				any_neighbor_country = {
-					can_declare_devour_war = yes
-				}
-			}
 		}
 
 		effect = {
 			custom_tooltip = ACCORD_DOOM_TT
 			hidden_effect = {
-				country_event = { id = shroud.4800 }
+				if = {
+					limit = {
+						any_owned_planet = {
+							has_active_building = building_eater_sanctum
+						}
+					}
+					random_owned_planet = {
+						limit = {
+							has_active_building = building_eater_sanctum
+						}
+						save_event_target_as = eater_planet
+					}
+				}
+				else = {
+					capital_scope = {
+						save_event_target_as = eater_planet
+					}
+				}
+				spawn_eater_fleet_effect = yes
 			}
 		}
 		on_revert = {
-			remove_country_flag = devour_war_active
-			refresh_species_rights = yes
 		}
 
 		ai_will_do = {
+			NOT = {
+				any_owned_fleet = {
+					has_fleet_flag = eater_fleet
+				}
+			}
 			any_neighbor_country = {
-				can_declare_devour_war = yes
-				fleet_power < root.trigger:fleet_power
+				fleet_power > root.trigger:fleet_power
 			}
 		}
 	}
@@ -869,7 +883,7 @@ whisperers_in_the_void = {
 		effect = {
 			custom_tooltip = ACCORD_FORESIGHT_TT
 			hidden_effect = {
-				country_event = { id = shroud.4880 }
+				country_event = { id = end_cycle.9 }
 			}
 		}
 	}

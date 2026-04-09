@@ -1,0 +1,1371 @@
+# Dragon Scale Armor
+tech_dragon_armor = {
+	area = engineering
+	cost = @guardiantechcost
+	tier = @guardiantechtier
+	icon = "GFX_tech_dragon_armor_mod"
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = 0
+
+	weight_modifier = {
+		factor = 0
+	}
+
+	technology_swap = {
+		name = tech_bio_dragon_armor
+		inherit_icon = no
+		inherit_effects = no
+		trigger = {
+			country_uses_bio_ships = yes
+		}
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+
+tech_psionic_shield_2 = {
+	area = society
+	cost = @repeatableTechCost_shield_2
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+    ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_3 = {
+	area = society
+	cost = @repeatableTechCost_shield_3
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_2" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+    ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_4 = {
+	area = society
+	cost = @repeatableTechCost_shield_4
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_3" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_5 = {
+	area = society
+	cost = @repeatableTechCost_shield_5
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_4" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_6 = {
+	area = society
+	cost = @repeatableTechCost_shield_6
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_5" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_7 = {
+	area = society
+	cost = @repeatableTechCost_shield_7
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_6" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_8 = {
+	area = society
+	cost = @repeatableTechCost_shield_8
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_7" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_9 = {
+	area = society
+	cost = @repeatableTechCost_shield_9
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_8" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_10 = {
+	area = society
+	cost = @repeatableTechCost_shield_10
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_9" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_11 = {
+	area = society
+	cost = @repeatableTechCost_shield_11
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_10" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_12 = {
+	area = society
+	cost = @repeatableTechCost_shield_12
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_11" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_13 = {
+	area = society
+	cost = @repeatableTechCost_shield_13
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_12" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_14 = {
+	area = society
+	cost = @repeatableTechCost_shield_14
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_13" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_15 = {
+	area = society
+	cost = @repeatableTechCost_shield_15
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_14" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_16 = {
+	area = society
+	cost = @repeatableTechCost_shield_16
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_15" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_17 = {
+	area = society
+	cost = @repeatableTechCost_shield_17
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_16" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_18 = {
+	area = society
+	cost = @repeatableTechCost_shield_18
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_17" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_19 = {
+	area = society
+	cost = @repeatableTechCost_shield_19
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_18" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_20 = {
+	area = society
+	cost = @repeatableTechCost_shield_20
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_19" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_21 = {
+	area = society
+	cost = @repeatableTechCost_shield_21
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_20" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_22 = {
+	area = society
+	cost = @repeatableTechCost_shield_22
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_21" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_23 = {
+	area = society
+	cost = @repeatableTechCost_shield_23
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_22" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		country_uses_bio_ships = no
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_24 = {
+	area = society
+	cost = @repeatableTechCost_shield_24
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_23" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_psionic_shield_25 = {
+	area = society
+	cost = @repeatableTechCost_shield_25
+	tier = @repeatableTechTier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_shield_24" }
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+    potential = {
+        is_gestalt = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+		country_uses_bio_ships = no
+  		OR = {
+  			has_country_flag = shield_psionic_allow
+  			check_soc_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_2 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_2
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_3 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_3
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_2" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_4 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_4
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	prerequisites = { "tech_dragon_armor_3" }
+	is_reverse_engineerable = no
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_5 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_5
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_4" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_6 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_6
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_5" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_7 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_7
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_6" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_8 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_8
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_7" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_9 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_9
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_8" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_10 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_10
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_9" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_11 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_11
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_10" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_12 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_12
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_11" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_13 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_13
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_12" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_14 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_14
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_13" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_15 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_15
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_14" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_16 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_16
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_15" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_17 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_17
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_16" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_18 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_18
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_17" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_19 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_19
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_18" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_20 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_20
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_19" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_21 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_21
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_20" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_22 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_22
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_21" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_23 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_23
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_22" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_24 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_24
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_23" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}
+
+tech_dragon_armor_25 = {
+	area = engineering
+	cost = @repeatableTechCost_armor_25
+	icon = "GFX_tech_dragon_armor_mod"
+	tier = @repeatableTechTier
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	weight = @repeatableTechWeight
+	is_reverse_engineerable = no
+
+	prerequisites = { "tech_dragon_armor_24" }
+
+	potential = {
+        is_gestalt = no
+		country_uses_bio_ships = no
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+  		OR = {
+  			has_country_flag = dragon_armor_allow
+  			check_eng_auto_tech_flag = yes
+  		}
+    }
+
+	ai_weight = {
+
+    }
+}

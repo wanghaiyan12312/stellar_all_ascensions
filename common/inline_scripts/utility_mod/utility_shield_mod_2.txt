@@ -1,0 +1,52 @@
+key = "$SIZE$_PSI_SHIELD_$TIER$"
+icon = "GFX_ship_part_psi_shield_$TIER$"
+icon_frame = 1
+resources = {
+	category = ship_components
+	cost = {
+		alloys = $SHIELD_COST_ALLOYS$
+		sr_zro = $SHIELD_COST_ZRO$
+	}
+	upkeep = {
+		energy = $SHIELD_UPKEEP_ENERGY$
+		alloys = $SHIELD_UPKEEP_ALLOYS$
+	}
+}
+modifier = {
+	#ship_damage_reduction_add = $SHIELD_REDUCTION$
+	ship_shield_add = $SHIELD_ADD$
+	ship_shield_regen_add_static = $SHIELD_REGEN$ #Regeneration per day
+}
+ship_modifier = {
+	ship_shield_hardening_add = $SHIELD_HARD$
+}
+prerequisites = { "tech_psionic_shield_$TIER$" }
+component_set = "PSI_SHIELD_$TIER$"
+
+potential = {
+	from = {
+		country_uses_bio_ships = no
+		is_fallen_empire = no
+	}
+}
+
+show_tech_unlock_if = {
+	country_uses_bio_ships = no
+	is_fallen_empire = no
+}
+
+ai_weight = {
+	weight = @T5_weight
+	modifier = {
+		factor = 0.0
+		no_resource_for_component = { RESOURCE = sr_zro }
+	}
+	modifier = {
+		factor = 0.0
+		is_ai = yes
+	}
+	inline_script = {
+		script = ship_components/weights/roles_stealth
+		MULT = 0
+	}
+}

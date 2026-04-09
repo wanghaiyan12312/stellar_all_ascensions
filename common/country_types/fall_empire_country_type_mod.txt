@@ -179,18 +179,18 @@ awakened_fallen_empire = {
 	resources = {
 		category = country_base
 		produces = {
-			energy = 1000
-			minerals = 250
-			food = 100
-			alloys = 100
-			consumer_goods = 100
-			rare_crystals = 10
-			exotic_gases = 10
-			volatile_motes = 10
-			sr_dark_matter = 2
-			sr_living_metal = 2
-			sr_zro = 2
-			influence = 3
+			energy = 100000
+			minerals = 100000
+			food = 100000
+			alloys = 10000
+			consumer_goods = 10000
+			rare_crystals = 1000
+			exotic_gases = 1000
+			volatile_motes = 1000
+			sr_dark_matter = 100
+			sr_living_metal = 100
+			sr_zro = 100
+			influence = 100
 		}
 	}
 }

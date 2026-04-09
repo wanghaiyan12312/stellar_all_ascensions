@@ -19,7 +19,6 @@
 #		}
 #	}
 ###
-
 #Leave at start of list
 trait_auto_mod_cyborg = {
 	cost = 2
@@ -287,7 +286,6 @@ trait_cyborg_loyalty_circuits = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
-		SPECIES_TRAIT_UNIVERSAL_AUGMENTATIONS
 	}
 	tags = { organic positive happiness cybernetic individual }
 	initial = yes
@@ -296,7 +294,6 @@ trait_cyborg_loyalty_circuits = {
 		OR = {
 			can_add_cybernetic_traits = yes
 			can_add_unplugged_traits = yes
-			can_add_aug_bazaar_traits = yes
 		}
 		NOT = { has_trait = trait_hive_mind }
 	}
@@ -304,11 +301,7 @@ trait_cyborg_loyalty_circuits = {
 		OR = {
 			can_remove_cybernetic_traits = yes
 			can_remove_unplugged_traits = yes
-			can_add_aug_bazaar_traits = yes
 		}
-	}
-	allowed_civics = {
-		civic_augmentation_bazaars
 	}
 	randomized = no
 	category = cyborg
@@ -523,9 +516,8 @@ trait_cyborg_learning_algorithms = {
 	randomized = no
 	category = cyborg
 	modifier = {
-		species_leader_exp_gain = 0.10
-		negative_leader_traits_species = -1
-		leaders_upkeep_mult = -0.1
+		species_leader_exp_gain = 0.25
+		leader_skill_add = 1
 	}
 	slave_cost = {
 		energy = 1500
@@ -598,9 +590,8 @@ trait_cyborg_neural_limiters = {
 	randomized = no
 	category = cyborg
 	modifier = {
-		species_leader_exp_gain = -0.10
-		negative_leader_traits_species = 1
-		leaders_upkeep_mult = 0.1
+		species_leader_exp_gain = -0.20
+		councilor_skill_add = -1
 	}
 
 	ai_weight = {
@@ -956,6 +947,77 @@ trait_cyborg_integrated_weaponry = {
 	}
 }
 
+trait_cyborg_mass_produced = {
+	host_has_dlc = "The Machine Age"
+	cost = 1
+	#opposites = {}
+	category = cyborg
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+	}
+	tags = { cybernetic positive pop_growth }
+	initial = yes
+	species_potential_add = {
+		OR = {
+			can_add_cybernetic_traits = yes
+			can_add_unplugged_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_cybernetic_traits = yes
+			can_remove_unplugged_traits = yes
+		}
+	}
+
+	modifier = {
+		logistic_growth_mult = 0.10
+	}
+	slave_cost = {
+		energy = 1500
+	}
+	allowed_origins = {
+		origin_unplugged
+	}
+}
+
+trait_cyborg_propaganda_machines = {
+	host_has_dlc = "The Machine Age"
+	cost = 1
+	category = cyborg
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+		SPECIES_TRAIT_UNIVERSAL_AUGMENTATIONS
+	}
+	tags = { cybernetic positive pop_output unity }
+	initial = yes
+	species_potential_add = {
+		OR = {
+			can_add_aug_bazaar_traits = yes
+			can_add_cybernetic_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_add_aug_bazaar_traits = yes
+			can_add_cybernetic_traits = yes
+		}
+	}
+	allowed_civics = {
+		civic_augmentation_bazaars
+	}
+	#opposites = { "trait_robot_quarrelsome" }
+	modifier = {
+		bureaucrat_jobs_bonus_workforce_mult = 0.10
+	}
+	slave_cost = {
+		energy = 750
+	}
+}
+
 trait_cyborg_delicate_frames = {
 	host_has_dlc = "The Machine Age"
 	cost = -1
@@ -1052,9 +1114,10 @@ trait_cyborg_scarcity_algorithms = {
 }
 
 trait_cyborg_climate_adjustment_dry = {
+	icon = "gfx/interface/icons/traits/trait_dry_planet_preference.dds"
 	host_has_dlc = "The Machine Age"
 	cost = 1
-
+	custom_tooltip = trait_cyborg_climate_adjustment_dry_tt
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
@@ -1073,17 +1136,17 @@ trait_cyborg_climate_adjustment_dry = {
 	}
 	randomized = no
 	category = cyborg
+	sorting_priority = 30
+	bound_to_planet_classes = {
+		pc_desert
+		pc_arid
+		pc_savannah
+	}
 	modifier = {
-		pc_desert_habitability = 0.3
-		pc_arid_habitability = 0.3
-		pc_savannah_habitability = 0.3
-
-		pc_tropical_habitability = -0.1
-		pc_continental_habitability = -0.1
-		pc_tundra_habitability = -0.1
-		pc_arctic_habitability = -0.1
-		pc_ocean_habitability = -0.1
-		pc_alpine_habitability = -0.1
+		# Dry
+		pc_arid_habitability 		= @cyborg_hab_preference
+		pc_savannah_habitability 	= @cyborg_hab_preference
+		pc_desert_habitability 		= @cyborg_hab_preference
 	}
 	slave_cost = {
 		energy = 500
@@ -1091,9 +1154,10 @@ trait_cyborg_climate_adjustment_dry = {
 }
 
 trait_cyborg_climate_adjustment_wet = {
+	icon = "gfx/interface/icons/traits/trait_wet_planet_preference.dds"
 	host_has_dlc = "The Machine Age"
 	cost = 1
-
+	custom_tooltip = trait_cyborg_climate_adjustment_wet_tt
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
@@ -1112,17 +1176,17 @@ trait_cyborg_climate_adjustment_wet = {
 	}
 	randomized = no
 	category = cyborg
+	sorting_priority = 30
+	bound_to_planet_classes = {
+		pc_ocean
+		pc_tropical
+		pc_continental
+	}
 	modifier = {
-		pc_tropical_habitability = 0.3
-		pc_continental_habitability = 0.3
-		pc_ocean_habitability = 0.3
-
-		pc_desert_habitability = -0.1
-		pc_arid_habitability = -0.1
-		pc_savannah_habitability = -0.1
-		pc_arctic_habitability = -0.1
-		pc_tundra_habitability = -0.1
-		pc_alpine_habitability = -0.1
+		# Wet
+		pc_tropical_habitability 	= @cyborg_hab_preference
+		pc_continental_habitability = @cyborg_hab_preference
+		pc_ocean_habitability 		= @cyborg_hab_preference
 	}
 	slave_cost = {
 		energy = 500
@@ -1130,9 +1194,10 @@ trait_cyborg_climate_adjustment_wet = {
 }
 
 trait_cyborg_climate_adjustment_cold = {
+	icon = "gfx/interface/icons/traits/trait_cold_planet_preference.dds"
 	host_has_dlc = "The Machine Age"
 	cost = 1
-
+	custom_tooltip = trait_cyborg_climate_adjustment_cold_tt
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
@@ -1151,17 +1216,17 @@ trait_cyborg_climate_adjustment_cold = {
 	}
 	randomized = no
 	category = cyborg
+	sorting_priority = 30
+	bound_to_planet_classes = {
+		pc_tundra
+		pc_arctic
+		pc_alpine
+	}
 	modifier = {
-		pc_alpine_habitability = 0.3
-		pc_tundra_habitability = 0.3
-		pc_arctic_habitability = 0.3
-
-		pc_desert_habitability = -0.1
-		pc_arid_habitability = -0.1
-		pc_savannah_habitability = -0.1
-		pc_ocean_habitability = -0.1
-		pc_continental_habitability = -0.1
-		pc_tropical_habitability = -0.1
+		# Cold
+		pc_tundra_habitability 		= @cyborg_hab_preference
+		pc_arctic_habitability 		= @cyborg_hab_preference
+		pc_alpine_habitability 		= @cyborg_hab_preference
 	}
 	slave_cost = {
 		energy = 500
@@ -1276,11 +1341,11 @@ trait_cyborg_infinity_sphere = {
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
 	}
-	tags = { organic positive upkeep research cybernetic }
+	tags = { organic positive pop_output research cybernetic }
 
 
 	modifier = {
-		planet_researchers_upkeep_mult = -0.5
+		researcher_jobs_bonus_workforce_mult = 0.25
 	}
 	slave_cost = {
 		energy = 1500
@@ -1291,22 +1356,12 @@ trait_cyborg_scavenger_bot = {
 	cost = 2
 	host_has_dlc = "The Machine Age"
 	species_potential_add = {
-		can_add_cybernetic_traits = yes
-		OR = {
-			AND = {
-				exists = from
-				from = {
-					has_technology = tech_leviathan_techgenesis
-					has_country_flag = harvested_scavenger_parts
-				}
-			}
-			AND = {
-				hidden_trigger = { exists = from }
-				from = {
-					has_crisis_level = crisis_cosmogenesis_level_5
-				}
-			}
+		exists = from
+		from = {
+			has_technology = tech_leviathan_techgenesis
+			has_country_flag = harvested_scavenger_parts
 		}
+		can_add_cybernetic_traits = yes
 	}
 	initial = no
 	randomized = no
@@ -1346,8 +1401,8 @@ trait_cyborg_creed_of_construction = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive pop_output alloys consumer_goods unity cybernetic special }
 	modifier = {
-		foundry_jobs_bonus_workforce_mult = 0.2
-		artisan_jobs_bonus_workforce_mult = 0.2
+		foundry_jobs_bonus_workforce_mult = 0.1
+		artisan_jobs_bonus_workforce_mult = 0.1
 		bureaucrat_jobs_bonus_workforce_mult = 0.1
 	}
 
@@ -1377,8 +1432,9 @@ trait_cyborg_creed_of_war = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive army pop_output unity cybernetic special }
 	modifier = {
-		army_health = 0.25
-		army_defense_damage_mult = 0.25
+		army_health = 0.1
+		army_damage_mult = 0.1
+		soldier_jobs_bonus_workforce_mult = 0.1
 		bureaucrat_jobs_bonus_workforce_mult = 0.1
 	}
 
@@ -1408,7 +1464,7 @@ trait_cyborg_creed_of_research = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive pop_output research unity cybernetic special }
 	modifier = {
-		researcher_jobs_bonus_workforce_mult = 0.2
+		researcher_jobs_bonus_workforce_mult = 0.10
 		bureaucrat_jobs_bonus_workforce_mult = 0.10
 	}
 
@@ -1438,8 +1494,8 @@ trait_cyborg_creed_of_labor = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive happiness pop_output unity cybernetic special }
 	modifier = {
-		pop_cat_worker_bonus_workforce_mult = 0.2
-		bureaucrat_jobs_bonus_workforce_mult = 0.10
+		pop_cat_worker_bonus_workforce_mult = 0.1
+		bureaucrat_jobs_bonus_workforce_mult = 0.1
 	}
 
 	icon = "gfx/interface/icons/traits/trait_cyborg_creed_of_labor.dds"
@@ -1471,11 +1527,12 @@ trait_cyborg_ritualistic_implants = {
 	tags = { organic positive army pop_output alloys consumer_goods research unity cybernetic special }
 	modifier = {
 		foundry_jobs_bonus_workforce_mult = 0.05
+		artisan_jobs_bonus_workforce_mult = 0.05
 		engineer_jobs_bonus_workforce_mult = 0.05
-		bureaucrat_jobs_bonus_workforce_mult = 0.1
+		bureaucrat_jobs_bonus_workforce_mult = 0.05
+		soldier_jobs_bonus_workforce_mult = 0.05
 		pop_cat_worker_bonus_workforce_mult = 0.05
 		army_damage_mult = 0.05
-		# concept_cybernetic_creed_traits_desc should be updated if trait effects are changed
 	}
 
 	icon = "gfx/interface/icons/traits/trait_cyborg_ritualistic_implants.dds"

@@ -12,12 +12,18 @@ aap_more_genetic_ascension = {
         OR = {
             has_active_tradition = tr_purity_finish
             has_active_tradition = tr_mutation_finish
-            has_active_tradition = tr_cloning_finish
+            OR = {
+                has_active_tradition = tr_cloning_finish
+                has_active_tradition = tr_cloning_finish_clone_army
+            } 
         }
-        OR = {
-            NOT = { has_active_tradition = tr_purity_finish }
-            NOT = { has_active_tradition = tr_mutation_finish }
-            NOT = { has_active_tradition = tr_cloning_finish }
+        NAND = {
+            has_active_tradition = tr_purity_adopt
+            has_active_tradition = tr_mutation_adopt
+            OR = {
+                has_active_tradition = tr_cloning_adopt
+                has_active_tradition = tr_cloning_adopt_clone_army
+            }
         }
     }
 
@@ -80,7 +86,38 @@ app_auto_tech = {
 	}
 
     potential = {
-        always = yes
+        OR = {
+            ## phy
+            has_technology = tech_power_plant_3
+            has_technology = tech_lasers_4
+            has_technology = tech_lasers_2
+            has_technology = tech_shields_4
+            ## soc
+            has_technology = tech_gene_crops
+            has_technology = tech_combat_training
+            has_technology = tech_galactic_bureaucracy
+            has_technology = tech_vitality_boosters
+            has_technology = tech_strike_craft_3
+            AND = {
+                has_ascension_perk = ap_cosmogenesis
+		        has_crisis_level = crisis_cosmogenesis_level_5
+                has_technology = tech_psionic_shield
+            }
+            ## eng
+            has_technology = tech_mineral_purification_2
+            has_technology = tech_defense_platform_hull_1
+            OR = {
+			    has_technology = tech_missiles_3
+			    has_technology = tech_swarmer_missiles_2
+		    }
+			has_technology = tech_mass_drivers_3
+            has_technology = tech_ship_armor_3
+            AND = {
+                has_ascension_perk = ap_cosmogenesis
+		        has_crisis_level = crisis_cosmogenesis_level_5
+                has_technology = tech_dragon_armor
+            }
+        }
     }
 
     effect = { country_event = { id = auto_tech.1 } }
@@ -204,4 +241,39 @@ app_get_minor_patron_edict = {
     }
 
     ai_weight = { weight = 0 }
+}
+
+damn_the_consequences = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+
+	edict_lock_in_months = 60
+
+	resources = {
+		category = edicts_unscaled
+		cost = {
+			unity = @EdictSpecialCost
+			multiplier = value:consequences_cost
+		}
+		upkeep = {
+			unity = @EdictSpecialCost
+			multiplier = value:consequences_cost
+		}
+	}
+
+	modifier = {
+		custom_tooltip = "edict_damn_the_consequences_effects"
+		show_only_custom_tooltip = no
+		planet_pops_organics_upkeep_mult = 1
+	}
+
+	potential = {
+		can_add_overtuned_traits = yes
+	}
+
+	allow = { }
+
+	ai_weight = {
+		weight = 0
+	}
 }

@@ -507,6 +507,7 @@ country_event = {
 	after = {
 		event_target:selected_hindsight_planet = {
 			change_pc = pc_relic
+			change_planet_size = 20 ## +20 planet_size
 			hidden_effect = {
 				relic_world_deposits = yes
 			}
@@ -517,6 +518,22 @@ country_event = {
 			every_system_with_aura = {
 				add_aura_intensity = @accord_aura_intensity_loss
 			}
+		}
+	}
+}
+
+# Whisperers in the Void - Foresight Accord
+country_event = {
+	id = end_cycle.9
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		progress_all_researches = 0.95
+		add_modifier = {
+			modifier = "shroud_research_speed"
+			days = 1800
+			mult = 10
 		}
 	}
 }

@@ -25,7 +25,6 @@ military_station_small_fallen_empire_mod = {
 	}
 	num_target_locators = 0
 	is_space_station = yes
-	build_block_radius = @build_block_radius_military
 
 	uses_name_prefix = no
 	takes_name_from_ship_design = yes
@@ -51,11 +50,9 @@ military_station_small_fallen_empire_mod = {
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
 
-	potential_construction = {
-		is_scope_type = starbase
-	}
 
 	potential_construction = {
+		is_scope_type = starbase
 		OR = {
 			has_starbase_size >= starbase_outpost
 			has_starbase_size >= orbital_ring_tier_1
@@ -101,17 +98,14 @@ military_station_large_fallen_empire_mod = {
 	}
 	num_target_locators = 0
 	is_space_station = yes
-	build_block_radius = @build_block_radius_medium_military
 
 	uses_name_prefix = no
 	takes_name_from_ship_design = yes
 
-	potential_construction = {
-		is_scope_type = starbase
-	}
 
 	potential_construction = {
 		OR = {
+			is_scope_type = starbase
 			has_starbase_size >= starbase_outpost
 			has_starbase_size >= orbital_ring_tier_1
 			has_starbase_size >= starbase_deep_space_citadel_1
@@ -154,27 +148,23 @@ military_station_large_fallen_empire_mod = {
 }
 
 # for god sake too weak for defend
-starbase_citadel = {
+starbase_citadel_II = {
 	max_speed = 0.0
 	acceleration = 0.0
 	rotation_speed = 0.0
+	entity = "fallen_empire_01_starbase_citadel_entity"
 	modifier = {
 		ship_evasion_mult = -1
 		ship_armor_add = 500000
-		starbase_module_capacity_add = 6
-		starbase_building_capacity_add = 4
-		starbase_defense_platform_capacity_add = 15
 		ship_shield_add = 500000 
+		ship_shield_regen_add_perc = 0.1
+		starbase_module_capacity_add = 12
+		starbase_building_capacity_add = 6
+		starbase_defense_platform_capacity_add = 30	
 		ship_sensor_range_add = 1
-		ship_shield_mult = 0.8
-		ship_armor_mult = 0.64
-	}
-	ship_modifier = {
-		ship_fire_rate_mult = 0.50
-		ship_weapon_range_mult = 0.20
 	}
 	max_hitpoints = 500000
-	base_buildtime = 1440
+	base_buildtime = 7200
 	resources = {
 		category = starbases
 		cost = {
@@ -205,12 +195,12 @@ starbase_citadel = {
 		}
 
 		upkeep = {
-			energy = 50
+			energy = 500
 		}
 	}
 
 	combat_size_multiplier = 100
-	size_multiplier = 100
+	size_multiplier = 640
 	fleet_slot_size = 2
 	section_slots = {
 		"core" = { locator = "part1" }
@@ -220,7 +210,13 @@ starbase_citadel = {
 		"4" = { locator = "part5" }
 		"5" = { locator = "part6" }
 		"6" = { locator = "part7" }
+		"7" = { locator = "part8" }
+		"8" = { locator = "part9" }
+		"9" = { locator = "part10" }
+		"10" = { locator = "part11" }
+		"11" = { locator = "part12" }
 	}
+
 	is_designable = no
 	num_target_locators = 0
 	is_space_station = no
@@ -233,7 +229,7 @@ starbase_citadel = {
 
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-	prerequisites = { "tech_starbase_5" }
+	prerequisites = { "tech_starbase_6" }
 	class = shipclass_starbase
 
 	required_component_set = "power_core"
@@ -241,7 +237,6 @@ starbase_citadel = {
 	required_component_set = "combat_computers"
 	required_component_set = "ftl_inhibitor"
 
-	build_block_radius = @build_block_radius_starbase
 	formation_priority = @starbase_formation_priority
 	icon_frame = 5
 	icon = ship_size_military_station
@@ -252,4 +247,221 @@ starbase_citadel = {
 	possible_construction = {
 		always = no
 	}
+}
+
+starbase_deep_space_citadel_4 = {
+	entity = "deep_space_03_starbase_citadel_entity"
+	max_speed = 0.0
+	acceleration = 0.0
+	rotation_speed = 0.0
+	resources = {
+		category = starbases
+		cost ={
+			rare_crystals = 5000
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = 250000
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = 250000
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = 250000
+			mult = @halved_alloy_to_food_cost_ratio
+		}
+		upkeep = {
+			alloys = 200
+			energy = 300
+			rare_crystals = 50
+		}
+	}
+	modifier = {
+		# Citadel Modifiers + Innate Shields
+		ship_evasion_mult = -1
+		ship_armor_add = 250000
+		ship_shield_add = 250000
+		ship_shield_regen_add_perc = 0.1
+		ship_shield_regen_add_static = 1320		# Roughly the same shield regen as T5 Shields
+		starbase_building_capacity_add = 6
+		starbase_defense_platform_capacity_add = 30
+		ship_sensor_range_add = 1
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.75
+		ship_weapon_range_mult = 0.75
+		ship_weapon_damage = 0.75
+	}
+	max_hitpoints = 250000
+	base_buildtime = 3600
+
+	potential_construction = {
+		# Uses a megastructure for construction
+		# but is upgradeable
+		always = no
+	}
+
+	possible_construction = {
+		# Uses a megastructure for construction
+		# but is upgradeable
+		always = no
+	}
+
+	role_background = "GFX_role_selection_background"
+	ship_roles = { citadel }
+
+	combat_size_multiplier = 80
+	size_multiplier = 480
+	map_counter_icon = ship_counter_64
+	fleet_slot_size = 2
+	section_slots = {
+		"core" = { locator = "part1" }
+	}
+	is_designable = yes
+	num_target_locators = 0
+	is_space_station = no
+	can_have_federation_design = no
+	is_civilian = no
+	components_add_to_cost = no
+	is_listed = no
+	can_disable = yes
+
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	prerequisites = { 
+		"tech_deep_space_citadel"
+		"tech_starbase_6" 
+	}
+	class = shipclass_starbase
+
+	required_component_set = "power_core"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	required_component_set = "ftl_inhibitor"
+	required_component_set = "dsc_aura_components"
+	required_component_set = "ship_aura_components"
+
+	auto_upgrade = no
+	available_to_everyone = yes
+
+	formation_priority = @starbase_formation_priority
+	icon_frame = 12
+	icon = ship_size_military_station
+	on_click_sound = "deep_space_citadel_select"
+	use_shipnames_from = military_station_small
+}
+
+orbital_ring_tier_4 = {
+	entity = "psionic_01_orbital_ring_tier_3_entity"
+	max_speed = 0.0
+	acceleration = 0.0
+	rotation_speed = 0.0
+	modifier = {
+		ship_evasion_mult = -1
+		ship_armor_add = 250000
+		ship_shield_add = 250000		
+		starbase_defense_platform_capacity_add = 12
+		starbase_module_capacity_add = 4
+		starbase_building_capacity_add = 2
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 1.0
+		ship_weapon_range_mult = 2.0
+	}
+	max_hitpoints = 250000
+	base_buildtime = 3600
+	resources = {
+		category = starbases
+		cost = {
+			influence = 200
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = 500000
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = 500000
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = 500000
+			mult = @halved_alloy_to_food_cost_ratio
+		}
+		upkeep = {
+			energy = 40
+		}
+	}
+
+	combat_size_multiplier = 80
+	size_multiplier = 480
+	map_counter_icon = ship_counter_64
+	fleet_slot_size = 2
+	section_slots = {
+		"core" = { locator = "part1" }
+		"1" = { locator = "part2" }
+		"2" = { locator = "part3" }
+		"3" = { locator = "part4" }
+		"4" = { locator = "part5" }
+	}
+
+	potential_construction = {
+		always = no
+	}
+
+	possible_construction = {
+		always = no
+	}
+
+	is_designable = no
+	num_target_locators = 0
+	is_space_station = no
+	can_have_federation_design = no
+	is_civilian = no
+	components_add_to_cost = no
+	can_disable = yes
+	flip_control_on_disable = yes
+
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	prerequisites = { "tech_starbase_6" }
+	class = shipclass_starbase
+
+	required_component_set = "power_core"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+
+	formation_priority = @orbital_ring_formation_priority
+	icon_frame = 9
+	scales_with_planet = yes
+	graphical_culture = yes
+
+	available_to_everyone = yes
 }
