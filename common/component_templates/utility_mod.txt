@@ -164,6 +164,7 @@ weapon_component_template = {
 	}
 
 	show_tech_unlock_if = {
+		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_4
 		country_uses_bio_ships = no
 	}
@@ -172,6 +173,7 @@ weapon_component_template = {
 	use_ship_main_target = no
 	potential = {
 		from = {
+			has_ascension_perk = ap_cosmogenesis
 			has_crisis_level = crisis_cosmogenesis_level_4
 			country_uses_bio_ships = no
 		}
@@ -243,6 +245,7 @@ weapon_component_template = {
 	}
 
 	show_tech_unlock_if = {
+		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
 		country_uses_bio_ships = no
 	}
@@ -263,6 +266,7 @@ weapon_component_template = {
 
 	potential = {
 		from = {
+			has_ascension_perk = ap_cosmogenesis
 			has_crisis_level = crisis_cosmogenesis_level_5
 			country_uses_bio_ships = no
 		}

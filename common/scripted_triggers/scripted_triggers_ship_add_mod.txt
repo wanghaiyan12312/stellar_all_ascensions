@@ -161,6 +161,7 @@ ship_uses_line_role = {
         is_ship_size = ember_battleship_mod
 		is_ship_size = small_ship_synth_queen_mod
 		is_ship_size = large_ship_synth_queen_mod
+		is_ship_size = npc_warship_01_mod
 	}
 }
 
@@ -218,6 +219,7 @@ ship_uses_artillery_role = {
         is_ship_size = large_ship_ed_mod
         is_ship_size = ember_cruiser_mod
         is_ship_size = ember_battleship_mod
+		is_ship_size = npc_warship_01_mod
 		is_ship_size = synth_queen_titan_mod
 		is_ship_size = small_ship_synth_queen_mod
 		is_ship_size = large_ship_synth_queen_mod
@@ -255,6 +257,7 @@ ship_uses_carrier_role = {
 		is_ship_size = offspring_harbinger_stage_3
 
 		# MOD
+		is_ship_size = npc_warship_01_mod
 		is_ship_size = synth_queen_titan_mod
 		is_ship_size = large_ship_synth_queen_mod
 	}

@@ -211,7 +211,7 @@ auto_tech_remove_all_eng_flag = {
 }
 
 #expects a TAG in the country scope. If SPECIES is present at all it will attempt to add a species trait instead.
-add_random_trait_evopred = {
+add_random_trait_evopred_mod = {
 	[[SPECIES]
 		modify_species = {
 			species = species
@@ -305,16 +305,16 @@ add_random_trait_evopred = {
 	]
 }
 
-add_random_trait_cybernetic_evopred = {
+add_random_trait_cybernetic_evopred_mod = {
 	modify_species = {
 		species = species
 		add_random_species_trait = {
-			trait_has_all_tags = { $TAG$ cybernetic organic positive }
-			NOT = { trait_has_any_tag = { special presapient drawbacks leviathan } }
+			trait_has_all_tags = { cybernetic organic positive }
+			NOT = { trait_has_any_tag = { special presapient drawbacks habitability leviathan } }
 			OR = {
-				NOT = { trait_has_any_tag = { genetic_ascension } }
-				root = {
-					owner_can_do_advanced_gene_modding = yes
+				NOT = { trait_has_any_tag = { modularity } }
+				root.owner = {
+					has_tradition = tr_modularity_age_advanced_tools
 				}
 			}
 			OR = {
@@ -345,8 +345,7 @@ add_random_trait_cybernetic_evopred = {
 	}
 }
 
-
-generate_evolutionary_predator_choices = {
+generate_evolutionary_predator_choices_mod = {
 	random_list = {
 		20 = {
 			modifier = {
@@ -356,7 +355,7 @@ generate_evolutionary_predator_choices = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_available_random_trait_by_tag_evopred = {
+					any_available_random_trait_by_tag_evopred_mod = {
 						TAG = pop_growth
 					}
 				}
@@ -371,7 +370,7 @@ generate_evolutionary_predator_choices = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_available_random_trait_by_tag_evopred = {
+					any_available_random_trait_by_tag_evopred_mod = {
 						TAG = pop_output
 					}
 				}
@@ -386,7 +385,7 @@ generate_evolutionary_predator_choices = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_available_random_trait_by_tag_evopred = {
+					any_available_random_trait_by_tag_evopred_mod = {
 						TAG = leader
 					}
 				}
@@ -401,7 +400,7 @@ generate_evolutionary_predator_choices = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_available_random_trait_by_tag_evopred = {
+					any_available_random_trait_by_tag_evopred_mod = {
 						TAG = habitability
 					}
 				}
@@ -416,7 +415,7 @@ generate_evolutionary_predator_choices = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_available_random_trait_by_tag_evopred = {
+					any_available_random_trait_by_tag_evopred_mod = {
 						TAG = upkeep
 					}
 				}
@@ -432,7 +431,7 @@ generate_evolutionary_predator_choices = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_available_random_trait_by_tag_evopred = {
+					any_available_random_trait_by_tag_evopred_mod = {
 						TAG = humanoid
 						SPECIES = yes
 					}
@@ -449,7 +448,7 @@ generate_evolutionary_predator_choices = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_available_random_trait_by_tag_evopred = {
+					any_available_random_trait_by_tag_evopred_mod = {
 						TAG = mammalian
 						SPECIES = yes
 					}
@@ -466,7 +465,7 @@ generate_evolutionary_predator_choices = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_available_random_trait_by_tag_evopred = {
+					any_available_random_trait_by_tag_evopred_mod = {
 						TAG = reptilian
 						SPECIES = yes
 					}
@@ -483,7 +482,7 @@ generate_evolutionary_predator_choices = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_available_random_trait_by_tag_evopred = {
+					any_available_random_trait_by_tag_evopred_mod = {
 						TAG = avian
 						SPECIES = yes
 					}
@@ -500,7 +499,7 @@ generate_evolutionary_predator_choices = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_available_random_trait_by_tag_evopred = {
+					any_available_random_trait_by_tag_evopred_mod = {
 						TAG = arthropoid
 						SPECIES = yes
 					}
@@ -517,7 +516,7 @@ generate_evolutionary_predator_choices = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_available_random_trait_by_tag_evopred = {
+					any_available_random_trait_by_tag_evopred_mod = {
 						TAG = molluscoid
 						SPECIES = yes
 					}
@@ -534,7 +533,7 @@ generate_evolutionary_predator_choices = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_available_random_trait_by_tag_evopred = {
+					any_available_random_trait_by_tag_evopred_mod = {
 						TAG = fungoid
 						SPECIES = yes
 					}
@@ -551,7 +550,7 @@ generate_evolutionary_predator_choices = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_available_random_trait_by_tag_evopred = {
+					any_available_random_trait_by_tag_evopred_mod = {
 						TAG = plantoid
 						SPECIES = yes
 					}
@@ -568,7 +567,7 @@ generate_evolutionary_predator_choices = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_available_random_trait_by_tag_evopred = {
+					any_available_random_trait_by_tag_evopred_mod = {
 						TAG = lithoid
 						SPECIES = yes
 					}
@@ -585,7 +584,7 @@ generate_evolutionary_predator_choices = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_available_random_trait_by_tag_evopred = {
+					any_available_random_trait_by_tag_evopred_mod = {
 						TAG = necroid
 						SPECIES = yes
 					}
@@ -602,7 +601,7 @@ generate_evolutionary_predator_choices = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_available_random_trait_by_tag_evopred = {
+					any_available_random_trait_by_tag_evopred_mod = {
 						TAG = aquatic
 						SPECIES = yes
 					}
@@ -619,7 +618,7 @@ generate_evolutionary_predator_choices = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_available_random_trait_by_tag_evopred = {
+					any_available_random_trait_by_tag_evopred_mod = {
 						TAG = toxoid
 						SPECIES = yes
 					}
@@ -636,7 +635,7 @@ generate_evolutionary_predator_choices = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_available_random_trait_by_tag_evopred = {
+					any_available_random_trait_by_tag_evopred_mod = {
 						TAG = infernal
 						SPECIES = yes
 					}
@@ -653,7 +652,7 @@ generate_evolutionary_predator_choices = {
 			modifier = {
 				factor = 0
 				NOT = {
-					any_available_random_trait_by_tag_evopred = {
+					any_available_random_trait_by_tag_evopred_mod = {
 						TAG = psionic
 						SPECIES = yes
 					}
@@ -675,7 +674,8 @@ generate_evolutionary_predator_choices = {
 		0 = {
 			modifier = {
 				add = 60
-				can_add_overtuned_traits = yes
+				has_ascension_perk = ap_cosmogenesis
+				has_crisis_level = crisis_cosmogenesis_level_5
 				NAND = {
 					has_country_flag = gained_auto_mod_overtuned_trait_mod
 					has_country_flag = gained_spliced_adaptability_trait_mod
@@ -702,25 +702,12 @@ generate_evolutionary_predator_choices = {
 		0 = {
 			modifier = {
 				add = 60
-				can_add_cybernetic_traits = yes
+				has_active_tradition = tr_cybernetics_integrated_anatomy
 				NOT = { has_country_flag = cybernetic_mod_evo_pred }
 			}
 			modifier = {
 				factor = 0
-				any_trait_available_for_species = {
-					trait_has_all_tags = { cybernetic organic positive }
-					NOT = { trait_has_any_tag = { special presapient drawbacks } }
-					OR = {
-						NOT = { trait_has_any_tag = { modularity } }
-						root = {
-							can_do_advanced_robo_modding = yes
-						}
-					}
-					OR = {
-						NOT = { trait_has_any_tag = { individual } }
-						root.owner = { is_gestalt = no }
-					}
-				}
+				any_available_cybernetic_trait_by_tag_evopred_mod = no			
 			}
 			set_country_flag = cybernetic_mod_evo_pred
 		}
@@ -743,7 +730,12 @@ generate_evolutionary_predator_choices = {
 					}
 					AND = {
 						has_ascension_perk = ap_cosmogenesis
-						has_crisis_level = crisis_cosmogenesis_level_5 
+						has_crisis_level = crisis_cosmogenesis_level_5
+						NAND = {
+							has_country_flag = gained_dragon_trait
+							has_country_flag = gained_voidspawn_trait
+							has_country_flag = gained_tiyanki_trait
+						} 
 					}
 				}
 				NOT = {
@@ -775,7 +767,12 @@ generate_evolutionary_predator_choices = {
 					}
 					AND = {
 						has_ascension_perk = ap_cosmogenesis
-						has_crisis_level = crisis_cosmogenesis_level_5 
+						has_crisis_level = crisis_cosmogenesis_level_5
+						NAND = {
+							has_country_flag = gained_dreadnought_trait_mod
+							has_country_flag = gained_sphere_trait_mod
+							has_country_flag = gained_scavenger_trait_mod
+						} 
 					}
 				}
 				NOT = {

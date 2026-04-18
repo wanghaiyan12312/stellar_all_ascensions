@@ -4,6 +4,383 @@
 # UTILITIES #
 #############
 
+
+### mod change
+
+########################
+# Dragon Armor
+########################
+
+# Dragonscale Armor
+utility_component_template = {
+	key = "SMALL_DRAGON_ARMOR"
+	size = small
+	icon = "GFX_ship_part_dragon_armor_1"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_S6
+	}
+	ship_modifier = {
+		ship_armor_hardening_add = @hardening_T6
+	}
+
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+
+	prerequisites = { "tech_dragon_armor" }
+	upgrades_to = "SMALL_DRAGON_ARMOR_2"
+	component_set = "DRAGON_ARMOR_1"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @armor_s_t6_cost
+		}
+		upkeep = {
+			energy = @s_t6_upkeep_energy
+			alloys = @s_t6_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = @T6_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 2
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_DRAGON_ARMOR"
+	size = medium
+	icon = "GFX_ship_part_dragon_armor_1"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_M6
+	}
+	ship_modifier = {
+		ship_armor_hardening_add = @hardening_T6
+	}
+
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+
+	prerequisites = { "tech_dragon_armor" }
+	component_set = "DRAGON_ARMOR_1"
+	upgrades_to = "MEDIUM_DRAGON_ARMOR_2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @armor_m_t6_cost
+		}
+		upkeep = {
+			energy = @m_t6_upkeep_energy
+			alloys = @m_t6_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = @T6_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 2
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_DRAGON_ARMOR"
+	size = large
+	icon = "GFX_ship_part_dragon_armor_1"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_L6
+	}
+	ship_modifier = {
+		ship_armor_hardening_add = @hardening_T6
+	}
+
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+
+	prerequisites = { "tech_dragon_armor" }
+	upgrades_to = "LARGE_DRAGON_ARMOR_2"
+	component_set = "DRAGON_ARMOR_1"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @armor_l_t6_cost
+		}
+		upkeep = {
+			energy = @l_t6_upkeep_energy
+			alloys = @l_t6_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = @T6_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 2
+		}
+	}
+}
+
+####################
+# Crystal Plating #
+####################
+
+utility_component_template = {
+	key = "SMALL_CRYSTAL_ARMOR_1"
+	size = small
+	icon = "GFX_ship_part_crystal_armor_1"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			rare_crystals = 0.25
+		}
+	}
+
+	potential = {
+		is_mod_big_shield_ship_size = no
+	}
+
+	prerequisites = { "tech_crystal_armor_1" }
+	component_set = "CRYSTAL_ARMOR_1"
+	upgrades_to = "SMALL_CRYSTAL_ARMOR_2"
+
+	modifier = {
+		ship_hull_add = @hull_S2
+	}
+	ship_modifier = {
+		ship_damage_reduction_add = 1
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_CRYSTAL_ARMOR_1"
+	size = medium
+	icon = "GFX_ship_part_crystal_armor_1"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			rare_crystals = 0.50
+		}
+	}
+
+	potential = {
+		is_mod_big_shield_ship_size = no
+	}
+
+	prerequisites = { "tech_crystal_armor_1" }
+	component_set = "CRYSTAL_ARMOR_1"
+	upgrades_to = "MEDIUM_CRYSTAL_ARMOR_2"
+
+	modifier = {
+		ship_hull_add = @hull_M2
+	}
+	ship_modifier = {
+		ship_damage_reduction_add = 2
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_CRYSTAL_ARMOR_1"
+	size = large
+	icon = "GFX_ship_part_crystal_armor_1"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			rare_crystals = 1.00
+		}
+	}
+
+	potential = {
+		is_mod_big_shield_ship_size = no
+	}
+
+	prerequisites = { "tech_crystal_armor_1" }
+	component_set = "CRYSTAL_ARMOR_1"
+	upgrades_to = "LARGE_CRYSTAL_ARMOR_2"
+
+	modifier = {
+		ship_hull_add = @hull_L2
+	}
+	ship_modifier = {
+		ship_damage_reduction_add = 3
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SMALL_CRYSTAL_ARMOR_2"
+	size = small
+	icon = "GFX_ship_part_crystal_armor_2"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			rare_crystals = 0.33
+		}
+	}
+
+	potential = {
+		is_mod_big_shield_ship_size = no
+	}
+
+	prerequisites = { "tech_crystal_armor_2" }
+	component_set = "CRYSTAL_ARMOR_2"
+
+	modifier = {
+		ship_hull_add = @hull_S4
+	}
+	ship_modifier = {
+		ship_damage_reduction_add = 2
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_CRYSTAL_ARMOR_2"
+	size = medium
+	icon = "GFX_ship_part_crystal_armor_2"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			rare_crystals = 0.65
+		}
+	}
+
+	potential = {
+		is_mod_big_shield_ship_size = no
+	}
+
+	prerequisites = { "tech_crystal_armor_2" }
+	component_set = "CRYSTAL_ARMOR_2"
+
+	modifier = {
+		ship_hull_add = @hull_M4
+	}
+	ship_modifier = {
+		ship_damage_reduction_add = 3
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_CRYSTAL_ARMOR_2"
+	size = large
+	icon = "GFX_ship_part_crystal_armor_2"
+	icon_frame = 1
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			rare_crystals = 1.30
+		}
+	}
+
+	potential = {
+		is_mod_big_shield_ship_size = no
+	}
+
+	prerequisites = { "tech_crystal_armor_2" }
+	component_set = "CRYSTAL_ARMOR_2"
+
+	modifier = {
+		ship_hull_add = @hull_L4
+	}
+	ship_modifier = {
+		ship_damage_reduction_add = 4
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+	}
+}
+
+###
+
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes.
+
+#############
+# UTILITIES #
+#############
+
 # Plasteel Armor
 utility_component_template = {
 	key = "SMALL_ARMOR_1"
@@ -686,367 +1063,6 @@ utility_component_template = {
 		inline_script = {
 			script = ship_components/weights/roles_stealth
 			MULT = 2
-		}
-	}
-}
-
-########################
-# Dragon Armor
-########################
-
-# Dragonscale Armor
-utility_component_template = {
-	key = "SMALL_DRAGON_ARMOR"
-	size = small
-	icon = "GFX_ship_part_dragon_armor_1"
-	icon_frame = 1
-	power = 0
-	modifier = {
-		ship_armor_add = @armor_S6
-	}
-	ship_modifier = {
-		ship_armor_hardening_add = @hardening_T6
-	}
-
-	potential = {
-		from = {
-			country_uses_bio_ships = no
-		}
-	}
-
-	show_tech_unlock_if = {
-		country_uses_bio_ships = no
-	}
-
-	prerequisites = { "tech_dragon_armor" }
-	upgrades_to = "SMALL_DRAGON_ARMOR_2"
-	component_set = "DRAGON_ARMOR_1"
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @armor_s_t6_cost
-		}
-		upkeep = {
-			energy = @s_t6_upkeep_energy
-			alloys = @s_t6_upkeep_alloys
-		}
-	}
-
-	ai_weight = {
-		weight = @T6_weight
-		inline_script = {
-			script = ship_components/weights/roles_stealth
-			MULT = 2
-		}
-	}
-}
-
-utility_component_template = {
-	key = "MEDIUM_DRAGON_ARMOR"
-	size = medium
-	icon = "GFX_ship_part_dragon_armor_1"
-	icon_frame = 1
-	power = 0
-	modifier = {
-		ship_armor_add = @armor_M6
-	}
-	ship_modifier = {
-		ship_armor_hardening_add = @hardening_T6
-	}
-
-	potential = {
-		from = {
-			country_uses_bio_ships = no
-		}
-	}
-
-	show_tech_unlock_if = {
-		country_uses_bio_ships = no
-	}
-
-	prerequisites = { "tech_dragon_armor" }
-	component_set = "DRAGON_ARMOR_1"
-	upgrades_to = "MEDIUM_DRAGON_ARMOR_2"
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @armor_m_t6_cost
-		}
-		upkeep = {
-			energy = @m_t6_upkeep_energy
-			alloys = @m_t6_upkeep_alloys
-		}
-	}
-
-	ai_weight = {
-		weight = @T6_weight
-		inline_script = {
-			script = ship_components/weights/roles_stealth
-			MULT = 2
-		}
-	}
-}
-
-utility_component_template = {
-	key = "LARGE_DRAGON_ARMOR"
-	size = large
-	icon = "GFX_ship_part_dragon_armor_1"
-	icon_frame = 1
-	power = 0
-	modifier = {
-		ship_armor_add = @armor_L6
-	}
-	ship_modifier = {
-		ship_armor_hardening_add = @hardening_T6
-	}
-
-	potential = {
-		from = {
-			country_uses_bio_ships = no
-		}
-	}
-
-	show_tech_unlock_if = {
-		country_uses_bio_ships = no
-	}
-
-	prerequisites = { "tech_dragon_armor" }
-	upgrades_to = "LARGE_DRAGON_ARMOR_2"
-	component_set = "DRAGON_ARMOR_1"
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @armor_l_t6_cost
-		}
-		upkeep = {
-			energy = @l_t6_upkeep_energy
-			alloys = @l_t6_upkeep_alloys
-		}
-	}
-
-	ai_weight = {
-		weight = @T6_weight
-		inline_script = {
-			script = ship_components/weights/roles_stealth
-			MULT = 2
-		}
-	}
-}
-
-
-####################
-# Crystal Plating #
-####################
-
-utility_component_template = {
-	key = "SMALL_CRYSTAL_ARMOR_1"
-	size = small
-	icon = "GFX_ship_part_crystal_armor_1"
-	icon_frame = 1
-	power = 0
-	resources = {
-		category = ship_components
-		cost = {
-			rare_crystals = 0.25
-		}
-	}
-
-	prerequisites = { "tech_crystal_armor_1" }
-	component_set = "CRYSTAL_ARMOR_1"
-	upgrades_to = "SMALL_CRYSTAL_ARMOR_2"
-
-	modifier = {
-		ship_hull_add = @hull_S2
-	}
-	triggered_ship_modifier = {
-		potential = {
-			is_mod_big_shield_ship_size = no
-		}
-		ship_damage_reduction_add = 1
-	}
-
-	ai_weight = {
-		weight = 1
-		modifier = {
-			factor = 0.0
-			no_resource_for_component = { RESOURCE = rare_crystals }
-		}
-	}
-}
-
-utility_component_template = {
-	key = "MEDIUM_CRYSTAL_ARMOR_1"
-	size = medium
-	icon = "GFX_ship_part_crystal_armor_1"
-	icon_frame = 1
-	power = 0
-	resources = {
-		category = ship_components
-		cost = {
-			rare_crystals = 0.50
-		}
-	}
-
-	prerequisites = { "tech_crystal_armor_1" }
-	component_set = "CRYSTAL_ARMOR_1"
-	upgrades_to = "MEDIUM_CRYSTAL_ARMOR_2"
-
-	modifier = {
-		ship_hull_add = @hull_M2
-	}
-	triggered_ship_modifier = {
-		potential = {
-			is_mod_big_shield_ship_size = no
-		}
-		ship_damage_reduction_add = 2
-	}
-
-	ai_weight = {
-		weight = 1
-		modifier = {
-			factor = 0.0
-			no_resource_for_component = { RESOURCE = rare_crystals }
-		}
-	}
-}
-
-utility_component_template = {
-	key = "LARGE_CRYSTAL_ARMOR_1"
-	size = large
-	icon = "GFX_ship_part_crystal_armor_1"
-	icon_frame = 1
-	power = 0
-	resources = {
-		category = ship_components
-		cost = {
-			rare_crystals = 1.00
-		}
-	}
-
-	prerequisites = { "tech_crystal_armor_1" }
-	component_set = "CRYSTAL_ARMOR_1"
-	upgrades_to = "LARGE_CRYSTAL_ARMOR_2"
-
-	modifier = {
-		ship_hull_add = @hull_L2
-	}
-	triggered_ship_modifier = {
-		potential = {
-			is_mod_big_shield_ship_size = no
-		}
-		ship_damage_reduction_add = 3
-	}
-
-	ai_weight = {
-		weight = 1
-		modifier = {
-			factor = 0.0
-			no_resource_for_component = { RESOURCE = rare_crystals }
-		}
-	}
-}
-
-utility_component_template = {
-	key = "SMALL_CRYSTAL_ARMOR_2"
-	size = small
-	icon = "GFX_ship_part_crystal_armor_2"
-	icon_frame = 1
-	power = 0
-	resources = {
-		category = ship_components
-		cost = {
-			rare_crystals = 0.33
-		}
-	}
-
-	prerequisites = { "tech_crystal_armor_2" }
-	component_set = "CRYSTAL_ARMOR_2"
-
-	modifier = {
-		ship_hull_add = @hull_S4
-	}
-	triggered_ship_modifier = {
-		potential = {
-			is_mod_big_shield_ship_size = no
-		}
-		ship_damage_reduction_add = 2
-	}
-
-	ai_weight = {
-		weight = 1
-		modifier = {
-			factor = 0.0
-			no_resource_for_component = { RESOURCE = rare_crystals }
-		}
-	}
-}
-
-utility_component_template = {
-	key = "MEDIUM_CRYSTAL_ARMOR_2"
-	size = medium
-	icon = "GFX_ship_part_crystal_armor_2"
-	icon_frame = 1
-	power = 0
-	resources = {
-		category = ship_components
-		cost = {
-			rare_crystals = 0.65
-		}
-	}
-
-	prerequisites = { "tech_crystal_armor_2" }
-	component_set = "CRYSTAL_ARMOR_2"
-
-	modifier = {
-		ship_hull_add = @hull_M4
-	}
-	triggered_ship_modifier = {
-		potential = {
-			is_mod_big_shield_ship_size = no
-		}
-		ship_damage_reduction_add = 3
-	}
-
-	ai_weight = {
-		weight = 1
-		modifier = {
-			factor = 0.0
-			no_resource_for_component = { RESOURCE = rare_crystals }
-		}
-	}
-}
-
-utility_component_template = {
-	key = "LARGE_CRYSTAL_ARMOR_2"
-	size = large
-	icon = "GFX_ship_part_crystal_armor_2"
-	icon_frame = 1
-	power = 0
-	resources = {
-		category = ship_components
-		cost = {
-			rare_crystals = 1.30
-		}
-	}
-
-	prerequisites = { "tech_crystal_armor_2" }
-	component_set = "CRYSTAL_ARMOR_2"
-
-	modifier = {
-		ship_hull_add = @hull_L4
-	}
-	triggered_ship_modifier = {
-		potential = {
-			is_mod_big_shield_ship_size = no
-		}
-		ship_damage_reduction_add = 4
-	}
-
-	ai_weight = {
-		weight = 1
-		modifier = {
-			factor = 0.0
-			no_resource_for_component = { RESOURCE = rare_crystals }
 		}
 	}
 }

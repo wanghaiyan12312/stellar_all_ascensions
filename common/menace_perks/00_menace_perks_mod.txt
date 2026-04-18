@@ -4,13 +4,6 @@ menp_cosmo_synth_queen_5 = {
 	modifier = {
 		megastructure_build_speed_mult = 0.2
 		country_megastructure_build_cap_add = 1
-
-	}
-
-	triggered_modifier = {
-		potential = {
-			has_biogenesis_dlc = yes
-		}
 		deep_space_citadel_limit_add = 3
 	}
 

@@ -696,9 +696,9 @@ whisperers_aura = {
 		}
 		owner_planet_modifier = {
 			modifier = {
+				planet_researchers_produces_mult = 0.5
 				planet_researchers_upkeep_mult = -0.1
-				station_researchers_produces_mult = 0.2
-				planet_researchers_produces_mult = 2.0
+				station_researchers_produces_mult = 0.2		
 			}
 		}
 		neutral_fleet_modifier = {
@@ -739,6 +739,7 @@ whisperers_aura = {
 		}
 		owner_planet_modifier = {
 			modifier = {
+				planet_researchers_produces_mult = 0.8
 				planet_researchers_upkeep_mult = -0.15
 				station_researchers_produces_mult = 0.4
 			}
@@ -789,8 +790,10 @@ whisperers_aura = {
 		}
 		owner_planet_modifier = {
 			modifier = {
+				planet_researchers_produces_mult = 1.0
 				planet_researchers_upkeep_mult = -0.2
 				station_researchers_produces_mult = 0.6
+
 			}
 		}
 		neutral_fleet_modifier = {

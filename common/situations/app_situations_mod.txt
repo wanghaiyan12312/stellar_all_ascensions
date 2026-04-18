@@ -331,12 +331,12 @@ evolutionary_predators_situation = {
 	on_progress_complete = {
 		custom_tooltip = evolutionary_predators_situation_outcome
 		hidden_effect = {
-			situation_event = { id = ascensions.3001}
+			situation_event = { id = ascensions.3001 }
 		}
 	}
 
 	on_start = {
-		situation_event = { bio.1001 }
+		situation_event = { id = bio.1001 }
 		if = {
 			limit = {
 				owner = { has_country_flag = evolutionary_predators_consume }
@@ -423,9 +423,9 @@ evolutionary_predators_situation = {
 	monthly_progress = {
 		base = 0
 		modifier = {
-			add = modifier:BIOLOGICAL_species_trait_picks_add
+			add = owner.value:get_predators_species_trait_points
 			desc = evolutionary_predators_species_trait_points
-			check_variable_arithmetic = { which = modifier:BIOLOGICAL_species_trait_picks_add value > 0 }
+			check_variable_arithmetic = { which = owner.value:get_predators_species_trait_points value > 0 }
 		}
 		modifier = {
 			add = owner.value:num_evolutionary_predators_planets

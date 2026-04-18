@@ -61,8 +61,13 @@ military_station_small_fallen_empire_mod = {
 	}
 
 	potential_country = {
-		has_technology = tech_cosmogenesis_escort
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_2
 		country_uses_bio_ships = no
+	}
+
+	prerequisites = { 
+		"tech_cosmogenesis_escort"
 	}
 
 	ai_ship_data = {
@@ -113,8 +118,13 @@ military_station_large_fallen_empire_mod = {
 	}
 
 	potential_country = {
-		has_technology = tech_cosmogenesis_battlecruiser
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_3
 		country_uses_bio_ships = no
+	}
+
+	prerequisites = { 
+		"tech_cosmogenesis_battlecruiser"
 	}
 
 	resources = {
@@ -157,7 +167,6 @@ starbase_citadel_II = {
 		ship_evasion_mult = -1
 		ship_armor_add = 500000
 		ship_shield_add = 500000 
-		ship_shield_regen_add_perc = 0.1
 		starbase_module_capacity_add = 12
 		starbase_building_capacity_add = 6
 		starbase_defense_platform_capacity_add = 30	
@@ -296,8 +305,6 @@ starbase_deep_space_citadel_4 = {
 		ship_evasion_mult = -1
 		ship_armor_add = 250000
 		ship_shield_add = 250000
-		ship_shield_regen_add_perc = 0.1
-		ship_shield_regen_add_static = 1320		# Roughly the same shield regen as T5 Shields
 		starbase_building_capacity_add = 6
 		starbase_defense_platform_capacity_add = 30
 		ship_sensor_range_add = 1

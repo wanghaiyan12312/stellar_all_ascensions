@@ -1,3 +1,5 @@
+@mod_foresight_tech_progression = 0.95
+
 @fallen_empire_enforce_power_grand_admiral_gap = 90 
 @fallen_empire_enforce_power_admiral_gap = 180 
 @fallen_empire_enforce_power_commodore_gap = 180 
@@ -29,3 +31,4 @@
 @mod_s_dragon_armor_na = 0.5
 @mod_m_dragon_armor_na = 1
 @mod_l_dragon_armor_na = 1.5
+

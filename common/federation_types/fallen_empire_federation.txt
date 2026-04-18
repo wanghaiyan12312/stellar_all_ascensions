@@ -29,7 +29,7 @@
 fallen_empire_federation = {
 	base_intel = 50
 	icon = "GFX_hegemony_federation"
-	ownership_limits = awakened_fallen_empire
+	ownership_limits = default
 	potential = {
 		always = no
 	}

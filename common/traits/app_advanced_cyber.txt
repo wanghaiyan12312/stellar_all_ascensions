@@ -6,7 +6,7 @@ trait_cybernetic_suppressed = {
 	category = cyborg
 
 	allowed_archetypes = { BIOLOGICAL LITHOID }
-	tags = { organic positive pop_output leader blocks_leaders cybernetic modularity }
+	tags = { organic positive pop_output leader blocks_leaders drawbacks cybernetic modularity }
 
 	species_potential_add = {
 		can_add_cybernetic_traits = yes
@@ -117,7 +117,7 @@ trait_cybernetic_inquisitative_axioms = {
 	icon = "gfx/interface/icons/traits/trait_robot_ceaseless_symmetric_annihilation_engine.dds"
 
 	allowed_archetypes = { BIOLOGICAL LITHOID }
-	tags = { organic positive pop_output research leader modularity }
+	tags = { organic positive pop_output research leader cybernetic modularity }
 
 	species_potential_add = {
 		can_add_cybernetic_traits = yes

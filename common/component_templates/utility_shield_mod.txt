@@ -241,7 +241,6 @@ utility_component_template = {
 	size = medium
 	power = @power_M7
 	upgrades_to = "MEDIUM_PSI_SHIELD_9"
-	component_set = "PSI_SHIELD"
 	inline_script = {
 		script = utility_mod/utility_shield_mod_1
 		SIZE = "MEDIUM"

@@ -43,9 +43,9 @@
  tr_cloning_artificial_population_mod: "Artificial Population"
  tr_cloning_artificial_population_mod_delayed: "We can utilize cloning for controlled and efficient population."
  tr_cloning_artificial_population_mod_tt: "$tr_purity_heightened_attributes_tt$\n£mod_planet_crime_add£ $MOD_PLANET_CRIME_ADD$ per $pop_group_unit$ [GetGenomicJobsPluralWithIcon]: §G$@genomic_cloning_crime|0$§!"
- tr_cloning_biochemical_composure_clones_mod: "Regenerative Cloning"
- tr_cloning_biochemical_composure_clones_mod_delayed: "With biochemical enhancements, we ensure the stability and resilience of our clones."
- tr_cloning_biochemical_composure_clones_mod_tt: "Leaders always start with the §Y$leader_trait_has_backup_clone$§! trait\nLeaders can periodically regain the §Y$leader_trait_has_backup_clone$§! trait\nThe §Y$leader_trait_has_backup_clone$§! trait provides additional effects"
+ tr_cloning_biochemical_composure_clones_mod: "$tr_cloning_biochemical_composure_clones$"
+ tr_cloning_biochemical_composure_clones_mod_delayed: "$tr_cloning_biochemical_composure_clones_delayed$"
+ tr_cloning_biochemical_composure_clones_mod_tt: "$tr_cloning_biochemical_composure_clones_tt$"
 
  tr_mutation_somatic_subversiveness_mod: "Somatic Subversiveness"
  tr_mutation_somatic_subversiveness_mod_delayed: "Utilizing somatic mutations will enhance our adaptability and resilience."
@@ -167,6 +167,19 @@
  menp_cosmo_synth_queen_5_tt: " Unlocks the §Y$synth_queen_knowledge$§! technology,that will bring us closer to our goals.\nAlso if you have §Y$COLOSSUS_PROJECT$§! ascension perk and §Y$tech_juggernaut$§! technology, you can unlock §Y$tech_synth_queen_titan$§! technology and to build Queen's Titan flagship.\n" 
  menp_cosmo_synth_queen_5_desc: ""Acorrding to legendary of Zarqlan, we use cosmo technology to recall the time record of the synth queen golden age，this give a great technology and ability to build Queen's Titan flagship."
 
+ menp_cosmo_ship_2:"$menp_cosmo_ship_2$"
+ unlocks_ship_2:"$unlocks_ship_2$ \n解锁天灾帝国$crisis_corvette_mod$舰船。 \n解锁破解者相关的$small_ship_ed_mod$舰船。 \n解锁$npc_warship_01_mod$舰船。 \n"
+ menp_cosmo_ship_2_desc:"解锁各种天灾帝国的小型舰船以及利维坦级无畏战列舰。"
+ menp_cosmo_ship_2_desc_regular:"$menp_cosmo_ship_2_desc_regular$ \nmod提供其他灾飞的特殊船模(要拥有相关的dlc)，有泰坦科技而且采纳考古工程师飞升以后可以建造无畏战列舰。"
+ menp_cosmo_ship_3:"$menp_cosmo_ship_3$"
+ unlocks_ship_3:"$unlocks_ship_3$ \n解锁天灾帝国$crisis_destroyer_mod$舰船。 \n解锁破解者相关的$medium_ship_ed_mod$舰船。 \n解锁星系热症相关的$ember_cruiser_mod$舰船。\n解锁合成女王相关的$small_ship_synth_queen_mod$舰船。"
+ menp_cosmo_ship_3_desc:"解锁各种天灾帝国的中型舰船。"
+ menp_cosmo_ship_3_desc_regular:"$menp_cosmo_ship_3_desc_regular$ \nmod提供其他灾飞的特殊船模(要拥有相关的dlc)。"
+ menp_cosmo_ship_4:"$menp_cosmo_ship_4$"
+ unlocks_ship_4:"$unlocks_ship_4$ \n解锁天灾帝国$crisis_cruiser_mod$舰船。 \n解锁破解者相关的$large_ship_ed_mod$舰船。 \n解锁星系热症相关的$ember_battleship_mod$舰船。\n解锁合成女王相关的$large_ship_synth_queen_mod$舰船。"
+ menp_cosmo_ship_4_desc: "解锁各种天灾帝国的大型舰船。\n"
+ menp_cosmo_ship_4_desc_regular: "$menp_cosmo_ship_4_desc_regular$ \nmod提供其他灾飞的特殊船模(要拥有相关的dlc)。"
+
  edict_app_auto_tech: "Choose The Categories You Want Auto Research"
  edict_app_auto_tech_desc: "you can choose one endless repeatable tech you want is drawn as an option and hide the others"
  auto_tech.1.title: "$edict_app_auto_tech$"
@@ -256,6 +269,15 @@
 
  fallen_empire_station_large_mod:"Defence Core"
  fallen_empire_station_small_mod:"Defence Core"
+
+ npc_warship_01_mod:"$npc_warship_01$"
+ npc_warship_01_mod_cap: "$npc_warship_01_cap$"
+ npc_warship_01_mod_plural: "$npc_warship_01_plural$"
+ SHIP_GRAPHICS_NPC_WARSHIP_01_MOD_DESC:"An ancient Titan focused on shield defense, a practical design from the early days of the Fallen Empire. The largest possible space warship that could be built without distorting the laws of reality, its ancient power system still requires our archaeo-engineers assistance. The construction cost and time far exceed those of the Fallen Empire's current Paradox Titan warships, but its practical design ensures self-maintenance capabilities."
+
+ automated_dreadnought_key_mod_gunship:"Artillery Frame"
+ automated_dreadnought_key_mod_torpedoes:"Torpedoes Frame"
+ automated_dreadnought_key_mod_carrier:"Carrier Frame"
 
  small_ship_synth_queen_mod: "Queen's Heralds"
  small_ship_synth_queen_mod_cap: "$small_ship_synth_queen$"
@@ -361,6 +383,10 @@
  crisis_cosmogenesis_level_5_auto_bonus:"Fallen Empire Auto Bonus"
  crisis_cosmogenesis_level_5_auto_bonus_desc:"As a Crisis Cosmogenesis Level 5 Empire You also a Fallen Empire"
 
+ ACCORD_FORESIGHT_TT:1"Add §G$@mod_foresight_tech_progression|0%$§! progress to currently researched Technologies"
+
+ ACCORD_HINDSIGHT_TT: "Choose a colony you own inside of your §H$PSIONIC_AURA$§!, it becomes a §HRelic World§! with all blockers removed and add 20 planet size.\n$ACCORD_LOOSE_INTENSITY$"
+
  decision_hindsight_nomination:0 "$ACCORD_HINDSIGHT$ Candidate"
  decision_hindsight_nomination_desc:0 "Nominate This Planet For $ACCORD_HINDSIGHT$ Candidate"
  already_hindsight_nominated:0 "Already Has a Planet For $ACCORD_HINDSIGHT$ Candidate."
@@ -369,6 +395,9 @@
  hindsight_nomination:0 "$ACCORD_HINDSIGHT$ Candidate"
  hindsight_nomination_desc:0 "This Planet Has Nominated For $ACCORD_HINDSIGHT$ Candidate."
  requires_valid_hindsight_target_mod:0 "§RRequires that our §Y$PSIONIC_AURA$§! is currently affecting at least one of our owned colonies and nominate a $ACCORD_HINDSIGHT$ Candidate§!"
+
+ shroud_research_speed_mod:"$ACCORD_FORESIGHT$"
+ shroud_research_speed_mod_desc:"$ACCORD_FORESIGHT_desc$"
 
  end_cycle.5.whisper.condition:"You need adopt the $cosmogenesis_chain_title$ tradition and achieve $crisis_cosmogenesis_level_5_desc$。\nOnly accumulate enough knowledge can get $name_whisperers$'s attantion."
 
@@ -455,7 +484,9 @@
  mod_shipsize_starbase_deep_space_citadel_4_shield_regen_add_static:"$starbase_deep_space_citadel_4$ $mod_shield_regen_daily_improve_name_mod2$"
  mod_shipsize_starbase_deep_space_citadel_4_armor_add:"$starbase_deep_space_citadel_4$ $mod_armor_improve_name_mod2$"
 
- requires_system_alloy_consumer_goods_1000_capital:"Requires a stellar body with at least §Y5000§ alloys or at least §Y5000§ consumer goods or at least §Y8000§ trade outputp!"
+ requires_system_alloy_consumer_goods_1000_capital:"Requires a stellar body with at least §Y1000§ alloys or at least §Y1000§ consumer goods or at least §Y1500§ trade outputp!"
+ requires_unplugged_decyberized_engineered_evolution:"$TRIGGER_FAIL$Must be fully de-cyberized in order to embrace Biomorphosis."
+ requires_cybernetic_creed_situation_finish:"$TRIGGER_FAIL$Must be fully cyberized to embrace Other Ascension."
 
  starbase_citadel_II:"Fallen Empire $citadel$"
 
@@ -898,12 +929,27 @@
 
  evolutionary_predators_species_trait_points:"§YGenetic Biology"
  bio.1005.cybernetic:"Nano-Cybernetic can take a higher dimensionally revolution on our Genetic Insights career."
- CYBERNETIC_TRAIT_ADDED:"Cybernetic Trait Added"
+ CYBERNETIC_TRAIT_ADDED_TITLE:"Cybernetic Trait Added"
  MESSAGE_CYBERNETIC_TRAIT_ADDED:"The $SPECIES|Y$ have gained the $TRAIT|Y$ trait."
  bio.1005.cybernetic.leviathan:"What can the Iron Titans of the galaxy bring the evolution on our Nano-Cybernetic?"
  MESSAGE_FORTRESS_TRAIT_ADDED:"The $SPECIES|Y$ have gained the §Y$trait_cyborg_enigmatic_fortress$§! trait."
  MESSAGE_SPHERE_TRAIT_ADDED:"The $SPECIES|Y$ have gained the §Y$trait_cyborg_infinity_sphere$§! trait."
  MESSAGE_DREADNOUGHT_TRAIT_ADDED:"The $SPECIES|Y$ have gained the §Y$trait_cyborg_ancient_dreadnought$§! trait."
  MESSAGE_SCAVENGER_TRAIT_ADDED:"The $SPECIES|Y$ have gained the §Y$trait_cyborg_scavenger_bot$§! trait."
- OVERTUNED_TRAIT_ADDED:"Overtuned Trait Added "
- MESSAGE_OVERTUNED_TRAIT_ADDED:"The $SPECIES|Y$ have gained the $TRAIT|Y$ overtuned trait."
+ bio.1005.overtuned:"Use any and all means of organic enhancement, no matter the risk."
+ OVERTUNED_TRAIT_ADDED_TITLE:"Overtuned Trait Added "
+ MESSAGE_AUTO_MOD_OVERTUNED_TRAIT_ADDED:"The $SPECIES|Y$ have gained the §Y$trait_auto_mod_overtuned$ Overtuned§! trait."
+ MESSAGE_SPLICED_ADAPTABILITY_TRAIT_ADDED:"The $SPECIES|Y$ have gained the §Y$trait_spliced_adaptability$ Overtuned§! trait."
+ MESSAGE_JUICED_POWER_TRAIT_ADDED:"The $SPECIES|Y$ have gained the §Y$trait_juiced_power$ Overtuned§! trait."
+ MESSAGE_FARM_HANDS_TRAIT_ADDED:"The $SPECIES|Y$ have gained the §Y$trait_farm_hands$ Overtuned§! trait."
+ MESSAGE_CRACK_MINER_TRAIT_ADDED:"The $SPECIES|Y$ have gained the §Y$trait_crack_miner$ Overtuned§! trait."
+ MESSAGE_TECHNICAL_SKILL_TRAIT_ADDED:"The $SPECIES|Y$ have gained the §Y$trait_technical_skill$ Overtuned§! trait."
+ MESSAGE_COMMERCIAL_GENIUS_TRAIT_ADDED:"The $SPECIES|Y$ have gained the §Y$trait_commercial_genius$ Overtuned§! trait."
+ MESSAGE_CRAFTED_SMILES_TRAIT_ADDED:"The $SPECIES|Y$ have gained the §Y$trait_crafted_smiles$ Overtuned§! trait."
+ MESSAGE_LOW_MAINTENANCE_TRAIT_ADDED:"The $SPECIES|Y$ have gained the §Y$trait_low_maintenance$ Overtuned§! trait."
+ MESSAGE_ARTIFICIAL_INTELLIGENCE_TRAIT_ADDED:"The $SPECIES|Y$ have gained the §Y$trait_artificial_intelligence$ Overtuned§! trait."
+ MESSAGE_GENE_MENTORSHIP_TRAIT_ADDED:"The $SPECIES|Y$ have gained the §Y$trait_gene_mentorship$ Overtuned§! trait."
+ MESSAGE_EXPRESSED_TRADITION_TRAIT_ADDED:"The $SPECIES|Y$ have gained the §Y$trait_expressed_tradition$ Overtuned§! trait."
+ MESSAGE_ELEVATED_SYNAPSES_TRAIT_ADDED:"The $SPECIES|Y$ have gained the §Y$trait_elevated_synapses$ Overtuned§! trait."
+ MESSAGE_PREPLANNED_GROWTH_TRAIT_ADDED:"The $SPECIES|Y$ have gained the §Y$trait_preplanned_growth$ Overtuned§! trait."
+ MESSAGE_EXCESSIVE_ENDURANCE_TRAIT_ADDED:"The $SPECIES|Y$ have gained the §Y$trait_excessive_endurance$ Overtuned§! trait."

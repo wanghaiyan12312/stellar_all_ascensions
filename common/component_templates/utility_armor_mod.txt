@@ -573,6 +573,7 @@ utility_component_template = {
 		script = utility_mod/utility_armor_mod_1
         SIZE = "MEDIUM"
         TIER = 14
+        DRAGON_ARMOR_ADD = @armor_M20
         DRAGON_ARMOR_HARDENING = @hardening_T20
         DRAGON_ARMOR_COST = @armor_m_t20_cost
         DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm

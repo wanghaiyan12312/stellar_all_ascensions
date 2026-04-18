@@ -327,7 +327,7 @@ country_event = {
 			}	
 			country_event = {
 				id = end_cycle.7
-				days = 3600
+				days = 18000 ## 50 YEARS
 			}
 		}
 	}
@@ -529,11 +529,10 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		progress_all_researches = 0.95
+		progress_all_researches = @mod_foresight_tech_progression
 		add_modifier = {
-			modifier = "shroud_research_speed"
+			modifier = "shroud_research_speed_mod"
 			days = 1800
-			mult = 10
 		}
 	}
 }

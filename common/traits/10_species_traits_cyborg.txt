@@ -18,6 +18,7 @@
 #			}
 #		}
 #	}
+#   trait_cyborg_welded_countenance tage negative
 ###
 #Leave at start of list
 trait_auto_mod_cyborg = {
@@ -758,7 +759,7 @@ trait_cyborg_welded_countenance = {
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
 	}
-	tags = { organic positive leader cybernetic }
+	tags = { organic negative leader cybernetic }
 	initial = no
 	opposites = { "trait_cyborg_stainless_steel_smile" }
 	species_potential_add = {
@@ -1341,7 +1342,7 @@ trait_cyborg_infinity_sphere = {
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
 	}
-	tags = { organic positive pop_output research cybernetic }
+	tags = { organic positive pop_output research cybernetic leviathan }
 
 
 	modifier = {
@@ -1362,6 +1363,12 @@ trait_cyborg_scavenger_bot = {
 			has_country_flag = harvested_scavenger_parts
 		}
 		can_add_cybernetic_traits = yes
+		AND = {
+			hidden_trigger = { exists = from }
+			from = {
+				has_crisis_level = crisis_cosmogenesis_level_5
+			}
+		}
 	}
 	initial = no
 	randomized = no

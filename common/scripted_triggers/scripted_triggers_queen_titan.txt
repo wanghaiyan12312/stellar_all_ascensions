@@ -26,6 +26,7 @@ ship_uses_battleship_thrusters = {
 		is_ship_size = large_ship_ed_mod
         is_ship_size = ember_battleship_mod
 		is_ship_size = large_ship_synth_queen_mod
+		is_ship_size = npc_warship_01_mod
 		is_ship_size = cosmo_crisis_titan_mod
 	}
 }
@@ -61,6 +62,7 @@ ship_uses_titan_components = {
 		is_ship_size = cosmo_crisis_stinger
 		is_ship_size = synth_queen_titan_mod
 		is_ship_size = cosmo_crisis_titan_mod
+		is_ship_size = npc_warship_01_mod
 	}
 }
 
@@ -141,6 +143,21 @@ ship_uses_synth_queen_titan_reactors = {
 	}
 }
 
+ship_uses_juggernaut_reactors = {
+	OR = {
+		# Regular Ships
+		is_ship_size = juggernaut
+		# Galactic Nemesis Ships
+		is_ship_size = star_eater
+		# Cosmogenesis Ships
+		is_ship_size = cosmo_crisis_titan
+		# Special Ships
+		is_ship_size = synth_queen_titan
+		# Mod
+		is_ship_size = npc_warship_01_mod
+	}
+}
+
 can_be_chosen_for_hindsight = {
 	solar_system = {
 		has_psionic_aura = yes
@@ -185,5 +202,18 @@ is_mod_big_shield_ship_size = {
 		is_ship_size = starbase_deep_space_citadel_4
 		is_ship_size = orbital_ring_tier_4
 		is_ship_size = starbase_citadel_II
+	}
+}
+
+is_mod_no_components_add_to_cost_ship = {
+	OR = {
+		is_ship_size = ember_cruiser_mod
+		is_ship_size = ember_battleship_mod
+		is_ship_size = large_ship_ed_mod
+		is_ship_size = medium_ship_ed_mod
+		is_ship_size = small_ship_ed_mod
+		is_ship_size = crisis_corvette_mod
+		is_ship_size = crisis_destroyer_mod
+		is_ship_size = crisis_cruiser_mod
 	}
 }

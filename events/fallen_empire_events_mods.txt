@@ -136,6 +136,7 @@ country_event = {
 			modifier = ship_damage_mult
 			multiplier = value:get_crisis_strength			
 		}
+		set_country_flag = protected_from_queen_storm ## queen_storm pass
 		if = {
 			limit = {
 				count_country = {
@@ -299,6 +300,7 @@ country_event = {
 			is_country_type = fallen_empire
 			is_machine_empire = no
 			root = {
+				has_ascension_perk = ap_cosmogenesis
 				OR = {
 					has_crisis_level = crisis_cosmogenesis_level_5
 					has_crisis_level = crisis_cosmogenesis_level_4
@@ -437,6 +439,7 @@ country_event = {
 	hide_window = yes
 	trigger = {
         is_ai = no
+		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
 		is_fallen_empire = no
 		NOT = {
@@ -491,5 +494,35 @@ country_event = { # Reaching Level 5
 	}
 
 	after = {
+	}
+}
+
+country_event = { 
+	id = fallen_empires_mod.10
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			is_country_type = ai_empire
+			is_country_type = swarm
+			is_country_type = extradimensional ## OK FOR repeat
+			is_country_type = extradimensional_2
+			is_country_type = extradimensional_3
+			is_synth_queen_country_type = yes
+		}
+	}
+
+	immediate = {
+		every_country = {
+			limit = {
+				is_fallen_empire = yes
+			}
+			add_modifier = { 
+				modifier = ship_damage_mult
+				multiplier = value:get_crisis_strength			
+			}
+		}
 	}
 }

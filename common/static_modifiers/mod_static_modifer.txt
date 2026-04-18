@@ -6,11 +6,6 @@ ship_damage_mult = {
 	ship_disengage_chance_mult = -0.25
 }
 
-composer_aura_max_prohibit = {
-	icon = "gfx/interface/icons/planet_modifiers/pm_politics.dds"
-	icon_frame = 2
-}
-
 mastery_of_ring_word = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_mastery_of_nature.dds"
 	icon_frame = 1
@@ -27,4 +22,8 @@ hindsight_nomination = {
 crisis_cosmogenesis_level_5_auto_bonus = {
 	bonus_automated_workforce_mult = 5.00
 	custom_tooltip = crisis_cosmogenesis_level_5_auto_bonus_desc
+}
+
+shroud_research_speed_mod = {
+	all_technology_research_speed = 2
 }

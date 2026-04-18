@@ -34,7 +34,10 @@ tech_unusual_senses = {
 		factor = 0.5
 		modifier = {
 			factor = 0
-			NOT = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			NAND = {
+                has_ascension_perk = ap_cosmogenesis 
+                has_crisis_level = crisis_cosmogenesis_level_5 
+            }
 		}
 	}
 }
@@ -61,7 +64,10 @@ tech_new_numbers = {
 		factor = 0.5
 		modifier = {
 			factor = 0
-			NOT = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			NAND = {
+                has_ascension_perk = ap_cosmogenesis 
+                has_crisis_level = crisis_cosmogenesis_level_5 
+            }
 		}
 	}
 }
@@ -89,7 +95,10 @@ tech_trinary_computing = {
 		factor = 0.5
 		modifier = {
 			factor = 0
-			NOT = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			NAND = {
+                has_ascension_perk = ap_cosmogenesis 
+                has_crisis_level = crisis_cosmogenesis_level_5 
+            }
 		}
 	}
 }
@@ -118,7 +127,10 @@ tech_atmospheric_orbital_mechanics = {
 		factor = 0.5
 		modifier = {
 			factor = 0
-			NOT = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			NAND = {
+                has_ascension_perk = ap_cosmogenesis 
+                has_crisis_level = crisis_cosmogenesis_level_5 
+            }
 		}
 	}
 }
@@ -151,7 +163,10 @@ tech_predatory_tactics = {
 		factor = 0.5
 		modifier = {
 			factor = 0
-			NOT = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			NAND = {
+                has_ascension_perk = ap_cosmogenesis 
+                has_crisis_level = crisis_cosmogenesis_level_5 
+            }
 		}
 	}
 
@@ -204,7 +219,10 @@ tech_satisfying_insults = {
 		factor = 0.5
 		modifier = {
 			factor = 0
-			NOT = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			NAND = {
+                has_ascension_perk = ap_cosmogenesis 
+                has_crisis_level = crisis_cosmogenesis_level_5 
+            }
 		}
 	}
 
@@ -239,7 +257,10 @@ tech_compact_living = {
 		factor = 0.5
 		modifier = {
 			factor = 0
-			NOT = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			NAND = {
+                has_ascension_perk = ap_cosmogenesis 
+                has_crisis_level = crisis_cosmogenesis_level_5 
+            }
 		}
 	}
 
@@ -273,7 +294,10 @@ tech_alien_topography = {
 		factor = 0.5
 		modifier = {
 			factor = 0
-			NOT = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			NAND = {
+                has_ascension_perk = ap_cosmogenesis 
+                has_crisis_level = crisis_cosmogenesis_level_5 
+            }
 		}
 	}
 
@@ -306,7 +330,10 @@ tech_xeno_aesthetics = {
 		factor = 0.5
 		modifier = {
 			factor = 0
-			NOT = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			NAND = {
+                has_ascension_perk = ap_cosmogenesis 
+                has_crisis_level = crisis_cosmogenesis_level_5 
+            }
 		}
 	}
 
@@ -345,7 +372,10 @@ tech_lost_building_methods = {
 		factor = 0.5
 		modifier = {
 			factor = 0
-			NOT = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			NAND = {
+                has_ascension_perk = ap_cosmogenesis 
+                has_crisis_level = crisis_cosmogenesis_level_5 
+            }
 		}
 	}
 }
@@ -372,7 +402,10 @@ tech_supreme_alloy = {
 		factor = 0.5
 		modifier = {
 			factor = 0
-			NOT = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			NAND = {
+                has_ascension_perk = ap_cosmogenesis 
+                has_crisis_level = crisis_cosmogenesis_level_5 
+            }
 		}
 	}
 }
@@ -400,7 +433,10 @@ tech_ordered_retreat = {
 		factor = 0.5
 		modifier = {
 			factor = 0
-			NOT = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			NAND = {
+                has_ascension_perk = ap_cosmogenesis 
+                has_crisis_level = crisis_cosmogenesis_level_5 
+            }
 		}
 	}
 }
@@ -428,7 +464,10 @@ tech_temple_of_transportation = {
 		factor = 0.5
 		modifier = {
 			factor = 0
-			NOT = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			NAND = {
+                has_ascension_perk = ap_cosmogenesis 
+                has_crisis_level = crisis_cosmogenesis_level_5 
+            }
 		}
 	}
 }

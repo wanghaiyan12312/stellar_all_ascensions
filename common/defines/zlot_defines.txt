@@ -34,4 +34,13 @@ NAI = {
 NEconomy = {
 	TRADITION_COST_RESOURCES			= { "unity" } # Resource for tradition cost
 	TRADITION_COST_AMOUNTS				= { 265 }	# Tradition base cos 300
+	FLEET_UPGRADE_TIME_COST_MULT		= 0.10		# Upgrade fleet time cost
+	FLEET_UPGRADE_SECTION_COST_REFUND_MULT = 0.75	# Refund factor for ship section when upgrading
+	FLEET_UPGRADE_COMPONENT_COST_REFUND_MULT = 0.95 # Refund factor for ship components when upgrading
+}
+
+NShip = {
+	OUT_OF_COMBAT_SHIELD_REGEN_MULT		= 25.0 	    # Shields recharge this much faster outside combat
+	OUT_OF_COMBAT_ARMOR_REGEN_MULT		= 5.0		# Armor recharge this much faster outside combat
+	OUT_OF_COMBAT_HULL_REGEN_MULT		= 5.0		# Hull recharge this much faster outside combat
 }

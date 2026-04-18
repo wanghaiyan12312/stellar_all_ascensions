@@ -93,4 +93,36 @@ get_fallen_empire_mauler_num = {
 	}
 }
 
+get_predators_species_trait_points = {
+	base = 0
+	add = owner.modifier:BIOLOGICAL_species_trait_points_add
+	add = owner.modifier:BIOLOGICAL_species_trait_picks_add
+	modifier = {
+		owner = {
+			has_ascension_perk = ap_cosmogenesis
+			has_crisis_level = crisis_cosmogenesis_level_5
+		}
+		mult = 10
+	}
+}
 
+get_defeat_crisis_num_mod = {
+	base = 0
+	modifier = {
+		has_global_flag = extradimensional_invasion_defeated
+		add = 1
+	}
+	modifier = {
+		has_global_flag = prethoryn_invasion_defeated
+		add = 1
+	}
+	modifier = {
+		has_global_flag = ai_invasion_defeated
+		add = 1
+	}
+	modifier = {
+		has_global_flag = synth_queen_defeated
+		add = 1
+	}
+	max = 4
+}

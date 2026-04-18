@@ -181,7 +181,10 @@ tr_mutation_finish = {
 					id = bio.180
 				}
 			}
-			else = {
+			else_if = {
+				limit = {
+					is_hive_empire = yes
+				}
 				country_event = {
 					id = bio.195
 				}

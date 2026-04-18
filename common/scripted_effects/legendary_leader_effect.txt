@@ -783,6 +783,16 @@ update_legendary_governor_commander = {
 		show_message = no
 		consume_selection = yes
 	}
+	add_trait = {
+		trait = leader_trait_disciple_of_the_instrument
+		show_message = no
+		consume_selection = yes
+	}
+	add_trait = {
+		trait = leader_trait_disciple_of_the_cradle
+		show_message = no
+		consume_selection = yes
+	}
 	## veteran
 	add_trait = {
 		trait = leader_trait_mining_focus_3

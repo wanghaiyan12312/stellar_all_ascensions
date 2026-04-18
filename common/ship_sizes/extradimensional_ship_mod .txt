@@ -39,11 +39,13 @@ large_ship_ed_mod = {
 	available_to_everyone = yes
 
 	potential_country = {
+		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_4
 		country_uses_bio_ships = no
 	}
 
-	ship_roles = { gunship artillery }
+	default_behavior = artillery
+	ship_roles = { artillery gunship }
 
 	components_add_to_cost = no
 	resources = {
@@ -53,7 +55,7 @@ large_ship_ed_mod = {
 			astral_threads = 1200
 		}
 		upkeep = {
-			astral_threads = @battleship_upkeep_energy
+			energy = @battleship_upkeep_energy
 		}
 		logistics = {
 			trade = @battleship_logistic_upkeep_trade 
@@ -103,7 +105,7 @@ medium_ship_ed_mod  = {
 	required_component_set = "combat_computers"
 
 	components_add_to_cost = no
-	ship_roles = { gunship artillery }
+	ship_roles = { artillery gunship }
 
 	resources = {
 		category = ships
@@ -112,7 +114,7 @@ medium_ship_ed_mod  = {
 			astral_threads = 600
 		}
 		upkeep = {
-			astral_threads = @cruiser_upkeep_energy
+			energy = @cruiser_upkeep_energy
 		}
 		logistics = {
 			trade = @cruiser_logistic_upkeep_trade
@@ -122,6 +124,7 @@ medium_ship_ed_mod  = {
 	available_to_everyone = yes
 
 	potential_country = {
+		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_3
 		country_uses_bio_ships = no
 	}
@@ -143,6 +146,7 @@ small_ship_ed_mod  = {
 	modifier = {
 		ship_evasion_add = 20
 	}
+	max_hitpoints = @destroyer_hp
 	size_multiplier = 10
 	map_counter_icon = ship_counter_8
 	fleet_slot_size = 2
@@ -165,14 +169,19 @@ small_ship_ed_mod  = {
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
 
+	class = shipclass_military
+	is_designable = yes
+
 	available_to_everyone = yes
 
 	potential_country = {
+		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_2
 		country_uses_bio_ships = no
 	}
 
-	ship_roles = { gunship brawler }
+	default_behavior = artillery
+	ship_roles = { artillery gunship }
 
 	components_add_to_cost = no
 	resources = {
@@ -182,10 +191,10 @@ small_ship_ed_mod  = {
 			astral_threads = 300
 		}
 		upkeep = {
-			astral_threads = @corvette_upkeep_energy
+			energy = @destroyer_upkeep_energy
 		}
 		logistics = {
-			trade = @corvette_logistic_upkeep_trade
+			trade = @destroyer_logistic_upkeep_trade
 		}
 	}
 	ai_ship_data = {

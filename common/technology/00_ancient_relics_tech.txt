@@ -159,7 +159,10 @@ tech_secrets_cybrex = {
 		factor = 0.5
 		modifier = {
 			factor = 0
-			NOT = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			NAND = {
+                has_ascension_perk = ap_cosmogenesis 
+                has_crisis_level = crisis_cosmogenesis_level_5 
+            }
 		}
 	}
 
@@ -179,7 +182,10 @@ tech_secrets_league = {
 		factor = 0.5
 		modifier = {
 			factor = 0
-			NOT = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			NAND = {
+                has_ascension_perk = ap_cosmogenesis 
+                has_crisis_level = crisis_cosmogenesis_level_5 
+            }
 		}
 	}
 
@@ -199,7 +205,10 @@ tech_secrets_irassian = {
 		factor = 0.5
 		modifier = {
 			factor = 0
-			NOT = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			NAND = {
+                has_ascension_perk = ap_cosmogenesis 
+                has_crisis_level = crisis_cosmogenesis_level_5 
+            }
 		}
 	}
 
@@ -219,7 +228,10 @@ tech_secrets_vultaum = {
 		factor = 0.5
 		modifier = {
 			factor = 0
-			NOT = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			NAND = {
+                has_ascension_perk = ap_cosmogenesis 
+                has_crisis_level = crisis_cosmogenesis_level_5 
+            }
 		}
 	}
 
@@ -239,7 +251,10 @@ tech_secrets_yuht = {
 		factor = 0.5
 		modifier = {
 			factor = 0
-			NOT = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			NAND = {
+                has_ascension_perk = ap_cosmogenesis 
+                has_crisis_level = crisis_cosmogenesis_level_5 
+            }
 		}
 	}
 
@@ -259,7 +274,10 @@ tech_secrets_baol = {
 		factor = 0.5
 		modifier = {
 			factor = 0
-			NOT = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			NAND = {
+                has_ascension_perk = ap_cosmogenesis 
+                has_crisis_level = crisis_cosmogenesis_level_5 
+            }
 		}
 	}
 
@@ -279,7 +297,10 @@ tech_secrets_zroni = {
 		factor = 0.5
 		modifier = {
 			factor = 0
-			NOT = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			NAND = {
+                has_ascension_perk = ap_cosmogenesis 
+                has_crisis_level = crisis_cosmogenesis_level_5 
+            }
 		}
 	}
 

@@ -50,6 +50,15 @@ ap_engineered_evolution = {
 				num_ascension_perks > 1
 			}
 		}
+		if = {
+			limit = {
+				has_origin = origin_unplugged
+			}
+			custom_tooltip = {
+				fail_text = "requires_unplugged_decyberized_engineered_evolution"
+				has_country_flag = is_decyberized
+			}
+		}
 		custom_tooltip = {
 			fail_text = "requires_not_ap_the_flesh_is_weak"
 			NAND = {
@@ -63,6 +72,13 @@ ap_engineered_evolution = {
 				has_psionic_ascension = yes
 				is_gestalt = yes
 			}	
+		}
+		custom_tooltip = {
+			fail_text = "requires_cybernetic_creed_situation_finish"
+			NAND = {
+				has_origin = origin_cybernetic_creed
+				has_country_flag = cybernetics_traditions_unlocked
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_not_ap_organo_machine_interfacing"
@@ -103,10 +119,8 @@ ap_engineered_evolution = {
 		}
 		is_mechanical_empire = no
 		is_individual_machine = no
-		is_cyborg_empire = no
 		is_natural_design_empire = no
 		NOT = { has_valid_civic = civic_augmentation_bazaars }
-		is_chosen_empire = no
 		is_entropy_drinkers_empire = no
 	}
 
@@ -446,6 +460,13 @@ ap_mind_over_matter = {
 			custom_tooltip = {
 				fail_text = "requires_unplugged_decyberized"
 				has_country_flag = is_decyberized
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_cybernetic_creed_situation_finish"
+			NAND = {
+				has_origin = origin_cybernetic_creed
+				has_country_flag = cybernetics_traditions_unlocked
 			}
 		}
 		if = {

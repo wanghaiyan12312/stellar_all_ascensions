@@ -881,7 +881,7 @@ whisperers_in_the_void = {
 		}
 
 		effect = {
-			custom_tooltip = ACCORD_FORESIGHT_TT
+			custom_tooltip = ACCORD_FORESIGHT_TT_MOD
 			hidden_effect = {
 				country_event = { id = end_cycle.9 }
 			}
@@ -995,7 +995,10 @@ end_of_the_cycle = {
 		potential = {
 			OR = {
 				has_origin = origin_endbringers
-				has_crisis_level = crisis_cosmogenesis_level_5
+				AND = {
+					has_ascension_perk = ap_cosmogenesis
+					has_crisis_level = crisis_cosmogenesis_level_5 
+				}
 			}
 		}
 		possible = {
@@ -1059,7 +1062,10 @@ end_of_the_cycle = {
 		potential = {
 			OR = {
 				has_origin = origin_endbringers
-				has_crisis_level = crisis_cosmogenesis_level_5
+				AND = {
+					has_ascension_perk = ap_cosmogenesis
+					has_crisis_level = crisis_cosmogenesis_level_5 
+				}
 			}
 		}
 		possible = {
@@ -1127,7 +1133,10 @@ end_of_the_cycle = {
 		potential = {
 			OR = {
 				has_origin = origin_endbringers
-				has_crisis_level = crisis_cosmogenesis_level_5
+				AND = {
+					has_ascension_perk = ap_cosmogenesis
+					has_crisis_level = crisis_cosmogenesis_level_5 
+				}
 			}
 		}
 		possible = {
@@ -1216,7 +1225,10 @@ end_of_the_cycle = {
 		potential = {
 			OR = {
 				has_origin = origin_endbringers
-				has_crisis_level = crisis_cosmogenesis_level_5
+				AND = {
+					has_ascension_perk = ap_cosmogenesis
+					has_crisis_level = crisis_cosmogenesis_level_5 
+				}
 			}
 		}
 		possible = {

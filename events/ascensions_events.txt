@@ -665,7 +665,7 @@ situation_event = {
 			set_evopred_flags = yes
 			while = {
 				count = 3
-				generate_evolutionary_predator_choices = yes
+				generate_evolutionary_predator_choices_mod = yes
 			}
 		}
 	}
@@ -691,7 +691,7 @@ situation_event = {
 
 		hidden_effect = {
 			owner = {
-				add_random_trait_evopred = { TAG = pop_growth }
+				add_random_trait_evopred_mod = { TAG = pop_growth }
 				country_event = {
 					id = timeline.90
 				}
@@ -720,7 +720,7 @@ situation_event = {
 
 		hidden_effect = {
 			owner = {
-				add_random_trait_evopred = { TAG = pop_output }
+				add_random_trait_evopred_mod = { TAG = pop_output }
 				country_event = {
 					id = timeline.90
 				}
@@ -749,7 +749,7 @@ situation_event = {
 
 		hidden_effect = {
 			owner = {
-				add_random_trait_evopred = { TAG = leader }
+				add_random_trait_evopred_mod = { TAG = leader }
 				country_event = {
 					id = timeline.90
 				}
@@ -778,7 +778,7 @@ situation_event = {
 
 		hidden_effect = {
 			owner = {
-				add_random_trait_evopred = { TAG = habitability }
+				add_random_trait_evopred_mod = { TAG = habitability }
 				country_event = {
 					id = timeline.90
 				}
@@ -807,7 +807,7 @@ situation_event = {
 
 		hidden_effect = {
 			owner = {
-				add_random_trait_evopred = { TAG = upkeep }
+				add_random_trait_evopred_mod = { TAG = upkeep }
 				country_event = {
 					id = timeline.90
 				}
@@ -836,7 +836,7 @@ situation_event = {
 
 		hidden_effect = {
 			owner = {
-				add_random_trait_evopred = { TAG = humanoid SPECIES = yes }
+				add_random_trait_evopred_mod = { TAG = humanoid SPECIES = yes }
 				country_event = {
 					id = timeline.90
 				}
@@ -865,7 +865,7 @@ situation_event = {
 
 		hidden_effect = {
 			owner = {
-				add_random_trait_evopred = { TAG = mammalian SPECIES = yes }
+				add_random_trait_evopred_mod = { TAG = mammalian SPECIES = yes }
 				country_event = {
 					id = timeline.90
 				}
@@ -894,7 +894,7 @@ situation_event = {
 
 		hidden_effect = {
 			owner = {
-				add_random_trait_evopred = { TAG = reptilian SPECIES = yes }
+				add_random_trait_evopred_mod = { TAG = reptilian SPECIES = yes }
 				country_event = {
 					id = timeline.90
 				}
@@ -923,7 +923,7 @@ situation_event = {
 
 		hidden_effect = {
 			owner = {
-				add_random_trait_evopred = { TAG = avian SPECIES = yes }
+				add_random_trait_evopred_mod = { TAG = avian SPECIES = yes }
 				country_event = {
 					id = timeline.90
 				}
@@ -952,7 +952,7 @@ situation_event = {
 
 		hidden_effect = {
 			owner = {
-				add_random_trait_evopred = { TAG = arthropoid SPECIES = yes }
+				add_random_trait_evopred_mod = { TAG = arthropoid SPECIES = yes }
 				country_event = {
 					id = timeline.90
 				}
@@ -981,7 +981,7 @@ situation_event = {
 
 		hidden_effect = {
 			owner = {
-				add_random_trait_evopred = { TAG = molluscoid SPECIES = yes }
+				add_random_trait_evopred_mod = { TAG = molluscoid SPECIES = yes }
 				country_event = {
 					id = timeline.90
 				}
@@ -1010,7 +1010,7 @@ situation_event = {
 
 		hidden_effect = {
 			owner = {
-				add_random_trait_evopred = { TAG = fungoid SPECIES = yes }
+				add_random_trait_evopred_mod = { TAG = fungoid SPECIES = yes }
 				country_event = {
 					id = timeline.90
 				}
@@ -1039,7 +1039,7 @@ situation_event = {
 
 		hidden_effect = {
 			owner = {
-				add_random_trait_evopred = { TAG = plantoid SPECIES = yes }
+				add_random_trait_evopred_mod = { TAG = plantoid SPECIES = yes }
 				country_event = {
 					id = timeline.90
 				}
@@ -1068,7 +1068,7 @@ situation_event = {
 
 		hidden_effect = {
 			owner = {
-				add_random_trait_evopred = { TAG = lithoid SPECIES = yes }
+				add_random_trait_evopred_mod = { TAG = lithoid SPECIES = yes }
 				country_event = {
 					id = timeline.90
 				}
@@ -1097,7 +1097,7 @@ situation_event = {
 
 		hidden_effect = {
 			owner = {
-				add_random_trait_evopred = { TAG = necroid SPECIES = yes }
+				add_random_trait_evopred_mod = { TAG = necroid SPECIES = yes }
 				country_event = {
 					id = timeline.90
 				}
@@ -1126,7 +1126,7 @@ situation_event = {
 
 		hidden_effect = {
 			owner = {
-				add_random_trait_evopred = { TAG = aquatic SPECIES = yes }
+				add_random_trait_evopred_mod = { TAG = aquatic SPECIES = yes }
 				country_event = {
 					id = timeline.90
 				}
@@ -1155,7 +1155,7 @@ situation_event = {
 
 		hidden_effect = {
 			owner = {
-				add_random_trait_evopred = { TAG = toxoid SPECIES = yes }
+				add_random_trait_evopred_mod = { TAG = toxoid SPECIES = yes }
 				country_event = {
 					id = timeline.90
 				}
@@ -1184,7 +1184,7 @@ situation_event = {
 
 		hidden_effect = {
 			owner = {
-				add_random_trait_evopred = { TAG = infernal SPECIES = yes }
+				add_random_trait_evopred_mod = { TAG = infernal SPECIES = yes }
 				country_event = { 
 					id = timeline.90
 				}
@@ -1254,7 +1254,7 @@ situation_event = {
 
 		hidden_effect = {
 			owner = {
-				add_random_trait_evopred = { TAG = psionic SPECIES = yes }
+				add_random_trait_evopred_mod = { TAG = psionic SPECIES = yes }
 			}
 		}
 	}
@@ -1280,7 +1280,7 @@ situation_event = {
 
 		hidden_effect = {
 			owner = {
-				add_random_trait_cybernetic_evopred = yes
+				add_random_trait_cybernetic_evopred_mod = yes
 			}
 		}
 
@@ -1321,13 +1321,8 @@ situation_event = {
 						set_country_flag = gained_auto_mod_overtuned_trait_mod
 						create_message = {
 							type = OVERTUNED_TRAIT_ADDED
-							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_AUTO_MOD_OVERTUNED_TRAIT_ADDED
 							days = 30
-							variable = {
-								type = name
-								localization = TRAIT
-								scope = prev
-							}
 							variable = {
 								type = name
 								localization = SPECIES
@@ -1348,13 +1343,8 @@ situation_event = {
 						set_country_flag = gained_spliced_adaptability_trait_mod
 						create_message = {
 							type = OVERTUNED_TRAIT_ADDED
-							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_SPLICED_ADAPTABILITY_TRAIT_ADDED
 							days = 30
-							variable = {
-								type = name
-								localization = TRAIT
-								scope = prev
-							}
 							variable = {
 								type = name
 								localization = SPECIES
@@ -1375,13 +1365,8 @@ situation_event = {
 						set_country_flag = gained_juiced_power_trait_mod
 						create_message = {
 							type = OVERTUNED_TRAIT_ADDED
-							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_JUICED_POWER_TRAIT_ADDED
 							days = 30
-							variable = {
-								type = name
-								localization = TRAIT
-								scope = prev
-							}
 							variable = {
 								type = name
 								localization = SPECIES
@@ -1402,13 +1387,8 @@ situation_event = {
 						set_country_flag = gained_farm_hands_trait_mod
 						create_message = {
 							type = OVERTUNED_TRAIT_ADDED
-							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_FARM_HANDS_TRAIT_ADDED
 							days = 30
-							variable = {
-								type = name
-								localization = TRAIT
-								scope = prev
-							}
 							variable = {
 								type = name
 								localization = SPECIES
@@ -1429,13 +1409,8 @@ situation_event = {
 						set_country_flag = gained_crack_miner_trait_mod
 						create_message = {
 							type = OVERTUNED_TRAIT_ADDED
-							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_CRACK_MINER_TRAIT_ADDED
 							days = 30
-							variable = {
-								type = name
-								localization = TRAIT
-								scope = prev
-							}
 							variable = {
 								type = name
 								localization = SPECIES
@@ -1456,13 +1431,8 @@ situation_event = {
 						set_country_flag = gained_technical_skill_trait_mod
 						create_message = {
 							type = OVERTUNED_TRAIT_ADDED
-							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_TECHNICAL_SKILL_TRAIT_ADDED
 							days = 30
-							variable = {
-								type = name
-								localization = TRAIT
-								scope = prev
-							}
 							variable = {
 								type = name
 								localization = SPECIES
@@ -1483,13 +1453,8 @@ situation_event = {
 						set_country_flag = gained_commercial_genius_trait_mod
 						create_message = {
 							type = OVERTUNED_TRAIT_ADDED
-							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_COMMERCIAL_GENIUS_TRAIT_ADDED
 							days = 30
-							variable = {
-								type = name
-								localization = TRAIT
-								scope = prev
-							}
 							variable = {
 								type = name
 								localization = SPECIES
@@ -1510,13 +1475,8 @@ situation_event = {
 						set_country_flag = gained_crafted_smiles_trait_mod
 						create_message = {
 							type = OVERTUNED_TRAIT_ADDED
-							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_CRAFTED_SMILES_TRAIT_ADDED
 							days = 30
-							variable = {
-								type = name
-								localization = TRAIT
-								scope = prev
-							}
 							variable = {
 								type = name
 								localization = SPECIES
@@ -1537,13 +1497,8 @@ situation_event = {
 						set_country_flag = gained_low_maintenance_trait_mod
 						create_message = {
 							type = OVERTUNED_TRAIT_ADDED
-							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_LOW_MAINTENANCE_TRAIT_ADDED
 							days = 30
-							variable = {
-								type = name
-								localization = TRAIT
-								scope = prev
-							}
 							variable = {
 								type = name
 								localization = SPECIES
@@ -1564,13 +1519,8 @@ situation_event = {
 						set_country_flag = gained_artificial_intelligence_trait_mod
 						create_message = {
 							type = OVERTUNED_TRAIT_ADDED
-							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_ARTIFICIAL_INTELLIGENCE_TRAIT_ADDED
 							days = 30
-							variable = {
-								type = name
-								localization = TRAIT
-								scope = prev
-							}
 							variable = {
 								type = name
 								localization = SPECIES
@@ -1591,13 +1541,8 @@ situation_event = {
 						set_country_flag = gained_gene_mentorship_trait_mod
 						create_message = {
 							type = OVERTUNED_TRAIT_ADDED
-							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_GENE_MENTORSHIP_TRAIT_ADDED
 							days = 30
-							variable = {
-								type = name
-								localization = TRAIT
-								scope = prev
-							}
 							variable = {
 								type = name
 								localization = SPECIES
@@ -1618,13 +1563,8 @@ situation_event = {
 						set_country_flag = gained_expressed_tradition_trait_mod
 						create_message = {
 							type = OVERTUNED_TRAIT_ADDED
-							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_EXPRESSED_TRADITION_TRAIT_ADDED
 							days = 30
-							variable = {
-								type = name
-								localization = TRAIT
-								scope = prev
-							}
 							variable = {
 								type = name
 								localization = SPECIES
@@ -1645,13 +1585,8 @@ situation_event = {
 						set_country_flag = gained_elevated_synapses_trait_mod
 						create_message = {
 							type = OVERTUNED_TRAIT_ADDED
-							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_ELEVATED_SYNAPSES_TRAIT_ADDED
 							days = 30
-							variable = {
-								type = name
-								localization = TRAIT
-								scope = prev
-							}
 							variable = {
 								type = name
 								localization = SPECIES
@@ -1672,13 +1607,8 @@ situation_event = {
 						set_country_flag = gained_preplanned_growth_trait_mod
 						create_message = {
 							type = OVERTUNED_TRAIT_ADDED
-							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_PREPLANNED_GROWTH_TRAIT_ADDED
 							days = 30
-							variable = {
-								type = name
-								localization = TRAIT
-								scope = prev
-							}
 							variable = {
 								type = name
 								localization = SPECIES
@@ -1699,13 +1629,8 @@ situation_event = {
 						set_country_flag = gained_excessive_endurance_trait_mod
 						create_message = {
 							type = OVERTUNED_TRAIT_ADDED
-							localization = MESSAGE_OVERTUNED_TRAIT_ADDED
+							localization = MESSAGE_EXCESSIVE_ENDURANCE_TRAIT_ADDED
 							days = 30
-							variable = {
-								type = name
-								localization = TRAIT
-								scope = prev
-							}
 							variable = {
 								type = name
 								localization = SPECIES
@@ -2149,6 +2074,36 @@ situation_event = {
 	}
 
 	option = {
+		trigger = {
+			owner = {
+				NOR = {
+					has_country_flag = toxoid_evopred
+					has_country_flag = infernal_evopred
+					has_country_flag = aquatic_evopred
+					has_country_flag = necroid_evopred
+					has_country_flag = lithoid_evopred
+					has_country_flag = plantoid_evopred
+					has_country_flag = fungoid_evopred
+					has_country_flag = molluscoid_evopred
+					has_country_flag = arthropoid_evopred
+					has_country_flag = avian_evopred
+					has_country_flag = reptilian_evopred
+					has_country_flag = mammalian_evopred
+					has_country_flag = humanoid_evopred
+					has_country_flag = upkeep_evopred
+					has_country_flag = habitability_evopred
+					has_country_flag = leader_evopred
+					has_country_flag = pop_output_evopred
+					has_country_flag = pop_growth_evopred
+					has_country_flag = plasmic_evopred
+					has_country_flag = psionic_evopred
+					has_country_flag = leviathan_evo_pred
+					has_country_flag = cybernetic_mod_evo_pred
+					has_country_flag = leviathan_cybernetic_mod_evo_pred
+					has_country_flag = overtuned_mod_evo_pred
+				}
+			}
+		}
 		name = bio.1005.no_reward
 		hidden_effect = {
 			set_situation_flag = no_choice_evopred
@@ -2250,7 +2205,7 @@ situation_event = {
 				}else_if ={
 					limit = {
 						has_ascension_perk = ap_cosmogenesis
-						check_variable_arithmetic = { which = num_evopred_situations_ran value > 10 }
+						check_variable_arithmetic = { which = num_evopred_situations_ran value > 9 }
 					}
 					set_variable = {
 						which = num_evopred_situations_ran

@@ -33,6 +33,12 @@ on_monthly_pulse_country = {
 	}
 }
 
+on_country_destroyed = {
+	events = {
+		fallen_empires_mod.10
+	}
+}
+
 on_ship_built = {
 	events = {
 		shipeventmod.1

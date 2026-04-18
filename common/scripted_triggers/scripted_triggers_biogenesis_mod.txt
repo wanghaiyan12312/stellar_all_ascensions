@@ -12,14 +12,7 @@ aap_is_advanced_government_mod = {
 	has_country_flag = corporeal_government
 }
 
-has_genetic_traditon_tree_adoped_mod ={
-	OR ={
-		has_tradition = tr_cloning_adopt
-		has_tradition = tr_mutation_adopt
-		has_tradition = tr_purity_adopt
-	}
-}
-
+## todo ? maybe this drawback may good PS: NOT GOOD
 has_genetic_stage_1_tradition = {
 	OR = {
 		OR = {
@@ -27,7 +20,11 @@ has_genetic_stage_1_tradition = {
 			has_tradition = tr_cloning_stage_1_swap
 			has_tradition = tr_mutation_stage_1_swap
 		}
-		has_genetic_traditon_tree_adoped_mod = yes
+		OR = {
+			has_tradition = tr_cloning_genomic_growth_mod
+			has_tradition = tr_mutation_environmental_integration_mod
+			has_tradition = tr_purity_heightened_attributes_mod
+		}
 	}
 }
 
@@ -38,7 +35,11 @@ has_genetic_stage_2_tradition = {
 			has_tradition = tr_cloning_stage_2_swap
 			has_tradition = tr_mutation_stage_2_swap
 		}
-		has_genetic_traditon_tree_adoped_mod = yes
+		OR = {
+			has_tradition = tr_cloning_biochemical_composure_clones_mod
+			has_tradition = tr_mutation_somatic_subversiveness_mod
+			has_tradition = tr_purity_optimized_neurology_mod
+		}
 	}
 }
 
@@ -49,7 +50,11 @@ has_genetic_stage_3_tradition = {
 			has_tradition = tr_cloning_stage_3_swap
 			has_tradition = tr_mutation_stage_3_swap
 		}
-		has_genetic_traditon_tree_adoped_mod = yes
+		OR = {
+			has_tradition = tr_cloning_artificial_population_mod
+			has_tradition = tr_mutation_nucleotide_isolation_mod
+			has_tradition = tr_purity_imperfection_remediation_mod
+		}
 	}
 }
 
@@ -80,7 +85,10 @@ is_galvanic_empire = {
         has_valid_civic = civic_hive_galvanic_symbiosis
         has_valid_civic = civic_corporate_galvanic_symbiosis
         has_valid_civic = civic_machine_galvanic_symbiosis
-		has_crisis_level = crisis_cosmogenesis_level_5
+		AND = {
+			has_ascension_perk = ap_cosmogenesis
+			has_crisis_level = crisis_cosmogenesis_level_5 
+		}
     }
 }
 
@@ -124,7 +132,10 @@ can_add_overtuned_traits = {
 	from = {
 		OR = {
 			has_origin = origin_overtuned 
-			has_crisis_level = crisis_cosmogenesis_level_5
+			AND = {
+				has_ascension_perk = ap_cosmogenesis
+				has_crisis_level = crisis_cosmogenesis_level_5 
+			}
 		} 
 	}
 }
@@ -135,7 +146,10 @@ can_remove_overtuned_traits = {
 	from = {
 		OR = {
 			has_origin = origin_overtuned
-			has_crisis_level = crisis_cosmogenesis_level_5
+			AND = {
+				has_ascension_perk = ap_cosmogenesis
+				has_crisis_level = crisis_cosmogenesis_level_5 
+			}
 			if = {
 				limit = {
 					OR = {
@@ -147,6 +161,52 @@ can_remove_overtuned_traits = {
 			}
 			else = {
 				has_tradition = tr_purity_genotype_regeneration
+			}
+		}
+	}
+}
+
+any_available_random_trait_by_tag_evopred_mod = {
+	species = {
+		[[SPECIES]
+			any_trait_available_for_species = {
+				trait_has_all_tags = { $TAG$ organic positive }
+				NOT = { trait_has_any_tag = { special cybernetic presapient drawbacks leviathan } }
+				NOT = { trait_has_any_tag = { genetic_ascension } }
+				OR = {
+					NOT = { trait_has_any_tag = { individual } }
+					root.owner = { is_gestalt = no }
+				}
+			}
+		]
+		[[!SPECIES]
+			any_trait_available_for_species = {
+				trait_has_all_tags = { $TAG$ organic positive }
+				NOT = { trait_has_any_tag = { special species cybernetic presapient drawbacks leviathan } }
+				NOT = { trait_has_any_tag = { genetic_ascension } }
+				OR = {
+					NOT = { trait_has_any_tag = { individual } }
+					root.owner = { is_gestalt = no }
+				}
+			}
+		]
+	}
+}
+
+any_available_cybernetic_trait_by_tag_evopred_mod = {
+	species = {
+		any_trait_available_for_species = {
+			trait_has_all_tags = { cybernetic organic positive }
+			NOT = { trait_has_any_tag = { special presapient drawbacks leviathan habitability } }
+			OR = {
+				NOT = { trait_has_any_tag = { modularity } }
+				root = {
+					can_do_advanced_robo_modding = yes
+				}
+			}
+			OR = {
+				NOT = { trait_has_any_tag = { individual } }
+				root.owner = { is_gestalt = no }
 			}
 		}
 	}

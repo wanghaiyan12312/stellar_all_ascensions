@@ -395,7 +395,7 @@ ship_design = {
 		}
 		component = {
 			slot = "SMALL_GUN_04"
-			template = "SMALL_PLASMA_3PLASMA_4"
+			template = "SMALL_PLASMA_3"
 		}
 		component = {
 			slot = "PD_01"
