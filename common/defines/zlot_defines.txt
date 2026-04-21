@@ -43,4 +43,7 @@ NShip = {
 	OUT_OF_COMBAT_SHIELD_REGEN_MULT		= 25.0 	    # Shields recharge this much faster outside combat
 	OUT_OF_COMBAT_ARMOR_REGEN_MULT		= 5.0		# Armor recharge this much faster outside combat
 	OUT_OF_COMBAT_HULL_REGEN_MULT		= 5.0		# Hull recharge this much faster outside combat
+
+	MILITARY_POWER_SCALE				= 0.025
+	MILITARY_POWER_EXPONENT				= 0.5	# math: power = ( ( effective_health * damage_per_day ) ^ exponent ) * scale
 }

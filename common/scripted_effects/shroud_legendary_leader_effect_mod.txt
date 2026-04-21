@@ -329,6 +329,7 @@ update_legendary_council_scientist = {
 	}
 
 }
+
 update_legendary_govern_scientist = {
 	remove_all_traits = yes
 	set_skill = 10
@@ -410,6 +411,7 @@ update_legendary_govern_scientist = {
 		consume_selection = yes
 	}
 }
+
 update_legendary_council_official = {
 	remove_all_traits = yes
 	set_skill = 10
@@ -480,6 +482,7 @@ update_legendary_council_official = {
 		consume_selection = yes
 	}
 }
+
 update_legendary_govern_official = {
 	remove_all_traits = yes
 	set_skill = 10
@@ -514,11 +517,6 @@ update_legendary_govern_official = {
 	}
 	add_trait = {
 		trait = leader_trait_disciple_of_the_cradle
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
-		trait = leader_trait_legendary_ancestors_knowledge
 		show_message = no
 		consume_selection = yes
 	}
@@ -625,16 +623,12 @@ update_legendary_govern_official = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_govenor_caretaker
-		show_message = no
-		consume_selection = yes
-	}
-	add_trait = {
 		trait = leader_trait_storm_rider_official
 		show_message = no
 		consume_selection = yes
 	}
 }
+
 update_legendary_councilor_commander = {
 	remove_all_traits = yes
 	set_skill = 10
@@ -1289,6 +1283,30 @@ create_ordinary_legendary_leader = {
 		variable = {
 			key = "border"
 			value = "GFX_border_veteran"
+		}
+	}
+}
+
+check_end_aura_win_condition_mod = {
+	export_trigger_value_to_variable = {
+		trigger = count_systems_with_aura
+		variable = nb_conquered_systems
+	}
+	if = {
+		limit = {
+			count_end_cycle_systems <= nb_conquered_systems
+			NOT = {
+				any_country = {
+					is_fallen_empire = yes
+				}
+			}
+		}
+		if = {
+			limit = { has_origin = origin_endbringers }
+			country_event = { id = shroud.8600 }
+		}
+		else = {
+			country_event = { id = shroud.4970 }
 		}
 	}
 }

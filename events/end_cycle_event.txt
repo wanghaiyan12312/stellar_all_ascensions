@@ -125,13 +125,11 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_country_flag = eradication_activated
 		# Kick the Crisis out of Alliances.
 		if = {
 			limit = { has_federation = yes }
 			leave_alliance = { override_requirements = yes }
 		}
-		awaken_guardians_of_the_galaxy = yes
 
 		# Will add the GalCom leaders as war_leader, otherwise the strongest opponent
 		if = {
@@ -146,21 +144,6 @@ country_event = {
 				has_galactic_custodian = yes
 			}
 			galactic_custodian = { save_event_target_as = war_leader }
-		}
-
-		# An FE will take the lead
-		else_if = {
-			limit = {
-				any_country = {
-					is_fallen_empire = yes
-				}
-			}
-			random_country = {
-				limit = {
-					is_fallen_empire = yes
-				}
-				save_event_target_as = war_leader
-			}
 		}
 
 		# Will otherwise select the strongest
@@ -234,11 +217,7 @@ country_event = {
 		}
 		every_country = {
 			limit = {
-				OR = {
-					is_country_type = default
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
-				}
+				is_country_type = default
 				NOR = {
 					is_same_value = event_target:war_leader
 					has_subject = root

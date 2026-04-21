@@ -21,9 +21,15 @@ hindsight_nomination = {
 
 crisis_cosmogenesis_level_5_auto_bonus = {
 	bonus_automated_workforce_mult = 5.00
-	custom_tooltip = crisis_cosmogenesis_level_5_auto_bonus_desc
 }
 
 shroud_research_speed_mod = {
 	all_technology_research_speed = 2
+}
+
+cosmo_free_ship_cost_add = {
+	icon = "gfx/interface/icons/modifiers/mod_alloys_cost_mult.dds"
+	icon_frame = 1
+	ship_components_add_to_cost_mod_cost_mult = 1
+	ship_components_add_to_cost_mod_upkeep_mult = 0.2
 }

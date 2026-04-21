@@ -42,55 +42,63 @@ get_fallen_empire_titan_enforce_num = {
 		mode = add
 	}
 	subtract = 3
-	mult = @fallen_empire_titan
+	add = @fallen_empire_titan
 	min = 0
 }
 
 get_fallen_empire_battlecruise_num = {
-    base = @fallen_empire_battlecruise
+    base = 0
     complex_trigger_modifier = {
 		trigger = is_difficulty
 		trigger_scope = this
-		mode = mult
+		mode = add
 	}
+	max = 3 ## performance
 }
 
 get_fallen_empire_escort_num = {
-    base = @fallen_empire_escort
+    base = 0
     complex_trigger_modifier = {
 		trigger = is_difficulty
 		trigger_scope = this
-		mode = mult
+		mode = add
 	}
+	max = 3 ## performance
 }
 
 get_fallen_empire_stinger_num = {
-    base = @hive_fallen_empire_stinger
+    base = 0
     complex_trigger_modifier = {
 		trigger = is_difficulty
 		trigger_scope = this
-		mode = mult
+		mode = add
 	}
+	subtract = 3
+	add = @hive_fallen_empire_stinger
+	mult = 2
+	min = 0
 }
 
 
 get_fallen_empire_harbinger_num = {
-    base = @hive_fallen_empire_harbinger
+    base = 0
     complex_trigger_modifier = {
 		trigger = is_difficulty
 		trigger_scope = this
-		mode = mult
+		mode = add
 	}
+	max = 3 ## performance
 }
 
 
 get_fallen_empire_mauler_num = {
-    base = @hive_fallen_empire_mauler
+    base = 0
     complex_trigger_modifier = {
 		trigger = is_difficulty
 		trigger_scope = this
-		mode = mult
+		mode = add
 	}
+	max = 3 ## performance
 }
 
 get_predators_species_trait_points = {

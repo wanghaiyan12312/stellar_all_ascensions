@@ -514,15 +514,31 @@ country_event = {
 		}
 	}
 
-	immediate = {
+	after = {
 		every_country = {
 			limit = {
 				is_fallen_empire = yes
 			}
-			add_modifier = { 
-				modifier = ship_damage_mult
-				multiplier = value:get_crisis_strength			
+			country_event = {
+				id = fallen_empires_mod.11
+				days = 30  ## wait crisis_strength update
 			}
+		}
+	}
+}
+
+country_event = { 
+	id = fallen_empires_mod.11
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		is_fallen_empire = yes
+	}
+	immediate = {
+		add_modifier = { 
+			modifier = ship_damage_mult
+			multiplier = value:get_crisis_strength			
 		}
 	}
 }

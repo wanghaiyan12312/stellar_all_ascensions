@@ -69,8 +69,6 @@ cosmo_crisis_titan_mod = {
 	}
 
 	prerequisites = { 
-		"tech_cosmogenesis_FE_titan"
-		"tech_synth_queen_titan"
 		"tech_synth_queen_titan_template"
 	}
 

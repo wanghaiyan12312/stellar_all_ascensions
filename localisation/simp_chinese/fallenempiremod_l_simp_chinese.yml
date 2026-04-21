@@ -1,0 +1,75 @@
+﻿l_simp_chinese:
+ shipeventmod.3.name:"[outraged_FE.GetName]"
+ shipeventmod.3.desc:"女王泰坦是我们上古敌人的旗舰，你的行为让我们祖先的荣耀蒙羞。\n\n\n你们不明白你们犯下了多大的罪恶。\n\n\n不过马上就会了。"
+ end_cycle.7.name:"[outraged_FE.GetName]"
+ end_cycle.7.desc:"你们所散发的邪恶的灵能光环正在蔓延整个星系，危及所有文明。我们作为长者之裔有必要消灭这种威胁全银河的威胁。"
+ end_cycle.5.a.tt:"$shroud.4135.a.tt$\n\n\n§Y 所有的堕落帝国都会再50年以后觉醒。 §!"
+
+ tech_starbase_6:"$starbase_citadel_II$"
+ tech_starbase_desc:"堕落帝国擎天堡拥有着难以置信的空间去装备着难以想象的防御设施，一座堕落帝国擎天堡对于敌方舰队而言绝对是不可攻克的堡垒。"
+ 
+ TECH_UNLOCK_CITADEL_II_CONSTRUCTION_TITLE:"§H解锁恒星基地升级：§!擎天堡 II"
+ TECH_UNLOCK_CITADEL_II_CONSTRUCTION_DESC:"§H擎天堡 II§!\n擎天堡的升级，由于我们再编辑现实上面的努力我们突破了恒星基地的物理限制，擎天堡 II上面可修筑六个建筑，最大可支持十二个模块。"
+
+ starbase_citadel_II:"$citadel$II"
+ starbase_deep_space_citadel_4:"$dsc_name$ IV"
+ starbase_deep_space_citadel_4_plural:"$dsc_name_plural$"
+ starbase_deep_space_citadel_4_cap:"$starbase_deep_space_citadel_4$"
+ DEEP_SPACE_CITADEL_STAGE_4: "$starbase_deep_space_citadel_4$"
+ SHIP_GRAPHICS_STARBASE_DEEP_SPACE_CITADEL_4_DESC:"$SHIP_GRAPHICS_STARBASE_DEEP_SPACE_CITADEL_3_DESC$"
+ orbital_ring_tier_4:"四级星环基地"
+ orbital_ring_tier_4_plural:"四级星环基地"
+ STARBASE_STATION_NAME_FORMAT_NON_PRIMARY:"$PLANET$空间站"
+
+ LAGER_FALLEN_STATION_ZERO_POINT_REACTOR:"$ZERO_POINT_REACTOR$"
+ LAGER_FALLEN_STATION_DARK_MATTER_REACTOR:"$DARK_MATTER_REACTOR$"
+ LAGER_FALLEN_STATION_ZERO_POINT_REACTOR_DESC:"$ZERO_POINT_REACTOR_DESC$"
+ LAGER_FALLEN_STATION_DARK_MATTER_REACTOR_DESC:"$DARK_MATTER_REACTOR_DESC$"
+
+ military_station_small_fallen_empire_mod:"失落帝国轻防御平台"
+ military_station_small_fallen_empire_mod_cap:"$military_station_small_fallen_empire_mod$"
+ military_station_small_fallen_empire_mod_plural:"$military_station_small_fallen_empire_mod$"
+ SHIP_GRAPHICS_MILITARY_STATION_SMALL_FALLEN_EMPIRE_MOD_DESC:"失落帝国轻防御平台，平衡火力耐力以及后勤的防御平台。"
+ military_station_large_fallen_empire_mod:"失落帝国重防御平台"
+ military_station_large_fallen_empire_mod_cap:"$military_station_large_fallen_empire_mod$"
+ military_station_large_fallen_empire_mod_plural:"$military_station_large_fallen_empire_mod$"
+ SHIP_GRAPHICS_MILITARY_STATION_LARGE_FALLEN_EMPIRE_MOD_DESC:"失落帝国重防御平台，极其注重L槽火力以及防御。"
+
+ fallen_empire_station_large_mod:"防卫者核心"
+ fallen_empire_station_small_mod:"防卫者核心"
+
+ fallen_empire_federation:"堕落帝国联邦"
+ fallen_empire_federation_desc:"一个联盟专注于足以毁灭这古老巨人的可怕敌人。"
+ triggered_opinion_fallen_empire_federation:"堕落帝国联邦"
+
+ ship_damage_mult:"优越造船"
+ crisis_cosmogenesis_level_5_auto_bonus:"堕落帝国自动化加成"
+ crisis_cosmogenesis_level_5_auto_bonus_desc:"作为一个宇宙创生5的国家你也是堕落帝国。"
+
+ mod_armor_improve_name_mod2:"装甲增加"
+ mod_shield_improve_name_mod2:"护盾增加"
+ mod_shield_regen_daily_improve_name_mod2:"每日护盾增加"
+ mod_ship_cost_add:"舰船建造成本增加"
+
+ mod_shipsize_orbital_ring_tier_4_shield_add:"$orbital_ring_tier_4$$mod_shield_improve_name_mod2$"
+ mod_shipsize_orbital_ring_tier_4_shield_regen_add_static:"$orbital_ring_tier_4$$mod_shield_regen_daily_improve_name_mod2$"
+ mod_shipsize_orbital_ring_tier_4_armor_add:"$orbital_ring_tier_4$$mod_armor_improve_name_mod2$"
+
+ mod_shipsize_starbase_citadel_II_shield_add:"$starbase_citadel_II$$mod_shield_improve_name_mod2$"
+ mod_shipsize_starbase_citadel_II_shield_regen_add_static:"$starbase_citadel_II$$mod_shield_regen_daily_improve_name_mod2$"
+ mod_shipsize_starbase_citadel_II_armor_add:"$starbase_citadel_II$$mod_armor_improve_name_mod2$"
+
+ mod_shipsize_starbase_deep_space_citadel_4_shield_add:"$starbase_deep_space_citadel_4$$mod_shield_improve_name_mod2$"
+ mod_shipsize_starbase_deep_space_citadel_4_shield_regen_add_static:"$starbase_deep_space_citadel_4$$mod_shield_regen_daily_improve_name_mod2$"
+ mod_shipsize_starbase_deep_space_citadel_4_armor_add:"$starbase_deep_space_citadel_4$$mod_armor_improve_name_mod2$"
+
+ COSMO_CRISIS_HARBINGER_SECTION_POINT:"蜂巢堕落帝国远古孵后"
+ NAME_HIVE_FE_Large_Harbinger_Point:"孵化者"
+ NAME_SHIELD_ARMOR_hard_I:"$NAME_Keeper$ Hard I"
+ NAME_SHIELD_ARMOR_hard_II:"$NAME_Keeper$ Hard II"
+ NAME_ARMOR_ARMOR_hard_I:"$NAME_Savant$ Hard I"
+ NAME_ARMOR_ARMOR_hard_II:"$NAME_Savant$ Hard II"
+ NAME_SHIELD_SHIELD_hard_I:"$NAME_Eternal$ Hard I"
+ NAME_SHIELD_SHIELD_hard_II:"$NAME_Eternal$ Hard II"
+ NAME_HIVE_FE_Large_Stinger_HARD_I:"$NAME_HIVE_FE_Large_Stinger$ Hard I"
+ NAME_HIVE_FE_Large_Stinger_HARD_II:"$NAME_HIVE_FE_Large_Stinger$ Hard II"

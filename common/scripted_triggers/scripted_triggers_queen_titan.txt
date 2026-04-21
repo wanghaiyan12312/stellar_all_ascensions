@@ -23,6 +23,7 @@ ship_uses_battleship_thrusters = {
 		is_ship_size = offspring_stinger_stage_3
 
 		# mod
+		is_ship_size = galleon_mod
 		is_ship_size = large_ship_ed_mod
         is_ship_size = ember_battleship_mod
 		is_ship_size = large_ship_synth_queen_mod
@@ -215,5 +216,6 @@ is_mod_no_components_add_to_cost_ship = {
 		is_ship_size = crisis_corvette_mod
 		is_ship_size = crisis_destroyer_mod
 		is_ship_size = crisis_cruiser_mod
+		is_ship_size = galleon_mod
 	}
 }

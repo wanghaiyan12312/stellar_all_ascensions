@@ -208,8 +208,8 @@ starbase_citadel_II = {
 		}
 	}
 
-	combat_size_multiplier = 100
-	size_multiplier = 640
+	combat_size_multiplier = 500
+	size_multiplier = 40
 	fleet_slot_size = 2
 	section_slots = {
 		"core" = { locator = "part1" }
@@ -303,8 +303,8 @@ starbase_deep_space_citadel_4 = {
 	modifier = {
 		# Citadel Modifiers + Innate Shields
 		ship_evasion_mult = -1
-		ship_armor_add = 250000
-		ship_shield_add = 250000
+		ship_armor_add = 500000
+		ship_shield_add = 500000
 		starbase_building_capacity_add = 6
 		starbase_defense_platform_capacity_add = 30
 		ship_sensor_range_add = 1
@@ -314,7 +314,7 @@ starbase_deep_space_citadel_4 = {
 		ship_weapon_range_mult = 0.75
 		ship_weapon_damage = 0.75
 	}
-	max_hitpoints = 250000
+	max_hitpoints = 500000
 	base_buildtime = 3600
 
 	potential_construction = {
@@ -332,8 +332,8 @@ starbase_deep_space_citadel_4 = {
 	role_background = "GFX_role_selection_background"
 	ship_roles = { citadel }
 
-	combat_size_multiplier = 80
-	size_multiplier = 480
+	combat_size_multiplier = 500
+	size_multiplier = 80
 	map_counter_icon = ship_counter_64
 	fleet_slot_size = 2
 	section_slots = {
@@ -379,8 +379,8 @@ orbital_ring_tier_4 = {
 	rotation_speed = 0.0
 	modifier = {
 		ship_evasion_mult = -1
-		ship_armor_add = 250000
-		ship_shield_add = 250000		
+		ship_armor_add = 500000
+		ship_shield_add = 500000		
 		starbase_defense_platform_capacity_add = 12
 		starbase_module_capacity_add = 4
 		starbase_building_capacity_add = 2
@@ -389,7 +389,7 @@ orbital_ring_tier_4 = {
 		ship_fire_rate_mult = 1.0
 		ship_weapon_range_mult = 2.0
 	}
-	max_hitpoints = 250000
+	max_hitpoints = 500000
 	base_buildtime = 3600
 	resources = {
 		category = starbases
@@ -427,8 +427,8 @@ orbital_ring_tier_4 = {
 		}
 	}
 
-	combat_size_multiplier = 80
-	size_multiplier = 480
+	combat_size_multiplier = 500
+	size_multiplier = 80
 	map_counter_icon = ship_counter_64
 	fleet_slot_size = 2
 	section_slots = {

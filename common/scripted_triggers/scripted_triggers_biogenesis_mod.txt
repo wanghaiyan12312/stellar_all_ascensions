@@ -211,3 +211,66 @@ any_available_cybernetic_trait_by_tag_evopred_mod = {
 		}
 	}
 }
+
+have_any_evopred_flag_mod ={
+	OR = {
+		has_country_flag = toxoid_evopred
+		has_country_flag = infernal_evopred
+		has_country_flag = aquatic_evopred
+		has_country_flag = necroid_evopred
+		has_country_flag = lithoid_evopred
+		has_country_flag = plantoid_evopred
+		has_country_flag = fungoid_evopred
+		has_country_flag = molluscoid_evopred
+		has_country_flag = arthropoid_evopred
+		has_country_flag = avian_evopred
+		has_country_flag = reptilian_evopred
+		has_country_flag = mammalian_evopred
+		has_country_flag = humanoid_evopred
+		has_country_flag = upkeep_evopred
+		has_country_flag = habitability_evopred
+		has_country_flag = leader_evopred
+		has_country_flag = pop_output_evopred
+		has_country_flag = pop_growth_evopred
+		has_country_flag = plasmic_evopred
+		has_country_flag = psionic_evopred
+		has_country_flag = leviathan_evo_pred
+		has_country_flag = cybernetic_mod_evo_pred
+		has_country_flag = leviathan_cybernetic_mod_evo_pred
+		has_country_flag = overtuned_mod_evo_pred
+	}
+}
+
+have_unnatural_selection_evopred_mod = {
+	has_active_tradition = tr_mutation_unnatural_selection_evo_pred
+	species = {
+		any_trait_available_for_species = {
+			trait_has_all_tags = { organic positive species }
+			NOT = { trait_has_any_tag = { special cybernetic presapient drawbacks leviathan } }
+			OR = {
+				NOT = { trait_has_any_tag = { genetic_ascension } }
+				root.owner = { has_tradition = tr_genetics_resequencing }
+			}
+			OR = {
+				NOT = { trait_has_any_tag = { individual } }
+				root.owner = { is_gestalt = no }
+			}
+		}
+	}
+}
+have_random_evopred_mod = {
+	species = {
+		any_trait_available_for_species = {
+			trait_has_all_tags = { organic positive }
+			NOT = { trait_has_any_tag = { special species cybernetic presapient drawbacks leviathan } }
+			OR = {
+				NOT = { trait_has_any_tag = { genetic_ascension } }
+				root.owner = { has_tradition = tr_genetics_resequencing }
+			}
+			OR = {
+				NOT = { trait_has_any_tag = { individual } }
+				root.owner = { is_gestalt = no }
+			}
+		}
+	}
+}

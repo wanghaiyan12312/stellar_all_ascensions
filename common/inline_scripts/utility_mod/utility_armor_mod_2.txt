@@ -15,7 +15,7 @@ potential = {
 		country_uses_bio_ships = no
         is_fallen_empire = no
 	}
-	is_mod_no_components_add_to_cost_ship = no
+	#is_mod_no_components_add_to_cost_ship = no
 }
 
 show_tech_unlock_if = {

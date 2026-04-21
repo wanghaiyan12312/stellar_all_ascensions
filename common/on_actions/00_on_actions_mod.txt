@@ -56,3 +56,9 @@ on_war_beginning = {
 		fallen_empires_mod.5
 	}
 }
+
+on_tech_increased = {
+	events = {
+		auto_tech.5
+	}
+}

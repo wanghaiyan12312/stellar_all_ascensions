@@ -1216,7 +1216,7 @@ end_aura = {
 				}
 			}
 			# Check win con
-			check_end_aura_win_condition = yes
+			check_end_aura_win_condition_mod = yes
 		}
 	}
 	on_monthly = {

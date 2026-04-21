@@ -116,6 +116,7 @@ ship_uses_battleship_components = {
 		is_ship_size = ember_battleship
 
         # mod
+		is_ship_size = galleon_mod
         is_ship_size = ember_battleship_mod
         is_ship_size = large_ship_ed_mod
 	}
@@ -154,6 +155,7 @@ ship_uses_line_role = {
         is_ship_size = crisis_corvette_mod
         is_ship_size = crisis_destroyer_mod
         is_ship_size = crisis_cruiser_mod
+		is_ship_size = galleon_mod
         is_ship_size = small_ship_ed_mod
         is_ship_size = medium_ship_ed_mod
         is_ship_size = large_ship_ed_mod
@@ -214,6 +216,7 @@ ship_uses_artillery_role = {
         is_ship_size = crisis_corvette_mod
         is_ship_size = crisis_destroyer_mod
         is_ship_size = crisis_cruiser_mod
+		is_ship_size = galleon_mod
         is_ship_size = small_ship_ed_mod
         is_ship_size = medium_ship_ed_mod
         is_ship_size = large_ship_ed_mod
@@ -444,6 +447,7 @@ ship_uses_battleship_reactors = {
 		is_ship_size = entropy_conduit
 
         ## mod
+		is_ship_size = galleon_mod
         is_ship_size = large_ship_ed_mod
         is_ship_size = ember_battleship_mod
 	}
@@ -579,6 +583,7 @@ ship_uses_battleship_cloaks = {
 		is_ship_size = ember_battleship
 
         # mod
+		is_ship_size = galleon_mod
         is_ship_size = large_ship_ed_mod
         is_ship_size = ember_battleship_mod
         is_ship_size = large_ship_synth_queen_mod
