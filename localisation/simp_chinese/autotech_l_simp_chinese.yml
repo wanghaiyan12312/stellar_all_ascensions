@@ -69,4 +69,4 @@
  mastery_of_ring_word_desc: "$sm_orbital_ring_habitation_desc$"
 
  MEGASTRUCTURE_TOOLTIP_REQUIREMENTS_MEGA_SHJPYARD_MOD:"本mod对巨型船坞没有数量限制。"
- requires_system_alloy_consumer_goods_1000_capital:"需要一颗拥有至少 §Y1000§ 合金或者 §Y1000§ 消費品或者 §Y1500§ 贸易产出的天体。"
+ requires_system_alloy_consumer_goods_1000_capital:"需要一颗拥有至少 §Y1000§ 合金或者 §Y1000§ 消費品。"

@@ -472,7 +472,7 @@
  mod_shipsize_starbase_deep_space_citadel_4_shield_regen_add_static:"$starbase_deep_space_citadel_4$ $mod_shield_regen_daily_improve_name_mod2$"
  mod_shipsize_starbase_deep_space_citadel_4_armor_add:"$starbase_deep_space_citadel_4$ $mod_armor_improve_name_mod2$"
 
- requires_system_alloy_consumer_goods_1000_capital:"Requires a stellar body with at least §Y1000§ alloys or at least §Y1000§ consumer goods or at least §Y1500§ trade outputp!"
+ requires_system_alloy_consumer_goods_1000_capital:"Requires a stellar body with at least §Y1000§ alloys or at least §Y1000§ consumer goods outputp!"
  requires_unplugged_decyberized_engineered_evolution:"$TRIGGER_FAIL$Must be fully de-cyberized in order to embrace Biomorphosis."
  requires_cybernetic_creed_situation_finish:"$TRIGGER_FAIL$Must be fully cyberized to embrace Other Ascension."
 

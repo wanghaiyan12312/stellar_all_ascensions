@@ -1107,14 +1107,7 @@ country_event = {
 				}
 			}
 		}
-		if = {
-			limit = { 
-				has_global_flag = crystal_sphere_sent
-				NOT = { has_country_flag = has_acquired_crystal_sphere  }
-				NOT = { has_relic = r_eternal_throne }
-			}
-			add_relic = r_eternal_throne
-		}
+		add_relic = r_eternal_throne
 	}
 	option = {
 		name = NAME_Skrand_Sharpbeak

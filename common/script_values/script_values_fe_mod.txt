@@ -8,6 +8,22 @@ get_crisis_strength = {
         }
         mode = mult
     }
+	modifier = {
+		has_global_flag = extradimensional_invasion_defeated
+		mult = 2
+	}
+	modifier = {
+		has_global_flag = prethoryn_invasion_defeated
+		mult = 2
+	}
+	modifier = {
+		has_global_flag = ai_invasion_defeated
+		mult = 2
+	}
+	modifier = {
+		has_global_flag = synth_queen_defeated
+		mult = 2
+	}
 }
 
 get_fallen_empire_titan_hard_I_enforce_num = {
@@ -112,25 +128,4 @@ get_predators_species_trait_points = {
 		}
 		mult = 10
 	}
-}
-
-get_defeat_crisis_num_mod = {
-	base = 0
-	modifier = {
-		has_global_flag = extradimensional_invasion_defeated
-		add = 1
-	}
-	modifier = {
-		has_global_flag = prethoryn_invasion_defeated
-		add = 1
-	}
-	modifier = {
-		has_global_flag = ai_invasion_defeated
-		add = 1
-	}
-	modifier = {
-		has_global_flag = synth_queen_defeated
-		add = 1
-	}
-	max = 4
 }

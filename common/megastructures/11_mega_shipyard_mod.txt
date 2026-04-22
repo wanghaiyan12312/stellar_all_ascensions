@@ -97,11 +97,6 @@ mega_shipyard_0 = {
 							value > 1000
 							type = produces
 						}
-						planet_resource_compare = {
-							resource = trade
-							value > 1500
-							type = produces
-						}
 					}
 				}
 			}
