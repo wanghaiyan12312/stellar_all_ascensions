@@ -19,6 +19,12 @@ tr_purity_adopt = {
 			set_country_flag = genetic_ascension_stage_1_purity
 			set_country_flag = genetic_ascension_stage_2_purity
 			set_country_flag = genetic_ascension_stage_3_purity
+			remove_modifier = {
+				modifier = purity_unlock_level_1
+			}
+			add_modifier = {
+				modifier = purity_unlock_level_2
+			}
 		}
 	}
 }

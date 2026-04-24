@@ -81,7 +81,23 @@ country_event = {
 	}
 
 	option = {
-		trigger = { has_tradition = tr_cybernetics_finish }
+		trigger = { 
+			has_tradition = tr_cybernetics_finish 
+			has_origin = origin_cybernetic_creed
+		}
+		name = ascensions.2.cyber
+		aap_remove_government_flags = yes
+		hidden_effect = {
+			set_country_flag = cyber_creed_advanced_government
+			advanced_authority_refresh = yes
+		}
+	}
+
+	option = {
+		trigger = { 
+			has_tradition = tr_cybernetics_finish 
+			NOT = { has_origin = origin_cybernetic_creed }
+		}
 		name = ascensions.2.cyber
 		aap_remove_government_flags = yes
 		hidden_effect = {

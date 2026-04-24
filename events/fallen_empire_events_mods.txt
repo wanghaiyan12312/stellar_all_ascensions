@@ -136,7 +136,6 @@ country_event = {
 			modifier = ship_damage_mult
 			multiplier = value:get_crisis_strength			
 		}
-		set_country_flag = protected_from_queen_storm ## queen_storm pass
 		if = {
 			limit = {
 				count_country = {

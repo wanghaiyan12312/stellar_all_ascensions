@@ -20,10 +20,6 @@ get_crisis_strength = {
 		has_global_flag = ai_invasion_defeated
 		mult = 2
 	}
-	modifier = {
-		has_global_flag = synth_queen_defeated
-		mult = 2
-	}
 }
 
 get_fallen_empire_titan_hard_I_enforce_num = {

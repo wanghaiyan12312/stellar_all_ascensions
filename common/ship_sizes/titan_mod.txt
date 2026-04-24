@@ -141,7 +141,7 @@ npc_warship_01_mod = {
 		ship_target_weight_mult = 0.50
 	}
 	max_hitpoints = 20000
-	combat_size_multiplier = 500
+	combat_size_multiplier = 250
 	size_multiplier = 80
 	map_counter_icon = ship_counter_64
 	icon = ship_size_military_16

@@ -152,6 +152,7 @@ cyberize_leaders_limited_effect = {
 ####
 # remove the advance government
 aap_remove_government_flags = {
+	remove_country_flag = cyber_creed_advanced_government
 	remove_country_flag = cyber_individualist
 	remove_country_flag = cyber_collectivist
 	remove_country_flag = bio_cloning
@@ -663,7 +664,13 @@ generate_evolutionary_predator_choices_mod = {
 		0 = {
 			modifier = {
 				add = 60
-				has_country_flag = consumed_plasmic_dna
+				OR = {
+					AND = {
+						has_ascension_perk = ap_cosmogenesis
+						has_crisis_level = crisis_cosmogenesis_level_5
+					}
+					has_country_flag = consumed_plasmic_dna
+				}
 				NOR = {
 					has_country_flag = plasmic_evopred
 					has_country_flag = gained_plasmic_trait

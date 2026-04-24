@@ -20,6 +20,12 @@ tr_cloning_adopt = {
 			set_country_flag = genetic_ascension_stage_1_cloning
 			set_country_flag = genetic_ascension_stage_2_cloning
 			set_country_flag = genetic_ascension_stage_3_cloning
+			remove_modifier = {
+				modifier = cloning_unlock_level_1
+			}
+			add_modifier = {
+				modifier = cloning_unlock_level_2
+			}
 		}
 		if = {
 			limit = {

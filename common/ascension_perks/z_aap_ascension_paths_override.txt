@@ -56,7 +56,19 @@ ap_engineered_evolution = {
 			}
 			custom_tooltip = {
 				fail_text = "requires_unplugged_decyberized_engineered_evolution"
-				has_country_flag = is_decyberized
+				OR = {
+					has_country_flag = is_decyberized
+					has_country_flag = is_cyberized
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_origin = origin_cybernetic_creed
+			}
+			custom_tooltip = {
+				fail_text = "requires_cybernetic_creed_situation_finish"
+				has_country_flag = cybernetics_traditions_unlocked
 			}
 		}
 		custom_tooltip = {
@@ -72,13 +84,6 @@ ap_engineered_evolution = {
 				has_psionic_ascension = yes
 				is_gestalt = yes
 			}	
-		}
-		custom_tooltip = {
-			fail_text = "requires_cybernetic_creed_situation_finish"
-			NAND = {
-				has_origin = origin_cybernetic_creed
-				has_country_flag = cybernetics_traditions_unlocked
-			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_not_ap_organo_machine_interfacing"
@@ -114,7 +119,6 @@ ap_engineered_evolution = {
 		NOR = {
 			has_ascension_perk = ap_engineered_evolution
 			is_machine_empire = yes
-			has_origin = origin_cybernetic_creed
 			has_origin = origin_synthetic_fertility
 		}
 		is_mechanical_empire = no
@@ -183,10 +187,8 @@ ap_the_flesh_is_weak = {
 		}
 		NOR = {
 			has_ascension_perk = ap_the_flesh_is_weak
-			has_origin = origin_shroudwalker_apprentice
 			has_origin = origin_cybernetic_creed
 			has_origin = origin_synthetic_fertility
-			has_origin = origin_endbringers
 			AND = {
 				has_origin = origin_unplugged
 				OR = {
@@ -363,6 +365,27 @@ ap_synthetic_moduler_evolution = {
 		}
 	}
 	possible = {
+		if = {
+			limit = {
+				has_origin = origin_unplugged
+			}
+			custom_tooltip = {
+				fail_text = "requires_unplugged_decyberized_engineered_evolution"
+				OR = {
+					has_country_flag = is_decyberized
+					has_country_flag = is_cyberized
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_origin = origin_cybernetic_creed
+			}
+			custom_tooltip = {
+				fail_text = "requires_cybernetic_creed_situation_finish"
+				has_country_flag = cybernetics_traditions_unlocked
+			}
+		}
 		custom_tooltip = {
 			fail_text = "synthetic_empire_synthetic_ascension"
 			NOT = { has_trait = trait_mechanical }
@@ -458,15 +481,30 @@ ap_mind_over_matter = {
 				has_origin = origin_unplugged
 			}
 			custom_tooltip = {
-				fail_text = "requires_unplugged_decyberized"
-				has_country_flag = is_decyberized
+				fail_text = "requires_unplugged_decyberized_engineered_evolution"
+				OR = {
+					has_country_flag = is_decyberized
+					has_country_flag = is_cyberized
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_origin = origin_cybernetic_creed
+			}
+			custom_tooltip = {
+				fail_text = "requires_cybernetic_creed_situation_finish"
+				has_country_flag = cybernetics_traditions_unlocked
 			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_cybernetic_creed_situation_finish"
-			NAND = {
-				has_origin = origin_cybernetic_creed
-				has_country_flag = cybernetics_traditions_unlocked
+			OR = {
+				AND = {
+					has_origin = origin_cybernetic_creed
+					has_country_flag = cybernetics_traditions_unlocked
+				}
+				NOT = { has_origin = origin_cybernetic_creed }
 			}
 		}
 		if = {
@@ -500,7 +538,6 @@ ap_mind_over_matter = {
 			has_country_flag = ratling_country
 			has_ascension_perk = ap_mind_over_matter
 			has_origin = origin_shroudwalker_apprentice
-			has_origin = origin_cybernetic_creed
 			has_origin = origin_synthetic_fertility
 			has_origin = origin_wilderness
 			has_valid_civic = civic_augmentation_bazaars

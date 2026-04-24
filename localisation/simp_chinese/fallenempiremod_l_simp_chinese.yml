@@ -45,6 +45,7 @@
  ship_damage_mult:"优越造船"
  crisis_cosmogenesis_level_5_auto_bonus:"堕落帝国自动化加成"
  crisis_cosmogenesis_level_5_auto_bonus_desc:"作为一个宇宙创生5的国家你也是堕落帝国。"
+ queen_combat_modifier_mod:"$queen_combat_modifier$"
 
  mod_armor_improve_name_mod2:"装甲增加"
  mod_shield_improve_name_mod2:"护盾增加"
@@ -73,3 +74,4 @@
  NAME_SHIELD_SHIELD_hard_II:"$NAME_Eternal$ Hard II"
  NAME_HIVE_FE_Large_Stinger_HARD_I:"$NAME_HIVE_FE_Large_Stinger$ Hard I"
  NAME_HIVE_FE_Large_Stinger_HARD_II:"$NAME_HIVE_FE_Large_Stinger$ Hard II"
+ NAME_Synth_Queen_Royal_Guard_Mod: "$NAME_Synth_Queen_Royal_Guard$"

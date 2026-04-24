@@ -16,8 +16,8 @@
 @hive_fallen_empire_stinger = 1
 @fallen_empire_titan = 1
 
-@fallen_empire_titan_hard_I = 2
-@fallen_empire_titan_hard_II = 1
+@fallen_empire_titan_hard_I = 4
+@fallen_empire_titan_hard_II = 0
 
 @mod_s_dragon_armor_lm = 1
 @mod_m_dragon_armor_lm = 2

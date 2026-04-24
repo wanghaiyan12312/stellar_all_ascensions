@@ -3,6 +3,7 @@
 ##################################
 
 aap_is_advanced_government_mod = {
+	has_country_flag = cyber_creed_advanced_government
 	has_country_flag = cyber_individualist
 	has_country_flag = cyber_collectivist
 	has_country_flag = bio_cloning
@@ -93,9 +94,9 @@ is_galvanic_empire = {
 }
 
 is_mod_fe_can_federation = {
-	OR = {
-		is_hive_empire = no
-		has_country_flag = fallen_empire_hive_war
+	NAND = {
+		is_hive_empire = yes
+		has_valid_civic = civic_hive_devouring_swarm
 	}
 	is_country_type = awakened_fallen_empire
 	is_machine_empire = no
