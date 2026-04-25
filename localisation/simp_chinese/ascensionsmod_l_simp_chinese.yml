@@ -27,9 +27,6 @@
  tr_mutation_environmental_integration_mod:"环境整合"
  tr_mutation_environmental_integration_mod_delayed:"我们将适应自己的基因结构才能在不同环境中发展繁荣。"
  tr_mutation_environmental_integration_mod_tt:"[GetEnvironmentalIntegrationEffects]"
- tr_mutation_environmental_integration_mod_1_tt:"§Y创始物种§!当前的宜居性特质替换为['trait:trait_auto_hab_preference']\n$EXCEED_HABITABILITY_CAP_TT$"
- tr_mutation_environmental_integration_mod_2_tt:"$tr_mutation_environmental_integration_1_tt$\n§Y$council_agenda_agenda_mutation_divergence_name$§!内阁议程也将给予§Y$trait_auto_hab_preference$§!宜居性特质"
- EXCEED_HABITABILITY_CAP_TT:"拥有§Y$trait_auto_hab_preference$§!特质的物种宜居性可以达到§G200%§!，且超出§G100%§!的部分每§G10%§!赋予：$TABBED_NEW_LINE$—$MOD_POP_BONUS_WORKFORCE_MULT$：§G$@auto_adapted_production|2%$§!$TABBED_NEW_LINE$—$MOD_POP_HOUSING_USAGE_MULT$：§G$@auto_adapted_housing|2%$§!$TABBED_NEW_LINE$—$MOD_POP_AMENITIES_USAGE_MULT$：§G$@auto_adapted_amenities|%2$§!"
 
  tr_purity_optimized_neurology_mod:"优化神经学"
  tr_purity_optimized_neurology_mod_delayed:"我们的神经系统必须进行优化以实现更佳的效能。"
@@ -101,7 +98,6 @@
  ascensions.3.the_black_river:"$edict_will_of_motion$"
  ascensions.3.the_black_river_desc:"$edict_will_of_motion_desc$"
 
- concept_evopred_genetic_insights_desc: "§Y基因洞见可以通过如下方式获得：§!\n$t$—增加物种修饰点数或者物种修饰数量\n$t$—殖民新行星\n$t$—净化或将其他物种圈养为牲口\n$t$—在帝国中拥有奴隶或更好阶层的其他物种\n$t$—在['concept_council']雇佣外星领袖\n$t$—保有签有§Y基因什一税§!协议的附庸\n$t$—作为巨型企业，维持商业协议\n$t$—通过事件遭遇外星生命"
  evolutionary_predators_species_trait_points:"基因生物学"
  bio.1005.cybernetic:"纳米义体部件能给我们的基因带来革命性的变革。"
  bio.1005.destroy:"§R销毁起源局势§"

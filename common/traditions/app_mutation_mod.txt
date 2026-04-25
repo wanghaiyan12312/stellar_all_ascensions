@@ -14,9 +14,7 @@ tr_mutation_adopt = {
 			set_country_flag = genetic_ascension_stage_1_mutation
 			set_country_flag = genetic_ascension_stage_2_mutation
 			set_country_flag = genetic_ascension_stage_3_mutation
-			remove_modifier = {
-				modifier = mutation_unlock_level_1
-			}
+			remove_modifier = mutation_unlock_level_1
 			add_modifier = {
 				modifier = mutation_unlock_level_2
 			}

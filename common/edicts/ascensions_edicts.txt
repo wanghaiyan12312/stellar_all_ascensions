@@ -34,12 +34,12 @@ aap_more_genetic_ascension = {
         NAND = {
             has_active_tradition = tr_purity_adopt
             OR = {
-			    has_tradition = tr_cloning_adopt
-			    has_tradition = tr_cloning_adopt_clone_army
+			    has_active_tradition = tr_cloning_adopt
+			    has_active_tradition = tr_cloning_adopt_clone_army
 		    }
 		    OR = {
-			    has_tradition = tr_mutation_adopt
-			    has_tradition = tr_mutation_adopt_evo_pred
+			    has_active_tradition = tr_mutation_adopt
+			    has_active_tradition = tr_mutation_adopt_evo_pred
 		    }
         }
     }

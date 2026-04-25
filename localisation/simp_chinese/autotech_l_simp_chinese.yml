@@ -1,6 +1,7 @@
 ﻿l_simp_chinese:
  edict_app_auto_tech: "激活自动科研研究选项"
  edict_app_auto_tech_desc: "你可以在所有的循环科研选择中选择一个你想要研究的科研选项并且隐藏其他的。"
+
  auto_tech.1.title: "$edict_app_auto_tech$"
  auto_tech.1.desc: "$edict_app_auto_tech_desc$"
  auto_tech.1.phy: "选择一个物理类别的循环科研"

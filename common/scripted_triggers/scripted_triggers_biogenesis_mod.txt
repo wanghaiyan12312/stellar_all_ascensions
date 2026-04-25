@@ -3,14 +3,16 @@
 ##################################
 
 aap_is_advanced_government_mod = {
-	has_country_flag = cyber_creed_advanced_government
-	has_country_flag = cyber_individualist
-	has_country_flag = cyber_collectivist
-	has_country_flag = bio_cloning
-	has_country_flag = bio_mutation
-	has_country_flag = bio_purity
-	has_country_flag = transcendent_government
-	has_country_flag = corporeal_government
+	OR = {
+		has_country_flag = cyber_creed_advanced_government
+		has_country_flag = cyber_individualist
+		has_country_flag = cyber_collectivist
+		has_country_flag = bio_cloning
+		has_country_flag = bio_mutation
+		has_country_flag = bio_purity
+		has_country_flag = transcendent_government
+		has_country_flag = corporeal_government
+	}
 }
 
 ## todo ? maybe this drawback may good PS: NOT GOOD

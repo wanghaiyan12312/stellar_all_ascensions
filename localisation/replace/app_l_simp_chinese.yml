@@ -28,3 +28,5 @@
  ACCORD_FORESIGHT_TT:0 "研究中的科技增加§G$@mod_foresight_tech_progression|0%$§!进展，并且再五年之内增加200%的研究速度。"
  ACCORD_HINDSIGHT_TT:0 "选择你的§H$PSIONIC_AURA$§!覆盖下的一个殖民地，使其变成§H遗落星球§!增加20行星规模并且移除所有障碍。\n$ACCORD_LOOSE_INTENSITY$"
  AURA_END_EFFECTS_DESC: "§H$end_aura$§!填满整个星系时而且没有任何失落帝国存在时，§H[This.GetName]§!将会获得游戏的胜利。"
+
+ concept_evopred_genetic_insights_desc: "§Y基因洞见可以通过如下方式获得：§!\n$t$—增加物种修饰点数或者物种修饰数量\n$t$—殖民新行星\n$t$—净化或将其他物种圈养为牲口\n$t$—在帝国中拥有奴隶或更好阶层的其他物种\n$t$—在['concept_council']雇佣外星领袖\n$t$—保有签有§Y基因什一税§!协议的附庸\n$t$—作为巨型企业，维持商业协议\n$t$—通过事件遭遇外星生命"
