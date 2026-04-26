@@ -11,15 +11,14 @@
  TECH_UNLOCK_CITADEL_II_CONSTRUCTION_TITLE:"§H解锁恒星基地升级：§!擎天堡 II"
  TECH_UNLOCK_CITADEL_II_CONSTRUCTION_DESC:"§H擎天堡 II§!\n擎天堡的升级，由于我们再编辑现实上面的努力我们突破了恒星基地的物理限制，擎天堡 II上面可修筑六个建筑，最大可支持十二个模块。"
 
- starbase_citadel_II:"$citadel$II"
+ starbase_citadel_II:"$citadel$ II"
  starbase_deep_space_citadel_4:"$dsc_name$ IV"
  starbase_deep_space_citadel_4_plural:"$dsc_name_plural$"
  starbase_deep_space_citadel_4_cap:"$starbase_deep_space_citadel_4$"
  DEEP_SPACE_CITADEL_STAGE_4: "$starbase_deep_space_citadel_4$"
- SHIP_GRAPHICS_STARBASE_DEEP_SPACE_CITADEL_4_DESC:"$SHIP_GRAPHICS_STARBASE_DEEP_SPACE_CITADEL_3_DESC$"
+ SHIP_GRAPHICS_STARBASE_DEEP_SPACE_CITADEL_4_DESC:"这座巨大的空间站是失落帝国技术力巅峰的体现，可以在完全控制一个星系的军事舰队活动。"
  orbital_ring_tier_4:"四级星环基地"
  orbital_ring_tier_4_plural:"四级星环基地"
- STARBASE_STATION_NAME_FORMAT_NON_PRIMARY:"$PLANET$空间站"
 
  LAGER_FALLEN_STATION_ZERO_POINT_REACTOR:"$ZERO_POINT_REACTOR$"
  LAGER_FALLEN_STATION_DARK_MATTER_REACTOR:"$DARK_MATTER_REACTOR$"
@@ -50,7 +49,6 @@
  mod_armor_improve_name_mod2:"装甲增加"
  mod_shield_improve_name_mod2:"护盾增加"
  mod_shield_regen_daily_improve_name_mod2:"每日护盾增加"
- mod_ship_cost_add:"舰船建造成本增加"
 
  mod_shipsize_orbital_ring_tier_4_shield_add:"$orbital_ring_tier_4$$mod_shield_improve_name_mod2$"
  mod_shipsize_orbital_ring_tier_4_shield_regen_add_static:"$orbital_ring_tier_4$$mod_shield_regen_daily_improve_name_mod2$"
@@ -64,8 +62,8 @@
  mod_shipsize_starbase_deep_space_citadel_4_shield_regen_add_static:"$starbase_deep_space_citadel_4$$mod_shield_regen_daily_improve_name_mod2$"
  mod_shipsize_starbase_deep_space_citadel_4_armor_add:"$starbase_deep_space_citadel_4$$mod_armor_improve_name_mod2$"
 
- COSMO_CRISIS_HARBINGER_SECTION_POINT:"蜂巢堕落帝国远古孵后"
- NAME_HIVE_FE_Large_Harbinger_Point:"孵化者"
+ COSMO_CRISIS_HARBINGER_SECTION_POINT:"$NAME_HIVE_FE_Large_Harbinger$"
+ NAME_HIVE_FE_Large_Harbinger_Point:"$NAME_HIVE_FE_Large_Harbinger$"
  NAME_SHIELD_ARMOR_hard_I:"$NAME_Keeper$ Hard I"
  NAME_SHIELD_ARMOR_hard_II:"$NAME_Keeper$ Hard II"
  NAME_ARMOR_ARMOR_hard_I:"$NAME_Savant$ Hard I"

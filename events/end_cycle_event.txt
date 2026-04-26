@@ -82,9 +82,11 @@ country_event = {
 			clear_planet_modifiers = yes
 		}
 		every_situation = {
-			limit = { 
-				is_situation_type = end_of_the_cycle_endbringers 
-				is_situation_type = end_of_the_cycle 
+			limit = {
+				OR = {
+					is_situation_type = end_of_the_cycle_endbringers 
+					is_situation_type = end_of_the_cycle 
+				}				
 			}
 			add_situation_progress = -180
 			update_eotc_accords = yes

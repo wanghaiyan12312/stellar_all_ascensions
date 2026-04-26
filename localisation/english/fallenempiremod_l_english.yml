@@ -1,0 +1,75 @@
+﻿l_english:
+ shipeventmod.3.name:"[outraged_FE.GetName]"
+ shipeventmod.3.desc:"Queen's Titan is our enemy flagship. it is shame for our ancester glory.\n\n\nYou do not know the true extent of your sin.\n\n\nNot yet."
+ end_cycle.7.name:"[outraged_FE.GetName]"
+ end_cycle.7.desc:"Your malevolent psionic aura is spreading through the galaxy, endangering us all. As the Elder Race It is our duty to unite for defending against it and to combat the empire emitting it."
+ end_cycle.5.a.tt:"$shroud.4135.a.tt$\n\n\n§Y All Fallen Empire will Awake. §!"
+
+ tech_starbase_6:"$starbase_citadel_II$"
+ tech_starbase_desc:"Fallen Empire Citadel has incredible space to equipe mass Defence Facility that is unconquerable fortress for enemy fleet."
+ 
+ TECH_UNLOCK_CITADEL_II_CONSTRUCTION_TITLE:"§HUnlocks Starbase Upgrade:§! Citadel II"
+ TECH_UNLOCK_CITADEL_II_CONSTRUCTION_DESC:"§HCitadel II§!\nUpgrading the Citadel,Due to our effort on reality editing we can violation of the laws of the universe to build our Starbase.Citadel II can house six Buildings and a full complement of twelve Modules."
+
+ starbase_citadel_II:"$citadel$II"
+ starbase_deep_space_citadel_4:"$dsc_name$IV"
+ starbase_deep_space_citadel_4_plural:"$dsc_name_plural$"
+ starbase_deep_space_citadel_4_cap:"$starbase_deep_space_citadel_4$"
+ DEEP_SPACE_CITADEL_STAGE_4: "$starbase_deep_space_citadel_4$"
+ SHIP_GRAPHICS_STARBASE_DEEP_SPACE_CITADEL_4_DESC:"This deep-space fortification is the pinnacle of fallen empire technology, exerting total control over system military activity."
+ orbital_ring_tier_4:0 "Orbital Ring Tier 4"
+ orbital_ring_tier_4_plural:0 "Orbital Rings Tier 4"
+
+ LAGER_FALLEN_STATION_ZERO_POINT_REACTOR:"$ZERO_POINT_REACTOR$"
+ LAGER_FALLEN_STATION_DARK_MATTER_REACTOR:"$DARK_MATTER_REACTOR$"
+ LAGER_FALLEN_STATION_ZERO_POINT_REACTOR_DESC:"$ZERO_POINT_REACTOR_DESC$"
+ LAGER_FALLEN_STATION_DARK_MATTER_REACTOR_DESC:"$DARK_MATTER_REACTOR_DESC$"
+
+ military_station_small_fallen_empire_mod:"Fallen empire Small Defence Platform"
+ military_station_small_fallen_empire_mod_cap:"$military_station_small_fallen_empire_mod$"
+ military_station_small_fallen_empire_mod_plural:"$military_station_small_fallen_empire_mod$"
+ SHIP_GRAPHICS_MILITARY_STATION_SMALL_FALLEN_EMPIRE_MOD_DESC:"Fallen empire light Defence Platform，trade firepower and durable logistics."
+ military_station_large_fallen_empire_mod:"Fallen empire Large Defence Platform"
+ military_station_large_fallen_empire_mod_cap:"$military_station_large_fallen_empire_mod$"
+ military_station_large_fallen_empire_mod_plural:"$military_station_large_fallen_empire_mod$"
+ SHIP_GRAPHICS_MILITARY_STATION_LARGE_FALLEN_EMPIRE_MOD_DESC:"Fallen empire heavy Defence Platform,a lot of L Slot firepower and huge Shield."
+
+ fallen_empire_station_large_mod:"Defence Core"
+ fallen_empire_station_small_mod:"Defence Core"
+
+ fallen_empire_federation:"Fallen Empire Federation"
+ fallen_empire_federation_desc:"A Federation to destroy any Fallen Empire enemy that is able to threat this terrible giant."
+ triggered_opinion_fallen_empire_federation:"fallen_empire_federation"
+
+ ship_damage_mult: "Ascendancy Shipwrights"
+ crisis_cosmogenesis_level_5_auto_bonus:"Fallen Empire Auto Bonus"
+ crisis_cosmogenesis_level_5_auto_bonus_desc:"As a Crisis Cosmogenesis Level 5 Empire You also a Fallen Empire"
+ queen_combat_modifier_mod:"$queen_combat_modifier$"
+
+ mod_armor_improve_name_mod2:"Armor Improvement"
+ mod_shield_improve_name_mod2:"Shield Improvement"
+ mod_shield_regen_daily_improve_name_mod2:"Shield Daily Regen Add"
+
+ mod_shipsize_orbital_ring_tier_4_shield_add:"$orbital_ring_tier_4$ $mod_shield_improve_name_mod2$"
+ mod_shipsize_orbital_ring_tier_4_shield_regen_add_static:"$orbital_ring_tier_4$ $mod_shield_regen_daily_improve_name_mod2$"
+ mod_shipsize_orbital_ring_tier_4_armor_add:"$orbital_ring_tier_4$ $mod_armor_improve_name_mod2$"
+
+ mod_shipsize_starbase_citadel_II_shield_add:"$starbase_citadel_II$ $mod_shield_improve_name_mod2$"
+ mod_shipsize_starbase_citadel_II_shield_regen_add_static:"$starbase_citadel_II$ $mod_shield_regen_daily_improve_name_mod2$"
+ mod_shipsize_starbase_citadel_II_armor_add:"$starbase_citadel_II$ $mod_armor_improve_name_mod2$"
+
+ mod_shipsize_starbase_deep_space_citadel_4_shield_add:"$starbase_deep_space_citadel_4$ $mod_shield_improve_name_mod2$"
+ mod_shipsize_starbase_deep_space_citadel_4_shield_regen_add_static:"$starbase_deep_space_citadel_4$ $mod_shield_regen_daily_improve_name_mod2$"
+ mod_shipsize_starbase_deep_space_citadel_4_armor_add:"$starbase_deep_space_citadel_4$ $mod_armor_improve_name_mod2$"
+
+ COSMO_CRISIS_HARBINGER_SECTION_POINT:"$NAME_HIVE_FE_Large_Harbinger$"
+ NAME_HIVE_FE_Large_Harbinger_Point:"$NAME_HIVE_FE_Large_Harbinger$"
+ NAME_SHIELD_ARMOR_hard_I:"$NAME_Keeper$ Hard I"
+ NAME_SHIELD_ARMOR_hard_II:"$NAME_Keeper$ Hard II"
+ NAME_ARMOR_ARMOR_hard_I:"$NAME_Savant$ Hard I"
+ NAME_ARMOR_ARMOR_hard_II:"$NAME_Savant$ Hard II"
+ NAME_SHIELD_SHIELD_hard_I:"$NAME_Eternal$ Hard I"
+ NAME_SHIELD_SHIELD_hard_II:"$NAME_Eternal$ Hard II"
+ NAME_HIVE_FE_Large_Stinger_HARD_I:"$NAME_HIVE_FE_Large_Stinger$ Hard I"
+ NAME_HIVE_FE_Large_Stinger_HARD_II:"$NAME_HIVE_FE_Large_Stinger$ Hard II"
+ NAME_Synth_Queen_Royal_Guard_Mod: "$NAME_Synth_Queen_Royal_Guard$"

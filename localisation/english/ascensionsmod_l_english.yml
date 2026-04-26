@@ -103,7 +103,6 @@
  ascensions.3.the_black_river:"$edict_will_of_motion$"
  ascensions.3.the_black_river_desc:"$edict_will_of_motion_desc$"
 
- concept_evopred_genetic_insights_desc:"§YGenetic Insights can be gained by:§!\n$t$—More Organic Species Traits Points or Species Traits Picks\n$t$- Colonizing new planets\n$t$- Purging or keeping other species as Livestock\n$t$- Keeping other species within our Empire as slaves or better\n$t$- Employing alien leaders on our ['concept_council']\n$t$- Keeping vassals with §YGenetic Tithe§! Agreeement\n$t$- For Megacorps, maintaining Commercial Pacts\n$t$- Encountering alien life through events"
  evolutionary_predators_species_trait_points:"Genetic Biologia"
  bio.1005.cybernetic:"Nano-Cybernetic component can add a revolutional change on our Genetic Insights."
  bio.1005.destroy:"§RDestroy the Predators Origin Situation§"

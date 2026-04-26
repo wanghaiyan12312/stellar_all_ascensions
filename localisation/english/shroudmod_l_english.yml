@@ -50,9 +50,9 @@
  hindsight_nomination_desc:"This Planet Has Nominated For $ACCORD_HINDSIGHT$ Candidate."
  requires_valid_hindsight_target_mod:"§RRequires that our §Y$PSIONIC_AURA$§! is currently affecting at least one of our owned colonies and nominate a $ACCORD_HINDSIGHT$ Candidate§!"
 
- song_of_end: "Song Of End"
- song_of_end_desc: "A psionic resonance of end the cycle.\n\n"
- leader_trait_chosen_mod: "[GetChosenName]"
- leader_trait_chosen_mod_desc: "[GetChosenDesc]"
+ song_of_end:"Song Of End"
+ song_of_end_desc:"A psionic resonance of end the cycle.\n\n"
+ leader_trait_chosen_mod:"[GetChosenName]"
+ leader_trait_chosen_mod_desc:"[GetChosenDesc]"
 
- AURA_END_EFFECTS_DESC: "When the §H$end_aura$§! fills the galaxy and no anyone fallen empire, the §H[This.GetName]§! wins the game."
+ AURA_END_EFFECTS_DESC:"When the §H$end_aura$§! fills the galaxy and no anyone fallen empire, the §H[This.GetName]§! wins the game."
