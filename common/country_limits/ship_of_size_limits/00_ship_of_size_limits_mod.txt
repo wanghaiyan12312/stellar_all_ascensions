@@ -54,26 +54,3 @@ synth_queen_titan_ships_limit = {
 		has_technology = tech_synth_queen_titan
 	}
 }
-
-colossus_ships_limit = {
-	ship_types = {
-		colossus
-	}
-
-	base = 500 # 5 * colossus's size_multiplier
-	show = {
-		is_scope_valid = yes
-		has_technology = tech_colossus
-	}
-}
-
-juggernaut_ships_limit = {
-	ship_types = {
-		juggernaut
-	}
-	base = 500 # 5 * juggernaut's size_multiplier
-	show = {
-		is_scope_valid = yes
-		has_technology = tech_juggernaut
-	}
-}

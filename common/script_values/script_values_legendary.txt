@@ -1,0 +1,391 @@
+
+get_scientist_councilor_num = {
+    base = 0
+    modifier = {
+        owner = { is_variable_set = leadershroud_council_scientist_num }
+        add = owner.leadershroud_council_scientist_num
+    }
+}
+
+get_govern_scientist_num = {
+    base = 0
+    modifier = {
+        owner = { is_variable_set = leadershroud_govern_scientist_num }
+        add = owner.leadershroud_govern_scientist_num
+    }
+}
+
+get_scientist_scholar_num = {
+    base = 0
+    modifier = {
+        owner = { is_variable_set = leadershroud_scholar_scientist_num }
+        add = owner.leadershroud_scholar_scientist_num
+    }
+}
+
+get_official_council_num = {
+    base = 0
+    modifier = {
+        owner = { is_variable_set = leadershroud_council_official_num }
+        add = owner.leadershroud_council_official_num
+    }
+}
+
+get_official_governor_num = {
+    base = 0
+    modifier = {
+        owner = { is_variable_set = leadershroud_govern_official_num }
+        add = owner.leadershroud_govern_official_num
+    }
+}
+
+get_official_delegate_num = {
+    base = 0
+    modifier = {
+        owner = { is_variable_set = leadershroud_delegate_official_num }
+        add = owner.leadershroud_delegate_official_num
+    }
+}
+
+get_commander_councilor_num = {
+    base = 0
+    modifier = {
+        owner = { is_variable_set = leadershroud_councilor_commander_num }
+        add = owner.leadershroud_councilor_commander_num
+    }
+}
+
+get_commander_admiral_num = {
+    base = 0
+    modifier = {
+        owner = { is_variable_set = leadershroud_admiral_commander_num }
+        add = owner.leadershroud_admiral_commander_num
+    }
+}
+
+get_commander_governor_num = {
+    base = 0
+    modifier = {
+        owner = { is_variable_set = leadershroud_governor_commander_num }
+        add = owner.leadershroud_governor_commander_num
+    }
+}
+
+get_commander_general_num = {
+    base = 0
+    modifier = {
+        owner = { is_variable_set = leadershroud_general_commander_num }
+        add = owner.leadershroud_general_commander_num
+    }
+}
+
+get_councilor_num = {
+    base = 0
+    add = value:get_scientist_councilor_num
+    add = value:get_official_council_num
+    add = value:get_commander_councilor_num
+    subtract = @councilor_discount_num
+    min = 0
+}
+
+get_governor_num = {
+    base = 0
+    add = value:get_govern_scientist_num
+    add = value:get_official_governor_num
+    add = value:get_commander_governor_num
+    subtract = @governor_discount_num 
+    min = 0
+}
+
+get_governor_add = {
+    base = 0
+    add = value:get_governor_num
+    mult = @governor_add_discount_ratio
+}
+
+
+## councilor
+get_scientist_councilor_energy_mult = {
+    base = 0
+    add = value:get_councilor_num
+    modifier = {
+        check_variable_arithmetic = {
+            which = value:get_councilor_num
+            value > @councilor_max_num
+        }
+        set = 1000
+    }
+    modifier = {
+        check_variable_arithmetic = {
+            which = value:get_scientist_councilor_num
+            value < @councilor_scientist_free_num
+        }
+        set = 0
+    }
+    min = @free_discount_ratio
+    max = @common_max_enegy
+}
+
+get_scientist_councilor_zro_mult = {
+    base = 0
+    add = value:get_scientist_councilor_energy_mult
+    mult = @common_discount_ratio_zro
+    min = @free_discount_ratio
+    max = @common_max_zro
+}
+
+get_official_councilor_energy_mult = {
+    base = 0
+    add = value:get_councilor_num
+    mult = @councilor_official_add_discount_ratio
+    modifier = {
+        check_variable_arithmetic = {
+            which = value:get_councilor_num
+            value > @councilor_max_num
+        }
+        set = 1000
+    }
+    modifier = {
+        check_variable_arithmetic = {
+            which = value:get_official_council_num
+            value < @councilor_official_free_num
+        }
+        set = 0
+    }
+    min = @free_discount_ratio
+    max = @councilor_official_max_enegy
+}
+
+get_official_councilor_zro_mult = {
+    base = 0
+    add = value:get_official_councilor_energy_mult
+    mult = @common_discount_ratio_zro
+    min = @free_discount_ratio
+    max = @councilor_official_max_zro
+}
+
+get_commander_councilor_energy_mult = {
+    base = 0
+    add = value:get_councilor_num
+    modifier = {
+        check_variable_arithmetic = {
+            which = value:get_councilor_num
+            value > @councilor_max_num
+        }
+        set = 1000
+    }
+    modifier = {
+        check_variable_arithmetic = {
+            which = value:get_commander_councilor_num
+            value < @councilor_commander_free_num
+        }
+        set = 0
+    }
+    min = @free_discount_ratio
+    max = @common_max_enegy
+}
+
+get_commander_councilor_zro_mult = {
+    base = 0
+    add = value:get_commander_councilor_energy_mult
+    mult = @common_discount_ratio_zro
+    min = @free_discount_ratio
+    max = @common_max_zro
+}
+
+## governor
+get_scientist_governor_energy_mult = {
+    base = 0
+    add = value:get_governor_add
+    modifier = {
+        check_variable_arithmetic = {
+            which = value:get_governor_num
+            value > @governor_max_num
+        }
+        set = 1000
+    }
+    modifier = {
+        check_variable_arithmetic = {
+            which = value:get_govern_scientist_num
+            value < @govern_scientist_free_num
+        }
+        set = 0
+    }
+    min = @free_discount_ratio
+    max = @common_max_enegy
+}
+
+get_scientist_governor_zro_mult = {
+    base = 0
+    add = value:get_scientist_governor_energy_mult
+    mult = @common_discount_ratio_zro
+    min = @free_discount_ratio
+    max = @common_max_zro
+}
+
+get_official_governor_energy_mult = {
+    base = 0
+    add = value:get_governor_add
+    modifier = {
+        check_variable_arithmetic = {
+            which = value:get_governor_num
+            value > @governor_max_num
+        }
+        set = 1000
+    }
+    modifier = {
+        check_variable_arithmetic = {
+            which = value:get_official_governor_num
+            value < @govern_official_free_num
+        }
+        set = 0
+    }
+    min = @free_discount_ratio
+    max = @common_max_enegy
+}
+
+get_official_governor_zro_mult = {
+    base = 0
+    add = value:get_official_governor_energy_mult
+    mult = @common_discount_ratio_zro
+    min = @free_discount_ratio
+    max = @common_max_zro
+}
+
+get_commander_governor_energy_mult = {
+    base = 0
+    add = value:get_governor_add
+    modifier = {
+        check_variable_arithmetic = {
+            which = value:get_governor_num
+            value > @governor_max_num
+        }
+        set = 1000
+    }
+    modifier = {
+        check_variable_arithmetic = {
+            which = value:get_commander_governor_num
+            value < @govern_commander_free_num
+        }
+        set = 0
+    }
+    min = @free_discount_ratio
+    max = @common_max_enegy
+}
+
+get_commander_governor_zro_mult = {
+    base = 0
+    add = value:get_commander_governor_energy_mult
+    mult = @common_discount_ratio_zro
+    min = @free_discount_ratio
+    max = @common_max_zro
+}
+
+## military
+get_commander_admiral_energy_mult = {
+    base = 0
+    add = value:get_commander_admiral_num
+    mult = @commander_admiral_price_up
+    modifier = {
+        check_variable_arithmetic = {
+            which = value:get_commander_admiral_num
+            value > @commander_admiral_max_num
+        }
+        set = 1000
+    }
+    modifier = {
+        check_variable_arithmetic = {
+            which = value:get_commander_admiral_num
+            value < @commander_admiral_free_num 
+        }
+        set = 0
+    }
+    min = @free_discount_ratio
+    max = @commander_admiral_max_enegy
+}
+
+get_commander_admiral_zro_mult = {
+    base = 0
+    add = value:get_commander_admiral_energy_mult
+    mult = @common_discount_ratio_zro
+    min = @free_discount_ratio
+    max = @commander_admiral_max_zro 
+}
+
+get_commander_general_energy_mult = {
+    base = 0
+    add = value:get_commander_admiral_num
+    mult = @commander_general_discount_ratio
+    modifier = {
+        check_variable_arithmetic = {
+            which = value:get_commander_general_num
+            value > @commander_general_max_num
+        }
+        set = 1000
+    }
+    modifier = {
+        check_variable_arithmetic = {
+            which = value:get_commander_general_num
+            value < @commander_general_free_num
+        }
+        set = 0
+    }
+    min = @free_discount_ratio
+    max = @free_discount_ratio_max_enegy
+}
+
+get_commander_general_zro_mult = {
+    base = 0
+    add = value:get_commander_general_energy_mult
+    mult = @common_discount_ratio_zro
+    min = @free_discount_ratio
+    max = @commander_general_max_zro
+}
+
+## other
+get_scientist_scholar_energy_mult = {
+    base = 0
+    add = value:get_scientist_scholar_num
+    mult = @scholar_add_discount_ratio
+    modifier = {
+        check_variable_arithmetic = {
+            which = value:get_scientist_scholar_num
+            value < @scholar_scientist_free_num
+        }
+        set = 0
+    }
+    min = @free_discount_ratio
+    max = @scholar_max_enegy
+}
+
+get_scientist_scholar_zro_mult = {
+    base = 0
+    add = value:get_scientist_scholar_energy_mult
+    mult = @common_discount_ratio_zro
+    min = @free_discount_ratio
+    max = @scholar_max_zro
+}
+
+
+get_official_delegate_energy_mult = {
+    base = 0
+    add = value:get_official_delegate_num
+    mult = @delegate_add_discount_ratio
+    modifier = {
+        check_variable_arithmetic = {
+            which = value:get_official_delegate_num
+            value < @delegate_official_free_num
+        }
+        set = 0
+    }
+    min = @free_discount_ratio
+    max = @delegate_official_max_enegy
+}
+
+get_official_delegate_zro_mult = {
+    base = 0
+    add = value:get_official_delegate_energy_mult
+    mult = 0.25
+    min = @free_discount_ratio
+    max = @delegate_official_max_zro
+}

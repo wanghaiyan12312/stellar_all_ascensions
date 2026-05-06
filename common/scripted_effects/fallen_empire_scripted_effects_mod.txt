@@ -634,6 +634,12 @@ add_cosmogenesis_level_4_perks = {
 	else = {
 		add_research_option = tech_cosmogenesis_stinger
 	}
+	if = {
+		limit = {
+			NOT = { has_technology = tech_asteroidal_carapace }
+		}
+		give_technology = { tech = tech_asteroidal_carapace }
+	}
 	add_research_option = tech_cosmogenesis_thesis
 }
 

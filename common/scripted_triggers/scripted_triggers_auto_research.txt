@@ -17,6 +17,7 @@ check_soc_auto_tech_flag = {
 		has_country_flag = core_system_cap_allow
 		has_country_flag = leader_life_span_allow
 		has_country_flag = shield_psionic_allow
+		has_country_flag = archaeoarmor_allow
 	}
 }
 
@@ -32,5 +33,33 @@ check_eng_auto_tech_flag = {
 		has_country_flag = armor_output_allow
 		has_country_flag = armor_output2_allow
 		has_country_flag = dragon_armor_allow
+	}
+}
+
+ship_uses_civilian_cloaks = {
+	OR = {
+		is_ship_size = transport
+		is_ship_size = science
+		is_ship_size = explorer_vessel
+		is_ship_size = observation_station
+		is_ship_size = shroud_science
+	}
+}
+
+is_shroud_terraformable_pc = {
+	OR = {
+		is_planet_class = pc_barren
+		is_planet_class = pc_barren_cold
+		is_planet_class = pc_shrouded
+	}
+	planet_size >= 10
+	NOT = { has_planet_flag = terraform_nucleus_transfixed }	
+}
+
+has_shroud_science_in_orbit = {
+	any_fleet_in_orbit = {
+		any_owned_ship = {
+			is_ship_size = shroud_science
+		}
 	}
 }

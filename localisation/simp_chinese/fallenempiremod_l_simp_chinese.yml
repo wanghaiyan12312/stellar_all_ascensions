@@ -1,9 +1,6 @@
 ﻿l_simp_chinese:
  shipeventmod.3.name:"[outraged_FE.GetName]"
  shipeventmod.3.desc:"女王泰坦是我们上古敌人的旗舰，你的行为让我们祖先的荣耀蒙羞。\n\n\n你们不明白你们犯下了多大的罪恶。\n\n\n不过马上就会了。"
- end_cycle.7.name:"[outraged_FE.GetName]"
- end_cycle.7.desc:"你们所散发的邪恶的灵能光环正在蔓延整个星系，危及所有文明。我们作为长者之裔有必要消灭这种威胁全银河的威胁。"
- end_cycle.5.a.tt:"$shroud.4135.a.tt$\n\n\n§Y 所有的堕落帝国都会再50年以后觉醒。 §!"
 
  tech_starbase_6:"$starbase_citadel_II$"
  tech_starbase_desc:"堕落帝国擎天堡拥有着难以置信的空间去装备着难以想象的防御设施，一座堕落帝国擎天堡对于敌方舰队而言绝对是不可攻克的堡垒。"
@@ -12,6 +9,7 @@
  TECH_UNLOCK_CITADEL_II_CONSTRUCTION_DESC:"§H擎天堡 II§!\n擎天堡的升级，由于我们再编辑现实上面的努力我们突破了恒星基地的物理限制，擎天堡 II上面可修筑六个建筑，最大可支持十二个模块。"
 
  starbase_citadel_II:"$citadel$ II"
+ starbase_citadel_plural:"$citadel$II"
  starbase_deep_space_citadel_4:"$dsc_name$ IV"
  starbase_deep_space_citadel_4_plural:"$dsc_name_plural$"
  starbase_deep_space_citadel_4_cap:"$starbase_deep_space_citadel_4$"
@@ -44,7 +42,6 @@
  ship_damage_mult:"优越造船"
  crisis_cosmogenesis_level_5_auto_bonus:"堕落帝国自动化加成"
  crisis_cosmogenesis_level_5_auto_bonus_desc:"作为一个宇宙创生5的国家你也是堕落帝国。"
- queen_combat_modifier_mod:"$queen_combat_modifier$"
 
  mod_armor_improve_name_mod2:"装甲增加"
  mod_shield_improve_name_mod2:"护盾增加"

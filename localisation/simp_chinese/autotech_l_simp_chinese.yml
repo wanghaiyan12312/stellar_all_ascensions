@@ -35,6 +35,8 @@
  auto_tech.3.core_system_cap.name:"$tech_repeatable_improved_core_system_cap$"  
  auto_tech.3.leader_life_span: "领袖寿命上限"
  auto_tech.3.leader_life_span.name:"$tech_repeatable_improved_leader_life_span$"
+ auto_tech.3.archaeoarmor:"更多古代脉冲甲研究选项:护盾护甲承受值(加算)"
+ auto_tech.3.archaeoarmor.name:"$tech_archaeoarmor$"
  auto_tech.3.shield_psionic: "更多灵能护盾研究选项:护盾承受值(加算)"
  auto_tech.3.psionic_shield.name:"$tech_psionic_shield$"
  auto_tech.3.back: "所有的社会学循环科研都将保留在你的卡池当中"

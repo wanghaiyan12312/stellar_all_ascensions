@@ -250,4 +250,129 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_psi_shield_25.dds"
 	}
 
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_3"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_4"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_5"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_6"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_7"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_8"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_9"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_10"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_10.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_11"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_11.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_12"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_12.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_13"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_13.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_14"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_14.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_15"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_15.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_16"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_16.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_17"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_17.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_18"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_18.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_19"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_19.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_20"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_20.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_21"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_21.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_22"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_22.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_23"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_23.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_24"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_24.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_archaeoarmor_25"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_archaeoarmor_25.dds"
+	}
+	
 }

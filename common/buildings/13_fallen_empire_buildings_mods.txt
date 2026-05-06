@@ -363,3 +363,88 @@ building_fe_silo_2 = {
 
 	show_in_tech = tech_fe_silo_2
 }
+
+
+building_research_efficiency_1 = {
+	base_buildtime = @b3_time
+	planet_limit = 1
+	category = research
+
+	building_sets = {
+		research
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+		NOT = {
+			has_modifier = resort_colony
+		}
+	}
+
+	allow = {
+	}
+
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			has_modifier = resort_colony
+			owner = { is_wilderness_empire = yes }
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			exotic_gases = @b4_rare_cost
+		}
+		upkeep = {
+			energy = @b3_upkeep
+			exotic_gases = @b4_rare_upkeep
+		}
+	}
+
+	planet_modifier = {
+		researcher_jobs_bonus_workforce_mult = 0.10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				AND = {
+					owner = {
+						has_federations_dlc = yes
+						has_ascension_perk = ap_cosmogenesis
+						has_crisis_level = crisis_cosmogenesis_level_5
+					}
+				}
+				AND = {
+					owner = {
+						is_galactic_community_member = yes
+					}
+					is_active_resolution = "resolution_galacticstudies_extradimensional_experimentation"
+					has_modifier = pm_extradimensional_experimentation
+				}
+			}
+			
+		}
+		planet_physicists_sr_zro_upkeep_add = 0.5
+		planet_physicists_physics_research_produces_add = 1
+	}
+
+	prerequisites = {
+		"tech_basic_science_lab_2"
+	}
+
+	inline_script = {
+		script = districts/ai_research_extra_weighting
+		AMOUNT = 5
+	}
+
+	show_tech_unlock_if = {
+		is_wilderness_empire = no
+	}
+}

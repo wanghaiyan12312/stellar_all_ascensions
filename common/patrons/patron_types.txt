@@ -883,7 +883,7 @@ whisperers_in_the_void = {
 		effect = {
 			custom_tooltip = ACCORD_FORESIGHT_TT
 			hidden_effect = {
-				country_event = { id = end_cycle.9 }
+				country_event = { id = end_cycle.8 }
 			}
 		}
 	}
@@ -919,7 +919,7 @@ whisperers_in_the_void = {
 		effect = {
 			custom_tooltip = ACCORD_HINDSIGHT_TT
 			hidden_effect = {
-				country_event = { id = end_cycle.8 }
+				country_event = { id = end_cycle.7 }
 			}
 		}
 	}

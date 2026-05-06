@@ -290,26 +290,7 @@ country_event = {
 		hidden_effect = {
 			set_global_flag = end_of_the_cycle_rolled
 			country_event = { id = shroud.4135 }
-			set_country_flag = greater_patron_chosen_mod
-			random_country = {
-				limit = {
-					is_country_type = fallen_empire
-					is_machine_empire = no
-				}
-				save_event_target_as = outraged_FE
-			}
-			random_country = {
-				limit = {
-					is_country_type = fallen_empire
-					is_machine_empire = no
-					has_ethic = ethic_fanatic_spiritualist
-				}
-				save_event_target_as = outraged_FE
-			}	
-			country_event = {
-				id = end_cycle.7
-				days = 18000 ## 50 YEARS
-			}
+			set_country_flag = greater_patron_chosen_mod	
 		}
 	}
 
@@ -359,108 +340,10 @@ country_event = {
 }
 
 
-country_event = {
-	id = end_cycle.7
-	is_triggered_only = yes
-
-	title = end_cycle.7.name
-	desc = end_cycle.7.desc
-	show_sound = event_ship_bridge
-
-	location = event_target:outraged_FE.capital_scope
-
-	is_triggered_only = yes
-
-	diplomatic = yes
-
-	picture_event_data = {
-		portrait = event_target:outraged_FE
-		planet_background = event_target:outraged_FE
-		graphical_culture = event_target:outraged_FE
-		city_level = event_target:outraged_FE
-		room = event_target:outraged_FE.ruler
-	}
-
-	trigger = {
-		NOT = {
-			has_global_flag = fallen_empire_mod_awake
-		}
-		any_country = {
-			is_country_type = fallen_empire
-			is_machine_empire = no
-		}
-	}
-
-	immediate = {
-		set_global_flag = fallen_empire_mod_awake
-	}
-
-	after = {
-		hidden_effect = {
-			every_country = {
-				limit = {
-					is_country_type = fallen_empire
-					is_machine_empire = no
-				}
-				if = {
-					limit = { has_ethic = ethic_fanatic_xenophile }
-					country_event = {
-						id = fallen_empires_mod.4
-						days = 30
-					}
-				}
-				if = {
-					limit = { has_ethic = ethic_fanatic_materialist }
-					country_event = {
-						id = fallen_empires_mod.4
-						days = 60
-					}
-				}
-				if = {
-					limit = { has_ethic = ethic_fanatic_spiritualist }
-					country_event = {
-						id = fallen_empires_mod.4
-						days = 90
-					}
-				}
-				if = {
-					limit = { has_ethic = ethic_fanatic_xenophobe }
-					country_event = {
-						id = fallen_empires_mod.4
-						days = 120
-					}
-				}
-				if = {
-					limit = { 
-						OR = {
-							owner = { has_country_flag = fallen_empire_hive_war }
-							owner = { has_country_flag = fallen_empire_hive_growth }
-							owner = { has_country_flag = fallen_empire_hive_control }
-						}	
-					}
-					country_event = {
-						id = fallen_empires_mod.4
-						days = 150
-					}
-				}			
-			}
-			country_event = {
-				id = fallen_empires_mod.6
-				days = 180
-			}
-		}
-	}
-
-	option = {
-		name = fallen_empires_awakening.2.b
-	}
-
-}
-
 
 # Whisperers in the Void - Hindsight Accord
 country_event = {
-	id = end_cycle.8
+	id = end_cycle.7
 	title = shroud.4890.title
 	desc = shroud.4890.desc
 	picture = GFX_evt_shroud_whisperers_in_the_void
@@ -505,7 +388,7 @@ country_event = {
 
 # Whisperers in the Void - Foresight Accord
 country_event = {
-	id = end_cycle.9
+	id = end_cycle.8
 	hide_window = yes
 	is_triggered_only = yes
 

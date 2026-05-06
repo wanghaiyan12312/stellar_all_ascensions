@@ -1,0 +1,1130 @@
+##Archaeo 2
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_2
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_2
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_2
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_2
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_2
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_2
+	}
+}
+
+##Archaeo 3
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_3
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_3
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_3
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_3
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_3
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_3
+	}
+}
+
+##Archaeo 4
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_4
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_4
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_4
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_4
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_4
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_4
+	}
+}
+
+##Archaeo 5
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_5
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_5
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_5
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_5
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_5
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_5
+	}
+}
+
+##Archaeo 6
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_6
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_6
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_6
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_6
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_6
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_6
+	}
+}
+
+##Archaeo 7
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_7
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_7
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_7
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_7
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_7
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_7
+	}
+}
+
+##Archaeo 8
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_8
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_8
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_8
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_8
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_8
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_8
+	}
+}
+
+##Archaeo 3
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_9
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_9
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_9
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_9
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_9
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_9
+	}
+}
+
+##Archaeo 10
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_10
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_10
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_10
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_10
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_10
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_10
+	}
+}
+
+##Archaeo 11
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_11
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_11
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_11
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_11
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_11
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_11
+	}
+}
+
+##Archaeo 12
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_12
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_12
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_12
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_12
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_12
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_12
+	}
+}
+
+##Archaeo 13
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_13
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_13
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_13
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_13
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_13
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_13
+	}
+}
+
+##Archaeo 14
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_14
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_14
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_14
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_14
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_14
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_14
+	}
+}
+
+
+##Archaeo 15
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_15
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_15
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_15
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_15
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_15
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_15
+	}
+}
+
+
+##Archaeo 16
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_16
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_16
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_16
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_16
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_16
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_16
+	}
+}
+
+##Archaeo 17
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_17
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_17
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_17
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_17
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_17
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_17
+	}
+}
+
+
+##Archaeo 18
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_18
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_18
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_18
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_18
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_18
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_18
+	}
+}
+
+##Archaeo 19
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_19
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_19
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_19
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_19
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_19
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_19
+	}
+}
+
+##Archaeo 20
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_20
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_20
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_20
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_20
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_20
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_20
+	}
+}
+
+##Archaeo 21
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_21
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_21
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_21
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_21
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_21
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_21
+	}
+}
+
+##Archaeo 22
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_22
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_22
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_22
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_22
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_22
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_22
+	}
+}
+
+##Archaeo 23
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_23
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_23
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_23
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_23
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_23
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_23
+	}
+}
+
+##Archaeo 24
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_24
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_24
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_24
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_24
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_24
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_24
+	}
+}
+
+##Archaeo 25
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_25
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_25
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_25
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_25
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_25
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_25
+	}
+}

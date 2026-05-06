@@ -1,6 +1,7 @@
 ###
 #  Mod change remove opposites relation for leader_trait_erudite leader_trait_cyborg leader_trait_psionic
-#  and leader_trait_chosen leader_trait_composer_chosen leader_trait_instrument_chosen leader_trait_eater_chosen leader_trait_eater_chosen
+#  and leader_trait_chosen leader_trait_composer_chosen leader_trait_instrument_chosen leader_trait_eater_chosen leader_trait_cradle_chosen leader_trait_whisperers_chosen
+#  leader_trait_composer_chosen not have regen_add_perc 
 ###
 
 ##################
@@ -655,8 +656,10 @@ leader_trait_composer_chosen = {
 			is_ruler = no
 			leader_class = commander
 		}
-		ship_hull_regen_add_perc = 0.10
-		ship_armor_regen_add_perc = 0.20
+		#ship_hull_regen_add_perc = 0.10
+		#ship_armor_regen_add_perc = 0.20
+		ship_hull_mult = 0.10 # no regen_add_perc trait in mod
+		ship_armor_mult = 0.20
 		mult = value:transcended_psionic_multiplier
 	}
 	# Commander - Army Modifier

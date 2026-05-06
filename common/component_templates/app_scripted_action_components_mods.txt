@@ -1,0 +1,54 @@
+utility_component_template = {
+	key = "SHIP_SHROUD_TERRAFORM"
+	size = large
+	icon = GFX_ship_part_terraformation_nuclei_initiator
+	icon_frame = 1
+	power = 0
+
+	scripted_action = {
+		scope = planet
+		possible = {
+			is_terraforming = no
+			NOT = { has_planet_flag = terraform_nucleus_transfixed }
+			NOT = { has_planet_flag = terraform_shroud_nucleus_transfixed }
+			is_shroud_terraformable_pc = yes
+			from = {
+				owner = {
+					has_resource = {
+						type = sr_zro
+						amount >= 5000
+					}
+				}
+			}
+			exists = space_owner
+			space_owner = {
+				is_same_value = from.owner
+			}
+			custom_tooltip = {
+				fail_text = "terraform_nucleus_purchase_cooldown"
+				NOT = { has_country_flag = terraform_nucleus_purchase }
+			}
+		}
+
+		button_clickable = {
+			owner = {
+				has_resource = { type = sr_zro amount >= 5000 }
+			}
+		}
+
+		finished = {
+			has_planet_flag = terraform_nucleus_transfixed
+		}
+
+		name = on_shroud_sciensce_target_planet_reached
+		tooltip = shroud_sciensce_ship_button
+		icon = GFX_fleet_order_button_transfix_terraformation_nucleus_action
+		icon_selected = GFX_fleet_order_button_transfix_terraformation_nucleus_selected
+		on_cancel = on_shroud_sciensce_action_cancel
+		activity_key = shroud_action_activity_key
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}

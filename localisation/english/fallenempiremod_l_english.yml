@@ -1,9 +1,6 @@
 ﻿l_english:
  shipeventmod.3.name:"[outraged_FE.GetName]"
  shipeventmod.3.desc:"Queen's Titan is our enemy flagship. it is shame for our ancester glory.\n\n\nYou do not know the true extent of your sin.\n\n\nNot yet."
- end_cycle.7.name:"[outraged_FE.GetName]"
- end_cycle.7.desc:"Your malevolent psionic aura is spreading through the galaxy, endangering us all. As the Elder Race It is our duty to unite for defending against it and to combat the empire emitting it."
- end_cycle.5.a.tt:"$shroud.4135.a.tt$\n\n\n§Y All Fallen Empire will Awake. §!"
 
  tech_starbase_6:"$starbase_citadel_II$"
  tech_starbase_desc:"Fallen Empire Citadel has incredible space to equipe mass Defence Facility that is unconquerable fortress for enemy fleet."
@@ -12,6 +9,7 @@
  TECH_UNLOCK_CITADEL_II_CONSTRUCTION_DESC:"§HCitadel II§!\nUpgrading the Citadel,Due to our effort on reality editing we can violation of the laws of the universe to build our Starbase.Citadel II can house six Buildings and a full complement of twelve Modules."
 
  starbase_citadel_II:"$citadel$II"
+ starbase_citadel_plural:"$citadel$II"
  starbase_deep_space_citadel_4:"$dsc_name$IV"
  starbase_deep_space_citadel_4_plural:"$dsc_name_plural$"
  starbase_deep_space_citadel_4_cap:"$starbase_deep_space_citadel_4$"
@@ -44,7 +42,6 @@
  ship_damage_mult: "Ascendancy Shipwrights"
  crisis_cosmogenesis_level_5_auto_bonus:"Fallen Empire Auto Bonus"
  crisis_cosmogenesis_level_5_auto_bonus_desc:"As a Crisis Cosmogenesis Level 5 Empire You also a Fallen Empire"
- queen_combat_modifier_mod:"$queen_combat_modifier$"
 
  mod_armor_improve_name_mod2:"Armor Improvement"
  mod_shield_improve_name_mod2:"Shield Improvement"

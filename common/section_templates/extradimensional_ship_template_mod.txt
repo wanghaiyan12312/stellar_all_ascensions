@@ -6,7 +6,7 @@ ship_section_template = {
 	entity = "extra_dimensional_01_warship_large_entity"
 	icon = "GFX_ship_part_core_mid"
 
-	ship_roles = { gunship artillery }
+	ai_tags = { gunship brawler }
 
 	component_slot = {
 		name = "LARGE_GUN_01"
@@ -86,7 +86,7 @@ ship_section_template = {
 	entity = "extra_dimensional_01_warship_medium_entity"
 	icon = "GFX_ship_part_core_mid"
 
-	ship_roles = { gunship artillery }
+	ai_tags = { gunship brawler }
 
 	component_slot = {
 		name = "LARGE_GUN_01"

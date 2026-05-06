@@ -35,6 +35,8 @@
  auto_tech.3.core_system_cap.name:"$tech_repeatable_improved_core_system_cap$" 
  auto_tech.3.leader_life_span: "Leader life span"
  auto_tech.3.leader_life_span.name:"$tech_repeatable_improved_leader_life_span$"
+ auto_tech.3.archaeoarmor:"More Archaeo Armor Option Note:armor shield both add"
+ auto_tech.3.archaeoarmor.name:"$tech_archaeoarmor$"
  auto_tech.3.shield_psionic: "More Psionic Shield Option Note:energy shield add"
  auto_tech.3.psionic_shield.name:"$tech_psionic_shield$"
  auto_tech.3.back: "Stay All Endless Repeatable Social Technology In Your Option"

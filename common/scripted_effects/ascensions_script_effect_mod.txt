@@ -196,6 +196,7 @@ auto_tech_remove_all_soc_flag = {
 	remove_country_flag = core_system_cap_allow
 	remove_country_flag = leader_life_span_allow
 	remove_country_flag = shield_psionic_allow
+	remove_country_flag = archaeoarmor_allow
 }
 
 # remove all repeatable eng tech allow flag 

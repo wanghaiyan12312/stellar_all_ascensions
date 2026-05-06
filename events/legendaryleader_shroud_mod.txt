@@ -15,45 +15,135 @@ country_event = {
 		is_natural_design_empire = no
 	}
 
+	immediate = {
+		## scientist
+		if = {
+			limit = {
+				NOT = { is_variable_set = leadershroud_council_scientist_num }
+			}
+			set_variable = {
+				which = leadershroud_council_scientist_num
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				NOT = { is_variable_set = leadershroud_govern_scientist_num }
+			}
+			set_variable = {
+				which = leadershroud_govern_scientist_num
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				NOT = { is_variable_set = leadershroud_scholar_scientist_num }
+			}
+			set_variable = {
+				which = leadershroud_scholar_scientist_num
+				value = 0
+			}
+		}
+		## official
+		if = {
+			limit = {
+				NOT = { is_variable_set = leadershroud_council_official_num }
+			}
+			set_variable = {
+				which = leadershroud_council_official_num
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				NOT = { is_variable_set = leadershroud_govern_official_num }
+			}
+			set_variable = {
+				which = leadershroud_govern_official_num
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				NOT = { is_variable_set = leadershroud_delegate_official_num }
+			}
+			set_variable = {
+				which = leadershroud_delegate_official_num
+				value = 0
+			}
+		}
+		## commander
+		if = {
+			limit = {
+				NOT = { is_variable_set = leadershroud_councilor_commander_num }
+			}
+			set_variable = {
+				which = leadershroud_councilor_commander_num
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				NOT = { is_variable_set = leadershroud_admiral_commander_num }
+			}
+			set_variable = {
+				which = leadershroud_admiral_commander_num
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				NOT = { is_variable_set = leadershroud_governor_commander_num }
+			}
+			set_variable = {
+				which = leadershroud_governor_commander_num
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				NOT = { is_variable_set = leadershroud_general_commander_num }
+			}
+			set_variable = {
+				which = leadershroud_general_commander_num
+				value = 0
+			}
+		}	
+	}
+
 	option = {
-		name = leadershroud.hiredlegndaryleader
+		name = concept_scientist
+		icon = {
+			icon = "gfx/interface/icons/text_icons/text_icon_scientist.dds"
+			text = concept_scientist_desc
+		}
 		hidden_effect = {
-			if = {
-				limit = { 
-					has_global_flag = frozen_legendary_leader_found 
-				}
-				set_global_flag = Exakeides_hire_happend
-			}
-			if = {
-				limit = { 
-					has_global_flag = gateway_dude_found
-				}
-				set_global_flag = sharpbeak_hire_happend
-			}
-		
-			every_country = {
-				if ={
-					limit = {
-						has_country_flag = azaryn_chain_started
-					}
-					set_global_flag = Azaryn_hire_happend
-				}
-			}
 			country_event = { id = leadershroud.100 }
 		}
 	}
 	option = {
-		name = leadershroud.Upgradelegndaryleader
+		name = concept_official
+		icon = {
+			icon = "gfx/interface/icons/text_icons/text_icon_official.dds"
+			text = concept_official_desc
+		}
 		hidden_effect = {
 			country_event = { id = leadershroud.200 }
 		}
 	}
+
 	option = {
-		name = leadershroud.GetShroudEntitylegndaryleader
+		name = concept_commander
+		icon = {
+			icon = "gfx/interface/icons/text_icons/text_icon_commander.dds"
+			text = concept_commander_desc
+		}
 		hidden_effect = {
 			country_event = { id = leadershroud.300 }
 		}
 	}
+
+
 	option = {
 		name = "utopia.3400.name"
 		trigger = {
@@ -76,36 +166,180 @@ country_event = {
 	}
 }
 
-country_event = {
+planet_event = {
 	id = leadershroud.2
-	is_triggered_only = yes
 	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_paragon_dlc = yes
+		has_shroud_science_in_orbit = yes
+		NOT = { has_planet_flag = terraform_nucleus_transfixed }
+		NOT = { has_planet_flag = terraform_nucleus_transfix_started }
+		NOT = { has_planet_flag = terraform_shroud_nucleus_transfixed }
+	}
+
 	immediate = {
-		end_event_chain = paragon_legendary_leader_chain
-		abort_special_project = { type = LEGENDARY_LEADER_VOLCANO_PLANET_PROJECT }
-		abort_special_project = { type = LEGENDARY_LEADER_HOSTILE_PLANET_PROJECT }
-		abort_special_project = { type = LEGENDARY_LEADER_SHIP_PLANET_PROJECT }
-		abort_special_project = { type = LEGENDARY_LEADER_OPEN_WORMHOLE_PROJECT }
-		abort_special_project = { type = LEGENDARY_LEADER_SABOTAGE_FLEET_PROJECT }
-		every_archaeological_site = {
-			limit = { is_site_type = paragon_legendary_leader_homeworld }
-			destroy_archaeological_site = this
+		planet_event = { id = leadershroud.3 days = 3 }
+
+		owner = {
+			set_timed_country_flag = {
+				flag = terraform_nucleus_purchase
+				days = 3600
+			}
 		}
-		remove_relic = r_wormhole_key_fragment_4
-		remove_relic = r_wormhole_key_fragment_3
-		remove_relic = r_wormhole_key_fragment_2
-		remove_relic = r_wormhole_key_fragment_1
+		set_saved_date = {
+			key = leadershroud_terraform_nucleus_timer
+			days_from_present = 3600
+			expires = 3600
+		}
+
+		remove_planet_flag = terraform_nucleus_transfix_canceled
+		set_planet_flag = terraform_nucleus_transfix_started
+
+		# Set vars to adapt effect to planet size
+		export_trigger_value_to_variable = {
+			trigger = planet_size
+			variable = effect_size_var
+		}
+		multiply_variable = {
+			which = effect_size_var
+			value = 0.13
+		}
+		create_ambient_object = {
+			type = terraforming_planet_effect
+			location = this
+			use_3d_location = yes
+			entity_scale_to_size = yes
+			scripted_scale = effect_size_var
+		}
+		last_created_ambient_object = {
+			set_ambient_object_flag = shroud_science_terraforming_effect
+		}
+		# Set vars to adapt beam to planet size
+		export_trigger_value_to_variable = {
+			trigger = planet_size
+			variable = beam_size_var
+		}
+		switch = {
+			trigger = planet_size
+			30 >= { multiply_variable = { which = beam_size_var value = 0.26 } }
+			28 >= { multiply_variable = { which = beam_size_var value = 0.27 } }
+			26 >= { multiply_variable = { which = beam_size_var value = 0.28 } }
+			24 >= { multiply_variable = { which = beam_size_var value = 0.30 } }
+			22 >= { multiply_variable = { which = beam_size_var value = 0.31 } }
+			20 >= { multiply_variable = { which = beam_size_var value = 0.34 } }
+			19 >= { multiply_variable = { which = beam_size_var value = 0.36 } }
+			18 >= { multiply_variable = { which = beam_size_var value = 0.37 } }
+			16 >= { multiply_variable = { which = beam_size_var value = 0.42 } }
+			14 >= { multiply_variable = { which = beam_size_var value = 0.47 } }
+			12 >= { multiply_variable = { which = beam_size_var value = 0.58 } }
+			10 >= { multiply_variable = { which = beam_size_var value = 0.65 } }
+		}
+		create_ambient_object = {
+			type = terraforming_ship_beam
+			location = From
+			entity_face_object = this
+			use_3d_location = yes
+			entity_scale_to_size = yes
+			scripted_scale = beam_size_var
+			play_animation_once = yes
+		}
+		last_created_ambient_object = {
+			set_ambient_object_flag = shroud_science_terraforming_beam
+		}
 	}
 }
 
-
-ship_event = {
+planet_event = {
 	id = leadershroud.3
-	title = paragon.3.name
-	desc = paragon.3.desc
-	picture = GFX_evt_alien_cavemen
-	show_sound = event_default
-	location = from
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_paragon_dlc = yes
+		has_shroud_science_in_orbit = yes
+		NOT = { has_planet_flag = terraform_nucleus_transfix_canceled }
+		NOT = { has_planet_flag = terraform_nucleus_transfixed }
+		NOT = { has_planet_flag = terraform_shroud_nucleus_transfixed }
+	}
+
+	immediate = {
+		# Destroy beam effect
+		solar_system = {
+			every_system_ambient_object = {
+				limit = {
+					OR = {
+						has_ambient_object_flag = shroud_science_terraforming_beam
+					}
+				}
+				destroy_ambient_object = this
+			}
+		}
+
+		set_planet_flag = terraform_nucleus_transfixed
+		set_planet_flag = terraform_shroud_nucleus_transfixed
+		remove_planet_flag = terraform_nucleus_transfix_started
+		start_terraform_process = pc_gaia
+		# Notification - Terraforming Started
+		create_message = {
+			type = MESSAGE_SHROUD_TERRAFORM_STARTED
+			localization = MESSAGE_SHROUD_TERRAFORM_STARTED_DESC
+			days = 10
+			target = prev
+			variable = {
+				type = name
+				localization = PLANET
+				scope = this
+			}
+		}
+	}
+
+	after = {
+	}
+}
+
+# Terraformation completed
+# Fires from on_terraforming_complete in 00_on_actions
+# This = Planet
+# From = Terraforming country
+planet_event = {
+	id = leadershroud.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_paragon_dlc = yes
+		has_planet_flag = terraform_nucleus_transfixed
+		has_planet_flag = terraform_shroud_nucleus_transfixed
+	}
+
+	immediate = {
+		# Add shroud-specific modifier to planet and remove original
+		remove_modifier = terraformation_nucleus_side_effect
+		add_modifier = { modifier = terraformation_shroud_side_effect }
+
+		# Destroy planet effect
+		solar_system = {
+			every_system_ambient_object = {
+				limit = {
+					OR = {
+						has_ambient_object_flag = shroud_science_terraforming_effect
+					}
+				}
+				destroy_ambient_object = this
+			}
+		}
+
+		remove_planet_flag = terraform_nucleus_transfixed
+		remove_planet_flag = terraform_shroud_nucleus_transfixed
+	}
+}
+
+# Astrocreator Shroud Terraforming Cancel Order
+planet_event = {
+	id = leadershroud.5
+	hide_window = yes
 	is_triggered_only = yes
 
 	trigger = {
@@ -113,106 +347,32 @@ ship_event = {
 	}
 
 	immediate = {
-		set_global_flag = beholder_hire_happend
-	}
+		set_planet_flag = terraform_nucleus_transfix_canceled
+		remove_planet_flag = terraform_nucleus_transfix_started
 
-	option = {
-		name = paragon.3.a
-		hidden_effect = {
-			from = {
-				save_global_event_target_as = beholder_planet
-			}
-			owner = {
-				country_event = { id = paragon.4 days = 20 random = 20 }
-				set_country_flag = beholder_chain_owner
-			}
-		}
-	}
-
-	option = {
-		name = paragon.3.b
-	}
-}
-
-leader_event = {
-	id = leadershroud.4
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-		exists = event_target:beholder_leader
-		event_target:beholder_leader = {
-			exists = owner
-		}
-		owner = {
-			has_country_flag = beholder_shroud_update
-		}
-		
-	}
-
-	immediate = {
-		if = {
-			limit = {
-				event_target:beholder_leader = {
-					leader_class = commander
+		# Destroy beam and planet effects
+		solar_system = {
+			every_system_ambient_object = {
+				limit = {
+					OR = {
+						has_ambient_object_flag = shroud_science_terraforming_beam
+						has_ambient_object_flag = shroud_science_terraforming_effect
+					}
 				}
-			}
-			event_target:beholder_leader = {
-				update_legendary_councilor_commander = yes
-
+				destroy_ambient_object = this
 			}
 		}
 
-		if = {
-			limit = {
-				event_target:beholder_leader = {
-					leader_class = official
-				}
-			}
-			event_target:beholder_leader = {
-				update_legendary_govern_official = yes
-				add_trait = {
-					trait = leader_trait_governor_psionic_communion
-					show_message = no
-					consume_selection = yes
-				}
-			}
-		}		
-	}
-}
-
-# Encountered Gray
-ship_event = {
-	#graygoo.400
-	id = leadershroud.5
-	title = "graygoo.400.name"
-	desc = {
-		trigger = {
-			owner = { is_synthetic_empire = no }
-		}
-		text = "graygoo.400.a.desc"
-	}
-	desc = {
-		trigger = {
-			owner = { is_synthetic_empire = yes }
-		}
-		text = "graygoo.400.b.desc"
-	}
-	picture = GFX_evt_ship_in_orbit_2
-	show_sound = event_radio_chatter
-
-	is_triggered_only = yes
-
-	immediate = {
-		from = { save_event_target_as = gray_homeworld }
-	}
-
-	option = {
-		name = graygoo.400.a
-		hidden_effect = {
-			owner = {
-				set_global_flag = gray_hire_happend
-				country_event = { id = graygoo.401 }
+		# Notification - Terraforming Canceled
+		create_message = {
+			type = MESSAGE_SHROUD_TERRAFORM_CANCELED
+			localization = MESSAGE_SHROUD_TERRAFORM_CANCELED_DESC
+			days = 10
+			target = this
+			variable = {
+				type = name
+				localization = PLANET
+				scope = this
 			}
 		}
 	}
@@ -224,99 +384,49 @@ country_event = {
 	hide_window = yes
 
 	trigger = {
+		is_country_type = default
 		from = { 
 			has_leader_flag = leader_shroud_legendary_mod
-			leader_class = commander 
-			NOT = {
-				has_leader_flag = leader_death_events_blocked
-			}
-			leader = {
-				has_trait = subclass_commander_admiral
-			}
 		}
 	}
 
-	immediate = {		
+	immediate = {
 		if = {
 			limit = {
-				exists = event_target:legendary_lost_leader
 				from = {
-					has_leader_flag = exakeides
-				}
-			}
-			create_species = {
-				name = "NAME_Unknown"
-				class = HUM
-				portrait = paragon_exakeides_artifact_1 #Exakeides portrait
-				namelist = "PRT1"
-				traits = {
-					trait = "trait_enduring"
-					trait = "trait_quick_learners"
-					trait = "trait_erudite"
-				}
-				effect = {
-					save_event_target_as = exakeides_species
-				}
-			}
-			create_leader = {
-				class = commander
-				tier = leader_tier_legendary
-				species = event_target:exakeides_species
-				name = "NAME_Exakeides"
-				skill = 10
-				gender = male
-				event_leader = yes
-				skip_background_generation = yes
-				custom_catch_phrase = keides_catch_phrase
-				custom_description = desc_exakeides
-				set_age = 0
-				hide_age = yes
-				effect = {
-					set_leader_flag = exakeides
-					set_leader_flag = immune_to_negative_traits
-					save_global_event_target_as = legendary_lost_leader
-					add_trait = {
-						trait = leader_trait_legendary_far_from_home
-						show_message = no
-					}
-					set_owner = root
-				}
-			}
-			last_created_leader = {
-				update_legendary_admiral_commander = yes
-			}
-
-		}else_if = {
-			limit = {
-				exists = from
-				from = {
-					has_leader_flag = skrand
-				}
+					has_leader_flag = legendary_govern_scientist_mod
+				} 
 			}
 			clone_leader = {
-				target = event_target:admiral_sharpbeak
-				tier = leader_tier_legendary
+				target = from
 				effect = {
+					set_leader_flag = immune_to_negative_traits
 					set_leader_flag = leader_shroud_legendary_mod
-				}
-			}
-			last_created_leader = {
-				save_global_event_target_as = admiral_sharpbeak
-				set_leader_flag = skrand
-				set_leader_flag = immune_to_negative_traits
-				set_owner = root
-			}
-
+					set_leader_flag = legendary_govern_scientist_mod
+					can_manually_change_location = no
+					remove_all_negative_traits = yes
+					update_legendary_govern_scientist = yes
+				}			
+	    	}
+			add_shroud_ship = yes
 		}else = {
 			clone_leader = {
 				target = from
 				effect = {
-					set_leader_flag = leader_shroud_legendary_mod
+					set_leader_flag = immune_to_negative_traits
+					remove_all_negative_traits = yes
 				}			
-			}
+	    	}
 		}
 		from = {
 			kill_leader = { show_notification = no }
+		}
+	}
+
+	after = {
+		country_event = {
+			id = leadershroud.8
+			days = 10
 		}
 	}
 }
@@ -341,16 +451,37 @@ country_event = {
 }
 
 country_event = {
+	id = leadershroud.8
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_country_type = default
+	}
+	immediate = {
+		every_owned_ship = {
+			limit = {
+				is_ship_class = shipclass_science_ship
+				is_ship_size = shroud_science
+				has_ship_flag = is_shroud_science_ship
+				NOT = { exists = leader	}
+			}
+			delete_fleet = this
+		}
+	}
+}
+
+
+country_event = {
 	id = leadershroud.100
 	title =  utopia.3000.name
 	desc  =  utopia.3000.intro.desc
 	is_triggered_only = yes
-    
-	inline_script = shroud_picsounds
 
 	trigger = {
 		exists = owner
 	}
+
+	inline_script = shroud_picsounds
 
 	#Back to menu
 	option = {
@@ -360,552 +491,100 @@ country_event = {
 		}
 	}
 
-	option = {
-		name = NAME_Astrocreator_Azaryn
-		allow = {
-			custom_tooltip = {
-				fail_text = leadershroud.legendary.hired
-				NOT = {
-					has_global_flag = Azaryn_hire_happend
-				}			
-			}
-			resource_stockpile_compare = {
-				resource = exotic_gases
-				value >= 1000
-			}
-			resource_stockpile_compare = {
-				resource = sr_zro
-				value >= 1000
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 100
-			}
-		}
-		add_resource = {
-			exotic_gases = -1000
-		}
-		add_resource = {
-			sr_zro = -1000
-		}
-		add_resource = {
-			influence = -100
-		}
-		hidden_effect = {
-			country_event = { id = paragon.228 }
-			set_global_flag = Azaryn_hire_happend
-		}
-	}
-	option = {
-		name = NAME_Exakeides
-		allow = {
-			custom_tooltip = {
-				fail_text = leadershroud.legendary.hired
-				NOT = {
-					has_global_flag = Exakeides_hire_happend
-				}				
-			}
-			resource_stockpile_compare = {
-				resource = exotic_gases
-				value >= 1000
-			}
-			resource_stockpile_compare = {
-				resource = sr_zro
-				value >= 1000
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 100
-			}
-		}
-		add_resource = {
-			exotic_gases = -1000
-		}
-		add_resource = {
-			sr_zro = -1000
-		}
-		add_resource = {
-			influence = -100
-		}
-		hidden_effect = {
-			country_event = { id = paragon.3115 }
-			country_event = { 
-				id = paragon.3160 
-				days = 2 
-			}
-			##end Exakeides chain
-			country_event = {
-				id = leadershroud.2
-				days = 360
-			}
-			set_global_flag = Exakeides_hire_happend
-			## avoid other trigger 
-			set_global_flag = frozen_legendary_leader_found
-		}
-	}
-	option = {
-		name = NAME_The_Beholder
-		allow = {
-			custom_tooltip = {
-				fail_text = leadershroud.legendary.hired
-				NOT = {
-					has_global_flag = beholder_hire_happend
-				}				
-			}
-			resource_stockpile_compare = {
-				resource = exotic_gases
-				value >= 1000
-			}
-			resource_stockpile_compare = {
-				resource = rare_crystals
-				value >= 1000
-			}
-			resource_stockpile_compare = {
-				resource = sr_zro
-				value >= 1000
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 100
-			}
-		}
-		add_resource = {
-			exotic_gases = -1000
-		}
-		add_resource = {
-			rare_crystals = -1000
-		}
-		add_resource = {
-			sr_zro = -1000
-		}
-		add_resource = {
-			influence = -100
-		}
-		hidden_effect = {
-			create_country = {
-            	name = "NAME_beholder"
-            	type = global_event
-            	auto_delete = yes
-            	flag = {
-                	icon = {
-                    	category = "special"
-                    	file = "unknown.dds"
-                	}
-                	background = {
-                    	category = "backgrounds"
-                    	file = "00_solid.dds"
-                	}
-                	colors = {
-                    	"red"
-                    	"red"
-                    	"null"
-                    	"null"
-                	}
-            	}
-            	effect = {
-                	save_event_target_as = beholder_country
-            	}
-        	}
-        	event_target:beholder_country = {
-				create_species = {
-					name = "NAME_Unknown"
-					class = PARAGON
-					portrait = paragon01
-					namelist = "PRT1"
-					traits = random
-					effect = {
-						save_event_target_as = beholder_species
-					}
-				}
-				create_leader = {
-					species = event_target:beholder_species
-					event_leader = yes
-					class = commander
-					tier = leader_tier_legendary
-					name = "NAME_The_Beholder"
-					skill = 10
-					immortal = yes
-					randomize_traits = no
-					can_manually_change_location = no
-					can_assign_to_council = no
-					skip_background_generation = yes
-					custom_catch_phrase = beholder_catch_phrase
-					custom_description = beholder_backstory
-					traits = {
-						1 = leader_trait_scout
-						2 = leader_trait_energy_weapon_specialist
-						3 = leader_trait_cautious
-						0 = leader_trait_psionic
-						4 = subclass_commander_admiral
-					}
-					gender = indeterminable
-					set_age = 0
-					hide_age = yes
-					effect = {
-						save_global_event_target_as = beholder_leader
-						set_leader_flag = beholder
-						set_leader_flag = immune_to_negative_traits
-						set_owner = root
-						exile_leader_as = beholder_leader
-					}
-				}
-			}
-			set_country_flag = zro_found
-
-			clone_leader = {
-				target = event_target:beholder_leader
-				tier = leader_tier_legendary
-			}
-			last_created_leader = {
-				save_global_event_target_as = beholder_leader
-				set_leader_flag = beholder
-				set_leader_flag = immune_to_negative_traits
-			}
-			# Spawn ship
-			create_fleet = {
-				name = "NAME_Temple_of_Whispers"
-				settings = {
-					can_upgrade = no
-					can_change_composition = no
-					can_change_leader = no
-					can_disband = no
-					spawn_debris = no
-				}
-				effect = {
-					set_owner = root.owner
-					create_ship_design = {
-						design = NAME_Temple_of_Whispers
-					}
-					create_ship = {
-						design = last_created_design
-						name = "NAME_Temple_of_Whispers"
-						prefix = no
-						upgradable = no
-						effect = {
-							set_ship_flag = is_beholder_ship
-							save_global_event_target_as = beholder_ship
-						}
-					}
-					if = {
-						limit = {
-							exists = event_target:beholder_presapients
-							exists = event_target:beholder_planet
-						}
-						set_location = {
-							target = event_target:beholder_planet
-							distance = 1
-							angle = random
-						}
-					}
-					else = {
-						set_location = {
-							target = root.capital_scope
-							distance = 1
-							angle = random
-						}
-					}
-
-					assign_leader = event_target:beholder_leader
-				}
-			}
-			create_message = {
-				type = MESSAGE_RECRUITED_LEADER
-				localization =  MESSAGE_RECRUITED_LEADER_DESC
-				days = @toast_message_days
-				target = event_target:beholder_leader
-				variable = {
-					type = name
-					localization = LEADER
-					scope = event_target:beholder_leader
-				}
-				variable = {
-					key = "border"
-					value = "GFX_border_legendary"
-				}
-			}
-			set_country_flag = beholder_chain_owner_mod
-			set_global_flag = beholder_hire_happend
-		}
-	}
-	option = {
-		name = NAME_Skrand_Sharpbeak
-		allow = {
-			custom_tooltip = {
-				fail_text = leadershroud.legendary.hired
-				NOT = {
-					has_global_flag = sharpbeak_hire_happend
-				}			
-			}
-			resource_stockpile_compare = {
-				resource = volatile_motes
-				value >= 1000
-			}
-			resource_stockpile_compare = {
-				resource = sr_zro
-				value >= 1000
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 100
-			}
-		}
-		add_resource = {
-			volatile_motes = -1000
-		}
-		add_resource = {
-			sr_zro = -1000
-		}
-		add_resource = {
-			influence = -100
-		}
-		hidden_effect = {
-			create_country = {
-				name = "NAME_Skrand_Sharpbeak"
-				type = paragon_event_country
-				auto_delete = yes
-				flag = {
-					icon = {
-						category = "special"
-						file = "unknown.dds"
-					}
-					background = {
-						category = "backgrounds"
-						file = "00_solid.dds"
-					}
-					colors = {
-						"red"
-						"red"
-						"null"
-						"null"
-					}
-				}
-				effect = {
-					save_global_event_target_as = sharpbeak_country
-				}
-			}
-			event_target:sharpbeak_country = {
-				set_country_flag = sharpbeak_country_flag
-				set_faction_hostility = {
-					target = root.owner
-					set_hostile = no
-					set_neutral = yes
-					set_friendly = no
-				}
-				create_species = {
-					name = "NAME_Unknown"
-					class = AVI
-					portrait = paragon02 #sharpbeak_portrait
-					namelist = "PRT1"
-					traits = {
-						trait = "trait_presapient_starborn"
-						trait = "trait_survivor"
-						trait = "trait_nomadic"
-					}
-					effect = {
-						save_event_target_as = sharpbeak_species
-					}
-				}
-				create_leader = {
-					class = commander
-					tier = leader_tier_legendary
-					species = event_target:sharpbeak_species
-					name = "NAME_Skrand_Sharpbeak"
-					skill = 8
-					gender = male
-					event_leader = yes
-					skip_background_generation = yes
-					background_ethic = ethic_militarist
-					custom_catch_phrase = skrand_catch_phrase
-					custom_description = skrand_desc
-					randomize_traits = no
-					traits = {
-						0 = leader_trait_carrier_specialization
-						1 = leader_trait_engineer
-						2 = subclass_commander_admiral
-						3 = leader_trait_resilient
-						4 = leader_trait_survivalist
-						5 = leader_trait_unyielding
-					}
-					effect = {
-						set_leader_flag = skrand
-						set_leader_flag = immune_to_negative_traits
-						save_global_event_target_as = admiral_sharpbeak
-					}
-				}
-				last_created_leader = {
-					set_owner = event_target:sharpbeak_country
-				}
-				create_fleet = {
-					name = "NAME_WingsOfGlory"
-					effect = {
-						set_owner = event_target:sharpbeak_country
-						create_ship = {
-							name = "NAME_FirstTalon"
-							design = "NAME_FirstClaw"
-							graphical_culture = "npf_01"
-							upgradable = no
-						}
-						last_created_ship = {
-							set_ship_flag = last_talon
-							save_global_event_target_as = last_talon_ship
-						}
-						set_location = {
-							target = event_target:paragon_gateway_dude_homegate
-							distance = 10
-							angle = random
-						}
-						set_fleet_stance = passive
-						assign_leader = event_target:admiral_sharpbeak
-						save_global_event_target_as = sharpbeak_fleet
-					}
-					settings = {
-						can_upgrade = yes
-						can_change_composition = yes
-						can_change_leader = yes
-						spawn_debris = no
-					}
-				}
-			}
-			set_global_flag = sharpbeak_recruit_phase
-			remove_country_flag = attacked_sharpbeak
-			country_event = { id = paragon.3005}
-			set_global_flag = sharpbeak_hire_happend
-		}
-	}
-	option = {
-		name = NAME_Gray
-		allow = {
-			custom_tooltip = {
-				fail_text = leadershroud.legendary.hired
-				NOT = {
-					has_global_flag = gray_hire_happend
-				}				
-			}
-			resource_stockpile_compare = {
-				resource = nanites
-				value >= 100
-			}
-			resource_stockpile_compare = {
-				resource = sr_zro
-				value >= 1000
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 100
-			}
-		}
-		add_resource = {
-			nanites = -100
-		}
-		add_resource = {
-			sr_zro = -1000
-		}
-		add_resource = {
-			influence = -100
-		}
-		hidden_effect = {
-			country_event = { id = graygoo.401 }
-			set_global_flag = gray_hire_happend
-		}
-	}
 	
 	option = {
-		name = NAME_Formless_leader
-		trigger = {
-			has_astral_planes_dlc = yes
+		name = subclass_scientist_councilor
+		icon = {
+			icon = "gfx/interface/icons/leaders/subclasses/subclass_scientist_councilor_small.dds"
+			text = subclass_scientist_councilor_desc
 		}
-		allow = {
-			custom_tooltip = {
-				fail_text = leadershroud.legendary.hired
-				NOT = {
-					has_global_flag = formless_hire_happend
-				}
-			}
-			resource_stockpile_compare = {
-				resource = astral_threads
-				value >= 1000
-			}
-			resource_stockpile_compare = {
-				resource = sr_zro
-				value >= 1000
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 100
-			}
-		}
-		add_resource = {
-			astral_threads = -1000
-		}
-		add_resource = {
-			sr_zro = -1000
-		}
-		add_resource = {
-			influence = -100
+		inline_script = {
+			script = ordinary_legendary_leader_cost
+			AMOUNT_ENERGY = value:get_scientist_councilor_energy_mult
+			AMOUNT_ZRO = value:get_scientist_councilor_zro_mult
 		}
 		hidden_effect = {
-			ethic_leader_creator = {
-				SPECIES_CLASS = EXD
-				LEADER_PORTRAIT = exd4_leader
-				NAME_LIST = Extradimensional
-				CLASS = commander
-				TIER = leader_tier_legendary
-				NAME = NAME_Formless_leader
-				LEVEL = 10
-				GENDER = indeterminable
-				IMMORTAL_SPECIES = yes
-				IMMORTAL = no
-				HIDEAGE = yes
-				ETHIC = xenophile
-				DESC = formless_leader_desc
-				CATCH_PHRASE = formless_leader_catch_phrase
+			create_ordinary_legendary_leader = {
+				CLASS = scientist
+				EVENTLEADER = no
+				MANUALLY_CHANGE = yes
 			}
 			last_created_leader = {
-				add_trait = {
-					trait = leader_trait_spacebender
-					consume_selection = yes
-				}
-				add_trait = {
-					trait = subclass_commander_admiral
-					consume_selection = yes
-				}
-				add_trait = {
-					trait = leader_trait_psionic
-				}
-				add_trait = {
-					trait = leader_trait_venerated_2
-					consume_selection = yes
-				}
-				add_trait = {
-					trait = leader_trait_scout_2
-					consume_selection = yes
-				}
-				add_trait = {
-					trait = leader_trait_commanding_presence_2
-					consume_selection = yes
-				}
-				add_trait = {
-					trait = leader_trait_energy_weapon_specialist
-					consume_selection = yes
-				}
-				set_leader_flag = immune_to_negative_traits
-				save_global_event_target_as = formless_leader_mod_shrould
-				set_leader_flag = formless_leader_mod
+				update_legendary_council_scientist = yes
+				set_leader_flag = legendary_council_scientist_mod
 				set_owner = root
 			}
-			hire_event_leader_message = {
-				LEADER = formless_leader_mod_shrould
+			change_variable = {
+				which = "leadershroud_council_scientist_num"
+				value = 1
 			}
-			event_target:formless_leader_mod_shrould = {
-				set_owner = root
-			}
-			set_global_flag = formless_hire_happend
 		}
 	}
+
+	option = {
+		name = subclass_scientist_governor
+		icon = {
+			icon = "gfx/interface/icons/leaders/subclasses/subclass_scientist_governor_small.dds"
+			text = subclass_scientist_governor_desc
+		}
+		inline_script = {
+			script = ordinary_legendary_leader_cost
+			AMOUNT_ENERGY = value:get_scientist_governor_energy_mult
+			AMOUNT_ZRO = value:get_scientist_governor_zro_mult
+		}
+		hidden_effect = {
+			create_ordinary_legendary_leader = {
+				CLASS = scientist
+				EVENTLEADER = yes
+				MANUALLY_CHANGE = yes
+			}
+			last_created_leader = {
+				update_legendary_govern_scientist = yes
+				set_leader_flag = legendary_govern_scientist_mod
+				set_owner = root
+			}
+			change_variable = {
+				which = "leadershroud_govern_scientist_num"
+				value = 1
+			}
+		}
+	}
+
+	option = {
+		name = subclass_scientist_scholar
+		icon = {
+			icon = "gfx/interface/icons/leaders/subclasses/subclass_scientist_scholar_small.dds"
+			text = subclass_scientist_scholar_desc
+		}
+		inline_script = {
+			script = ordinary_legendary_leader_cost
+			AMOUNT_ENERGY = value:get_scientist_scholar_energy_mult
+			AMOUNT_ZRO = value:get_scientist_scholar_zro_mult
+		}
+		hidden_effect = {
+			create_ordinary_legendary_leader = {
+				CLASS = scientist
+				EVENTLEADER = yes
+				MANUALLY_CHANGE = no
+			}
+			last_created_leader = {
+				update_legendary_scholar_scientist = yes
+				set_leader_flag = legendary_scholar_scientist_mod
+				set_owner = root
+			}
+			change_variable = {
+				which = "leadershroud_scholar_scientist_num"
+				value = 1
+			}
+			add_shroud_ship = yes
+		}
+	}
+
 	option = {
 		name = GOODBYE
 		default_hide_option = yes
 	}
+
 }
 
 country_event = {
@@ -913,12 +592,11 @@ country_event = {
 	title =  utopia.3000.name
 	desc  =  utopia.3000.intro.desc
 	is_triggered_only = yes
-
-	inline_script = shroud_picsounds
-
 	trigger = {
 		exists = owner
 	}
+
+	inline_script = shroud_picsounds
 
 	#Back to menu
 	option = {
@@ -928,334 +606,94 @@ country_event = {
 		}
 	}
 
-	option = {
-		name = NAME_Astrocreator_Azaryn
-		trigger = {
-			exists = event_target:azaryn_leader
-			event_target:azaryn_leader = {
-				exists = owner
-			}
-			NOT = { has_country_flag = azaryn_shroud_update }
-		}
-		allow = {			
-			resource_stockpile_compare = {
-				resource = exotic_gases
-				value >= 50000
-			}
-			resource_stockpile_compare = {
-				resource = sr_zro
-				value >= 10000
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 450
-			}
-		}
-		add_resource = {
-			exotic_gases = -50000
-		}
-		add_resource = {
-			sr_zro = -10000
-		}
-		add_resource = {
-			influence = -450
-		}
-		hidden_effect = {
-			event_target:azaryn_leader = {
-				update_legendary_council_scientist = yes
-				add_trait = {
-					trait = leader_trait_legendary_terraformation_nucleus_3_buds
-					show_message = no
-					consume_selection = yes
-				}
-				change_leader_portrait = paragon_azaryn_3_buds
-			}
-			set_country_flag = azaryn_shroud_update
-		}
-		if = {
-			limit = { NOT = {allowed_crisis_type = prethoryn}}
-			add_relic = r_prethoryn_queen
-		}
-	}
-	option = {
-		name = NAME_Exakeides
-		trigger = {
-			exists = event_target:legendary_lost_leader
-			event_target:legendary_lost_leader = {
-				exists = owner
-			}
-			NOT = { has_country_flag = Exakeides_shroud_update }
-		}
-		allow = {			
-			resource_stockpile_compare = {
-				resource = rare_crystals
-				value >= 50000
-			}
-			resource_stockpile_compare = {
-				resource = sr_zro
-				value >= 10000
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 450
-			}
-		}
-		add_resource = {
-			rare_crystals = -50000
-		}
-		add_resource = {
-			sr_zro = -10000
-		}
-		add_resource = {
-			influence = -450
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					event_target:legendary_lost_leader = {
-						leader_class = scientist
-					}
-				}
-				event_target:legendary_lost_leader = {
-					update_legendary_council_scientist = yes
-					add_trait = {
-						trait = leader_trait_legendary_far_from_home
-						show_message = no
-						consume_selection = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					event_target:legendary_lost_leader = {
-						leader_class = commander
-					}
-				}
-				event_target:legendary_lost_leader = {
-					update_legendary_admiral_commander = yes
-					add_trait = {
-						trait = leader_trait_legendary_far_from_home
-						show_message = no
-						consume_selection = yes
-					}
-				}
-			}
 
-			if = {
-				limit = {
-					event_target:legendary_lost_leader = {
-						leader_class = official
-					}
-				}
-				event_target:legendary_lost_leader = {
-					update_legendary_govern_official = yes
-					add_trait = {
-						trait = leader_trait_legendary_far_from_home
-						show_message = no
-						consume_selection = yes
-					}
-				}
-			}
-			add_relic = r_wormhole_key
-			set_country_flag = Exakeides_shroud_update
-		}
-	}
 	option = {
-		name = NAME_The_Beholder
-		trigger = {
-			exists = event_target:beholder_leader
-			event_target:beholder_leader = {
-				exists = owner
-			}
-			NOT = { has_country_flag = beholder_shroud_update }
+		name = subclass_official_economy_councilor
+		icon = {
+			icon = "gfx/interface/icons/leaders/subclasses/subclass_official_economy_councilor_small.dds"
+			text = subclass_official_economy_councilor_desc
 		}
-		allow = {
-			resource_stockpile_compare = {
-				resource = sr_dark_matter
-				value >= 10000
-			}
-			resource_stockpile_compare = {
-				resource = rare_crystals
-				value >= 50000
-			}
-			resource_stockpile_compare = {
-				resource = sr_zro
-				value >= 10000
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 450
-			}
-		}
-		add_resource = {
-			sr_dark_matter = -10000
-		}
-		add_resource = {
-			rare_crystals = -50000
-		}
-		add_resource = {
-			sr_zro = -10000
-		}
-		add_resource = {
-			influence = -450
+		inline_script = {
+			script = ordinary_legendary_leader_cost
+			AMOUNT_ENERGY = value:get_official_councilor_energy_mult
+			AMOUNT_ZRO = value:get_official_councilor_zro_mult
 		}
 		hidden_effect = {
-			set_country_flag = beholder_shroud_update
-			event_target:beholder_leader ={
-				leader_event = {
-					id = leadershroud.4 
-				}
+			create_ordinary_legendary_leader = {
+				CLASS = official
+				EVENTLEADER = no
+				MANUALLY_CHANGE = yes
+			}
+			last_created_leader = {
+				update_legendary_council_official = yes
+				set_leader_flag = legendary_council_official_mod
+				set_owner = root
+			}
+			change_variable = {
+				which = "leadershroud_council_official_num"
+				value = 1
 			}
 		}
-		add_relic = r_eternal_throne
 	}
-	option = {
-		name = NAME_Skrand_Sharpbeak
-		trigger = {
-			exists = event_target:admiral_sharpbeak
-			event_target:admiral_sharpbeak = {
-				exists = owner
-			}
-			NOT = { has_country_flag = sharpbeak_shroud_update }
-		}
-		allow = {
-			resource_stockpile_compare = {
-				resource = volatile_motes
-				value >= 50000
-			}
-			resource_stockpile_compare = {
-				resource = sr_zro
-				value >= 10000
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 450
-			}
-		}
-		add_resource = {
-			volatile_motes = -50000
-		}
-		add_resource = {
-			sr_zro = -10000
-		}
-		add_resource = {
-			influence = -450
-		}
-		hidden_effect = {
-			event_target:admiral_sharpbeak = {
-				update_legendary_admiral_commander = yes
-			}
 
-			set_country_flag = sharpbeak_shroud_update
-		}
-		if = {
-			limit = { NOT = {allowed_crisis_type = contingency}}
-			add_relic = r_contingency_core
-		}
-	}
 	option = {
-		name = NAME_Gray
-		trigger = {
-			exists = event_target:gray_owner
-			is_same_value = event_target:gray_owner
-			NOT = { has_country_flag = gray_shroud_update }
+		name = subclass_official_governor
+		icon = {
+			icon = "gfx/interface/icons/leaders/subclasses/subclass_official_governor_small.dds"
+			text = subclass_official_governor_desc
 		}
-		allow = {
-			resource_stockpile_compare = {
-				resource = nanites
-				value >= 1000
-			}
-			resource_stockpile_compare = {
-				resource = sr_zro
-				value >= 10000
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 450
-			}
-		}
-		add_resource = {
-			nanites = -1000
-		}
-		add_resource = {
-			sr_zro = -10000
-		}
-		add_resource = {
-			influence = -450
+		inline_script = {
+			script = ordinary_legendary_leader_cost
+			AMOUNT_ENERGY = value:get_official_governor_energy_mult
+			AMOUNT_ZRO = value:get_official_governor_zro_mult
 		}
 		hidden_effect = {
-			if = {
-				limit = {
-					exists = event_target:gray_official
-				}
-				event_target:gray_official = {
-					update_legendary_govern_official = yes
-					add_trait = {
-						trait = leader_trait_governor_gray
-						show_message = no
-						consume_selection = yes
-					}
-				}				
+			create_ordinary_legendary_leader = {
+				CLASS = official
+				EVENTLEADER = yes
+				MANUALLY_CHANGE = yes
 			}
-			set_country_flag = gray_shroud_update
-		}
-		if = {
-			limit = { NOT = {allowed_crisis_type = synth_queen}}
-			add_relic = r_cetanas_heart
+			last_created_leader = {
+				update_legendary_govern_official = yes
+				set_leader_flag = legendary_govern_official_mod
+				set_owner = root
+			}
+			change_variable = {
+				which = "leadershroud_govern_official_num"
+				value = 1
+			}
 		}
 	}
-	
+
 	option = {
-		name = NAME_Formless_leader
-		trigger = {
-			exists = event_target:formless_leader_mod_shrould
-			event_target:formless_leader_mod_shrould = {
-				exists = owner
-			}
-			NOT = { has_country_flag = formless_shroud_update }
+		name = subclass_official_delegate
+		icon = {
+			icon = "gfx/interface/icons/leaders/subclasses/subclass_official_delegate_small.dds"
+			text = subclass_official_delegate_desc
 		}
-		allow = {
-			resource_stockpile_compare = {
-				resource = astral_threads
-				value >= 10000
-			}
-			resource_stockpile_compare = {
-				resource = sr_zro
-				value >= 10000
-			}
-			resource_stockpile_compare = {
-				resource = influence
-				value >= 450
-			}
-		}
-		add_resource = {
-			astral_threads = -10000
-		}
-		add_resource = {
-			sr_zro = -10000
-		}
-		add_resource = {
-			influence = -450
+		inline_script = {
+			script = ordinary_legendary_leader_cost
+			AMOUNT_ENERGY = value:get_official_delegate_energy_mult
+			AMOUNT_ZRO = value:get_official_delegate_zro_mult
 		}
 		hidden_effect = {
-			event_target:formless_leader_mod_shrould = {
-				update_legendary_admiral_commander = yes
-				add_trait = {
-					trait = leader_trait_spacebender
-					consume_selection = yes
-				}
-				add_trait = {
-					trait = leader_trait_energy_weapon_specialist
-					consume_selection = yes
-				}
+			create_ordinary_legendary_leader = {
+				CLASS = official
+				EVENTLEADER = yes
+				MANUALLY_CHANGE = yes
 			}
-			set_country_flag = formless_shroud_update
-		}
-		if = {
-			limit = { NOT = {allowed_crisis_type = unbidden}}
-			add_relic = r_unbidden_warlock
+			last_created_leader = {
+				update_legendary_delegate_official = yes
+				set_leader_flag = legendary_delegate_official_mod
+				set_owner = root
+			}
+			change_variable = {
+				which = "leadershroud_delegate_official_num"
+				value = 1
+			}
 		}
 	}
+
 	option = {
 		name = GOODBYE
 		default_hide_option = yes
@@ -1283,112 +721,116 @@ country_event = {
 	}
 
 	option = {
-		name = leadershroud.300.council_scientist
-		inline_script = ordinary_legendary_leader_cost
-		hidden_effect = {
-			create_ordinary_legendary_leader = {
-				CLASS = scientist
-			}
-			last_created_leader = {
-				update_legendary_council_scientist = yes
-				set_owner = root
-			}
+		name = subclass_commander_councilor
+		icon = {
+			icon = "gfx/interface/icons/leaders/subclasses/subclass_commander_councilor_small.dds"
+			text = subclass_commander_councilor_desc
 		}
-	}
-
-	option = {
-		name = leadershroud.300.govern_scientist
-		inline_script = ordinary_legendary_leader_cost
-		hidden_effect = {
-			create_ordinary_legendary_leader = {
-				CLASS = scientist
-			}
-			last_created_leader = {
-				update_legendary_govern_scientist = yes
-				set_owner = root
-			}
+		inline_script = {
+			script = ordinary_legendary_leader_cost
+			AMOUNT_ENERGY = value:get_commander_councilor_energy_mult
+			AMOUNT_ZRO = value:get_commander_councilor_zro_mult
 		}
-	}
-
-	option = {
-		name = leadershroud.300.council_official
-		inline_script = ordinary_legendary_leader_cost
-		hidden_effect = {
-			create_ordinary_legendary_leader = {
-				CLASS = official
-			}
-			last_created_leader = {
-				update_legendary_council_official = yes
-				set_owner = root
-			}
-		}
-	}
-
-	option = {
-		name = leadershroud.300.govern_official
-		inline_script = ordinary_legendary_leader_cost
-		hidden_effect = {
-			create_ordinary_legendary_leader = {
-				CLASS = official
-			}
-			last_created_leader = {
-				update_legendary_govern_official = yes
-				set_owner = root
-			}
-		}
-	}
-
-	option = {
-		name = leadershroud.300.councilor_commander
-		inline_script = ordinary_legendary_leader_cost
 		hidden_effect = {
 			create_ordinary_legendary_leader = {
 				CLASS = commander
+				EVENTLEADER = no
+				MANUALLY_CHANGE = yes
 			}
 			last_created_leader = {
 				update_legendary_councilor_commander = yes
+				set_leader_flag = legendary_councilor_commander_mod
 				set_owner = root
+			}
+			change_variable = {
+				which = "leadershroud_councilor_commander_num"
+				value = 1
 			}
 		}
 	}
 
 	option = {
-		name = leadershroud.300.admiral_commander
-		inline_script = ordinary_legendary_leader_cost
+		name = subclass_commander_admiral
+		icon = {
+			icon = "gfx/interface/icons/leaders/subclasses/subclass_commander_admiral_small.dds"
+			text = subclass_commander_admiral_desc
+		}
+		inline_script = {
+			script = ordinary_legendary_leader_cost
+			AMOUNT_ENERGY = value:get_commander_admiral_energy_mult
+			AMOUNT_ZRO = value:get_commander_admiral_zro_mult
+		}
 		hidden_effect = {
 			create_ordinary_legendary_leader = {
 				CLASS = commander
+				EVENTLEADER = yes
+				MANUALLY_CHANGE = yes
 			}
 			last_created_leader = {
 				update_legendary_admiral_commander = yes
+				set_leader_flag = legendary_admiral_commander_mod
 				set_owner = root
+			}
+			change_variable = {
+				which = "leadershroud_admiral_commander_num"
+				value = 1
 			}
 		}
 	}
 	option = {
-		name = leadershroud.300.governor_commander
-		inline_script = ordinary_legendary_leader_cost
+		name = subclass_commander_governor
+		icon = {
+			icon = "gfx/interface/icons/leaders/subclasses/subclass_commander_governor_small.dds"
+			text = subclass_commander_governor_desc
+		}
+		inline_script = {
+			script = ordinary_legendary_leader_cost
+			AMOUNT_ENERGY = value:get_commander_governor_energy_mult
+			AMOUNT_ZRO = value:get_commander_governor_zro_mult
+		}
 		hidden_effect = {
 			create_ordinary_legendary_leader = {
 				CLASS = commander
+				EVENTLEADER = yes
+				MANUALLY_CHANGE = yes
 			}
 			last_created_leader = {
 				update_legendary_governor_commander = yes
+				set_leader_flag = legendary_governor_commander_mod
 				set_owner = root
+			}
+			change_variable = {
+				which = "leadershroud_governor_commander_num"
+				value = 1
 			}
 		}
 	}
 	
 	option = {
-		name = leadershroud.300.general_commander
-		inline_script = ordinary_legendary_leader_cost
+		name = subclass_commander_general
+		icon = {
+			icon = "gfx/interface/icons/leaders/subclasses/subclass_commander_general_small.dds"
+			text = subclass_commander_general_desc
+		}
+		inline_script = {
+			script = ordinary_legendary_leader_cost
+			AMOUNT_ENERGY = value:get_commander_general_energy_mult
+			AMOUNT_ZRO = value:get_commander_general_zro_mult
+		}
 		hidden_effect = {
 			create_ordinary_legendary_leader = {
 				CLASS = commander
+				EVENTLEADER = yes
+				MANUALLY_CHANGE = yes
 			}
 			last_created_leader = {
 				update_legendary_general_commander = yes
+				set_leader_flag = legendary_general_commander_mod
 				set_owner = root
+			}
+			change_variable = {
+				which = "leadershroud_general_commander_num"
+				value = 1
 			}
 		}
 	}
@@ -1457,10 +899,6 @@ country_event = {
 				has_leader_flag = leader_shroud_legendary_mod
 				leader_class = scientist
 				has_trait = subclass_scientist_councilor
-				NOT = {
-					has_leader_flag = exakeides ## xenophobe hate alien
-					has_leader_flag = azaryn
-				}
 			}
 			save_event_target_as = chosen_one
 			save_event_target_as = chosen_one_scientist

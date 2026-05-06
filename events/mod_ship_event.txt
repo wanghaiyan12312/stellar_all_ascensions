@@ -1,4 +1,4 @@
-### JUGGERNAUT CONSTRUCTED - BUILDER EVENT
+### QUEEN TITAN CONSTRUCTED - BUILDER EVENT
 namespace = shipeventmod
 ship_event = {
 	id = shipeventmod.1

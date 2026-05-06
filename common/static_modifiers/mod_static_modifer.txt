@@ -34,17 +34,7 @@ cosmo_free_ship_cost_add = {
 	ship_components_add_to_cost_mod_upkeep_mult = 0.2
 }
 
-queen_combat_modifier_mod = {
-	command_limit_add = 1000
-	ship_speed_mult = 0.75
-	ship_hull_regen_add_perc = 0.1
-	country_war_exhaustion_mult = -5
-	damage_vs_country_type_fallen_empire_mult = 2
-	damage_vs_country_type_awakened_fallen_empire_mult = 2
-	damage_vs_country_type_ai_empire_mult = 2
-	damage_vs_country_type_extradimensional_mult = 2
-	damage_vs_country_type_extradimensional_2_mult = 2
-	damage_vs_country_type_extradimensional_3_mult = 2
-	damage_vs_country_type_swarm_mult = 2
-	ship_orbital_bombardment_mult = 5
+shroud_terraforming_effect = {
+	pop_telepath_bonus_workforce_mult = 0.2
+	planet_jobs_upkeep_mult = 0.2
 }

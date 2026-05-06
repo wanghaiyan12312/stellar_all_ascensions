@@ -474,5 +474,385 @@ evolutionary_predators_situation = {
 			mult = 1.25		# Remember to update tr_mutation_nucleotide_isolation_evo_pred_tt if this value changes
 			desc = tr_mutation_nucleotide_isolation
 		}
+		modifier = {
+			mult = 0
+			owner = {
+				any_situation = {
+					is_situation_type = situation_cyberization
+					is_situation_type = situation_cybernetic_creed_cyberization
+				}
+			}
+			desc = "situation_cyberization_ongoing_desc"
+		}
+	}
+}
+
+end_of_the_cycle = {
+	title = situation_end_of_the_cycle
+	desc = situation_end_of_the_cycle_desc
+	picture = GFX_evt_shroud_end_of_the_cycle
+	category = negative
+	complete_icon = GFX_situation_outcome_eotc
+	initial_progress = @end_of_the_cycle_start_value
+
+	on_start = {
+		set_situation_flag = end_of_the_cycle_situation_flag
+	}
+
+	on_progress_complete = {
+		custom_tooltip = situation_end_of_the_cycle_finish_effects
+		hidden_effect = {
+			destroy_situation = this
+			owner = {
+				save_event_target_as = the_reckoning_observer_target
+				begin_event_chain = {
+					event_chain = the_reckoning_chain
+					target = this
+				}
+			}
+			every_playable_country = {
+				limit = {
+					NOT = { is_same_value = root.owner }
+				}
+				if = {
+					limit = {
+						NOR = {
+							has_event_chain = the_reckoning_observer_chain
+							has_event_chain = multiple_reckoning_observer_chain
+						}
+					}
+					begin_event_chain = {
+						event_chain = the_reckoning_observer_chain
+						target = this
+					}
+				}
+				else_if = {
+					limit = {
+						has_event_chain = the_reckoning_observer_chain
+					}
+					end_event_chain = the_reckoning_observer_chain
+					begin_event_chain = {
+						event_chain = multiple_reckoning_observer_chain
+						target = this
+					}
+				}
+			}
+			owner = {
+				country_event = {
+					id = utopia.3320
+				}
+			}
+		}
+	}
+
+	stages = {
+		stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = @end_of_the_cycle_stage_1_end
+			custom_tooltip = situation_end_of_the_cycle_effects_1
+			on_first_enter = {
+				set_situation_flag = end_of_the_cycle_stage_1_started
+				owner = { set_country_flag = unlock_accord_creation }
+			}
+		}
+		stage_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = @end_of_the_cycle_stage_2_end
+			custom_tooltip = situation_end_of_the_cycle_effects_2
+			on_first_enter = {
+				owner = {
+					country_event = { id = shroud.4140 }
+				}
+			}
+		}
+		stage_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = @end_of_the_cycle_stage_3_end
+			custom_tooltip = situation_end_of_the_cycle_effects_3
+			on_first_enter = {
+				owner = {
+					country_event = { id = shroud.4145 }
+				}
+			}
+		}
+		stage_4 = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_red
+			end = @end_of_the_cycle_end_value
+			custom_tooltip = situation_end_of_the_cycle_effects_4
+			on_first_enter = {
+				owner = {
+					country_event = { id = shroud.4150 }
+				}
+			}
+		}
+	}
+
+	approach = {
+		name = approach_situation_end_of_the_cycle_let_it_come
+		icon = GFX_situation_approach_spiral
+		icon_background = GFX_situation_approach_bg_red
+		default = yes
+		on_select = {
+			custom_tooltip = end_of_the_cycle_let_it_come_tooltip
+		}
+		modifier = {
+			psionic_aura_intensity_mult = 1.0
+		}
+	}
+	approach = {
+		name = approach_situation_end_of_the_cycle_be_cautious
+		icon = GFX_situation_approach_suspicious
+		icon_background = GFX_situation_approach_bg_yellow
+		on_select = {
+			set_situation_flag = beneficial_approach
+			custom_tooltip = end_of_the_cycle_be_cautious_tooltip
+		}
+		modifier = {
+			psionic_aura_effectiveness_mult = -0.50
+			psionic_aura_intensity_mult = 0.50
+		}
+		ai_weight = {
+			base = 0
+		}
+	}
+	approach = {
+		name = approach_situation_end_of_the_cycle_wait_not_yet
+		icon = GFX_situation_approach_this_is_fine
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+			custom_tooltip = end_of_the_cycle_wait_not_yet_tooltip
+		}
+		modifier = {
+			psionic_aura_effectiveness_mult = -0.99
+		}
+		ai_weight = {
+			base = 0
+		}
+	}
+
+	triggered_modifier = {
+		potential = {
+			owner = {
+				has_ascension_perk = ap_cosmogenesis
+				has_crisis_level = crisis_cosmogenesis_level_5
+				has_valid_civic = civic_fanatic_purifiers
+			}	
+		}
+		starbase_shipyard_build_cost_mult = -0.1
+	}
+
+	monthly_progress = {
+		base = 1
+		modifier = {
+			desc = string_current_approach
+			current_situation_approach = approach_situation_end_of_the_cycle_be_cautious
+			factor = 0.70
+		}
+		modifier = {
+			desc = string_current_approach
+			current_situation_approach = approach_situation_end_of_the_cycle_wait_not_yet
+			factor = 0.50
+		}
+	}
+
+	on_monthly = {
+		events = {
+			shroud.4946 # Update accords
+			shroud.4954
+		}
+	}
+}
+
+end_of_the_cycle_endbringers = {
+	title = situation_end_of_the_cycle
+	desc = situation_end_of_the_cycle_endbringers_desc
+	picture = GFX_evt_shroud_end_of_the_cycle
+	category = negative
+	complete_icon = GFX_situation_outcome_eotc
+	initial_progress = @end_of_the_cycle_start_value
+
+	on_start = {
+		set_situation_flag = end_of_the_cycle_situation_flag
+	}
+
+	on_progress_complete = {
+		custom_tooltip = situation_end_of_the_cycle_endbringers_finish_effects
+		hidden_effect = {
+			destroy_situation = this
+			owner = {
+				save_event_target_as = the_reckoning_observer_target
+				begin_event_chain = {
+					event_chain = the_reckoning_chain
+					target = this
+				}
+			}
+			every_playable_country = {
+				limit = {
+					NOT = { is_same_value = root.owner }
+				}
+				if = {
+					limit = {
+						NOR = {
+							has_event_chain = the_reckoning_observer_chain
+							has_event_chain = multiple_reckoning_observer_chain
+						}
+					}
+					begin_event_chain = {
+						event_chain = the_reckoning_observer_chain
+						target = this
+					}
+				}
+				else_if = {
+					limit = {
+						has_event_chain = the_reckoning_observer_chain
+					}
+					end_event_chain = the_reckoning_observer_chain
+					begin_event_chain = {
+						event_chain = multiple_reckoning_observer_chain
+						target = this
+					}
+				}
+			}
+			owner = {
+				country_event = {
+					id = shroud.8610
+				}
+			}
+		}
+	}
+
+	stages = {
+		stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = @end_of_the_cycle_stage_1_end
+			custom_tooltip = eotc_opinion_modifier_tooltip
+			custom_tooltip = situation_end_of_the_cycle_effects_1
+			on_first_enter = {
+				set_situation_flag = end_of_the_cycle_stage_1_started
+				owner = {
+					set_country_flag = unlock_accord_creation
+					country_event = {
+						id = shroud.8500
+						days = 30
+					}
+				}
+			}
+		}
+		stage_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = @end_of_the_cycle_stage_2_end
+			custom_tooltip = eotc_opinion_modifier_2_tooltip
+			custom_tooltip = situation_end_of_the_cycle_effects_2
+			on_first_enter = {
+				owner = {
+					set_country_flag = reached_eotc_situation_stage2
+				}
+			}
+		}
+		stage_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = @end_of_the_cycle_stage_3_end
+			custom_tooltip = eotc_opinion_modifier_3_tooltip
+			custom_tooltip = situation_end_of_the_cycle_effects_3
+			on_first_enter = {
+				owner = {
+					set_country_flag = reached_eotc_situation_stage3
+					country_event = { id = shroud.8460 }
+				}
+			}
+		}
+		stage_4 = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_red
+			end = @end_of_the_cycle_end_value
+			custom_tooltip = situation_end_of_the_cycle_effects_4
+			on_first_enter = {
+				owner = {
+					country_event = { id = shroud.8470 }
+				}
+			}
+		}
+	}
+
+	approach = {
+		name = approach_situation_end_of_the_cycle_bring_the_inevitable
+		icon = GFX_situation_approach_spiral
+		icon_background = GFX_situation_approach_bg_red
+		default = yes
+		on_select = {
+			custom_tooltip = end_of_the_cycle_let_it_come_tooltip
+		}
+		modifier = {
+			psionic_aura_intensity_mult = 1.0
+		}
+	}
+	approach = {
+		name = approach_situation_end_of_the_cycle_stall_for_time
+		icon = GFX_situation_approach_suspicious
+		icon_background = GFX_situation_approach_bg_yellow
+		on_select = {
+			set_situation_flag = beneficial_approach
+			custom_tooltip = end_of_the_cycle_be_cautious_tooltip
+		}
+		modifier = {
+			psionic_aura_effectiveness_mult = -0.50
+			psionic_aura_intensity_mult = 0.50
+		}
+		ai_weight = {
+			base = 0
+		}
+	}
+	approach = {
+		name = approach_situation_end_of_the_cycle_delay_your_destiny
+		icon = GFX_situation_approach_this_is_fine
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+			custom_tooltip = end_of_the_cycle_wait_not_yet_tooltip
+		}
+		modifier = {
+			psionic_aura_effectiveness_mult = -0.99
+		}
+		ai_weight = {
+			base = 0
+		}
+	}
+
+	triggered_modifier = {
+		potential = {
+			owner = {
+				has_ascension_perk = ap_cosmogenesis
+				has_crisis_level = crisis_cosmogenesis_level_5
+				has_valid_civic = civic_fanatic_purifiers
+			}
+		}
+		starbase_shipyard_build_cost_mult = -0.1
+	}
+
+	monthly_progress = {
+		base = 1
+		modifier = {
+			desc = string_current_approach
+			current_situation_approach = approach_situation_end_of_the_cycle_stall_for_time
+			factor = 0.70
+		}
+		modifier = {
+			desc = string_current_approach
+			current_situation_approach = approach_situation_end_of_the_cycle_delay_your_destiny
+			factor = 0.50
+		}
+	}
+
+	on_monthly = {
+		events = {
+			shroud.4946 # Update accords
+			shroud.4954
+		}
 	}
 }

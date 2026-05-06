@@ -139,12 +139,14 @@ country_event = {
 		if = {
 			limit = {
 				count_country = {
-					count > 1
+					count > 0
 					limit = {
 						is_fallen_empire = yes
 						is_machine_empire = no
+						is_hive_empire = no
 					}
-				}				
+				}
+				is_hive_empire = yes				
 				has_country_flag = fallen_empire_hive_war
 			}
 			# others fe hive not suitable for Federation
@@ -274,7 +276,7 @@ country_event = {
 	}
 }
 
-## cosmogenesis_level_4 or higher attach fallen_empires than fe awake
+## cosmogenesis_level_4 or higher attack fallen_empires than fe awake
 country_event = {
 	id = fallen_empires_mod.5
 	title = OK
@@ -288,9 +290,7 @@ country_event = {
 			# Fire only for the attacker
 			any_attacker = { is_same_value = root }
 			any_defender = {
-				OR = {
-					is_country_type = fallen_empire
-				}
+				is_country_type = fallen_empire
 				is_machine_empire = no
 			}
 		}
@@ -538,6 +538,31 @@ country_event = {
 		add_modifier = { 
 			modifier = ship_damage_mult
 			multiplier = value:get_crisis_strength			
+		}
+	}
+}
+
+planet_event = { 
+	id = fallen_empires_mod.12
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		From = {
+			is_country_type = fallen_empire
+			is_machine_empire = no
+		}
+	}
+	immediate = {
+		From = {
+			country_event = {
+				id = fallen_empires_mod.3
+				days = 10
+			}
+			country_event = {
+				id = fallen_empires_mod.6
+				days = 180
+			}
 		}
 	}
 }

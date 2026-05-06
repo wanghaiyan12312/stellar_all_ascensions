@@ -1,0 +1,42 @@
+## base
+@free_discount_ratio = 0.1
+@common_max_enegy = 100
+@common_max_zro = 25
+@common_discount_ratio_zro = 0.25
+@councilor_max_num = 12
+@councilor_discount_num = 6
+@governor_max_num = 50
+@governor_discount_num = 3
+@governor_add_discount_ratio = 0.5
+## councilor
+@councilor_scientist_free_num = 1
+@councilor_official_free_num = 1
+@councilor_official_add_discount_ratio = 0.8
+@councilor_official_max_enegy = 80
+@councilor_official_max_zro = 20
+@councilor_commander_free_num = 1
+## govern
+@govern_scientist_free_num = 1
+@govern_official_free_num = 1
+@govern_commander_free_num = 1
+## military
+@commander_admiral_free_num = 1
+@commander_admiral_max_num = 12
+@commander_admiral_price_up = 1.2
+@commander_admiral_max_enegy = 120
+@commander_admiral_max_zro = 30
+@commander_general_free_num = 1
+@commander_general_max_num = 5
+@commander_general_discount_ratio = 0.4
+@free_discount_ratio_max_enegy = 40
+@commander_general_max_zro = 10
+
+## other
+@scholar_scientist_free_num = 1
+@scholar_add_discount_ratio = 0.1
+@scholar_max_enegy = 10
+@scholar_max_zro = 2.5
+@delegate_official_free_num = 1
+@delegate_add_discount_ratio = 0.2
+@delegate_official_max_enegy = 20
+@delegate_official_max_zro = 2

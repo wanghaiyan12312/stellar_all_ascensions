@@ -1,0 +1,45 @@
+defined_text = {
+	name = GetArchaeoengineersEffectSmallArmor_$TIRE$
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_ARCHAEO_ARMOR_$TIRE$
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumArmor_$TIRE$
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_ARCHAEO_ARMOR_$TIRE$
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeArmor_$TIRE$
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = BLANK_STRING
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_ARCHAEO_ARMOR_$TIRE$
+	}
+}

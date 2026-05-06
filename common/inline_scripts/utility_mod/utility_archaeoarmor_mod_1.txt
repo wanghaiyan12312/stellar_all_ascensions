@@ -1,0 +1,15 @@
+inline_script = {
+	script = utility_mod/utility_archaeoarmor_mod_2
+    SIZE = $SIZE$
+    SIZE_SHORT = $SIZE_SHORT$
+    TIER = $TIER$
+    ARCHAEOARMOR_SHIELD_ADD = @archaeo_shield_$SIZE_SHORT$$TIER$
+    ARCHAEOARMOR_SHIELD_BUFF_ADD = @archaeo_shield_$SIZE_SHORT$$TIER$_buff
+    ARCHAEOARMOR_SHIELD_REGEN_ADD = @archaeo_shield_regen_$SIZE_SHORT$$TIER$
+    ARCHAEOARMOR_ARMOR_ADD = @archaeo_armor_$SIZE_SHORT$$TIER$
+    ARCHAEOARMOR_HARDENING = @shield_hardening_T$TIER$_mod
+    ARCHAEOARMOR_COST_ALLOYS = @archaeo_alloys_cost_$SIZE_SHORT$$TIER$
+    ARCHAEOARMOR_COST_MINOR_ARTIFACTS = $ARCHAEOARMOR_COST_MINOR_ARTIFACTS$
+    ARCHAEOARMOR_UPKEEP_ALLOYS = @archaeo_alloys_upkeep_$SIZE_SHORT$$TIER$
+    ARCHAEOARMOR_UPKEEP_ENERGY = @archaeo_energy_upkeep_$SIZE_SHORT$$TIER$
+}

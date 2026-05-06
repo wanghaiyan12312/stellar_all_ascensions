@@ -27,3 +27,27 @@ message_type = {
 
 	category = planets
 }
+
+message_type = {
+	key = "MESSAGE_SHROUD_TERRAFORM_STARTED"
+	icon = "GFX_message_terraform_started"
+	icon_frame = 1
+
+	name = "MESSAGE_SHROUD_TERRAFORM_STARTED_TITLE"
+	sound = "notification"
+	ping = "ping_notification_green"
+
+	category = other
+}
+
+message_type = {
+	key = "MESSAGE_SHROUD_TERRAFORM_CANCELED"
+	icon = "GFX_message_terraform_canceled"
+	icon_frame = 1
+
+	name = "MESSAGE_SHROUD_TERRAFORM_CANCELED_TITLE"
+	sound = "notification"
+	ping = "ping_notification_red"
+
+	category = other
+}

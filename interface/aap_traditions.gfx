@@ -235,6 +235,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_tech_archaeoarmor"
+		texturefile = "gfx/interface/icons/technologies/tech_archaeoarmor.dds"
+	}
+
+	spriteType = {
 		name = "GFX_tech_icon_engineering_research"
 		texturefile = "gfx/interface/icons/resources/engineering_research.dds"
 	}

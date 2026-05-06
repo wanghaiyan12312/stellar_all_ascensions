@@ -1,0 +1,10 @@
+ship_section_template = {
+	key = "SHROUD_SCIENCE_SECTION_MOD"
+	ship_size = shroud_science
+	fits_on_slot = "ship"
+	entity = "shroud_creature_01_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	large_utility_slots = 10
+	aux_utility_slots = 3
+}

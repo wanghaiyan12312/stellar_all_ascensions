@@ -1,0 +1,11 @@
+on_shroud_sciensce_target_planet_reached = {
+    events = {
+		leadershroud.2
+	}
+}
+
+on_shroud_sciensce_action_cancel = {
+    events = {
+		leadershroud.5
+	}
+}

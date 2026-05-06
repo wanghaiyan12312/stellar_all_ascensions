@@ -1,1 +1,0 @@
-custom_tooltip = tr_genetic_stage_1_swap_tt
