@@ -111,6 +111,22 @@
  EMBER_BATTLESHIP_STERN_L1_MOD: "$BATTLESHIP_STERN_L1$"
  EMBER_BATTLESHIP_STERN_M2_MOD: "$BATTLESHIP_STERN_M2$"
 
+ crisis_mauler_mod:"$mauler_class$"
+ crisis_mauler_mod_plural:"$mauler_class$"
+ SHIP_GRAPHICS_WEAVER_STAGE_1_DESC:"$SHIP_GRAPHICS_MAULER_STAGE_1_DESC$"
+ crisis_harbinger_mod:"$harbinger_class_cap$"
+ crisis_harbinger_mod_plural:"$harbinger_class_cap$"
+ SHIP_GRAPHICS_CRISIS_HARBINGER_MOD_DESC:"$harbinger_class_plural_cap$ are specialized biological torpedoes. They swarm the battlefield with plagues of torpedoes." 
+ crisis_stinger_mod:"$stinger_class$"
+ crisis_stinger_mod_plural:"$stinger_class$"
+ SHIP_GRAPHICS_CRISIS_STINGER_MOD_DESC:"$SHIP_GRAPHICS_STINGER_STAGE_1_DESC$"
+
+ CRISIS_MAULER_MOD_SWARM:"$crisis_mauler_mod$ (Swarm)"
+ CRISIS_MAULER_MOD_PICKET:"$crisis_mauler_mod$ (Picket)"
+ CRISIS_HARBINGER_MOD_TORPEDOE:"$crisis_harbinger_mod$ (Torpedoe)"
+ CRISIS_STINGER_MOD_LINE:"$crisis_stinger_mod$ (Line)"
+ CRISIS_STINGER_MOD_ARTILLERY:"$crisis_stinger_mod$ (Artillery)"
+
  small_ship_synth_queen_mod:"$small_ship_synth_queen$"
  small_ship_synth_queen_mod_cap:"$small_ship_synth_queen$"
  small_ship_synth_queen_mod_plural:"$small_ship_synth_queen$"

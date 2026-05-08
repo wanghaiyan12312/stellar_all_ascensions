@@ -1,0 +1,46 @@
+
+is_ship_app_bio_mod = {
+    OR = {
+        is_ship_size = cosmo_crisis_mauler
+        is_ship_size = cosmo_crisis_mauler
+        is_ship_size = cosmo_crisis_weaver
+        is_ship_size = cosmo_crisis_harbinger
+        is_ship_size = cosmo_crisis_stinger
+    }
+}
+
+ship_uses_mauler_components = {
+    OR = {
+		is_ship_size = mauler_stage_1
+		is_ship_size = mauler_stage_2
+		is_ship_size = mauler_stage_3
+		is_ship_size = large_fallen_mauler
+		is_ship_size = cosmo_crisis_mauler
+		is_ship_size = offspring_mauler_stage_1
+		is_ship_size = offspring_mauler_stage_2
+		is_ship_size = offspring_mauler_stage_3
+        is_ship_size = corvette
+	}
+}
+
+country_uses_bio_ships = {
+    OR = {
+        AND = {
+            exists = this
+	        NOT = { uses_ship_category = bio_ship }
+            exists = prev
+            prev = {
+                OR = {
+                    is_scope_type = ship_growth_stage
+				    is_scope_type = ship
+				    #is_scope_type = fleet
+                }
+                is_ship_app_bio_mod = yes  
+            }
+        }
+        AND = {
+            exists = this
+	        uses_ship_category = bio_ship
+        }
+    }
+}

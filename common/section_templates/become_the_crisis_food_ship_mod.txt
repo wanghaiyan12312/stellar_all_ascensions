@@ -1,0 +1,320 @@
+ship_section_template = {
+	key = "CRISIS_MAULER_MOD_SWARM"
+	ship_size = crisis_mauler_mod
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+    entity = "biogenesis_01_mauler_stage_2_entity"
+
+	ai_tags = {
+		brawler
+		brawler_stealth
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "root"
+	}
+
+	small_utility_slots = 3
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = @mauler_stage_3_section_cost
+			mult = @alloy_to_food_cost_ratio
+		}
+	}
+}
+
+ship_section_template = {
+	key = "CRISIS_MAULER_MOD_PICKET"
+	ship_size = crisis_mauler_mod
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "biogenesis_01_mauler_stage_2_entity"
+
+	ai_tags = {
+		screen
+		screen_stealth
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_point_defence_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "root"
+	}
+
+	small_utility_slots = 3
+	aux_utility_slots = 2
+}
+
+ship_section_template = {
+	key = "CRISIS_HARBINGER_MOD_TORPEDOE"
+	ship_size = crisis_harbinger_mod
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "biogenesis_01_harbinger_stage_2_entity"
+
+	ai_tags = {
+		energy_torpedoes
+		artillery
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_04"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_02"
+	}
+
+    component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "weapon_02"
+	}
+
+	medium_utility_slots = 3
+	aux_utility_slots = 2
+
+}
+
+ship_section_template = {
+	key = "CRISIS_STINGER_MOD_LINE"
+	ship_size = crisis_stinger_mod
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "stinger_stage_3_ship_entity"
+
+	ai_tags = {
+		gunship
+		gunship_stealth
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "invisible_large_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "invisible_large_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "invisible_large_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "invisible_large_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "invisible_large_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "invisible_large_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_10"
+		template = "invisible_large_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_11"
+		template = "invisible_large_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_12"
+		template = "invisible_large_turret"
+		locatorname = "weapon_02"
+	}
+
+	large_utility_slots = 9
+	aux_utility_slots = 3
+
+}
+
+ship_section_template = {
+	key = "CRISIS_STINGER_MOD_ARTILLERY"
+	ship_size = crisis_stinger_mod
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "stinger_stage_3_ship_entity"
+
+	ai_tags = {
+		artillery
+		artillery_stealth
+	}
+
+	ai_weight = {
+		weight = 20
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_02"
+		template = "invisible_extra_large_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_03"
+		template = "invisible_extra_large_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_04"
+		template = "invisible_extra_large_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "weapon_01"
+	}
+
+
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "invisible_large_turret"
+		locatorname = "weapon_02"
+	}
+
+	large_utility_slots = 9
+	aux_utility_slots = 3
+
+}

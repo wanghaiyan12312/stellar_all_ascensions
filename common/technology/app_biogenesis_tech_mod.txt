@@ -1,0 +1,1457 @@
+
+
+###################
+# SHIP COMPONENTS #
+###################
+
+# Mandibles
+tech_mandibles_2 = {
+	area = engineering
+	cost = @tier3cost2
+	weight = @tier3weight2
+	tier = 3
+	category = { materials }
+	ai_update_type = military
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_rare_crystals
+				has_technology = tech_rare_crystals
+				has_country_flag = has_market_access
+			}
+		}
+
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+tech_mandibles_3 = {
+	area = engineering
+	cost = @tier4cost2
+	weight = @tier4weight2
+	tier = 4
+	category = { materials }
+	ai_update_type = military
+	prerequisites = { tech_mandibles_2 }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+# Weaver Buffing Components
+
+tech_weaver_bio_healing_1 = {
+	tier = 1
+	cost = @tier1cost1
+	weight = @tier1weight1
+	area = society
+	category = { biology }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_healing_2 = {
+	tier = 2
+	cost = @tier2cost1
+	weight = @tier2weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_healing_1" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_healing_3 = {
+	tier = 3
+	cost = @tier3cost1
+	weight = @tier3weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_healing_2" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_healing_4 = {
+	tier = 4
+	cost = @tier4cost1
+	weight = @tier4weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_healing_3" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_exotic_gases
+				has_technology = tech_exotic_gases
+				has_country_flag = has_market_access
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_healing_5 = {
+	tier = 5
+	cost = @tier5cost1
+	weight = @tier5weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_healing_4" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_exotic_gases
+				has_technology = tech_exotic_gases
+				has_country_flag = has_market_access
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_healing_6 = {
+	area = society
+	cost = @fallentechcost
+	tier = @fallentechtier
+	category = { biology }
+	ai_update_type = all
+	weight = @tier5weight3
+	is_rare = yes
+	prerequisites = { "tech_weaver_bio_healing_5" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+
+tech_weaver_bio_evasion_2 = {
+	tier = 2
+	cost = @tier2cost1
+	weight = @tier2weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_evasion_1" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_evasion_3 = {
+	tier = 3
+	cost = @tier3cost1
+	weight = @tier3weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_evasion_2" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+	
+
+	weight_modifier = {
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_evasion_4 = {
+	tier = 4
+	cost = @tier4cost1
+	weight = @tier4weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_evasion_3" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_rare_crystals
+				has_technology = tech_rare_crystals
+				has_country_flag = has_market_access
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_evasion_5 = {
+	tier = 5
+	cost = @tier5cost1
+	weight = @tier5weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_evasion_4" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_rare_crystals
+				has_technology = tech_rare_crystals
+				has_country_flag = has_market_access
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_evasion_6 = {
+	area = society
+	cost = @fallentechcost
+	tier = @fallentechtier
+	category = { biology }
+	ai_update_type = all
+	weight = @tier5weight3
+	is_rare = yes
+	prerequisites = { "tech_weaver_bio_evasion_5" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_fire_rate_1 = {
+	tier = 1
+	cost = @tier1cost1
+	weight = @tier1weight1
+	area = society
+	category = { biology }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_fire_rate_2 = {
+	tier = 2
+	cost = @tier2cost1
+	weight = @tier2weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_fire_rate_1" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_fire_rate_3 = {
+	tier = 3
+	cost = @tier3cost1
+	weight = @tier3weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_fire_rate_2" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_fire_rate_4 = {
+	tier = 4
+	cost = @tier4cost1
+	weight = @tier4weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_fire_rate_3" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_volatile_motes
+				has_technology = tech_volatile_motes
+				has_country_flag = has_market_access
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_fire_rate_5 = {
+	tier = 5
+	cost = @tier5cost1
+	weight = @tier5weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_fire_rate_4" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_volatile_motes
+				has_technology = tech_volatile_motes
+				has_country_flag = has_market_access
+			}
+		}
+	}
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_fire_rate_6 = {
+	area = society
+	cost = @fallentechcost
+	tier = @fallentechtier
+	category = { biology }
+	ai_update_type = all
+	weight = @tier5weight3
+	is_rare = yes
+	prerequisites = { "tech_weaver_bio_fire_rate_5" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+# Weaver Debuffing Components
+
+tech_weaver_bio_confuser_1 = {
+	tier = 1
+	cost = @tier1cost1
+	weight = @tier1weight1
+	area = society
+	category = { biology }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_confuser_2 = {
+	tier = 2
+	cost = @tier2cost1
+	weight = @tier2weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_confuser_1" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_confuser_3 = {
+	tier = 3
+	cost = @tier3cost1
+	weight = @tier3weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_confuser_2" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_confuser_4 = {
+	tier = 4
+	cost = @tier4cost1
+	weight = @tier4weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_confuser_3" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_volatile_motes
+				has_technology = tech_volatile_motes
+				has_country_flag = has_market_access
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_confuser_5 = {
+	tier = 5
+	cost = @tier5cost1
+	weight = @tier5weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_confuser_4" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_volatile_motes
+				has_technology = tech_volatile_motes
+				has_country_flag = has_market_access
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_confuser_6 = {
+	area = society
+	cost = @fallentechcost
+	tier = @fallentechtier
+	category = { biology }
+	ai_update_type = all
+	weight = @tier5weight3
+	is_rare = yes
+	prerequisites = { "tech_weaver_bio_confuser_5" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+
+tech_weaver_bio_anti_evasion_2 = {
+	tier = 2
+	cost = @tier2cost1
+	weight = @tier2weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_anti_evasion_1" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_anti_evasion_3 = {
+	tier = 3
+	cost = @tier3cost1
+	weight = @tier3weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_anti_evasion_2" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_anti_evasion_4 = {
+	tier = 4
+	cost = @tier4cost1
+	weight = @tier4weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_anti_evasion_3" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_rare_crystals
+				has_technology = tech_rare_crystals
+				has_country_flag = has_market_access
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_anti_evasion_5 = {
+	tier = 5
+	cost = @tier5cost1
+	weight = @tier5weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_anti_evasion_4" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_rare_crystals
+				has_technology = tech_rare_crystals
+				has_country_flag = has_market_access
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_anti_evasion_6 = {
+	area = society
+	cost = @fallentechcost
+	tier = @fallentechtier
+	category = { biology }
+	ai_update_type = all
+	weight = @tier5weight3
+	is_rare = yes
+	prerequisites = { "tech_weaver_bio_anti_evasion_5" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_anti_fire_rate_1 = {
+	tier = 1
+	cost = @tier1cost1
+	weight = @tier1weight1
+	area = society
+	category = { biology }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_anti_fire_rate_2 = {
+	tier = 2
+	cost = @tier2cost1
+	weight = @tier2weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_anti_fire_rate_1" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_anti_fire_rate_3 = {
+	tier = 3
+	cost = @tier3cost1
+	weight = @tier3weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_anti_fire_rate_2" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_anti_fire_rate_4 = {
+	tier = 4
+	cost = @tier4cost1
+	weight = @tier4weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_anti_fire_rate_3" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_volatile_motes
+				has_technology = tech_volatile_motes
+				has_country_flag = has_market_access
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_anti_fire_rate_5 = {
+	tier = 5
+	cost = @tier5cost1
+	weight = @tier5weight1
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_bio_anti_fire_rate_4" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_volatile_motes
+				has_technology = tech_volatile_motes
+				has_country_flag = has_market_access
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
+tech_weaver_bio_anti_fire_rate_6 = {
+	area = society
+	cost = @fallentechcost
+	tier = @fallentechtier
+	category = { biology }
+	ai_update_type = all
+	weight = @tier5weight3
+	is_rare = yes
+	prerequisites = { "tech_weaver_bio_anti_fire_rate_5" }
+
+	potential = {
+		OR = {
+			has_ascension_perk = ap_cosmogenesis
+			country_uses_bio_ships = yes
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = @favored_weapon_ai_tech_factor
+        modifier = {
+            factor = 1.5
+            has_valid_ai_personality = yes
+            OR = {
+                has_ai_personality = honorbound_warriors
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = democratic_crusaders
+                has_ai_personality = hive_mind
+                has_ai_personality = hive_mind_friend
+                has_ai_personality = benevolent_wilderness
+                has_ai_personality = rampant_wilderness
+            }
+        }
+	}
+}
+
