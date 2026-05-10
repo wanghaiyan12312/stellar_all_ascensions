@@ -37,7 +37,7 @@ crisis_mauler_mod = {
 	ship_roles = { brawler screen }
 
 	potential_country = {
-		has_nemesis = yes
+		has_biogenesis_dlc = yes
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_2
 		country_uses_bio_ships = no
@@ -132,7 +132,7 @@ crisis_harbinger_mod = {
 	ship_roles = { artillery explosive }
 
 	potential_country = {
-		has_nemesis = yes
+		has_biogenesis_dlc = yes
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_3
 		country_uses_bio_ships = no
@@ -236,7 +236,7 @@ crisis_stinger_mod = {
 	ship_roles = { artillery gunship }
 
 	potential_country = {
-		has_nemesis = yes
+		has_biogenesis_dlc = yes
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_4
 		country_uses_bio_ships = no
@@ -281,6 +281,95 @@ crisis_stinger_mod = {
 		}
 	}
 
+
+	ai_ship_data = {
+		min = 0
+		max = 0
+	}
+}
+
+#Adult Behemoth - Ascended
+behemoth_mod = {
+	graphical_culture = no
+	entity = "kaiju_01_adult_entity"
+	hull_scale = 1.75
+	max_speed = @speed_default
+	acceleration = 0.2
+	rotation_speed = 0.1
+	collision_radius = 7
+	modifier = {
+		ship_evasion_add = 35
+		ship_armor_add = 500000
+		ship_armor_mult = 2
+		ship_shield_mult = 2
+		ship_hull_regen_add_perc = 0.25
+	}
+	ship_modifier = {
+		ship_windup_mult = 0.5
+		ship_disengage_chance_mult = -5
+		ship_weapon_damage = 4
+		ship_fire_rate_mult = 3
+		damage_vs_country_type_behemoth_hatchling_mult = 5
+	}
+	max_hitpoints = 1000000
+	size_multiplier = 200
+	map_counter_icon = ship_counter_128
+	icon = ship_size_behemoth
+	fleet_slot_size = 8
+	section_slots = { "mid" = { locator = "root" } }
+	num_target_locators = 0
+	base_buildtime = 7200
+	can_have_federation_design = no
+	components_add_to_cost = yes
+	is_space_station = no
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	on_click_sound = "ui_kaiju_select_fleet"
+	ship_class_icon_frame = 58
+
+	potential_country = {
+		has_biogenesis_dlc = yes
+		country_uses_bio_ships = yes
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5 
+		is_country_type = default
+		is_ai = no
+	}
+
+	potential_construction = {
+		AND = {
+			is_scope_type = megastructure
+			OR = {
+				is_megastructure_type = mega_shipyard_3
+				is_megastructure_type = mega_shipyard_restored
+			}
+		}
+	}
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	is_designable = yes
+
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		cost = {
+			alloys = 400000 # higly price require
+			food = 400000
+		}
+		upkeep = {
+			food = 1000
+			alloys = 100
+		}
+		logistics = {
+			trade = @colossus_logistic_upkeep_trade
+		}
+	}
 
 	ai_ship_data = {
 		min = 0

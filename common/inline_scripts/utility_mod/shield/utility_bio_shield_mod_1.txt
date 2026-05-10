@@ -1,0 +1,13 @@
+inline_script = {
+	script = utility_mod/shield/utility_shield_mod_2
+    SIZE = $SIZE$
+	SIZE_SHORT = $SIZE_SHORT$
+    TIER = $TIER$
+    SHIELD_ADD = @app_bio_shield_$SIZE_SHORT$$TIER$
+    SHIELD_REGEN = @app_bio_shield_regen_$SIZE_SHORT$$TIER$
+    SHIELD_COST_ALLOYS = @shield_mod_$SIZE_SHORT$$TIER$_alloys_cost
+    SHIELD_COST_ZRO = @shield_mod_$SIZE_SHORT$$TIER$_zro_cost
+    SHIELD_UPKEEP_ENERGY = @shield_$SIZE_SHORT$$TIER$_energy_upkeep_mod
+    SHIELD_UPKEEP_ALLOYS = @shield_$SIZE_SHORT$$TIER$_alloys_upkeep_mod
+    SHIELD_HARD = @hardening_mod_$TIER$
+}

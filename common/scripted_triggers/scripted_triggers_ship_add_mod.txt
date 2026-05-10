@@ -35,6 +35,7 @@ ship_uses_corvette_components = {
 
         # mod
         is_ship_size = crisis_corvette_mod
+		is_ship_size = crisis_mauler_mod
 	}
 }
 
@@ -91,6 +92,7 @@ ship_uses_cruiser_components = {
         is_ship_size = medium_ship_ed_mod
         is_ship_size = ember_cruiser_mod
 		is_ship_size = small_ship_synth_queen_mod
+		is_ship_size = crisis_harbinger_mod
 	}
 }
 
@@ -119,6 +121,7 @@ ship_uses_battleship_components = {
 		is_ship_size = galleon_mod
         is_ship_size = ember_battleship_mod
         is_ship_size = large_ship_ed_mod
+		is_ship_size = crisis_stinger_mod
 	}
 }
 
@@ -164,6 +167,9 @@ ship_uses_line_role = {
 		is_ship_size = small_ship_synth_queen_mod
 		is_ship_size = large_ship_synth_queen_mod
 		is_ship_size = npc_warship_01_mod
+		is_ship_size = crisis_mauler_mod
+        is_ship_size = crisis_harbinger_mod
+        is_ship_size = crisis_stinger_mod
 	}
 }
 
@@ -223,10 +229,14 @@ ship_uses_artillery_role = {
         is_ship_size = ember_cruiser_mod
         is_ship_size = ember_battleship_mod
 		is_ship_size = npc_warship_01_mod
-		is_ship_size = synth_queen_titan_mod
 		is_ship_size = small_ship_synth_queen_mod
 		is_ship_size = large_ship_synth_queen_mod
+		is_ship_size = crisis_mauler_mod
+        is_ship_size = crisis_harbinger_mod
+        is_ship_size = crisis_stinger_mod
 		is_ship_size = cosmo_crisis_titan_mod
+		is_ship_size = synth_queen_titan_mod
+		is_ship_size = behemoth_mod
 	}
 }
 
@@ -260,9 +270,9 @@ ship_uses_carrier_role = {
 		is_ship_size = offspring_harbinger_stage_3
 
 		# MOD
-		is_ship_size = npc_warship_01_mod
-		is_ship_size = synth_queen_titan_mod
 		is_ship_size = large_ship_synth_queen_mod
+		is_ship_size = npc_warship_01_mod
+		is_ship_size = synth_queen_titan_mod	
 	}
 }
 
@@ -303,6 +313,7 @@ ship_uses_picket_role = {
         is_ship_size = crisis_cruiser_mod
         is_ship_size = small_ship_ed_mod
         is_ship_size = ember_cruiser_mod
+		is_ship_size = crisis_mauler_mod
 	}
 }
 
@@ -328,6 +339,7 @@ ship_uses_torpedo_role = {
         # mod
         is_ship_size = crisis_destroyer_mod
         is_ship_size = ember_cruiser_mod
+        is_ship_size = crisis_harbinger_mod
 	}
 }
 
@@ -365,6 +377,7 @@ ship_uses_corvette_reactors = {
 
         # mod
         is_ship_size = crisis_corvette_mod
+		is_ship_size = crisis_mauler_mod
 	}
 }
 
@@ -421,6 +434,7 @@ ship_uses_cruiser_reactors = {
         is_ship_size = ember_cruiser_mod
         is_ship_size = medium_ship_ed_mod
         is_ship_size = crisis_cruiser_mod
+		is_ship_size = crisis_harbinger_mod
 	}
 }
 
@@ -450,6 +464,7 @@ ship_uses_battleship_reactors = {
 		is_ship_size = galleon_mod
         is_ship_size = large_ship_ed_mod
         is_ship_size = ember_battleship_mod
+		is_ship_size = crisis_stinger_mod
 	}
 }
 
@@ -494,6 +509,7 @@ ship_uses_corvette_cloaks = {
 
         # mod
         is_ship_size = crisis_corvette_mod
+		is_ship_size = crisis_mauler_mod
 	}
 }
 
@@ -520,6 +536,37 @@ ship_uses_destroyer_cloaks = {
         # mod
         is_ship_size = crisis_destroyer_mod
         is_ship_size = small_ship_ed_mod
+	}
+}
+
+ship_uses_battleship_thrusters = {
+	OR = {
+		# Regular Ships
+		is_ship_size = battleship
+		# Offspring Ships
+		is_ship_size = offspring_battleship
+		# Cosmogenesis Ships
+		is_ship_size = cosmo_crisis_battlecruiser
+		# Biological Ships
+		is_ship_size = stinger_stage_1
+		is_ship_size = stinger_stage_2
+		is_ship_size = stinger_stage_3
+		# Biological Offspring Ships
+		is_ship_size = offspring_stinger_stage_1
+		is_ship_size = offspring_stinger_stage_2
+		is_ship_size = offspring_stinger_stage_3
+
+		# mod
+		is_ship_size = galleon_mod
+		is_ship_size = large_ship_ed_mod
+        is_ship_size = ember_battleship_mod
+		is_ship_size = large_ship_synth_queen_mod
+		is_ship_size = npc_warship_01_mod
+		is_ship_size = cosmo_crisis_titan_mod
+		is_ship_size = crisis_stinger_mod
+		is_ship_size = synth_queen_titan
+		is_ship_size = synth_queen_titan_mod
+		is_ship_size = behemoth_mod
 	}
 }
 
@@ -553,6 +600,7 @@ ship_uses_cruiser_cloaks = {
         is_ship_size = ember_cruiser_mod
         is_ship_size = medium_ship_ed_mod
         is_ship_size = small_ship_synth_queen_mod
+		is_ship_size = crisis_harbinger_mod
 	}
 }
 
@@ -587,5 +635,38 @@ ship_uses_battleship_cloaks = {
         is_ship_size = large_ship_ed_mod
         is_ship_size = ember_battleship_mod
         is_ship_size = large_ship_synth_queen_mod
+		is_ship_size = crisis_stinger_mod
+		is_ship_size = synth_queen_titan
+		is_ship_size = synth_queen_titan_mod
+		is_ship_size = behemoth_mod
+	}
+}
+
+has_non_psionic_shields = {
+	OR = {
+		has_component = SMALL_SHIELD_1
+		has_component = MEDIUM_SHIELD_1
+		has_component = LARGE_SHIELD_1
+		has_component = SMALL_SHIELD_2
+		has_component = MEDIUM_SHIELD_2
+		has_component = LARGE_SHIELD_2
+		has_component = MEDIUM_SHIELD_3
+		has_component = LARGE_SHIELD_3
+		has_component = SMALL_SHIELD_3
+		has_component = MEDIUM_SHIELD_4
+		has_component = LARGE_SHIELD_4
+		has_component = SMALL_SHIELD_4
+		has_component = MEDIUM_SHIELD_5
+		has_component = LARGE_SHIELD_5
+		has_component = SMALL_SHIELD_5
+		has_component = SMALL_DARK_MATTER_DEFLECTOR
+		has_component = MEDIUM_DARK_MATTER_DEFLECTOR
+		has_component = LARGE_DARK_MATTER_DEFLECTOR
+		has_component = SMALL_ARCHAEO_SHIELD
+		has_component = MEDIUM_ARCHAEO_SHIELD
+		has_component = LARGE_ARCHAEO_SHIELD
+		has_component = SMALL_ARCHAEO_ARMOR
+		has_component = MEDIUM_ARCHAEO_ARMOR
+		has_component = LARGE_ARCHAEO_ARMOR
 	}
 }

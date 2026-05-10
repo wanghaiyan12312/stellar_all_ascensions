@@ -1,0 +1,968 @@
+# Dragonscale Armor 2
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_3"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 2
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_3"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 2
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_3"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 2
+    }
+}
+
+# Dragonscale Armor 3
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_4"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 3
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_4"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 3
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_4"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 3
+    }
+}
+
+# Dragonscale Armor 4
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_5"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 4
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_5"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 4
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_5"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 4
+    }
+}
+
+# Dragonscale Armor 5
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_6"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 5
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_6"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 5
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_6"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 5
+    }
+}
+
+# Dragonscale Armor 6
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_7"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 6
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_7"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 6
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_7"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 6
+    }
+}
+
+# Dragonscale Armor 7
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_8"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 7
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_8"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 7
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_8"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 7
+    }
+}
+
+# Dragonscale Armor 8
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_9"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 8
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_9"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 8
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_9"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 8
+    }
+}
+
+# Dragonscale Armor 9
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_10"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 9
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_10"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 9
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_10"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 9
+    }
+}
+
+# Dragonscale Armor 10
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_11"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 10
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_11"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 10
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_11"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 10
+    }
+}
+
+# Dragonscale Armor 11
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_12"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 11
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_12"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 11
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_12"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 11
+    }
+}
+
+# Dragonscale Armor 12
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_13"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 12
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_13"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 12
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_13"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 12
+    }
+}
+
+# Dragonscale Armor 13
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_14"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 13
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_14"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 13
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_14"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 13
+    }
+}
+
+# Dragonscale Armor 14
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_15"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 14
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_15"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 14
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_15"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 14
+    }
+}
+
+# Dragonscale Armor 15
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_16"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 15
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_16"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 15
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_16"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 15
+    }
+}
+
+# Dragonscale Armor 16
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_17"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 16
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_17"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 16
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_17"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 16
+    }
+}
+
+# Dragonscale Armor 17
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_18"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 17
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_18"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 17
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_18"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 17
+    }
+}
+
+# Dragonscale Armor 18
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_19"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 18
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_19"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 18
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_19"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 18
+    }
+}
+
+# Dragonscale Armor 19
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_20"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 19
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_20"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 19
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_20"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 19
+    }
+}
+
+# Dragonscale Armor 20
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_21"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 20
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_21"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 20
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_21"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 20
+    }
+}
+
+# Dragonscale Armor 21
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_22"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 21
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_22"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 21
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_22"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 21
+    }
+}
+
+# Dragonscale Armor 22
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_23"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 22
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_23"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 22
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_23"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 22
+    }
+}
+
+# Dragonscale Armor 23
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_24"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 23
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_24"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 23
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_24"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 23
+    }
+}
+
+# Dragonscale Armor 24
+utility_component_template = {
+    size = small
+    upgrades_to = "SMALL_DRAGON_BIO_ARMOR_25"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "SMALL"
+        SIZE_SHORT = "s"
+        TIER = 24
+    }
+}
+
+utility_component_template = {
+	size = medium
+    upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_25"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "MEDIUM"
+        SIZE_SHORT = "m"
+        TIER = 24
+    }
+}
+
+utility_component_template = {
+	size = large
+    upgrades_to = "LARGE_DRAGON_BIO_ARMOR_25"
+    inline_script = {
+		script = utility_mod/armor/utility_bio_armor_mod_1
+        SIZE = "LARGE"
+        SIZE_SHORT = "l"
+        TIER = 24
+    }
+}
+
+# Dragonscale Armor 25
+utility_component_template = {
+	key = "SMALL_DRAGON_BIO_ARMOR_25"
+	size = small
+	icon = "GFX_ship_part_bio_dragon_armor_25"
+	icon_frame = 1
+	power = 0
+
+	modifier = {
+	    ship_hull_add = @bio_mod_hull_s25
+	    ship_armor_add = @bio_mod_armor_s25
+    }
+
+    custom_tooltip = bio_ship_armor_regen_s25_tt
+
+    ship_modifier = {
+	    ship_armor_hardening_add = @hardening_mod_25
+    }
+
+    triggered_ship_modifier = {
+	    potential = {
+		    has_armor_percentage < @bio_ship_armor_regen_threshold
+	    }
+	    ship_armor_regen_add_static = @bio_mod_armor_regen_s25
+    }
+
+    resources = {
+	    category = ship_components
+	    cost = {
+		    alloys = @bio_mod_alloys_cost_s25
+            food = @bio_mod_food_cost_s25
+	    }
+	    upkeep = {
+		    food = @armor_s25_energy_upkeep_mod
+			alloys = @armor_s25_alloys_upkeep_mod
+	    }
+    }
+
+	potential = {
+		from = {
+		    country_uses_bio_ships = yes
+            is_fallen_empire = no
+	    }
+        #is_mod_no_components_add_to_cost_ship = no
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = yes
+        is_fallen_empire = no
+	}
+
+	prerequisites = { "tech_dragon_armor_25" }
+	component_set = "DRAGON_BIO_ARMOR_25"
+
+	ai_weight = {
+		weight = @T6_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 2
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_DRAGON_BIO_ARMOR_25"
+	size = medium
+	icon = "GFX_ship_part_bio_dragon_armor_25"
+	icon_frame = 1
+	power = 0
+
+    modifier = {
+	    ship_hull_add = @bio_mod_hull_m25
+	    ship_armor_add = @bio_mod_armor_m25
+    }
+
+    custom_tooltip = bio_ship_armor_regen_m25_tt
+
+    ship_modifier = {
+	    ship_armor_hardening_add = @hardening_mod_25
+    }
+
+    triggered_ship_modifier = {
+	    potential = {
+		    has_armor_percentage < @bio_ship_armor_regen_threshold
+	    }
+	    ship_armor_regen_add_static = @bio_mod_armor_regen_m25
+    }
+
+    resources = {
+	    category = ship_components
+	    cost = {
+		    alloys = @bio_mod_alloys_cost_m25
+            food = @bio_mod_food_cost_m25
+	    }
+	    upkeep = {
+		    food = @armor_m25_energy_upkeep_mod
+			alloys = @armor_m25_alloys_upkeep_mod
+	    }
+    }
+
+	potential = {
+		from = {
+		    country_uses_bio_ships = yes
+            is_fallen_empire = no
+	    }
+        #is_mod_no_components_add_to_cost_ship = no
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = yes
+        is_fallen_empire = no
+	}
+
+	prerequisites = { "tech_dragon_armor_25" }
+	component_set = "DRAGON_BIO_ARMOR_25"
+
+	ai_weight = {
+		weight = @T6_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 2
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_DRAGON_BIO_ARMOR_25"
+	size = large
+	icon = "GFX_ship_part_bio_dragon_armor_25"
+	icon_frame = 1
+	power = 0
+
+    modifier = {
+	    ship_hull_add = @bio_mod_hull_l25
+	    ship_armor_add = @bio_mod_armor_l25
+    }
+
+    custom_tooltip = bio_ship_armor_regen_l25_tt
+
+    ship_modifier = {
+	    ship_armor_hardening_add = @hardening_mod_25
+    }
+
+    triggered_ship_modifier = {
+	    potential = {
+		    has_armor_percentage < @bio_ship_armor_regen_threshold
+	    }
+	    ship_armor_regen_add_static = @bio_mod_armor_regen_l25
+    }
+
+    resources = {
+	    category = ship_components
+	    cost = {
+		    alloys = @bio_mod_alloys_cost_l25
+            food = @bio_mod_food_cost_l25
+	    }
+	    upkeep = {
+		    food = @armor_l25_energy_upkeep_mod
+			alloys = @armor_l25_alloys_upkeep_mod
+	    }
+    }
+
+	potential = {
+		from = {
+		    country_uses_bio_ships = yes
+            is_fallen_empire = no
+	    }
+        #is_mod_no_components_add_to_cost_ship = no
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = yes
+        is_fallen_empire = no
+	}
+
+	prerequisites = { "tech_dragon_armor_25" }
+	component_set = "DRAGON_BIO_ARMOR_25"
+
+	ai_weight = {
+		weight = @T6_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 2
+		}
+	}
+}

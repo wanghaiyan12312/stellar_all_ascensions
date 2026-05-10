@@ -1,0 +1,17 @@
+inline_script = {
+	script = utility_mod/archaeo/utility_bio_archaeoarmor_mod_2
+    SIZE = $SIZE$
+    SIZE_SHORT = $SIZE_SHORT$
+    TIER = $TIER$
+    SHIP_SHIELD_ADD = @bio_archaeo_shield_$SIZE_SHORT$$TIER$
+    SHIP_SHIELD_ADD_BUFF = @bio_archaeo_shield_buff_$SIZE_SHORT$$TIER$
+    SHIP_SHIELD_REGEN = @bio_archaeo_shield_regen_$SIZE_SHORT$$TIER$
+    SHIP_HULL_ADD = @bio_archaeo_hull_$SIZE_SHORT$$TIER$
+    SHIP_ARMOR_ADD = @bio_archaeo_armor_$SIZE_SHORT$$TIER$
+    SHIP_ARMOR_REGEN = @bio_archaeo_armor_regen_$SIZE_SHORT$$TIER$
+    ALLOYS_COST = @archaeo_alloys_cost_$SIZE_SHORT$$TIER$
+    ALLOYS_UPKEEP = @armor_$SIZE_SHORT$$TIER$_alloys_upkeep_mod
+    FOOD_UPKEEP = @armor_$SIZE_SHORT$$TIER$_energy_upkeep_mod
+    SHIP_ARMOR_HARDENING_ADD = @hardening_mod_$TIER$
+    MINOR_ARTIFACTS = @minor_artifacts_cost_$SIZE_SHORT$
+}

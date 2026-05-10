@@ -1,0 +1,11 @@
+inline_script = {
+	script = utility_mod/armor/utility_armor_mod_2
+    SIZE = $SIZE$
+    SIZE_SHORT = $SIZE_SHORT$
+    TIER = $TIER$
+    DRAGON_ARMOR_ADD = @armor_mod_$SIZE_SHORT$$TIER$
+    DRAGON_ARMOR_COST = @armor_mod_cost_$SIZE_SHORT$$TIER$
+    DRAGON_ARMOR_COST_sr_living_metal = @mod_$SIZE_SHORT$_dragon_armor_lm
+    DRAGON_ARMOR_COST_nanites = @mod_$SIZE_SHORT$_dragon_armor_na
+    DRAGON_ARMOR_HARDENING = @hardening_mod_$TIER$
+}

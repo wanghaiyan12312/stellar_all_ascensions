@@ -3,14 +3,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_3"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 2
-        DRAGON_ARMOR_ADD = @armor_S8
-        DRAGON_ARMOR_HARDENING = @hardening_T8
-        DRAGON_ARMOR_COST = @armor_s_t8_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -18,14 +14,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_3"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 2
-        DRAGON_ARMOR_ADD = @armor_M8
-        DRAGON_ARMOR_HARDENING = @hardening_T8
-        DRAGON_ARMOR_COST = @armor_m_t8_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -33,14 +25,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_3"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 2
-        DRAGON_ARMOR_ADD = @armor_L8
-        DRAGON_ARMOR_HARDENING = @hardening_T8
-        DRAGON_ARMOR_COST = @armor_l_t8_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -49,14 +37,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_4"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 3
-        DRAGON_ARMOR_ADD = @armor_S9
-        DRAGON_ARMOR_HARDENING = @hardening_T9
-        DRAGON_ARMOR_COST = @armor_s_t9_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -64,14 +48,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_4"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 3
-        DRAGON_ARMOR_ADD = @armor_M9
-        DRAGON_ARMOR_HARDENING = @hardening_T9
-        DRAGON_ARMOR_COST = @armor_m_t9_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -79,14 +59,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_4"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 3
-        DRAGON_ARMOR_ADD = @armor_L9
-        DRAGON_ARMOR_HARDENING = @hardening_T9
-        DRAGON_ARMOR_COST = @armor_l_t9_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -95,14 +71,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_5"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 4
-        DRAGON_ARMOR_ADD = @armor_S10
-        DRAGON_ARMOR_HARDENING = @hardening_T10
-        DRAGON_ARMOR_COST = @armor_s_t10_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -110,14 +82,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_5"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 4
-        DRAGON_ARMOR_ADD = @armor_M10
-        DRAGON_ARMOR_HARDENING = @hardening_T10
-        DRAGON_ARMOR_COST = @armor_m_t10_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -125,14 +93,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_5"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 4
-        DRAGON_ARMOR_ADD = @armor_L10
-        DRAGON_ARMOR_HARDENING = @hardening_T10
-        DRAGON_ARMOR_COST = @armor_l_t10_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -141,14 +105,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_6"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 5
-        DRAGON_ARMOR_ADD = @armor_S11
-        DRAGON_ARMOR_HARDENING = @hardening_T11
-        DRAGON_ARMOR_COST = @armor_s_t11_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -156,14 +116,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_6"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 5
-        DRAGON_ARMOR_ADD = @armor_M11
-        DRAGON_ARMOR_HARDENING = @hardening_T11
-        DRAGON_ARMOR_COST = @armor_m_t11_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -171,14 +127,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_6"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 5
-        DRAGON_ARMOR_ADD = @armor_L11
-        DRAGON_ARMOR_HARDENING = @hardening_T11
-        DRAGON_ARMOR_COST = @armor_l_t11_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -187,14 +139,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_7"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 6
-        DRAGON_ARMOR_ADD = @armor_S12
-        DRAGON_ARMOR_HARDENING = @hardening_T12
-        DRAGON_ARMOR_COST = @armor_s_t12_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -202,14 +150,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_7"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 6
-        DRAGON_ARMOR_ADD = @armor_M12
-        DRAGON_ARMOR_HARDENING = @hardening_T12
-        DRAGON_ARMOR_COST = @armor_m_t12_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -217,14 +161,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_7"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 6
-        DRAGON_ARMOR_ADD = @armor_L12
-        DRAGON_ARMOR_HARDENING = @hardening_T12
-        DRAGON_ARMOR_COST = @armor_l_t12_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -233,14 +173,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_8"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 7
-        DRAGON_ARMOR_ADD = @armor_S13
-        DRAGON_ARMOR_HARDENING = @hardening_T13
-        DRAGON_ARMOR_COST = @armor_s_t13_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -248,14 +184,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_8"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 7
-        DRAGON_ARMOR_ADD = @armor_M13
-        DRAGON_ARMOR_HARDENING = @hardening_T13
-        DRAGON_ARMOR_COST = @armor_m_t13_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -263,14 +195,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_8"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 7
-        DRAGON_ARMOR_ADD = @armor_L13
-        DRAGON_ARMOR_HARDENING = @hardening_T13
-        DRAGON_ARMOR_COST = @armor_l_t13_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -279,14 +207,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_9"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 8
-        DRAGON_ARMOR_ADD = @armor_S14
-        DRAGON_ARMOR_HARDENING = @hardening_T14
-        DRAGON_ARMOR_COST = @armor_s_t14_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -294,14 +218,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_9"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 8
-        DRAGON_ARMOR_ADD = @armor_M14
-        DRAGON_ARMOR_HARDENING = @hardening_T14
-        DRAGON_ARMOR_COST = @armor_m_t14_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -309,14 +229,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_9"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 8
-        DRAGON_ARMOR_ADD = @armor_L14
-        DRAGON_ARMOR_HARDENING = @hardening_T14
-        DRAGON_ARMOR_COST = @armor_l_t14_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -325,14 +241,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_10"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 9
-        DRAGON_ARMOR_ADD = @armor_S15
-        DRAGON_ARMOR_HARDENING = @hardening_T15
-        DRAGON_ARMOR_COST = @armor_s_t15_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -340,14 +252,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_10"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 9
-        DRAGON_ARMOR_ADD = @armor_M15
-        DRAGON_ARMOR_HARDENING = @hardening_T15
-        DRAGON_ARMOR_COST = @armor_m_t15_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -355,14 +263,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_10"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 9
-        DRAGON_ARMOR_ADD = @armor_L15
-        DRAGON_ARMOR_HARDENING = @hardening_T15
-        DRAGON_ARMOR_COST = @armor_l_t15_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -371,14 +275,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_11"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 10
-        DRAGON_ARMOR_ADD = @armor_S16
-        DRAGON_ARMOR_HARDENING = @hardening_T16
-        DRAGON_ARMOR_COST = @armor_s_t16_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -386,14 +286,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_11"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 10
-        DRAGON_ARMOR_ADD = @armor_M16
-        DRAGON_ARMOR_HARDENING = @hardening_T16
-        DRAGON_ARMOR_COST = @armor_m_t16_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -401,14 +297,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_11"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 10
-        DRAGON_ARMOR_ADD = @armor_L16
-        DRAGON_ARMOR_HARDENING = @hardening_T16
-        DRAGON_ARMOR_COST = @armor_l_t16_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -417,14 +309,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_12"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 11
-        DRAGON_ARMOR_ADD = @armor_S17
-        DRAGON_ARMOR_HARDENING = @hardening_T17
-        DRAGON_ARMOR_COST = @armor_s_t17_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -432,14 +320,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_12"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 11
-        DRAGON_ARMOR_ADD = @armor_M17
-        DRAGON_ARMOR_HARDENING = @hardening_T17
-        DRAGON_ARMOR_COST = @armor_m_t17_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -447,14 +331,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_12"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 11
-        DRAGON_ARMOR_ADD = @armor_L17
-        DRAGON_ARMOR_HARDENING = @hardening_T17
-        DRAGON_ARMOR_COST = @armor_l_t17_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -463,14 +343,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_13"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 12
-        DRAGON_ARMOR_ADD = @armor_S18
-        DRAGON_ARMOR_HARDENING = @hardening_T18
-        DRAGON_ARMOR_COST = @armor_s_t18_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -478,14 +354,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_13"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 12
-        DRAGON_ARMOR_ADD = @armor_M18
-        DRAGON_ARMOR_HARDENING = @hardening_T18
-        DRAGON_ARMOR_COST = @armor_m_t18_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -493,14 +365,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_13"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 12
-        DRAGON_ARMOR_ADD = @armor_L18
-        DRAGON_ARMOR_HARDENING = @hardening_T18
-        DRAGON_ARMOR_COST = @armor_l_t18_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -509,14 +377,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_14"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 13
-        DRAGON_ARMOR_ADD = @armor_S19
-        DRAGON_ARMOR_HARDENING = @hardening_T19
-        DRAGON_ARMOR_COST = @armor_s_t19_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -524,14 +388,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_14"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 13
-        DRAGON_ARMOR_ADD = @armor_M19
-        DRAGON_ARMOR_HARDENING = @hardening_T19
-        DRAGON_ARMOR_COST = @armor_m_t19_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -539,14 +399,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_14"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 13
-        DRAGON_ARMOR_ADD = @armor_L19
-        DRAGON_ARMOR_HARDENING = @hardening_T19
-        DRAGON_ARMOR_COST = @armor_l_t19_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -555,14 +411,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_15"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 14
-        DRAGON_ARMOR_ADD = @armor_S20
-        DRAGON_ARMOR_HARDENING = @hardening_T20
-        DRAGON_ARMOR_COST = @armor_s_t20_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -570,14 +422,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_15"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 14
-        DRAGON_ARMOR_ADD = @armor_M20
-        DRAGON_ARMOR_HARDENING = @hardening_T20
-        DRAGON_ARMOR_COST = @armor_m_t20_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -585,14 +433,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_15"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 14
-        DRAGON_ARMOR_ADD = @armor_L20
-        DRAGON_ARMOR_HARDENING = @hardening_T20
-        DRAGON_ARMOR_COST = @armor_l_t20_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -601,14 +445,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_16"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 15
-        DRAGON_ARMOR_ADD = @armor_S21
-        DRAGON_ARMOR_HARDENING = @hardening_T21
-        DRAGON_ARMOR_COST = @armor_s_t21_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -616,14 +456,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_16"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 15
-        DRAGON_ARMOR_ADD = @armor_M21
-        DRAGON_ARMOR_HARDENING = @hardening_T21
-        DRAGON_ARMOR_COST = @armor_m_t21_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -631,14 +467,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_16"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 15
-        DRAGON_ARMOR_ADD = @armor_L21
-        DRAGON_ARMOR_HARDENING = @hardening_T21
-        DRAGON_ARMOR_COST = @armor_l_t21_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -647,14 +479,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_17"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 16
-        DRAGON_ARMOR_ADD = @armor_S22
-        DRAGON_ARMOR_HARDENING = @hardening_T22
-        DRAGON_ARMOR_COST = @armor_s_t22_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -662,14 +490,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_17"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 16
-        DRAGON_ARMOR_ADD = @armor_M22
-        DRAGON_ARMOR_HARDENING = @hardening_T22
-        DRAGON_ARMOR_COST = @armor_m_t22_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -677,14 +501,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_17"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 16
-        DRAGON_ARMOR_ADD = @armor_L22
-        DRAGON_ARMOR_HARDENING = @hardening_T22
-        DRAGON_ARMOR_COST = @armor_l_t22_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -693,14 +513,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_18"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 17
-        DRAGON_ARMOR_ADD = @armor_S23
-        DRAGON_ARMOR_HARDENING = @hardening_T23
-        DRAGON_ARMOR_COST = @armor_s_t23_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -708,14 +524,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_18"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 17
-        DRAGON_ARMOR_ADD = @armor_M23
-        DRAGON_ARMOR_HARDENING = @hardening_T23
-        DRAGON_ARMOR_COST = @armor_m_t23_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -723,14 +535,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_18"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 17
-        DRAGON_ARMOR_ADD = @armor_L23
-        DRAGON_ARMOR_HARDENING = @hardening_T23
-        DRAGON_ARMOR_COST = @armor_l_t23_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -739,14 +547,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_19"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 18
-        DRAGON_ARMOR_ADD = @armor_S24
-        DRAGON_ARMOR_HARDENING = @hardening_T24
-        DRAGON_ARMOR_COST = @armor_s_t24_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -754,14 +558,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_19"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 18
-        DRAGON_ARMOR_ADD = @armor_M24
-        DRAGON_ARMOR_HARDENING = @hardening_T24
-        DRAGON_ARMOR_COST = @armor_m_t24_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -769,14 +569,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_19"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 18
-        DRAGON_ARMOR_ADD = @armor_L24
-        DRAGON_ARMOR_HARDENING = @hardening_T24
-        DRAGON_ARMOR_COST = @armor_l_t24_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -785,14 +581,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_20"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 19
-        DRAGON_ARMOR_ADD = @armor_S25
-        DRAGON_ARMOR_HARDENING = @hardening_T25
-        DRAGON_ARMOR_COST = @armor_s_t25_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -800,14 +592,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_20"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 19
-        DRAGON_ARMOR_ADD = @armor_M25
-        DRAGON_ARMOR_HARDENING = @hardening_T25
-        DRAGON_ARMOR_COST = @armor_m_t25_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -815,14 +603,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_20"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 19
-        DRAGON_ARMOR_ADD = @armor_L25
-        DRAGON_ARMOR_HARDENING = @hardening_T25
-        DRAGON_ARMOR_COST = @armor_l_t25_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -831,14 +615,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_21"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 20
-        DRAGON_ARMOR_ADD = @armor_S26
-        DRAGON_ARMOR_HARDENING = @hardening_T26
-        DRAGON_ARMOR_COST = @armor_s_t26_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -846,14 +626,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_21"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 20
-        DRAGON_ARMOR_ADD = @armor_M26
-        DRAGON_ARMOR_HARDENING = @hardening_T26
-        DRAGON_ARMOR_COST = @armor_m_t26_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -861,14 +637,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_21"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 20
-        DRAGON_ARMOR_ADD = @armor_L26
-        DRAGON_ARMOR_HARDENING = @hardening_T26
-        DRAGON_ARMOR_COST = @armor_l_t26_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -877,14 +649,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_22"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 21
-        DRAGON_ARMOR_ADD = @armor_S27
-        DRAGON_ARMOR_HARDENING = @hardening_T27
-        DRAGON_ARMOR_COST = @armor_s_t27_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -892,14 +660,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_22"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 21
-        DRAGON_ARMOR_ADD = @armor_M27
-        DRAGON_ARMOR_HARDENING = @hardening_T27
-        DRAGON_ARMOR_COST = @armor_m_t27_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -907,14 +671,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_22"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 21
-        DRAGON_ARMOR_ADD = @armor_L27
-        DRAGON_ARMOR_HARDENING = @hardening_T27
-        DRAGON_ARMOR_COST = @armor_l_t27_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -923,14 +683,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_23"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 22
-        DRAGON_ARMOR_ADD = @armor_S28
-        DRAGON_ARMOR_HARDENING = @hardening_T28
-        DRAGON_ARMOR_COST = @armor_s_t28_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -938,14 +694,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_23"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 22
-        DRAGON_ARMOR_ADD = @armor_M28
-        DRAGON_ARMOR_HARDENING = @hardening_T28
-        DRAGON_ARMOR_COST = @armor_m_t28_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -953,14 +705,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_23"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 22
-        DRAGON_ARMOR_ADD = @armor_L28
-        DRAGON_ARMOR_HARDENING = @hardening_T28
-        DRAGON_ARMOR_COST = @armor_l_t28_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -969,14 +717,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_24"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 23
-        DRAGON_ARMOR_ADD = @armor_S29
-        DRAGON_ARMOR_HARDENING = @hardening_T29
-        DRAGON_ARMOR_COST = @armor_s_t29_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -984,14 +728,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_24"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 23
-        DRAGON_ARMOR_ADD = @armor_M29
-        DRAGON_ARMOR_HARDENING = @hardening_T29
-        DRAGON_ARMOR_COST = @armor_m_t29_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -999,14 +739,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_24"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 23
-        DRAGON_ARMOR_ADD = @armor_L29
-        DRAGON_ARMOR_HARDENING = @hardening_T29
-        DRAGON_ARMOR_COST = @armor_l_t29_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -1015,14 +751,10 @@ utility_component_template = {
     size = small
     upgrades_to = "SMALL_DRAGON_ARMOR_25"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "SMALL"
+        SIZE_SHORT = "s"
         TIER = 24
-        DRAGON_ARMOR_ADD = @armor_S30
-        DRAGON_ARMOR_HARDENING = @hardening_T30
-        DRAGON_ARMOR_COST = @armor_s_t30_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_s_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_s_dragon_armor_na
     }
 }
 
@@ -1030,14 +762,10 @@ utility_component_template = {
 	size = medium
     upgrades_to = "MEDIUM_DRAGON_ARMOR_25"
     inline_script = {
-        script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "MEDIUM"
+        SIZE_SHORT= "m"
         TIER = 24
-        DRAGON_ARMOR_ADD = @armor_M30
-        DRAGON_ARMOR_HARDENING = @hardening_T30
-        DRAGON_ARMOR_COST = @armor_m_t30_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_m_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_m_dragon_armor_na
     }
 }
 
@@ -1045,14 +773,10 @@ utility_component_template = {
 	size = large
     upgrades_to = "LARGE_DRAGON_ARMOR_25"
     inline_script = {
-		script = utility_mod/utility_armor_mod_1
+		script = utility_mod/armor/utility_armor_mod_1
         SIZE = "LARGE"
+        SIZE_SHORT= "l"
         TIER = 24
-        DRAGON_ARMOR_ADD = @armor_L30
-        DRAGON_ARMOR_HARDENING = @hardening_T30
-        DRAGON_ARMOR_COST = @armor_l_t30_cost
-        DRAGON_ARMOR_COST_sr_living_metal = @mod_l_dragon_armor_lm
-        DRAGON_ARMOR_COST_nanites = @mod_l_dragon_armor_na
     }
 }
 
@@ -1065,10 +789,10 @@ utility_component_template = {
     icon_frame = 1
 	prerequisites = { "tech_dragon_armor_25" }
     modifier = {
-	    ship_armor_add = @armor_S31
+	    ship_armor_add = @armor_mod_s25
     }
     ship_modifier = {
-	    ship_armor_hardening_add = @hardening_T31
+	    ship_armor_hardening_add = @hardening_mod_25
     }
 
     potential = {
@@ -1089,13 +813,11 @@ utility_component_template = {
     resources = {
 	    category = ship_components
 	    cost = {
-		    alloys = @armor_s_t31_cost
+		    alloys = @armor_mod_cost_s25
             sr_living_metal = @mod_s_dragon_armor_lm
 		    nanites = @mod_s_dragon_armor_na
 	    }
     }
-
-    prerequisites = { "tech_dragon_armor_25" }
 
     ai_weight = {
 	    weight = @T6_weight
@@ -1114,10 +836,10 @@ utility_component_template = {
     icon_frame = 1
 	prerequisites = { "tech_dragon_armor_25" }
     modifier = {
-	    ship_armor_add = @armor_M31
+	    ship_armor_add = @armor_mod_m25
     }
     ship_modifier = {
-	    ship_armor_hardening_add = @hardening_T31
+	    ship_armor_hardening_add = @hardening_mod_25
     }
 
     potential = {
@@ -1138,13 +860,11 @@ utility_component_template = {
     resources = {
 	    category = ship_components
 	    cost = {
-		    alloys = @armor_m_t31_cost
+		    alloys = @armor_mod_cost_m25
             sr_living_metal = @mod_m_dragon_armor_lm
 		    nanites = @mod_m_dragon_armor_na
 	    }
     }
-
-    prerequisites = { "tech_dragon_armor_25" }
 
     ai_weight = {
 	    weight = @T6_weight
@@ -1163,10 +883,10 @@ utility_component_template = {
     icon_frame = 1
 	prerequisites = { "tech_dragon_armor_25" }
     modifier = {
-	    ship_armor_add = @armor_L31
+	    ship_armor_add = @armor_mod_l25
     }
     ship_modifier = {
-	    ship_armor_hardening_add = @hardening_T31
+	    ship_armor_hardening_add = @hardening_mod_25
     }
 
     potential = {
@@ -1187,13 +907,12 @@ utility_component_template = {
     resources = {
 	    category = ship_components
 	    cost = {
-		    alloys = @armor_l_t31_cost
+		    alloys = @armor_mod_cost_l25
             sr_living_metal = @mod_l_dragon_armor_lm
 		    nanites = @mod_l_dragon_armor_na
 	    }
     }
 
-    prerequisites = { "tech_dragon_armor_25" }
 
     ai_weight = {
 	    weight = @T6_weight

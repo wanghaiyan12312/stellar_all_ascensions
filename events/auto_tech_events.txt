@@ -562,6 +562,30 @@ country_event = {
 			last_increased_tech = tech_dragon_armor_23
 			last_increased_tech = tech_dragon_armor_24
 			last_increased_tech = tech_dragon_armor_25
+			last_increased_tech = tech_archaeoarmor_2
+			last_increased_tech = tech_archaeoarmor_3
+			last_increased_tech = tech_archaeoarmor_4
+			last_increased_tech = tech_archaeoarmor_5
+			last_increased_tech = tech_archaeoarmor_6
+			last_increased_tech = tech_archaeoarmor_7
+			last_increased_tech = tech_archaeoarmor_8
+			last_increased_tech = tech_archaeoarmor_9
+			last_increased_tech = tech_archaeoarmor_10
+			last_increased_tech = tech_archaeoarmor_11
+			last_increased_tech = tech_archaeoarmor_12
+			last_increased_tech = tech_archaeoarmor_13
+			last_increased_tech = tech_archaeoarmor_14
+			last_increased_tech = tech_archaeoarmor_15
+			last_increased_tech = tech_archaeoarmor_16
+			last_increased_tech = tech_archaeoarmor_17
+			last_increased_tech = tech_archaeoarmor_18
+			last_increased_tech = tech_archaeoarmor_19
+			last_increased_tech = tech_archaeoarmor_20
+			last_increased_tech = tech_archaeoarmor_21
+			last_increased_tech = tech_archaeoarmor_22
+			last_increased_tech = tech_archaeoarmor_23
+			last_increased_tech = tech_archaeoarmor_24
+			last_increased_tech = tech_archaeoarmor_25
 		}
 	}
 	immediate = {
@@ -571,6 +595,7 @@ country_event = {
 					has_country_flag = utility_level_mod_25
 					has_technology = tech_dragon_armor_25
 					has_technology = tech_psionic_shield_25
+					has_technology = tech_archaeoarmor_25
 				}
 			}
 			add_modifier = { 
@@ -584,6 +609,7 @@ country_event = {
 					has_country_flag = utility_level_mod_24
 					has_technology = tech_dragon_armor_24
 					has_technology = tech_psionic_shield_24
+					has_technology = tech_archaeoarmor_24
 				}
 			}
 			add_modifier = { 
@@ -597,6 +623,7 @@ country_event = {
 					has_country_flag = utility_level_mod_23
 					has_technology = tech_dragon_armor_23
 					has_technology = tech_psionic_shield_23
+					has_technology = tech_archaeoarmor_23
 				}
 			}
 			add_modifier = { 
@@ -610,6 +637,7 @@ country_event = {
 					has_country_flag = utility_level_mod_22
 					has_technology = tech_dragon_armor_22
 					has_technology = tech_psionic_shield_22
+					has_technology = tech_archaeoarmor_22
 				}
 			}
 			add_modifier = { 
@@ -623,6 +651,7 @@ country_event = {
 					has_country_flag = utility_level_mod_21
 					has_technology = tech_dragon_armor_21
 					has_technology = tech_psionic_shield_21
+					has_technology = tech_archaeoarmor_21
 				}
 			}
 			add_modifier = { 
@@ -636,6 +665,7 @@ country_event = {
 					has_country_flag = utility_level_mod_20
 					has_technology = tech_dragon_armor_20
 					has_technology = tech_psionic_shield_20
+					has_technology = tech_archaeoarmor_20
 				}
 			}
 			add_modifier = { 
@@ -649,6 +679,7 @@ country_event = {
 					has_country_flag = utility_level_mod_19
 					has_technology = tech_dragon_armor_19
 					has_technology = tech_psionic_shield_19
+					has_technology = tech_archaeoarmor_19
 				}
 			}
 			add_modifier = { 
@@ -662,6 +693,7 @@ country_event = {
 					has_country_flag = utility_level_mod_18
 					has_technology = tech_dragon_armor_18
 					has_technology = tech_psionic_shield_18
+					has_technology = tech_archaeoarmor_18
 				}
 			}
 			add_modifier = { 
@@ -675,6 +707,7 @@ country_event = {
 					has_country_flag = utility_level_mod_17
 					has_technology = tech_dragon_armor_17
 					has_technology = tech_psionic_shield_17
+					has_technology = tech_archaeoarmor_17
 				}
 			}
 			add_modifier = { 
@@ -688,6 +721,7 @@ country_event = {
 					has_country_flag = utility_level_mod_16
 					has_technology = tech_dragon_armor_16
 					has_technology = tech_psionic_shield_16
+					has_technology = tech_archaeoarmor_16
 				}
 			}
 			add_modifier = { 
@@ -701,6 +735,7 @@ country_event = {
 					has_country_flag = utility_level_mod_15
 					has_technology = tech_dragon_armor_15
 					has_technology = tech_psionic_shield_15
+					has_technology = tech_archaeoarmor_15
 				}
 			}
 			add_modifier = { 
@@ -714,6 +749,7 @@ country_event = {
 					has_country_flag = utility_level_mod_14
 					has_technology = tech_dragon_armor_14
 					has_technology = tech_psionic_shield_14
+					has_technology = tech_archaeoarmor_14
 				}
 			}
 			add_modifier = { 
@@ -727,6 +763,7 @@ country_event = {
 					has_country_flag = utility_level_mod_13
 					has_technology = tech_dragon_armor_13
 					has_technology = tech_psionic_shield_13
+					has_technology = tech_archaeoarmor_13
 				}
 			}
 			add_modifier = { 
@@ -740,6 +777,7 @@ country_event = {
 					has_country_flag = utility_level_mod_12
 					has_technology = tech_dragon_armor_12
 					has_technology = tech_psionic_shield_12
+					has_technology = tech_archaeoarmor_12
 				}
 			}
 			add_modifier = { 
@@ -753,6 +791,7 @@ country_event = {
 					has_country_flag = utility_level_mod_11
 					has_technology = tech_dragon_armor_11
 					has_technology = tech_psionic_shield_11
+					has_technology = tech_archaeoarmor_11
 				}
 			}
 			add_modifier = { 
@@ -766,6 +805,7 @@ country_event = {
 					has_country_flag = utility_level_mod_10
 					has_technology = tech_dragon_armor_10
 					has_technology = tech_psionic_shield_10
+					has_technology = tech_archaeoarmor_10
 				}
 			}
 			add_modifier = { 
@@ -779,6 +819,7 @@ country_event = {
 					has_country_flag = utility_level_mod_9
 					has_technology = tech_dragon_armor_9
 					has_technology = tech_psionic_shield_9
+					has_technology = tech_archaeoarmor_9
 				}
 			}
 			add_modifier = { 
@@ -792,6 +833,7 @@ country_event = {
 					has_country_flag = utility_level_mod_8
 					has_technology = tech_dragon_armor_8
 					has_technology = tech_psionic_shield_8
+					has_technology = tech_archaeoarmor_8
 				}
 			}
 			add_modifier = { 
@@ -805,6 +847,7 @@ country_event = {
 					has_country_flag = utility_level_mod_7
 					has_technology = tech_dragon_armor_7
 					has_technology = tech_psionic_shield_7
+					has_technology = tech_archaeoarmor_7
 				}
 			}
 			add_modifier = { 
@@ -818,6 +861,7 @@ country_event = {
 					has_country_flag = utility_level_mod_6
 					has_technology = tech_dragon_armor_6
 					has_technology = tech_psionic_shield_6
+					has_technology = tech_archaeoarmor_6
 				}
 			}
 			add_modifier = { 
@@ -831,6 +875,7 @@ country_event = {
 					has_country_flag = utility_level_mod_5
 					has_technology = tech_dragon_armor_5
 					has_technology = tech_psionic_shield_5
+					has_technology = tech_archaeoarmor_5
 				}
 			}
 			add_modifier = { 
@@ -844,6 +889,7 @@ country_event = {
 					has_country_flag = utility_level_mod_4
 					has_technology = tech_dragon_armor_4
 					has_technology = tech_psionic_shield_4
+					has_technology = tech_archaeoarmor_4
 				}
 			}
 			add_modifier = { 
@@ -857,6 +903,7 @@ country_event = {
 					has_country_flag = utility_level_mod_3
 					has_technology = tech_dragon_armor_3
 					has_technology = tech_psionic_shield_3
+					has_technology = tech_archaeoarmor_3
 				}
 			}
 			add_modifier = { 
@@ -870,6 +917,7 @@ country_event = {
 					has_country_flag = utility_level_mod_2
 					has_technology = tech_dragon_armor_2
 					has_technology = tech_psionic_shield_2
+					has_technology = tech_archaeoarmor_2
 				}
 			}
 			add_modifier = { 

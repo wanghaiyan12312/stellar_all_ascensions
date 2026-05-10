@@ -1,0 +1,14 @@
+inline_script = {
+	script = utility_mod/armor/utility_bio_armor_mod_2
+    SIZE = $SIZE$
+    SIZE_SHORT = $SIZE_SHORT$
+    TIER = $TIER$
+    SHIP_ARMOR_ADD = @bio_mod_armor_$SIZE_SHORT$$TIER$
+    SHIP_ARMOR_REGEN = @bio_mod_armor_regen_$SIZE_SHORT$$TIER$
+    SHIP_HULL_ADD = @bio_mod_hull_$SIZE_SHORT$$TIER$
+    ALLOYS_COST = @bio_mod_alloys_cost_$SIZE_SHORT$$TIER$
+    FOOD_COST = @bio_mod_food_cost_$SIZE_SHORT$$TIER$
+    ALLOYS_UPKEEP = @armor_$SIZE_SHORT$$TIER$_alloys_upkeep_mod
+    FOOD_UPKEEP = @armor_$SIZE_SHORT$$TIER$_energy_upkeep_mod
+    SHIP_ARMOR_HARDENING_ADD = @hardening_mod_$TIER$
+}

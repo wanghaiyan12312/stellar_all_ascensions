@@ -310,7 +310,6 @@ planet_event = {
 
 	trigger = {
 		has_paragon_dlc = yes
-		has_planet_flag = terraform_nucleus_transfixed
 		has_planet_flag = terraform_shroud_nucleus_transfixed
 	}
 

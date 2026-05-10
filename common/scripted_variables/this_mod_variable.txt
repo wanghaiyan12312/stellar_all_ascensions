@@ -18,12 +18,3 @@
 
 @fallen_empire_titan_hard_I = 4
 @fallen_empire_titan_hard_II = 0
-
-@mod_s_dragon_armor_lm = 1
-@mod_m_dragon_armor_lm = 2
-@mod_l_dragon_armor_lm = 3
-
-@mod_s_dragon_armor_na = 0.5
-@mod_m_dragon_armor_na = 1
-@mod_l_dragon_armor_na = 1.5
-

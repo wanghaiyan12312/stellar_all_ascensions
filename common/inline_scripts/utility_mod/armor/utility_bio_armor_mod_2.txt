@@ -1,0 +1,58 @@
+key = "$SIZE$_DRAGON_BIO_ARMOR_$TIER$"
+icon = "GFX_ship_part_bio_dragon_armor_$TIER$"
+icon_frame = 1
+power = 0
+modifier = {
+	ship_hull_add = $SHIP_HULL_ADD$
+	ship_armor_add = $SHIP_ARMOR_ADD$
+}
+
+custom_tooltip = bio_ship_armor_regen_$SIZE_SHORT$$TIER$_tt
+
+ship_modifier = {
+	ship_armor_hardening_add = $SHIP_ARMOR_HARDENING_ADD$
+}
+
+    
+triggered_ship_modifier = {
+	potential = {
+		has_armor_percentage < @bio_ship_armor_regen_threshold
+	}
+	ship_armor_regen_add_static = $SHIP_ARMOR_REGEN$
+}
+
+resources = {
+	category = ship_components
+	cost = {
+		alloys = $ALLOYS_COST$
+        food = $FOOD_COST$
+	}
+	upkeep = {
+		food = $FOOD_UPKEEP$
+		alloys = $ALLOYS_UPKEEP$
+	}
+}
+
+potential = {
+	from = {
+		country_uses_bio_ships = yes
+        is_fallen_empire = no
+	}
+    #is_mod_no_components_add_to_cost_ship = no
+}
+
+show_tech_unlock_if = {
+	country_uses_bio_ships = yes
+    is_fallen_empire = no
+}
+
+prerequisites = { "tech_dragon_armor_$TIER$" }
+component_set = "DRAGON_BIO_ARMOR_$TIER$"
+
+ai_weight = {
+	weight = @T6_weight
+	inline_script = {
+		script = ship_components/weights/roles_stealth
+		MULT = 2
+	}
+}

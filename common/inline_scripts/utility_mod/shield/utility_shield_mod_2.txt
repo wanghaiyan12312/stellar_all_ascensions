@@ -13,7 +13,7 @@ resources = {
 	}
 }
 modifier = {
-	#ship_damage_reduction_add = $SHIELD_REDUCTION$
+	ship_damage_reduction_add = $SHIELD_REDUCTION$
 	ship_shield_add = $SHIELD_ADD$
 	ship_shield_regen_add_static = $SHIELD_REGEN$ #Regeneration per day
 }

@@ -147,3 +147,153 @@ component_set = {
 
 	icon = "GFX_ship_part_archaeoarmor_25"
 }
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_1"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_1"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_2"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_2"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_3"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_3"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_4"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_4"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_5"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_5"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_6"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_6"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_7"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_7"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_8"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_8"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_9"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_9"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_10"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_10"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_11"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_11"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_12"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_12"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_13"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_13"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_14"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_14"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_15"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_15"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_16"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_16"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_17"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_17"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_18"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_18"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_19"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_19"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_20"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_20"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_21"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_21"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_22"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_22"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_23"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_23"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_24"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_24"
+}
+
+component_set = {
+	key = "BIO_ARCHAEO_ARMOR_25"
+
+	icon = "GFX_ship_part_bio_archaeo_armor_25"
+}

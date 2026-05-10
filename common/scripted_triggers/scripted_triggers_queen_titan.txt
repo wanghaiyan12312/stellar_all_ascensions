@@ -5,47 +5,6 @@ ship_uses_colossus_components = {
 	}	
 }
 
-ship_uses_battleship_thrusters = {
-	OR = {
-		# Regular Ships
-		is_ship_size = battleship
-		# Offspring Ships
-		is_ship_size = offspring_battleship
-		# Cosmogenesis Ships
-		is_ship_size = cosmo_crisis_battlecruiser
-		# Biological Ships
-		is_ship_size = stinger_stage_1
-		is_ship_size = stinger_stage_2
-		is_ship_size = stinger_stage_3
-		# Biological Offspring Ships
-		is_ship_size = offspring_stinger_stage_1
-		is_ship_size = offspring_stinger_stage_2
-		is_ship_size = offspring_stinger_stage_3
-
-		# mod
-		is_ship_size = galleon_mod
-		is_ship_size = large_ship_ed_mod
-        is_ship_size = ember_battleship_mod
-		is_ship_size = large_ship_synth_queen_mod
-		is_ship_size = npc_warship_01_mod
-		is_ship_size = cosmo_crisis_titan_mod
-	}
-}
-
-ship_uses_colossus_thrusters = {
-	OR = {
-		# Regular Ships
-		is_ship_size = colossus
-		is_ship_size = juggernaut
-		# Galactic Nemesis Ships
-		is_ship_size = star_eater
-		# Special Ships
-		is_ship_size = synth_queen_titan
-		is_ship_size = synth_queen_titan_mod
-	}
-}
-
-
 ship_uses_juggernaut_components = {
 	OR = {
 		is_ship_size = juggernaut
@@ -61,9 +20,10 @@ ship_uses_titan_components = {
 		is_ship_size = cosmo_crisis_titan
 		is_ship_size = large_fallen_stinger
 		is_ship_size = cosmo_crisis_stinger
-		is_ship_size = synth_queen_titan_mod
 		is_ship_size = cosmo_crisis_titan_mod
 		is_ship_size = npc_warship_01_mod
+		is_ship_size = synth_queen_titan_mod
+		is_ship_size = behemoth_mod
 	}
 }
 
@@ -139,8 +99,9 @@ ship_uses_defence_titan_reactor_components = {
 
 ship_uses_synth_queen_titan_reactors = {
 	OR = {
-		is_ship_size = synth_queen_titan_mod
 		is_ship_size = cosmo_crisis_titan_mod
+		is_ship_size = synth_queen_titan_mod
+		is_ship_size = behemoth_mod
 	}
 }
 
@@ -198,6 +159,7 @@ is_space_citadel_ship_size = {
 
 is_mod_big_shield_ship_size = {
 	OR = {
+		is_ship_size = behemoth_mod
 		is_ship_size = synth_queen_titan_mod
 		is_ship_size = cosmo_crisis_titan_mod
 		is_ship_size = starbase_deep_space_citadel_4

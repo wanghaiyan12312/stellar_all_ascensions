@@ -311,3 +311,32 @@ weapon_component_template = {
 		weight = 0.0
 	}
 }
+
+###########################
+# BEHEMOTH PLANET CRACKER
+###########################
+
+weapon_component_template = { # World Cracker
+	key = "PLANET_KILLER_MAW_MOD"
+	size = planet_killer
+	type = planet_killer
+	use_ship_main_target = no
+
+	valid_for_country = {
+		has_menace_perk = menp_behemoth_hatchling_2
+	}
+
+	icon = GFX_ship_part_preying_maw
+	icon_frame = 1
+
+	potential = {
+		is_ship_size = behemoth_mod
+	}
+	component_set = "PLANET_KILLER_CRACKER"
+
+	planet_destruction_gfx = "gobble_planet_gfx"
+
+	ai_weight = {
+		factor = 0
+	}
+}

@@ -2,26 +2,16 @@
 is_ship_app_bio_mod = {
     OR = {
         is_ship_size = cosmo_crisis_mauler
-        is_ship_size = cosmo_crisis_mauler
         is_ship_size = cosmo_crisis_weaver
         is_ship_size = cosmo_crisis_harbinger
         is_ship_size = cosmo_crisis_stinger
+        is_ship_size = crisis_mauler_mod
+        is_ship_size = crisis_harbinger_mod
+        is_ship_size = crisis_stinger_mod
+		is_ship_size = behemoth_mod
     }
 }
 
-ship_uses_mauler_components = {
-    OR = {
-		is_ship_size = mauler_stage_1
-		is_ship_size = mauler_stage_2
-		is_ship_size = mauler_stage_3
-		is_ship_size = large_fallen_mauler
-		is_ship_size = cosmo_crisis_mauler
-		is_ship_size = offspring_mauler_stage_1
-		is_ship_size = offspring_mauler_stage_2
-		is_ship_size = offspring_mauler_stage_3
-        is_ship_size = corvette
-	}
-}
 
 country_uses_bio_ships = {
     OR = {
@@ -43,4 +33,81 @@ country_uses_bio_ships = {
 	        uses_ship_category = bio_ship
         }
     }
+}
+
+ship_is_stage_3_bioship = {
+	OR = {
+		is_ship_size = mauler_stage_3
+		is_ship_size = large_fallen_mauler
+		is_ship_size = weaver_stage_3
+		is_ship_size = small_fallen_weaver
+		is_ship_size = large_fallen_weaver
+		is_ship_size = harbinger_stage_3
+		is_ship_size = large_fallen_harbinger
+		is_ship_size = stinger_stage_3
+		is_ship_size = large_fallen_stinger
+		is_ship_size = offspring_mauler_stage_3
+		is_ship_size = offspring_weaver_stage_3
+		is_ship_size = offspring_harbinger_stage_3
+		is_ship_size = offspring_stinger_stage_3
+		is_ship_size = cosmo_crisis_mauler
+		is_ship_size = cosmo_crisis_weaver
+		is_ship_size = cosmo_crisis_harbinger
+		is_ship_size = cosmo_crisis_stinger
+
+        ## mod
+        is_ship_size = crisis_mauler_mod
+        is_ship_size = crisis_harbinger_mod
+        is_ship_size = crisis_stinger_mod
+		is_ship_size = behemoth_mod
+	}
+}
+
+ship_uses_mauler_components = {
+	OR = {
+		is_ship_size = mauler_stage_1
+		is_ship_size = mauler_stage_2
+		is_ship_size = mauler_stage_3
+		is_ship_size = large_fallen_mauler
+		is_ship_size = cosmo_crisis_mauler
+		is_ship_size = offspring_mauler_stage_1
+		is_ship_size = offspring_mauler_stage_2
+		is_ship_size = offspring_mauler_stage_3
+
+        ##mod
+        is_ship_size = crisis_mauler_mod
+	}
+}
+
+ship_uses_harbinger_components = {
+	OR = {
+		is_ship_size = harbinger_stage_1
+		is_ship_size = harbinger_stage_2
+		is_ship_size = harbinger_stage_3
+		is_ship_size = large_fallen_harbinger
+		is_ship_size = cosmo_crisis_harbinger
+		is_ship_size = offspring_harbinger_stage_1
+		is_ship_size = offspring_harbinger_stage_2
+		is_ship_size = offspring_harbinger_stage_3
+
+        ##mod
+        is_ship_size = crisis_harbinger_mod
+	}
+}
+
+ship_uses_stinger_components = {
+	OR = {
+		is_ship_size = stinger_stage_1
+		is_ship_size = stinger_stage_2
+		is_ship_size = stinger_stage_3
+		is_ship_size = large_fallen_stinger
+		is_ship_size = cosmo_crisis_stinger
+		is_ship_size = offspring_stinger_stage_1
+		is_ship_size = offspring_stinger_stage_2
+		is_ship_size = offspring_stinger_stage_3
+        
+        ##mod
+        is_ship_size = crisis_stinger_mod
+		is_ship_size = behemoth_mod
+	}
 }

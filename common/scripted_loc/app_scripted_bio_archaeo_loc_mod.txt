@@ -1,0 +1,1127 @@
+# BIO ARCHAEO ARMOR 2
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s2_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_2
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m2_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_2
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l2_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_2
+	}
+}
+
+# BIO ARCHAEO ARMOR 3
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s3_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_3
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m3_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_3
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l3_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_3
+	}
+}
+
+# BIO ARCHAEO ARMOR 4
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s4_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_4
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m4_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_4
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l4_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_4
+	}
+}
+
+# BIO ARCHAEO ARMOR 5
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s5_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_5
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m5_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_5
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l5_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_5
+	}
+}
+
+# BIO ARCHAEO ARMOR 6
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s6_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_6
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m6_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_6
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l6_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_6
+	}
+}
+
+# BIO ARCHAEO ARMOR 7
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s7_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_7
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m7_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_7
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l7_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_7
+	}
+}
+
+# BIO ARCHAEO ARMOR 8
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s8_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_8
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m8_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_8
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l8_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_8
+	}
+}
+
+# BIO ARCHAEO ARMOR 9
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s9_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_9
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m9_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_9
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l9_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_9
+	}
+}
+
+# BIO ARCHAEO ARMOR 10
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s10_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_10
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m10_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_10
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l10_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_10
+	}
+}
+
+# BIO ARCHAEO ARMOR 11
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s11_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_11
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m11_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_11
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l11_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_11
+	}
+}
+
+# BIO ARCHAEO ARMOR 12
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s12_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_12
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m12_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_12
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l12_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_12
+	}
+}
+
+# BIO ARCHAEO ARMOR 13
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s13_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_13
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m13_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_13
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l13_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_13
+	}
+}
+
+# BIO ARCHAEO ARMOR 14
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s14_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_14
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m14_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_14
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l14_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_14
+	}
+}
+
+# BIO ARCHAEO ARMOR 15
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s15_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_15
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m15_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_15
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l15_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_15
+	}
+}
+
+# BIO ARCHAEO ARMOR 16
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s16_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_16
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m16_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_16
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l16_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_16
+	}
+}
+
+# BIO ARCHAEO ARMOR 17
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s17_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_17
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m17_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_17
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l17_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_17
+	}
+}
+
+# BIO ARCHAEO ARMOR 18
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s18_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_18
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m18_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_18
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l18_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_18
+	}
+}
+
+# BIO ARCHAEO ARMOR 19
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s19_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_19
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m19_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_19
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l19_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_19
+	}
+}
+
+# BIO ARCHAEO ARMOR 20
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s20_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_20
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m20_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_20
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l20_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_20
+	}
+}
+
+# BIO ARCHAEO ARMOR 21
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s21_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_21
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m21_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_21
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l21_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_21
+	}
+}
+
+# BIO ARCHAEO ARMOR 22
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s22_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_22
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m22_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_22
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l22_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_22
+	}
+}
+
+# BIO ARCHAEO ARMOR 23
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s23_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_23
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m23_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_23
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l23_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_23
+	}
+}
+
+# BIO ARCHAEO ARMOR 24
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s24_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_24
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m24_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_24
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l24_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_24
+	}
+}
+
+# BIO ARCHAEO ARMOR 25
+defined_text = {
+	name = GetArchaeoengineersEffectSmallBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_s25_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_SMALL_BIO_ARCHAEO_25
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectMediumBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_m25_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_MEDIUM_BIO_ARCHAEO_25
+	}
+}
+defined_text = {
+	name = GetArchaeoengineersEffectLargeBioArmor
+	text = {
+		trigger = {
+			NOT = { owner = { has_ascension_perk = ap_archaeoengineers } }
+		}
+		localization_key = bio_ship_armor_regen_l25_tt
+	}
+	text = {
+		trigger = {
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		localization_key =  tt_LARGE_BIO_ARCHAEO_25
+	}
+}

@@ -172,3 +172,178 @@ component_set = {
 	icon = "GFX_ship_part_psi_shield_25"
 	icon_frame = 1
 }
+
+component_set = {
+	key = "PSI_BIO_SHIELD_1"
+
+	icon = "GFX_ship_part_bio_psi_shield_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_2"
+
+	icon = "GFX_ship_part_bio_psi_shield_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_3"
+
+	icon = "GFX_ship_part_bio_psi_shield_3"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_4"
+
+	icon = "GFX_ship_part_bio_psi_shield_4"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_5"
+
+	icon = "GFX_ship_part_bio_psi_shield_5"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_6"
+
+	icon = "GFX_ship_part_bio_psi_shield_6"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_7"
+
+	icon = "GFX_ship_part_bio_psi_shield_7"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_8"
+
+	icon = "GFX_ship_part_bio_psi_shield_8"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_9"
+
+	icon = "GFX_ship_part_bio_psi_shield_9"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_10"
+
+	icon = "GFX_ship_part_bio_psi_shield_10"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_11"
+
+	icon = "GFX_ship_part_bio_psi_shield_11"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_12"
+
+	icon = "GFX_ship_part_bio_psi_shield_12"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_13"
+
+	icon = "GFX_ship_part_bio_psi_shield_13"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_14"
+
+	icon = "GFX_ship_part_bio_psi_shield_14"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_15"
+
+	icon = "GFX_ship_part_bio_psi_shield_15"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_16"
+
+	icon = "GFX_ship_part_bio_psi_shield_16"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_17"
+
+	icon = "GFX_ship_part_bio_psi_shield_17"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_18"
+
+	icon = "GFX_ship_part_bio_psi_shield_18"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_19"
+
+	icon = "GFX_ship_part_bio_psi_shield_19"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_20"
+
+	icon = "GFX_ship_part_bio_psi_shield_20"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_21"
+
+	icon = "GFX_ship_part_bio_psi_shield_21"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_22"
+
+	icon = "GFX_ship_part_bio_psi_shield_22"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_23"
+
+	icon = "GFX_ship_part_bio_psi_shield_23"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_24"
+
+	icon = "GFX_ship_part_bio_psi_shield_24"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_BIO_SHIELD_25"
+
+	icon = "GFX_ship_part_bio_psi_shield_25"
+	icon_frame = 1
+}
