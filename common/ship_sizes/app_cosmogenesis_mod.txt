@@ -57,7 +57,11 @@ cosmo_crisis_mauler = {
 	enable_default_design = yes
 
 	potential_country = {
-		has_technology = tech_cosmogenesis_mauler
+		OR = {
+			has_technology = tech_cosmogenesis_escort
+			has_technology = tech_cosmogenesis_mauler
+		}
+		NOT = { has_country_flag = cosmogenesis_aborted }
 	}
 
 	required_component_set = "power_core"
@@ -149,7 +153,10 @@ cosmo_crisis_weaver = {
 	enable_default_design = yes
 
 	potential_country = {
-		has_technology = tech_cosmogenesis_weaver
+		OR = {
+			has_technology = tech_cosmogenesis_escort
+			has_technology = tech_cosmogenesis_weaver
+		}
 		NOT = { has_country_flag = cosmogenesis_aborted }
 	}
 
@@ -263,7 +270,10 @@ cosmo_crisis_harbinger = {
 	enable_default_design = yes
 
 	potential_country = {
-		has_technology = tech_cosmogenesis_harbinger
+		OR = {
+			has_technology = tech_cosmogenesis_battlecruiser
+			has_technology = tech_cosmogenesis_harbinger
+		}	
 		NOT = { has_country_flag = cosmogenesis_aborted }
 	}
 
@@ -352,7 +362,10 @@ cosmo_crisis_stinger = {
 	enable_default_design = yes
 
 	potential_country = {
-		has_technology = tech_cosmogenesis_stinger
+		OR = {
+			has_technology = tech_cosmogenesis_stinger
+			has_technology = tech_cosmogenesis_FE_titan
+		}	
 		NOT = { has_country_flag = cosmogenesis_aborted }
 	}
 

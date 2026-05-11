@@ -40,7 +40,6 @@ crisis_mauler_mod = {
 		has_biogenesis_dlc = yes
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_2
-		country_uses_bio_ships = no
 	}
 
 	triggered_ship_roles = {
@@ -92,6 +91,7 @@ crisis_mauler_mod = {
 		min = 0
 		max = 0
 	}
+	available_to_everyone = yes
 }
 
 crisis_harbinger_mod = {
@@ -135,7 +135,6 @@ crisis_harbinger_mod = {
 		has_biogenesis_dlc = yes
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_3
-		country_uses_bio_ships = no
 	}
 
 	triggered_ship_roles = {
@@ -196,6 +195,7 @@ crisis_harbinger_mod = {
 		min = 0
 		max = 0
 	}
+	available_to_everyone = yes
 }
 
 crisis_stinger_mod = {
@@ -239,7 +239,6 @@ crisis_stinger_mod = {
 		has_biogenesis_dlc = yes
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_4
-		country_uses_bio_ships = no
 	}
 
 	triggered_ship_roles = {
@@ -286,6 +285,7 @@ crisis_stinger_mod = {
 		min = 0
 		max = 0
 	}
+	available_to_everyone = yes
 }
 
 #Adult Behemoth - Ascended
@@ -329,7 +329,6 @@ behemoth_mod = {
 
 	potential_country = {
 		has_biogenesis_dlc = yes
-		country_uses_bio_ships = yes
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5 
 		is_country_type = default
@@ -375,4 +374,5 @@ behemoth_mod = {
 		min = 0
 		max = 0
 	}
+	available_to_everyone = yes
 }

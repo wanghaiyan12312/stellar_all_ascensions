@@ -1,7 +1,7 @@
 allow = {
 	resource_stockpile_compare = {
 		resource = energy 
-		value >= 500000
+		value >= 1000000
 		mult = $AMOUNT_ENERGY$
 	}
 	resource_stockpile_compare = {
@@ -11,7 +11,7 @@ allow = {
 	}
 }
 add_resource = {
-	energy = -500000
+	energy = -1000000
 	mult = $AMOUNT_ENERGY$
 }
 add_resource = {

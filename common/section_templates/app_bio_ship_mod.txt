@@ -4,7 +4,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-    entity = "biogenesis_01_mauler_stage_2_entity"
+    entity = "biogenesis_01_mauler_stage_2_ship_entity"
 
 	ai_tags = {
 		brawler
@@ -57,7 +57,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "biogenesis_01_mauler_stage_2_entity"
+	entity = "biogenesis_01_mauler_stage_2_ship_entity"
 
 	ai_tags = {
 		screen
@@ -102,7 +102,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "biogenesis_01_harbinger_stage_2_entity"
+	entity = "biogenesis_01_harbinger_stage_2_ship_entity"
 
 	ai_tags = {
 		energy_torpedoes
@@ -160,7 +160,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "stinger_stage_3_ship_entity"
+	entity = "biogenesis_01_stinger_stage_3_ship_entity"
 
 	ai_tags = {
 		gunship
@@ -168,7 +168,7 @@ ship_section_template = {
 	}
 
 	ai_weight = {
-		weight = 10
+		weight = 0
 	}
 
 	component_slot = {
@@ -254,7 +254,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "stinger_stage_3_ship_entity"
+	entity = "biogenesis_01_stinger_stage_3_ship_entity"
 
 	ai_tags = {
 		artillery
@@ -262,7 +262,7 @@ ship_section_template = {
 	}
 
 	ai_weight = {
-		weight = 20
+		weight = 0
 	}
 
 	component_slot = {
@@ -559,5 +559,5 @@ ship_section_template = {
 	}
 
 	large_utility_slots = 40
-	aux_utility_slots = 10
+	aux_utility_slots = 20
 }

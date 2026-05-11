@@ -1,3 +1,9 @@
+ship_uses_behemoth_mod_reactors = {
+	OR = {
+		is_ship_size = behemoth_mod
+	}
+}
+
 
 is_ship_app_bio_mod = {
     OR = {
@@ -60,6 +66,9 @@ ship_is_stage_3_bioship = {
         is_ship_size = crisis_harbinger_mod
         is_ship_size = crisis_stinger_mod
 		is_ship_size = behemoth_mod
+		is_ship_size = crisis_mauler_mod
+        is_ship_size = crisis_harbinger_mod
+        is_ship_size = crisis_stinger_mod
 	}
 }
 
@@ -110,4 +119,8 @@ ship_uses_stinger_components = {
         is_ship_size = crisis_stinger_mod
 		is_ship_size = behemoth_mod
 	}
+}
+
+can_destroy_planet_with_PLANET_KILLER_MAW_MOD = {
+	can_destroy_planet_with_PLANET_KILLER_NEUTRON = yes
 }

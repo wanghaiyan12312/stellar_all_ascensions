@@ -1,6 +1,6 @@
 key = "$SIZE$_PSI_BIO_SHIELD_$TIER$"
 icon = "GFX_ship_part_bio_psi_shield_$TIER$"
-icon_frame = 1
+#icon_frame = 1
 resources = {
 	category = ship_components
 	cost = {

@@ -619,53 +619,106 @@ create_hive_fe_citadel = {
 }
 
 add_cosmogenesis_level_1_perks = { #FE Buildings are random draw now
+
 	add_research_option = tech_cosmogenesis_crisis_1
 	add_research_option = tech_dark_matter_power_core
 	add_research_option = tech_cosmogenesis_world
 	add_research_option = tech_weaver_bio_healing_6
 	add_research_option = tech_weaver_bio_evasion_6
+	if = {
+		limit = {
+			country_uses_bio_ships = no
+		}
+		add_research_option = tech_mandibles_2
+		add_tech_progress = {
+			tech = tech_mandibles_2
+			progress = 1.0
+		}
+		add_research_option = tech_weaver_bio_evasion_2
+		add_tech_progress = {
+			tech = tech_weaver_bio_evasion_2
+			progress = 1.0
+		}
+		
+	}
 }
 
 add_cosmogenesis_level_2_perks = {
 	add_research_option = tech_cosmogenesis_crisis_2
 	add_research_option = tech_dark_matter_propulsion
 	add_research_option = tech_enigmatic_decoder
-	add_research_option = tech_cosmogenesis_escort
-	add_research_option = tech_cosmogenesis_mauler
-	add_research_option = tech_cosmogenesis_weaver
 	add_research_option = tech_weaver_bio_fire_rate_6
 	add_research_option = tech_weaver_bio_confuser_6
+	if = {
+		limit = {
+			country_uses_bio_ships = no
+		}
+		add_research_option = tech_cosmogenesis_escort
+	}
+	else = {
+		add_research_option = tech_cosmogenesis_mauler
+		add_research_option = tech_cosmogenesis_weaver
+
+	}
 }
 
-
 add_cosmogenesis_level_3_perks = {
+
 	add_research_option = tech_cosmogenesis_crisis_3
 	add_research_option = tech_dark_matter_deflector
 	add_research_option = tech_enigmatic_encoder
-	add_research_option = tech_cosmogenesis_battlecruiser
-	add_research_option = tech_cosmogenesis_harbinger
 	add_research_option = tech_weaver_bio_anti_evasion_6
 	add_research_option = tech_weaver_bio_anti_fire_rate_6
+	if = {
+		limit = {
+			country_uses_bio_ships = no
+		}
+		add_research_option = tech_cosmogenesis_battlecruiser
+	}
+	else = {
+		add_research_option = tech_cosmogenesis_harbinger
+	}
 }
-
-
-
 
 add_cosmogenesis_level_4_perks = {
 	add_research_option = tech_cosmogenesis_crisis_4
 	add_research_option = tech_energy_lance_2
 	add_research_option = tech_dragon_armor
+	if = {
+		limit = {
+			country_uses_bio_ships = no
+		}
+		add_research_option = tech_cosmogenesis_FE_titan
+	}
+	else = {
+		add_research_option = tech_cosmogenesis_stinger
+	}
+	add_research_option = tech_cosmogenesis_thesis
+
 	## mod
 	add_research_option = tech_crystal_armor_2
-	add_research_option = tech_cosmogenesis_FE_titan
-	add_research_option = tech_cosmogenesis_stinger
 	if = {
 		limit = {
 			NOT = { has_technology = tech_asteroidal_carapace }
 		}
 		give_technology = { tech = tech_asteroidal_carapace }
 	}
-	add_research_option = tech_cosmogenesis_thesis
+	if = {
+		limit = {
+			NOT = { has_technology = tech_containment_vessel }
+		}
+		give_technology = { tech = tech_containment_vessel }
+	}
+	if = {
+		limit = {
+			NOT = { has_technology = tech_containment_vessel }
+		}
+		add_research_option = tech_gateway_construction
+		add_tech_progress = {
+			tech = tech_gateway_construction
+			progress = 0.95
+		}
+	}
 }
 
 add_cosmogenesis_level_5_perks = {

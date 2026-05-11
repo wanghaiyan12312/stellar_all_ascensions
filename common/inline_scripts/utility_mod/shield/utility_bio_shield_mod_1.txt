@@ -1,5 +1,5 @@
 inline_script = {
-	script = utility_mod/shield/utility_shield_mod_2
+	script = utility_mod/shield/utility_bio_shield_mod_2
     SIZE = $SIZE$
 	SIZE_SHORT = $SIZE_SHORT$
     TIER = $TIER$

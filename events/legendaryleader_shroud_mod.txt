@@ -316,7 +316,7 @@ planet_event = {
 	immediate = {
 		# Add shroud-specific modifier to planet and remove original
 		remove_modifier = terraformation_nucleus_side_effect
-		add_modifier = { modifier = terraformation_shroud_side_effect }
+		add_modifier = { modifier = shroud_terraforming_effect }
 
 		# Destroy planet effect
 		solar_system = {
@@ -402,7 +402,6 @@ country_event = {
 					set_leader_flag = immune_to_negative_traits
 					set_leader_flag = leader_shroud_legendary_mod
 					set_leader_flag = legendary_govern_scientist_mod
-					can_manually_change_location = no
 					remove_all_negative_traits = yes
 					update_legendary_govern_scientist = yes
 				}			

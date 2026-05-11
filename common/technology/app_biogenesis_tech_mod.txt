@@ -19,6 +19,12 @@ tech_mandibles_2 = {
 			country_uses_bio_ships = yes
 		}
 	}
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_MANDIBLES_2_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_MANDIBLES_2_DESC_MOD"
+		}
+    }
 
 	weight_modifier = {
 		modifier = {
@@ -68,6 +74,13 @@ tech_mandibles_3 = {
 		}
 	}
 
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_MANDIBLES_3_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_MANDIBLES_3_DESC_MOD"
+		}
+    }
+
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -107,6 +120,13 @@ tech_weaver_bio_healing_1 = {
 		}
 	}
 
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_HEALING_1_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_HEALING_1_DESC_MOD"
+		}
+    }
+
 	ai_weight = {
 		factor = @favored_weapon_ai_tech_factor
         modifier = {
@@ -139,6 +159,13 @@ tech_weaver_bio_healing_2 = {
 			country_uses_bio_ships = yes
 		}
 	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_HEALING_2_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_HEALING_2_DESC_MOD"
+		}
+    }
 
 	weight_modifier = {
 	}
@@ -176,6 +203,13 @@ tech_weaver_bio_healing_3 = {
 		}
 	}
 
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_HEALING_3_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_HEALING_3_DESC_MOD"
+		}
+    }
+
 	weight_modifier = {
 	}
 
@@ -211,6 +245,13 @@ tech_weaver_bio_healing_4 = {
 			country_uses_bio_ships = yes
 		}
 	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_HEALING_4_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_HEALING_4_DESC_MOD"
+		}
+    }
 
 	weight_modifier = {
 		modifier = {
@@ -255,6 +296,13 @@ tech_weaver_bio_healing_5 = {
 			country_uses_bio_ships = yes
 		}
 	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_HEALING_5_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_HEALING_5_DESC_MOD"
+		}
+    }
 
 	weight_modifier = {
 		modifier = {
@@ -302,6 +350,13 @@ tech_weaver_bio_healing_6 = {
 		}
 	}
 
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_HEALING_6_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_HEALING_6_DESC_MOD"
+		}
+    }
+
 	weight_modifier = {
 		modifier = {
 			factor = 0
@@ -346,6 +401,13 @@ tech_weaver_bio_evasion_2 = {
 		}
 	}
 
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_EVASION_2_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_EVASION_2_DESC_MOD"
+		}
+    }
+
 	weight_modifier = {
 	}
 
@@ -381,7 +443,13 @@ tech_weaver_bio_evasion_3 = {
 			country_uses_bio_ships = yes
 		}
 	}
-	
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_EVASION_3_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_EVASION_3_DESC_MOD"
+		}
+    }
 
 	weight_modifier = {
 	}
@@ -418,6 +486,13 @@ tech_weaver_bio_evasion_4 = {
 			country_uses_bio_ships = yes
 		}
 	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_EVASION_4_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_EVASION_4_DESC_MOD"
+		}
+    }
 
 	weight_modifier = {
 		modifier = {
@@ -462,6 +537,13 @@ tech_weaver_bio_evasion_5 = {
 			country_uses_bio_ships = yes
 		}
 	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_EVASION_5_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_EVASION_5_DESC_MOD"
+		}
+    }
 
 	weight_modifier = {
 		modifier = {
@@ -509,6 +591,13 @@ tech_weaver_bio_evasion_6 = {
 		}
 	}
 
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_EVASION_6_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_EVASION_6_DESC_MOD"
+		}
+    }
+
 	weight_modifier = {
 		modifier = {
 			factor = 0
@@ -551,6 +640,13 @@ tech_weaver_bio_fire_rate_1 = {
 		}
 	}
 
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_FIRE_RATE_1_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_FIRE_RATE_1_DESC_MOD"
+		}
+    }
+
 	ai_weight = {
 		factor = @favored_weapon_ai_tech_factor
         modifier = {
@@ -583,6 +679,13 @@ tech_weaver_bio_fire_rate_2 = {
 			country_uses_bio_ships = yes
 		}
 	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_FIRE_RATE_2_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_FIRE_RATE_2_DESC_MOD"
+		}
+    }
 
 	weight_modifier = {
 	}
@@ -620,6 +723,13 @@ tech_weaver_bio_fire_rate_3 = {
 		}
 	}
 
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_FIRE_RATE_3_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_FIRE_RATE_3_DESC_MOD"
+		}
+    }
+
 	weight_modifier = {
 	}
 
@@ -655,6 +765,13 @@ tech_weaver_bio_fire_rate_4 = {
 			country_uses_bio_ships = yes
 		}
 	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_FIRE_RATE_4_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_FIRE_RATE_4_DESC_MOD"
+		}
+    }
 
 	weight_modifier = {
 		modifier = {
@@ -699,6 +816,13 @@ tech_weaver_bio_fire_rate_5 = {
 			country_uses_bio_ships = yes
 		}
 	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_FIRE_RATE_5_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_FIRE_RATE_5_DESC_MOD"
+		}
+    }
 
 	weight_modifier = {
 		modifier = {
@@ -745,6 +869,13 @@ tech_weaver_bio_fire_rate_6 = {
 		}
 	}
 
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_FIRE_RATE_6_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_FIRE_RATE_6_DESC_MOD"
+		}
+    }
+
 	weight_modifier = {
 		modifier = {
 			factor = 0
@@ -789,6 +920,13 @@ tech_weaver_bio_confuser_1 = {
 		}
 	}
 
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_CONFUSER_1_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_CONFUSER_1_DESC_MOD"
+		}
+    }
+
 	ai_weight = {
 		factor = @favored_weapon_ai_tech_factor
         modifier = {
@@ -821,6 +959,13 @@ tech_weaver_bio_confuser_2 = {
 			country_uses_bio_ships = yes
 		}
 	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_CONFUSER_2_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_CONFUSER_2_DESC_MOD"
+		}
+    }
 
 	weight_modifier = {
 	}
@@ -858,6 +1003,13 @@ tech_weaver_bio_confuser_3 = {
 		}
 	}
 
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_CONFUSER_3_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_CONFUSER_3_DESC_MOD"
+		}
+    }
+
 	weight_modifier = {
 	}
 
@@ -893,6 +1045,13 @@ tech_weaver_bio_confuser_4 = {
 			country_uses_bio_ships = yes
 		}
 	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_CONFUSER_4_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_CONFUSER_4_DESC_MOD"
+		}
+    }
 
 	weight_modifier = {
 		modifier = {
@@ -937,6 +1096,13 @@ tech_weaver_bio_confuser_5 = {
 			country_uses_bio_ships = yes
 		}
 	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_CONFUSER_5_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_CONFUSER_5_DESC_MOD"
+		}
+    }
 
 	weight_modifier = {
 		modifier = {
@@ -984,6 +1150,13 @@ tech_weaver_bio_confuser_6 = {
 		}
 	}
 
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_CONFUSER_6_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_CONFUSER_6_DESC_MOD"
+		}
+    }
+
 	weight_modifier = {
 		modifier = {
 			factor = 0
@@ -1028,6 +1201,13 @@ tech_weaver_bio_anti_evasion_2 = {
 		}
 	}
 
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_EVASION_2_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_EVASION_2_DESC_MOD"
+		}
+    }
+
 	weight_modifier = {
 	}
 
@@ -1064,6 +1244,13 @@ tech_weaver_bio_anti_evasion_3 = {
 		}
 	}
 
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_EVASION_3_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_EVASION_3_DESC_MOD"
+		}
+    }
+
 	weight_modifier = {
 	}
 
@@ -1099,6 +1286,13 @@ tech_weaver_bio_anti_evasion_4 = {
 			country_uses_bio_ships = yes
 		}
 	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_EVASION_4_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_EVASION_4_DESC_MOD"
+		}
+    }
 
 	weight_modifier = {
 		modifier = {
@@ -1143,6 +1337,13 @@ tech_weaver_bio_anti_evasion_5 = {
 			country_uses_bio_ships = yes
 		}
 	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_EVASION_5_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_EVASION_5_DESC_MOD"
+		}
+    }
 
 	weight_modifier = {
 		modifier = {
@@ -1190,6 +1391,13 @@ tech_weaver_bio_anti_evasion_6 = {
 		}
 	}
 
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_EVASION_6_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_EVASION_6_DESC_MOD"
+		}
+    }
+
 	weight_modifier = {
 		modifier = {
 			factor = 0
@@ -1232,6 +1440,13 @@ tech_weaver_bio_anti_fire_rate_1 = {
 		}
 	}
 
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_FIRE_RATE_1_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_FIRE_RATE_1_DESC_MOD"
+		}
+    }
+
 	ai_weight = {
 		factor = @favored_weapon_ai_tech_factor
         modifier = {
@@ -1264,6 +1479,13 @@ tech_weaver_bio_anti_fire_rate_2 = {
 			country_uses_bio_ships = yes
 		}
 	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_FIRE_RATE_2_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_FIRE_RATE_2_DESC_MOD"
+		}
+    }
 
 	weight_modifier = {
 	}
@@ -1301,6 +1523,13 @@ tech_weaver_bio_anti_fire_rate_3 = {
 		}
 	}
 
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_FIRE_RATE_3_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_FIRE_RATE_3_DESC_MOD"
+		}
+    }
+
 	weight_modifier = {
 	}
 
@@ -1336,6 +1565,13 @@ tech_weaver_bio_anti_fire_rate_4 = {
 			country_uses_bio_ships = yes
 		}
 	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_FIRE_RATE_4_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_FIRE_RATE_4_DESC_MOD"
+		}
+    }
 
 	weight_modifier = {
 		modifier = {
@@ -1380,6 +1616,13 @@ tech_weaver_bio_anti_fire_rate_5 = {
 			country_uses_bio_ships = yes
 		}
 	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_FIRE_RATE_5_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_FIRE_RATE_5_DESC_MOD"
+		}
+    }
 
 	weight_modifier = {
 		modifier = {
@@ -1427,6 +1670,13 @@ tech_weaver_bio_anti_fire_rate_6 = {
 		}
 	}
 
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_FIRE_RATE_6_TITLE_MOD"
+			desc = "TECH_UNLOCK_TECH_WEAVER_BIO_ANTI_FIRE_RATE_6_DESC_MOD"
+		}
+    }
+
 	weight_modifier = {
 		modifier = {
 			factor = 0
@@ -1455,3 +1705,381 @@ tech_weaver_bio_anti_fire_rate_6 = {
 	}
 }
 
+#################
+#    mod add    #
+#################
+
+tech_mauler_growth_1_mod = {
+	tier = 1
+	cost = @tier1cost2
+	weight = @tier1weight2
+	category = { biology }
+	area = society
+
+	potential = {
+		has_ascension_perk = ap_cosmogenesis
+		country_uses_bio_ships = no
+	}
+
+	gateway = bio_ships
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 10 }
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_mauler_growth_1
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 15
+		}
+		modifier = {
+			factor = 3
+			years_passed > 20
+		}
+		modifier = {
+			factor = 4
+			years_passed > 30
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+	}
+
+	ai_weight = {
+		base = 0
+	}
+}
+
+tech_mauler_growth_2_mod = {
+	tier = 1
+	cost = @tier1cost3
+	weight = @tier1weight3
+	area = society
+	category = { biology }
+	prerequisites = { "tech_mauler_growth_1_mod" }
+
+	potential = {
+		has_ascension_perk = ap_cosmogenesis
+		country_uses_bio_ships = no
+	}
+
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 10 }
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_mauler_growth_2
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 15
+		}
+		modifier = {
+			factor = 3
+			years_passed > 20
+		}
+		modifier = {
+			factor = 4
+			years_passed > 30
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+	}
+
+	ai_weight = {
+		base = 0
+	}
+}
+
+tech_weaver_growth_1_mod = {
+	tier = 2
+	cost = @tier2cost2
+	weight = @tier2weight2
+	area = society
+	category = { biology }
+
+	potential = {
+		has_ascension_perk = ap_cosmogenesis
+		country_uses_bio_ships = no
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 10 }
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_weaver_growth_1
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 15
+		}
+		modifier = {
+			factor = 3
+			years_passed > 20
+		}
+		modifier = {
+			factor = 4
+			years_passed > 30
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+	}
+
+	ai_weight = {
+		base = 0
+	}
+}
+
+tech_weaver_growth_2_mod = {
+	tier = 2
+	cost = @tier2cost3
+	weight = @tier2weight3
+	area = society
+	category = { biology }
+	prerequisites = { "tech_weaver_growth_1_mod" }
+
+	potential = {
+		has_ascension_perk = ap_cosmogenesis
+		country_uses_bio_ships = no
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 10 }
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_weaver_growth_2
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 15
+		}
+		modifier = {
+			factor = 3
+			years_passed > 20
+		}
+		modifier = {
+			factor = 4
+			years_passed > 30
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+	}
+
+	ai_weight = {
+		base = 0
+	}
+}
+
+tech_harbinger_growth_1_mod = {
+	tier = 3
+	cost = @tier3cost2
+	weight = @tier3weight2
+	area = society
+	category = { biology }
+
+	potential = {
+		has_ascension_perk = ap_cosmogenesis
+		country_uses_bio_ships = no
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 20 }
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_harbinger_growth_1
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 30
+		}
+		modifier = {
+			factor = 3
+			years_passed > 35
+		}
+		modifier = {
+			factor = 4
+			years_passed > 40
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+	}
+
+	ai_weight = {
+		base = 0
+	}
+}
+
+tech_harbinger_growth_2_mod  = {
+	tier = 3
+	cost = @tier3cost3
+	weight = @tier3weight3
+	area = society
+	category = { biology }
+	prerequisites = { "tech_harbinger_growth_1_mod" }
+
+	potential = {
+		has_ascension_perk = ap_cosmogenesis
+		country_uses_bio_ships = no
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 20 }
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_harbinger_growth_2
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 30
+		}
+		modifier = {
+			factor = 3
+			years_passed > 35
+		}
+		modifier = {
+			factor = 4
+			years_passed > 40
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+	}
+
+	ai_weight = {
+		base = 0
+	}
+}
+
+tech_stinger_growth_1_mod = {
+	tier = 4
+	cost = @tier4cost2
+	weight = @tier4weight2
+	area = society
+	category = { biology }
+
+	potential = {
+		has_ascension_perk = ap_cosmogenesis
+		country_uses_bio_ships = no
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 50 }
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_stinger_growth_1
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 60
+		}
+		modifier = {
+			factor = 3
+			years_passed > 65
+		}
+		modifier = {
+			factor = 4
+			years_passed > 70
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+	}
+
+	ai_weight = {
+		base = 0
+	}
+}
+
+tech_stinger_growth_2_mod = {
+	tier = 4
+	cost = @tier4cost3
+	weight = @tier4weight3
+	area = society
+	category = { biology }
+	prerequisites = { "tech_stinger_growth_1_mod" }
+
+	potential = {
+		has_ascension_perk = ap_cosmogenesis
+		country_uses_bio_ships = no
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 50 }
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_stinger_growth_2
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 60
+		}
+		modifier = {
+			factor = 3
+			years_passed > 65
+		}
+		modifier = {
+			factor = 4
+			years_passed > 70
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+	}
+
+	ai_weight = {
+		base = 0
+	}
+}

@@ -9,3 +9,17 @@ on_shroud_sciensce_action_cancel = {
 		leadershroud.5
 	}
 }
+
+on_destroy_planet_with_PLANET_KILLER_MAW_MOD = {
+	events = {	
+		planet_destruction.1005
+		origin.3245
+		awareness.150 # Planet cracker used OR planet terraformed, chance to gain 20 awareness.
+	}
+}
+
+on_destroy_planet_with_PLANET_KILLER_MAW_MOD_queued = {
+}
+
+on_destroy_planet_with_PLANET_KILLER_MAW_MOD_unqueued = {
+}
