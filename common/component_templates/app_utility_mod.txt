@@ -453,15 +453,14 @@ utility_component_template = {
 	}
 
 	prerequisites = {
-		tech_mauler_growth_1_mod
+		tech_mauler_growth_mod_1
 	}
 
 	component_set = "bio_ship_unique_components"
 	potential = {
 		ship_uses_mauler_components = yes
 	}
-	upgrades_to = "MAULER_PURSUIT_2"
-	upgrade_path = mauler_pursuit
+	upgrades_to = "MAULER_PURSUIT_2_MOD"
 	ai_tags = {
 		screen
 		screen_stealth
@@ -496,14 +495,13 @@ utility_component_template = {
 	}
 
 	prerequisites = {
-		tech_mauler_growth_2_mod
+		tech_mauler_growth_mod_2
 	}
 
 	component_set = "bio_ship_unique_components"
 	potential = {
 		ship_uses_mauler_components = yes
 	}
-	upgrade_path = mauler_pursuit
 	ai_tags = {
 		screen
 		screen_stealth
@@ -537,7 +535,7 @@ utility_component_template = {
 	}
 
 	prerequisites = {
-		tech_weaver_growth_1_mod
+		tech_weaver_growth_mod_1
 	}
 
 	friendly_aura = {
@@ -558,8 +556,7 @@ utility_component_template = {
 	potential = {
 		ship_uses_weaver_components = yes
 	}
-	upgrades_to = "WEAVER_GROWTH_AURA_2"
-	upgrade_path = weaver_growth_aura
+	upgrades_to = "WEAVER_GROWTH_AURA_2_MOD"
 
 	ai_tags = { buffer_role buffer_role_stealth }
 
@@ -587,7 +584,7 @@ utility_component_template = {
 	}
 
 	prerequisites = {
-		tech_weaver_growth_2_mod
+		tech_weaver_growth_mod_2
 	}
 
 	friendly_aura = {
@@ -608,7 +605,6 @@ utility_component_template = {
 	potential = {
 		ship_uses_weaver_components = yes
 	}
-	upgrade_path = weaver_growth_aura
 
 	ai_tags = { buffer_role buffer_role_stealth }
 
@@ -646,15 +642,14 @@ utility_component_template = {
 	}
 
 	prerequisites = {
-		tech_harbinger_growth_1_mod
+		tech_harbinger_growth_mod_1
 	}
 
 	component_set = "bio_ship_unique_components"
 	potential = {
 		ship_uses_harbinger_components = yes
 	}
-	upgrades_to = "HARBINGER_INCUBATOR_2"
-	upgrade_path = harbinger_incubator
+	upgrades_to = "HARBINGER_INCUBATOR_2_MOD"
 	ai_tags = {
 		artillery
 		artillery_stealth
@@ -689,14 +684,13 @@ utility_component_template = {
 	}
 
 	prerequisites = {
-		tech_harbinger_growth_2_mod
+		tech_harbinger_growth_mod_2
 	}
 
 	component_set = "bio_ship_unique_components"
 	potential = {
 		ship_uses_harbinger_components = yes
 	}
-	upgrade_path = harbinger_incubator
 	ai_tags = {
 		artillery
 		artillery_stealth
@@ -736,15 +730,14 @@ utility_component_template = {
 	}
 
 	prerequisites = {
-		tech_harbinger_growth_1
+		tech_harbinger_growth_mod_1
 	}
 
 	component_set = "bio_ship_unique_components"
 	potential = {
 		ship_uses_harbinger_components = yes
 	}
-	upgrades_to = "HARBINGER_CHITIN_2"
-	upgrade_path = harbinger_chitin
+	upgrades_to = "HARBINGER_CHITIN_2_MOD"
 	ai_tags = {
 		carrier
 		carrier_stealth
@@ -779,14 +772,13 @@ utility_component_template = {
 	}
 
 	prerequisites = {
-		tech_harbinger_growth_2_mod
+		tech_harbinger_growth_mod_2
 	}
 
 	component_set = "bio_ship_unique_components"
 	potential = {
 		ship_uses_harbinger_components = yes
 	}
-	upgrade_path = harbinger_chitin
 	ai_tags = {
 		carrier
 		carrier_stealth
@@ -826,14 +818,14 @@ utility_component_template = {
 	}
 
 	prerequisites = {
-		tech_stinger_growth_1_mod
+		tech_stinger_growth_mod_1
 	}
 
 	component_set = "bio_ship_unique_components"
 	potential = {
 		ship_uses_stinger_components = yes
 	}
-	upgrades_to = "STINGER_RANGE_2"
+	upgrades_to = "STINGER_RANGE_2_MOD"
 	upgrade_path = stinger_range
 	ai_tags = {
 		artillery
@@ -869,14 +861,13 @@ utility_component_template = {
 	}
 
 	prerequisites = {
-		tech_stinger_growth_2_mod
+		tech_stinger_growth_mod_2
 	}
 
 	component_set = "bio_ship_unique_components"
 	potential = {
 		ship_uses_stinger_components = yes
 	}
-	upgrade_path = stinger_range
 	ai_tags = {
 		artillery
 		artillery_stealth
@@ -916,15 +907,14 @@ utility_component_template = {
 	}
 
 	prerequisites = {
-		tech_stinger_growth_1_mod
+		tech_stinger_growth_mod_1
 	}
 
 	component_set = "bio_ship_unique_components"
 	potential = {
 		ship_uses_stinger_components = yes
 	}
-	upgrades_to = "STINGER_FIRE_RATE_2"
-	upgrade_path = stinger_fire_rate
+	upgrades_to = "STINGER_FIRE_RATE_2_MOD"
 	ai_tags = {
 		gunship
 		gunship_stealth
@@ -959,14 +949,13 @@ utility_component_template = {
 	}
 
 	prerequisites = {
-		tech_stinger_growth_2_mod
+		tech_stinger_growth_mod_2
 	}
 
 	component_set = "bio_ship_unique_components"
 	potential = {
 		ship_uses_stinger_components = yes
 	}
-	upgrade_path = stinger_fire_rate
 	ai_tags = {
 		gunship
 		gunship_stealth

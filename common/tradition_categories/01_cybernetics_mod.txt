@@ -4,7 +4,6 @@ tradition_cybernetics = {
 	finish_bonus = "tr_cybernetics_finish"
 	potential = {
 		OR = {
-			has_utopia = yes
 			has_machine_age_dlc = yes
 		}
 		is_machine_empire = no

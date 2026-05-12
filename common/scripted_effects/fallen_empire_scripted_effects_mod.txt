@@ -619,7 +619,6 @@ create_hive_fe_citadel = {
 }
 
 add_cosmogenesis_level_1_perks = { #FE Buildings are random draw now
-
 	add_research_option = tech_cosmogenesis_crisis_1
 	add_research_option = tech_dark_matter_power_core
 	add_research_option = tech_cosmogenesis_world
@@ -629,17 +628,12 @@ add_cosmogenesis_level_1_perks = { #FE Buildings are random draw now
 		limit = {
 			country_uses_bio_ships = no
 		}
-		add_research_option = tech_mandibles_2
-		add_tech_progress = {
-			tech = tech_mandibles_2
-			progress = 1.0
+		give_technology = { 
+			tech = tech_mandibles_2 
 		}
-		add_research_option = tech_weaver_bio_evasion_2
-		add_tech_progress = {
-			tech = tech_weaver_bio_evasion_2
-			progress = 1.0
-		}
-		
+		give_technology = { 
+			tech = tech_weaver_bio_evasion_2 
+		}		
 	}
 }
 
@@ -658,7 +652,6 @@ add_cosmogenesis_level_2_perks = {
 	else = {
 		add_research_option = tech_cosmogenesis_mauler
 		add_research_option = tech_cosmogenesis_weaver
-
 	}
 }
 
@@ -711,13 +704,25 @@ add_cosmogenesis_level_4_perks = {
 	}
 	if = {
 		limit = {
-			NOT = { has_technology = tech_containment_vessel }
+			NOT = { has_technology = null_void_beam }
 		}
-		add_research_option = tech_gateway_construction
-		add_tech_progress = {
-			tech = tech_gateway_construction
-			progress = 0.95
-		}
+		give_technology = { tech = null_void_beam }
+	}
+	set_country_flag = astral_cloaking_available
+	set_country_flag = encountered_first_lgate
+	set_country_flag = edict_automated_disinfection
+	set_country_flag = has_spontaneous_crystallization
+	set_country_flag = unlocked_warplings
+	set_country_flag = tidal_lock_knowledge
+	set_country_flag = can_build_microplanet_memorial
+	set_country_flag = can_breed_rockworm_hives
+	set_variable = {
+		which = num_authorized_wind_creatures
+		value = 3
+	}
+	set_variable = {
+		which = num_authorized_fractal_seeds
+		value = 3
 	}
 }
 

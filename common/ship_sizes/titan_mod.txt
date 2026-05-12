@@ -83,10 +83,6 @@ cosmo_crisis_titan_mod = {
 		max = 0
 	}
 
-	potential_country = {
-		NOT = { has_country_flag = cosmogenesis_aborted }
-	}
-
 	potential_construction = {
 		OR = {
 			is_scope_type = starbase

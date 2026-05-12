@@ -478,8 +478,17 @@ evolutionary_predators_situation = {
 			mult = 0
 			owner = {
 				any_situation = {
-					is_situation_type = situation_cyberization
-					is_situation_type = situation_cybernetic_creed_cyberization
+					AND = {
+						OR = {
+							is_situation_type = situation_cyberization
+							is_situation_type = situation_cybernetic_creed_cyberization
+						}
+						OR = {
+							has_situation_flag = cyberization_ongoing
+							has_situation_flag = cyberization_ongoing_limited
+							has_situation_flag = cyberization_ongoing_forced
+						}
+					}
 				}
 			}
 			desc = "situation_cyberization_ongoing_desc"

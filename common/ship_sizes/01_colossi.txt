@@ -44,7 +44,9 @@ colossus = {
 	}
 
 	possible_construction = {
-		is_fallen_empire = no
+		owner = {
+			is_fallen_empire = no
+		}
 		custom_tooltip = {
 			fail_text = starbase_citadel_trigger
 			OR = {

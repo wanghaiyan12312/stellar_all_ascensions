@@ -113,7 +113,6 @@ ap_engineered_evolution = {
 
 	potential = {
 		OR = {
-			has_utopia = yes
 			has_biogenesis_dlc = yes
 		}
 		NOR = {
@@ -182,7 +181,6 @@ ap_the_flesh_is_weak = {
 
 	potential = {
 		OR = {
-			has_utopia = yes
 			has_machine_age_dlc = yes
 		}
 		NOR = {
@@ -294,7 +292,6 @@ ap_synthetic_evolution = {
 
 	potential = {
 		OR = {
-			has_utopia = yes
 			has_machine_age_dlc = yes
 		}
 		NOR = {
@@ -347,7 +344,6 @@ ap_synthetic_evolution = {
 ap_synthetic_moduler_evolution = {
 	potential = {
 		OR = {
-			has_utopia = yes
 			has_machine_age_dlc = yes
 		}
 		NOR = {
@@ -531,7 +527,6 @@ ap_mind_over_matter = {
 
 	potential = {
 		OR = {
-			has_utopia = yes
 			has_shroud_dlc = yes
 		}
 		NOR = {

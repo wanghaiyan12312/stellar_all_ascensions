@@ -29,7 +29,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_dragon_armor" }
 	component_set = "DRAGON_BIO_ARMOR_1"
-	upgrades_to = "DRAGON_BIO_ARMOR_2"
+	upgrades_to = "SMALL_DRAGON_BIO_ARMOR_2"
 
 	ai_weight = {
 		weight = @T6_weight
@@ -64,6 +64,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_dragon_armor" }
 	component_set = "DRAGON_BIO_ARMOR"
+	upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_2"
 
 	ai_weight = {
 		weight = @T6_weight
@@ -98,7 +99,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_dragon_armor" }
 	component_set = "DRAGON_BIO_ARMOR_1"
-	upgrades_to = "DRAGON_BIO_ARMOR_2"
+	upgrades_to = "LARGE_DRAGON_BIO_ARMOR_2"
 
 	ai_weight = {
 		weight = @T6_weight
@@ -157,7 +158,7 @@ utility_component_template = { # Small
 
 	prerequisites = { "tech_archaeoarmor" }
 	component_set = "BIO_ARCHAEO_ARMOR_1"
-	upgrades_to = "BIO_ARCHAEO_ARMOR_2"
+	upgrades_to = "SMALL_BIO_ARCHAEO_ARMOR_2"
 	resources = {
 		category = ship_components
 		cost = {
@@ -246,7 +247,7 @@ utility_component_template = { # Medium
 
 	prerequisites = { "tech_archaeoarmor" }
 	component_set = "BIO_ARCHAEO_ARMOR_1"
-	upgrades_to = "BIO_ARCHAEO_ARMOR_2"
+	upgrades_to = "MEDIUM_BIO_ARCHAEO_ARMOR_2"
 	resources = {
 		category = ship_components
 		cost = {
@@ -335,7 +336,7 @@ utility_component_template = { # Large
 
 	prerequisites = { "tech_archaeoarmor" }
 	component_set = "BIO_ARCHAEO_ARMOR_1"
-	upgrades_to = "BIO_ARCHAEO_ARMOR_2"
+	upgrades_to = "LARGE_BIO_ARCHAEO_ARMOR_2"
 	resources = {
 		category = ship_components
 		cost = {
@@ -409,7 +410,7 @@ utility_component_template = {
 	}
 	prerequisites = { "tech_psionic_shield" }
 	component_set = "PSI_BIO_SHIELD"
-	upgrades_to = "PSI_BIO_SHIELD_2"
+	upgrades_to = "SMALL_PSI_BIO_SHIELD_2"
 	
 
 	potential = {
@@ -465,7 +466,7 @@ utility_component_template = {
 	}
 	prerequisites = { "tech_psionic_shield" }
 	component_set = "PSI_BIO_SHIELD"
-	upgrades_to = "PSI_BIO_SHIELD_2"
+	upgrades_to = "MEDIUM_PSI_BIO_SHIELD_2"
 
 	potential = {
 		from = {
@@ -520,7 +521,7 @@ utility_component_template = {
 	}
 	prerequisites = { "tech_psionic_shield" }
 	component_set = "PSI_BIO_SHIELD"
-	upgrades_to = "PSI_BIO_SHIELD_2"
+	upgrades_to = "LARGE_PSI_BIO_SHIELD_2"
 
 	potential = {
 		from = {

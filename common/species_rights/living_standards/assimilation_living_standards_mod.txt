@@ -4,7 +4,6 @@ living_standard_psi_and_cyborg_assimilation = {
 	}
 
 	potential = {
-		has_utopia = yes
 		exists = from
 		from = {
 			OR = {
@@ -54,11 +53,6 @@ living_standard_cyborg_ego_assimilation = {
 	}
 
 	potential = {
-		OR = {
-			has_utopia = yes
-			has_synthetic_dawn = yes
-			has_machine_age_dlc = yes
-		}
 		NOR = {
 			has_trait = trait_latent_psionic
 			has_trait = trait_psionic
@@ -122,7 +116,6 @@ living_standard_cyborg_ego_assimilation_psionic = {
 
 	potential = {
 		OR = {
-			has_utopia = yes
 			has_machine_age_dlc = yes
 		}
 		OR = {
@@ -181,7 +174,6 @@ living_standard_cyborg_assimilation = {
 
 	potential = {
 		OR = {
-			has_utopia = yes
 			has_machine_age_dlc = yes
 		}
 		NOR = {
@@ -226,7 +218,6 @@ living_standard_cyborg_assimilation_psionic = {
 
 	potential = {
 		OR = {
-			has_utopia = yes
 			has_machine_age_dlc = yes
 		}
 		OR = {
@@ -272,7 +263,6 @@ living_standard_psi_assimilation = {
 	}
 
 	potential = {
-		has_utopia = yes
 		NOT = { has_trait = trait_cybernetic }
 		exists = from
 		from = {
@@ -308,7 +298,6 @@ living_standard_psi_assimilation_cyborg = {
 	}
 
 	potential = {
-		has_utopia = yes
 		has_trait = trait_cybernetic
 		exists = from
 		from = {

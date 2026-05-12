@@ -26,7 +26,9 @@ utility_component_template = {
 			}
 			custom_tooltip = {
 				fail_text = "terraform_nucleus_purchase_cooldown"
-				NOT = { has_country_flag = terraform_nucleus_purchase }
+				owner = {
+					NOT = { has_country_flag = terraform_nucleus_purchase }
+				}
 			}
 		}
 
