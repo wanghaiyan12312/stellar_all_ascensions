@@ -27,7 +27,7 @@ tech_psionic_shield_2 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -54,7 +54,7 @@ tech_psionic_shield_3 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -81,7 +81,7 @@ tech_psionic_shield_4 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -108,7 +108,7 @@ tech_psionic_shield_5 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -135,7 +135,7 @@ tech_psionic_shield_6 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -162,7 +162,7 @@ tech_psionic_shield_7 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -189,7 +189,7 @@ tech_psionic_shield_8 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -216,7 +216,7 @@ tech_psionic_shield_9 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -243,7 +243,7 @@ tech_psionic_shield_10 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -270,7 +270,7 @@ tech_psionic_shield_11 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -297,7 +297,7 @@ tech_psionic_shield_12 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -324,7 +324,7 @@ tech_psionic_shield_13 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -351,7 +351,7 @@ tech_psionic_shield_14 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -378,7 +378,7 @@ tech_psionic_shield_15 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -405,7 +405,7 @@ tech_psionic_shield_16 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -432,7 +432,7 @@ tech_psionic_shield_17 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -459,7 +459,7 @@ tech_psionic_shield_18 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -486,7 +486,7 @@ tech_psionic_shield_19 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -513,7 +513,7 @@ tech_psionic_shield_20 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -540,7 +540,7 @@ tech_psionic_shield_21 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -567,7 +567,7 @@ tech_psionic_shield_22 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -594,7 +594,7 @@ tech_psionic_shield_23 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
 		country_uses_bio_ships = no
@@ -621,7 +621,7 @@ tech_psionic_shield_24 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -648,7 +648,7 @@ tech_psionic_shield_25 = {
 	is_reverse_engineerable = no
 
     potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
 		country_uses_bio_ships = no
@@ -692,7 +692,7 @@ tech_dragon_armor_2 = {
 	prerequisites = { "tech_dragon_armor" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -720,7 +720,7 @@ tech_dragon_armor_3 = {
 	prerequisites = { "tech_dragon_armor_2" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -747,7 +747,7 @@ tech_dragon_armor_4 = {
 	is_reverse_engineerable = no
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -775,7 +775,7 @@ tech_dragon_armor_5 = {
 	prerequisites = { "tech_dragon_armor_4" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -803,7 +803,7 @@ tech_dragon_armor_6 = {
 	prerequisites = { "tech_dragon_armor_5" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -831,7 +831,7 @@ tech_dragon_armor_7 = {
 	prerequisites = { "tech_dragon_armor_6" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -859,7 +859,7 @@ tech_dragon_armor_8 = {
 	prerequisites = { "tech_dragon_armor_7" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -887,7 +887,7 @@ tech_dragon_armor_9 = {
 	prerequisites = { "tech_dragon_armor_8" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -915,7 +915,7 @@ tech_dragon_armor_10 = {
 	prerequisites = { "tech_dragon_armor_9" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -943,7 +943,7 @@ tech_dragon_armor_11 = {
 	prerequisites = { "tech_dragon_armor_10" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -971,7 +971,7 @@ tech_dragon_armor_12 = {
 	prerequisites = { "tech_dragon_armor_11" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -999,7 +999,7 @@ tech_dragon_armor_13 = {
 	prerequisites = { "tech_dragon_armor_12" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1027,7 +1027,7 @@ tech_dragon_armor_14 = {
 	prerequisites = { "tech_dragon_armor_13" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1055,7 +1055,7 @@ tech_dragon_armor_15 = {
 	prerequisites = { "tech_dragon_armor_14" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1083,7 +1083,7 @@ tech_dragon_armor_16 = {
 	prerequisites = { "tech_dragon_armor_15" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1111,7 +1111,7 @@ tech_dragon_armor_17 = {
 	prerequisites = { "tech_dragon_armor_16" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1139,7 +1139,7 @@ tech_dragon_armor_18 = {
 	prerequisites = { "tech_dragon_armor_17" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1167,7 +1167,7 @@ tech_dragon_armor_19 = {
 	prerequisites = { "tech_dragon_armor_18" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1195,7 +1195,7 @@ tech_dragon_armor_20 = {
 	prerequisites = { "tech_dragon_armor_19" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1223,7 +1223,7 @@ tech_dragon_armor_21 = {
 	prerequisites = { "tech_dragon_armor_20" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1251,7 +1251,7 @@ tech_dragon_armor_22 = {
 	prerequisites = { "tech_dragon_armor_21" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1279,7 +1279,7 @@ tech_dragon_armor_23 = {
 	prerequisites = { "tech_dragon_armor_22" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1307,7 +1307,7 @@ tech_dragon_armor_24 = {
 	prerequisites = { "tech_dragon_armor_23" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1335,7 +1335,7 @@ tech_dragon_armor_25 = {
 	prerequisites = { "tech_dragon_armor_24" }
 
 	potential = {
-        is_gestalt = no
+        this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1408,7 +1408,7 @@ tech_archaeoarmor_2 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1436,7 +1436,7 @@ tech_archaeoarmor_3 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1464,7 +1464,7 @@ tech_archaeoarmor_4 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1492,7 +1492,7 @@ tech_archaeoarmor_5 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1520,7 +1520,7 @@ tech_archaeoarmor_6 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1548,7 +1548,7 @@ tech_archaeoarmor_7 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1576,7 +1576,7 @@ tech_archaeoarmor_8 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1604,7 +1604,7 @@ tech_archaeoarmor_9 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1632,7 +1632,7 @@ tech_archaeoarmor_10 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1660,7 +1660,7 @@ tech_archaeoarmor_11 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1688,7 +1688,7 @@ tech_archaeoarmor_12 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1716,7 +1716,7 @@ tech_archaeoarmor_13 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1744,7 +1744,7 @@ tech_archaeoarmor_14 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1772,7 +1772,7 @@ tech_archaeoarmor_15 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1800,7 +1800,7 @@ tech_archaeoarmor_16 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1828,7 +1828,7 @@ tech_archaeoarmor_17 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1856,7 +1856,7 @@ tech_archaeoarmor_18 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1884,7 +1884,7 @@ tech_archaeoarmor_19 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1912,7 +1912,7 @@ tech_archaeoarmor_20 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1940,7 +1940,7 @@ tech_archaeoarmor_21 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1968,7 +1968,7 @@ tech_archaeoarmor_22 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -1996,7 +1996,7 @@ tech_archaeoarmor_23 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -2024,7 +2024,7 @@ tech_archaeoarmor_24 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5
@@ -2052,7 +2052,7 @@ tech_archaeoarmor_25 = {
 
 	potential = {
 		has_ancrel = yes
-    	is_gestalt = no
+    	this_mod_effected_country = yes
 		country_uses_bio_ships = no
 		has_ascension_perk = ap_cosmogenesis
 		has_crisis_level = crisis_cosmogenesis_level_5

@@ -435,10 +435,7 @@ country_event = {
 	hide_window = yes
 	trigger = {
 		has_paragon_dlc = yes
-        is_gestalt = no
-        is_mechanical_empire = no
-		is_individual_machine = no
-		is_natural_design_empire = no
+        this_mod_effected_country = yes
 		NOT = {
 			has_country_flag = chosen_one_ruler_event
 		}
@@ -516,6 +513,7 @@ country_event = {
 				which = "leadershroud_council_scientist_num"
 				value = 1
 			}
+			add_relic_bonus_mod = yes
 		}
 	}
 
@@ -545,6 +543,7 @@ country_event = {
 				which = "leadershroud_govern_scientist_num"
 				value = 1
 			}
+			add_relic_bonus_mod = yes
 		}
 	}
 
@@ -575,6 +574,7 @@ country_event = {
 				value = 1
 			}
 			add_shroud_ship = yes
+			add_relic_bonus_mod = yes
 		}
 	}
 
@@ -631,6 +631,7 @@ country_event = {
 				which = "leadershroud_council_official_num"
 				value = 1
 			}
+			add_relic_bonus_mod = yes
 		}
 	}
 
@@ -660,6 +661,7 @@ country_event = {
 				which = "leadershroud_govern_official_num"
 				value = 1
 			}
+			add_relic_bonus_mod = yes
 		}
 	}
 
@@ -689,6 +691,7 @@ country_event = {
 				which = "leadershroud_delegate_official_num"
 				value = 1
 			}
+			add_relic_bonus_mod = yes
 		}
 	}
 
@@ -744,6 +747,7 @@ country_event = {
 				which = "leadershroud_councilor_commander_num"
 				value = 1
 			}
+			add_relic_bonus_mod = yes
 		}
 	}
 
@@ -773,6 +777,7 @@ country_event = {
 				which = "leadershroud_admiral_commander_num"
 				value = 1
 			}
+			add_relic_bonus_mod = yes
 		}
 	}
 	option = {
@@ -801,6 +806,7 @@ country_event = {
 				which = "leadershroud_governor_commander_num"
 				value = 1
 			}
+			add_relic_bonus_mod = yes
 		}
 	}
 	
@@ -830,6 +836,7 @@ country_event = {
 				which = "leadershroud_general_commander_num"
 				value = 1
 			}
+			add_relic_bonus_mod = yes
 		}
 	}
 

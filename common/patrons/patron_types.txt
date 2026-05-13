@@ -992,16 +992,20 @@ end_of_the_cycle = {
 		}
 		cost_override_key = "ACCORD_ANNIHILATION_COST"
 
-		potential = {
-			OR = {
-				has_origin = origin_endbringers
-				AND = {
-					has_ascension_perk = ap_cosmogenesis
-					has_crisis_level = crisis_cosmogenesis_level_5 
+		possible = {
+			custom_tooltip = {
+				fail_text = ACCORD_NEED_COSMO_5
+				OR = {
+					AND = {
+						has_origin = origin_endbringers
+						NOT = { has_country_flag = annihilation_activated }
+					}
+					AND = {
+						has_ascension_perk = ap_cosmogenesis
+						has_crisis_level = crisis_cosmogenesis_level_5 
+					}
 				}
 			}
-		}
-		possible = {
 			custom_tooltip = {
 				fail_text = ACCORD_ANNIHILATION_TRIGGER
 				has_country_flag = unlock_accord_annihilation
@@ -1059,16 +1063,22 @@ end_of_the_cycle = {
 		cost_override_key = "ACCORD_EXTERMINATION_COST"
 		cooldown = 7200
 
-		potential = {
-			OR = {
-				has_origin = origin_endbringers
-				AND = {
-					has_ascension_perk = ap_cosmogenesis
-					has_crisis_level = crisis_cosmogenesis_level_5 
+
+		possible = {
+			custom_tooltip = {
+				fail_text = ACCORD_NEED_COSMO_5
+				OR = {
+					AND = {
+						has_origin = origin_endbringers
+						NOT = { has_country_flag = extermination_activated }
+					}
+					AND = {
+						has_ascension_perk = ap_cosmogenesis
+						has_crisis_level = crisis_cosmogenesis_level_5 
+					}
 				}
 			}
-		}
-		possible = {
+			
 			custom_tooltip = {
 				fail_text = ACCORD_EXTERMINATION_TRIGGER
 				has_country_flag = unlock_accord_extermination
@@ -1130,16 +1140,20 @@ end_of_the_cycle = {
 		cost_override_key = "ACCORD_DESTRUCTION_COST"
 		cooldown = 7200
 
-		potential = {
-			OR = {
-				has_origin = origin_endbringers
-				AND = {
-					has_ascension_perk = ap_cosmogenesis
-					has_crisis_level = crisis_cosmogenesis_level_5 
+		possible = {
+			custom_tooltip = {
+				fail_text = ACCORD_NEED_COSMO_5
+				OR = {
+					AND = {
+						has_origin = origin_endbringers
+						NOT = { has_country_flag = destruction_activated }
+					}
+					AND = {
+						has_ascension_perk = ap_cosmogenesis
+						has_crisis_level = crisis_cosmogenesis_level_5 
+					}
 				}
 			}
-		}
-		possible = {
 			custom_tooltip = {
 				fail_text = ACCORD_DESTRUCTION_TRIGGER
 				has_country_flag = unlock_accord_destruction
@@ -1222,16 +1236,20 @@ end_of_the_cycle = {
 		cooldown = 1200
 		cost_override_key = "ACCORD_ERADICATION_COST"
 
-		potential = {
-			OR = {
-				has_origin = origin_endbringers
-				AND = {
-					has_ascension_perk = ap_cosmogenesis
-					has_crisis_level = crisis_cosmogenesis_level_5 
+		possible = {
+			custom_tooltip = {
+				fail_text = ACCORD_NEED_COSMO_5
+				OR = {
+					AND = {
+						has_origin = origin_endbringers
+						NOT = { has_country_flag = eradication_activated }
+					}
+					AND = {
+						has_ascension_perk = ap_cosmogenesis
+						has_crisis_level = crisis_cosmogenesis_level_5 
+					}
 				}
 			}
-		}
-		possible = {
 			custom_tooltip = {
 				fail_text = ACCORD_ERADICATION_TRIGGER
 				has_country_flag = unlock_accord_eradication

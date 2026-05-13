@@ -10,13 +10,14 @@
  utopia.3400.b.pacifist:"$utopia.3400.b$ §Y$ethic_pacifist$§"
  utopia.3400.b.xenophobe:"$utopia.3400.b$ §Y$ethic_xenophobe$§"
  utopia.3400.b.xenophile:"$utopia.3400.b$ §Y$ethic_xenophile$§"
- end_cycle.5.whisper.condition:"You need adopt the $cosmogenesis_chain_title$ tradition and achieve $crisis_cosmogenesis_level_5_desc$。\nOnly accumulate enough knowledge can get $name_whisperers$'s attantion."
+ end_cycle.5.whisper.condition:"You need adopt the $cosmogenesis_chain_title$ ascension and achieve $crisis_cosmogenesis_level_5_desc$。\nOnly accumulate enough knowledge can get $name_whisperers$'s attantion."
  end_cycle.5.title: "$edict_app_get_greater_patron_roll$"
  end_cycle.5.desc: "$edict_app_get_greater_patron_roll_desc$"
  end_cycle.5.a.tt:"$shroud.4135.a.tt$"
 
  terraform_nucleus_purchase_cooldown:"§RWe will not be able to terraform an other §YGaia Planet§! until §Y[root.leadershroud_terraform_nucleus_timer]§!§!."
 
+ ACCORD_NEED_COSMO_5:"You need adopt the $cosmogenesis_chain_title$ ascension and achieve $crisis_cosmogenesis_level_5_desc$。"
  ACCORD_FORESIGHT_TT:"Add §G$@foresight_tech_progression|0%$§! progress to currently researched Technologies and 200% research speed within 5 years."
  ACCORD_HINDSIGHT_TT:"Choose a colony you own inside of your §H$PSIONIC_AURA$§!, it becomes a §HRelic World§! with all blockers removed and Add 20 Planet size.\n$ACCORD_LOOSE_INTENSITY$"
 
@@ -60,3 +61,6 @@
  shroud_science_plural:"$NAME_Psionic_Avatar_Country$"
  SHIP_SHROUD_TERRAFORM:"Shroud Terraformation Nuclei Initiator"
  shroud_sciensce_ship_button:"This Planet is terrafored to gaia by planet our Great Patron "
+
+ end_of_the_cycle_type:"$end_of_the_cycle$"
+ end_of_the_cycle_endbringers_type:"$end_of_the_cycle_endbringers$"

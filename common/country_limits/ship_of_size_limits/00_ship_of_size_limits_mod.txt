@@ -52,5 +52,20 @@ synth_queen_titan_ships_limit = {
 	show = {
 		is_scope_valid = yes
 		has_technology = tech_synth_queen_titan
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
+	}
+}
+
+behemoth_mod_ships_limit = {
+	ship_types = {
+		behemoth_mod_titan_mod
+	}
+
+	base = 2400 # 12 * synth_queen_titan_mod's size_multiplier
+	show = {
+		is_scope_valid = yes
+		has_ascension_perk = ap_cosmogenesis
+		has_crisis_level = crisis_cosmogenesis_level_5
 	}
 }

@@ -49,7 +49,7 @@ crisis_corvette_mod = {
 		category = ships
 		cost = {
             advanced_logic = 1
-			minerals = 600 ##300 double
+			minerals = 500 ##300 
 		}
 		upkeep = {
 			energy = @corvette_upkeep_energy
@@ -186,7 +186,7 @@ crisis_cruiser_mod = {
 		category = ships
 		cost = {
             advanced_logic = 3
-			minerals = 1800 ##900 double
+			minerals = 1500 ##900
 		}
 		upkeep = {
 			energy = @cruiser_upkeep_energy
@@ -256,7 +256,7 @@ galleon_mod = {
 		category = ships
 		cost = {
             advanced_logic = 4
-			minerals = 3600 ##900 double
+			minerals = 3500 
 		}
 		upkeep = {
 			energy = @battleship_upkeep_energy

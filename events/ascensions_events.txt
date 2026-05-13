@@ -66,7 +66,7 @@ country_event = {
 			has_biogenesis_dlc = yes
 			has_machine_age_dlc = yes
 		}
-		is_gestalt = no
+		this_mod_effected_country = yes
 	}
 
 	option = {
@@ -207,7 +207,7 @@ country_event = {
 	picture = GFX_evt_ancient_databank
 	is_triggered_only = yes
 	trigger = {
-		is_gestalt = no
+		this_mod_effected_country = yes
 		has_shroud_dlc = yes 
 	}
 

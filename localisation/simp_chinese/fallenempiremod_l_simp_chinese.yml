@@ -9,7 +9,7 @@
  TECH_UNLOCK_CITADEL_II_CONSTRUCTION_DESC:"§H擎天堡 II§!\n擎天堡的升级，由于我们再编辑现实上面的努力我们突破了恒星基地的物理限制，擎天堡 II上面可修筑六个建筑，最大可支持十二个模块。"
 
  starbase_citadel_II:"$citadel$ II"
- starbase_citadel_plural:"$citadel$II"
+ starbase_citadel_II_plural:"$citadel$II"
  starbase_deep_space_citadel_4:"$dsc_name$ IV"
  starbase_deep_space_citadel_4_plural:"$dsc_name_plural$"
  starbase_deep_space_citadel_4_cap:"$starbase_deep_space_citadel_4$"

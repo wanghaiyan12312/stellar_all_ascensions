@@ -127,6 +127,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		set_country_flag = eradication_activated
 		# Kick the Crisis out of Alliances.
 		if = {
 			limit = { has_federation = yes }
@@ -220,6 +221,7 @@ country_event = {
 		every_country = {
 			limit = {
 				is_country_type = default
+				is_fallen_empire = no
 				NOR = {
 					is_same_value = event_target:war_leader
 					has_subject = root
@@ -326,10 +328,6 @@ country_event = {
 	hide_window = yes
 	trigger = {
 		has_shroud_dlc = yes 
-        is_gestalt = no
-        is_mechanical_empire = no
-		is_individual_machine = no
-		is_natural_design_empire = no
 		NOT = {
 			has_country_flag = greater_patron_chosen 
 		}

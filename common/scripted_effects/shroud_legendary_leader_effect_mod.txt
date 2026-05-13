@@ -1715,5 +1715,31 @@ add_relic_bonus_mod = {
 			}
 			add_relic = r_eternal_throne
 		}
+		0 = {
+			modifier = {
+				add = 20
+				NOT = { has_relic = r_core_of_the_reckoning }	
+				has_origin = origin_endbringers
+			}
+			add_relic = r_core_of_the_reckoning
+		}
+		0 = {
+			modifier = {
+				add = 100
+				has_relic = r_unbidden_warlock
+				has_relic = r_prethoryn_queen
+				has_relic = r_contingency_core
+				has_relic = r_cetanas_heart
+				has_relic = r_eternal_throne
+				OR = {
+					NOT = { has_origin = origin_endbringers }
+					AND = {
+						has_origin = origin_endbringers
+						has_relic = r_core_of_the_reckoning
+					}
+				}		
+			}
+			## DO NOTHING
+		}
 	}
 }

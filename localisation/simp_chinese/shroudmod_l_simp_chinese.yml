@@ -1,6 +1,6 @@
 ﻿l_simp_chinese:
- edict_app_get_greater_patron_roll:"寻找虚境当中强大的力量。"
- edict_app_get_greater_patron_roll_desc:"寻找虚境当中强大的力量。"
+ edict_app_get_greater_patron_roll:"寻找虚境当中强大的力量"
+ edict_app_get_greater_patron_roll_desc:"寻找虚境当中强大的力量"
  edict_app_get_legendary_shroud_leader:"在虚境重寻找强大的领袖"
  edict_app_get_legendary_shroud_leader_desc:"在虚境重寻找强大的领袖"
 
@@ -17,6 +17,7 @@
 
  terraform_nucleus_purchase_cooldown:"§R在§Y[root.leadershroud_terraform_nucleus_timer]§!之前无法再次改造另一颗§Y盖亚星球§!。§!"
 
+ ACCORD_NEED_COSMO_5:"你需要采纳$cosmogenesis_chain_title$传统并且达到$crisis_cosmogenesis_level_5_desc$"
  ACCORD_FORESIGHT_TT:"研究中的科技增加§G$@mod_foresight_tech_progression|0%$§!进展，并且再五年之内增加200%的研究速度。"
  ACCORD_HINDSIGHT_TT:"选择你的§H$PSIONIC_AURA$§!覆盖下的一个殖民地，使其变成§H遗落星球§!增加20行星规模并且移除所有障碍。\n$ACCORD_LOOSE_INTENSITY$"
 
@@ -60,3 +61,6 @@
  shroud_science_plural:"$NAME_Psionic_Avatar_Country$"
   SHIP_SHROUD_TERRAFORM:"虚境改造之核"
  shroud_sciensce_ship_button:"这个星球将会被我们的超主改造成盖亚星球."
+
+ end_of_the_cycle_type:"$end_of_the_cycle$"
+ end_of_the_cycle_endbringers_type:"$end_of_the_cycle_endbringers$"

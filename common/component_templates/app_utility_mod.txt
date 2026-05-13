@@ -789,6 +789,95 @@ utility_component_template = {
 	}
 }
 
+#########################
+#	Harbinger Torpedo	#
+#########################
+
+utility_component_template = {
+
+	key = "HARBINGER_TORPEDO_1"
+	icon = GFX_ship_part_stinger_range_component_1
+	size = small
+
+	icon_frame = 1
+	power = -5
+	resources = {
+		category = ship_components
+		cost = {
+			food = @genetic_component_1_food_cost
+			exotic_gases = @genetic_component_1_rare_cost
+		}
+		upkeep = {
+			food = @genetic_component_1_food_upkeep
+		}
+	}
+
+	ship_modifier = {
+		weapon_type_energy_weapon_fire_rate_mult = 0.05
+		weapon_type_energy_weapon_damage_mult = 0.05
+	}
+
+	prerequisites = {
+		tech_harbinger_growth_mod_1
+	}
+
+	component_set = "bio_ship_unique_components"
+	potential = {
+		ship_uses_harbinger_components = yes
+	}
+	upgrades_to = "HARBINGER_TORPEDO_2"
+	ai_tags = { 
+		explosive 
+		explosive_stealth 
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+utility_component_template = {
+	key = "HARBINGER_TORPEDO_2"
+	icon = GFX_ship_part_stinger_range_component_2
+	size = small
+
+	icon_frame = 1
+	power = -10
+	resources = {
+		category = ship_components
+		cost = {
+			food = @genetic_component_2_food_cost
+			exotic_gases = @genetic_component_2_rare_cost
+		}
+		upkeep = {
+			food = @genetic_component_2_food_upkeep
+		}
+	}
+
+	ship_modifier = {
+		weapon_type_energy_weapon_fire_rate_mult = 0.10
+		weapon_type_energy_weapon_damage_mult = 0.10
+	}
+
+	prerequisites = {
+		tech_harbinger_growth_mod_2
+	}
+
+	component_set = "bio_ship_unique_components"
+	potential = {
+		ship_uses_harbinger_components = yes
+	}
+	ai_tags = { 
+		explosive 
+		explosive_stealth 
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
 #####################
 #	Stinger Range	#
 #####################

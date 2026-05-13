@@ -1,4 +1,4 @@
-@mod_foresight_tech_progression = 0.95
+@mod_foresight_tech_progression = 0.85
 
 @fallen_empire_enforce_power_grand_admiral_gap = 90 
 @fallen_empire_enforce_power_admiral_gap = 180 

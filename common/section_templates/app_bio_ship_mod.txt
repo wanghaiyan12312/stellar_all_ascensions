@@ -4,7 +4,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-    entity = "biogenesis_01_mauler_stage_2_ship_entity"
+    entity = "biogenesis_01_mauler_stage_3_ship_entity"
 
 	ai_tags = {
 		brawler
@@ -39,7 +39,7 @@ ship_section_template = {
 		locatorname = "root"
 	}
 
-	small_utility_slots = 3
+	small_utility_slots = 6
 	aux_utility_slots = 2
 
 	resources = {
@@ -57,7 +57,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "biogenesis_01_mauler_stage_2_ship_entity"
+	entity = "biogenesis_01_mauler_stage_3_ship_entity"
 
 	ai_tags = {
 		screen
@@ -92,7 +92,7 @@ ship_section_template = {
 		locatorname = "root"
 	}
 
-	small_utility_slots = 3
+	small_utility_slots = 6
 	aux_utility_slots = 2
 }
 
@@ -102,7 +102,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "biogenesis_01_harbinger_stage_2_ship_entity"
+	entity = "biogenesis_01_harbinger_stage_3_ship_entity"
 
 	ai_tags = {
 		energy_torpedoes
@@ -137,6 +137,18 @@ ship_section_template = {
 		locatorname = "weapon_02"
 	}
 
+	component_slot = {
+		name = "TORPEDO_05"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_06"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_02"
+	}
+
     component_slot = {
 		name = "PD_01"
 		template = "point_defence_turret"
@@ -149,8 +161,8 @@ ship_section_template = {
 		locatorname = "weapon_02"
 	}
 
-	medium_utility_slots = 3
-	aux_utility_slots = 2
+	large_utility_slots = 6
+	aux_utility_slots = 3
 
 }
 

@@ -1,5 +1,5 @@
 crisis_mauler_mod = {
-	entity = "biogenesis_01_mauler_stage_2_entity"
+	entity = "biogenesis_01_mauler_stage_3_entity"
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
 	ship_family_name = mauler_class
 
@@ -24,7 +24,7 @@ crisis_mauler_mod = {
 	num_target_locators = 2
 	is_space_station = no
 	base_buildtime = @mauler_stage_3_build_time
-	can_have_federation_design = yes
+	can_have_federation_design = no
 	enable_default_design = yes
 	enable_3dview_in_ship_browser = no
 	use_shipnames_from = corvette
@@ -71,7 +71,7 @@ crisis_mauler_mod = {
 
 		cost = {
             advanced_logic = 1
-			food = 900 
+			food = 1000 
 		}
 
 		upkeep = {
@@ -95,7 +95,7 @@ crisis_mauler_mod = {
 }
 
 crisis_harbinger_mod = {
-	entity = "biogenesis_01_harbinger_stage_2_entity"
+	entity = "biogenesis_01_harbinger_stage_3_entity"
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
 	ship_family_name = harbinger_class
 
@@ -119,7 +119,7 @@ crisis_harbinger_mod = {
 	section_slots = { "mid" = { locator = "root" } }
 	num_target_locators = 4
 	base_buildtime = @harbinger_stage_3_build_time
-	can_have_federation_design = yes
+	can_have_federation_design = no
 	enable_default_design = yes
 	enable_3dview_in_ship_browser = no
 	use_shipnames_from = cruiser
@@ -179,7 +179,7 @@ crisis_harbinger_mod = {
 		category = ships
 		cost = {
             advanced_logic = 2
-			minerals = 1500 ##550 double
+			food = 1500 
 		}
 		upkeep = {
 			energy = @destroyer_upkeep_energy
@@ -223,7 +223,7 @@ crisis_stinger_mod = {
 	section_slots = { "mid" = { locator = "root" } }
 	num_target_locators = 4
 	base_buildtime = @stinger_stage_3_build_time
-	can_have_federation_design = yes
+	can_have_federation_design = no
 	enable_default_design = yes
 	enable_3dview_in_ship_browser = no
 	use_shipnames_from = battleship
@@ -269,7 +269,7 @@ crisis_stinger_mod = {
 		category = ships
 		cost = {
             advanced_logic = 4
-			minerals = 5000 ##900 double
+			food = 5000 ##900 double
 		}
 		upkeep = {
 			energy = @battleship_upkeep_energy

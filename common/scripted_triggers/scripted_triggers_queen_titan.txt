@@ -167,17 +167,3 @@ is_mod_big_shield_ship_size = {
 		is_ship_size = starbase_citadel_II
 	}
 }
-
-is_mod_no_components_add_to_cost_ship = {
-	OR = {
-		is_ship_size = ember_cruiser_mod
-		is_ship_size = ember_battleship_mod
-		is_ship_size = large_ship_ed_mod
-		is_ship_size = medium_ship_ed_mod
-		is_ship_size = small_ship_ed_mod
-		is_ship_size = crisis_corvette_mod
-		is_ship_size = crisis_destroyer_mod
-		is_ship_size = crisis_cruiser_mod
-		is_ship_size = galleon_mod
-	}
-}

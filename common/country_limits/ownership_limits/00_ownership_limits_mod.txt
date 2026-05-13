@@ -1,5 +1,6 @@
 default = {
 	ship_of_size_limits = {
 		synth_queen_titan_ships_limit
+		behemoth_mod_ships_limit
 	}
 }

@@ -63,7 +63,7 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_dragon_armor" }
-	component_set = "DRAGON_BIO_ARMOR"
+	component_set = "DRAGON_BIO_ARMOR_1"
 	upgrades_to = "MEDIUM_DRAGON_BIO_ARMOR_2"
 
 	ai_weight = {
@@ -409,7 +409,7 @@ utility_component_template = {
 		ship_shield_hardening_add = @hardening_T6
 	}
 	prerequisites = { "tech_psionic_shield" }
-	component_set = "PSI_BIO_SHIELD"
+	component_set = "PSI_BIO_SHIELD_1"
 	upgrades_to = "SMALL_PSI_BIO_SHIELD_2"
 	
 
@@ -465,7 +465,7 @@ utility_component_template = {
 		ship_shield_hardening_add = @hardening_T6
 	}
 	prerequisites = { "tech_psionic_shield" }
-	component_set = "PSI_BIO_SHIELD"
+	component_set = "PSI_BIO_SHIELD_1"
 	upgrades_to = "MEDIUM_PSI_BIO_SHIELD_2"
 
 	potential = {
@@ -520,7 +520,7 @@ utility_component_template = {
 		ship_shield_hardening_add = @hardening_T6
 	}
 	prerequisites = { "tech_psionic_shield" }
-	component_set = "PSI_BIO_SHIELD"
+	component_set = "PSI_BIO_SHIELD_1"
 	upgrades_to = "LARGE_PSI_BIO_SHIELD_2"
 
 	potential = {

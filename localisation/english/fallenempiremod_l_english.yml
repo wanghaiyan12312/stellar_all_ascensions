@@ -9,7 +9,7 @@
  TECH_UNLOCK_CITADEL_II_CONSTRUCTION_DESC:"§HCitadel II§!\nUpgrading the Citadel,Due to our effort on reality editing we can violation of the laws of the universe to build our Starbase.Citadel II can house six Buildings and a full complement of twelve Modules."
 
  starbase_citadel_II:"$citadel$II"
- starbase_citadel_plural:"$citadel$II"
+ starbase_citadel_II_plural:"$citadel$II"
  starbase_deep_space_citadel_4:"$dsc_name$IV"
  starbase_deep_space_citadel_4_plural:"$dsc_name_plural$"
  starbase_deep_space_citadel_4_cap:"$starbase_deep_space_citadel_4$"

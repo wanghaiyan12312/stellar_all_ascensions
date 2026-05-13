@@ -29,10 +29,10 @@ on_monthly_pulse = {
 }
 on_monthly_pulse_country = {
 	events = {
-		leadershroud.7
-		end_cycle.6
-		fallen_empires_mod.7
-		fallen_empires_mod.8	
+		leadershroud.7          ## close default chosen one ruler event ## not all
+		end_cycle.6             ## close default choose for great patron ## all empire
+		fallen_empires_mod.7    ## add auto_bonus for crisis cosmogenesis level 5 ## not all
+		fallen_empires_mod.8	## close default fallen empire awake
 	}
 }
 

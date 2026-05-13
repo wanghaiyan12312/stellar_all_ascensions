@@ -420,6 +420,7 @@ building_research_efficiency_1 = {
 						has_ascension_perk = ap_cosmogenesis
 						has_crisis_level = crisis_cosmogenesis_level_5
 					}
+					has_modifier = pm_extradimensional_experimentation
 				}
 				AND = {
 					owner = {
