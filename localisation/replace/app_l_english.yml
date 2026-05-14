@@ -20,10 +20,12 @@
 
  unlocks_features_5:"Unlocks the §Y$tech_cosmogenesis_crisis_5$§! technology, that will allow us to build a §YHorizon Needle§! and fulfill our goals.\nUnlocks Synth Queen's Titan. \nUnlocks Behemoth Ship."
 
- TECH_UNLOCK_BATTLECRUISER_CONSTRUCTION_TITLE:"§HUnlocks Ship Type:§! \n1.Enigma Battlecruiser\n2.$small_ship_synth_queen$"
- TECH_UNLOCK_BATTLECRUISER_CONSTRUCTION_DESC:"§HEnigma Battlecruiser§!\n§H$small_ship_synth_queen$§!\n$menp_cosmo_ship_3_desc_regular$"
- TECH_UNLOCK_FETITAN_CONSTRUCTION_TITLE:"§HUnlocks Ship Type:§! \n1.Paradox Titan\n2.$large_ship_synth_queen$"
- TECH_UNLOCK_FETITAN_CONSTRUCTION_DESC:"§HParadox Titan§!\n§H$large_ship_synth_queen$§!\n$menp_cosmo_ship_4_desc_regular$"
+ TECH_UNLOCK_ESCORT_CONSTRUCTION_TITLE: "§HUnlocks Ship Type:§! \n1.Riddle Escort \n2.Cipher Mauler \n3.Quandary Weaver"
+ TECH_UNLOCK_ESCORT_CONSTRUCTION_DESC: "A starship of modest size that optimizes our knowledge of spacetime to enact dimensional transcendentalism, making the inside bigger than its outward shape suggests. Advanced firepower capabilities come at a reduced logistical cost compared to traditional ship designs."
+ TECH_UNLOCK_BATTLECRUISER_CONSTRUCTION_TITLE:"§HUnlocks Ship Type:§! \n1.Enigma Battlecruiser \n2.$small_ship_synth_queen$ \n3.Maze Harbinger"
+ TECH_UNLOCK_BATTLECRUISER_CONSTRUCTION_DESC:"Another optimized spacecraft, this time of larger dimensions, will make current Battleships look like toys."
+ TECH_UNLOCK_FETITAN_CONSTRUCTION_TITLE:"§HUnlocks Ship Type:§! \n1.Paradox Titan \n2.$large_ship_synth_queen$ \n3.Cryptic Stinger"
+ TECH_UNLOCK_FETITAN_CONSTRUCTION_DESC:"These formidable ships are closer to mobile fortresses than anything else, and only the most brutal assaults have a chance to damage them."
 
  ACCORD_FORESIGHT_TT:"Add §G$@foresight_tech_progression|0%$§! progress to currently researched Technologies and 200% research speed within 5 years."
  ACCORD_HINDSIGHT_TT:"Choose a colony you own inside of your §H$PSIONIC_AURA$§!, it becomes a §HRelic World§! with all blockers removed and Add 20 Planet size.\n$ACCORD_LOOSE_INTENSITY$"

@@ -4,6 +4,7 @@ menp_cosmo_synth_queen_5 = {
 	modifier = {
 		megastructure_build_speed_mult = 0.5
 		country_megastructure_build_cap_add = 1
+		country_government_civic_points_add = 2
 	}
 
 	on_unlock = {

@@ -1,7 +1,7 @@
 crisis_mauler_mod = {
+	graphical_culture = no
 	entity = "biogenesis_01_mauler_stage_3_entity"
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
-	ship_family_name = mauler_class
 
 	formation_priority = @mauler_formation_priority
 	max_speed = @speed_very_fast
@@ -25,9 +25,10 @@ crisis_mauler_mod = {
 	is_space_station = no
 	base_buildtime = @mauler_stage_3_build_time
 	can_have_federation_design = no
-	enable_default_design = yes
 	enable_3dview_in_ship_browser = no
+	selectable = { has_biogenesis_dlc = yes }
 	use_shipnames_from = corvette
+	evaluation_resource = food
 
 	components_add_to_cost = no
 
@@ -57,6 +58,9 @@ crisis_mauler_mod = {
 
 	class = shipclass_military
 	construction_type = starbase_shipyard
+	is_designable = yes
+	enable_default_design = yes
+
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
@@ -70,8 +74,8 @@ crisis_mauler_mod = {
 		category = ships
 
 		cost = {
-            advanced_logic = 1
-			food = 1000 
+            advanced_logic = 4
+			food = 500 
 		}
 
 		upkeep = {
@@ -83,9 +87,6 @@ crisis_mauler_mod = {
 		}
 	}
 
-	min_upgrade_cost = {
-		alloys = @mauler_stage_3_min_upgrade_cost
-	}
 
 	ai_ship_data = {
 		min = 0
@@ -95,9 +96,9 @@ crisis_mauler_mod = {
 }
 
 crisis_harbinger_mod = {
+	graphical_culture = no
 	entity = "biogenesis_01_harbinger_stage_3_entity"
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
-	ship_family_name = harbinger_class
 
 	formation_priority = @harbinger_formation_priority
 	max_speed = @speed_default
@@ -120,9 +121,10 @@ crisis_harbinger_mod = {
 	num_target_locators = 4
 	base_buildtime = @harbinger_stage_3_build_time
 	can_have_federation_design = no
-	enable_default_design = yes
 	enable_3dview_in_ship_browser = no
+	selectable = { has_biogenesis_dlc = yes }
 	use_shipnames_from = cruiser
+	evaluation_resource = food
 
 	components_add_to_cost = no
 
@@ -166,6 +168,8 @@ crisis_harbinger_mod = {
 
 	class = shipclass_military
 	construction_type = starbase_shipyard
+	enable_default_design = yes
+
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
@@ -178,7 +182,7 @@ crisis_harbinger_mod = {
 	resources = {
 		category = ships
 		cost = {
-            advanced_logic = 2
+            advanced_logic = 16
 			food = 1500 
 		}
 		upkeep = {
@@ -199,9 +203,9 @@ crisis_harbinger_mod = {
 }
 
 crisis_stinger_mod = {
+	graphical_culture = no
 	entity = "biogenesis_01_stinger_stage_3_entity"
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
-	ship_family_name = stinger_class
 
 	formation_priority = @stinger_formation_priority
 	max_speed = @speed_default
@@ -224,9 +228,10 @@ crisis_stinger_mod = {
 	num_target_locators = 4
 	base_buildtime = @stinger_stage_3_build_time
 	can_have_federation_design = no
-	enable_default_design = yes
 	enable_3dview_in_ship_browser = no
+	selectable = { has_biogenesis_dlc = yes }
 	use_shipnames_from = battleship
+	evaluation_resource = food
 
 	components_add_to_cost = no
 
@@ -256,6 +261,7 @@ crisis_stinger_mod = {
 
 	class = shipclass_military
 	construction_type = starbase_shipyard
+
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
@@ -268,8 +274,8 @@ crisis_stinger_mod = {
 	resources = {
 		category = ships
 		cost = {
-            advanced_logic = 4
-			food = 5000 ##900 double
+            advanced_logic = 32
+			food = 5000 
 		}
 		upkeep = {
 			energy = @battleship_upkeep_energy
@@ -347,7 +353,6 @@ behemoth_mod = {
 
 	class = shipclass_military
 	construction_type = starbase_shipyard
-	is_designable = yes
 
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"

@@ -31,10 +31,13 @@
  cosmo_free_ship_cost_add:"非合金天灾舰船造价维护费修正"
  cosmo_free_ship_cost_add_desc:"由于采用更先进的护盾和装甲，非合金天灾船的造价增加。"
 
- TECH_UNLOCK_BATTLECRUISER_CONSTRUCTION_TITLE:"§H解锁舰船类型：§!\n1.神秘战巡舰\n2.$small_ship_synth_queen$"
- TECH_UNLOCK_BATTLECRUISER_CONSTRUCTION_DESC:"§H神秘战巡舰§!\n§H$small_ship_synth_queen$§!\n$menp_cosmo_ship_3_desc_regular$"
- TECH_UNLOCK_FETITAN_CONSTRUCTION_TITLE:"§H解锁舰船类型：§!\n1.悖论泰坦舰\n2.$large_ship_synth_queen$"
- TECH_UNLOCK_FETITAN_CONSTRUCTION_DESC:"§H悖论泰坦舰§!\n§H$large_ship_synth_queen$§!\n$menp_cosmo_ship_4_desc_regular$\n"
+  
+ TECH_UNLOCK_ESCORT_CONSTRUCTION_TITLE:"§H解锁舰船类型：§! \n1.密语护航舰 \n2.密文颚蚁 \n3.困境织蛛"
+ TECH_UNLOCK_ESCORT_CONSTRUCTION_DESC:"一艘中等大小的星际飞船，它优化了我们对时空的认识以实现维度超越，其内部空间远大于外观所见。与传统舰艇设计相比，它拥有先进火力的同时还降低了后勤成本。"
+ TECH_UNLOCK_BATTLECRUISER_CONSTRUCTION_TITLE:"§H解锁舰船类型：§! \n1.神秘战巡舰 \n2.$small_ship_synth_queen$ \n3.迷宫孵后"
+ TECH_UNLOCK_BATTLECRUISER_CONSTRUCTION_DESC:"另一种优化的太空飞船，尺寸更大，让现有的战列舰看起来形同航模一般。"
+ TECH_UNLOCK_FETITAN_CONSTRUCTION_TITLE:"§H解锁舰船类型：§! \n1.悖论泰坦舰 \n2.$large_ship_synth_queen$ \n3.神秘刺蜂"
+ TECH_UNLOCK_FETITAN_CONSTRUCTION_DESC:"这些强大的舰船几乎就是一座移动的堡垒，只有最强烈的攻击才有可能伤其分毫。"
 
  LENS_FLARE_BEAM_MOD: "$LENS_FLARE_BEAM$"
  LENS_FLARE_BEAM_MOD_DESC: "$LENS_FLARE_BEAM_DESC$"
@@ -129,6 +132,7 @@
  CRISIS_STINGER_MOD_ARTILLERY:"$crisis_stinger_mod$（炮击）"
 
  COSMO_CRISIS_HARBINGER_SECTION_MOD:"$TORPEDO_FRAMEWORK$"
+ COSMO_CRISIS_HARBINGER_SECTION_TORPEDOE:"$TORPEDO_FRAMEWORK$"
 
  behemoth_mod:"贝西摩斯"
  behemoth_mod_cap:"$behemoth_mod$"

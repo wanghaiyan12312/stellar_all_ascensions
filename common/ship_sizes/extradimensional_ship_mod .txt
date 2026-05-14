@@ -51,7 +51,7 @@ large_ship_ed_mod = {
 	resources = {
 		category = ships
 		cost = {
-			energy = 550
+			energy = 1500
 			astral_threads = 10
 		}
 		upkeep = {
@@ -110,8 +110,8 @@ medium_ship_ed_mod  = {
 	resources = {
 		category = ships
 		cost = {
-			energy = 250
-			astral_threads = 5
+			energy = 800
+			astral_threads = 4
 		}
 		upkeep = {
 			energy = @cruiser_upkeep_energy
@@ -187,8 +187,8 @@ small_ship_ed_mod  = {
 	resources = {
 		category = ships
 		cost = {
-			energy = 100
-			astral_threads = 1
+			energy = 550
+			astral_threads = 2
 		}
 		upkeep = {
 			energy = @destroyer_upkeep_energy

@@ -137,18 +137,6 @@ ship_section_template = {
 		locatorname = "weapon_02"
 	}
 
-	component_slot = {
-		name = "TORPEDO_05"
-		template = "invisible_missile_turret"
-		locatorname = "weapon_01"
-	}
-
-	component_slot = {
-		name = "TORPEDO_06"
-		template = "invisible_missile_turret"
-		locatorname = "weapon_02"
-	}
-
     component_slot = {
 		name = "PD_01"
 		template = "point_defence_turret"
@@ -157,6 +145,18 @@ ship_section_template = {
 
 	component_slot = {
 		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "weapon_02"
+	}
+
+	 component_slot = {
+		name = "PD_03"
+		template = "point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "PD_04"
 		template = "point_defence_turret"
 		locatorname = "weapon_02"
 	}
@@ -572,4 +572,104 @@ ship_section_template = {
 
 	large_utility_slots = 40
 	aux_utility_slots = 20
+}
+
+ship_section_template = {
+	key = "COSMO_CRISIS_HARBINGER_SECTION_TORPEDOE"
+	ship_size = cosmo_crisis_harbinger
+	fits_on_slot = mid
+	should_draw_components = no
+	icon = "GFX_ship_part_core_mid"
+	entity = "biogenesis_01_fallen_empire_harbinger_stage_3_ship_entity"
+
+	ai_tags = {
+		carrier
+		carrier_stealth
+		artillery
+		artillery_stealth
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+	}
+
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "PD_03"
+		template = "point_defence_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "PD_04"
+		template = "point_defence_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_04"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_02"
+	}
+
+	component_slot = {
+		name = "TORPEDO_05"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_06"
+		template = "invisible_missile_turret"
+		locatorname = "weapon_02"
+	}
+
+
+	large_utility_slots = 6
+	aux_utility_slots = 3
+
+	resources = {
+		category = ship_sections
+		cost = {
+			food = @harbinger_stage_3_section_cost
+			mult = @alloy_to_food_cost_ratio
+			mult = 5
+		}
+	}
 }

@@ -20,10 +20,12 @@
 
  unlocks_features_5:"解锁§Y$tech_cosmogenesis_crisis_5$§!科技，让我们可以建造一座§Y视界刺针§!，带我们完成目标。\n解锁合成女王合成女王泰坦舰船。\n解锁巨兽之怒贝西摩斯舰船。"
 
- TECH_UNLOCK_BATTLECRUISER_CONSTRUCTION_TITLE:"§H解锁舰船类型：§!\n1.神秘战巡舰\n2.$small_ship_synth_queen$"
- TECH_UNLOCK_BATTLECRUISER_CONSTRUCTION_DESC:"§H神秘战巡舰§!\n§H$small_ship_synth_queen$§!\n$menp_cosmo_ship_3_desc_regular$"
- TECH_UNLOCK_FETITAN_CONSTRUCTION_TITLE:"§H解锁舰船类型：§!\n1.悖论泰坦舰\n2.$large_ship_synth_queen$"
- TECH_UNLOCK_FETITAN_CONSTRUCTION_DESC:"§H悖论泰坦舰§!\n§H$large_ship_synth_queen$§!\n$menp_cosmo_ship_4_desc_regular$\n"
+ TECH_UNLOCK_ESCORT_CONSTRUCTION_TITLE:"§H解锁舰船类型：§! \n1.密语护航舰 \n2.密文颚蚁 \n3.困境织蛛"
+ TECH_UNLOCK_ESCORT_CONSTRUCTION_DESC:"一艘中等大小的星际飞船，它优化了我们对时空的认识以实现维度超越，其内部空间远大于外观所见。与传统舰艇设计相比，它拥有先进火力的同时还降低了后勤成本。"
+ TECH_UNLOCK_BATTLECRUISER_CONSTRUCTION_TITLE:"§H解锁舰船类型：§! \n1.神秘战巡舰 \n2.$small_ship_synth_queen$ \n3.迷宫孵后"
+ TECH_UNLOCK_BATTLECRUISER_CONSTRUCTION_DESC:"另一种优化的太空飞船，尺寸更大，让现有的战列舰看起来形同航模一般。"
+ TECH_UNLOCK_FETITAN_CONSTRUCTION_TITLE:"§H解锁舰船类型：§! \n1.悖论泰坦舰 \n2.$large_ship_synth_queen$ \n3.神秘刺蜂"
+ TECH_UNLOCK_FETITAN_CONSTRUCTION_DESC:"这些强大的舰船几乎就是一座移动的堡垒，只有最强烈的攻击才有可能伤其分毫。"
 
  ACCORD_FORESIGHT_TT:"研究中的科技增加§G$@mod_foresight_tech_progression|0%$§!进展，并且再五年之内增加200%的研究速度。"
  ACCORD_HINDSIGHT_TT:"选择你的§H$PSIONIC_AURA$§!覆盖下的一个殖民地，使其变成§H遗落星球§!增加20行星规模并且移除所有障碍。\n$ACCORD_LOOSE_INTENSITY$"

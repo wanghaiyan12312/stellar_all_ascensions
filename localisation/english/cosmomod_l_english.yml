@@ -32,10 +32,12 @@
  cosmo_free_ship_cost_add:"non-alloys crisis ship cost and upkeep increase."
  cosmo_free_ship_cost_add_desc:"due to advanced shield and armor technology researched,crisis ship cost and upkeep increase."
 
- TECH_UNLOCK_BATTLECRUISER_CONSTRUCTION_TITLE:"§HUnlocks Ship Type:§! \n1.Enigma Battlecruiser\n2.$small_ship_synth_queen$"
- TECH_UNLOCK_BATTLECRUISER_CONSTRUCTION_DESC:"§HEnigma Battlecruiser§!\n§H$small_ship_synth_queen$§!\n$menp_cosmo_ship_3_desc_regular$"
- TECH_UNLOCK_FETITAN_CONSTRUCTION_TITLE:"§HUnlocks Ship Type:§! \n1.Paradox Titan\n2.$large_ship_synth_queen$"
- TECH_UNLOCK_FETITAN_CONSTRUCTION_DESC:"§HParadox Titan§!\n§H$large_ship_synth_queen$§!\n$menp_cosmo_ship_4_desc_regular$"
+ TECH_UNLOCK_ESCORT_CONSTRUCTION_TITLE: "§HUnlocks Ship Type:§! \n1.Riddle Escort \n2.Cipher Mauler \n3.Quandary Weaver"
+ TECH_UNLOCK_ESCORT_CONSTRUCTION_DESC: "A starship of modest size that optimizes our knowledge of spacetime to enact dimensional transcendentalism, making the inside bigger than its outward shape suggests. Advanced firepower capabilities come at a reduced logistical cost compared to traditional ship designs."
+ TECH_UNLOCK_BATTLECRUISER_CONSTRUCTION_TITLE:"§HUnlocks Ship Type:§! \n1.Enigma Battlecruiser \n2.$small_ship_synth_queen$ \n3.Maze Harbinger"
+ TECH_UNLOCK_BATTLECRUISER_CONSTRUCTION_DESC:"Another optimized spacecraft, this time of larger dimensions, will make current Battleships look like toys."
+ TECH_UNLOCK_FETITAN_CONSTRUCTION_TITLE:"§HUnlocks Ship Type:§! \n1.Paradox Titan \n2.$large_ship_synth_queen$ \n3.Cryptic Stinger"
+ TECH_UNLOCK_FETITAN_CONSTRUCTION_DESC:"These formidable ships are closer to mobile fortresses than anything else, and only the most brutal assaults have a chance to damage them."
 
  LENS_FLARE_BEAM_MOD:"$LENS_FLARE_BEAM$"
  LENS_FLARE_BEAM_MOD_DESC:"$LENS_FLARE_BEAM_DESC$"
@@ -130,6 +132,7 @@
  CRISIS_STINGER_MOD_ARTILLERY:"$crisis_stinger_mod$ (Artillery)"
 
  COSMO_CRISIS_HARBINGER_SECTION_MOD:"$TORPEDO_FRAMEWORK$"
+ COSMO_CRISIS_HARBINGER_SECTION_TORPEDOE:"$TORPEDO_FRAMEWORK$"
 
  behemoth_mod:"Behemoth"
  behemoth_mod_cap:"$behemoth_mod$"

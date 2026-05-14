@@ -1708,12 +1708,26 @@ add_relic_bonus_mod = {
 			}
 			add_relic = r_cetanas_heart
 		}
-		20 = {
+		10 = {
 			modifier = {
 				factor = 0
 				has_relic = r_eternal_throne	
 			}
 			add_relic = r_eternal_throne
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				has_relic = r_continuum	
+			}
+			add_relic = r_continuum
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				has_relic = r_daedalus_seal	
+			}
+			add_relic = r_daedalus_seal
 		}
 		0 = {
 			modifier = {
@@ -1731,6 +1745,8 @@ add_relic_bonus_mod = {
 				has_relic = r_contingency_core
 				has_relic = r_cetanas_heart
 				has_relic = r_eternal_throne
+				has_relic = r_continuum	
+				has_relic = r_daedalus_seal	
 				OR = {
 					NOT = { has_origin = origin_endbringers }
 					AND = {
