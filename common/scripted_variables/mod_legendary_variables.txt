@@ -6,7 +6,7 @@
 @councilor_max_num = 6
 @councilor_discount_num = 0
 @governor_max_num = 50
-@governor_discount_num = 3
+@governor_discount_num = 0
 @governor_add_discount_ratio = 0.5
 ## councilor
 @councilor_scientist_free_num = 1

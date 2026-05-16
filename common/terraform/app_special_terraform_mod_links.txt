@@ -53,10 +53,6 @@ terraform_link = {
 		}
 	}
 
-	inline_script = {
-		script = terraform/wilderness_biomass
-	}
-
 	duration = @highestTime
 
 	potential = {

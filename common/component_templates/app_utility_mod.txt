@@ -415,7 +415,7 @@ weapon_component_template = { # World Cracker
 	potential = {
 		is_ship_size = behemoth_mod
 	}
-	component_set = "PLANET_KILLER_CRACKER"
+	component_set = "PLANET_KILLER_MAW_MOD"
 
 	planet_destruction_gfx = "gobble_planet_gfx"
 

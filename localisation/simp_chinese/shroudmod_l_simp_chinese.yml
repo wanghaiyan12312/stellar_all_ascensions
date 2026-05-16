@@ -15,7 +15,7 @@
  end_cycle.5.desc:"$edict_app_get_greater_patron_roll_desc$"
  end_cycle.5.a.tt:"$shroud.4135.a.tt$"
 
- terraform_nucleus_purchase_cooldown:"§R在§Y[root.leadershroud_terraform_nucleus_timer]§!之前无法再次改造另一颗§Y盖亚星球§!。§!"
+ terraform_nucleus_purchase_cooldown:"§R在§Y[Owner.leadershroud_terraform_nucleus_timer]§!之前无法再次改造另一颗§Y盖亚星球§!。§!"
 
  ACCORD_NEED_COSMO_5:"你需要采纳$cosmogenesis_chain_title$传统并且达到$crisis_cosmogenesis_level_5_desc$"
  ACCORD_FORESIGHT_TT:"研究中的科技增加§G$@mod_foresight_tech_progression|0%$§!进展，并且再五年之内增加200%的研究速度。"
@@ -58,8 +58,9 @@
 
  NAME_Shroud_science:"虚境之所"
  shroud_science:"$NAME_Psionic_Avatar_Country$"
+ shroud_science_cap:"$NAME_Psionic_Avatar_Country$"
  shroud_science_plural:"$NAME_Psionic_Avatar_Country$"
-  SHIP_SHROUD_TERRAFORM:"虚境改造之核"
+ SHIP_SHROUD_TERRAFORM:"虚境改造之核"
  shroud_sciensce_ship_button:"这个星球将会被我们的超主改造成盖亚星球."
 
  end_of_the_cycle_type:"$end_of_the_cycle$"

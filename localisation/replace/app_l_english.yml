@@ -27,6 +27,8 @@
  TECH_UNLOCK_FETITAN_CONSTRUCTION_TITLE:"§HUnlocks Ship Type:§! \n1.Paradox Titan \n2.$large_ship_synth_queen$ \n3.Cryptic Stinger"
  TECH_UNLOCK_FETITAN_CONSTRUCTION_DESC:"These formidable ships are closer to mobile fortresses than anything else, and only the most brutal assaults have a chance to damage them."
 
+ ACCORD_DESTRUCTION_TRIGGER_PLANET: "£trigger_no£ §ROwn a Non-Artificial colony with at least §Y$@destruction_planet_pop_min|0$§! £pop£ §HPops§!§!"
+
  ACCORD_FORESIGHT_TT:"Add §G$@foresight_tech_progression|0%$§! progress to currently researched Technologies and 200% research speed within 5 years."
  ACCORD_HINDSIGHT_TT:"Choose a colony you own inside of your §H$PSIONIC_AURA$§!, it becomes a §HRelic World§! with all blockers removed and Add 20 Planet size.\n$ACCORD_LOOSE_INTENSITY$"
  AURA_END_EFFECTS_DESC:"When the §H$end_aura$§! fills the galaxy and no anyone fallen empire, the §H[This.GetName]§! wins the game."

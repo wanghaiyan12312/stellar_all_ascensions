@@ -19,11 +19,6 @@ country_event = {
 	trigger = { has_biogenesis_dlc = yes }
 
 	option = {
-		name = EXIT
-		default_hide_option = yes
-	}
-
-	option = {
 		trigger = { 
 			NOT = { has_tradition = tr_purity_adopt }
 			num_tradition_categories < @max_tradition_trees 
@@ -53,6 +48,11 @@ country_event = {
 		add_tradition = tr_mutation_adopt # Mutation Tree
 	}
 	
+	option = {
+		name = EXIT
+		default_hide_option = yes
+	}
+
 }
 country_event = {
 	id = ascensions.2
@@ -67,11 +67,6 @@ country_event = {
 			has_machine_age_dlc = yes
 		}
 		this_mod_effected_country = yes
-	}
-
-	option = {
-		name = ascensions.2.no.change
-		default_hide_option = yes
 	}
 
 	option = {
@@ -197,6 +192,10 @@ country_event = {
 		}	
 	}
 
+	option = {
+		name = ascensions.2.no.change
+		default_hide_option = yes
+	}
 
 }
 
@@ -210,12 +209,6 @@ country_event = {
 		this_mod_effected_country = yes
 		has_shroud_dlc = yes 
 	}
-
-	option = {
-		name = EXIT
-		default_hide_option = yes
-	}
-
 
 	option = {
 		name = ascensions.3.the_golden_dream
@@ -391,6 +384,12 @@ country_event = {
 		}
 		set_country_flag = shroud_3270_happened
 	}
+
+	option = {
+		name = EXIT
+		default_hide_option = yes
+	}
+
 }
 
 

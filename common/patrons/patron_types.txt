@@ -998,7 +998,7 @@ end_of_the_cycle = {
 				OR = {
 					AND = {
 						has_origin = origin_endbringers
-						NOT = { has_country_flag = annihilation_activated }
+						#NOT = { has_country_flag = annihilation_activated }
 					}
 					AND = {
 						has_ascension_perk = ap_cosmogenesis
@@ -1070,7 +1070,7 @@ end_of_the_cycle = {
 				OR = {
 					AND = {
 						has_origin = origin_endbringers
-						NOT = { has_country_flag = extermination_activated }
+						#NOT = { has_country_flag = extermination_activated }
 					}
 					AND = {
 						has_ascension_perk = ap_cosmogenesis
@@ -1146,7 +1146,7 @@ end_of_the_cycle = {
 				OR = {
 					AND = {
 						has_origin = origin_endbringers
-						NOT = { has_country_flag = destruction_activated }
+						#NOT = { has_country_flag = destruction_activated }
 					}
 					AND = {
 						has_ascension_perk = ap_cosmogenesis
@@ -1161,8 +1161,7 @@ end_of_the_cycle = {
 			custom_tooltip = {
 				fail_text = ACCORD_DESTRUCTION_TRIGGER_PLANET
 				any_owned_planet = {
-					pop_amount >= @destruction_planet_pop_min
-					is_capital = no
+					is_end_cycle_plant_can_destroy = yes
 				}
 			}
 		}
@@ -1194,7 +1193,7 @@ end_of_the_cycle = {
 		possible = {
 			custom_tooltip = {
 				fail_text = ACCORD_INTENSIFICATION_TRIGGER_COOLDOWN
-				NOT = { has_country_flag = intensification_activated }
+				#NOT = { has_country_flag = intensification_activated }
 			}
 			if = {
 				limit = {

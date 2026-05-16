@@ -9,32 +9,22 @@ utility_component_template = {
 		scope = planet
 		possible = {
 			is_terraforming = no
-			NOT = { has_planet_flag = terraform_nucleus_transfixed }
-			NOT = { has_planet_flag = terraform_shroud_nucleus_transfixed }
 			is_shroud_terraformable_pc = yes
-			from = {
-				owner = {
-					has_resource = {
-						type = sr_zro
-						amount >= 5000
-					}
-				}
-			}
 			exists = space_owner
 			space_owner = {
 				is_same_value = from.owner
-			}
-			custom_tooltip = {
-				fail_text = "terraform_nucleus_purchase_cooldown"
-				owner = {
-					NOT = { has_country_flag = terraform_nucleus_purchase }
-				}
 			}
 		}
 
 		button_clickable = {
 			owner = {
 				has_resource = { type = sr_zro amount >= 5000 }
+			}
+			custom_tooltip = {
+				fail_text = "terraform_nucleus_purchase_cooldown"
+				owner = {
+					NOT = { has_country_flag = terraform_nucleus_purchase }
+				}
 			}
 		}
 

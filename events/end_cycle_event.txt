@@ -66,8 +66,7 @@ country_event = {
 		set_country_flag = destruction_activated
 		random_owned_planet = {
 			limit = {
-				pop_amount >= @destruction_planet_pop_min
-				is_capital = no
+				is_end_cycle_plant_can_destroy = yes
 			}
 			save_event_target_as = destroyed_colony
 			prev = {

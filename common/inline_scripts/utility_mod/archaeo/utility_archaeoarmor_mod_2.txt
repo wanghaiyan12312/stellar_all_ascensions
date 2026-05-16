@@ -1,6 +1,6 @@
 key = "$SIZE$_ARCHAEO_ARMOR_$TIER$"
 icon = "GFX_ship_part_archaeoarmor_$TIER$"
-#icon_frame = 1
+icon_frame = 1
 
 modifier = {
 	ship_armor_add = $ARCHAEOARMOR_SHIELD_ADD$

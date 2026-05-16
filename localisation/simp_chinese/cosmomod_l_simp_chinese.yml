@@ -116,12 +116,15 @@
  EMBER_BATTLESHIP_STERN_M2_MOD: "$BATTLESHIP_STERN_M2$"
 
  crisis_mauler_mod:"$mauler_class$"
+ crisis_mauler_mod_cap:"$mauler_class$"
  crisis_mauler_mod_plural:"$mauler_class$"
  SHIP_GRAPHICS_WEAVER_STAGE_1_DESC:"$SHIP_GRAPHICS_MAULER_STAGE_1_DESC$"
  crisis_harbinger_mod:"$harbinger_class_cap$"
+ crisis_harbinger_mod_cap:"$harbinger_class_cap$"
  crisis_harbinger_mod_plural:"$harbinger_class_cap$"
  SHIP_GRAPHICS_CRISIS_HARBINGER_MOD_DESC:"$harbinger_class_plural_cap$是特化的生物鱼雷舰。他们用海量的鱼雷淹没战场。"
  crisis_stinger_mod:"$stinger_class$"
+ crisis_stinger_mod_cap:"$stinger_class$"
  crisis_stinger_mod_plural:"$stinger_class$"
  SHIP_GRAPHICS_CRISIS_STINGER_MOD_DESC:"$SHIP_GRAPHICS_STINGER_STAGE_1_DESC$"
 
@@ -131,7 +134,6 @@
  CRISIS_STINGER_MOD_LINE:"$crisis_stinger_mod$ （线列）"
  CRISIS_STINGER_MOD_ARTILLERY:"$crisis_stinger_mod$（炮击）"
 
- COSMO_CRISIS_HARBINGER_SECTION_MOD:"$TORPEDO_FRAMEWORK$"
  COSMO_CRISIS_HARBINGER_SECTION_TORPEDOE:"$TORPEDO_FRAMEWORK$"
 
  behemoth_mod:"贝西摩斯"

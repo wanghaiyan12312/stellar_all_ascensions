@@ -1,28 +1,16 @@
+shift_ethic = ethic_fanatic_$ETHIC$
+shift_ethic = ethic_spiritualist
 if = {
 	limit = {
 		has_origin = origin_legendary_leader_dictatorial
 	}
 	set_origin = origin_legendary_leader_imperial
 }
-if = {
-	limit = {
-		has_valid_civic = civic_fanatic_purifiers
-		has_patron_relation = { patron = end_of_the_cycle contact = any } 
-	}
-	change_government = {
-		authority = auth_imperial
-		cooldown = no
-	}
-}else = {
-	shift_ethic = ethic_fanatic_$ETHIC$
-	shift_ethic = ethic_spiritualist
-	change_government = {
-		authority = auth_imperial
-		cooldown = no
-		remove_invalid_civics = yes
-	}
+change_government = {
+	authority = auth_imperial
+	cooldown = no
+	remove_invalid_civics = yes
 }
-
 force_add_civic = civic_psionic_sovereign_mod
 set_government_cooldown = no
 every_owned_leader = {

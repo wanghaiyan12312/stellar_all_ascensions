@@ -182,16 +182,28 @@ planet_event = {
 	immediate = {
 		planet_event = { id = leadershroud.3 days = 3 }
 
-		owner = {
+		from.owner = {
 			set_timed_country_flag = {
 				flag = terraform_nucleus_purchase
 				days = 3600
 			}
-		}
-		set_saved_date = {
-			key = leadershroud_terraform_nucleus_timer
-			days_from_present = 3600
-			expires = 3600
+			set_saved_date = {
+				key = leadershroud_terraform_nucleus_timer
+				days_from_present = 3600
+				expires = 3600
+			}
+			# Notification - Terraforming Started
+			create_message = {
+				type = MESSAGE_SHROUD_TERRAFORM_STARTED
+				localization = MESSAGE_SHROUD_TERRAFORM_STARTED_DESC
+				days = 10
+				target = prev
+				variable = {
+					type = name
+					localization = PLANET
+					scope = this
+				}
+			}
 		}
 
 		remove_planet_flag = terraform_nucleus_transfix_canceled
@@ -281,18 +293,6 @@ planet_event = {
 		set_planet_flag = terraform_shroud_nucleus_transfixed
 		remove_planet_flag = terraform_nucleus_transfix_started
 		start_terraform_process = pc_gaia
-		# Notification - Terraforming Started
-		create_message = {
-			type = MESSAGE_SHROUD_TERRAFORM_STARTED
-			localization = MESSAGE_SHROUD_TERRAFORM_STARTED_DESC
-			days = 10
-			target = prev
-			variable = {
-				type = name
-				localization = PLANET
-				scope = this
-			}
-		}
 	}
 
 	after = {
@@ -362,18 +362,22 @@ planet_event = {
 			}
 		}
 
-		# Notification - Terraforming Canceled
-		create_message = {
-			type = MESSAGE_SHROUD_TERRAFORM_CANCELED
-			localization = MESSAGE_SHROUD_TERRAFORM_CANCELED_DESC
-			days = 10
-			target = this
-			variable = {
-				type = name
-				localization = PLANET
-				scope = this
+		solar_system.owner = {
+			# Notification - Terraforming Canceled
+			create_message = {
+				type = MESSAGE_SHROUD_TERRAFORM_CANCELED
+				localization = MESSAGE_SHROUD_TERRAFORM_CANCELED_DESC
+				days = 10
+				target = this
+				variable = {
+					type = name
+					localization = PLANET
+					scope = this
+				}
 			}
 		}
+
+		
 	}
 }
 
@@ -991,6 +995,55 @@ country_event = {
 		inline_script = {
 			script = god_empire_mod
 			ETHIC = xenophile
+		}
+	}
+
+	option = {
+		allow = {
+			is_galactic_custodian = no
+			is_galactic_emperor = no
+		}
+		name = origin.6165.a
+		icon = {
+			icon = GFX_fanatic_purifier
+			text = WILL_TURN_TO_PURIFIER
+		}
+		if = {
+			limit = {
+				ruler = {
+					NOT = {
+						is_same_value = event_target:chosen_one
+					}
+				}
+			}
+			ruler = {
+				exile_leader_as = destituted_ruler_chosen_one
+			}
+			set_leader = event_target:chosen_one
+		}
+		change_government = {
+			authority = auth_imperial
+			cooldown = no
+			remove_invalid_civics = yes
+		}
+
+		clear_ethos = yes
+		country_add_ethic = ethic_fanatic_xenophobe
+		country_add_ethic = ethic_spiritualist
+		force_add_civic = civic_fanatic_purifiers
+		remove_from_galactic_community = yes
+		force_add_civic = civic_psionic_sovereign_mod
+		
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+					NOT = { is_same_value = root }
+					has_communications = root
+				}
+				country_event = { id = utopia.3401 days = 4 }
+			}
+			country_event = { id = utopia.3402 days = 5 }
 		}
 	}
 }

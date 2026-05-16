@@ -53,7 +53,8 @@ is_shroud_terraformable_pc = {
 		is_planet_class = pc_shrouded
 	}
 	planet_size >= 10
-	NOT = { has_planet_flag = terraform_nucleus_transfixed }	
+	NOT = { has_planet_flag = terraform_nucleus_transfixed }
+	NOT = { has_planet_flag = terraform_shroud_nucleus_transfixed }
 }
 
 has_shroud_science_in_orbit = {
@@ -62,4 +63,11 @@ has_shroud_science_in_orbit = {
 			is_ship_size = shroud_science
 		}
 	}
+}
+
+is_end_cycle_plant_can_destroy = {
+	pop_amount >= @destruction_planet_pop_min
+	is_capital = no
+	is_artificial = no
+	NOT = { is_planet_class = pc_cosmogenesis_world }
 }
