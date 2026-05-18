@@ -71,3 +71,11 @@ is_end_cycle_plant_can_destroy = {
 	is_artificial = no
 	NOT = { is_planet_class = pc_cosmogenesis_world }
 }
+
+is_shroudleader_councilor = {
+	OR = {
+		has_leader_flag = legendary_councilor_scientist_mod
+		has_leader_flag = legendary_councilor_official_mod
+		has_leader_flag = legendary_councilor_commander_mod
+	}
+}

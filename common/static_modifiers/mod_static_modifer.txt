@@ -35,6 +35,8 @@ cosmo_free_ship_cost_add = {
 }
 
 shroud_terraforming_effect = {
-	pop_telepath_bonus_workforce_mult = 0.2
-	planet_jobs_upkeep_mult = 0.2
+	icon = "gfx/interface/icons/modifiers/mod_planet_psionic_jobs_specialist_produces_mult.dds"
+	icon_frame = 1
+	pop_telepath_bonus_workforce_mult = 0.25
+	pop_happiness = -0.1
 }

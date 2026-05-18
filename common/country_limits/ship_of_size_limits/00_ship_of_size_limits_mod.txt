@@ -59,7 +59,7 @@ synth_queen_titan_ships_limit = {
 
 behemoth_mod_ships_limit = {
 	ship_types = {
-		behemoth_mod_titan_mod
+		behemoth_mod
 	}
 
 	base = 2400 # 12 * synth_queen_titan_mod's size_multiplier

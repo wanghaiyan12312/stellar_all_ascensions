@@ -41,8 +41,8 @@
  hindsight_nomination:"$ACCORD_HINDSIGHT$ Candidate"
  hindsight_nomination_desc:"This Planet Has Nominated For $ACCORD_HINDSIGHT$ Candidate."
  requires_valid_hindsight_target_mod:"§RRequires that our §Y$PSIONIC_AURA$§! is currently affecting at least one of our owned colonies and nominate a $ACCORD_HINDSIGHT$ Candidate§!"
- terraformation_shroud_side_effect:"Great Patron's Gift"
- terraformation_shroud_side_effect_desc:"This Planet is terrafored by our Great Patron even it may bill more daily resource cost, but our pop will have a better life in this planet."
+ shroud_terraforming_effect:"Great Patron's Gift"
+ shroud_terraforming_effect_desc:"This Planet is terrafored by our Great Patron even it may bill more daily resource cost, but our pop will have a better life in this planet."
 
  song_of_end:"Song Of End"
  song_of_end_desc:"A psionic resonance of end the cycle.\n\n"
@@ -65,3 +65,6 @@
 
  end_of_the_cycle_type:"$end_of_the_cycle$"
  end_of_the_cycle_endbringers_type:"$end_of_the_cycle_endbringers$"
+
+ leader_trait_legendary_far_from_home_mod:"$leader_trait_legendary_far_from_home$"
+ leader_trait_legendary_far_from_home_mod_desc:"$leader_trait_legendary_far_from_home_desc$"

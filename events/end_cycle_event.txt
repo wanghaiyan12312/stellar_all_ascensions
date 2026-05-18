@@ -127,6 +127,21 @@ country_event = {
 
 	immediate = {
 		set_country_flag = eradication_activated
+		## end resolution crisis empire
+		remove_country_flag = declared_crisis
+		## each member remove war with root
+		every_country = {
+			limit = {
+				is_country_type = default
+				is_fallen_empire = no
+				any_war = {
+					any_war_participant = {
+						is_same_value = root
+					}
+				}
+			}
+			remove_war_participant = root
+		}
 		# Kick the Crisis out of Alliances.
 		if = {
 			limit = { has_federation = yes }
@@ -147,88 +162,51 @@ country_event = {
 			}
 			galactic_custodian = { save_event_target_as = war_leader }
 		}
-
-		# Will otherwise select the strongest
 		else_if = {
 			limit = {
-				any_playable_country = {
+				any_country = {
 					is_country_type = default
 					is_subject = no
-					relative_power = {
-						who = prev
-						value >= superior
-						category = fleet
-					}
+					is_fallen_empire = no
 				}
 			}
-			random_playable_country = {
-				limit = {
-					is_subject = no
-					is_country_type = default
-					relative_power = {
-						who = prev
-						value >= superior
-						category = fleet
-					}
-				}
-				save_event_target_as = war_leader
-			}
-		}
-		else_if = {
-			limit = {
-				any_playable_country = {
-					is_subject = no
-					is_country_type = default
-					relative_power = {
-						who = prev
-						value >= equivalent
-						category = all
-					}
-				}
-			}
-			random_playable_country = {
-				limit = {
-					is_subject = no
-					is_country_type = default
-					relative_power = {
-						who = prev
-						value >= equivalent
-						category = all
-					}
-				}
-				save_event_target_as = war_leader
-			}
-		}
-		else = {
-			random_playable_country = {
-				limit = {
+			ordered_country = {
+				limit = { 
 					is_country_type = default
 					is_subject = no
+					is_fallen_empire = no
 				}
+				position = 0
+				order_by = trigger:fleet_power
 				save_event_target_as = war_leader
 			}
 		}
 
-		# WAR!
-		event_target:war_leader = {
-			declare_war = {
-				target = root
-				attacker_war_goal = "wg_ae_total_war"
-				effect = { save_event_target_as = hyperthermia_war }
-			}
-		}
-		every_country = {
+		if = {
 			limit = {
-				is_country_type = default
-				is_fallen_empire = no
-				NOR = {
-					is_same_value = event_target:war_leader
-					has_subject = root
+				exists = event_target:war_leader
+			}
+			# WAR!
+			event_target:war_leader = {
+				declare_war = {
+					target = root
+					attacker_war_goal = "wg_ae_total_war"
+					effect = { save_event_target_as = hyperthermia_war }
 				}
 			}
-			join_war = event_target:war_leader
+			every_country = {
+				limit = {
+					is_country_type = default
+					is_fallen_empire = no
+					NOR = {
+						is_same_value = event_target:war_leader
+						has_subject = root
+					}
+				}
+				join_war = event_target:war_leader
+			}
 		}
-
+		
 		# Subjects
 		every_subject = {
 			if = {

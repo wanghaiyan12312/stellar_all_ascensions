@@ -149,10 +149,11 @@ country_event = {
 		trigger = {
 			is_country_type = default
 			NOT = {
-				has_country_flag = chosen_one_ruler_event_mod
+				has_country_flag = chosen_one_ruler_event_mod	
 			}
 			any_owned_leader = {
 				has_any_chosen_one_leader_trait = yes
+				is_shroudleader_councilor = yes
 			}
 		}
 		hidden_effect = {
@@ -509,8 +510,8 @@ country_event = {
 				MANUALLY_CHANGE = yes
 			}
 			last_created_leader = {
-				update_legendary_council_scientist = yes
-				set_leader_flag = legendary_council_scientist_mod
+				update_legendary_councilor_scientist = yes
+				set_leader_flag = legendary_councilor_scientist_mod
 				set_owner = root
 			}
 			change_variable = {
@@ -627,8 +628,8 @@ country_event = {
 				MANUALLY_CHANGE = yes
 			}
 			last_created_leader = {
-				update_legendary_council_official = yes
-				set_leader_flag = legendary_council_official_mod
+				update_legendary_councilor_official = yes
+				set_leader_flag = legendary_councilor_official_mod
 				set_owner = root
 			}
 			change_variable = {
@@ -869,6 +870,7 @@ country_event = {
 		}
 		any_owned_leader = {
 			has_any_chosen_one_leader_trait = yes
+			is_shroudleader_councilor = yes
 		}
 	}
 
@@ -878,6 +880,7 @@ country_event = {
 		random_owned_leader = {
 			limit = {
 				has_any_chosen_one_leader_trait = yes
+				is_shroudleader_councilor = yes
 			}
 			save_event_target_as = chosen_one
 			species = { save_event_target_as = chosen_one_species }
@@ -921,6 +924,10 @@ country_event = {
 	}
 	option = {
 		name = "utopia.3400.b.authoritarian"
+		icon = {
+			icon = GFX_ethics_authoritarian
+			text = ethic_authoritarian
+		}
 		if = {
 			limit = { exists = event_target:chosen_one_official}
 			event_target:chosen_one_official ={
@@ -934,6 +941,10 @@ country_event = {
 	}
 	option = {
 		name = "utopia.3400.b.egalitarian"
+		icon = {
+			icon = GFX_ethics_egalitarian
+			text = ethic_egalitarian
+		}
 		if = {
 			limit = { exists = event_target:chosen_one_official}
 			event_target:chosen_one_official ={
@@ -947,6 +958,10 @@ country_event = {
 	}
 	option = {
 		name = "utopia.3400.b.militarist"
+		icon = {
+			icon = GFX_ethics_militarist
+			text = ethic_militarist
+		}
 		if = {
 			limit = { exists = event_target:chosen_one_commander}
 			event_target:chosen_one_commander ={
@@ -960,6 +975,10 @@ country_event = {
 	}
 	option = {
 		name = "utopia.3400.b.pacifist"
+		icon = {
+			icon = GFX_ethics_pacifist
+			text = ethic_pacifist
+		}
 		if = {
 			limit = { exists = event_target:chosen_one_commander}
 			event_target:chosen_one_commander ={
@@ -973,6 +992,10 @@ country_event = {
 	}
 	option = {
 		name = "utopia.3400.b.xenophobe"
+		icon = {
+			icon = GFX_ethics_xenophobe
+			text = ethic_xenophobe
+		}
 		if = {
 			limit = { exists = event_target:chosen_one_scientist}
 			event_target:chosen_one_scientist ={
@@ -986,6 +1009,10 @@ country_event = {
 	}
 	option = {
 		name = "utopia.3400.b.xenophile"
+		icon = {
+			icon = GFX_ethic_xenophobe
+			text = ethic_xenophobe
+		}
 		if = {
 			limit = { exists = event_target:chosen_one_scientist}
 			event_target:chosen_one_scientist ={
@@ -1030,7 +1057,15 @@ country_event = {
 		clear_ethos = yes
 		country_add_ethic = ethic_fanatic_xenophobe
 		country_add_ethic = ethic_spiritualist
-		force_add_civic = civic_fanatic_purifiers
+		if = {
+			limit = {
+				NOT = {
+					has_civic = civic_fanatic_purifiers
+				}
+			}
+			force_add_civic = civic_fanatic_purifiers
+		}
+		
 		remove_from_galactic_community = yes
 		force_add_civic = civic_psionic_sovereign_mod
 		

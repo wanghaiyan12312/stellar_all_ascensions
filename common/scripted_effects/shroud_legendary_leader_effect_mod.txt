@@ -203,7 +203,7 @@ add_mod_common_council_leader_trait = {
 	}
 }
 
-update_legendary_council_scientist = {
+update_legendary_councilor_scientist = {
 	remove_all_traits = yes
 	set_skill = 10
 	set_leader_flag = leader_shroud_legendary_mod
@@ -515,7 +515,7 @@ update_legendary_scholar_scientist = {
 		consume_selection = yes
 	}
 	add_trait = {
-		trait = leader_trait_legendary_far_from_home
+		trait = leader_trait_legendary_far_from_home_mod
 		show_message = no
 		consume_selection = yes
 	}
@@ -587,7 +587,7 @@ update_legendary_scholar_scientist = {
 	}
 }
 
-update_legendary_council_official = {
+update_legendary_councilor_official = {
 	remove_all_traits = yes
 	set_skill = 10
 	set_leader_flag = leader_shroud_legendary_mod

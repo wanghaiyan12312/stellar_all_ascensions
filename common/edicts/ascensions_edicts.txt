@@ -180,7 +180,10 @@ app_get_legendary_shroud_leader = {
     icon = "GFX_edict_type_policy"
     length = 1
     potential = {
-        has_country_flag = greater_patron_chosen_mod
+        OR = {
+            has_country_flag = greater_patron_chosen_mod
+            has_origin = origin_endbringers
+        }
         has_paragon_dlc = yes
         has_shroud_dlc = yes 
         this_mod_effected_country = yes

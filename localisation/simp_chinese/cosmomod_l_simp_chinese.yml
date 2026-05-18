@@ -118,7 +118,7 @@
  crisis_mauler_mod:"$mauler_class$"
  crisis_mauler_mod_cap:"$mauler_class$"
  crisis_mauler_mod_plural:"$mauler_class$"
- SHIP_GRAPHICS_WEAVER_STAGE_1_DESC:"$SHIP_GRAPHICS_MAULER_STAGE_1_DESC$"
+ SHIP_GRAPHICS_CRISIS_MAULER_MOD_DESC:"$SHIP_GRAPHICS_MAULER_STAGE_1_DESC$"
  crisis_harbinger_mod:"$harbinger_class_cap$"
  crisis_harbinger_mod_cap:"$harbinger_class_cap$"
  crisis_harbinger_mod_plural:"$harbinger_class_cap$"

@@ -41,8 +41,8 @@
  hindsight_nomination:"$ACCORD_HINDSIGHT$候选者"
  hindsight_nomination_desc:"这颗星球已经被提名为$ACCORD_HINDSIGHT$的候选者"
  requires_valid_hindsight_target_mod:"§R需要我方的§Y$PSIONIC_AURA$§!当前能影响到至少一个我方拥有的殖民地以及题名一个$ACCORD_HINDSIGHT$星球候选§!"
- terraformation_shroud_side_effect:"虚境恩赐国度"
- terraformation_shroud_side_effect_desc:"该行星我们超主改造了，虽然这会有更高的日常费用的开销但是灵能人口能在这颗星球拥有更美好的生活。"
+ shroud_terraforming_effect:"虚境恩赐国度"
+ shroud_terraforming_effect_desc:"该行星我们超主改造了，虽然这会有更高的日常费用的开销但是灵能人口能在这颗星球拥有更美好的生活。"
 
  song_of_end:"圆神终结"
  song_of_end_desc:"一股带有毁灭与终结的灵能回响。\n\n"
@@ -65,3 +65,6 @@
 
  end_of_the_cycle_type:"$end_of_the_cycle$"
  end_of_the_cycle_endbringers_type:"$end_of_the_cycle_endbringers$"
+
+ leader_trait_legendary_far_from_home_mod:"$leader_trait_legendary_far_from_home$"
+ leader_trait_legendary_far_from_home_mod_desc:"$leader_trait_legendary_far_from_home_desc$"

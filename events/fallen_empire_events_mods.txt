@@ -276,7 +276,7 @@ country_event = {
 	}
 }
 
-## cosmogenesis_level_4 or higher attack fallen_empires than fe awake
+## cosmogenesis attack fallen_empires than fe awake
 country_event = {
 	id = fallen_empires_mod.5
 	title = OK
@@ -300,10 +300,6 @@ country_event = {
 			is_machine_empire = no
 			root = {
 				has_ascension_perk = ap_cosmogenesis
-				OR = {
-					has_crisis_level = crisis_cosmogenesis_level_5
-					has_crisis_level = crisis_cosmogenesis_level_4
-				}
 			}
 		}
 	}
