@@ -298,6 +298,7 @@ crisis_stinger_mod = {
 behemoth_mod = {
 	graphical_culture = no
 	entity = "kaiju_01_adult_entity"
+	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
 	hull_scale = 1.75
 	max_speed = @speed_default
 	acceleration = 0.2
@@ -320,7 +321,7 @@ behemoth_mod = {
 	max_hitpoints = 1000000
 	size_multiplier = 200
 	map_counter_icon = ship_counter_128
-	icon = ship_size_behemoth
+	icon = ship_size_behemoth_mod
 	fleet_slot_size = 8
 	section_slots = { "mid" = { locator = "root" } }
 	num_target_locators = 0

@@ -759,4 +759,27 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_bio_dragon_armor_25.dds"
 	}
 
+	spriteType = {
+		name = "GFX_ship_size_behemoth_mod"
+		sprite_sheet_sprite_type = "GFX_ship_sizes"
+		default_frame = 27
+	}
+
+	#Behemoth probably don't need GFX_ship_sizes_top or GFX_ship_sizes_top_damaged
+	spriteType = {
+		name = "GFX_ship_size_behemoth_mod_top"
+		sprite_sheet_sprite_type = "GFX_ship_sizes_top"
+		default_frame = 7
+	}
+	spriteType = {
+		name = "GFX_ship_size_behemoth_mod_top_damaged"
+		sprite_sheet_sprite_type = "GFX_ship_sizes_top_damaged"
+		default_frame = 7
+	}
+
+	spriteType = {
+		name = "GFX_text_ship_size_behemoth_mod"
+		texturefile = "gfx/interface/icons/text_icons/text_icon_behemoth_ship_size.dds"
+	}
+
 }

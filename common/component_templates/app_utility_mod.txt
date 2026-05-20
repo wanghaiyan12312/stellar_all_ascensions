@@ -424,6 +424,81 @@ weapon_component_template = { # World Cracker
 	}
 }
 
+########################
+# BEHEMOTH TITAN LANCE
+########################
+
+weapon_component_template = {
+	key = "BEHEMOTH_TITAN_WEAPON_MOD"
+	size = titanic
+	type = instant
+
+	icon = "GFX_mutation_laser_1"
+	icon_frame = 1
+
+	potential = {
+		OR = {
+			is_ship_size = behemoth_mod
+			is_ship_size = cosmo_crisis_stinger
+		}
+		from = {
+			has_ascension_perk = ap_cosmogenesis
+			has_crisis_level = crisis_cosmogenesis_level_5
+			country_uses_bio_ships = yes
+		}
+	}
+
+	firing_arc = 15.0
+	min_range = 30.0
+
+	tags = { weapon_type_energy weapon_type_space_fauna }
+	component_set = "BEHEMOTH_TITAN_WEAPON"
+	projectile_gfx = "behemoth_titan_laser"
+}
+
+########################
+# BEHEMOTH LIGHTNING BREATH
+########################
+
+weapon_component_template = {
+	key = "BEHEMOTH_LIGHTNING_WEAPON_MOD"
+	size = extra_large
+	type = instant
+	icon = "GFX_mutation_lightning_breath_1"
+	icon_frame = 1
+
+	firing_arc = 35.0
+	min_range = 10.0
+	use_ship_main_target = no
+
+	potential = {
+		OR = {
+			is_ship_size = behemoth_mod
+			is_ship_size = cosmo_crisis_stinger
+		}
+		from = {
+			has_ascension_perk = ap_cosmogenesis
+			has_crisis_level = crisis_cosmogenesis_level_5
+			country_uses_bio_ships = yes
+		}
+	}
+
+	component_set = "BEHEMOTH_LIGHTNING_WEAPON"
+	projectile_gfx = "behemoth_lightning_breath_laser"
+	tags = { weapon_type_energy weapon_type_space_fauna weapon_role_artillery x_slot }
+	ai_tags = { weapon_role_artillery artillery }
+	ai_tag_weight = 0
+
+	target_weights = {
+		titan = 3
+		battleship = 2
+		stinger_stage_1 = 1.5
+		stinger_stage_2 = 2
+		stinger_stage_3 = 2
+	}
+}
+
+
 
 #####################
 #	Mauler Pursuit	#

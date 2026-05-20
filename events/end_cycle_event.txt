@@ -129,6 +129,7 @@ country_event = {
 		set_country_flag = eradication_activated
 		## end resolution crisis empire
 		remove_country_flag = declared_crisis
+		remove_country_flag = malevolent_aura_empire
 		## each member remove war with root
 		every_country = {
 			limit = {
@@ -140,7 +141,14 @@ country_event = {
 					}
 				}
 			}
-			remove_war_participant = root
+			every_war = {
+				limit = {
+					any_war_participant = {
+						is_same_value = root
+					}
+				}
+				remove_war_participant = root
+			}
 		}
 		# Kick the Crisis out of Alliances.
 		if = {

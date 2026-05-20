@@ -246,6 +246,7 @@ starbase_citadel_II = {
 	required_component_set = "combat_computers"
 	required_component_set = "ftl_inhibitor"
 
+	formation_priority = @starbase_formation_priority
 	icon_frame = 5
 	icon = ship_size_military_station
 	potential_construction = {
@@ -364,6 +365,7 @@ starbase_deep_space_citadel_4 = {
 	auto_upgrade = no
 	available_to_everyone = yes
 
+	formation_priority = @starbase_formation_priority
 	icon_frame = 12
 	icon = ship_size_military_station
 	on_click_sound = "deep_space_citadel_select"
@@ -462,6 +464,8 @@ orbital_ring_tier_4 = {
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
 
+
+	formation_priority = @orbital_ring_formation_priority
 	icon_frame = 9
 	scales_with_planet = yes
 	graphical_culture = yes

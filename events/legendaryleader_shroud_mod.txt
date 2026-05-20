@@ -491,6 +491,36 @@ country_event = {
 		}
 	}
 
+	immediate = {
+		## scientist councilor 
+		set_variable = {
+			which = leadershroud_scientist_councilor_energy_mult
+			value = value:get_scientist_councilor_energy_mult
+		}
+		set_variable = {
+			which = leadershroud_scientist_councilor_zro_mult
+			value = value:get_scientist_councilor_zro_mult
+		}
+		## scientist governor
+		set_variable = {
+			which = leadershroud_scientist_governor_energy_mult
+			value = value:get_scientist_governor_energy_mult
+		}
+		set_variable = {
+			which = leadershroud_scientist_governor_zro_mult
+			value = value:get_scientist_governor_zro_mult
+		}
+		## scientist scholar
+		set_variable = {
+			which = leadershroud_scientist_scholar_energy_mult
+			value = value:get_scientist_scholar_energy_mult
+		}
+		set_variable = {
+			which = leadershroud_scientist_scholar_zro_mult
+			value = value:get_scientist_scholar_zro_mult
+		}
+	}
+
 	
 	option = {
 		name = subclass_scientist_councilor
@@ -500,8 +530,8 @@ country_event = {
 		}
 		inline_script = {
 			script = ordinary_legendary_leader_cost
-			AMOUNT_ENERGY = value:get_scientist_councilor_energy_mult
-			AMOUNT_ZRO = value:get_scientist_councilor_zro_mult
+			AMOUNT_ENERGY = leadershroud_scientist_councilor_energy_mult
+			AMOUNT_ZRO = leadershroud_scientist_councilor_zro_mult
 		}
 		hidden_effect = {
 			create_ordinary_legendary_leader = {
@@ -530,8 +560,8 @@ country_event = {
 		}
 		inline_script = {
 			script = ordinary_legendary_leader_cost
-			AMOUNT_ENERGY = value:get_scientist_governor_energy_mult
-			AMOUNT_ZRO = value:get_scientist_governor_zro_mult
+			AMOUNT_ENERGY = leadershroud_scientist_governor_energy_mult
+			AMOUNT_ZRO = leadershroud_scientist_governor_zro_mult
 		}
 		hidden_effect = {
 			create_ordinary_legendary_leader = {
@@ -560,8 +590,8 @@ country_event = {
 		}
 		inline_script = {
 			script = ordinary_legendary_leader_cost
-			AMOUNT_ENERGY = value:get_scientist_scholar_energy_mult
-			AMOUNT_ZRO = value:get_scientist_scholar_zro_mult
+			AMOUNT_ENERGY = leadershroud_scientist_scholar_energy_mult
+			AMOUNT_ZRO = leadershroud_scientist_scholar_zro_mult
 		}
 		hidden_effect = {
 			create_ordinary_legendary_leader = {
@@ -588,6 +618,15 @@ country_event = {
 		default_hide_option = yes
 	}
 
+	after = {
+		clear_variable = leadershroud_scientist_councilor_energy_mult
+		clear_variable = leadershroud_scientist_councilor_zro_mult
+		clear_variable = leadershroud_scientist_governor_energy_mult
+		clear_variable = leadershroud_scientist_governor_zro_mult
+		clear_variable = leadershroud_scientist_scholar_energy_mult
+		clear_variable = leadershroud_scientist_scholar_zro_mult
+	}
+
 }
 
 country_event = {
@@ -600,6 +639,36 @@ country_event = {
 	}
 
 	inline_script = shroud_picsounds
+
+	immediate = {
+		## official councilor
+		set_variable = {
+			which = leadershroud_official_councilor_energy_mult
+			value = value:get_official_councilor_energy_mult
+		}
+		set_variable = {
+			which = leadershroud_official_councilor_zro_mult
+			value = value:get_official_councilor_zro_mult
+		}
+		## official governor
+		set_variable = {
+			which = leadershroud_official_governor_energy_mult
+			value = value:get_official_governor_energy_mult
+		}
+		set_variable = {
+			which = leadershroud_official_governor_zro_mult
+			value = value:get_official_governor_zro_mult
+		}
+		## official delegate
+		set_variable = {
+			which = leadershroud_official_delegate_energy_mult
+			value = value:get_official_delegate_energy_mult
+		}
+		set_variable = {
+			which = leadershroud_official_delegate_zro_mult
+			value = value:get_official_delegate_zro_mult
+		}
+	}
 
 	#Back to menu
 	option = {
@@ -618,8 +687,8 @@ country_event = {
 		}
 		inline_script = {
 			script = ordinary_legendary_leader_cost
-			AMOUNT_ENERGY = value:get_official_councilor_energy_mult
-			AMOUNT_ZRO = value:get_official_councilor_zro_mult
+			AMOUNT_ENERGY = leadershroud_official_councilor_energy_mult
+			AMOUNT_ZRO = leadershroud_official_councilor_zro_mult
 		}
 		hidden_effect = {
 			create_ordinary_legendary_leader = {
@@ -648,8 +717,8 @@ country_event = {
 		}
 		inline_script = {
 			script = ordinary_legendary_leader_cost
-			AMOUNT_ENERGY = value:get_official_governor_energy_mult
-			AMOUNT_ZRO = value:get_official_governor_zro_mult
+			AMOUNT_ENERGY = leadershroud_official_governor_energy_mult
+			AMOUNT_ZRO = leadershroud_official_governor_zro_mult
 		}
 		hidden_effect = {
 			create_ordinary_legendary_leader = {
@@ -678,8 +747,8 @@ country_event = {
 		}
 		inline_script = {
 			script = ordinary_legendary_leader_cost
-			AMOUNT_ENERGY = value:get_official_delegate_energy_mult
-			AMOUNT_ZRO = value:get_official_delegate_zro_mult
+			AMOUNT_ENERGY = leadershroud_official_delegate_energy_mult
+			AMOUNT_ZRO = leadershroud_official_delegate_zro_mult
 		}
 		hidden_effect = {
 			create_ordinary_legendary_leader = {
@@ -704,6 +773,15 @@ country_event = {
 		name = GOODBYE
 		default_hide_option = yes
 	}
+
+	after = {
+		clear_variable = leadershroud_official_councilor_energy_mult
+		clear_variable = leadershroud_official_councilor_zro_mult
+		clear_variable = leadershroud_official_governor_energy_mult
+		clear_variable = leadershroud_official_governor_zro_mult
+		clear_variable = leadershroud_official_delegate_energy_mult
+		clear_variable = leadershroud_official_delegate_zro_mult
+	}
 }
 
 country_event = {
@@ -717,6 +795,45 @@ country_event = {
 	}
 
 	inline_script = shroud_picsounds
+
+	immediate = {
+		## commander councilor
+		set_variable = {
+			which = leadershroud_commander_councilor_energy_mult
+			value = value:get_commander_councilor_energy_mult
+		}
+		set_variable = {
+			which = leadershroud_commander_councilor_zro_mult
+			value = value:get_commander_councilor_zro_mult
+		}
+		## commander admiral
+		set_variable = {
+			which = leadershroud_commander_admiral_energy_mult
+			value = value:get_commander_admiral_energy_mult
+		}
+		set_variable = {
+			which = leadershroud_commander_admiral_zro_mult
+			value = value:get_commander_admiral_zro_mult
+		}
+		## commander governor
+		set_variable = {
+			which = leadershroud_commander_governor_energy_mult
+			value = value:get_commander_governor_energy_mult
+		}
+		set_variable = {
+			which = leadershroud_commander_governor_zro_mult
+			value = value:get_commander_governor_zro_mult
+		}
+		## commander general
+		set_variable = {
+			which = leadershroud_commander_general_energy_mult
+			value = value:get_commander_general_energy_mult
+		}
+		set_variable = {
+			which = leadershroud_commander_general_zro_mult
+			value = value:get_commander_general_zro_mult
+		}
+	}
 
 	#Back to menu
 	option = {
@@ -734,8 +851,8 @@ country_event = {
 		}
 		inline_script = {
 			script = ordinary_legendary_leader_cost
-			AMOUNT_ENERGY = value:get_commander_councilor_energy_mult
-			AMOUNT_ZRO = value:get_commander_councilor_zro_mult
+			AMOUNT_ENERGY = leadershroud_commander_councilor_energy_mult
+			AMOUNT_ZRO = leadershroud_commander_councilor_zro_mult
 		}
 		hidden_effect = {
 			create_ordinary_legendary_leader = {
@@ -764,8 +881,8 @@ country_event = {
 		}
 		inline_script = {
 			script = ordinary_legendary_leader_cost
-			AMOUNT_ENERGY = value:get_commander_admiral_energy_mult
-			AMOUNT_ZRO = value:get_commander_admiral_zro_mult
+			AMOUNT_ENERGY = leadershroud_commander_admiral_energy_mult
+			AMOUNT_ZRO = leadershroud_commander_admiral_zro_mult
 		}
 		hidden_effect = {
 			create_ordinary_legendary_leader = {
@@ -793,8 +910,8 @@ country_event = {
 		}
 		inline_script = {
 			script = ordinary_legendary_leader_cost
-			AMOUNT_ENERGY = value:get_commander_governor_energy_mult
-			AMOUNT_ZRO = value:get_commander_governor_zro_mult
+			AMOUNT_ENERGY = leadershroud_commander_governor_energy_mult
+			AMOUNT_ZRO = leadershroud_commander_governor_zro_mult
 		}
 		hidden_effect = {
 			create_ordinary_legendary_leader = {
@@ -823,8 +940,8 @@ country_event = {
 		}
 		inline_script = {
 			script = ordinary_legendary_leader_cost
-			AMOUNT_ENERGY = value:get_commander_general_energy_mult
-			AMOUNT_ZRO = value:get_commander_general_zro_mult
+			AMOUNT_ENERGY = leadershroud_commander_general_energy_mult
+			AMOUNT_ZRO = leadershroud_commander_general_zro_mult
 		}
 		hidden_effect = {
 			create_ordinary_legendary_leader = {
@@ -849,6 +966,17 @@ country_event = {
 	option = {
 		name = GOODBYE
 		default_hide_option = yes
+	}
+
+	after = {
+		clear_variable = leadershroud_commander_councilor_energy_mult
+		clear_variable = leadershroud_commander_councilor_zro_mult
+		clear_variable = leadershroud_commander_admiral_energy_mult
+		clear_variable = leadershroud_commander_admiral_zro_mult
+		clear_variable = leadershroud_commander_governor_energy_mult
+		clear_variable = leadershroud_commander_governor_zro_mult
+		clear_variable = leadershroud_commander_general_energy_mult
+		clear_variable = leadershroud_commander_general_zro_mult
 	}
 
 }

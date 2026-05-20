@@ -1,3 +1,26 @@
+get_mod_flag_ship_num = {
+    base = 0
+	complex_trigger_modifier = {
+		trigger = count_owned_ship
+		parameters = {
+			limit = {
+                OR = {
+                    is_ship_size = behemoth_mod
+                    is_ship_size = synth_queen_titan_mod
+                }
+				
+			}
+		}
+		mode = add
+	}
+}
+
+get_mod_admiral_discount = {
+    base = 0
+    add = value:get_commander_admiral_num
+    subtract = value:get_mod_flag_ship_num
+    min = 1
+}
 
 get_scientist_councilor_num = {
     base = 0
@@ -100,7 +123,10 @@ get_governor_num = {
 get_governor_add = {
     base = 0
     add = value:get_governor_num
+    subtract = 1
     mult = @governor_add_discount_ratio
+    add = 1
+    min = 0
 }
 
 
@@ -284,7 +310,7 @@ get_commander_governor_zro_mult = {
 ## military
 get_commander_admiral_energy_mult = {
     base = 0
-    add = value:get_commander_admiral_num
+    add = value:get_mod_admiral_discount
     mult = @commander_admiral_price_up
     modifier = {
         check_variable_arithmetic = {
@@ -331,7 +357,7 @@ get_commander_general_energy_mult = {
         set = 0
     }
     min = @free_discount_ratio
-    max = @free_discount_ratio_max_enegy
+    max = @commander_general_max_enegy
 }
 
 get_commander_general_zro_mult = {
