@@ -492,32 +492,34 @@ country_event = {
 	}
 
 	immediate = {
-		## scientist councilor 
-		set_variable = {
-			which = leadershroud_scientist_councilor_energy_mult
-			value = value:get_scientist_councilor_energy_mult
-		}
-		set_variable = {
-			which = leadershroud_scientist_councilor_zro_mult
-			value = value:get_scientist_councilor_zro_mult
-		}
-		## scientist governor
-		set_variable = {
-			which = leadershroud_scientist_governor_energy_mult
-			value = value:get_scientist_governor_energy_mult
-		}
-		set_variable = {
-			which = leadershroud_scientist_governor_zro_mult
-			value = value:get_scientist_governor_zro_mult
-		}
-		## scientist scholar
-		set_variable = {
-			which = leadershroud_scientist_scholar_energy_mult
-			value = value:get_scientist_scholar_energy_mult
-		}
-		set_variable = {
-			which = leadershroud_scientist_scholar_zro_mult
-			value = value:get_scientist_scholar_zro_mult
+		hidden_effect = {
+			## scientist councilor 
+			set_variable = {
+				which = leadershroud_scientist_councilor_energy_mult
+				value = value:get_scientist_councilor_energy_mult
+			}
+			set_variable = {
+				which = leadershroud_scientist_councilor_zro_mult
+				value = value:get_scientist_councilor_zro_mult
+			}
+			## scientist governor
+			set_variable = {
+				which = leadershroud_scientist_governor_energy_mult
+				value = value:get_scientist_governor_energy_mult
+			}
+			set_variable = {
+				which = leadershroud_scientist_governor_zro_mult
+				value = value:get_scientist_governor_zro_mult
+			}
+			## scientist scholar
+			set_variable = {
+				which = leadershroud_scientist_scholar_energy_mult
+				value = value:get_scientist_scholar_energy_mult
+			}
+			set_variable = {
+				which = leadershroud_scientist_scholar_zro_mult
+				value = value:get_scientist_scholar_zro_mult
+			}
 		}
 	}
 
@@ -619,12 +621,14 @@ country_event = {
 	}
 
 	after = {
-		clear_variable = leadershroud_scientist_councilor_energy_mult
-		clear_variable = leadershroud_scientist_councilor_zro_mult
-		clear_variable = leadershroud_scientist_governor_energy_mult
-		clear_variable = leadershroud_scientist_governor_zro_mult
-		clear_variable = leadershroud_scientist_scholar_energy_mult
-		clear_variable = leadershroud_scientist_scholar_zro_mult
+		hidden_effect = {
+			clear_variable = leadershroud_scientist_councilor_energy_mult
+			clear_variable = leadershroud_scientist_councilor_zro_mult
+			clear_variable = leadershroud_scientist_governor_energy_mult
+			clear_variable = leadershroud_scientist_governor_zro_mult
+			clear_variable = leadershroud_scientist_scholar_energy_mult
+			clear_variable = leadershroud_scientist_scholar_zro_mult
+		}		
 	}
 
 }
@@ -641,33 +645,36 @@ country_event = {
 	inline_script = shroud_picsounds
 
 	immediate = {
-		## official councilor
-		set_variable = {
-			which = leadershroud_official_councilor_energy_mult
-			value = value:get_official_councilor_energy_mult
+		hidden_effect = {
+			## official councilor
+			set_variable = {
+				which = leadershroud_official_councilor_energy_mult
+				value = value:get_official_councilor_energy_mult
+			}
+			set_variable = {
+				which = leadershroud_official_councilor_zro_mult
+				value = value:get_official_councilor_zro_mult
+			}
+			## official governor
+			set_variable = {
+				which = leadershroud_official_governor_energy_mult
+				value = value:get_official_governor_energy_mult
+			}
+			set_variable = {
+				which = leadershroud_official_governor_zro_mult
+				value = value:get_official_governor_zro_mult
+			}
+			## official delegate
+			set_variable = {
+				which = leadershroud_official_delegate_energy_mult
+				value = value:get_official_delegate_energy_mult
+			}
+			set_variable = {
+				which = leadershroud_official_delegate_zro_mult
+				value = value:get_official_delegate_zro_mult
+			}
 		}
-		set_variable = {
-			which = leadershroud_official_councilor_zro_mult
-			value = value:get_official_councilor_zro_mult
-		}
-		## official governor
-		set_variable = {
-			which = leadershroud_official_governor_energy_mult
-			value = value:get_official_governor_energy_mult
-		}
-		set_variable = {
-			which = leadershroud_official_governor_zro_mult
-			value = value:get_official_governor_zro_mult
-		}
-		## official delegate
-		set_variable = {
-			which = leadershroud_official_delegate_energy_mult
-			value = value:get_official_delegate_energy_mult
-		}
-		set_variable = {
-			which = leadershroud_official_delegate_zro_mult
-			value = value:get_official_delegate_zro_mult
-		}
+		
 	}
 
 	#Back to menu
@@ -775,12 +782,14 @@ country_event = {
 	}
 
 	after = {
-		clear_variable = leadershroud_official_councilor_energy_mult
-		clear_variable = leadershroud_official_councilor_zro_mult
-		clear_variable = leadershroud_official_governor_energy_mult
-		clear_variable = leadershroud_official_governor_zro_mult
-		clear_variable = leadershroud_official_delegate_energy_mult
-		clear_variable = leadershroud_official_delegate_zro_mult
+		hidden_effect = {
+			clear_variable = leadershroud_official_councilor_energy_mult
+			clear_variable = leadershroud_official_councilor_zro_mult
+			clear_variable = leadershroud_official_governor_energy_mult
+			clear_variable = leadershroud_official_governor_zro_mult
+			clear_variable = leadershroud_official_delegate_energy_mult
+			clear_variable = leadershroud_official_delegate_zro_mult
+		}	
 	}
 }
 
@@ -797,41 +806,43 @@ country_event = {
 	inline_script = shroud_picsounds
 
 	immediate = {
-		## commander councilor
-		set_variable = {
-			which = leadershroud_commander_councilor_energy_mult
-			value = value:get_commander_councilor_energy_mult
-		}
-		set_variable = {
-			which = leadershroud_commander_councilor_zro_mult
-			value = value:get_commander_councilor_zro_mult
-		}
-		## commander admiral
-		set_variable = {
-			which = leadershroud_commander_admiral_energy_mult
-			value = value:get_commander_admiral_energy_mult
-		}
-		set_variable = {
-			which = leadershroud_commander_admiral_zro_mult
-			value = value:get_commander_admiral_zro_mult
-		}
-		## commander governor
-		set_variable = {
-			which = leadershroud_commander_governor_energy_mult
-			value = value:get_commander_governor_energy_mult
-		}
-		set_variable = {
-			which = leadershroud_commander_governor_zro_mult
-			value = value:get_commander_governor_zro_mult
-		}
-		## commander general
-		set_variable = {
-			which = leadershroud_commander_general_energy_mult
-			value = value:get_commander_general_energy_mult
-		}
-		set_variable = {
-			which = leadershroud_commander_general_zro_mult
-			value = value:get_commander_general_zro_mult
+		hidden_effect = {
+			## commander councilor
+			set_variable = {
+				which = leadershroud_commander_councilor_energy_mult
+				value = value:get_commander_councilor_energy_mult
+			}
+			set_variable = {
+				which = leadershroud_commander_councilor_zro_mult
+				value = value:get_commander_councilor_zro_mult
+			}
+			## commander admiral
+			set_variable = {
+				which = leadershroud_commander_admiral_energy_mult
+				value = value:get_commander_admiral_energy_mult
+			}
+			set_variable = {
+				which = leadershroud_commander_admiral_zro_mult
+				value = value:get_commander_admiral_zro_mult
+			}
+			## commander governor
+			set_variable = {
+				which = leadershroud_commander_governor_energy_mult
+				value = value:get_commander_governor_energy_mult
+			}
+			set_variable = {
+				which = leadershroud_commander_governor_zro_mult
+				value = value:get_commander_governor_zro_mult
+			}
+			## commander general
+			set_variable = {
+				which = leadershroud_commander_general_energy_mult
+				value = value:get_commander_general_energy_mult
+			}
+			set_variable = {
+				which = leadershroud_commander_general_zro_mult
+				value = value:get_commander_general_zro_mult
+			}
 		}
 	}
 
@@ -969,14 +980,17 @@ country_event = {
 	}
 
 	after = {
-		clear_variable = leadershroud_commander_councilor_energy_mult
-		clear_variable = leadershroud_commander_councilor_zro_mult
-		clear_variable = leadershroud_commander_admiral_energy_mult
-		clear_variable = leadershroud_commander_admiral_zro_mult
-		clear_variable = leadershroud_commander_governor_energy_mult
-		clear_variable = leadershroud_commander_governor_zro_mult
-		clear_variable = leadershroud_commander_general_energy_mult
-		clear_variable = leadershroud_commander_general_zro_mult
+		hidden_effect = {
+			clear_variable = leadershroud_commander_councilor_energy_mult
+			clear_variable = leadershroud_commander_councilor_zro_mult
+			clear_variable = leadershroud_commander_admiral_energy_mult
+			clear_variable = leadershroud_commander_admiral_zro_mult
+			clear_variable = leadershroud_commander_governor_energy_mult
+			clear_variable = leadershroud_commander_governor_zro_mult
+			clear_variable = leadershroud_commander_general_energy_mult
+			clear_variable = leadershroud_commander_general_zro_mult
+		}
+		
 	}
 
 }
@@ -1155,6 +1169,7 @@ country_event = {
 
 	option = {
 		allow = {
+			has_patron_relation = { patron = end_of_the_cycle contact = any } 
 			is_galactic_custodian = no
 			is_galactic_emperor = no
 		}

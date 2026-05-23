@@ -872,6 +872,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
+		ship_damage_reduction_add = @damage_mod_reduction_s25
 		ship_shield_add = @shield_mod_s25
 		ship_shield_regen_add_static = @shield_mod_regen_s25
 	}
@@ -929,6 +930,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
+		ship_damage_reduction_add = @damage_mod_reduction_m25
 		ship_shield_add = @shield_mod_m25
 		ship_shield_regen_add_static = @shield_mod_regen_m25
 	}
@@ -986,6 +988,7 @@ utility_component_template = {
 		}
 	}
 	modifier = {
+		ship_damage_reduction_add = @damage_mod_reduction_l25
 		ship_shield_add = @shield_mod_l25
 		ship_shield_regen_add_static = @shield_mod_regen_l25
 	}

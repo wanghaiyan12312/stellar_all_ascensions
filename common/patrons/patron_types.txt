@@ -996,10 +996,7 @@ end_of_the_cycle = {
 			custom_tooltip = {
 				fail_text = ACCORD_NEED_COSMO_5
 				OR = {
-					AND = {
-						has_origin = origin_endbringers
-						#NOT = { has_country_flag = annihilation_activated }
-					}
+					has_origin = origin_endbringers
 					AND = {
 						has_ascension_perk = ap_cosmogenesis
 						has_crisis_level = crisis_cosmogenesis_level_5 
@@ -1068,10 +1065,7 @@ end_of_the_cycle = {
 			custom_tooltip = {
 				fail_text = ACCORD_NEED_COSMO_5
 				OR = {
-					AND = {
-						has_origin = origin_endbringers
-						#NOT = { has_country_flag = extermination_activated }
-					}
+					has_origin = origin_endbringers
 					AND = {
 						has_ascension_perk = ap_cosmogenesis
 						has_crisis_level = crisis_cosmogenesis_level_5 
@@ -1144,10 +1138,7 @@ end_of_the_cycle = {
 			custom_tooltip = {
 				fail_text = ACCORD_NEED_COSMO_5
 				OR = {
-					AND = {
-						has_origin = origin_endbringers
-						#NOT = { has_country_flag = destruction_activated }
-					}
+					has_origin = origin_endbringers
 					AND = {
 						has_ascension_perk = ap_cosmogenesis
 						has_crisis_level = crisis_cosmogenesis_level_5 
@@ -1193,7 +1184,7 @@ end_of_the_cycle = {
 		possible = {
 			custom_tooltip = {
 				fail_text = ACCORD_INTENSIFICATION_TRIGGER_COOLDOWN
-				#NOT = { has_country_flag = intensification_activated }
+				NOT = { has_country_flag = intensification_activated }
 			}
 			if = {
 				limit = {
@@ -1239,10 +1230,7 @@ end_of_the_cycle = {
 			custom_tooltip = {
 				fail_text = ACCORD_NEED_COSMO_5
 				OR = {
-					AND = {
-						has_origin = origin_endbringers
-						NOT = { has_country_flag = eradication_activated }
-					}
+					has_origin = origin_endbringers
 					AND = {
 						has_ascension_perk = ap_cosmogenesis
 						has_crisis_level = crisis_cosmogenesis_level_5 

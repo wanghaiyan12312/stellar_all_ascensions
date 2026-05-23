@@ -29,10 +29,7 @@ titan_ships_limit = {
 		cosmo_crisis_titan_mod
 	}
 
-	base = 80 # 1 * titan's size_multiplier
-	max = 9600 # 120 * 80
-	naval_cap_fraction = 1
-
+	base = 9600 # 200 * titan's size_multiplier
 	show = {
 		is_scope_valid = yes
 		OR = {

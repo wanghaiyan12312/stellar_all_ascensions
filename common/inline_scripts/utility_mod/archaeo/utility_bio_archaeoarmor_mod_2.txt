@@ -1,5 +1,5 @@
 key = "$SIZE$_BIO_ARCHAEO_ARMOR_$TIER$"
-icon = "GFX_ship_part_archaeoarmor_$TIER$"
+icon = "GFX_ship_part_bio_archaeo_armor_$TIER$"
 icon_frame = 1
 
 modifier = {

@@ -12,7 +12,7 @@
 @councilor_scientist_free_num = 1
 @councilor_official_free_num = 1
 @councilor_official_add_discount_ratio = 0.8
-@councilor_official_max_enegy = 80
+@councilor_official_max_enegy = 100
 @councilor_official_max_zro = 100
 @councilor_commander_free_num = 1
 ## govern
@@ -21,22 +21,22 @@
 @govern_commander_free_num = 1
 ## military
 @commander_admiral_free_num = 1
-@commander_admiral_max_num = 24
-@commander_admiral_price_up = 1.2
-@commander_admiral_max_enegy = 120
-@commander_admiral_max_zro = 100
+@commander_admiral_max_num = 23
+@commander_admiral_price_up = 1.5
+@commander_admiral_max_enegy = 150
+@commander_admiral_max_zro = 150
 @commander_general_free_num = 1
 @commander_general_max_num = 5
 @commander_general_discount_ratio = 0.4
-@commander_general_max_enegy = 40
+@commander_general_max_enegy = 100
 @commander_general_max_zro = 100
 
 ## other
 @scholar_scientist_free_num = 1
 @scholar_add_discount_ratio = 0.2
-@scholar_max_enegy = 20
+@scholar_max_enegy = 100
 @scholar_max_zro = 100
 @delegate_official_free_num = 1
 @delegate_add_discount_ratio = 0.2
-@delegate_official_max_enegy = 20
+@delegate_official_max_enegy = 100
 @delegate_official_max_zro = 100

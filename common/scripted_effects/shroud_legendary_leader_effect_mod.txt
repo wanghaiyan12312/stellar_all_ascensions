@@ -1680,6 +1680,27 @@ add_shroud_ship = {
 
 add_relic_bonus_mod = {
 	random_list = {
+		40 = {
+			modifier = {
+				factor = 0
+				has_relic = r_omnicodex	
+			}
+			add_relic = r_omnicodex
+		}
+		40 = {
+			modifier = {
+				factor = 0
+				has_relic = r_rubricator	
+			}
+			add_relic = r_rubricator
+		}
+		40 = {
+			modifier = {
+				factor = 0
+				has_relic = r_galaxy	
+			}
+			add_relic = r_galaxy
+		}
 		20 = {
 			modifier = {
 				factor = 0
@@ -1746,7 +1767,10 @@ add_relic_bonus_mod = {
 				has_relic = r_cetanas_heart
 				has_relic = r_eternal_throne
 				has_relic = r_continuum	
-				has_relic = r_daedalus_seal	
+				has_relic = r_daedalus_seal
+				has_relic = r_omnicodex	
+				has_relic = r_rubricator
+				has_relic = r_galaxy
 				OR = {
 					NOT = { has_origin = origin_endbringers }
 					AND = {

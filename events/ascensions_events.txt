@@ -2062,11 +2062,6 @@ situation_event = {
 	}
 
 	option = {
-		trigger = {
-			owner = {
-				have_any_evopred_flag_mod = no
-			}
-		}
 		name = bio.1005.no_reward
 		hidden_effect = {
 			set_situation_flag = no_choice_evopred

@@ -3,7 +3,7 @@ icon = "GFX_ship_part_archaeoarmor_$TIER$"
 icon_frame = 1
 
 modifier = {
-	ship_armor_add = $ARCHAEOARMOR_SHIELD_ADD$
+	ship_armor_add = $ARCHAEOARMOR_ARMOR_ADD$
 	ship_shield_add = $ARCHAEOARMOR_SHIELD_ADD$
 	ship_shield_regen_add_static = $ARCHAEOARMOR_SHIELD_REGEN_ADD$
 }
