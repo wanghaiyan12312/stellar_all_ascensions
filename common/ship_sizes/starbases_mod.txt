@@ -164,13 +164,15 @@ starbase_citadel_II = {
 	rotation_speed = 0.0
 	entity = "fallen_empire_01_starbase_citadel_entity"
 	modifier = {
-		ship_evasion_mult = -1
-		ship_armor_add = 500000
-		ship_shield_add = 500000 
 		starbase_module_capacity_add = 12
 		starbase_building_capacity_add = 6
 		starbase_defense_platform_capacity_add = 30	
 		ship_sensor_range_add = 1
+	}
+	ship_modifier = {
+		ship_evasion_mult = -1
+		ship_armor_add = 500000
+		ship_shield_add = 500000 
 	}
 	max_hitpoints = 500000
 	base_buildtime = 7200
@@ -301,15 +303,15 @@ starbase_deep_space_citadel_4 = {
 		}
 	}
 	modifier = {
-		# Citadel Modifiers + Innate Shields
-		ship_evasion_mult = -1
-		ship_armor_add = 500000
-		ship_shield_add = 500000
 		starbase_building_capacity_add = 6
 		starbase_defense_platform_capacity_add = 30
 		ship_sensor_range_add = 1
 	}
 	ship_modifier = {
+		# Citadel Modifiers + Innate Shields
+		ship_evasion_mult = -1
+		ship_armor_add = 500000
+		ship_shield_add = 500000
 		ship_fire_rate_mult = 0.75
 		ship_weapon_range_mult = 0.75
 		ship_weapon_damage = 0.75
@@ -377,15 +379,15 @@ orbital_ring_tier_4 = {
 	max_speed = 0.0
 	acceleration = 0.0
 	rotation_speed = 0.0
-	modifier = {
-		ship_evasion_mult = -1
-		ship_armor_add = 500000
-		ship_shield_add = 500000		
+	modifier = {	
 		starbase_defense_platform_capacity_add = 12
 		starbase_module_capacity_add = 4
 		starbase_building_capacity_add = 2
 	}
 	ship_modifier = {
+		ship_evasion_mult = -1
+		ship_armor_add = 500000
+		ship_shield_add = 500000	
 		ship_fire_rate_mult = 1.0
 		ship_weapon_range_mult = 2.0
 	}
