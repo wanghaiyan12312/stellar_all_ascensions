@@ -391,6 +391,9 @@ country_event = {
 		is_country_type = default
 		from = { 
 			has_leader_flag = leader_shroud_legendary_mod
+			NOT = {
+				has_leader_flag = leader_death_events_blocked
+			}
 		}
 	}
 
