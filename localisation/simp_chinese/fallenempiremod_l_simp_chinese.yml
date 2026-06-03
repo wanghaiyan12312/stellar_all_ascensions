@@ -3,7 +3,7 @@
  shipeventmod.3.desc:"女王泰坦是我们上古敌人的旗舰，你的行为让我们祖先的荣耀蒙羞。\n\n\n你们不明白你们犯下了多大的罪恶。\n\n\n不过马上就会了。"
 
  tech_starbase_6:"$starbase_citadel_II$"
- tech_starbase_desc:"堕落帝国擎天堡拥有着难以置信的空间去装备着难以想象的防御设施，一座堕落帝国擎天堡对于敌方舰队而言绝对是不可攻克的堡垒。"
+ tech_starbase_6_desc:"堕落帝国擎天堡拥有着难以置信的空间去装备着难以想象的防御设施，一座堕落帝国擎天堡对于敌方舰队而言绝对是不可攻克的堡垒。"
  
  TECH_UNLOCK_CITADEL_II_CONSTRUCTION_TITLE:"§H解锁恒星基地升级：§!擎天堡 II"
  TECH_UNLOCK_CITADEL_II_CONSTRUCTION_DESC:"§H擎天堡 II§!\n擎天堡的升级，由于我们再编辑现实上面的努力我们突破了恒星基地的物理限制，擎天堡 II上面可修筑六个建筑，最大可支持十二个模块。"
@@ -69,4 +69,4 @@
  NAME_SHIELD_SHIELD_hard_II:"$NAME_Eternal$ Hard II"
  NAME_HIVE_FE_Large_Stinger_HARD_I:"$NAME_HIVE_FE_Large_Stinger$ Hard I"
  NAME_HIVE_FE_Large_Stinger_HARD_II:"$NAME_HIVE_FE_Large_Stinger$ Hard II"
- NAME_Synth_Queen_Royal_Guard_Mod: "$NAME_Synth_Queen_Royal_Guard$"
+ NAME_Synth_Queen_Royal_Guard_Mod:"$NAME_Synth_Queen_Royal_Guard$"

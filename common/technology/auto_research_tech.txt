@@ -533,12 +533,10 @@ tech_repeatable_improved_military_station_damage = {
 		}
 		modifier = {
 			shipclass_military_station_damage_mult = 0.05
-			shipsize_starbase_citadel_II_shield_add = 25000
-			#shipsize_starbase_citadel_II_shield_regen_add_static = 2500
-			shipsize_orbital_ring_tier_4_shield_add = 25000
-			shipsize_orbital_ring_tier_4_shield_regen_add_static = 2500
-			shipsize_starbase_deep_space_citadel_4_shield_add = 25000
-			shipsize_starbase_deep_space_citadel_4_shield_regen_add_static = 2500
+			shipsize_orbital_ring_tier_4_shield_add = 100000
+			shipsize_orbital_ring_tier_4_shield_regen_add_static = 10000
+			shipsize_starbase_deep_space_citadel_4_shield_add = 100000
+			shipsize_starbase_deep_space_citadel_4_shield_regen_add_static = 10000
 		}
 	}
 }
@@ -587,9 +585,8 @@ tech_repeatable_improved_military_station_health = {
 		}
 		modifier = {
 			shipclass_military_station_hull_mult = 0.05
-			shipsize_starbase_citadel_II_armor_add = 25000
-			shipsize_orbital_ring_tier_4_armor_add = 25000
-			shipsize_starbase_deep_space_citadel_4_armor_add = 25000
+			shipsize_starbase_citadel_II_armor_add = 10000
+			shipsize_starbase_deep_space_citadel_4_armor_add = 10000
 		}
 	}
 }

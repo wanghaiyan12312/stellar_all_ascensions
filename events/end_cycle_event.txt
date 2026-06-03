@@ -271,6 +271,10 @@ country_event = {
 					NOT = { is_same_value = ROOT }
 				}
 			}
+			NAND = {
+				has_ascension_perk = ap_cosmogenesis
+				has_crisis_level = crisis_cosmogenesis_level_5
+			}
 		}
 		name = shroud.4135.a
 		custom_tooltip = end_cycle.5.a.tt 

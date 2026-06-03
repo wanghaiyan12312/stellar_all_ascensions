@@ -15,11 +15,12 @@ tr_modularity_age_adopt = {
 }
 
 tr_modularity_age_finish = {
-
 	modifier = {
 		ascension_perks_add = 1
 	}
-
+	on_enabled = {
+		add_research_option = tech_mega_engineering
+	}
 }
 
 tr_modularity_age_high_speed_replacements = {

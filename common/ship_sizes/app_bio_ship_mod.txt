@@ -331,6 +331,10 @@ behemoth_mod = {
 	is_space_station = no
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 
+	prerequisites = { 
+		"tech_synth_queen_titan_template"
+	}
+
 	on_click_sound = "ui_kaiju_select_fleet"
 	ship_class_icon_frame = 58
 

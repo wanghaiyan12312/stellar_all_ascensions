@@ -358,7 +358,6 @@ update_legendary_govern_scientist = {
 	remove_all_traits = yes
 	set_skill = 10
 	set_leader_flag = leader_shroud_legendary_mod
-	add_mod_common_leader_trait = yes
 	add_trait = {
 		trait = subclass_scientist_governor
 		show_message = no
@@ -440,7 +439,6 @@ update_legendary_scholar_scientist = {
 	remove_all_traits = yes
 	set_skill = 10
 	set_leader_flag = leader_shroud_legendary_mod
-	add_mod_common_leader_trait = yes
 	add_trait = {
 		trait = subclass_scientist_scholar
 		show_message = no
@@ -520,11 +518,6 @@ update_legendary_scholar_scientist = {
 		consume_selection = yes
 	}
 	## common
-	add_trait = {
-		trait = leader_trait_carefree_2
-		show_message = no
-		consume_selection = yes
-	}
 	add_trait = {
 		trait = leader_trait_roamer_2
 		show_message = no

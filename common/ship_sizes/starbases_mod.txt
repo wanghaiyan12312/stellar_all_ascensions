@@ -171,10 +171,10 @@ starbase_citadel_II = {
 	}
 	ship_modifier = {
 		ship_evasion_mult = -1
-		ship_armor_add = 500000
-		ship_shield_add = 500000 
+		ship_armor_add = 1000000
+		ship_shield_add = 1000000 
 	}
-	max_hitpoints = 500000
+	max_hitpoints = 1000000
 	base_buildtime = 7200
 	resources = {
 		category = starbases
@@ -260,120 +260,6 @@ starbase_citadel_II = {
 	}
 }
 
-starbase_deep_space_citadel_4 = {
-	entity = "deep_space_03_starbase_citadel_entity"
-	max_speed = 0.0
-	acceleration = 0.0
-	rotation_speed = 0.0
-	resources = {
-		category = starbases
-		cost ={
-			rare_crystals = 5000
-		}
-		cost = {
-			trigger = {
-				from = {
-					country_uses_bio_ships = no
-				}
-			}
-			alloys = 250000
-		}
-		cost = {
-			trigger = {
-				from = {
-					country_uses_bio_ships = yes
-				}
-			}
-			alloys = 250000
-			mult = 0.5
-		}
-		cost = {
-			trigger = {
-				from = {
-					country_uses_bio_ships = yes
-				}
-			}
-			food = 250000
-			mult = @halved_alloy_to_food_cost_ratio
-		}
-		upkeep = {
-			alloys = 200
-			energy = 300
-			rare_crystals = 50
-		}
-	}
-	modifier = {
-		starbase_building_capacity_add = 6
-		starbase_defense_platform_capacity_add = 30
-		ship_sensor_range_add = 1
-	}
-	ship_modifier = {
-		# Citadel Modifiers + Innate Shields
-		ship_evasion_mult = -1
-		ship_armor_add = 500000
-		ship_shield_add = 500000
-		ship_fire_rate_mult = 0.75
-		ship_weapon_range_mult = 0.75
-		ship_weapon_damage = 0.75
-	}
-	max_hitpoints = 500000
-	base_buildtime = 3600
-
-	potential_construction = {
-		# Uses a megastructure for construction
-		# but is upgradeable
-		always = no
-	}
-
-	possible_construction = {
-		# Uses a megastructure for construction
-		# but is upgradeable
-		always = no
-	}
-
-	role_background = "GFX_role_selection_background"
-	ship_roles = { citadel }
-
-	combat_size_multiplier = 500
-	size_multiplier = 80
-	map_counter_icon = ship_counter_64
-	fleet_slot_size = 2
-	section_slots = {
-		"core" = { locator = "part1" }
-	}
-	is_designable = yes
-	num_target_locators = 0
-	is_space_station = no
-	can_have_federation_design = no
-	is_civilian = no
-	components_add_to_cost = no
-	is_listed = no
-	can_disable = yes
-
-	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	prerequisites = { 
-		"tech_deep_space_citadel"
-		"tech_starbase_6" 
-	}
-	class = shipclass_starbase
-
-	required_component_set = "power_core"
-	required_component_set = "sensor_components"
-	required_component_set = "combat_computers"
-	required_component_set = "ftl_inhibitor"
-	required_component_set = "dsc_aura_components"
-	required_component_set = "ship_aura_components"
-
-	auto_upgrade = no
-	available_to_everyone = yes
-
-	formation_priority = @starbase_formation_priority
-	icon_frame = 12
-	icon = ship_size_military_station
-	on_click_sound = "deep_space_citadel_select"
-	use_shipnames_from = military_station_small
-}
-
 orbital_ring_tier_4 = {
 	entity = "psionic_01_orbital_ring_tier_3_entity"
 	max_speed = 0.0
@@ -386,12 +272,12 @@ orbital_ring_tier_4 = {
 	}
 	ship_modifier = {
 		ship_evasion_mult = -1
-		ship_armor_add = 500000
-		ship_shield_add = 500000	
+		ship_armor_add = 1000000
+		ship_shield_add = 1000000	
 		ship_fire_rate_mult = 1.0
 		ship_weapon_range_mult = 2.0
 	}
-	max_hitpoints = 500000
+	max_hitpoints = 1000000
 	base_buildtime = 3600
 	resources = {
 		category = starbases
@@ -473,4 +359,117 @@ orbital_ring_tier_4 = {
 	graphical_culture = yes
 
 	available_to_everyone = yes
+}
+
+starbase_deep_space_citadel_4 = {
+	entity = "deep_space_03_starbase_citadel_entity"
+	max_speed = 0.0
+	acceleration = 0.0
+	rotation_speed = 0.0
+	resources = {
+		category = starbases
+		cost ={
+			rare_crystals = 5000
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = 500000
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = 500000
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = 500000
+			mult = @halved_alloy_to_food_cost_ratio
+		}
+		upkeep = {
+			alloys = 200
+			energy = 300
+			rare_crystals = 50
+		}
+	}
+	modifier = {
+		starbase_building_capacity_add = 6
+		starbase_defense_platform_capacity_add = 30
+		ship_sensor_range_add = 1
+	}
+	ship_modifier = {
+		# Citadel Modifiers + Innate Shields
+		ship_evasion_mult = -1
+		ship_shield_mult = 2
+		ship_fire_rate_mult = 0.75
+		ship_weapon_range_mult = 0.75
+		ship_weapon_damage = 0.75
+	}
+	max_hitpoints = 500000
+	base_buildtime = 3600
+
+	potential_construction = {
+		# Uses a megastructure for construction
+		# but is upgradeable
+		always = no
+	}
+
+	possible_construction = {
+		# Uses a megastructure for construction
+		# but is upgradeable
+		always = no
+	}
+
+	role_background = "GFX_role_selection_background"
+	ship_roles = { citadel }
+
+	combat_size_multiplier = 500
+	size_multiplier = 80
+	map_counter_icon = ship_counter_64
+	fleet_slot_size = 2
+	section_slots = {
+		"core" = { locator = "part1" }
+	}
+	is_designable = yes
+	num_target_locators = 0
+	is_space_station = no
+	can_have_federation_design = no
+	is_civilian = no
+	components_add_to_cost = no
+	is_listed = no
+	can_disable = yes
+
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	prerequisites = { 
+		"tech_deep_space_citadel"
+		"tech_starbase_6" 
+	}
+	class = shipclass_starbase
+
+	required_component_set = "power_core"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	required_component_set = "ftl_inhibitor"
+	required_component_set = "dsc_aura_components"
+	required_component_set = "ship_aura_components"
+
+	auto_upgrade = no
+	available_to_everyone = yes
+
+	formation_priority = @starbase_formation_priority
+	icon_frame = 12
+	icon = ship_size_military_station
+	on_click_sound = "deep_space_citadel_select"
+	use_shipnames_from = military_station_small
 }

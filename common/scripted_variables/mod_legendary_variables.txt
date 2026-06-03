@@ -20,7 +20,7 @@
 @govern_official_free_num = 1
 @govern_commander_free_num = 1
 ## military
-@commander_admiral_free_num = 1
+@commander_admiral_free_num = 0
 @commander_admiral_max_num = 23
 @commander_admiral_price_up = 1.5
 @commander_admiral_max_enegy = 150

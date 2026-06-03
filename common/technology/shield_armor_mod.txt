@@ -1414,7 +1414,7 @@ tech_archaeoarmor_2 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -1442,7 +1442,7 @@ tech_archaeoarmor_3 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -1470,7 +1470,7 @@ tech_archaeoarmor_4 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -1498,7 +1498,7 @@ tech_archaeoarmor_5 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -1526,7 +1526,7 @@ tech_archaeoarmor_6 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -1554,7 +1554,7 @@ tech_archaeoarmor_7 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -1582,7 +1582,7 @@ tech_archaeoarmor_8 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -1610,7 +1610,7 @@ tech_archaeoarmor_9 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -1638,7 +1638,7 @@ tech_archaeoarmor_10 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -1666,7 +1666,7 @@ tech_archaeoarmor_11 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -1694,7 +1694,7 @@ tech_archaeoarmor_12 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -1722,7 +1722,7 @@ tech_archaeoarmor_13 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -1750,7 +1750,7 @@ tech_archaeoarmor_14 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -1778,7 +1778,7 @@ tech_archaeoarmor_15 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -1806,7 +1806,7 @@ tech_archaeoarmor_16 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -1834,7 +1834,7 @@ tech_archaeoarmor_17 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -1862,7 +1862,7 @@ tech_archaeoarmor_18 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -1890,7 +1890,7 @@ tech_archaeoarmor_19 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -1918,7 +1918,7 @@ tech_archaeoarmor_20 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -1946,7 +1946,7 @@ tech_archaeoarmor_21 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -1974,7 +1974,7 @@ tech_archaeoarmor_22 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -2002,7 +2002,7 @@ tech_archaeoarmor_23 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -2030,7 +2030,7 @@ tech_archaeoarmor_24 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 
@@ -2058,7 +2058,7 @@ tech_archaeoarmor_25 = {
 		has_crisis_level = crisis_cosmogenesis_level_5
   		OR = {
   			has_country_flag = archaeoarmor_allow
-  			check_eng_auto_tech_flag = yes
+  			check_soc_auto_tech_flag = yes
   		}
 	}
 

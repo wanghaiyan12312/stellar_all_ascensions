@@ -36,11 +36,6 @@ on_monthly_pulse_country = {
 	}
 }
 
-on_country_destroyed = {
-	events = {
-		fallen_empires_mod.10
-	}
-}
 
 on_ship_built = {
 	events = {
@@ -68,7 +63,7 @@ on_tech_increased = {
 
 on_planet_occupied = {
 	events = {
-		fallen_empires_mod.12
+		fallen_empires_mod.10
 	}
 }
 

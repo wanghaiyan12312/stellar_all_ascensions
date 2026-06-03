@@ -3,7 +3,7 @@
  shipeventmod.3.desc:"Queen's Titan is our enemy flagship. it is shame for our ancester glory.\n\n\nYou do not know the true extent of your sin.\n\n\nNot yet."
 
  tech_starbase_6:"$starbase_citadel_II$"
- tech_starbase_desc:"Fallen Empire Citadel has incredible space to equipe mass Defence Facility that is unconquerable fortress for enemy fleet."
+ tech_starbase_6_desc:"Fallen Empire Citadel has incredible space to equipe mass Defence Facility that is unconquerable fortress for enemy fleet."
  
  TECH_UNLOCK_CITADEL_II_CONSTRUCTION_TITLE:"§HUnlocks Starbase Upgrade:§! Citadel II"
  TECH_UNLOCK_CITADEL_II_CONSTRUCTION_DESC:"§HCitadel II§!\nUpgrading the Citadel,Due to our effort on reality editing we can violation of the laws of the universe to build our Starbase.Citadel II can house six Buildings and a full complement of twelve Modules."

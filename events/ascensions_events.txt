@@ -54,6 +54,7 @@ country_event = {
 	}
 
 }
+
 country_event = {
 	id = ascensions.2
 	title = ascensions.2.title
@@ -71,8 +72,10 @@ country_event = {
 
 	option = {
 		name = ascensions.2.default.government
-		aap_remove_government_flags = yes
-		advanced_authority_refresh = yes
+		hidden_effect = {
+			aap_remove_government_flags = yes
+			advanced_authority_refresh = yes
+		}
 	}
 
 	option = {
@@ -461,10 +464,68 @@ leader_event = {
 		if = {
 			limit = { 
 				has_leader_flag = leader_shroud_legendary_mod
-				has_trait = leader_trait_psionic 
 			}
-			remove_trait = leader_trait_psionic
-		}
+			remove_all_negative_traits = yes
+			## psionic TRAIT HAS BAD CHECK
+			if = {
+				limit = { 
+					has_leader_flag = leader_shroud_legendary_mod
+					has_trait = leader_trait_psionic 
+				}
+				remove_trait = leader_trait_psionic
+			}
+			## FIX TRAIT MISSING
+			if = {
+				limit = { 
+					has_leader_flag = leader_shroud_legendary_mod
+					NOT = { has_trait = leader_trait_composer_chosen }
+				}
+				add_trait = {
+					trait = leader_trait_composer_chosen
+					show_message = no
+				}
+			}
+			if = {
+				limit = { 
+					has_leader_flag = leader_shroud_legendary_mod
+					NOT = { has_trait = leader_trait_instrument_chosen }
+				}
+				add_trait = {
+					trait = leader_trait_instrument_chosen
+					show_message = no
+				}
+			}
+			if = {
+				limit = { 
+					has_leader_flag = leader_shroud_legendary_mod
+					NOT = { has_trait = leader_trait_eater_chosen }
+				}
+				add_trait = {
+					trait = leader_trait_eater_chosen
+					show_message = no
+				}
+			}
+			if = {
+				limit = { 
+					has_leader_flag = leader_shroud_legendary_mod
+					NOT = { has_trait = leader_trait_cradle_chosen }
+				}
+				add_trait = {
+					trait = leader_trait_cradle_chosen
+					show_message = no
+				}
+			}
+			if = {
+				limit = { 
+					has_leader_flag = leader_shroud_legendary_mod
+					NOT = { has_trait = leader_trait_whisperers_chosen }
+				}
+				add_trait = {
+					trait = leader_trait_whisperers_chosen
+					show_message = no
+				}
+			}	
+		}		
 	}
 }
 

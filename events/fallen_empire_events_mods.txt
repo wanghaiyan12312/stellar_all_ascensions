@@ -490,57 +490,90 @@ country_event = { # Reaching Level 5
 	}
 
 	after = {
-	}
-}
-
-country_event = { 
-	id = fallen_empires_mod.10
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		OR = {
-			is_country_type = ai_empire
-			is_country_type = swarm
-			is_country_type = extradimensional ## OK FOR repeat
-			is_country_type = extradimensional_2
-			is_country_type = extradimensional_3
-			is_synth_queen_country_type = yes
-		}
-	}
-
-	after = {
-		every_country = {
-			limit = {
-				is_fallen_empire = yes
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						is_country_type = fallen_empire
+						is_country_type = awakened_fallen_empire
+					}
+					is_machine_empire = no
+				}
+				add_modifier = { 
+					modifier = ship_damage_mult
+					multiplier = value:get_crisis_strength_after			
+				}
 			}
-			country_event = {
-				id = fallen_empires_mod.11
-				days = 30  ## wait crisis_strength update
+			## TO DO A SITUATION MAYBE? MUST
+			if = {
+				limit = {
+					has_patron_relation = { patron = end_of_the_cycle contact = any } 
+				}
+				random_country = {
+					limit = {
+						is_country_type = fallen_empire
+						is_machine_empire = no
+					}
+					save_event_target_as = outraged_FE
+				}
+				every_country = {
+					limit = {
+						is_country_type = fallen_empire
+						is_machine_empire = no
+					}
+					if = {
+						limit = { has_ethic = ethic_fanatic_xenophile }
+						country_event = {
+							id = fallen_empires_mod.3
+							days = 18030
+						}
+					}
+					if = {
+						limit = { has_ethic = ethic_fanatic_materialist }
+						country_event = {
+							id = fallen_empires_mod.3
+							days = 18060
+						}
+					}
+					if = {
+						limit = { has_ethic = ethic_fanatic_spiritualist }
+						country_event = {
+							id = fallen_empires_mod.3
+							days = 18090
+						}
+					}
+					if = {
+						limit = { has_ethic = ethic_fanatic_xenophobe }
+						country_event = {
+							id = fallen_empires_mod.3
+							days = 18120
+						}
+					}
+					if = {
+						limit = { 
+							OR = {
+								owner = { has_country_flag = fallen_empire_hive_war }
+								owner = { has_country_flag = fallen_empire_hive_growth }
+								owner = { has_country_flag = fallen_empire_hive_control }
+							}	
+						}
+						country_event = {
+							id = fallen_empires_mod.4
+							days = 18150
+						}
+					}			
+				}
+				country_event = {
+					id = fallen_empires_mod.6
+					days = 18180
+				}
 			}
-		}
-	}
-}
-
-country_event = { 
-	id = fallen_empires_mod.11
-	hide_window = yes
-
-	is_triggered_only = yes
-	trigger = {
-		is_fallen_empire = yes
-	}
-	immediate = {
-		add_modifier = { 
-			modifier = ship_damage_mult
-			multiplier = value:get_crisis_strength			
 		}
 	}
 }
 
 planet_event = { 
-	id = fallen_empires_mod.12
+	id = fallen_empires_mod.10
 	hide_window = yes
 
 	is_triggered_only = yes

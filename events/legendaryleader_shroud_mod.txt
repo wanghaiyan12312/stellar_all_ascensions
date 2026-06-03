@@ -1171,7 +1171,7 @@ country_event = {
 	}
 
 	option = {
-		allow = {
+		trigger = {
 			has_patron_relation = { patron = end_of_the_cycle contact = any } 
 			is_galactic_custodian = no
 			is_galactic_emperor = no
